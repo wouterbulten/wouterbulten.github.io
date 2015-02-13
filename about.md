@@ -10,7 +10,6 @@ Mai-Ai.org is a result of a overly ambitious project I did as part of my seconda
 
 ### Some previous projects/things I worked on?
 
-
 * I have been chair of an annual AI symposium ([ACAIS](http://www.acais.nl)) and recently built the [new website](https://github.com/wouterbulten/acais-website) together with [Thijs van Nieuwdorp](http://tnieuwdorp.github.io/).
 * Developed a wireless sensor node (the [DomuLink](http://www.domulink.com)) during my masters with two fellow students.
 * Co-developed/hosted a workshop on Artificial Life simulations ([source](https://github.com/wouterbulten/ACAIS2013Workshop)).
