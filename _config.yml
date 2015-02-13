@@ -38,6 +38,13 @@ social:
 #    share_title: ?t=
 #    share_link: "&amp;u="
 
+  - icon: linkedin
+    url:  https://linkedin.com/in/wouterbulten
+    desc: View my LinkedIn profile
+    share_url:
+    share_title:
+    share_link:
+
   - icon:	github
     url:	https://github.com/wouterbulten
     desc:	Fork me on github
