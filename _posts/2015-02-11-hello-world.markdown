@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  "Hello World!"
+title:  "Hello, World!"
 date:   2015-02-11 18:06
 categories: blog
-tags: featured
-image: /assets/article_images/2014-08-29-welcome-to-jekyll/desktop.jpg
+tags:
 ---
 
-Hello, this is the start of this blog!
+Hello, this is the start of this blog! There is nothing more to see here than the following, mandatory, statement:
+
+> Hello, World!
