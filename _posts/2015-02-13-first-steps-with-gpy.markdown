@@ -18,7 +18,7 @@ GPy can be installed using _pip_ which is probably the most convenient way. Just
 
 	pip install gpy
 
-and GPy and it's dependencies should be installed. 
+and GPy and its dependencies should be installed. 
 
 > _Note:_ GPy does not work smoothly with Python 3+. An [attempt](https://github.com/wouterbulten/GPy/tree/python3) to do a 'quick and dirty' conversion did not work reliably. I suggest you use an 2.* installation of Python in combination with GPy until its authors update the framework.
 
@@ -40,14 +40,14 @@ $$
 y = \frac{1}{4} x^2 + \epsilon
 $$
 
-with $\epsilon \in \mathcal{N}(0,.25)$. We can then generate our train on the interval [-5,5] set with:
+with $\epsilon \in \mathcal{N}(0,.25)$. We'll use this function to generate our train data on the interval [-5,5]. By adding noise ($\epsilon$) we get a (less trivial) data set:
 
 {% highlight python %}
 X = np.random.uniform(-5, 5, (20,1))
 Y = np.array([0.25 * (a*a) + (.25 * np.random.randn()) for a in X])
 {% endhighlight %}
 
-Our regression model requires a kernel for which we choose a RBF (or Gaussian) kernel with a default variance and length-scale of 1. The length-scale influences the width of the Gaussian and roughly defines the correlation strength between two points: i.e. how far must two points to be apart to be considered "separated". how  With this kernel we are ready to optimize the model:
+Our regression model requires a kernel for which we choose a RBF (or Gaussian) kernel with a default variance and length-scale of 1. The length-scale influences the width of the Gaussian and roughly defines the correlation strength between two points: i.e. how far must two points to be apart to be considered "separated". With this kernel we are ready to optimize the model:
 
 {% highlight python %}
 kernel = GPy.kern.RBF(input_dim=1)
