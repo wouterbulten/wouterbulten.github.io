@@ -3,7 +3,7 @@ layout: post
 title:  "First steps with GPy"
 date:   2015-02-13 14:44
 categories: blog slac gp
-tags: featured
+tags:
 image: /assets/article_images/introgp_regress_preoptim.png
 math: true
 ---
@@ -47,7 +47,7 @@ X = np.random.uniform(-5, 5, (20,1))
 Y = np.array([0.25 * (a*a) + (.25 * np.random.randn()) for a in X])
 {% endhighlight %}
 
-Our regression model requires a kernel for which we choose a RBF kernel with a default variance and lengthscale of 1. With this kernel we are ready to optimize the model:
+Our regression model requires a kernel for which we choose a RBF (or Gaussian) kernel with a default variance and length-scale of 1. The length-scale influences the width of the Gaussian and roughly defines the correlation strength between two points: i.e. how far must two points to be apart to be considered "separated". how  With this kernel we are ready to optimize the model:
 
 {% highlight python %}
 kernel = GPy.kern.RBF(input_dim=1)
@@ -56,7 +56,7 @@ print m
 m.plot()
 {% endhighlight %}
 
-![Plot of the GP model before optimization. Black x's are training points. The line is the predicted function. The shaded region corresponds to the roughly 95% confidence interval.](/assets/inline_images/introgp_regress_preoptim.png)
+![Plot of the GP model before optimization. Black x's are training points. The line is the predicted function (posterior mean). The shaded region corresponds to the roughly 95% confidence interval.](/assets/inline_images/introgp_regress_preoptim.png)
 
 {% highlight python %}
 m.optimize()
