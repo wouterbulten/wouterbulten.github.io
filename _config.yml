@@ -3,9 +3,9 @@ markdown: kramdown
 highlighter: pygments
 
 # Site settings
-title: "Wouter bulten"
+title: "Wouter Bulten"
 description: > # this means to ignore newlines until "email:"
-   A personal blog about the things I come accross daily. Things about machine learning, development and more.
+  A personal blog about the things I come accross daily. Rangin from machine learning and (web) development to new technologies.
 
 email: ""
 #blog logo
