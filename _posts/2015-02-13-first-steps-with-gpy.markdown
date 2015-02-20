@@ -3,7 +3,7 @@ layout: post
 title:  "First steps with GPy"
 date:   2015-02-13 14:44
 categories: blog slac gp
-tags:
+tags: dobots
 image: /assets/article_images/introgp_regress_preoptim.png
 math: true
 ---

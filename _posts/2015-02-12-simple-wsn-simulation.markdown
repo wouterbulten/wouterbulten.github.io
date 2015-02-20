@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "Simple WSN Simulation with Matplotlib Animations"
-date:   2015-02-13 14:44
+date:   2015-02-12 14:44
 categories: blog slac
-tags:
+tags: dobots
 image: /assets/article_images/wsn_sim.png
 ---
 
