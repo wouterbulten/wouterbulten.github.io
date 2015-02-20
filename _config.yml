@@ -5,7 +5,7 @@ highlighter: pygments
 # Site settings
 title: "Wouter Bulten"
 description: > # this means to ignore newlines until "email:"
-  A personal blog about the things I come accross daily. Rangin from machine learning and (web) development to new technologies.
+  A personal blog about the things I come accross daily. Ranging from machine learning and (web) development to new technologies.
 
 email: ""
 #blog logo
@@ -27,19 +27,6 @@ baseurl: ""
 
 # social icons and sharing options
 social:
-#  - icon:	twitter
-#    url:	https://twitter.com/dirkfabisch
-#    desc: Follow me on twitter
-#    share_url: http://twitter.com/share
-#    share_title: ?text=
-#    share_link: "&amp;url="
-
-#  - icon:	facebook
-#    url:	https://facebook.com/???
-#    desc: Connect with me facebook
-#    share_url: //www.facebook.com/sharer.php
-#    share_title: ?t=
-#    share_link: "&amp;u="
 
   - icon: linkedin
     url:  https://linkedin.com/in/wouterbulten
@@ -50,7 +37,7 @@ social:
 
   - icon:	github
     url:	https://github.com/wouterbulten
-    desc:	Fork me on github
+    desc:	View my profile on GitHub
     share_url:
     share_title:
     share_link:
