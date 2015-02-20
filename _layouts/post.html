@@ -78,6 +78,12 @@ layout: compress
           <div class="isRight">
             <h5 class="index-headline featured"><span>Supported by</span></h5>
             <footer class="site-footer">
+              {% for tag in page.tags %}
+                {%if tag == 'dobots' %}
+                  This post was written as part of my internship at <a href="https://dobots.nl">DoBots</a> and <a href="http://www.almende.com">Almende</a>.
+                  <hr>
+                {% endif %}
+              {% endfor %}
               <section class="poweredby">Proudly published with <a href="http://jekyllrb.com"> Jekyll</a></section>
               <a class="subscribe" href="{{ "/feed.xml" | prepend: site.baseurl }}"> <span class="tooltip"> <i class="fa fa-rss"></i> You should subscribe to my feed.</span></a>
               <div class="inner">

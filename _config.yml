@@ -5,7 +5,7 @@ highlighter: pygments
 # Site settings
 title: "Wouter bulten"
 description: > # this means to ignore newlines until "email:"
-   Wouter Bulten - Personal blog
+   A personal blog about the things I come accross daily. Things about machine learning, development and more.
 
 email: ""
 #blog logo
