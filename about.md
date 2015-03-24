@@ -28,4 +28,4 @@ The design of this blog is built upon the [Mediator](https://github.com/dirkfabi
 
 [^1]: It could drive, find sunlight and charge its battery with its on-board solar panels, it however never survived a full year autonomously.
 [^2]: [MSP430 Launchpad](http://www.ti.com/ww/en/launchpad/launchpads-msp430.html)
-[^3]: **Sharing Blood: A Decentralised Trust and Sharing Ecosystem based on the Vampire Bat**, In: _Jos W.H.M. Uiterwijk, Nico Roos, and Mark H.M. Winands (eds.), The 24th Benelux Conference on Artificial Intelligence (BNAIC) 2012, Proceedings of the 24th Benelux Conference on Artificial Intelligence, 25 - 26 October 2012, Maastricht, The Netherlands, ISSN 1568-7805_, pp. 35-42
+[^3]: Wouter Bulten, Willem Haselager, and Ida Sprinkhuizen-Kuyper (2012), **Sharing Blood: A Decentralised Trust and Sharing Ecosystem based on the Vampire Bat**, In: _Jos W.H.M. Uiterwijk, Nico Roos, and Mark H.M. Winands (eds.), The 24th Benelux Conference on Artificial Intelligence (BNAIC) 2012, Proceedings of the 24th Benelux Conference on Artificial Intelligence, 25 - 26 October 2012, Maastricht, The Netherlands, ISSN 1568-7805_, pp. 35-42
