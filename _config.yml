@@ -2,6 +2,7 @@
 markdown: kramdown
 highlighter: pygments
 
+permalink: pretty
 # Site settings
 title: "Wouter Bulten"
 description: > # this means to ignore newlines until "email:"
@@ -19,11 +20,15 @@ author_image: "/assets/images/author.jpg"
 
 paginate:	5
 
-exclude: [vendor] # for travis
+exclude: [vendor, node_modules, _cooking_images, _scripts] # for travis
+include: [cooking]
+
 sass:
   style: compressed
 url: "http://wouterbulten.nl" # the base hostname & protocol for your site
 baseurl: ""
+
+encoding: utf-8
 
 # social icons and sharing options
 social:
