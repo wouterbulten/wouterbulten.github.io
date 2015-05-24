@@ -133,7 +133,7 @@ async.series([
 			if(file == '.DS_Store') {
 				return;
 			}
-			
+
 			var imgPath = path.join(dir, file);
 
 			//Create a proper name
@@ -149,13 +149,13 @@ async.series([
 				'title: ' + name + '\n' +
 				//'image: ' + '/assets/images/cooking/' + fileWithoutExt + '_l.jpg' + '\n' +
 				'---' + '\n' +
-				'<img src="/assets/images/cooking/' + fileWithoutExt + '_l.jpg" title="' + name + '" itemprop="image">'
+				'<img src="/assets/images/cooking/' + fileWithoutExt + '_l.jpg" title="' + name + '" itemprop="image" alt="' + name + '">'
 			;
 			fs.writeFile(path.join(blogDir, url + '.html'), content);
 
 			indexOutput += 
 				'<a href="/cooking/' + url + '">' +
-				'<img src="/assets/images/cooking/' + fileWithoutExt + '_th.jpg" title="' + name + '">' +
+				'<img src="/assets/images/cooking/' + fileWithoutExt + '_th.jpg" title="(Show full image) ' + name + '" alt="' + name + '">' +
 				'</a>';
 		});
 
