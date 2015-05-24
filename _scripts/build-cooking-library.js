@@ -48,6 +48,10 @@ async.series([
 		// For every file in the list
 		list.forEach(function (file) {
 
+			if(file == '.DS_Store') {
+				return;
+			}
+
 			var imgPath = path.join(dir, file);
 
 			//Create a proper name
@@ -55,7 +59,7 @@ async.series([
 			var name = fileWithoutExt.replace(/-/g, ' ');
 			name = name.charAt(0).toUpperCase() + name.slice(1) + '.';
 
-			console.log(name);
+			console.log(imgPath + ": " + name);
 
 			lwip.open(imgPath, function(err, image) {
 
@@ -96,7 +100,7 @@ async.series([
 		.src(path.join(tmp, '*.{gif,jpg,png,svg}'))
 		.dest(dest)
 		.use(Imagemin.jpegtran({progressive: true}))
-		.run(function (err, files) {}),
+		.run(function (err, files) { console.log(files); }),
 
 	//Delete the blog dir and the contents
 	deleteFolderRecursive(blogDir),
@@ -126,6 +130,10 @@ async.series([
 		// For every file in the list
 		list.forEach(function (file) {
 
+			if(file == '.DS_Store') {
+				return;
+			}
+			
 			var imgPath = path.join(dir, file);
 
 			//Create a proper name
