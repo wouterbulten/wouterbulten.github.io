@@ -25,7 +25,7 @@ include: [cooking]
 
 sass:
   style: compressed
-url: "http://wouterbulten.nl" # the base hostname & protocol for your site
+url: "https://wouterbulten.nl" # the base hostname & protocol for your site
 baseurl: ""
 
 encoding: utf-8
@@ -34,7 +34,7 @@ encoding: utf-8
 social:
 
   - icon: linkedin
-    url:  https://linkedin.com/in/wouterbulten
+    url:  https://www.linkedin.com/in/wouterbulten
     desc: View my LinkedIn profile
     share_url:
     share_title:
