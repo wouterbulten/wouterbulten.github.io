@@ -19,7 +19,7 @@ I am Wouter Bulten, currently an AI master student at [Radboud University](http:
 
 ### More info?
 
-See my [LinkedIn](http://linkedin.com/in/wouterbulten) or [GitHub](http://www.github.com/wouterbulten) page.
+See my [LinkedIn](https://www.linkedin.com/in/wouterbulten) or [GitHub](https://www.github.com/wouterbulten) page.
 
 The design of this blog is built upon the [Mediator](https://github.com/dirkfabisch/mediator) theme.
 
