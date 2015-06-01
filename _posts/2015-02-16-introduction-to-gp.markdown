@@ -5,6 +5,7 @@ date:   2015-02-16 22:48
 categories: blog
 tags: dobots
 math: true
+published: false
 ---
 
 ## Random variables and distributions
