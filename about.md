@@ -9,7 +9,7 @@ I am Wouter Bulten, currently an AI master student at [Radboud University](http:
 
 ### Some previous projects/things I worked on?
 
-* Tried[^1] to build a fully autonomous robot, _Solen_, that could surive outside (in any garden) for a full year. 
+* Tried[^1] to build a fully autonomous robot, _Solen_, that could surive outside (in any garden) for a full year.
 * I have been chair of the annual AI symposium [ACAIS](http://www.acais.nl), and recently built the [new website](https://github.com/wouterbulten/acais-website) together with [Thijs van Nieuwdorp](http://tnieuwdorp.github.io/).
 * Developed a wireless sensor node (the [DomuLink](http://www.domulink.com)) during my masters with two fellow students.
 * Co-developed/hosted workshops on Artificial Life simulations using Breve ([source](https://github.com/wouterbulten/ACAIS2013Workshop), [presentation]({{ site.url }}/assets/files/ACAIS2013_WorkshopPresentation.pdf), [docs]({{ site.url }}/assets/files/ACAIS2013Workshop_Instructions.pdf)) and microcontrollers with the MSP430[^2] ([presentation]({{ site.url }}/assets/files/ACAIS2014_WorkshopPresentation.pdf)).
@@ -21,7 +21,7 @@ I am Wouter Bulten, currently an AI master student at [Radboud University](http:
 
 See my [LinkedIn](https://www.linkedin.com/in/wouterbulten) or [GitHub](https://www.github.com/wouterbulten) page.
 
-The design of this blog is built upon the [Mediator](https://github.com/dirkfabisch/mediator) theme.
+The design of this blog is built upon the [Mediator](https://github.com/dirkfabisch/mediator) theme and hosted using [GitHub Pages](https://www.github.com). Blog header by Federico Bottos.
 
 
 ### Footnotes
