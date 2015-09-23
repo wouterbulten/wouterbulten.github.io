@@ -4,3 +4,4 @@ _site
 node_modules
 _scripts/.tmp-images
 .bundle
+Gemfile.lock
