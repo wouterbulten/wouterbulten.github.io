@@ -30,6 +30,8 @@ baseurl: ""
 
 encoding: utf-8
 
+disqus: wouterbulten
+
 # social icons and sharing options
 social:
 
