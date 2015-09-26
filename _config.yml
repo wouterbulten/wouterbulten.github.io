@@ -2,7 +2,7 @@
 markdown: kramdown
 highlighter: pygments
 
-permalink: pretty
+permalink: /:categories/:title
 # Site settings
 title: "Wouter Bulten"
 description: > # this means to ignore newlines until "email:"
