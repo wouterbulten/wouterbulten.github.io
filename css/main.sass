@@ -612,3 +612,40 @@ pre
 
 abbr
   border-bottom: 1px dotted black
+
+/* Custom page styles */
+body.page-cv
+  .post
+    dd
+      margin-bottom: 10px
+      font-size: 18px
+    dt
+      font-variant: small-caps
+      margin-bottom: 5px
+
+    .lang-table
+      width: 100%
+      text-align: left
+      border-spacing: 10px
+      border-collapse: separate
+      padding-top: 20px
+      
+      tr td:last-child
+        width: 40%
+        border: 1px solid grey
+        height: 10px
+        padding: 4px
+
+      .expert, .intermediate, .good, .beginner
+        display: block
+        height: 100%
+        background-color: #6AB871
+
+      .expert
+        width: 90%
+      .good
+        width: 70%
+      .intermediate
+        width: 50%
+      .beginner
+        width: 20%
