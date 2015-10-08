@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Curriculum Vitae
-permalink: /cv/
+permalink: /resume/
 ---
 
 I am Wouter Bulten, a recently graduated AI master student from the [Radboud University](http://www.ru.nl), and work part-time as a web/software developer at [123test](http://www.123test.com) [.com](http://www.123test.com) /[.nl](http://www.123test.nl).
