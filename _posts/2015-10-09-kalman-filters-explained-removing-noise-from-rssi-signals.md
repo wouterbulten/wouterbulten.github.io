@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Noise filtering of RSSI data using Javascript and Kalman filters"
-date:   2015-09-24 20:08
+title:  "Kalman filters explained: Removing noise from RSSI signals"
+date:   2015-09-27 20:08
 categories: blog slac tech
 tags: javascript kalman rssi noise
 chartjs: true
 math: true
 post_scripts: kalman-noise-filtering
-published: false
+published: true
 ---
 
 If you have heard about *iBeacons* or indoor localization before, then you have probably also heard about *RSSI*: the **Received Signal Strength Indicator**. The RSSI value resembles the power of a received radio signal (measured in *dBm*). The higher the RSSI value, the higher the signal strength. The rationale behind using RSSI values is that almost all wireless systems report and use this value natively; i.e. no additional sensors are required to measure RSSI values. It can therefore be considered as a free input to a system.
@@ -66,7 +66,7 @@ For our RSSI filtering application we assume that a device doesn't move. Moreove
 x _ {t} = A _ {t}x _ {t-1} + B _ {t}u _ {t} + \epsilon _ {t} \approx x _ {t-1} + \epsilon _ {t}
 \end{equation}
 
-The second part of the Kalman filter is defining the observation model: how does a particular state $x$ to a measurement $z$? The general model is as follows:
+The second part of the Kalman filter is defining the observation model: how does a particular state $x$ result in a measurement $z$? The general model is as follows:
 
 \begin{equation}
 z _ {t} = C _ {t}x _ {t} + \delta _ {t}
@@ -78,6 +78,47 @@ We model RSSI directly; i.e. our state and measurements are equal. This results 
 z _ {t} = C _ {t}x _ {t} + \delta _ {t} \approx x _ {t} + \delta _ t
 \end{equation}
 
+## Updating the filter
+
+With our two transitions defined we can define the prediction step of the Kalman filter. This step describes what we expect our state to be without using any measurements. As we assume a static system our prediction step is straightforward:
+
+\begin{equation}
+\bar\mu _ t = \mu _ {t-1}
+\end{equation}
+
+\begin{equation}
+\bar\Sigma _ t = \Sigma _ {t-1} + R _ t
+\end{equation}
+
+Note the difference between $x$ and $\mu$: $\mu$ describes our prediction and $x$ the true value of the state. The bar above the $\mu$ denotes that we yet have to incorporate information from the measurement. $\Sigma$ defines the certainty of our prediction. We base this on the previous certainty (if we were unsure about the previous measurement, the next one will be unsure too) and the process noise $R$ which describes noise caused by the system itself. For the RSSI example we can use a low value (e.g. 0.008) for this, we assume that most of the noise is caused by the measurements.
+
+Using our prediction estimate we compute the Kalman gain:
+
+\begin{equation}
+K_t = \bar\Sigma_t (\bar\Sigma_t Q_t)^{-1}
+\end{equation}
+
+This Kalman gain is a simplified version of the full Kalman gain; we have a static system and this simplifies the filter. The gain is used as a weighting function between the certainty of our estimate and the certainty of the measurement (influenced by the measurement noise $Q$). $Q$ is set to a value that relates to the noise in the actual measurements (e.g. the variance of the RSSI signal).
+
+When we are very uncertain about our system (i.e. $\Sigma$ is large) or the measurement noise is low (i.e. $Q$ is low) the Kalman gain will be high. This translates directly to the update step:
+
+\begin{equation}
+\mu_t = \bar\mu_t + K_t(z_t - \bar\mu_t)
+\end{equation}
+\begin{equation}
+\Sigma_t = \bar\Sigma_t - (K_t \bar\Sigma_t)
+\end{equation}
+
+In the update step we compute the final prediction of the system ($\mu$) and the certainty $\Sigma$. The larger the Kalman gain the more we integrate the measurement into our state estimate. If the Kalman gain is low we trust our prediction more and only use little information of the measurement.
+
+Try to imagine how this characteristic results in a filter: On every step, the Kalman filter decides how much of the measurement it takes in to account based on the certainty.
+
+## Putting the filter into practice
+
+We defined our model, we defined the filter. Now it is time to put the filter to a test. Does it remove the noise?
+
+I applied a simple Kalman filter to the "1m" data from the RSSI example. I am using the [KalmanJS]({% post_url 2015-09-25-lightweight-javascript-library-for-noise-filtering %}) library which you can find on [GitHub](https://github.com/wouterbulten/kalmanjs) or read more about in a [different post]({% post_url 2015-09-25-lightweight-javascript-library-for-noise-filtering %}). The results are shown in the figure below:
+
 -----
 <div id="chart-kalman-2-legend"></div>
 <canvas id="chart-kalman-2" width="640" height="400"></canvas>
@@ -85,6 +126,9 @@ z _ {t} = C _ {t}x _ {t} + \delta _ {t} \approx x _ {t} + \delta _ t
 
 -----
 
+By using a Kalman filter we are able to remove noise from a very noise signal. As the update functions are easy to compute this can be done really fast. The only drawback is that we lose a bit of responsiveness, but get a clearer signal in return!
+
+# References & Notes
 [^1]: Many researchers question whether RSSI values contains any value at all. For example:<br> Dong, Q., & Dargie, W. (2012). _Evaluation of the reliability of RSSI for indoor localization_. In _2012 International Conference on Wireless Communications in Underground and Confined Areas, ICWCUCA 2012_. doi:10.1109/ICWCUCA.2012.6402492
 [^2]: Oguejiofor, O., Okorogu, V., Abe, A., & BO, O. (2013). _Outdoor Localization System Using RSSI Measurement of Wireless Sensor Network. International Journal of Innovative Technology and Exploring Engineering (IJITEE)_, 2(2), 1–6.
 [^3]: There is also a extended version of the Kalman filter that works with non-linear models.
