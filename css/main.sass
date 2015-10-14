@@ -125,7 +125,7 @@ body
     text-align: center
     font-weight: 400
   .custom-links
-    margin: 0 0 50px
+    margin: 0 0 25px
     text-align: center
     color: #ccc
     a
@@ -133,6 +133,20 @@ body
       color: #999
       &:hover
         color: #333
+  .categories
+    text-align: center
+    .category
+      border: 2px solid black
+      display: inline-block
+      width: 35%
+      font-size: 20px
+      padding: 10px
+      margin: 0 10px 50px 10px
+      text-align: center
+      text-decoration: none
+      color: black
+      &:hover
+        background-color: #ECECEC
 
 .content
   width: 100%
@@ -146,6 +160,11 @@ body
     border-bottom: 1px solid #f2f2f0
     &:last-child
       border-bottom: 0px
+
+    .post-category
+      font-size: 20px
+      margin: 0 0 10px -22px
+      display: inline-block
     .post-title
       letter-spacing: -0.02em
       font-weight: 700

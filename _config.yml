@@ -6,7 +6,7 @@ permalink: /:categories/:title
 # Site settings
 title: "Wouter Bulten"
 description: > # this means to ignore newlines until "email:"
-  A personal blog about the things I come accross daily. Ranging from machine learning and (web) development to new technologies.
+  A personal blog about two of my passions: Technology and cooking. Ranging from machine learning and (web) development to sous vide cooking and making desserts!
 
 email: ""
 #blog logo
