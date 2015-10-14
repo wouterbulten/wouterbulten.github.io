@@ -2,7 +2,7 @@
 layout: post
 title:  "First steps with GPy"
 date:   2015-02-13 14:44
-categories: blog slac gp
+categories: blog tech
 tags: dobots
 image: /assets/article_images/introgp_regress_preoptim.png
 math: true
@@ -18,7 +18,7 @@ GPy can be installed using _pip_ which is probably the most convenient way. Just
 
 	pip install gpy
 
-and GPy and its dependencies should be installed. 
+and GPy and its dependencies should be installed.
 
 > _Note:_ GPy does not work smoothly with Python 3+. An [attempt](https://github.com/wouterbulten/GPy/tree/python3) to do a 'quick and dirty' conversion did not work reliably. I suggest you use an 2.* installation of Python in combination with GPy until its authors update the framework.
 
@@ -26,7 +26,7 @@ If you install _nose_ you can run the tests embedded in GPy to see if the instal
 
 	pip install nose
 	ipython
-	
+
 {% highlight python %}
 import GPy
 GPy.tests()
@@ -79,7 +79,7 @@ After the parameters of the model have been optimized the GP has a significant b
 
 ## Alternatives
 
-There are also other GP frameworks for python apart from _GPy_. The _[pyGPs](https://github.com/marionmari/pyGPs)_ ([docs](http://www-ai.cs.uni-dortmund.de/weblab/static/api_docs/pyGPs/)) package is a good example with support for both classification and regression. 
+There are also other GP frameworks for python apart from _GPy_. The _[pyGPs](https://github.com/marionmari/pyGPs)_ ([docs](http://www-ai.cs.uni-dortmund.de/weblab/static/api_docs/pyGPs/)) package is a good example with support for both classification and regression.
 
-## References 
+## References
 [^1]: We follow here the definitions as described by _Rasmussen, C. E., & Williams, C. (2006). Gaussian Processes for Machine Learning. the MIT Press._
