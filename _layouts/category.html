@@ -5,7 +5,7 @@ layout: default
 {% assign cat = page.category | downcase %}
 
 <div class="teaserimage">
-    <div class="teaserimage-image" {% if site.cover %}style="background-image: url({{ site.cover }})"{% endif %}>
+    <div class="teaserimage-image" {% if site.cover %}style="background-image: url('/assets/images/{{cat}}_bg.jpg')"{% endif %}>
         Blog header image
     </div>
 </div>
@@ -21,7 +21,7 @@ layout: default
   </div>
 </header>
 {{ site.categories.cat[0]}}
-<main class="content" role="main">
+<main class="content post-image-list" role="main">
   <div class="cf frame">
     {% for post in site.categories.[cat] %}
       <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
@@ -29,12 +29,26 @@ layout: default
           <header class="post-header">
             <h2 class="post-title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
           </header>
-          <section class="post-excerpt" itemprop="description">
-            <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
-          </section>
-          <div class="post-meta">
-            <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
-  <!--            <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span>-->
+
+          {%if post.post_image %}
+            <div class="article-list-image">
+              <a href="{{ post.url }}"><img src="{{post.post_image}}"></a>
+            </div>
+          {% endif %}
+
+          <div class="post-preview">
+            <section class="post-excerpt" itemprop="description">
+              <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
+            </section>
+
+            <div class="post-meta">
+              <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
+    <!--            <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span>-->
+
+              , <a class="read-more" href="{{ post.url }}">Start reading &rarr;</a>
+            </div>
+
+
           </div>
         </div>
       </article>
