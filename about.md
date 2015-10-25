@@ -4,8 +4,9 @@ title: About
 permalink: /about/
 ---
 
-I am Wouter Bulten, currently an AI master student at [Radboud University](http://www.ru.nl), doing an internship at [Almende](http://www.almende.org) &amp; [DoBots](http://www.dobots.nl) and working as a web/software developer at [123test](http://www.123test.com) [.com](http://www.123test.com) /[.nl](http://www.123test.nl).
+I am Wouter Bulten, currently working as a software developer at [123test](http://www.123test.com) [.com](http://www.123test.com) /[.nl](http://www.123test.nl). I recently received my Master's degree in Artificial Intelligence from the [Radboud University](http://www.ru.nl).
 
+This blog is a result of my passion for technology and cooking: two very different fields which, when you look closer, have a lot in common. My way of improving and learning is writing about the things I learn; what better way than publishing this in the form of a blog?
 
 ### Some previous projects/things I worked on?
 

@@ -31,7 +31,7 @@ layout: default
     <h5 class="index-headline normal"><span>Regular</span></h5>
     {% endif %}
 
-    <div class="cf frame">
+    <div class="cf post-image-list frame">
       {% for post in paginator.posts %}
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
           <div class="article-item">
@@ -39,12 +39,19 @@ layout: default
               <div class="post-category-list">{{ post.categories[1] }}</div>
               <h2 class="post-title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
             </header>
+
+            {%if post.post_image %}
+              <div class="article-list-image">
+                <a href="{{ post.url }}"><img src="{{post.post_image}}"></a>
+              </div>
+            {% endif %}
+
             <section class="post-excerpt" itemprop="description">
               <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
             </section>
             <div class="post-meta">
               <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
-<!--            <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span>-->
+              ,&nbsp;<a class="read-more" href="{{ post.url }}">Start reading &rarr;</a>
             </div>
           </div>
         </article>
