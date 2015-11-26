@@ -65,7 +65,7 @@ body
     background-repeat: no-repeat
 
 .teaserimage
-  height: 450px
+  height: 350px
   position: relative
   overflow: hidden
   background-color: #000
@@ -125,7 +125,7 @@ body
     text-align: center
     font-weight: 400
   .custom-links
-    margin: 0 0 50px
+    margin: 0 0 25px
     text-align: center
     color: #ccc
     a
@@ -133,6 +133,20 @@ body
       color: #999
       &:hover
         color: #333
+  .categories
+    text-align: center
+    .category
+      border: 2px solid black
+      display: inline-block
+      width: 35%
+      font-size: 20px
+      padding: 10px
+      margin: 0 10px 50px 10px
+      text-align: center
+      text-decoration: none
+      color: black
+      &:hover
+        background-color: #ECECEC
 
 .content
   width: 100%
@@ -146,6 +160,11 @@ body
     border-bottom: 1px solid #f2f2f0
     &:last-child
       border-bottom: 0px
+
+    .post-category
+      font-size: 20px
+      margin: 0 0 10px -22px
+      display: inline-block
     .post-title
       letter-spacing: -0.02em
       font-weight: 700
@@ -175,6 +194,13 @@ body
         text-decoration: none
         &:hover
           text-decoration: underline
+
+    .post-header
+      .post-category-list
+        text-transform: uppercase
+        font-size: 15px
+        margin-bottom: 5px
+        color: #b3b3b1
 .container.featured
   padding-bottom: 40px
 
@@ -182,7 +208,8 @@ body
   max-width: 700px
 
 .index-headline
-  border-top: 1px solid #dededc
+  &.normal
+    border-top: 1px solid #dededc
   margin: 0
   padding: 16px 0
   span
@@ -198,7 +225,7 @@ body
 .pagination
   text-align: center
   padding: $rs*3 0 0
-  font-size: $rs/4*3
+  font-size: $rs
   a
     color: #999
     text-decoration: none
@@ -612,3 +639,27 @@ pre
 
 abbr
   border-bottom: 1px dotted black
+
+/* Category css
+.post-image-list
+  .article-list-image
+    height: 100px
+    overflow: hidden
+    margin-top: 20px
+    border: 1px solid black
+
+  a.read-more
+    color: black
+/* Custom classes for recipes */
+.post
+  ul.ingredient-list, ul.material-list
+    padding: 10px 0 10px 0
+    li
+      margin-bottom: 0
+      font-size: 18px
+    /* Sub list are notes */
+    ul
+      padding: 0
+      li
+        font-size: 15px
+        line-height: 18px

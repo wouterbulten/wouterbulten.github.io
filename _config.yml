@@ -6,7 +6,7 @@ permalink: /:categories/:title
 # Site settings
 title: "Wouter Bulten"
 description: > # this means to ignore newlines until "email:"
-  A personal blog about the things I come accross daily. Ranging from machine learning and (web) development to new technologies.
+  A personal blog about two of my passions: technology and cooking. Ranging from machine learning and (web) development to sous vide cooking and making desserts!
 
 email: ""
 #blog logo
@@ -18,7 +18,8 @@ name: 'Wouter Bulten'
 author: 'Wouter Bulten'
 author_image: "/assets/images/author.jpg"
 
-paginate:	5
+paginate:	8
+paginate_path: "blog/:num"
 
 exclude: [vendor, node_modules, _cooking_images, _scripts] # for travis
 include: [cooking]
