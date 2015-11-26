@@ -42,7 +42,7 @@ layout: default
 
             {%if post.post_image %}
               <div class="article-list-image">
-                <a href="{{ post.url }}"><img src="{{post.post_image}}"></a>
+                <a href="{{ post.url }}"><img src="{{post.post_image}}" alt="{{ post.title }}"></a>
               </div>
             {% endif %}
 
