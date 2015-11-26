@@ -9,7 +9,7 @@ task :test do
     :check_favicon => true,
     :check_html => true,
     :error_sort => 'desc',
-    :href_swap {
+    :href_swap => {
       'https://wouterbulten.nl' => '', # canonical link in head
     },
   }).run
