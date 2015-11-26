@@ -22,7 +22,7 @@ This blog is a result of my passion for technology and cooking: two very differe
 
 See my [LinkedIn](https://www.linkedin.com/in/wouterbulten) or [GitHub](https://www.github.com/wouterbulten) page.
 
-The design of this blog is built upon the [Mediator](https://github.com/dirkfabisch/mediator) theme and hosted using [GitHub Pages](https://www.github.com). Blog header by Federico Bottos.
+The design of this blog is built upon the [Mediator](https://github.com/dirkfabisch/mediator) theme and hosted using [GitHub Pages](https://www.github.com). Blog header (on the homepage) by Federico Bottos.
 
 
 ### Footnotes

@@ -18,7 +18,8 @@ name: 'Wouter Bulten'
 author: 'Wouter Bulten'
 author_image: "/assets/images/author.jpg"
 
-paginate:	5
+paginate:	8
+paginate_path: "blog/:num"
 
 exclude: [vendor, node_modules, _cooking_images, _scripts] # for travis
 include: [cooking]
