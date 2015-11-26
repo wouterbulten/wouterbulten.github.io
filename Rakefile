@@ -8,7 +8,7 @@ task :test do
     :verbose => true,
     :check_favicon => true,
     :check_html => true,
-    :error_sort => 'desc',
+    #:error_sort => 'desc',
     :href_swap => {
       'https://wouterbulten.nl' => '', # canonical link in head
     },
