@@ -54,5 +54,31 @@
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" media="screen" href="{{ "/css/main.css"  | prepend: site.baseurl  }}" />
-  <link rel="stylesheet" type="text/css" media="print" href="{{ "/css/print.css"  | prepend: site.baseurl  }}" />
+  <style type="text/css">
+    @media print {
+      .article-image{
+      page-break-after:never
+      }
+      .post-content,
+      .bottom-teaser.cf{
+        padding-top:0!important
+      }
+      .bottom-teaser.cf{
+        margin:0
+      }
+      .post-reading,
+      .bottom-teaser.cf .isRight,
+      .cf.post-meta-text,
+      .post-meta center,
+      .post-image-image,
+      .bottom-closer,
+      .share,
+      .home-template .post-meta .post-tags-set,
+      .pagination,
+      .author-image,
+      .subscribe icon-feed{
+        display:none;
+      }
+    }
+  </style>
 </head>
