@@ -5,6 +5,8 @@
 
 @import 'bourbon/bourbon'
 
+$media-phone: "only screen and (max-width : 320px)"
+
 .cf
   @include clearfix
 
@@ -69,6 +71,8 @@ body
   position: relative
   overflow: hidden
   background-color: #000
+  @media #{$media-phone}
+    height: 100px
   .teaserimage-image
     background-size: cover
     background-position: center
@@ -116,6 +120,8 @@ body
     line-height: 50px
     word-break: break-word
     color: #333
+    @media #{$media-phone}
+      font-size: 30px
   .blog-description
     margin: 0 0 20px
     padding: 0 $rs*2
@@ -124,6 +130,8 @@ body
     color: #666
     text-align: center
     font-weight: 400
+    @media #{$media-phone}
+      font-size: 15px
   .custom-links
     margin: 0 0 25px
     text-align: center
@@ -135,19 +143,24 @@ body
         color: #333
   .categories
     text-align: center
+    display: table
+    border-spacing: 10px
+    border-collapse: separate
+    margin: 0 5vw 50px 5vw
     .category
       border: 2px solid black
-      display: inline-block
+      display: table-cell
       width: 35%
       font-size: 20px
-      padding: 10px
-      margin: 0 10px 50px 10px
+      padding: 1vw
       text-align: center
       text-decoration: none
       color: black
+      vertical-align: top
       &:hover
         background-color: #ECECEC
-
+      @media #{$media-phone}
+        font-size: 15px
 .content
   width: 100%
   max-width: 640px
