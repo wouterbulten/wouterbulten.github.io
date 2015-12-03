@@ -3,7 +3,7 @@ layout: post
 title:  "Using wine leftovers: making red wine salt"
 date:   2015-10-23
 categories: blog cooking
-tags: wine salt garnish
+tags: [wine salt, garnish, leftovers]
 post_image: /assets/images/recipes/red-wine-salt-post.jpg
 ---
 

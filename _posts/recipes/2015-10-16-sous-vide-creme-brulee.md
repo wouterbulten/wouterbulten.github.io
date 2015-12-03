@@ -3,7 +3,7 @@ layout: post
 title:  "Sous vide crème brûlée: easy and delicious"
 date:   2015-10-16
 categories: blog cooking
-tags: dessert brulee sous-vide
+tags: [dessert, brulee, sous-vide]
 post_image: /assets/images/recipes/brulee-post.jpg
 ---
 

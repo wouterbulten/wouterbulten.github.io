@@ -3,7 +3,7 @@ layout: post
 title:  "Lightweight Javascript library for Noise filtering using Kalman filters"
 date:   2015-09-25 16:08
 categories: blog tech
-tags: javascript kalman noise
+tags: [javascript, kalman filter, noise, kalmanjs, library]
 chartjs: true
 math: false
 post_scripts: kalmanjs-examples

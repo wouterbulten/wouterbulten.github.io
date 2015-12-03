@@ -3,7 +3,7 @@ layout: post
 title:  "The quest for a perfect mousse: The fast option"
 date:   2015-10-15
 categories: blog cooking
-tags: mousse siphon chocolate
+tags: [mousse, cooking, siphon, dessert, chocolate]
 post_image: /assets/images/recipes/chocolate-mousse-post.jpg
 ---
 

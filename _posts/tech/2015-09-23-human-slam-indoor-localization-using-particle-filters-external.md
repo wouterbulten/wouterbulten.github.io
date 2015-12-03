@@ -3,7 +3,7 @@ layout: post
 title:  "Human SLAM, Indoor localization using particle filters (External blog post)"
 date:   2015-09-23 19:50
 categories: blog tech
-tags: dobots
+tags: [slam, particle filters, external post, indoor localization, dobots]
 ---
 
 A key problem (or challenge) within smart spaces is indoor localization: making estimates of users’ whereabouts. Without such information, systems are unable to react on the presence of users or, sometimes even more important, their absence. This can range from simply turning the lights on when someone enters a room to customizing the way devices interact with a specific user.

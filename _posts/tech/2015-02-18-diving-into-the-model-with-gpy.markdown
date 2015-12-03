@@ -3,8 +3,7 @@ layout: post
 title:  "Diving in into the Model with GPy"
 date:   2015-02-20 09:15
 categories: blog tech
-tags: dobots
-image: /assets/article_images/gplvm_optimize.png
+tags: [gpy, gaussian processes, dobots]
 ---
 
 Lately we looked at [GPy]({% post_url tech/2015-02-13-first-steps-with-gpy %}) using some simple examples. Now we'll dive deeper and look more closely to the inner workings of models. We'll start with the basics and continue further by decomposing the _Guassian Process Latent Variable_ model (GPLVM).

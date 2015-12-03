@@ -3,7 +3,7 @@ layout: post
 title:  "Kalman filters explained: Removing noise from RSSI signals"
 date:   2015-10-11 20:08
 categories: blog tech
-tags: javascript kalman rssi noise featured
+tags: [javascript, Kalman filter, RSSI, noise, featured]
 chartjs: true
 math: true
 post_scripts: kalman-noise-filtering

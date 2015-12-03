@@ -3,8 +3,7 @@ layout: post
 title:  "First steps with GPy"
 date:   2015-02-13 14:44
 categories: blog tech
-tags: dobots
-image: /assets/article_images/introgp_regress_preoptim.png
+tags: [gpy, GP, gaussian processes, dobots]
 math: true
 ---
 

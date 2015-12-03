@@ -3,8 +3,7 @@ layout: post
 title:  "Simple WSN Simulation with Matplotlib Animations"
 date:   2015-02-12 14:44
 categories: blog tech
-tags: dobots
-image: /assets/article_images/wsn_sim.png
+tags: [matplotlib, wsn, simulation, dobots]
 ---
 
 My internship and thesis revolves around _WSNs_: Wireless Sensor Networks. To get some more insights in the workings of these networks and I built a small simulator in Python. The full source can be found on the [SLACTest](https://github.com/wouterbulten/SLACTest)[^1] repository on GitHub.
