@@ -52,13 +52,14 @@ MathJax.Hub.Config({
       }
     });
 
-    {% if page.id %}
+    {% if page.readingTime %}
     /* Calculates Reading Time */
     $('.post-content').readingTime({
         readingTimeTarget: '.post-reading-time',
         wordCountTarget: '.post-word-count',
     });
-
+    {% endif %}
+    {% if page.id %}
     /* Creates Captions from Alt tags */
     $(".post-content img").each(function() {
         /* Let's put a caption if there is one */

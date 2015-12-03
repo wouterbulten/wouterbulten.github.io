@@ -14,7 +14,7 @@
       {% for social in site.social %}
         {% if social.url %}
             <a class="icon-{{ social.icon }}" href="{{ social.url }}" {% if social.desc %} title="{{ social.desc }}"{% endif %}>
-              <i class="fa fa-{{ social.icon }}"></i>
+              <svg class="svg-icon svg-icon-{{ social.icon }}"><use xlink:href="#icon-{{ social.icon }}"></use></svg>
             </a>
             &nbsp;&nbsp;·&nbsp;&nbsp;
         {% endif %}
