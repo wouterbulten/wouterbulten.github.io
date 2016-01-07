@@ -2,6 +2,9 @@
 markdown: kramdown
 highlighter: pygments
 
+gems:
+  - jekyll-sitemap
+
 permalink: /:categories/:title
 # Site settings
 title: "Wouter Bulten"
