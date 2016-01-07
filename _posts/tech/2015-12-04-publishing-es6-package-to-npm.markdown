@@ -4,7 +4,6 @@ title:  "Publishing an ES6/ES2015 package to NPM"
 date:   2015-12-28 20:08
 categories: blog tech
 tags: [javascript, es6, babel, npm, package]
-post_scripts: kalman-noise-filtering
 published: true
 ---
 
