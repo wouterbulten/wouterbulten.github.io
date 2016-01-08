@@ -683,3 +683,50 @@ abbr
   width: 1em
   height: 1em
   fill: currentColor
+
+/* Custom page styles */
+body.page-curriculum-vitae
+  .post
+    dd
+      margin-bottom: 10px
+      font-size: 18px
+
+      .desc
+        padding: 10px 0 0 30px
+        display: block
+        text-align: justify
+        font-size: 15px
+        color: #5C5C5C
+    dt
+      font-variant: small-caps
+      margin-bottom: 5px
+
+
+    .lang-table
+      width: 100%
+      text-align: left
+      border-spacing: 10px
+      border-collapse: separate
+      padding-top: 20px
+
+      tr td:last-child
+        width: 60%
+        border: 1px solid grey
+        height: 10px
+        padding: 4px
+
+      .expert, .intermediate, .good, .beginner, .familiar
+        display: block
+        height: 100%
+        background-color: #6AB871
+
+      .expert
+        width: 90%
+      .good
+        width: 70%
+      .intermediate
+        width: 55%
+      .familiar
+        width: 40%
+      .beginner
+        width: 20%
