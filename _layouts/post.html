@@ -81,6 +81,13 @@ layout: compress
               <p class="bio">{{author.bio}}</p>
               <hr>
               <p class="published">Published <time datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time></p>
+              <p class="published">Last modified
+                {%if page.modified %}
+                  <time itemprop="dateModified" datetime="{{ page.modified | date: "%F %R" }}">{{ page.modified | date_to_string }}</time>
+                {% else %}
+                  <time itemprop="dateModified" datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time>
+                {% endif %}
+              </p>
             </section>
           </div>
           {{/post}}
