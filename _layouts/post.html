@@ -4,11 +4,11 @@ layout: compress
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-  <body itemscope itemtype="http://schema.org/BlogPosting">
+  <body itemscope itemtype="http://schema.org/WebPage">
     <meta itemprop="inLanguage" content="en"/>
     {% include header.html %}
     <main class="content" role="main">
-      <article class="post">
+      <article class="post" itemprop="mainEntity" itemscope itemtype="http://schema.org/BlogPosting">
         {% if page.image %}
         <div class="article-image">
           <div class="post-image-image" style="background-image: url({% if page.image %}{{ page.image }}{% endif %})">
