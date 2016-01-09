@@ -30,12 +30,12 @@ layout: compress
         <div class="noarticleimage">
           <div class="post-meta">
             <span class="post-category"><a href="/{{page.categories | join: '/'}}">&larr; Back to category</a></span>
-            <h1 class="post-title">{{ page.title }}</h1>
+            <h1 class="post-title" itemprop="headline">{{ page.title }}</h1>
             <div class="cf post-meta-text">
               <div class="author-image" style="background-image: url({{ site.author_image }})">Blog Logo</div>
               <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{ site.author }}</h4>
               on
-              <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time>,
+              <time itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time>,
               <span class="keywords tags" itemprop="keywords">keywords: {{ page.tags | join: ', ' }}
             </div>
           </div>
@@ -44,7 +44,7 @@ layout: compress
         <br>
         <br>
         {% endif %}
-        <section class="post-content">
+        <section class="post-content" itemprop="articleBody">
           {% if page.readingTime %}
           <div class="post-reading">
             <span class="post-reading-time"></span> read
