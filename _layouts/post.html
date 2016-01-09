@@ -6,7 +6,7 @@ layout: compress
   {% include head.html %}
   <body itemscope itemtype="http://schema.org/WebPage">
     <meta itemprop="inLanguage" content="en"/>
-    <meta itemscope itemprop="mainEntityOfPage"  itemType="http://schema.org/BlogPosting" itemid="{{ page.url }}#post"/>
+    <meta itemscope itemprop="mainEntityOfPage"  itemType="http://schema.org/BlogPosting" itemid="{{site.url}}{{ page.url }}#post"/>
     {% include header.html %}
     <main class="content" role="main">
       <article class="post" id="post" itemprop="mainEntity" itemscope itemtype="http://schema.org/BlogPosting">
