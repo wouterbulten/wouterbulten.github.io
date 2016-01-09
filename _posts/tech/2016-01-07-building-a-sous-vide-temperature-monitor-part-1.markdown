@@ -3,7 +3,7 @@ layout: post
 title:  "Building a Sous Vide temperature monitor (Part 1, Hardware)"
 date:   2016-01-07 14:00
 categories: blog tech
-tags: [hardware, sous vide, cooking, arduino, spark core]
+tags: [hardware, sous vide, cooking, Arduino, Spark Core]
 published: true
 description: "Part one of my custom built external water bath monitor for sous vide. Running on a Spark Core and using DS18B20 temperature sensors for measurements."
 ---
