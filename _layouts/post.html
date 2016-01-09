@@ -31,6 +31,9 @@ layout: compress
           <div class="post-meta">
             <span class="post-category"><a href="/{{page.categories | join: '/'}}">&larr; Back to category</a></span>
             <h1 class="post-title" itemprop="headline">{{ page.title }}</h1>
+            {% if page.description %}
+              <p class="description"><em>Summary: </em><span itemprop="description">{{ page.description }}</span></p>
+            {% endif %}
             <div class="cf post-meta-text">
               <div class="author-image" style="background-image: url({{ site.author_image }})">Blog Logo</div>
               <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{ site.author }}</h4>
