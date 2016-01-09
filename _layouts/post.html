@@ -36,7 +36,10 @@ layout: compress
             {% endif %}
             <div class="cf post-meta-text">
               <div class="author-image" style="background-image: url({{ site.author_image }})">Blog Logo</div>
-              <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{ site.author }}</h4>
+
+              <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <h4 class="author-name" itemprop="name">{{ site.author }}</h4>
+              </div>
               on
               <time itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time>,
               <span class="keywords tags" itemprop="keywords">keywords: {{ page.tags | join: ', ' }}
