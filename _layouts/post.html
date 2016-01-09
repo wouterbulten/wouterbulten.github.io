@@ -6,10 +6,11 @@ layout: compress
   {% include head.html %}
   <body itemscope itemtype="http://schema.org/WebPage">
     <meta itemprop="inLanguage" content="en"/>
+    <meta itemprop="mainEntityOfPage" content="{{@blog.url}}/{{ page.url }}/#post" />
+
     {% include header.html %}
     <main class="content" role="main">
-      <article class="post" itemprop="mainEntity" itemscope itemtype="http://schema.org/BlogPosting">
-        <link itemprop="mainEntityOfPage" href="{{@blog.url}}/{{ page.url }}" />
+      <article class="post" id="post" itemprop="mainEntity" itemscope itemtype="http://schema.org/BlogPosting">
         {% if page.image %}
         <div class="article-image">
           <div class="post-image-image" style="background-image: url({% if page.image %}{{ page.image }}{% endif %})">
@@ -76,10 +77,12 @@ layout: compress
         <div class="bottom-teaser cf">
           <div class="isLeft">
             <h5 class="index-headline featured"><span>Published by</span></h5>
-            <section class="author" itemprop="publisher" itemtype="http://schema.org/Person">
-              <div itemprop="logo" class="author-image" style="background-image: url({{site.author_image}})">Blog Logo</div>
-              <h4><a itemprop="url" href="{{@blog.url}}/about/"><span itemprop="name">{{ site.author }}</span></a></h4>
-              <p class="bio">{{author.bio}}</p>
+            <section class="author">
+              <div itemprop="publisher" itemscope itemtype="http://schema.org/Person">
+                <div class="author-image" style="background-image: url({{site.author_image}})">Blog Logo</div>
+                <h4><a itemprop="url" href="{{@blog.url}}/about/"><span itemprop="name">{{ site.author }}</span></a></h4>
+                <p class="bio">{{author.bio}}</p>
+              </div>
               <hr>
               <p class="published">Published <time datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time></p>
               <p class="published">Last modified
