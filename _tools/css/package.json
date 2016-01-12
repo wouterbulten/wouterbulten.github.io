@@ -1,0 +1,15 @@
+{
+  "name": "above-the-fold",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Wouter Bulten",
+  "license": "",
+  "dependencies": {
+    "critical": "^0.7.0"
+  },
+  "private": true
+}
