@@ -20,7 +20,7 @@ var pageScripts = [
   {% capture script_file %}/assets/js/post-scripts/{{ script }}.js{% endcapture %}
   '{{ script_file | prepend: site.baseurl  }}',
   {% endfor %}
-]
+];
 
 /* First load main dependencies */
 loadjs(preloadDependencies, 'page', function() {
