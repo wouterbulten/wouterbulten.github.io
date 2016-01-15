@@ -3,7 +3,7 @@ layout: post
 title:  "Website status monitor using Jenkins"
 date:   2016-01-13 21:14
 categories: blog tech
-tags: [jenkins, dsl, http, shell]
+tags: [jenkins, dsl, http, groovy, shell]
 published: false
 description: "Jenkins is a great tool for continuous integration and deployment. It can also be used for monitoring websites that are live. In this post I'll show you my approach using a simple bash script."
 ---
@@ -108,18 +108,23 @@ Our script will now test the website multiple times, if all of these tests fail 
 
 We'll create the Jenkins job using a DSL file. Not sure what a DSL is? It is a great way to programmatically define Jenkins jobs. See for more info the great [plugin](https://wiki.jenkins-ci.org/display/JENKINS/Job+DSL+Plugin) that makes this possible. Of course, you also do this all manually.
 
+The full DSL file first:
+
 {% highlight groovy %}
+def recipients = 'youremail@example.com'
+def website = 'http://website-we-want-to-test'
+
 job('website-monitor') {
 
   displayName('Website status of ExampleWebsite')
 
   triggers {
-      cron('H/5 * * * *')
+      cron('H/5 * * * * ')
   }
 
   steps {
     environmentVariables {
-      env('WEBSITE', 'http://website-we-want-to-test')
+      env('WEBSITE', websie)
       env('TIMEOUT', 5)
       env('ATTEMPTS', 5)
     }
@@ -131,9 +136,9 @@ job('website-monitor') {
   }
 
   publishers {
-    extendedEmail('youremail@example.com', 'Website is offline') {
-      trigger(triggerName: 'Failure', subject: emailSubjectTemplate, body: 'Website is offline!')
-      trigger(triggerName: 'Fixed', subject: emailSubjectTemplate, body: 'Website is back online!')
+    extendedEmail(recipients, 'Website is offline') {
+      trigger(triggerName: 'Failure', subject: 'Website offline!', body: 'Website ' + website + ' is offline!')
+      trigger(triggerName: 'Fixed', subject: 'Website online!', body: 'Website ' + website + ' is back online!')
 
       configure { node ->
         node << {
@@ -147,4 +152,52 @@ job('website-monitor') {
 }
 {% endhighlight %}
 
+Now let's run through all the different parts, starting with the trigger. In my case I want to check the website every 5 minutes; this gives a guarantee that there is a maximum downtime of 5 minutes. To do this I define a cron trigger:
+
+{% highlight groovy %}
+triggers {
+    cron('H/5 * * * * ')
+}
+{% endhighlight %}
+
+You can of course increase or decrease the interval according to available server resources and importance of the website.
+
+Then we define the actual job steps. We already created a shell script to do the actual checking so we call that using the `shell` function. In my case the Bash script is in the same repository as my DSL file so I can use the `readFileFromWorkspace` function to load the content. Our environment variables are defined before we run the shell script. By extracting these variables we can use the same shell script for multiple jobs:
+
+{% highlight groovy %}
+steps {
+  environmentVariables {
+    env('WEBSITE', website)
+    env('TIMEOUT', 5)
+    env('ATTEMPTS', 5)
+  }
+  shell(readFileFromWorkspace('<path to your shell script>/check_status_code.sh'))
+}
+{% endhighlight %}
+
+Given that the job will run 288 times a day (12 jobs per hour) the Jenkins logs can become rather full. It is therefore advised to use log rotation to automatically remove old logs. In this case the logs are not very interesting so there is no real harm in removing them. We usually set the time limit to two days.
+
+{% highlight groovy %}
+logRotator {
+  daysToKeep(2)
+}
+{% endhighlight %}
+
+Last part (of almost any Jenkins job) is the publisher section: How do you want to see the results of the build? We opted for an email system. Every time a website goes offline (or back online) the job sends an email. The example below makes use of the (Email-ext plugin)[https://wiki.jenkins-ci.org/display/JENKINS/Email-ext+plugin] which is a great tool for sending emails from jobs.
+
+{% highlight groovy %}
+publishers {
+  extendedEmail(recipients, '${BUILD_STATUS} ' + website + ' [#${BUILD_NUMBER}]') {
+    trigger(triggerName: 'Failure', subject: 'Website offline!', body: 'Website ' + website + ' is offline!')
+    trigger(triggerName: 'Fixed', subject: 'Website online!', body: 'Website ' + website + ' is back online!')
+
+    configure { node ->
+      node << {
+        contentType 'text/html'
+        replyTo recipients
+      }
+    }
+  }
+}
+{% endhighlight %}
 ## Manual Jenkins job
