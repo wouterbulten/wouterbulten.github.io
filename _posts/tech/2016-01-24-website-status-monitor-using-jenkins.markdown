@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Website status monitor using Jenkins"
-date:   2016-01-13 21:14
+date:   2016-01-24 21:14
 categories: blog tech
 tags: [jenkins, dsl, http, groovy, shell]
 published: false
@@ -114,6 +114,10 @@ The full DSL file first:
 def recipients = 'youremail@example.com'
 def website = 'http://website-we-want-to-test'
 
+//Optional pre-send script, see further in this article for more info.
+//If removed, make sure to remove the 'presendScript' variable in the publisher.
+def localPreSendScript = readFileFromWorkspace('<path to script>/pre_send_script.groovy_script')
+
 job('website-monitor') {
 
   displayName('Website status of ExampleWebsite')
@@ -183,7 +187,7 @@ logRotator {
 }
 {% endhighlight %}
 
-Last part (of almost any Jenkins job) is the publisher section: How do you want to see the results of the build? We opted for an email system. Every time a website goes offline (or back online) the job sends an email. The example below makes use of the (Email-ext plugin)[https://wiki.jenkins-ci.org/display/JENKINS/Email-ext+plugin] which is a great tool for sending emails from jobs.
+Last part (of almost any Jenkins job) is the publisher section: How do you want to see the results of the build? We opted for an email system. Every time a website goes offline (or back online) the job sends an email. The example below makes use of the [Email-ext plugin](https://wiki.jenkins-ci.org/display/JENKINS/Email-ext+plugin) which is a great tool for sending emails from jobs.
 
 {% highlight groovy %}
 publishers {
@@ -195,9 +199,86 @@ publishers {
       node << {
         contentType 'text/html'
         replyTo recipients
+
+        //Optional pre-send script, see next section for description
+        presendScript localPreSendScript
       }
     }
   }
 }
 {% endhighlight %}
-## Manual Jenkins job
+
+The job sends an email every time a build fails or when it is fixed (i.e. moved from a failure to a success state). The body and subject can be customised based on your wishes. The plugin can inject additional information into the email using variables. Some useful variables are:
+
+* `${BUILD_NUMBER}`: Current build number, makes every email unique.
+* `${BUILD_STATUS}`: Status of the buidl (e.g. FIXED or FAILURE).
+* `${PROJECT_URL}`: Direct url to the Jenkins project.
+* `${BUILD_URL}`: Direct url to the build.
+* `${JENKINS_URL}`: Url of the Jenkins installation.
+* `${BUILD_LOG}`: Full build log (tip: wrap this in `<pre>` tags to preserve formatting).
+
+## Preventing multiple emails
+
+When a website goes down our watcher will send us a email every 5 minutes, this can easily overflow your inbox. Therefore it is advised to add an additional restriction on the email publisher.
+
+This restriction is implemented using an pre-send script: a simple Java script that is executed just before an email is sent. We already defined the pre-send script in the DSL above through the `presendScript` option in the publisher. I use an extended version of a script I found on [Stack Overflow](http://stackoverflow.com/questions/15173455/jenkins-sending-success-email-only-once-a-day-though-the-job-is-running-hour).
+
+Every time the build fails the script will check an file in our workspace. If that file does not exist it will be created and the email will be sent. The newly created file acts as a flag. Next time the build fails (e.g. after 5 minutes) the script checks whether the flag file is at least an hour old before a new email will be send out. Additionally, if the website goes online within the hour the flag is removed to make sure any additional errors are reported.
+
+The full script is shown below. Add this in your workspace and load it using the `readFileFromWorkspace` function (see the DSL above for an example).
+
+{% highlight groovy %}
+
+//Build failed, check whether we may send an email
+if (build.result.toString().equals("FAILURE")) {
+  try {
+    long minEmailGap = 1000 * 60 * 60; // Send max 1 email per hour
+    def env = build.getEnvironment();
+    String ws = env['WORKSPACE']
+
+    File file = new File(ws + "/delay-email-flag.txt");
+
+    if (file.exists() == false) {
+      file.createNewFile();
+    }
+    else {
+      long currentTime = (new Date()).getTime();
+
+      if (file.lastModified() + minEmailGap > currentTime) {
+        cancel = true; //This stops the Email-Ext plugin sending the email
+      }
+      else {
+        file.setLastModified(currentTime);
+      }
+    }
+  }
+  catch(IOException e) {
+    // Something went wrong, send email anyway
+  }
+}
+//Build is successful, re-enable the emails
+else if(build.result.toString().equals("SUCCESS")) {
+  try {
+
+    def env = build.getEnvironment();
+    String ws = env['WORKSPACE']
+
+    File file = new File(ws + "/delay-email-flag.txt");
+
+    if(file.exists()) {
+
+      //Project is fixed, remove the flag file
+      file.delete();
+    }
+  }
+  catch(IOException e) {
+    // Something went wrong, send email anyway
+  }
+}
+{% endhighlight %}
+
+## Wrapping up
+
+Using this simple approach you can implement a Jenkins website monitor in minutes. While it doesn't offer all the fancy features of paid website monitors it gives the most vital information: the status of your website. Using the email plugin you will be notified of any errors within minutes and gives you the possibility to address the issue quickly.
+
+Not using the DSL plugin? Start using it! It makes managing your jobs a lot easier. Still not convinced? You can also manually add the Bash script to a job and work from there!
