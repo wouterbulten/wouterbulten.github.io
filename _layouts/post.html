@@ -43,7 +43,7 @@ layout: compress
               <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
                 <h4 class="author-name" itemprop="name">{{ site.author }}</h4>
               </div>
-              on
+              &nbsp;on
               <time itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time>,
               <span class="keywords tags" itemprop="keywords">keywords: {{ page.tags | join: ', ' }}
             </div>
