@@ -8,7 +8,7 @@ published: true
 description: "Part one of my custom built external water bath monitor for sous vide. Running on a Spark Core and using DS18B20 temperature sensors for measurements."
 ---
 
-In this blog post I'll show my last project: a custom built external water bath monitor for my sous vide setup. It runs on a *Spark Core* and makes use of the *DS18B20* temperature sensor. Not sure what [sous vide](https://en.wikipedia.org/wiki/Sous-vide) is? Its an essential cooking method in the modern cuisine! I'll start of with the hardware aspect of the project. Next time I'll focus on the software and programming my new device.
+In this blog post I'll show my latest project: a custom built external water bath monitor for my sous vide setup. It runs on a *Spark Core* and makes use of the *DS18B20* temperature sensor. Not sure what [sous vide](https://en.wikipedia.org/wiki/Sous-vide) is? Its an essential cooking method in the modern cuisine! I'll start of with the hardware aspect of the project. Next time I'll focus on the software and programming my new device.
 
 ![First version of the circuit on a breadboard. Only difference with the final version: I eventually used one pin for both the temperature sensors (see the previous diagram).](/assets/images/sv-monitor/circuit.jpg)
 
