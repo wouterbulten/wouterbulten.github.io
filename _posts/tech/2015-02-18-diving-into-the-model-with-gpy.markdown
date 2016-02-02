@@ -6,7 +6,7 @@ categories: blog tech
 tags: [gpy, gaussian processes, dobots]
 ---
 
-Lately we looked at [GPy]({% post_url tech/2015-02-13-first-steps-with-gpy %}) using some simple examples. Now we'll dive deeper and look more closely to the inner workings of models. We'll start with the basics and continue further by decomposing the _Guassian Process Latent Variable_ model (GPLVM).
+Lately we looked at [GPy]({% post_url blog/tech/2015-02-13-first-steps-with-gpy %}) using some simple examples. Now we'll dive deeper and look more closely to the inner workings of models. We'll start with the basics and continue further by decomposing the _Guassian Process Latent Variable_ model (GPLVM).
 
 > Note: This post is fairly specific to GPy and the chosen model.
 
@@ -74,7 +74,7 @@ Editing a parameter can be useful when you want to initialise parameters using p
 
 ## Decomposing GPLVM
 
-As I am planning to use the GPy _GPLVM_ model in my [WSN setup]({% post_url tech/2015-02-12-simple-wsn-simulation %}) I was curious about the inner workings of the model. Of course we have the original paper describing the model[^1] but investigating a concrete implementation can give more insights in how everything works. Generally: How does the GPLVM model infer the latent variables from a set of observed variables? I'll focus here a bit more on the general steps than on the specific math (which could be a topic for a follow-up post).
+As I am planning to use the GPy _GPLVM_ model in my [WSN setup]({% post_url blog/tech/2015-02-12-simple-wsn-simulation %}) I was curious about the inner workings of the model. Of course we have the original paper describing the model[^1] but investigating a concrete implementation can give more insights in how everything works. Generally: How does the GPLVM model infer the latent variables from a set of observed variables? I'll focus here a bit more on the general steps than on the specific math (which could be a topic for a follow-up post).
 
 GPLVM is a dimensionality reduction technique which maps a (highly dimensional) observed space to a smaller dimensional latent space. To initialize our model we only define the dimensions of the latent space, the initialisation method and our observed data Y:
 
@@ -99,7 +99,7 @@ gplvm = GPLVM(Y, 2, init='PCA')
 
 ### Optimisation
 
-After initialisation of the model the parameters must be trained. For a simple GP [regression problem]({% post_url tech/2015-02-13-first-steps-with-gpy %}) this means optimising the kernel parameters. For GPLVM we also optimise the latent space X as this what we want to learn.
+After initialisation of the model the parameters must be trained. For a simple GP [regression problem]({% post_url blog/tech/2015-02-13-first-steps-with-gpy %}) this means optimising the kernel parameters. For GPLVM we also optimise the latent space X as this what we want to learn.
 
 With GP regression we are interested in predicting new and unseen points. Here the full training data (X and Y) are known and the primary focus is optimising the parameters of the kernel. With GPLVM we are interested the mapping from the observed space to the latent space. Therefore we optimise both the parameters and the latent space.
 
