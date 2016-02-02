@@ -4,6 +4,7 @@ highlighter: rouge
 
 gems:
   - jekyll-sitemap
+  - jekyll-paginate
 
 permalink: /:categories/:title
 # Site settings
