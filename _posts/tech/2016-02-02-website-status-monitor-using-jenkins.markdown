@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Website status monitor using Jenkins"
-date:   2016-02-02 23:09
+date:   2016-02-02 23:12
 categories: blog tech
 tags: [jenkins, dsl, http, groovy, shell]
 published: true
