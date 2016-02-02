@@ -117,7 +117,7 @@ Try to imagine how this characteristic results in a filter: On every step, the K
 
 We defined our model, we defined the filter. Now it is time to put the filter to a test. Does our Kalman fitler remove the noise from the raw RSSI signal?
 
-I applied a simple Kalman filter to the "1m" data of the RSSI example dataset. I am using my [KalmanJS]({% post_url /tech/2015-09-25-lightweight-javascript-library-for-noise-filtering %}) library which you can find on [GitHub](https://github.com/wouterbulten/kalmanjs) or read more about in a [separate post]({% post_url /tech/2015-09-25-lightweight-javascript-library-for-noise-filtering %}) on this blog. The results are shown in the figure below:
+I applied a simple Kalman filter to the "1m" data of the RSSI example dataset. I am using my [KalmanJS]({% post_url 2015-09-25-lightweight-javascript-library-for-noise-filtering %}) library which you can find on [GitHub](https://github.com/wouterbulten/kalmanjs) or read more about in a [separate post]({% post_url 2015-09-25-lightweight-javascript-library-for-noise-filtering %}) on this blog. The results are shown in the figure below:
 
 -----
 <div id="chart-kalman-2-legend"></div>
