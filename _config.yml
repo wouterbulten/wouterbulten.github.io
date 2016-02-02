@@ -1,6 +1,6 @@
 # Build settings
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 
 gems:
   - jekyll-sitemap
@@ -41,7 +41,7 @@ defaults:
       type: posts   # limit to posts
     values:
       is_post: true # automatically set is_post=true for all posts
-      
+
 compress_html:
   clippings: all
   comments: all
