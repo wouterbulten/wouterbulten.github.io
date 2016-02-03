@@ -6,7 +6,7 @@ gems:
   - jekyll-sitemap
   - jekyll-paginate
 
-permalink: /:categories/:title
+permalink: /:categories/:title/
 # Site settings
 title: "Wouter Bulten"
 description: > # this means to ignore newlines until "email:"
