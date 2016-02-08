@@ -23,7 +23,7 @@ Nothing fancy so far, just the regular NPM setup!
 
 ## Installing requirements
 
-To convert ES2015 code we will use a transpiler. [Babel](https://babeljs.io/)is, in my opinion, the current best option. To use Babel we need to add some dependencies to our project, like so:
+To convert ES2015 code we will use a transpiler. [Babel](https://babeljs.io/) is, in my opinion, the current best option. To use Babel we need to add some dependencies to our project, like so:
 
 `npm install babel-cli --save-dev`
 
