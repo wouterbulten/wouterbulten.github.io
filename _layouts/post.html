@@ -74,6 +74,25 @@ layout: compress
             {% endfor %}
           </section>
         </footer>
+
+        <div class="post-read-more">
+          {% assign cat = page.categories[1] | downcase %}
+
+          <h2 class="index-headline"><span>Read more ({{ cat}} category)</span></h2>
+
+          <ul>
+
+          {% for post in site.categories.[cat] limit:3 %}
+            {% if post.title != page.title %}
+              <li>
+                <h4 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                <p>{{ post.excerpt | strip_html | truncatewords: 50 }} <a class="read-more" href="{{ post.url }}">Start reading &rarr;</a></p>
+              </li>
+            {% endif %}
+          {% endfor %}
+          </ul>
+        </div>
+
         <div class="bottom-teaser cf">
           <div class="isLeft">
             <h5 class="index-headline featured"><span>Published by</span></h5>
