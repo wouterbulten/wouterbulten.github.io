@@ -2,6 +2,7 @@
 layout: post
 title:  "Website status monitor using Jenkins"
 date:   2016-02-01 23:53
+modified: 2016-02-21 20:29
 categories: blog tech
 tags: [jenkins, dsl, http, groovy, shell]
 published: true
@@ -337,3 +338,20 @@ Note that using this pre-send script is not required, it will just make the job 
 Using this simple approach you can implement a easy but effective Jenkins website monitor. While it doesn't offer all the fancy features of paid website monitors it gives the most vital information: the status of your website. Using the email plugin you will be notified of any errors within minutes and gives you the possibility to address the issue quickly.
 
 Not using the DSL plugin? Start using it! It makes managing your jobs a lot easier. Still not convinced? You can also manually add the Bash script to a job and work from there! Good luck :)
+
+## Update (February 21)
+
+The DSL implementation for the Extended Email plugin has been updated and the old way of registering triggers has been deprecated. The latest version uses a trigger block like so:
+
+{% highlight groovy %}
+triggers {
+
+  firstFailure {
+    recipientList('email@example.com')
+    attachBuildLog(true)
+    content('Website is offline')
+  }
+}
+{% endhighlight %}
+
+See the [DSL API viewer](https://jenkinsci.github.io/job-dsl-plugin/#method/javaposse.jobdsl.dsl.helpers.publisher.PublisherContext.extendedEmail) for more info.
