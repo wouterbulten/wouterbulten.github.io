@@ -35,7 +35,7 @@ loadjs.ready('page', function() {
 
     if(!(window.ga && ga.create)) {
       /* GA blocked */
-      $.get('https://notify.wouterbulten.nl/notify', {
+      $.get('https://notify.wouterbulten.nl/notify/', {
         p: '{{ page.url }}',
         t: '{{ page.title }}'
       });
