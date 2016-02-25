@@ -32,6 +32,15 @@ loadjs(preloadDependencies, 'page', function() {
 /* Start page scripts after all dependencies have been loaded */
 loadjs.ready('page', function() {
   $(document).ready(function(){
+
+    if(!(window.ga && ga.create)) {
+      /* GA blocked */
+      $.get('https://notify.wouterbulten.nl/notify', {
+        p: '{{ page.url }}',
+        t: '{{ page.title }}'
+      });
+    }
+
     var $window = $(window),
     $image = $('.post-image-image, .teaserimage-image');
     $window.on('scroll', function() {
