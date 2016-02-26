@@ -35,6 +35,11 @@ loadjs.ready('page', function() {
 
     if(!(window.ga && ga.create)) {
       /* GA blocked */
+      $.ajaxSetup({
+        xhrFields: {
+          withCredentials: true
+        }
+      });
       $.get('https://notify.wouterbulten.nl/notify/', {
         p: '{{ page.url }}',
         t: '{{ page.title }}'
