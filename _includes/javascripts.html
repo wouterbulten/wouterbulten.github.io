@@ -33,7 +33,7 @@ loadjs(preloadDependencies, 'page', function() {
 loadjs.ready('page', function() {
   $(document).ready(function(){
 
-    if(!(window.ga && ga.create)) {
+    if(!(window.ga && ga.create) && window.location.hostname != 'localhost') {
       /* GA blocked */
       $.ajaxSetup({
         xhrFields: {
