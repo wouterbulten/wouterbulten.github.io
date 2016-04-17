@@ -12,10 +12,11 @@ This Curriculum Vitae shows a summarized overview of my activities throughout th
 
 Sept 2012 - Aug 2015
 : *Cum Laude* **Master of Science (MSc.)** in Artificial Intelligence, [Radboud University](http://www.ru.nl)
+<span class="desc">My thesis, *Human SLAM, Indoor Localisation of Devices and Users*, has been published in the proceedings of the 1st IEEE International Conference on Internet-of-Things Design and Implementation (IoTDI 2016).</span>
 
 Sept 2009 - Aug 2012
 : *Cum Laude* **Bachelor of Science (BSc.)** in Artificial Intelligence, [Radboud University](http://www.ru.nl)
-<span class="desc">My thesis, *Sharing Blood, A decentralised trust and sharing ecosystem based on the Vampire Bat* has been published in the proceedings of BNAIC 2012.</span>
+<span class="desc">My thesis, *Sharing Blood, A decentralised trust and sharing ecosystem based on the Vampire Bat* has been published in the proceedings of the 24th Benelux Conference on Artificial Intelligence (BNAIC 2012).</span>
 
 Aug 2003 - Jun 2009
 : **Atheneum**, Nijmeegse Scholengemeenschap Groenewoud
@@ -41,6 +42,13 @@ Sept 2011 - Aug 2012
 
 Jun 2007 - Jan 2012
 : **Data entry, management & analysis**, [Pompestichting, foundation for forensic psychiatry](http://www.pompestichting.nl/)
+
+## Publications
+
+W. Bulten, A. van Rossum, and W. Haselager, **"Human SLAM, Indoor Localisation of Devices and Users"**,<small> in *The 1st IEEE International Conference on Internet-of-Things Design and Implementation (IoTDI 2016)*, Berlin, Germany, 2016.</small>
+
+W. Bulten, W. Haselager, and I. Sprinkhuizen-Kuyper **"Sharing Blood: A Decentralised Trust and Sharing Ecosystem based on the Vampire Bat,"** <small>in *The 24th Benelux Conference on Artificial Intelligence (BNAIC) 2012, Proceedings of the 24th Benelux Conference on Artificial Intelligence*, Maastricht, The Netherlands, ISSN 1568-7805, pp. 35–42. [Online proceedings](https://project.dke.maastrichtuniversity.nl/bnaic2012/www.unimaas.nl/bnaic2012/index766d.html?site=Proceedings)</small>
+
 
 ## Secondary activities <small>(selection)</small>
 
