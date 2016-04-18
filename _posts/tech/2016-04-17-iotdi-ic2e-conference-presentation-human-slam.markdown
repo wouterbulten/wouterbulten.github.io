@@ -3,7 +3,7 @@ layout: post
 title:  "IoTDI/IC2E 2016 Presentation: Human SLAM"
 date:   2016-04-17 16:43
 categories: blog tech
-tags: [research, iotdi, human slam, indoor localization]
+tags: [research, iotdi, ic2e, human slam, indoor localization]
 published: true
 description: "Last week I gave a presentation at IoTDI 2016 regarding my Human SLAM research. My presentation can be viewed online."
 ---
