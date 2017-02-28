@@ -1,0 +1,46 @@
+//
+// Custom styles for home page
+//
+.section-home {
+  margin-bottom: 3em;
+
+  .section-image {
+    background-image: url("me2.jpg");
+    background-size: cover;
+    background-position: center center;
+  }
+  .section-content {
+    text-align: center;
+    min-height: 500px;
+    padding: 3em 4em 0 4em;
+  }
+}
+
+.home-header {
+  text-transform: capitalize;
+
+  font-size: 4em;
+  color: #505050;
+}
+.home-lead {
+  font-weight: 200;
+  color: #6d6d6d;
+  margin-bottom: 1.5em;
+}
+
+.nav-external {
+  border-top: 1px solid #e6e5e5;
+  border-bottom: 1px solid #e6e5e5;
+  font-size: 20px;
+  margin: 20px;
+
+  .svg-icon {
+    margin: 15px;
+    vertical-align: middle;
+  }
+}
+
+.nav-main a {
+  border: 1px solid #e6e5e5;
+  margin-bottom: 1.5em;
+}

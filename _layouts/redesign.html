@@ -2,54 +2,21 @@
 <html>
 
   <head>
+    <meta charset="utf-8">
+    <!-- (1) Optimize for mobile versions: http://goo.gl/EOpFl -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- (1) force latest IE rendering engine: bit.ly/1c8EiC9 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> -->
     <!-- <link rel="stylesheet" type="text/css" media="screen" href="{{ "/assets/styles/main.css"  | prepend: site.baseurl  }}" /> -->
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 
     <style>
-    body {
-      background-color: #f4f4f4;
-    }
-    .section {
-      border-radius: 2px;
-    }
-    .section-image {
-      background-position: center center;
-    }
-    .home-header {
-      font-size: 4em;
-      color: #505050;
-      font-weight: 300;
-    }
-    .home-lead {
-      font-weight: 200;
-      color: #6d6d6d;
-      margin-bottom: 1.5em;
-    }
-    .section-content {
-      padding: 3em 4em 0 4em;
-    }
-    .svg-icon {
-      display: inline-block;
-      width: 1em;
-      height: 1em;
-      fill: currentColor;
-    }
-    .nav-external {
-      border-top: 1px solid #e6e5e5;
-      border-bottom: 1px solid #e6e5e5;
-      font-size: 20px;
-      margin: 20px;
-    }
-    .nav-external .svg-icon {
-      margin: 15px;
-      vertical-align: middle;
-    }
-    .nav-main a {
-      border: 1px solid #e6e5e5;
-    }
-    .text-nav a {
-    }
+
+
+
+
     </style>
   </head>
 
@@ -79,10 +46,9 @@
       </defs>
     </svg>
 
-    <div class="home-container">
-      <div class="section">
-        <div class="section-image">
-        </div>
+    <div class="container">
+      <div class="section-card section-home">
+        <div class="section-image"></div>
 
         <div class="section-content">
           <h1 class="home-header">Wouter Bulten</h1>
@@ -94,12 +60,7 @@
             <a href="#" class="btn">Contact</a>
           </div>
 
-          <br>
-
-          <a class="btn">OuterHills &amp; Services</a>
-
-          <br>
-
+          <p class="text-nav">I am available as a freelance developer, see <a class="" href="">OuterHills &amp; Services</a>.</p>
           <p class="text-nav">Read more on my <a class="" href="">tech blog</a>. More interested in food? See what I like to create <a href="">here</a>.</p>
 
           <div class="nav-external">
@@ -111,7 +72,34 @@
 
         </div>
       </div>
+
+      <div class="section">
+        <div class="section-aside section-updates">
+          <h1>Latest blog updates</h1>
+
+          <div class="blog-list">
+            <article>
+              <header>
+                <h1>IoTDI/IC2E 2016 Presentation: Human SLAM</h1>
+              </header>
+              <section class="post-excerpt" itemprop="description"><p>During the joint conferences of the IEEE International Conference on the Internet-of-Things Design and Implementation (IoTDI) (website) and the IEEE International Conference on Cloud Engineering (IC2E) (website) I presented my work on indoor localisation and SLAM: The indoor localisation problem is more complex than just finding whereabouts of users. Finding...</p></section>
+            </article>
+
+            <article>
+              <header>
+                <h1>IoTDI/IC2E 2016 Presentation: Human SLAM</h1>
+              </header>
+              <section class="post-excerpt" itemprop="description"><p>During the joint conferences of the IEEE International Conference on the Internet-of-Things Design and Implementation (IoTDI) (website) and the IEEE International Conference on Cloud Engineering (IC2E) (website) I presented my work on indoor localisation and SLAM: The indoor localisation problem is more complex than just finding whereabouts of users. Finding...</p></section>
+            </article>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <footer class="section site-footer">
+      <p>All content copyright Wouter Bulten &copy; 2017 • All rights reserved.</p>
+      <p>Made with <a href="http://jekyllrb.com"> Jekyll</a> | <a class="subscribe" href="/feed.xml">RSS Feed</a><p>
+    </footer>
   </body>
 
 </html>
