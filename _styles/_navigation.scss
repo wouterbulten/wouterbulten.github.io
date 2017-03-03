@@ -1,0 +1,22 @@
+.site-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  margin-bottom: 1rem;
+
+  .nav-item {
+    flex: 1 1 0;
+    text-align: center;
+    color: black;
+  }
+  .nav-brand {
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+}
