@@ -4,10 +4,68 @@ title: Curriculum Vitae
 permalink: /curriculum-vitae/
 ---
 
-I am Wouter Bulten. Summer 2015, I graduated *Cum laude* in Artificial Intelligence at the [Radboud University](http://www.ru.nl) and received my Master of Science (MSc.) degree. Since 2011 I work as a Software Developer at [123test](https://www.123test.nl) B.V. ([.com](https://www.123test.com) /[.nl](https://www.123test.nl)) & [TestingTalents](http://www.testingtalents.nl/) B.V.
+<div class="section-card">
+  <div class="section-image section-image-me"></div>
 
-This Curriculum Vitae shows a summarized overview of my activities throughout the years. More info? Contact me!
+  <div class="section-content">
+    <section class="post-content">
+      <h1 class="page-title">Curriculum Vitae</h1>
 
+      <p>I am Wouter Bulten. Summer 2015, I graduated <em>Cum laude</em> in Artificial Intelligence at the <a href="http://www.ru.nl">Radboud University</a> and received my Master of Science (MSc.) degree. Since 2011 I work as a Software Developer at <a href="https://www.123test.nl">123test</a> B.V. (<a href="https://www.123test.com">.com</a> /<a href="https://www.123test.nl">.nl</a>) &amp; <a href="http://www.testingtalents.nl/">TestingTalents</a> B.V.</p>
+
+      <p>This Curriculum Vitae shows a summarized overview of my activities throughout the years. More info? Contact me!</p>
+    </section>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-content-title">
+    <h2>Education</h2>
+  </div>
+
+  <div class="section-content">
+
+    <dl><dt>Sept 2012 - Aug 2015</dt><dd><em>Cum Laude</em> <strong>Master of Science (MSc.)</strong> in Artificial Intelligence, <a href="http://www.ru.nl">Radboud University</a> <span class="desc">My thesis, <em>Human SLAM, Indoor Localisation of Devices and Users</em>, has been published in the proceedings of the 1st IEEE International Conference on Internet-of-Things Design and Implementation (IoTDI 2016).</span></dd><dt>Sept 2009 - Aug 2012</dt><dd><em>Cum Laude</em> <strong>Bachelor of Science (BSc.)</strong> in Artificial Intelligence, <a href="http://www.ru.nl">Radboud University</a> <span class="desc">My thesis, <em>Sharing Blood, A decentralised trust and sharing ecosystem based on the Vampire Bat</em> has been published in the proceedings of the 24th Benelux Conference on Artificial Intelligence (BNAIC 2012).</span></dd><dt>Aug 2003 - Jun 2009</dt><dd><strong>Atheneum</strong>, Nijmeegse Scholengemeenschap Groenewoud</dd></dl>
+
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-content-title">
+    <h2>Work experience</h2>
+  </div>
+
+  <div class="section-content">
+
+    <dl><dt>Feb 2011 - <em>present</em></dt><dd><strong>Software Developer</strong>, <a href="https://www.123test.nl">123test</a> B.V. (<a href="https://www.123test.com">.com</a> /<a href="https://www.123test.nl">.nl</a>) &amp; <a href="http://www.testingtalents.nl/">TestingTalents</a> <span class="desc">Focus on back end &amp; API development and design of new systems. Techniques used (among others): PHP, Node, REST, JS, Laravel, R, Redis, MySQL.</span></dd><dt>Sept 2009 - <em>present</em></dt><dd><strong>Freelance webdeveloper</strong></dd><dt>Oct 2014 - Aug 2015</dt><dd><strong>Research intern</strong>, <a href="http://www.dobots.nl">DoBots</a> B.V. &amp; <a href="http://www.almende.org">Almende</a> B.V. <span class="desc">Master thesis internship focussing on indoor localisation and the autonomous localisation of wireless sensor networks for the ‘Internet of Things’.</span></dd><dt>Sept 2013 - Sept 2014</dt><dd><strong>Faculty board member, Assessor</strong>, <a href="http://www.ru.nl/fsw/">Faculty of Social Sciences</a>, <a href="http://www.ru.nl">Radboud University</a></dd><dt>Sept 2011 - Aug 2012</dt><dd><strong>Studentmentor</strong>, <a href="http://www.ru.nl/artificialintelligence/">School of Artificial Intelligence</a>, <a href="http://www.ru.nl">Radboud University</a></dd><dt>Jun 2007 - Jan 2012</dt><dd><strong>Data entry, management &amp; analysis</strong>, <a href="http://www.pompestichting.nl/">Pompestichting, foundation for forensic psychiatry</a></dd></dl>
+
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-content-title">
+    <h2>Publications</h2>
+  </div>
+
+  <div class="section-content">
+
+    <p>W. Bulten, A. van Rossum, and W. Haselager, <strong>“Human SLAM, Indoor Localisation of Devices and Users”</strong>,<small> in <em>The 1st IEEE International Conference on Internet-of-Things Design and Implementation (IoTDI 2016)</em>, Berlin, Germany, 2016.</small></p>
+    <p>W. Bulten, W. Haselager, and I. Sprinkhuizen-Kuyper <strong>“Sharing Blood: A Decentralised Trust and Sharing Ecosystem based on the Vampire Bat,”</strong> <small>in <em>The 24th Benelux Conference on Artificial Intelligence (BNAIC) 2012, Proceedings of the 24th Benelux Conference on Artificial Intelligence</em>, Maastricht, The Netherlands, ISSN 1568-7805, pp. 35–42. <a href="https://project.dke.maastrichtuniversity.nl/bnaic2012/www.unimaas.nl/bnaic2012/index766d.html?site=Proceedings">Online proceedings</a></small></p>
+
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-content-title">
+    <h2>Secondary activities</h2>
+  </div>
+
+  <div class="section-content">
+
+    <dl><dt>Sept 2014 - Aug 2013</dt><dd><strong>Faculty student council, Technical chairman</strong>, <a href="http://www.ru.nl/fsw/">Faculty of Social Sciences</a>, <a href="http://www.ru.nl">Radboud University</a></dd><dt>Sep 2010 - Sep 2014</dt><dd><strong>Chairman ACAIS</strong>, <a href="http://www.acais.nl">Annual CognAC AI Symposium</a> <span class="desc">Four time chair of <a href="http://www.acais.nl">ACAIS</a>, an annual symposium on artificial intelligence for AI students.</span></dd><dt>Sep 2010 - Sep 2011</dt><dd><strong>President</strong>, <a href="http://www.svcognac.nl">Study Association for Artificial Intelligence, CognAC</a></dd><dt>Sept 2011 - Aug 2012</dt><dd><strong>Degree programme committee Artificial Intelligence</strong>, <a href="http://www.ru.nl/artificialintelligence/">School of Artificial Intelligence</a>, <a href="http://www.ru.nl">Radboud University</a></dd><dt>Sept 2010 - Mar 2011</dt><dd><strong>Secretary</strong>, <a href="http://nsvki.nl/">Dutch Study Association for Artificial Intelligence (NSVKI)</a></dd></dl>
+
+  </div>
+</div>
 ## Education
 
 Sept 2012 - Aug 2015

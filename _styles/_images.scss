@@ -2,6 +2,16 @@
 // Images & svg
 //
 
+.section-image-me {
+  background-image: url("../images/wouterbulten-optim.JPG");
+  background-color: lightblue;
+  background-size: cover;
+  background-position: center center;
+
+  min-height: 200px;
+  max-height: 500px;
+}
+
 .svg-icon {
   display: inline-block;
   width: 1em;

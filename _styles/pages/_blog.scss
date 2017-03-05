@@ -4,4 +4,23 @@
 
 .blog-list {
   padding: 0 1rem 0 1rem;
+
+  .article-item {
+    padding-bottom: 1.5rem;
+  }
+
+  .post-meta {
+    color: #6d6d6d;
+    font-size: 0.8rem;
+  }
+  .post-excerpt {
+    font-size: 0.9em;
+    color: #5a5a5a;
+  }
+  .post-category {
+    text-transform: uppercase;
+  }
+  .post-title a {
+    color: black;
+  }
 }

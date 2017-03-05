@@ -43,7 +43,7 @@ body {
   border-radius: 2px;
 }
 
-.section-image {
+.section-image, .section-content-title {
   @include make-col-ready();
   @include make-col(12);
 
@@ -57,6 +57,7 @@ body {
 
   @include media-breakpoint-up(md) {
     @include make-col(7);
+    padding: 1rem 2.5rem;
   }
 }
 .section-aside {

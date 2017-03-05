@@ -2,25 +2,24 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
 }
 
-.section-updates {
-  & > h1 {
-    text-align: center;
-    color: #6d6d6d;
-    text-shadow: 1px 1px 0px white;
-
-    margin-bottom: 40px;
-    font-weight: 200;
-  }
+.page-title {
+  margin-bottom: 1rem;
 }
 
-.blog-list article {
+.section-updates h1, .section-content-title h2 {
+  text-align: center;
+  color: #6d6d6d;
+  text-shadow: 1px 1px 0px white;
 
-  h1 {
-    font-size: 1.5em;
-  }
+  margin-bottom: 40px;
+  font-weight: 200;
+}
+.section-updates h1 {
+  text-align: center;
+}
+.section-content-title h2 {
+  padding-top: 1rem;
 
-  p {
-    font-size: 0.9em;
-    color: #5a5a5a;
-  }
+  text-align: right;
+  font-size: 2rem;
 }

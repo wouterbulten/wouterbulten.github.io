@@ -33,18 +33,18 @@ loadjs(preloadDependencies, 'page', function() {
 loadjs.ready('page', function() {
   $(document).ready(function(){
 
-    if(!(window.ga && ga.create)) {
-      /* GA blocked */
-      $.ajaxSetup({
-        xhrFields: {
-          withCredentials: true
-        }
-      });
-      $.get('https://notify.wouterbulten.nl/notify/', {
-        p: '{{ page.url }}',
-        t: '{{ page.title }}'
-      });
-    }
+    // if(!(window.ga && ga.create)) {
+    //   /* GA blocked */
+    //   $.ajaxSetup({
+    //     xhrFields: {
+    //       withCredentials: true
+    //     }
+    //   });
+    //   $.get('https://notify.wouterbulten.nl/notify/', {
+    //     p: '{{ page.url }}',
+    //     t: '{{ page.title }}'
+    //   });
+    // }
 
     var $window = $(window),
     $image = $('.post-image-image, .teaserimage-image');

@@ -8,14 +8,12 @@ layout: compress
 
   <body>
 
-    {% include header.html %}
-
+    {% include svg-defs.html %}
+    {% include navigation.html %}
     <!-- content start -->
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+    <div class="container">
+      {{ content }}
     </div>
 
     <!-- content end -->
