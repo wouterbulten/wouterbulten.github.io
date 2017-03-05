@@ -2,31 +2,45 @@
 // Custom styles for home page
 //
 .section-home {
-  margin-bottom: 3em;
+  margin-bottom: 2rem;
+  @include media-breakpoint-up(md) {
+    margin-bottom: 6rem;
+  }
 
   .section-image {
-    // background-image: url("me2.jpg");
+    background-image: url("me2.jpg");
     background-color: lightblue;
     background-size: cover;
     background-position: center center;
+
+    min-height: 200px;
   }
   .section-content {
     text-align: center;
     min-height: 500px;
-    padding: 3em 4em 0 4em;
+
+    padding: 1rem 0 0 0;
+
+    @include media-breakpoint-up(md) {
+      padding: 3rem 4rem 0 4rem;
+    }
   }
 }
 
 .home-header {
-  text-transform: capitalize;
+  font-weight: 300;
+  font-size: 2.5em;
 
-  font-size: 4em;
+  @include media-breakpoint-up(md) {
+    font-size: 4em;
+  }
   color: #505050;
 }
 .home-lead {
   font-weight: 200;
   color: #6d6d6d;
-  margin-bottom: 1.5em;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
 }
 
 .nav-external {
@@ -38,10 +52,26 @@
   .svg-icon {
     margin: 15px;
     vertical-align: middle;
+
+    &:hover {
+      color: $link-color;
+      cursor: pointer;
+    }
   }
 }
 
+.text-nav {
+  font-weight: 200;
+  color: #6d6d6d;
+  font-size: 0.9rem;
+}
+
 .nav-main a {
+  font-weight: 200;
   border: 1px solid #e6e5e5;
-  margin-bottom: 1.5em;
+  margin-bottom: 2rem;
+
+  &:hover {
+    border: 1px solid $link-color;
+  }
 }

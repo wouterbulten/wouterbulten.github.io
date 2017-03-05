@@ -2,24 +2,6 @@
 // Blog elements
 //
 
-.section-updates {
-  & > h1 {
-    text-align: center;
-    color: #6d6d6d;
-    text-shadow: 1px 1px 0px white;
-
-    margin-bottom: 40px;
-  }
-}
-
-.blog-list article {
-
-  h1 {
-    font-size: 1.5em;
-  }
-
-  p {
-    font-size: 0.9em;
-    color: #5a5a5a;
-  }
+.blog-list {
+  padding: 0 1rem 0 1rem;
 }

@@ -6,5 +6,34 @@
   display: inline-block;
   width: 1em;
   height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
   fill: currentColor;
+}
+
+.image-banner {
+  display: flex;
+
+  img {
+    flex: 0 1 0;
+    min-width: 150px;
+    height: auto;
+  }
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  padding-top: 10px;
+}
+.image-grid-3 {
+  .image-grid-item {
+    flex: 0 1 33.33%;
+
+    img {
+      width: 100%;
+    }
+  }
 }

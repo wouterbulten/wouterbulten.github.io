@@ -1,3 +1,26 @@
 h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
 }
+
+.section-updates {
+  & > h1 {
+    text-align: center;
+    color: #6d6d6d;
+    text-shadow: 1px 1px 0px white;
+
+    margin-bottom: 40px;
+    font-weight: 200;
+  }
+}
+
+.blog-list article {
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 0.9em;
+    color: #5a5a5a;
+  }
+}
