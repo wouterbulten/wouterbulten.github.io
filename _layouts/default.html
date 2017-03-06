@@ -6,7 +6,11 @@ layout: compress
 
   {% include head.html %}
 
-  <body>
+  {% if page.home %}
+  <body class="page-home">
+  {% else %}
+  <body class="page-{{ page.permalink | replace: '/',''}}">
+  {% endif %}
 
     {% include svg-defs.html %}
     {% include navigation.html %}

@@ -1,7 +1,9 @@
 // Core variables and mixins
 @import "node_modules/bootstrap/scss/variables";
 
+// Custom variables
 $body-bg: #f4f4f4;
+$body-bg-home: #f4f4f4;
 
 @import "node_modules/bootstrap/scss/mixins";
 @import "node_modules/bootstrap/scss/custom";
