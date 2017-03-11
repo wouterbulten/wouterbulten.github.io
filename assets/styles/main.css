@@ -2733,8 +2733,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .section-content-title h2 {
   padding-top: 0.3rem;
-  text-align: right;
   font-size: 2rem; }
+  @media (min-width: 768px) {
+    .section-content-title h2 {
+      text-align: right; } }
 
 body {
   padding: 0; }
@@ -3038,3 +3040,11 @@ body {
     text-transform: uppercase; }
   .blog-list .post-title a {
     color: black; }
+
+.cv-list dt {
+  font-weight: 200; }
+
+.cv-list dd {
+  margin: 0.5rem 0rem 1rem 1.5rem; }
+  .cv-list dd strong {
+    font-weight: 500; }

@@ -1,0 +1,20 @@
+--2017-03-05 16:33:49--  https://www.instagram.com/p/BO5GDkwjdjc/media?size=t
+Resolving www.instagram.com... 31.13.91.52, 2a03:2880:f206:c4:face:b00c::43fe
+Connecting to www.instagram.com|31.13.91.52|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://www.instagram.com/p/BO5GDkwjdjc/media/?size=t [following]
+--2017-03-05 16:33:50--  https://www.instagram.com/p/BO5GDkwjdjc/media/?size=t
+Reusing existing connection to www.instagram.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://scontent-ams3-1.cdninstagram.com/t51.2885-15/s150x150/e35/c135.0.810.810/15802766_1369371016417480_3901973849930989568_n.jpg [following]
+--2017-03-05 16:33:50--  https://scontent-ams3-1.cdninstagram.com/t51.2885-15/s150x150/e35/c135.0.810.810/15802766_1369371016417480_3901973849930989568_n.jpg
+Resolving scontent-ams3-1.cdninstagram.com... 31.13.91.52, 2a03:2880:f21b:c4:face:b00c::43fe
+Connecting to scontent-ams3-1.cdninstagram.com|31.13.91.52|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 7975 (7.8K) [image/jpeg]
+Saving to: ‘media?size=t’
+
+     0K .......                                               100% 13.0M=0.001s
+
+2017-03-05 16:33:50 (13.0 MB/s) - ‘media?size=t’ saved [7975/7975]
+
