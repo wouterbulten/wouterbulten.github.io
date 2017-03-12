@@ -16,6 +16,10 @@
     @include media-breakpoint-up(md) {
       padding: 3rem 4rem 0 4rem;
     }
+
+    .btn-group {
+      margin-bottom: 2rem;
+    }
   }
 }
 
@@ -56,14 +60,4 @@
   font-weight: 200;
   color: #6d6d6d;
   font-size: 0.9rem;
-}
-
-.nav-main a {
-  font-weight: 200;
-  border: 1px solid #e6e5e5;
-  margin-bottom: 2rem;
-
-  &:hover {
-    border: 1px solid $link-color;
-  }
 }

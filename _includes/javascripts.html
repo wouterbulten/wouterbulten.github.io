@@ -33,18 +33,18 @@ loadjs(preloadDependencies, 'page', function() {
 loadjs.ready('page', function() {
   $(document).ready(function(){
 
-    // if(!(window.ga && ga.create)) {
-    //   /* GA blocked */
-    //   $.ajaxSetup({
-    //     xhrFields: {
-    //       withCredentials: true
-    //     }
-    //   });
-    //   $.get('https://notify.wouterbulten.nl/notify/', {
-    //     p: '{{ page.url }}',
-    //     t: '{{ page.title }}'
-    //   });
-    // }
+    /*if(!(window.ga && ga.create)) {
+       GA blocked
+      $.ajaxSetup({
+        xhrFields: {
+          withCredentials: true
+        }
+      });
+      $.get('https://notify.wouterbulten.nl/notify/', {
+        p: '{{ page.url }}',
+        t: '{{ page.title }}'
+      });
+    }*/
 
     var $window = $(window),
     $image = $('.post-image-image, .teaserimage-image');
@@ -73,14 +73,7 @@ loadjs.ready('page', function() {
       }
     });
 
-    {% if page.readingTime %}
-    /* Calculates Reading Time */
-    $('.post-content').readingTime({
-        readingTimeTarget: '.post-reading-time',
-        wordCountTarget: '.post-word-count',
-    });
-    {% endif %}
-    {% if page.id %}
+    {% if page.layout == 'post' %}
     /* Creates Captions from Alt tags */
     $(".post-content img").each(function() {
         /* Let's put a caption if there is one */

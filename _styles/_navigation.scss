@@ -1,3 +1,6 @@
+//
+// Main site nav
+//
 .site-navigation {
   display: flex;
   flex-direction: row;
@@ -24,14 +27,38 @@
 
     &:hover {
       background-color: white;
-      color: black;
+      color: $link-color;
       text-decoration: none;
       font-weight: 400;
+    }
+
+    &.active {
+      background-color: white;
+      color: $link-color;
     }
   }
   .nav-brand {
     svg {
       vertical-align: text-bottom;
     }
+  }
+}
+
+// Btn group
+.btn-group {
+  text-align: center;
+
+  h2 {
+    color: #6d6d6d;
+  }
+}
+
+.btn.nav-btn {
+  font-weight: 200;
+  border: 1px solid #e6e5e5;
+  background-color: white;
+
+  &:hover {
+    border: 1px solid $link-color;
   }
 }

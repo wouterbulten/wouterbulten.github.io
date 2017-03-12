@@ -10,11 +10,11 @@ home: true
     <h1 class="home-header">Wouter Bulten</h1>
     <p class="home-lead">AI researcher, web &amp; software developer<br>hobby chef, theater enthousiast</p>
 
-    <div class="nav-main">
-      <a href="/about" class="btn">About me</a>
-      <a href="/curriculum-vitae" class="btn">Curriculum Vitae</a>
-      <a href="/contact" class="btn">Contact</a>
-    </div>
+    <nav class="btn-group">
+      <a href="/about" class="btn nav-btn">About me</a>
+      <a href="/curriculum-vitae" class="btn nav-btn">Curriculum Vitae</a>
+      <a href="/contact" class="btn nav-btn">Contact</a>
+    </nav>
 
     <p class="text-nav">I am available as a freelance developer, see <a class="" href="">OuterHills &amp; Services</a>.</p>
     <p class="text-nav">Read more on my <a class="" href="">tech blog</a>. More interested in food? See my latest <a href="">food projects</a>.</p>
@@ -55,19 +55,12 @@ home: true
     <h1>Latest blog updates</h1>
 
     <div class="blog-list">
-      {% for post in paginator.posts %}
+      {% for post in site.posts limit:5 %}
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
           <div class="article-item">
             <header class="post-header">
               <h2 class="post-title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
             </header>
-
-            {%if post.post_image %}
-              <a href="{{ post.url }}">
-                <div class="article-list-image" style="background-image: url({{post.post_image}})">
-                </div>
-              </a>
-            {% endif %}
 
             <section class="post-excerpt" itemprop="description">
               <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
@@ -82,20 +75,13 @@ home: true
           </div>
         </article>
       {% endfor %}
-
-      <nav class="pagination" role="navigation">
-        {% if paginator.next_page %}
-          <a class="newer-posts" href="/blog/{{paginator.next_page}}/">&larr; Older posts</a>
-        {% endif %}
-        <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-        {% if paginator.previous_page %}
-          {% if paginator.page == 2 %}
-            <a class="older-posts" href="/">Newer posts &rarr;</a>
-          {% else %}
-            <a class="older-posts" href="/blog/{{paginator.previous_page}}/">Newer posts &rarr;</a>
-          {% endif %}
-        {% endif %}
-      </nav>
     </div>
+
+    <nav class="btn-group">
+      <h2>Read more</h2>
+      <a href="/tech" class="btn nav-btn">Tech posts</a>
+      <a href="/blog" class="btn nav-btn">Blog index</a>
+      <a href="/food" class="btn nav-btn">Food posts</a>
+    </nav>
   </div>
 </div>
