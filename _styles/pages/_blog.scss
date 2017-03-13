@@ -24,11 +24,6 @@
   }
 }
 
-.page-post .content-wrapper {
-  background-color: white;
-  margin: 2rem 0 2rem 0;
-}
-
 .post.post-single {
 
   @include make-col-ready();
@@ -106,6 +101,7 @@
 
     .author {
       font-weight: 400;
+      color: #333332;
     }
   }
 

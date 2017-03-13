@@ -2747,6 +2747,11 @@ body {
     body {
       padding-top: 5rem; } }
 
+.page-post .content-wrapper {
+  background-color: white;
+  margin: 2rem 0 2rem 0;
+  padding-bottom: 2rem; }
+
 .container {
   max-width: 60rem;
   position: relative;
@@ -2949,13 +2954,25 @@ body {
   .image-grid-3 .image-grid-item img {
     width: 100%; }
 
+.site-name {
+  position: absolute;
+  top: -49px;
+  font-size: 45px;
+  left: 2rem;
+  color: #6d6d6d;
+  text-shadow: 1px 1px 0px white;
+  font-weight: 200; }
+
 .site-navigation {
+  border-top: 1px solid #6d6d6d;
+  box-shadow: 1px -1px 0px 0px white;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  position: relative;
   background-color: #f9f9f9;
   position: sticky;
-  top: 0;
+  top: -2px;
   z-index: 1000;
   margin-bottom: 1rem; }
   .site-navigation .nav-item {
@@ -3052,10 +3069,6 @@ body {
 .blog-list .post-title a {
   color: black; }
 
-.page-post .content-wrapper {
-  background-color: white;
-  margin: 2rem 0 2rem 0; }
-
 .post.post-single {
   position: relative;
   width: 100%;
@@ -3133,7 +3146,8 @@ body {
     line-height: 30px;
     margin-bottom: 4rem; }
     .post.post-single .post-meta .author {
-      font-weight: 400; }
+      font-weight: 400;
+      color: #333332; }
   .post.post-single .post-title {
     font-weight: 700;
     font-style: normal;

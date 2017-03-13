@@ -15,6 +15,12 @@ body {
   }
 }
 
+.page-post .content-wrapper {
+  background-color: white;
+  margin: 2rem 0 2rem 0;
+  padding-bottom: 2rem;
+}
+
 .container {
   max-width: 60rem;
   @include make-container();

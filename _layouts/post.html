@@ -12,9 +12,11 @@ layout: default
     <div class="cf post-meta-text">
       <div class="author-image" style="background-image: url({{ site.author_image }})">Blog Logo</div>
 
-      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <span class="author-name" itemprop="name">{{ site.author }}</span>
-      </span>
+        <a href="/about">
+            <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <span class="author-name" itemprop="name">{{ site.author }}</span>
+            </span>
+        </a>
       &nbsp;on
       <time itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time>,
       <span class="keywords tags" itemprop="keywords">keywords: {{ page.tags | join: ', ' }}

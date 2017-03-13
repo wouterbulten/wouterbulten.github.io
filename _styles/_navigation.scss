@@ -1,14 +1,28 @@
 //
 // Main site nav
 //
+.site-name {
+  position: absolute;
+  top: -49px;
+  font-size: 45px;
+  left: 2rem;
+
+  color: #6d6d6d;
+  text-shadow: 1px 1px 0px white;
+  font-weight: 200;
+}
+
 .site-navigation {
+  border-top: 1px solid #6d6d6d;
+  box-shadow: 1px -1px 0px 0px white;
+
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-
+  position: relative;
   background-color: #f9f9f9;
   position: sticky;
-  top: 0;
+  top: -2px;
   z-index: 1000;
 
   margin-bottom: 1rem;

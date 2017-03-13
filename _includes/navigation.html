@@ -1,19 +1,38 @@
+<div class="site-header container">
+    <a href="/" class="site-name">Wouter Bulten</a>
+</div>
 <nav class="site-navigation container">
+
     <a href="/" class="nav-brand nav-item"><svg class="svg-icon"><use xlink:href="#icon-home-outline"></use></svg></a>
+
+    {% if page.url == '/about/' %}
+    <a href="/about" class="nav-item active">About</a>
+    {% else %}
     <a href="/about" class="nav-item">About</a>
+    {% endif %}
+
+    {% if page.url == '/curriculum-vitae/' %}
+    <a href="/curriculum-vitae" class="nav-item active">CV</a>
+    {% else %}
     <a href="/curriculum-vitae" class="nav-item">CV</a>
+    {% endif %}
 
     {% if page.categories[1] == 'food' %}
-      <a href="/food" class="nav-item active">Food</a>
+    <a href="/food" class="nav-item active">Food</a>
     {% else %}
-      <a href="/food" class="nav-item">Food</a>
+    <a href="/food" class="nav-item">Food</a>
     {% endif %}
 
     {% if page.categories[1] == 'tech' %}
-      <a href="/tech" class="nav-item active">Tech</a>
+    <a href="/tech" class="nav-item active">Tech</a>
     {% else %}
-      <a href="/tech" class="nav-item">Tech</a>
+    <a href="/tech" class="nav-item">Tech</a>
     {% endif %}
 
+    {% if page.url == '/contact/' %}
+    <a href="/contact" class="nav-item active">Contact</a>
+    {% else %}
     <a href="/contact" class="nav-item">Contact</a>
+    {% endif %}
 </nav>
+
