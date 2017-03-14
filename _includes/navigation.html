@@ -17,16 +17,16 @@
     <a href="/curriculum-vitae" class="nav-item">CV</a>
     {% endif %}
 
-    {% if page.categories[1] == 'food' %}
-    <a href="/food" class="nav-item active">Food</a>
+    {% if page.categories[1] == 'food' or page.url == '/blog/food/' %}
+    <a href="/blog/food" class="nav-item active">Food</a>
     {% else %}
-    <a href="/food" class="nav-item">Food</a>
+    <a href="/blog/food" class="nav-item">Food</a>
     {% endif %}
 
-    {% if page.categories[1] == 'tech' %}
-    <a href="/tech" class="nav-item active">Tech</a>
+    {% if page.categories[1] == 'tech' or page.url == '/blog/tech/' %}
+    <a href="/blog/tech" class="nav-item active">Tech</a>
     {% else %}
-    <a href="/tech" class="nav-item">Tech</a>
+    <a href="/blog/tech" class="nav-item">Tech</a>
     {% endif %}
 
     {% if page.url == '/contact/' %}

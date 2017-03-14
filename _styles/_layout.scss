@@ -15,7 +15,7 @@ body {
   }
 }
 
-.page-post .content-wrapper {
+.page-post .content-wrapper, .page-category .content-wrapper {
   background-color: white;
   margin: 2rem 0 2rem 0;
   padding-bottom: 2rem;
@@ -51,7 +51,7 @@ body {
   margin-bottom: 3rem;
 }
 
-.section-image, .section-content-title {
+.section-image, .section-content-title, .section-left {
   @include make-col-ready();
   @include make-col(12);
 

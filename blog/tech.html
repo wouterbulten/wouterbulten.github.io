@@ -1,0 +1,34 @@
+---
+title: Tech &amp; Dev
+layout: default
+category: tech
+description: An overview of my latest posts regarding technology and (web) development.
+blog_index: true
+---
+
+<div class="section post-overview">
+    <h1 class="category-title">Latest updates on Tech</h1>
+
+    <p class="lead">{{ page.description }}</p>
+
+    <div class="blog-list">
+        {% for post in site.categories.['tech'] %}
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+            <header class="post-header">
+                <h2 class="post-title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
+            </header>
+
+            <section class="post-excerpt" itemprop="description">
+                <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
+            </section>
+            <div class="post-meta">
+                <span class="post-category">{{ post.categories[1] }}</span>
+                |
+                <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
+                |
+                <a class="read-more" href="{{ post.url }}">Start reading &rarr;</a>
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+</div>

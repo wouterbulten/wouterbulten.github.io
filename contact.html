@@ -5,17 +5,25 @@ permalink: /contact/
 ---
 
 <div class="section-card">
-  <div class="section-image section-image-me"></div>
+    <div class="section-left">
+        <h1 class="page-title">Contact</h1>
+    </div>
 
-  <div class="section-content">
-    <section class="post-content">
-      <h1 class="page-title">Contact</h1>
+    <div class="section-content">
 
-      <p>Hi! I am Wouter Bulten, an AI researcher and developer.</p>
+        <form action="https://formspree.io/contact-form@wouterbulten.nl"
+        method="POST">
+            <label for="contact_name">Your name</label>
+            <input type="text" id="contact_name" name="name" placeholder="John Doe">
 
-      <p>This website is a portfolio of things I work on and things I like (combinations possible!).</p>
-    </section>
-  </div>
+            <label for="contact_email">Your email address</label>
+            <input type="email" id="contact_email" name="_replyto" placeholder="email@example.com">
+
+            <label for="contact_message">Message</label>
+            <textarea name="message" id="contact_message" placeholder="Your message"></textarea>
+            <input type="submit" value="Send">
+        </form>
+    </div>
 </div>
 
 I am Wouter Bulten, currently working as a software developer at [123test](http://www.123test.com) [.com](http://www.123test.com) /[.nl](http://www.123test.nl). I recently received my Master's degree in Artificial Intelligence from the [Radboud University](http://www.ru.nl).

@@ -2,6 +2,7 @@
 // Blog elements
 //
 
+// Blog list on the front page
 .blog-list {
 
   .article-item {
@@ -24,8 +25,33 @@
   }
 }
 
-.post.post-single {
+// General elements
+.category-title {
+  font-weight: 200;
+  font-style: normal;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  color: #333332;
+  margin-bottom: 16px;
+}
+.post-title {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 3.5rem;
+  color: #333332;
+  margin-bottom: 16px;
+}
 
+.post-content p, .post-excerpt p {
+    font-family: "Book Antiqua",Palatino,"Palatino Linotype","Palatino LT STD",Georgia,serif;
+    font-weight: 400;
+    font-style: normal;
+    hyphens: auto;
+}
+
+// Narrow layout for blog
+.post-single, .post-overview {
   @include make-col-ready();
   @include make-col(12);
 
@@ -34,17 +60,58 @@
     @include make-col(10);
   }
 
+  padding-top: 2rem;
+}
+
+// Layout for post overview on a category page
+.post-overview {
+    .post-title {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.8rem;
+    }
+
+    .post {
+      display: flex;
+      flex-wrap: wrap;
+
+      margin-bottom: 2rem;
+    }
+
+    .post-header {
+      flex: 0 0 100%;
+    }
+    .post-image {
+      flex: 0 0 33.333%;
+      padding: 10px 15px 0 0;
+      img {
+        max-width: 100%;
+      }
+    }
+    .post-excerpt {
+      flex: 0 0 100%;
+    }
+    .post-with-image .post-excerpt {
+      flex: 0 0 66.666%;
+    }
+    .post-meta {
+      flex: 0 0 100%;
+    }
+}
+
+
+// Layout for a single post
+.post.post-single {
+
   .post-content {
     width: 100%;
 
     p {
-      font-family: "Book Antiqua",Palatino,"Palatino Linotype","Palatino LT STD",Georgia,serif;
-      font-weight: 400;
-      font-style: normal;
       font-size: 1.2rem;
-      line-height: 29px;
-      hyphens: auto;
-
+      line-height: 2rem;
       padding-bottom: 1.1rem;
     }
 
@@ -72,7 +139,6 @@
       letter-spacing: -0.02em;
       font-weight: 700;
       font-style: normal;
-      font-size: 32px;
       line-height: 1.2;
       padding-top: 25px;
       margin-bottom: 4px;
@@ -90,8 +156,6 @@
   }
 
   .post-meta {
-    margin-top: 2rem;
-
     font-weight: 200;
     font-size: 0.9rem;
     color: #6d6d6d;
@@ -106,12 +170,7 @@
   }
 
   .post-title {
-    font-weight: 700;
-    font-style: normal;
-    font-size: 50px;
-    line-height: 1.1;
-    color: #333332;
-    margin-bottom: 16px;
+    font-size: 3.2rem;
   }
 
   .author-image {

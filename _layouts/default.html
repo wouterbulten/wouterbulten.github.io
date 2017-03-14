@@ -9,7 +9,13 @@ layout: compress
   {% if page.home %}
   <body class="page-home" itemscope itemtype="http://schema.org/WebPage">
   {% else %}
-  <body class="page-{{ page.permalink | replace: '/',''}} {% if page.layout == 'post' %}page-post{% endif %}" itemscope itemtype="http://schema.org/WebPage">
+  <body class="
+    page-{{ page.permalink | replace: '/',''}}
+    {% if page.blog_index %}page-category{% endif %}
+    {% if page.layout == 'post' %}page-post{% endif %}
+    "
+
+    itemscope itemtype="http://schema.org/WebPage">
   {% endif %}
 
     {% if page.layout == 'post' %}
