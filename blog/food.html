@@ -11,31 +11,30 @@ blog_index: true
 
     <p class="lead">{{ page.description }}</p>
 
-    <div class="blog-list">
+    <div class="blog-list-tiles">
         {% for post in site.categories.['food'] %}
         <article class="post post-with-image" itemscope itemtype="http://schema.org/BlogPosting" role="article">
-            <header class="post-header">
-                <h2 class="post-title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
-            </header>
-
+            <div class="post-meta">
+                <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
+            </div>
             <div class="post-image">
                 {% if post.post_image %}
                 <a href="{{ post.url }}">
                     <img src="{{ post.post_image }}">
                 </a>
                 {% endif %}
+
+                {% if post.instagram_post %}
+                <a href="{{ post.url }}">
+                    <img src="https://instagram.com/p/{{ post.instagram_post }}/media">
+                </a>
+                {% endif %}
             </div>
 
-            <section class="post-excerpt" itemprop="description">
-                <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
-            </section>
-            <div class="post-meta">
-                <span class="post-category">{{ post.categories[1] }}</span>
-                |
-                <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
-                |
-                <a class="read-more" href="{{ post.url }}">Start reading &rarr;</a>
-            </div>
+            <header>
+                <h2 class="tile-title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
+            </header>
+
         </article>
         {% endfor %}
     </div>

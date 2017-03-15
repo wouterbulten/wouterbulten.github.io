@@ -2,7 +2,6 @@
 // Blog elements
 //
 
-// Blog list on the front page
 .blog-list {
 
   .article-item {
@@ -23,6 +22,53 @@
   .post-title a {
     color: black;
   }
+  .post {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-bottom: 2rem;
+  }
+
+  .post-header {
+    flex: 0 0 100%;
+  }
+  .post-image {
+    flex: 0 0 100%;
+    @include media-breakpoint-up(md) {
+      flex: 0 0 33.333%;
+    }
+    padding: 10px 15px 0 0;
+    img {
+      max-width: 100%;
+    }
+  }
+  .post-excerpt {
+    flex: 0 0 100%;
+  }
+  .post-with-image .post-excerpt {
+    flex: 0 0 100%;
+    @include media-breakpoint-up(md) {
+      flex: 0 0 66.666%;
+    }
+  }
+  .post-meta {
+    flex: 0 0 100%;
+  }
+}
+
+// Image overview (for food posts)
+.blog-list-tiles {
+  display: flex;
+  flex-wrap: wrap;
+
+  .post {
+    flex: 0 1 33%;
+
+    img {
+      width: 100%;
+    }
+  }
+
 }
 
 // General elements
@@ -73,35 +119,7 @@
       font-size: 1rem;
       line-height: 1.8rem;
     }
-
-    .post {
-      display: flex;
-      flex-wrap: wrap;
-
-      margin-bottom: 2rem;
-    }
-
-    .post-header {
-      flex: 0 0 100%;
-    }
-    .post-image {
-      flex: 0 0 33.333%;
-      padding: 10px 15px 0 0;
-      img {
-        max-width: 100%;
-      }
-    }
-    .post-excerpt {
-      flex: 0 0 100%;
-    }
-    .post-with-image .post-excerpt {
-      flex: 0 0 66.666%;
-    }
-    .post-meta {
-      flex: 0 0 100%;
-    }
 }
-
 
 // Layout for a single post
 .post.post-single {
