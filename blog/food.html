@@ -11,7 +11,28 @@ blog_index: true
 
     <p class="lead">{{ page.description }}</p>
 
-    <div class="blog-list-tiles">
+    <p class="lead">You can also follow my food-updates on <a href="https://instagram.com/wouterbulten">Instagram</a>.</p>
+
+    <div class="card-group">
+        {% for post in site.categories.['food'] %}
+        <article class="card" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+            {% if post.post_image %}
+                <a href="{{ post.url }}">
+                    <img class="card-img-top" src="{{ post.post_image }}" alt="{{ post.title }}">
+                </a>
+            {% endif %}
+            <div class="card-block">
+                <h4 class="card-title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h4>
+                <p class="card-text">{{ post.description }}</p>
+            </div>
+            <div class="card-footer">
+                <time class="text-muted" datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+
+    <!--<div class="blog-list-tiles">
         {% for post in site.categories.['food'] %}
         <article class="post post-with-image" itemscope itemtype="http://schema.org/BlogPosting" role="article">
             <div class="post-meta">
@@ -37,5 +58,5 @@ blog_index: true
 
         </article>
         {% endfor %}
-    </div>
+    </div>-->
 </div>

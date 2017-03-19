@@ -11,7 +11,7 @@ permalink: /contact/
 
     <div class="section-content">
 
-        <form action="https://formspree.io/contact-form@wouterbulten.nl"
+        <form class="form-contact" action="https://formspree.io/contact-form@wouterbulten.nl"
         method="POST">
             <label for="contact_name">Your name</label>
             <input type="text" id="contact_name" name="name" placeholder="John Doe">
@@ -20,8 +20,8 @@ permalink: /contact/
             <input type="email" id="contact_email" name="_replyto" placeholder="email@example.com">
 
             <label for="contact_message">Message</label>
-            <textarea name="message" id="contact_message" placeholder="Your message"></textarea>
-            <input type="submit" value="Send">
+            <textarea name="message" id="contact_message" placeholder="Your message" rows="8"></textarea>
+            <input type="submit" value="Send" class="btn nav-btn">
         </form>
     </div>
 </div>

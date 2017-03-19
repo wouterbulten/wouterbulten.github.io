@@ -2,7 +2,8 @@
 
 echo "Name of post"
 read title
-date=`date +%Y-%m-%d`
+echo "Date of post (y-m-d)"
+read date
 
 echo "IG"
 read ig
@@ -22,6 +23,12 @@ tags: []
 post_image: /assets/images/food/$fileName.jpg
 post_image_large: /assets/images/food/${fileName}_large.jpg
 ---
+
+<!-- begin ig snippet -->
 "
 
 echo "$content" >> "$path"
+
+# Download IG snippet
+curl -s "https://api.instagram.com/oembed/?url=http://instagr.am/p/$ig" | jq -r '.html' >> "$path"
+echo "<!-- end ig snippet -->" >> "$path"
