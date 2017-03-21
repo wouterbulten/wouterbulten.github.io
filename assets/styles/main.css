@@ -3256,7 +3256,8 @@ body {
   margin: 20px; }
   .nav-external .svg-icon {
     margin: 15px;
-    vertical-align: middle; }
+    vertical-align: middle;
+    color: black; }
     .nav-external .svg-icon:hover {
       color: #0275d8;
       cursor: pointer; }
@@ -3326,22 +3327,19 @@ body {
   color: #333332;
   margin-bottom: 16px; }
 
-.post-content p, .post-excerpt p {
+.post-content p {
   font-family: "Book Antiqua",Palatino,"Palatino Linotype","Palatino LT STD",Georgia,serif;
   font-weight: 400;
   font-style: normal;
   hyphens: auto; }
-
-.blog-list .article-item {
-  padding-bottom: 1.5rem; }
 
 .blog-list .post-meta {
   color: #6d6d6d;
   font-size: 0.8rem; }
 
 .blog-list .post-excerpt {
-  font-size: 0.9em;
-  color: #5a5a5a; }
+  font-size: 1rem;
+  color: #6d6d6d; }
 
 .blog-list .post-category {
   text-transform: uppercase; }
@@ -3350,33 +3348,7 @@ body {
   color: black; }
 
 .blog-list .post {
-  display: flex;
-  flex-wrap: wrap;
   margin-bottom: 2rem; }
-
-.blog-list .post-header {
-  flex: 0 0 100%; }
-
-.blog-list .post-image {
-  flex: 0 0 100%;
-  padding: 10px 15px 0 0; }
-  @media (min-width: 768px) {
-    .blog-list .post-image {
-      flex: 0 0 33.333%; } }
-  .blog-list .post-image img {
-    max-width: 100%; }
-
-.blog-list .post-excerpt {
-  flex: 0 0 100%; }
-
-.blog-list .post-with-image .post-excerpt {
-  flex: 0 0 100%; }
-  @media (min-width: 768px) {
-    .blog-list .post-with-image .post-excerpt {
-      flex: 0 0 66.666%; } }
-
-.blog-list .post-meta {
-  flex: 0 0 100%; }
 
 .post.post-single .post-content {
   width: 100%; }

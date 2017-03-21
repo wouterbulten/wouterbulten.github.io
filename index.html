@@ -20,10 +20,10 @@ home: true
     <p class="text-nav">Read more on my <a class="" href="">tech blog</a>. More interested in food? See my latest <a href="">food projects</a>.</p>
 
     <div class="nav-external">
-      <a class="" title="My GitHub profile"><svg class="svg-icon svg-icon-gh"><use xlink:href="#icon-gh"></use></svg></a>
-      <a class="" title="My LinkedIn profile"><svg class="svg-icon svg-icon-li"><use xlink:href="#icon-li"></use></svg></a>
-      <a class=""><svg class="svg-icon svg-icon-ig"><use xlink:href="#icon-ig"></use></svg></a>
-      <a class=""><svg class="svg-icon svg-icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg></a>
+      <a href="https://github.com/wouterbulten" class="" title="My GitHub profile"><svg class="svg-icon svg-icon-gh"><use xlink:href="#icon-gh"></use></svg></a>
+      <a href="https://linkedin.com/in/wouterbulten" class="" title="My LinkedIn profile"><svg class="svg-icon svg-icon-li"><use xlink:href="#icon-li"></use></svg></a>
+      <a href="https://www.instagram.com/wouterbulten" class=""><svg class="svg-icon svg-icon-ig"><use xlink:href="#icon-ig"></use></svg></a>
+      <a href="/contact" class=""><svg class="svg-icon svg-icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg></a>
     </div>
 
   </div>
@@ -33,22 +33,9 @@ home: true
   <div class="section-image section-updates">
     <h1>Food projects</h1>
     <div class="image-grid image-grid-3">
-      <a href="#" class="image-grid-item"><img src="https://www.instagram.com/p/BRQQHqtDMED/media?size=t" /></a>
-      <a href="#" class="image-grid-item"><img src="https://www.instagram.com/p/BQTk44rj03C/media?size=t" /></a>
-      <a href="#" class="image-grid-item"><img src="https://www.instagram.com/p/BQ8s4NJjSdr/media?size=t" /></a>
-      <a href="#" class="image-grid-item"><img src="https://www.instagram.com/p/BQs0UrkDnX9/media?size=t" /></a>
-      <a href="#" class="image-grid-item"><img src="https://www.instagram.com/p/BQsfGIfDoVR/media?size=t" /></a>
-      <a href="#" class="image-grid-item"><img src="https://www.instagram.com/p/BQYv6tIDVP1/media?size=t" /></a>
-      <a href="#" class="image-grid-item"><img src="https://www.instagram.com/p/BOuqv3bj3QD/media?size=t" /></a>
-      <a href="#" class="image-grid-item"><img src="https://www.instagram.com/p/BO5GDkwjdjc/media?size=t" /></a>
-      <a href="#" class="image-grid-item"><img src="https://www.instagram.com/p/BRQQHqtDMED/media?size=t" /></a>
-      <a href="#" class="image-grid-item"><img src="https://www.instagram.com/p/BQTk44rj03C/media?size=t" /></a>
-      <a href="#" class="image-grid-item"><img src="https://www.instagram.com/p/BQ8s4NJjSdr/media?size=t" /></a>
-      <a href="#" class="image-grid-item"><img src="https://www.instagram.com/p/BQs0UrkDnX9/media?size=t" /></a>
-      <a href="#" class="image-grid-item"><img src="https://www.instagram.com/p/BQsfGIfDoVR/media?size=t" /></a>
-      <a href="#" class="image-grid-item"><img src="https://www.instagram.com/p/BQYv6tIDVP1/media?size=t" /></a>
-      <a href="#" class="image-grid-item"><img src="https://www.instagram.com/p/BOuqv3bj3QD/media?size=t" /></a>
-      <a href="#" class="image-grid-item"><img src="https://www.instagram.com/p/BO5GDkwjdjc/media?size=t" /></a>
+        {% for post in site.categories.['food'] %}
+        <a href="{{ post.url }}" class="image-grid-item"><img src="{{ post.post_image }}" title="{{ post.title }}"></a>
+        {% endfor %}
     </div>
   </div>
   <div class="section-content section-updates">

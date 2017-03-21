@@ -49,7 +49,7 @@
   color: #333332;
   margin-bottom: 16px;
 }
-.post-content p, .post-excerpt p {
+.post-content p {
     font-family: "Book Antiqua",Palatino,"Palatino Linotype","Palatino LT STD",Georgia,serif;
     font-weight: 400;
     font-style: normal;
@@ -58,18 +58,13 @@
 
 // Blog overview in text mode
 .blog-list {
-
-  .article-item {
-    padding-bottom: 1.5rem;
-  }
-
   .post-meta {
     color: #6d6d6d;
     font-size: 0.8rem;
   }
   .post-excerpt {
-    font-size: 0.9em;
-    color: #5a5a5a;
+    font-size: 1rem;
+    color: #6d6d6d;
   }
   .post-category {
     text-transform: uppercase;
@@ -78,36 +73,7 @@
     color: black;
   }
   .post {
-    display: flex;
-    flex-wrap: wrap;
-
     margin-bottom: 2rem;
-  }
-
-  .post-header {
-    flex: 0 0 100%;
-  }
-  .post-image {
-    flex: 0 0 100%;
-    @include media-breakpoint-up(md) {
-      flex: 0 0 33.333%;
-    }
-    padding: 10px 15px 0 0;
-    img {
-      max-width: 100%;
-    }
-  }
-  .post-excerpt {
-    flex: 0 0 100%;
-  }
-  .post-with-image .post-excerpt {
-    flex: 0 0 100%;
-    @include media-breakpoint-up(md) {
-      flex: 0 0 66.666%;
-    }
-  }
-  .post-meta {
-    flex: 0 0 100%;
   }
 }
 
