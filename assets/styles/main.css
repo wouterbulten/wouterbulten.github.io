@@ -2933,7 +2933,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300; }
 
 .page-title {
-  margin-bottom: 1rem; }
+  font-weight: 200;
+  font-style: normal;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  color: #333332;
+  margin-bottom: 16px; }
 
 .section-updates h1, .section-content-title h2 {
   text-align: center;
@@ -2990,26 +2995,26 @@ body {
       padding-right: 15px;
       padding-left: 15px; } }
 
-.section {
+.section, .section-card {
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
   margin-bottom: 3rem; }
   @media (min-width: 576px) {
-    .section {
+    .section, .section-card {
       margin-right: -15px;
       margin-left: -15px; } }
   @media (min-width: 768px) {
-    .section {
+    .section, .section-card {
       margin-right: -15px;
       margin-left: -15px; } }
   @media (min-width: 992px) {
-    .section {
+    .section, .section-card {
       margin-right: -15px;
       margin-left: -15px; } }
   @media (min-width: 1200px) {
-    .section {
+    .section, .section-card {
       margin-right: -15px;
       margin-left: -15px; } }
 
@@ -3020,31 +3025,12 @@ body {
   color: #999999; }
 
 .section-card {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
   background-color: white;
-  border-radius: 2px;
-  margin-bottom: 3rem; }
-  @media (min-width: 576px) {
-    .section-card {
-      margin-right: -15px;
-      margin-left: -15px; } }
-  @media (min-width: 768px) {
-    .section-card {
-      margin-right: -15px;
-      margin-left: -15px; } }
-  @media (min-width: 992px) {
-    .section-card {
-      margin-right: -15px;
-      margin-left: -15px; } }
-  @media (min-width: 1200px) {
-    .section-card {
-      margin-right: -15px;
-      margin-left: -15px; } }
+  border-radius: 2px; }
 
-.section-image, .section-content-title, .section-left {
+.section-image,
+.section-content-title,
+.section-left {
   position: relative;
   width: 100%;
   min-height: 1px;
@@ -3053,26 +3039,61 @@ body {
   flex: 0 0 100%;
   max-width: 100%; }
   @media (min-width: 576px) {
-    .section-image, .section-content-title, .section-left {
+    .section-image,
+    .section-content-title,
+    .section-left {
       padding-right: 15px;
       padding-left: 15px; } }
   @media (min-width: 768px) {
-    .section-image, .section-content-title, .section-left {
+    .section-image,
+    .section-content-title,
+    .section-left {
       padding-right: 15px;
       padding-left: 15px; } }
   @media (min-width: 992px) {
-    .section-image, .section-content-title, .section-left {
+    .section-image,
+    .section-content-title,
+    .section-left {
       padding-right: 15px;
       padding-left: 15px; } }
   @media (min-width: 1200px) {
-    .section-image, .section-content-title, .section-left {
+    .section-image,
+    .section-content-title,
+    .section-left {
       padding-right: 15px;
       padding-left: 15px; } }
   @media (min-width: 768px) {
-    .section-image, .section-content-title, .section-left {
+    .section-image,
+    .section-content-title,
+    .section-left {
       padding-top: 1rem;
       flex: 0 0 41.66667%;
       max-width: 41.66667%; } }
+
+.section-fullpage {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 100%;
+  max-width: 100%; }
+  @media (min-width: 576px) {
+    .section-fullpage {
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media (min-width: 768px) {
+    .section-fullpage {
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media (min-width: 992px) {
+    .section-fullpage {
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media (min-width: 1200px) {
+    .section-fullpage {
+      padding-right: 15px;
+      padding-left: 15px; } }
 
 .section-content {
   position: relative;
@@ -3307,6 +3328,12 @@ body {
 .post-overview .card-group .card-text {
   color: #6d6d6d; }
 
+.post-overview .card-group .card-title a {
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1.8rem;
+  color: #333332; }
+
 .post-overview .card-group img {
   width: 100%;
   height: auto; }
@@ -3335,7 +3362,7 @@ body {
 
 .blog-list .post-meta {
   color: #6d6d6d;
-  font-size: 0.8rem; }
+  font-size: 1.1rem; }
 
 .blog-list .post-excerpt {
   font-size: 1rem;
@@ -3349,6 +3376,11 @@ body {
 
 .blog-list .post {
   margin-bottom: 2rem; }
+
+.blog-list-condensed .blog-item {
+  padding-bottom: 0.5rem; }
+  .blog-list-condensed .blog-item a {
+    font-weight: 200; }
 
 .post.post-single .post-content {
   width: 100%; }

@@ -26,7 +26,7 @@ body {
   @include make-container();
 }
 
-.section {
+.section, .section-card  {
   @include make-row();
   margin-bottom: 3rem;
 }
@@ -43,15 +43,13 @@ body {
 // such as used on the home page
 //
 .section-card {
-  @include make-row();
-
   background-color: white;
   border-radius: 2px;
-
-  margin-bottom: 3rem;
 }
 
-.section-image, .section-content-title, .section-left {
+.section-image,
+.section-content-title,
+.section-left {
   @include make-col-ready();
   @include make-col(12);
 
@@ -59,6 +57,10 @@ body {
     padding-top: 1rem;
     @include make-col(5);
   }
+}
+.section-fullpage {
+  @include make-col-ready();
+  @include make-col(12);
 }
 .section-content {
   @include make-col-ready();

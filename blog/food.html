@@ -6,57 +6,75 @@ category: cooking
 blog_index: true
 ---
 
+{% assign date_threshold = "2017-01-01" | date: "%s" %}
+
 <div class="section post-overview">
-    <h1 class="category-title">Latest updates on Food</h1>
+    <div class="section-fullpage">
+        <h1 class="category-title">Latest updates on Food</h1>
 
-    <p class="lead">{{ page.description }}</p>
+        <p class="lead">{{ page.description }}</p>
 
-    <p class="lead">You can also follow my food-updates on <a href="https://instagram.com/wouterbulten">Instagram</a>.</p>
+        <p class="lead">You can also follow my food-updates on <a href="https://instagram.com/wouterbulten">Instagram</a>.</p>
 
-    <div class="card-group">
-        {% for post in site.categories.['food'] %}
-        <article class="card" itemscope itemtype="http://schema.org/BlogPosting" role="article">
-            {% if post.post_image %}
-                <a href="{{ post.url }}">
-                    <img class="card-img-top" src="{{ post.post_image }}" alt="{{ post.title }}">
-                </a>
-            {% endif %}
-            <div class="card-block">
-                <h4 class="card-title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h4>
-                <p class="card-text">{{ post.description }}</p>
-            </div>
-            <div class="card-footer">
-                <time class="text-muted" datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
-            </div>
-        </article>
-        {% endfor %}
-    </div>
+        <div class="card-group">
+            {% for post in site.categories.['food'] %}
 
-    <!--<div class="blog-list-tiles">
-        {% for post in site.categories.['food'] %}
-        <article class="post post-with-image" itemscope itemtype="http://schema.org/BlogPosting" role="article">
-            <div class="post-meta">
-                <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
-            </div>
-            <div class="post-image">
+            {% assign post_date = post.date | date: "%s" %}
+
+            {% if post_date > date_threshold %}
+            <article class="card" itemscope itemtype="http://schema.org/BlogPosting" role="article">
                 {% if post.post_image %}
-                <a href="{{ post.url }}">
-                    <img src="{{ post.post_image }}">
-                </a>
+                    <a href="{{ post.url }}">
+                        <img class="card-img-top" src="{{ post.post_image }}" alt="{{ post.title }}">
+                    </a>
                 {% endif %}
+                <div class="card-block">
+                    <h4 class="card-title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h4>
+                    <p class="card-text">{{ post.description }}</p>
+                </div>
+            </article>
+            {% endif %}
+            {% endfor %}
+        </div>
 
-                {% if post.instagram_post %}
-                <a href="{{ post.url }}">
-                    <img src="https://instagram.com/p/{{ post.instagram_post }}/media">
-                </a>
-                {% endif %}
-            </div>
+        <h2>Older posts</h2>
+        <ul class="blog-list-condensed">
+            {% for post in site.categories.['food'] %}
 
-            <header>
-                <h2 class="tile-title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
-            </header>
+            {% assign post_date = post.date | date: "%s" %}
 
-        </article>
-        {% endfor %}
-    </div>-->
+            {% if post_date < date_threshold %}
+            <li class="blog-item"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+
+        <!--<div class="blog-list-tiles">
+            {% for post in site.categories.['food'] %}
+            <article class="post post-with-image" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+                <div class="post-meta">
+                    <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
+                </div>
+                <div class="post-image">
+                    {% if post.post_image %}
+                    <a href="{{ post.url }}">
+                        <img src="{{ post.post_image }}">
+                    </a>
+                    {% endif %}
+
+                    {% if post.instagram_post %}
+                    <a href="{{ post.url }}">
+                        <img src="https://instagram.com/p/{{ post.instagram_post }}/media">
+                    </a>
+                    {% endif %}
+                </div>
+
+                <header>
+                    <h2 class="tile-title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
+                </header>
+
+            </article>
+            {% endfor %}
+        </div>-->
+    </div>
 </div>

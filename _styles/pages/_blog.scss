@@ -26,6 +26,12 @@
   .card-text {
     color: #6d6d6d;
   }
+  .card-title a {
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.8rem;
+    color: #333332;
+  }
   img {
     width: 100%;
     height: auto;
@@ -60,7 +66,7 @@
 .blog-list {
   .post-meta {
     color: #6d6d6d;
-    font-size: 0.8rem;
+    font-size: 1.1rem;
   }
   .post-excerpt {
     font-size: 1rem;
@@ -74,6 +80,16 @@
   }
   .post {
     margin-bottom: 2rem;
+  }
+}
+.blog-list-condensed {
+
+  .blog-item {
+    padding-bottom: 0.5rem;
+
+    a {
+      font-weight: 200;
+    }
   }
 }
 
