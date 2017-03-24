@@ -5,6 +5,7 @@ date:   2015-10-23
 categories: blog food
 tags: [wine salt, garnish, leftovers]
 post_image: /assets/images/recipes/red-wine-salt-post.jpg
+permalink: blog/cooking/making-wine-salt/
 ---
 
 Every wine drinker (or someone who offers wine to others) will experience this situation at least once: you have leftover (red) wine. What to do with it? For the sake of the argument, disregard the option of just drinking it for now! Of course you can turn wine in to vinegar but I wanted to try something else. Just recently I came across the concept of *wine salts*: salt infused with wine and herbs.

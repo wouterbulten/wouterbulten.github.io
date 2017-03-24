@@ -5,6 +5,7 @@ date:   2015-10-16
 categories: blog food
 tags: [dessert, brulee, sous-vide]
 post_image: /assets/images/recipes/brulee-post.jpg
+permalink: blog/cooking/sous-vide-creme-brulee/
 ---
 
 Making crème brûlée can be a joy, not only because of the end result, but also because of the whole process: from making the custard to creating a nice caramel crust. Unfortunately, it can be difficult to make and there is a large risk of overcooking when making this dessert in an oven. The lack of a good oven is in fact one of the reasons why I never made this at home!
