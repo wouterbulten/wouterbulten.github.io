@@ -2966,10 +2966,10 @@ body {
     body {
       padding-top: 5rem; } }
 
-.page-post .content-wrapper, .page-category .content-wrapper {
+.page-post .content-wrapper, .page-category .content-wrapper, .page-curriculum-vitae .content-wrapper {
   background-color: white;
   margin: 2rem 0 2rem 0;
-  padding-bottom: 2rem; }
+  padding: 2rem 0 2rem 0; }
 
 .container {
   max-width: 60rem;
@@ -3287,9 +3287,6 @@ body {
   font-weight: 200;
   color: #6d6d6d;
   font-size: 0.9rem; }
-
-.post-overview, .post-overview-narrow, .post-single {
-  padding-top: 2rem; }
 
 .post-single, .post-overview-narrow {
   position: relative;
