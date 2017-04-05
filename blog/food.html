@@ -37,7 +37,7 @@ blog_index: true
             {% endfor %}
         </div>
 
-        <h2>Older posts</h2>
+        <h1>Older posts</h1>
         <ul class="blog-list-condensed">
             {% for post in site.categories.['food'] %}
 
@@ -48,33 +48,5 @@ blog_index: true
             {% endif %}
             {% endfor %}
         </ul>
-
-        <!--<div class="blog-list-tiles">
-            {% for post in site.categories.['food'] %}
-            <article class="post post-with-image" itemscope itemtype="http://schema.org/BlogPosting" role="article">
-                <div class="post-meta">
-                    <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
-                </div>
-                <div class="post-image">
-                    {% if post.post_image %}
-                    <a href="{{ post.url }}">
-                        <img src="{{ post.post_image }}">
-                    </a>
-                    {% endif %}
-
-                    {% if post.instagram_post %}
-                    <a href="{{ post.url }}">
-                        <img src="https://instagram.com/p/{{ post.instagram_post }}/media">
-                    </a>
-                    {% endif %}
-                </div>
-
-                <header>
-                    <h2 class="tile-title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
-                </header>
-
-            </article>
-            {% endfor %}
-        </div>-->
     </div>
 </div>

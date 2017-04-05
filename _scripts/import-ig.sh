@@ -13,15 +13,18 @@ path="../_posts/recipes/$fileName.md"
 
 wget --output-document="../assets/images/food/$fileName.jpg" "https://www.instagram.com/p/$ig/media"
 wget --output-document="../assets/images/food/${fileName}_large.jpg" "https://www.instagram.com/p/$ig/media?size=l"
+wget --output-document="../assets/images/food/${fileName}_thumbnail.jpg" "https://www.instagram.com/p/$ig/media?size=t"
 
 content="---
 layout: post
 title:  '$title'
 date:   $date
 categories: blog food
+ig: $ig
 tags: []
 post_image: /assets/images/food/$fileName.jpg
 post_image_large: /assets/images/food/${fileName}_large.jpg
+post_image_small: /assets/images/food/${fileName}_thumbnail.jpg
 ---
 
 <!-- begin ig snippet -->

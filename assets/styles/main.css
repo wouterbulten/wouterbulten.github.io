@@ -3155,13 +3155,18 @@ body {
       flex: 0 0 58.33333%;
       max-width: 58.33333%; } }
 
-.section-image-me {
-  background-image: url("../images/wouterbulten-optim.JPG");
+.section-image-me, .section-image-me2 {
   background-color: lightblue;
   background-size: cover;
   background-position: center center;
   min-height: 350px;
   max-height: 500px; }
+
+.section-image-me {
+  background-image: url("../images/wouterbulten-optim.JPG"); }
+
+.section-image-me2 {
+  background-image: url("../images/Wouter_Bulten_v2.jpg"); }
 
 .svg-icon {
   display: inline-block;
@@ -3288,7 +3293,7 @@ body {
   color: #6d6d6d;
   font-size: 0.9rem; }
 
-.post-single, .post-overview-narrow {
+.post-single, .post-overview-narrow, .comment-section, .related-posts {
   position: relative;
   width: 100%;
   min-height: 1px;
@@ -3297,43 +3302,42 @@ body {
   flex: 0 0 100%;
   max-width: 100%; }
   @media (min-width: 576px) {
-    .post-single, .post-overview-narrow {
+    .post-single, .post-overview-narrow, .comment-section, .related-posts {
       padding-right: 15px;
       padding-left: 15px; } }
   @media (min-width: 768px) {
-    .post-single, .post-overview-narrow {
+    .post-single, .post-overview-narrow, .comment-section, .related-posts {
       padding-right: 15px;
       padding-left: 15px; } }
   @media (min-width: 992px) {
-    .post-single, .post-overview-narrow {
+    .post-single, .post-overview-narrow, .comment-section, .related-posts {
       padding-right: 15px;
       padding-left: 15px; } }
   @media (min-width: 1200px) {
-    .post-single, .post-overview-narrow {
+    .post-single, .post-overview-narrow, .comment-section, .related-posts {
       padding-right: 15px;
       padding-left: 15px; } }
   @media (min-width: 768px) {
-    .post-single, .post-overview-narrow {
+    .post-single, .post-overview-narrow, .comment-section, .related-posts {
       margin-left: 8.33333%;
       flex: 0 0 83.33333%;
       max-width: 83.33333%; } }
 
-.post-overview .card-group .card {
-  min-width: 33%;
-  margin-bottom: 1rem; }
-
-.post-overview .card-group .card-text {
-  color: #6d6d6d; }
-
-.post-overview .card-group .card-title a {
-  font-weight: 200;
-  font-style: normal;
-  font-size: 1.8rem;
-  color: #333332; }
-
-.post-overview .card-group img {
-  width: 100%;
-  height: auto; }
+.post-overview .card-group {
+  margin-bottom: 3rem; }
+  .post-overview .card-group .card {
+    min-width: 33%;
+    margin-bottom: 1rem; }
+  .post-overview .card-group .card-text {
+    color: #6d6d6d; }
+  .post-overview .card-group .card-title a {
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.8rem;
+    color: #333332; }
+  .post-overview .card-group img {
+    width: 100%;
+    height: auto; }
 
 .category-title {
   font-weight: 200;
@@ -3351,7 +3355,7 @@ body {
   color: #333332;
   margin-bottom: 16px; }
 
-.post-content p {
+.post-content p, .post-content ul, .post-content ol {
   font-family: "Book Antiqua",Palatino,"Palatino Linotype","Palatino LT STD",Georgia,serif;
   font-weight: 400;
   font-style: normal;
@@ -3380,10 +3384,10 @@ body {
     font-weight: 200; }
 
 .post.post-single .post-content {
-  width: 100%; }
+  width: 100%;
+  font-size: 1.2rem;
+  line-height: 2rem; }
   .post.post-single .post-content p {
-    font-size: 1.2rem;
-    line-height: 2rem;
     padding-bottom: 1.1rem; }
   .post.post-single .post-content figure {
     margin: 0;
@@ -3439,6 +3443,13 @@ body {
   border-radius: 100%;
   text-indent: -9999px; }
 
+.related-posts {
+  padding: 2rem;
+  background-color: #f4f4f4;
+  margin-bottom: 2rem; }
+  .related-posts h2 {
+    padding-bottom: 1rem; }
+
 .cv-list dt {
   font-weight: 200; }
 
@@ -3454,4 +3465,10 @@ body {
     flex: 1 0 40%; }
   .form-contact input, .form-contact textarea {
     flex: 1 0 60%;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid #e6e5e5; }
+    .form-contact input:focus, .form-contact textarea:focus {
+      outline: none !important;
+      border: 1px solid #0275d8; }

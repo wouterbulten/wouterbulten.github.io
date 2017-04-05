@@ -3,9 +3,11 @@ layout: post
 title:  'Sous vide Crema Catalana'
 date:   2017-2-25
 categories: blog food
+ig: BQ8s4NJjSdr
 tags: []
 post_image: /assets/images/food/2017-2-25-sous-vide-crema-catalana.jpg
 post_image_large: /assets/images/food/2017-2-25-sous-vide-crema-catalana_large.jpg
+post_image_small: /assets/images/food/2017-2-25-sous-vide-crema-catalana_thumbnail.jpg
 ---
 
 <!-- begin ig snippet -->

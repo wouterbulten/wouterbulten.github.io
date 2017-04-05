@@ -4,7 +4,7 @@ home: true
 ---
 
 <div class="section-card section-home">
-  <div class="section-image section-image-me"></div>
+  <div class="section-image section-image-me2"></div>
 
   <div class="section-content">
     <h1 class="home-header">Wouter Bulten</h1>
@@ -31,18 +31,23 @@ home: true
 
 <div class="section">
   <div class="section-image section-updates">
-    <h1>Food projects</h1>
+    <h1>Latest food projects</h1>
     <div class="image-grid image-grid-3">
+        {% assign date_threshold = "2017-01-01" | date: "%s" %}
         {% for post in site.categories.['food'] %}
-        <a href="{{ post.url }}" class="image-grid-item"><img src="{{ post.post_image }}" title="{{ post.title }}"></a>
+        {% assign post_date = post.date | date: "%s" %}
+
+            {% if post_date > date_threshold %}
+            <a href="{{ post.url }}" class="image-grid-item"><img src="{{ post.post_image_small }}" title="{{ post.title }}"></a>
+            {% endif %}
         {% endfor %}
     </div>
   </div>
   <div class="section-content section-updates">
-    <h1>Latest blog updates</h1>
+    <h1>Latest tech posts</h1>
 
     <div class="blog-list">
-      {% for post in site.posts limit:5 %}
+      {% for post in site.categories.['tech'] limit:5 %}
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
           <div class="article-item">
             <header class="post-header">
@@ -66,9 +71,9 @@ home: true
 
     <nav class="btn-group">
       <h2>Read more</h2>
-      <a href="/tech" class="btn nav-btn">Tech posts</a>
+      <a href="/blog/tech" class="btn nav-btn">Tech posts</a>
       <a href="/blog" class="btn nav-btn">Blog index</a>
-      <a href="/food" class="btn nav-btn">Food posts</a>
+      <a href="/blog/food" class="btn nav-btn">Food posts</a>
     </nav>
   </div>
 </div>

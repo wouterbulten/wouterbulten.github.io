@@ -3,9 +3,11 @@ layout: post
 title:  'Anise & white chocolate bonbons'
 date:   2017-03-17
 categories: blog food
+ig: BRRJ3eTjZ2V
 tags: []
-post_image: /assets/images/food/2017-03-18-anise-white-chocolate-bonbons.jpg
-post_image_large: /assets/images/food/2017-03-18-anise-white-chocolate-bonbons_large.jpg
+post_image: /assets/images/food/2017-03-17-anise-white-chocolate-bonbons.jpg
+post_image_large: /assets/images/food/2017-03-17-anise-white-chocolate-bonbons_large.jpg
+post_image_small: /assets/images/food/2017-03-17-anise-white-chocolate-bonbons_thumbnail.jpg
 ---
 
 <!-- begin ig snippet -->

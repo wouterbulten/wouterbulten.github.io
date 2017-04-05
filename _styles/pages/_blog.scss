@@ -4,7 +4,7 @@
 
 // Containers
 
-.post-single, .post-overview-narrow {
+.post-single, .post-overview-narrow, .comment-section, .related-posts {
   @include make-col-ready();
   @include make-col(12);
 
@@ -16,6 +16,8 @@
 
 // Blog overview Card format
 .post-overview .card-group {
+  margin-bottom: 3rem;
+
   .card {
     min-width: 33%;
     margin-bottom: 1rem;
@@ -52,7 +54,7 @@
   color: #333332;
   margin-bottom: 16px;
 }
-.post-content p {
+.post-content p, .post-content ul, .post-content ol {
     font-family: "Book Antiqua",Palatino,"Palatino Linotype","Palatino LT STD",Georgia,serif;
     font-weight: 400;
     font-style: normal;
@@ -96,9 +98,9 @@
   .post-content {
     width: 100%;
 
+    font-size: 1.2rem;
+    line-height: 2rem;
     p {
-      font-size: 1.2rem;
-      line-height: 2rem;
       padding-bottom: 1.1rem;
     }
 
@@ -172,4 +174,15 @@
     text-indent: -9999px;
   }
 
+}
+
+// Style for the related posts section
+.related-posts {
+  padding: 2rem;
+  background-color: #f4f4f4;
+  margin-bottom: 2rem;
+
+  h2 {
+    padding-bottom: 1rem;
+  }
 }
