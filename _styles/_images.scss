@@ -2,21 +2,16 @@
 // Images & svg
 //
 
-.section-image-me,.section-image-me2  {
+.section-image-me  {
   background-color: lightblue;
   background-size: cover;
   background-position: center center;
 
   min-height: 350px;
   max-height: 500px;
-}
-.section-image-me {
+
   background-image: url("../images/wouter_bulten_optim.png");
 }
-.section-image-me2 {
-  background-image: url("../images/Wouter_Bulten_v2.jpg");
-}
-
 
 .svg-icon {
   display: inline-block;

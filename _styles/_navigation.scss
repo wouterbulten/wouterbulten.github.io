@@ -76,3 +76,18 @@
     border: 1px solid $link-color;
   }
 }
+
+// Quick nav on pages
+.nav-full-width {
+  display: flex;
+
+  padding: 1rem 0.5rem;
+  margin-bottom: 2rem;
+  background-color: #f9f9f9;
+
+  div, a {
+    flex: 1 1 0;
+    text-align: center;
+    align-self: center;
+  }
+}

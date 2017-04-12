@@ -3155,18 +3155,13 @@ body {
       flex: 0 0 58.33333%;
       max-width: 58.33333%; } }
 
-.section-image-me, .section-image-me2 {
+.section-image-me {
   background-color: lightblue;
   background-size: cover;
   background-position: center center;
   min-height: 350px;
-  max-height: 500px; }
-
-.section-image-me {
+  max-height: 500px;
   background-image: url("../images/wouter_bulten_optim.png"); }
-
-.section-image-me2 {
-  background-image: url("../images/Wouter_Bulten_v2.jpg"); }
 
 .svg-icon {
   display: inline-block;
@@ -3245,6 +3240,16 @@ body {
   background-color: white; }
   .btn.nav-btn:hover {
     border: 1px solid #0275d8; }
+
+.nav-full-width {
+  display: flex;
+  padding: 1rem 0.5rem;
+  margin-bottom: 2rem;
+  background-color: #f9f9f9; }
+  .nav-full-width div, .nav-full-width a {
+    flex: 1 1 0;
+    text-align: center;
+    align-self: center; }
 
 .section-home {
   margin-bottom: 2rem; }
