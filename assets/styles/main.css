@@ -2968,8 +2968,8 @@ body {
 
 .page-post .content-wrapper, .page-category .content-wrapper, .page-curriculum-vitae .content-wrapper {
   background-color: white;
-  margin: 2rem 0 2rem 0;
-  padding: 2rem 0 2rem 0; }
+  margin: 0rem 0 2rem 0;
+  padding: 4rem 0 2rem 0; }
 
 .container {
   max-width: 60rem;
@@ -3205,20 +3205,21 @@ body {
   .nav-toggle {
     display: none; } }
 
-.site-navigation {
+.nav-wrapper {
   border-top: 1px solid #6d6d6d;
   box-shadow: 1px -1px 0px 0px white;
+  background-color: #efefef;
+  z-index: 1000;
+  position: relative;
+  position: sticky;
+  top: -2px; }
+
+.site-navigation {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  position: relative;
-  background-color: #f9f9f9;
-  position: sticky;
-  top: -2px;
-  z-index: 1000;
-  padding: 0;
-  margin-bottom: 1rem; }
+  padding: 0; }
   .site-navigation .nav-item {
     display: none;
     flex: 0 0 100%;
@@ -3227,7 +3228,8 @@ body {
     font-size: 1.25rem;
     font-weight: 200;
     color: #6d6d6d;
-    text-shadow: 1px 1px 0px white; }
+    text-shadow: 1px 1px 0px white;
+    text-decoration: none; }
     @media (min-width: 768px) {
       .site-navigation .nav-item {
         display: block;
@@ -3235,11 +3237,12 @@ body {
     .site-navigation .nav-item:hover {
       background-color: white;
       color: #0275d8;
-      text-decoration: none;
-      font-weight: 400; }
+      font-weight: 300; }
     .site-navigation .nav-item.active {
       background-color: white;
       color: #0275d8; }
+      .site-navigation .nav-item.active:hover {
+        font-weight: 200; }
   .site-navigation .nav-brand svg {
     vertical-align: text-bottom; }
 
