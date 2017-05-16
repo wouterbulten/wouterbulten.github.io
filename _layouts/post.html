@@ -4,7 +4,7 @@ layout: default
 <article class="post post-single section" id="post" itemprop="mainEntity" itemscope itemtype="http://schema.org/BlogPosting">
 
   <div class="post-meta">
-    <span class="post-category"><a href="/{{page.categories | join: '/'}}">&larr; Back to category</a></span>
+    <span class="post-category"><a href="/{{page.categories | join: '/'}}">&larr; Back to {{ cat }} category</a></span>
     <h1 class="post-title" itemprop="headline">{{ page.title }}</h1>
     {% if page.description %}
       <p class="description"><em>Summary: </em><span itemprop="description">{{ page.description }}</span></p>
