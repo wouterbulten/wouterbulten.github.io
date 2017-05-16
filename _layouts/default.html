@@ -27,11 +27,15 @@ layout: compress
     {% include navigation.html %}
     <!-- content start -->
 
+    {% if page.has_container %}
+        {{ content }}
+    {% else %}
     <div class="content-wrapper">
       <div class="container">
         {{ content }}
       </div>
     </div>
+    {% endif %}
 
     <!-- content end -->
 

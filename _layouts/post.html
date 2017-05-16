@@ -19,7 +19,7 @@ layout: default
         </a>
       &nbsp;on
       <time itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time>,
-      <span class="keywords tags" itemprop="keywords">keywords: {{ page.tags | join: ', ' }}
+      <span class="keywords tags" itemprop="keywords">keywords: <i>{{ page.tags | join: ', ' }}</i></span>
     </div>
   </div>
 
