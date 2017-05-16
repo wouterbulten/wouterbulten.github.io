@@ -41,41 +41,6 @@ layout: default
       {% endfor %}
     </section>
   </footer>
-  <!--
-
-  <div class="bottom-teaser cf">
-    <div class="isLeft">
-      <h5 class="index-headline featured"><span>Published by</span></h5>
-      <section class="author">
-        <div itemprop="publisher" itemscope itemtype="http://schema.org/Person">
-          <div class="author-image" style="background-image: url({{site.author_image}})">Blog Logo</div>
-          <h4><a itemprop="url" href="{{@blog.url}}/about/"><span itemprop="name">{{ site.author }}</span></a></h4>
-          <p class="bio">{{author.bio}}</p>
-        </div>
-        <hr>
-        <p class="published">Published <time datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time></p>
-        <p class="published">Last modified
-          {%if page.modified %}
-            <time itemprop="dateModified" datetime="{{ page.modified | date: "%F %R" }}">{{ page.modified | date_to_string }}</time>
-          {% else %}
-            <time itemprop="dateModified" datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time>
-          {% endif %}
-        </p>
-      </section>
-    </div>
-    {{/post}}
-    <div class="isRight">
-      <h5 class="index-headline featured"><span>Supported by</span></h5>
-      <footer class="site-footer">
-        <section class="poweredby">Proudly published with <a href="http://jekyllrb.com"> Jekyll</a></section>
-        View the <a class="subscribe" href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS feed.</a>
-        <div class="inner">
-          <section class="copyright">Content copyright <a href="{{@blog.url}}/">{{site.author}}</a> &copy; {{ site.time | date: '%Y' }}<br>All rights reserved.</section>
-        </div>
-      </footer>
-    </div>
-  </div>
-  -->
 </article>
 
 <div class="related-posts">
@@ -85,7 +50,7 @@ layout: default
 
     <ul>
 
-    {% for post in site.categories.[cat] limit:3 %}
+    {% for post in site.categories[cat] limit:3 %}
       {% if post.title != page.title %}
         <li>
           <h4 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h4>

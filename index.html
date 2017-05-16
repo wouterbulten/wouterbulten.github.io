@@ -33,7 +33,7 @@ home: true
     <h1>Latest food projects</h1>
     <div class="image-grid image-grid-3">
         {% assign date_threshold = "2017-01-01" | date: "%s" %}
-        {% for post in site.categories.['food'] %}
+        {% for post in site.categories['food'] %}
         {% assign post_date = post.date | date: "%s" %}
 
             {% if post_date > date_threshold %}
@@ -46,7 +46,7 @@ home: true
     <h1>Latest tech posts</h1>
 
     <div class="blog-list">
-      {% for post in site.categories.['tech'] limit:5 %}
+      {% for post in site.categories['tech'] limit:5 %}
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
           <div class="article-item">
             <header class="post-header">

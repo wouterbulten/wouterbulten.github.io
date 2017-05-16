@@ -13,7 +13,7 @@ blog_index: true
         <p class="lead">{{ page.description }}</p>
 
         <div class="blog-list">
-            {% for post in site.categories.['tech'] limit: 5 %}
+            {% for post in site.categories['tech'] limit: 5 %}
             <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
                 <header class="post-header">
                     <h2 class="post-title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
@@ -35,7 +35,7 @@ blog_index: true
 
         <h1>Older posts</h1>
         <ul class="blog-list-condensed">
-            {% for post in site.categories.['tech'] offset: 5 %}
+            {% for post in site.categories['tech'] offset: 5 %}
             <li class="blog-item"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></li>
             {% endfor %}
         </ul>

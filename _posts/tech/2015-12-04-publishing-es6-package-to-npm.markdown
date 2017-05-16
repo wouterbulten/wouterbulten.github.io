@@ -11,7 +11,7 @@ When I can, every javascript project I start makes use of the new ES2015 (or ES6
 
 For private projects the transpiler can be incorporated in to the build process. But, how do we proceed when we want to make a project public and usable by others? This is particular important when we publish a package to NPM. **NPM packages should run on "ES5 systems"**.
 
-Recently I wanted to practice a bit more with publishing to NPM and decided to use my micro library [KalmanJS]({% post_url 2015-09-25-lightweight-javascript-library-for-noise-filtering %}) as an example. In this post I will show you **how to go from an ES6 library to an ES5 compatible package**.
+Recently I wanted to practice a bit more with publishing to NPM and decided to use my micro library [KalmanJS]({% post_url tech/2015-09-25-lightweight-javascript-library-for-noise-filtering %}) as an example. In this post I will show you **how to go from an ES6 library to an ES5 compatible package**.
 
 *Small note:* This post focusses on an *Occam's Razor* approach to the ES5&rarr;ES6 problem. I will not use modules or build systems (like *gulp*, *grunt* or *webpack*) but instead focus on the bare minimals. It is often not required to use elaborate setups and when needed, a simple setup, like the one discussed here, can be easily extended.
 
