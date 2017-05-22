@@ -37,6 +37,26 @@
   }
 }
 
+// Blog overview List format
+.blog-list {
+  margin: 4rem 0 4rem 0;
+
+  article {
+    padding-bottom: 2rem;
+  }
+
+  h2 a {
+    // color:#333332;
+    font-weight: 200;
+  }
+
+  .post-meta {
+    font-weight: 200;
+    font-size: 0.9rem;
+    color: #6d6d6d;
+  }
+}
+
 // Category pages
 .category-title {
   font-weight: 200;
@@ -136,7 +156,10 @@
     text-align: center;
     padding: 20px;
   }
-  pre, code {
+  code {
+
+  }
+  pre {
     overflow-x: scroll;
     padding: 8px 12px;
 

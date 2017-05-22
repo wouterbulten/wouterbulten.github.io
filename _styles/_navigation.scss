@@ -68,16 +68,11 @@
     &:hover {
       background-color: white;
       color: $link-color;
-      font-weight: 300;
     }
 
     &.active {
       background-color: white;
       color: $link-color;
-
-      &:hover {
-        font-weight: 200;
-      }
     }
   }
   .nav-brand {

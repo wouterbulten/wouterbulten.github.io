@@ -2,7 +2,9 @@
 // Custom styles for home page
 //
 .section-home {
+  padding-top: 2rem;
   margin-bottom: 2rem;
+
   @include media-breakpoint-up(md) {
     margin-bottom: 6rem;
   }

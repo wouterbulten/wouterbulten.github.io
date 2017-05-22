@@ -4,31 +4,30 @@ home: true
 has_container: true
 ---
 
-<div class="content-wrapper-slim">
-    <div class="container">
-        <div class="section-card section-home">
-            <div class="section-image section-image-me"></div>
 
-            <div class="section-content">
-                <h1 class="home-header">Wouter Bulten</h1>
-                <p class="home-lead">AI researcher, web &amp; software developer<br>hobby chef, theater enthousiast</p>
+<div class="container">
+    <div class="section-card section-home">
+        <div class="section-image section-image-me"></div>
 
-                <nav class="btn-group">
-                <a href="/curriculum-vitae" class="btn nav-btn">About me</a>
-                <a href="/contact" class="btn nav-btn">Contact</a>
-                </nav>
+        <div class="section-content">
+            <h1 class="home-header">Wouter Bulten</h1>
+            <p class="home-lead">AI researcher, web &amp; software developer<br>hobby chef, theater enthousiast</p>
 
-                <p class="text-nav">I am available as a freelance developer, see <a class="" href="/outerhills">OuterHills &amp; Services</a>.</p>
-                <p class="text-nav">Read more on my <a class="" href="/blog/tech">tech blog</a>. More interested in food? See my latest <a href="/blog/food">food projects</a>.</p>
+            <nav class="btn-group">
+            <a href="/curriculum-vitae" class="btn nav-btn">About me</a>
+            <a href="/contact" class="btn nav-btn">Contact</a>
+            </nav>
 
-                <div class="nav-external">
-                <a href="https://github.com/wouterbulten" class="" title="My GitHub profile"><svg class="svg-icon svg-icon-gh"><use xlink:href="#icon-gh"></use></svg></a>
-                <a href="https://linkedin.com/in/wouterbulten" class="" title="My LinkedIn profile"><svg class="svg-icon svg-icon-li"><use xlink:href="#icon-li"></use></svg></a>
-                <a href="https://www.instagram.com/wouterbulten" class=""><svg class="svg-icon svg-icon-ig"><use xlink:href="#icon-ig"></use></svg></a>
-                <a href="/contact" class=""><svg class="svg-icon svg-icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg></a>
-                </div>
+            <!--<p class="text-nav">I am available as a freelance developer, see <a class="" href="/outerhills">OuterHills &amp; Services</a>.</p>-->
+            <p class="text-nav">Read more on my <a class="" href="/blog/tech">tech blog</a>. More interested in food? See my latest <a href="/blog/food">food projects</a>.</p>
 
+            <div class="nav-external">
+            <a href="https://github.com/wouterbulten" class="" title="My GitHub profile"><svg class="svg-icon svg-icon-gh"><use xlink:href="#icon-gh"></use></svg></a>
+            <a href="https://linkedin.com/in/wouterbulten" class="" title="My LinkedIn profile"><svg class="svg-icon svg-icon-li"><use xlink:href="#icon-li"></use></svg></a>
+            <a href="https://www.instagram.com/wouterbulten" class=""><svg class="svg-icon svg-icon-ig"><use xlink:href="#icon-ig"></use></svg></a>
+            <a href="/contact" class=""><svg class="svg-icon svg-icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg></a>
             </div>
+
         </div>
     </div>
 </div>
@@ -55,20 +54,18 @@ has_container: true
         {% for post in site.categories['tech'] limit:5 %}
             <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
             <div class="article-item">
+                <div class="post-meta">
+                    <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
+                    |
+                    <i>{{ post.tags | join: ', ' }}</i>
+                </div>
                 <header class="post-header">
                 <h2 class="post-title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
                 </header>
 
-                <section class="post-excerpt" itemprop="description">
+                <!--<section class="post-excerpt" itemprop="description">
                 <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
-                </section>
-                <div class="post-meta">
-                <span class="post-category">{{ post.categories[1] }}</span>
-                |
-                <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
-                |
-                <a class="read-more" href="{{ post.url }}">Start reading &rarr;</a>
-                </div>
+                </section>-->
             </div>
             </article>
         {% endfor %}

@@ -3063,6 +3063,9 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     display: none !important; } }
 
 h1, h2, h3, h4, h5, h6 {
+  font-weight: 200; }
+
+body, p {
   font-weight: 300; }
 
 .page-title {
@@ -3084,7 +3087,6 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center; }
 
 .section-content-title h2 {
-  padding-top: 0.3rem;
   font-size: 2rem; }
   @media (min-width: 768px) {
     .section-content-title h2 {
@@ -3373,13 +3375,10 @@ body {
         flex: 1 1 0; } }
     .site-navigation .nav-item:hover {
       background-color: white;
-      color: #0275d8;
-      font-weight: 300; }
+      color: #0275d8; }
     .site-navigation .nav-item.active {
       background-color: white;
       color: #0275d8; }
-      .site-navigation .nav-item.active:hover {
-        font-weight: 200; }
   .site-navigation .nav-brand svg {
     vertical-align: text-bottom; }
 
@@ -3426,6 +3425,7 @@ body {
     align-self: center; }
 
 .section-home {
+  padding-top: 2rem;
   margin-bottom: 2rem; }
   @media (min-width: 768px) {
     .section-home {
@@ -3518,6 +3518,17 @@ body {
     width: 100%;
     height: auto; }
 
+.blog-list {
+  margin: 4rem 0 4rem 0; }
+  .blog-list article {
+    padding-bottom: 2rem; }
+  .blog-list h2 a {
+    font-weight: 200; }
+  .blog-list .post-meta {
+    font-weight: 200;
+    font-size: 0.9rem;
+    color: #6d6d6d; }
+
 .category-title {
   font-weight: 200;
   font-style: normal;
@@ -3597,7 +3608,7 @@ body {
   text-align: center;
   padding: 20px; }
 
-.post-single pre, .post-single code {
+.post-single pre {
   overflow-x: scroll;
   padding: 8px 12px;
   font-size: 15px;
