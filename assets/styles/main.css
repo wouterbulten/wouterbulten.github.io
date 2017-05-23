@@ -3348,6 +3348,7 @@ body {
     display: none; } }
 
 .nav-wrapper {
+  width: 100%;
   border-top: 1px solid #6d6d6d;
   box-shadow: 1px -1px 0px 0px white;
   background-color: #efefef;
