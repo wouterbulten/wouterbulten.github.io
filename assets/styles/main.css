@@ -3108,7 +3108,10 @@ body {
 .content-wrapper {
   background-color: white;
   margin: 0rem 0 2rem 0;
-  padding: 4rem 0 2rem 0; }
+  padding: 2rem 0 2rem 0; }
+  @media (min-width: 768px) {
+    .content-wrapper {
+      padding: 4rem 0 2rem 0; } }
 
 .container {
   max-width: 60rem;
@@ -3298,7 +3301,7 @@ body {
   background-color: lightblue;
   background-size: cover;
   background-position: center center;
-  min-height: 350px;
+  min-height: 250px;
   max-height: 500px;
   background-image: url("../images/wouter_bulten_optim.png"); }
 
@@ -3349,9 +3352,15 @@ body {
   box-shadow: 1px -1px 0px 0px white;
   background-color: #efefef;
   z-index: 1000;
-  position: relative;
-  position: sticky;
+  position: fixed;
+  display: none;
+  border-bottom: 1px solid #6d6d6d;
   top: -2px; }
+  @media (min-width: 768px) {
+    .nav-wrapper {
+      display: block;
+      position: sticky;
+      border-bottom: 0; } }
 
 .site-navigation {
   display: flex;
@@ -3360,7 +3369,6 @@ body {
   justify-content: space-around;
   padding: 0; }
   .site-navigation .nav-item {
-    display: none;
     flex: 0 0 100%;
     padding: 5px;
     text-align: center;
@@ -3385,20 +3393,25 @@ body {
 .mobile-menu-toggle {
   display: none; }
 
-.mobile-menu-toggle:checked ~ .nav-item {
-  display: inline-block; }
+.mobile-menu-toggle:checked ~ .nav-wrapper {
+  display: block; }
 
 .nav-toggle.nav-item {
   display: block;
   position: fixed;
   z-index: 1001;
-  top: 5px;
+  top: -3px;
   right: 5px;
   color: #6d6d6d;
-  font-size: 1.4rem; }
+  font-size: 2.5rem;
+  transition: all 0.2s ease-in-out; }
   @media (min-width: 768px) {
     .nav-toggle.nav-item {
       display: none; } }
+
+.mobile-menu-toggle:checked ~ .site-header .nav-toggle {
+  transform: rotate(90deg);
+  color: #b7b7b7; }
 
 .btn-group {
   text-align: center; }
@@ -3415,14 +3428,19 @@ body {
 .nav-full-width {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   width: 100%;
   padding: 1rem 0.5rem;
   margin-bottom: 2rem;
   background-color: #f9f9f9; }
   .nav-full-width div, .nav-full-width a {
-    flex: 1 1 0;
+    flex: 1 1 100%;
+    padding: 5px;
     text-align: center;
     align-self: center; }
+    @media (min-width: 768px) {
+      .nav-full-width div, .nav-full-width a {
+        flex: 1 1 auto; } }
 
 .section-home {
   padding-top: 2rem;
@@ -3471,6 +3489,28 @@ body {
   font-weight: 200;
   color: #6d6d6d;
   font-size: 0.9rem; }
+
+.post-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px; }
+  @media (min-width: 576px) {
+    .post-wrapper {
+      margin-right: -15px;
+      margin-left: -15px; } }
+  @media (min-width: 768px) {
+    .post-wrapper {
+      margin-right: -15px;
+      margin-left: -15px; } }
+  @media (min-width: 992px) {
+    .post-wrapper {
+      margin-right: -15px;
+      margin-left: -15px; } }
+  @media (min-width: 1200px) {
+    .post-wrapper {
+      margin-right: -15px;
+      margin-left: -15px; } }
 
 .post-single, .post-overview-narrow, .comment-section, .related-posts {
   position: relative;
@@ -3565,17 +3605,24 @@ body {
 .post-single .post-title {
   font-weight: 700;
   font-style: normal;
-  font-size: 3.2rem;
-  line-height: 3.5rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
   color: #333332;
   margin-bottom: 16px; }
+  @media (min-width: 768px) {
+    .post-single .post-title {
+      font-size: 3.2rem;
+      line-height: 3.5rem; } }
 
 .post-single .post-meta {
   font-weight: 200;
   font-size: 0.9rem;
   color: #6d6d6d;
   line-height: 30px;
-  margin-bottom: 4rem; }
+  margin-bottom: 2rem; }
+  @media (min-width: 768px) {
+    .post-single .post-meta {
+      margin-bottom: 4rem; } }
   .post-single .post-meta .author {
     font-weight: 400;
     color: #333332; }

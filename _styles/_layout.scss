@@ -22,7 +22,12 @@ body {
 .content-wrapper {
   background-color: white;
   margin: 0rem 0 2rem 0;
-  padding: 4rem 0 2rem 0;
+  padding: 2rem 0 2rem 0;
+
+  @include media-breakpoint-up(md) {
+    // Additional top padding on desktop
+    padding: 4rem 0 2rem 0;
+  }
 }
 
 .container {

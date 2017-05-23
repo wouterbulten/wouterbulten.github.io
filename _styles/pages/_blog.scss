@@ -3,7 +3,9 @@
 // //
 
 // // Containers
-
+.post-wrapper {
+  @include make-row();
+}
 .post-single, .post-overview-narrow, .comment-section, .related-posts {
   @include make-col-ready();
   @include make-col(12);
@@ -104,8 +106,14 @@
   .post-title {
     font-weight: 700;
     font-style: normal;
-    font-size: 3.2rem;
-    line-height: 3.5rem;
+
+    font-size: 2rem;
+    line-height: 2.5rem;
+    @include media-breakpoint-up(md) {
+      font-size: 3.2rem;
+      line-height: 3.5rem;
+    }
+
     color: #333332;
     margin-bottom: 16px;
   }
@@ -117,7 +125,10 @@
     color: #6d6d6d;
     line-height: 30px;
 
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 4rem;
+    }
 
     .author {
       font-weight: 400;
