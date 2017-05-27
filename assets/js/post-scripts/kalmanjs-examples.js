@@ -256,7 +256,7 @@ $(window).ready(function() {
     type: 'line',
     data: plotDataConstant,
     options: {
-      legendTemplate: '<% for (var i = 0; i < data.datasets.length; i++){%><span style="color:<%=data.datasets[i].pointBorderColor%>">&nbsp;&nbsp;&FilledSmallSquare;</span><%if(data.datasets[i].label){%><%=data.datasets[i].label%><%}%><%}%>'
+      legendTemplate: '<% for (var i = 0; i < data.datasets.length; i++){%><span style="color:<%=data.datasets[i].pointBorderColor%>">&nbsp;&nbsp;&#9632;</span><%if(data.datasets[i].label){%><%=data.datasets[i].label%><%}%><%}%>'
     }
   });
 	$('#chart-constant-data-legend').html(constantDataChart.generateLegend());
@@ -266,7 +266,7 @@ $(window).ready(function() {
     type: 'line',
     data: plotDataLinear,
     options: {
-      legendTemplate: '<% for (var i = 0; i < data.datasets.length; i++){%><span style="color:<%=data.datasets[i].pointBorderColor%>">&nbsp;&nbsp;&FilledSmallSquare;</span><%if(data.datasets[i].label){%><%=data.datasets[i].label%><%}%><%}%>'
+      legendTemplate: '<% for (var i = 0; i < data.datasets.length; i++){%><span style="color:<%=data.datasets[i].pointBorderColor%>">&nbsp;&nbsp;&#9632;</span><%if(data.datasets[i].label){%><%=data.datasets[i].label%><%}%><%}%>'
     }
   });
   $('#chart-linear-data-legend').html(linearDataChart.generateLegend());
@@ -276,7 +276,7 @@ $(window).ready(function() {
     type: 'line',
     data: plotDataConstantKalman,
     options: {
-      legendTemplate: '<% for (var i = 0; i < data.datasets.length; i++){%><span style="color:<%=data.datasets[i].pointBorderColor%>">&nbsp;&nbsp;&FilledSmallSquare;</span><%if(data.datasets[i].label){%><%=data.datasets[i].label%><%}%><%}%>'
+      legendTemplate: '<% for (var i = 0; i < data.datasets.length; i++){%><span style="color:<%=data.datasets[i].pointBorderColor%>">&nbsp;&nbsp;&#9632;</span><%if(data.datasets[i].label){%><%=data.datasets[i].label%><%}%><%}%>'
     }
   });
   $('#chart-constant-kalman-data-legend').html(constantkalmanDataChart.generateLegend());
@@ -286,7 +286,7 @@ $(window).ready(function() {
     type: 'line',
     data: plotDataLinearKalman,
     options: {
-      legendTemplate: '<% for (var i = 0; i < data.datasets.length; i++){%><span style="color:<%=data.datasets[i].pointBorderColor%>">&nbsp;&nbsp;&FilledSmallSquare;</span><%if(data.datasets[i].label){%><%=data.datasets[i].label%><%}%><%}%>'
+      legendTemplate: '<% for (var i = 0; i < data.datasets.length; i++){%><span style="color:<%=data.datasets[i].pointBorderColor%>">&nbsp;&nbsp;&#9632;</span><%if(data.datasets[i].label){%><%=data.datasets[i].label%><%}%><%}%>'
     }
   });
   $('#chart-linear-kalman-data-legend').html(linearkalmanDataChart.generateLegend());
@@ -296,7 +296,7 @@ $(window).ready(function() {
     type: 'line',
     data: plotDataGrowthKalman,
     options: {
-      legendTemplate: '<% for (var i = 0; i < data.datasets.length; i++){%><span style="color:<%=data.datasets[i].pointBorderColor%>">&nbsp;&nbsp;&FilledSmallSquare;</span><%if(data.datasets[i].label){%><%=data.datasets[i].label%><%}%><%}%>'
+      legendTemplate: '<% for (var i = 0; i < data.datasets.length; i++){%><span style="color:<%=data.datasets[i].pointBorderColor%>">&nbsp;&nbsp;&#9632;</span><%if(data.datasets[i].label){%><%=data.datasets[i].label%><%}%><%}%>'
     }
   });
   $('#chart-growth-kalman-data-legend').html(growthKalmanChart.generateLegend());

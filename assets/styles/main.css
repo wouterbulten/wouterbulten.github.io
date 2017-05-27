@@ -3566,7 +3566,7 @@ body {
     height: auto; }
 
 .blog-list {
-  margin: 4rem 0 4rem 0; }
+  margin: 0rem 0 4rem 0; }
   .blog-list article {
     padding-bottom: 2rem; }
   .blog-list h2 a {
@@ -3661,6 +3661,10 @@ body {
   z-index: 300;
   text-align: center;
   padding: 20px; }
+
+.post-single .chart-legend {
+  overflow-x: scroll;
+  text-align: center; }
 
 .post-single pre {
   overflow-x: scroll;

@@ -171,7 +171,7 @@ $(window).ready(function() {
   		datasetStrokeWidth: 5,
   		pointDotRadius: 6,
   		scaleFontSize: 20,
-      legendTemplate: '<% for (var i = 0; i < data.datasets.length; i++){%><span style="color:<%=data.datasets[i].pointBorderColor%>">&nbsp;&nbsp;&FilledSmallSquare;</span><%if(data.datasets[i].label){%><%=data.datasets[i].label%><%}%><%}%>'
+      legendTemplate: '<% for (var i = 0; i < data.datasets.length; i++){%><span style="color:<%=data.datasets[i].pointBorderColor%>">&nbsp;&nbsp;&#9632;</span><%if(data.datasets[i].label){%><%=data.datasets[i].label%><%}%><%}%>'
     }
   });
 	$('#chart-kalman-1-legend').html(rssiLine.generateLegend());
@@ -187,7 +187,7 @@ $(window).ready(function() {
   		datasetStrokeWidth: 5,
   		pointDotRadius: 6,
   		scaleFontSize: 20,
-      legendTemplate: '<% for (var i = 0; i < data.datasets.length; i++){%><span style="color:<%=data.datasets[i].pointBorderColor%>">&nbsp;&nbsp;&FilledSmallSquare;</span><%if(data.datasets[i].label){%><%=data.datasets[i].label%><%}%><%}%>'
+      legendTemplate: '<% for (var i = 0; i < data.datasets.length; i++){%><span style="color:<%=data.datasets[i].pointBorderColor%>">&nbsp;&nbsp;&#9632;</span><%if(data.datasets[i].label){%><%=data.datasets[i].label%><%}%><%}%>'
     }
   });
 	$('#chart-kalman-2-legend').html(kalmanLine.generateLegend());
@@ -203,7 +203,7 @@ $(window).ready(function() {
   		datasetStrokeWidth: 5,
   		pointDotRadius: 6,
   		scaleFontSize: 20,
-      legendTemplate: '<% for (var i = 0; i < data.datasets.length; i++){%><span style="color:<%=data.datasets[i].pointBorderColor%>">&nbsp;&nbsp;&FilledSmallSquare;</span><%if(data.datasets[i].label){%><%=data.datasets[i].label%><%}%><%}%>'
+      legendTemplate: '<% for (var i = 0; i < data.datasets.length; i++){%><span style="color:<%=data.datasets[i].pointBorderColor%>">&nbsp;&nbsp;&#9632;</span><%if(data.datasets[i].label){%><%=data.datasets[i].label%><%}%><%}%>'
     }
   });
 
