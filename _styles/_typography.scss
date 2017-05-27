@@ -15,6 +15,14 @@ body, p {
   margin-bottom: 16px;
 }
 
+.MathJax_Display {
+  overflow-x: auto;
+}
+
+.footnotes li p {
+  word-break: break-word;
+}
+
 .section-updates h1, .section-content-title h2 {
   text-align: center;
   color: #6d6d6d;
