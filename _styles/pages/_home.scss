@@ -11,11 +11,11 @@
 
   .section-content {
     text-align: center;
-    min-height: 500px;
 
-    padding: 1rem 0 0 0;
+    padding: 1rem 0.5rem 0 0.5rem;
 
     @include media-breakpoint-up(md) {
+      min-height: 500px;
       padding: 3rem 4rem 0 4rem;
     }
 

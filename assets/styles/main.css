@@ -3330,7 +3330,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  padding-top: 10px; }
+  padding: 10px 0 2rem 0; }
 
 .image-grid-3 .image-grid-item {
   flex: 0 1 33.33%; }
@@ -3457,10 +3457,10 @@ body {
       margin-bottom: 6rem; } }
   .section-home .section-content {
     text-align: center;
-    min-height: 500px;
-    padding: 1rem 0 0 0; }
+    padding: 1rem 0.5rem 0 0.5rem; }
     @media (min-width: 768px) {
       .section-home .section-content {
+        min-height: 500px;
         padding: 3rem 4rem 0 4rem; } }
     .section-home .section-content .btn-group {
       margin-bottom: 2rem; }

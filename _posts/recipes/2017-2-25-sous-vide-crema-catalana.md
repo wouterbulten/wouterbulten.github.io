@@ -10,7 +10,7 @@ post_image_large: /assets/images/food/2017-2-25-sous-vide-crema-catalana_large.j
 post_image_small: /assets/images/food/2017-2-25-sous-vide-crema-catalana_thumbnail.jpg
 ---
 
-Sous vide crème brûlée is a easy to make yet delicious dessert. What's even better is the Crema Catalana version of this recipe. Traditionally, crema Catalana is made with milk and some kind of thickener where crème brûlée is made with eggs and primarily cream. However, I prefer the custard base recipe of crème brûlée with the flavors of crema Catalana; so this recipe is a combination of both.
+Sous vide crème brûlée is an easy to make yet delicious dessert. What's even better is the Crema Catalana version of this recipe. Traditionally, crema Catalana is made with milk and some kind of thickener where crème brûlée is made with eggs and primarily cream. However, I prefer the custard base recipe of crème brûlée with the flavors of crema Catalana; so this recipe is a combination of both.
 
 <!-- begin ig snippet -->
 
