@@ -1,15 +1,58 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="refresh" content="1;url=/">
-        <script type="text/javascript">
-            window.location.href = "/"
-        </script>
-        <link rel="shortcut icon" type="image/png" href="/favicon-16x16.png"/>
-        <title>Page Redirection</title>
-    </head>
-    <body>
-        If you are not redirected automatically, follow the <a href='/'>link to the home page</a>.
-    </body>
-</html>
+---
+layout: default
+home: false
+blog_index: true
+---
+
+<div class="section">
+  <div class="section-image section-updates">
+
+  </div>
+  <div class="section-content section-updates">
+    <h1>Latest blog updates</h1>
+
+    <div class="blog-list">
+      {% for post in paginator.posts %}
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+          <div class="article-item">
+            <header class="post-header">
+              <h2 class="post-title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
+            </header>
+
+            {%if post.post_image %}
+              <a href="{{ post.url }}">
+                <div class="article-list-image" style="background-image: url({{post.post_image}})">
+                </div>
+              </a>
+            {% endif %}
+
+            <section class="post-excerpt" itemprop="description">
+              <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
+            </section>
+            <div class="post-meta">
+              <span class="post-category">{{ post.categories[1] }}</span>
+              |
+              <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
+              |
+              <a class="read-more" href="{{ post.url }}">Start reading &rarr;</a>
+            </div>
+          </div>
+        </article>
+      {% endfor %}
+
+      <nav class="pagination" role="navigation">
+        {% if paginator.next_page %}
+          <a class="newer-posts" href="/blog/{{paginator.next_page}}/">&larr; Older posts</a>
+        {% endif %}
+        <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+        {% if paginator.previous_page %}
+          {% if paginator.page == 2 %}
+            <a class="older-posts" href="/">Newer posts &rarr;</a>
+          {% else %}
+            <a class="older-posts" href="/blog/{{paginator.previous_page}}/">Newer posts &rarr;</a>
+          {% endif %}
+        {% endif %}
+      </nav>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,52 @@
+<input type="checkbox" id="mobile-menu-toggle" name="mobile-menu-toggle" class="mobile-menu-toggle">
+
+<div class="site-header container">
+    <a href="/" class="site-name">Wouter Bulten</a>
+
+    <label for="mobile-menu-toggle" class="nav-item nav-toggle">
+        <svg class="svg-icon"><use xlink:href="#icon-menu"></use></svg>
+    </label>
+</div>
+
+<div class="nav-wrapper">
+    <nav class="site-navigation container">
+
+        <a href="/" class="nav-brand nav-item"><svg class="svg-icon"><use xlink:href="#icon-home-outline"></use></svg></a>
+    <!--
+        {% if page.url == '/about/' %}
+        <a href="/about" class="nav-item active">About</a>
+        {% else %}
+        <a href="/about" class="nav-item">About</a>
+        {% endif %}-->
+
+        {% if page.url == '/curriculum-vitae/' %}
+        <a href="/curriculum-vitae" class="nav-item active">About me</a>
+        {% else %}
+        <a href="/curriculum-vitae" class="nav-item">About me</a>
+        {% endif %}
+
+        {% if page.categories[1] == 'food' or page.url == '/blog/food/' %}
+        <a href="/blog/food" class="nav-item active">Food</a>
+        {% else %}
+        <a href="/blog/food" class="nav-item">Food</a>
+        {% endif %}
+
+        {% if page.categories[1] == 'tech' or page.url == '/blog/tech/' %}
+        <a href="/blog/tech" class="nav-item active">Tech</a>
+        {% else %}
+        <a href="/blog/tech" class="nav-item">Tech</a>
+        {% endif %}
+
+        {% if page.url == '/outerhills/' %}
+        <a href="/outerhills" class="nav-item active">OuterHills</a>
+        {% else %}
+        <a href="/outerhills" class="nav-item">OuterHills</a>
+        {% endif %}
+
+        {% if page.url == '/contact/' %}
+        <a href="/contact" class="nav-item active">Contact</a>
+        {% else %}
+        <a href="/contact" class="nav-item">Contact</a>
+        {% endif %}
+    </nav>
+</div>

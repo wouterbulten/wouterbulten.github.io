@@ -1,0 +1,29 @@
+.form-contact {
+  display: flex;
+  flex-wrap: wrap;
+
+  label {
+    flex: 1 0 100%;
+    @include media-breakpoint-up(md) {
+      flex: 1 0 40%;
+    }
+  }
+
+  input, textarea {
+
+    flex: 1 0 100%;
+    @include media-breakpoint-up(md) {
+      flex: 1 0 60%;
+    }
+    margin-bottom: 30px;
+
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid #e6e5e5;
+
+    &:focus {
+      outline: none !important;
+      border: 1px solid $link-color;
+    }
+  }
+}

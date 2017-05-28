@@ -2,9 +2,10 @@
 layout: post
 title:  "The quest for a perfect mousse: The fast option"
 date:   2015-10-15
-categories: blog cooking
+categories: blog food
 tags: [mousse, cooking, siphon, dessert, chocolate]
 post_image: /assets/images/recipes/chocolate-mousse-post.jpg
+permalink: blog/cooking/the-quest-for-a-perfect-mousse-part-1/
 ---
 
 Some time a go I started a personal quest: finding the perfect chocolate mousse. While I haven't found the perfect recipe *yet*, I've decided to document my (numerous) attempts as part of a series. While many of you will know the traditional way of making chocolate mousse (cream, chocolate, egg whites), this series will focus primarily on new or different methods.

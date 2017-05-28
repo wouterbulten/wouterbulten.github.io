@@ -1,0 +1,24 @@
+{
+  "name": "styles",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "minify": "node-sass . --output-style compressed --output ../asssets/styles && postcss --no-map.inline --use autoprefixer postcss-flexbugs-fixes",
+    "watch": "node-sass --watch . --output ../assets/styles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/123test/api-sdk"
+  },
+  "author": "Wouter Bulten",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "autoprefixer": "^6.5.3",
+    "bootstrap": "^4.0.0-alpha.6",
+    "node-sass": "^3.11.2",
+    "postcss-cli": "^2.6.0",
+    "postcss-flexbugs-fixes": "^2.1.0"
+  }
+}

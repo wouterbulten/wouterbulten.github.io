@@ -1,0 +1,66 @@
+//
+// Custom styles for home page
+//
+.section-home {
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 6rem;
+  }
+
+  .section-content {
+    text-align: center;
+
+    padding: 1rem 0.5rem 0 0.5rem;
+
+    @include media-breakpoint-up(md) {
+      min-height: 500px;
+      padding: 3rem 4rem 0 4rem;
+    }
+
+    .btn-group {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.home-header {
+  font-weight: 300;
+  font-size: 2.5em;
+
+  @include media-breakpoint-up(md) {
+    font-size: 4em;
+  }
+  color: #505050;
+}
+.home-lead, .lead {
+  font-weight: 200;
+  color: #6d6d6d;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.nav-external {
+  border-top: 1px solid #e6e5e5;
+  border-bottom: 1px solid #e6e5e5;
+  font-size: 20px;
+  margin: 20px;
+
+  .svg-icon {
+    margin: 15px;
+    vertical-align: middle;
+    color: black;
+
+    &:hover {
+      color: $link-color;
+      cursor: pointer;
+    }
+  }
+}
+
+.text-nav {
+  font-weight: 200;
+  color: #6d6d6d;
+  font-size: 0.9rem;
+}

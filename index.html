@@ -1,80 +1,82 @@
 ---
 layout: default
+home: true
+has_container: true
 ---
 
-{% include blog-header.html %}
 
-<main class="content" role="main">
+<div class="container">
+    <div class="section-card section-home">
+        <div class="section-image section-image-me"></div>
 
-    {% if site.tags.featured %}
-    <h5 class="index-headline featured"><span>Featured</span></h5>
+        <div class="section-content">
+            <h1 class="home-header">Wouter Bulten</h1>
+            <p class="home-lead">AI researcher, web &amp; software developer<br>hobby chef, theater enthousiast</p>
 
-    <div class="container featured">
-      {% for post in site.tags.featured %}
-        <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
-          <div class="article-item">
-            <header class="post-header">
-              <h2 class="post-title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
-            </header>
-            <section class="post-excerpt" itemprop="description">
-              <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
-            </section>
-            <div class="post-meta">
-              <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
-  <!--            <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span>-->
+            <nav class="btn-group">
+            <a href="/curriculum-vitae" class="btn nav-btn">About me</a>
+            <a href="/contact" class="btn nav-btn">Contact</a>
+            </nav>
+
+            <!--<p class="text-nav">I am available as a freelance developer, see <a class="" href="/outerhills">OuterHills &amp; Services</a>.</p>-->
+            <p class="text-nav">Read more on my <a class="" href="/blog/tech">tech blog</a>. More interested in food? See my latest <a href="/blog/food">food projects</a>.</p>
+
+            <div class="nav-external">
+            <a href="https://github.com/wouterbulten" class="" title="My GitHub profile"><svg class="svg-icon svg-icon-gh"><use xlink:href="#icon-gh"></use></svg></a>
+            <a href="https://linkedin.com/in/wouterbulten" class="" title="My LinkedIn profile"><svg class="svg-icon svg-icon-li"><use xlink:href="#icon-li"></use></svg></a>
+            <a href="https://www.instagram.com/wouterbulten" class=""><svg class="svg-icon svg-icon-ig"><use xlink:href="#icon-ig"></use></svg></a>
+            <a href="/contact" class=""><svg class="svg-icon svg-icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg></a>
             </div>
-          </div>
-        </article>
-      {% endfor %}
+
+        </div>
     </div>
+</div>
 
-    <h5 class="index-headline normal"><span>Regular</span></h5>
-    {% endif %}
+<div class="container">
+    <div class="section">
+    <div class="section-image section-updates">
+        <h1>Latest food projects</h1>
+        <div class="image-grid image-grid-3">
+            {% assign date_threshold = "2017-01-01" | date: "%s" %}
+            {% for post in site.categories['food'] %}
+            {% assign post_date = post.date | date: "%s" %}
 
-    <div class="cf post-image-list frame">
-      {% for post in paginator.posts %}
-        <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
-          <div class="article-item">
-            <header class="post-header">
-              <div class="post-category-list">{{ post.categories[1] }}</div>
-              <h2 class="post-title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
-            </header>
+                {% if post_date > date_threshold %}
+                <a href="{{ post.url }}" class="image-grid-item"><img src="{{ post.post_image_small }}" title="{{ post.title }}"></a>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+    <div class="section-content section-updates">
+        <h1>Latest tech posts</h1>
 
-            {%if post.post_image %}
-              <a href="{{ post.url }}">
-                <div class="article-list-image" style="background-image: url({{post.post_image}})">
+        <div class="blog-list blog-list-small">
+        {% for post in site.categories['tech'] limit:5 %}
+            <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+            <div class="article-item">
+                <div class="post-meta">
+                    <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
+                    |
+                    <i>{{ post.tags | join: ', ' }}</i>
                 </div>
-              </a>
-            {% endif %}
+                <header class="post-header">
+                <h2 class="post-title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
+                </header>
 
-            <section class="post-excerpt" itemprop="description">
-              <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
-            </section>
-            <div class="post-meta">
-              <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
-              ,&nbsp;<a class="read-more" href="{{ post.url }}">Start reading &rarr;</a>
+                <!--<section class="post-excerpt" itemprop="description">
+                <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
+                </section>-->
             </div>
-          </div>
-        </article>
-      {% endfor %}
+            </article>
+        {% endfor %}
+        </div>
+
+        <nav class="btn-group">
+        <h2>Read more</h2>
+        <a href="/blog/tech" class="btn nav-btn">Tech posts</a>
+        <a href="/blog" class="btn nav-btn">Blog index</a>
+        <a href="/blog/food" class="btn nav-btn">Food posts</a>
+        </nav>
     </div>
-
-    <nav class="pagination" role="navigation">
-      {% if paginator.next_page %}
-        <a class="newer-posts" href="/blog/{{paginator.next_page}}/">&larr; Older posts</a>
-      {% endif %}
-      <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-      {% if paginator.previous_page %}
-        {% if paginator.page == 2 %}
-          <a class="older-posts" href="/">Newer posts &rarr;</a>
-        {% else %}
-          <a class="older-posts" href="/blog/{{paginator.previous_page}}/">Newer posts &rarr;</a>
-        {% endif %}
-      {% endif %}
-    </nav>
-
-
-    <!-- {{!! After all the posts, we have the previous/next pagination links }}
-    {{pagination}} -->
-
-</main>
+    </div>
+</div>

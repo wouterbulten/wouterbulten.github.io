@@ -8,6 +8,7 @@ chartjs: true
 math: false
 post_scripts: kalmanjs-examples
 published: true
+jquery: true
 ---
 
 Filtering noisy measurements can be an extremely difficult endeavor; take brain signals for example. While this is true, there are also many situations where the system is fairly simple and the focus lies on speed, online computation (i.e. in real time) and ease of use. Filtering distance measurements from a sonar sensor can be such a case. For these applications it is useful to have a simple, but effective, noise filtering algorithm in your toolkit. Let me introduce [KalmanJS](https://www.github.com/wouterbulten/kalmanjs): a small library implementing the idea of Kalman filters, without any dependencies, to filter out noise in 1D systems.

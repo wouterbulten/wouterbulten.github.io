@@ -1,0 +1,30 @@
+---
+layout: page
+title: Contact
+permalink: /contact/
+---
+
+<div class="section">
+    <div class="section-left">
+        <h1 class="page-title">Contact</h1>
+
+        <p class="lead">Use the contact form to contact me directly. I'll follow up with you as soon as I can. You can also connect with me through <a href="https://github.com/wouterbulten" class="" title="My GitHub profile">GitHub</a> or <a href="https://linkedin.com/in/wouterbulten" class="" title="My LinkedIn profile">LinkedIn</a>.
+        </p>
+    </div>
+
+    <div class="section-content">
+
+        <form class="form-contact" action="https://formspree.io/contact-form@wouterbulten.nl"
+        method="POST">
+            <label for="contact_name">Your name</label>
+            <input type="text" id="contact_name" name="name" placeholder="John Doe" required>
+
+            <label for="contact_email">Your email address</label>
+            <input type="email" id="contact_email" name="_replyto" placeholder="email@example.com" required>
+
+            <label for="contact_message">Message</label>
+            <textarea name="message" id="contact_message" placeholder="Your message" rows="8" required></textarea>
+            <input type="submit" value="Send" class="btn nav-btn">
+        </form>
+    </div>
+</div>

@@ -3,8 +3,9 @@
 !function(n,o){function e(n,o){n=n.push?n:[n];var e,t,r,i,u=[],f=n.length,c=f;for(e=function(n,e){e.length&&u.push(n),c-=1,0===c&&o(u)};f--;)t=n[f],r=a[t],r?e(t,r):(i=d[t]=d[t]||[],i.push(e))}function t(n,o){if(n){var e=d[n];if(a[n]=o,e)for(;e.length;)e[0](n,o),e.splice(0,1)}}function r(n,e){var t=o.createElement("script");t.src=n,t.onload=t.onerror=function(o){t.parentNode.removeChild(t),t=null,e(n,o.type)},f.appendChild(t)}function i(n,o){n=n.push?n:[n];var e,t=n.length,i=t,u=[];for(e=function(n,e){"error"===e&&u.push(n),i-=1,0===i&&o(u)};t--;)r(n[t],e)}function u(o,e,r,u){var f,a,d;if(e&&!e.call&&(f=e),a=f?r:e,d=f?u:r,f){if(f in l)throw new Error("LoadJS: Bundle already defined");l[f]=!0}n.setTimeout(function(){i(o,function(n){n.length?(d||c)(n):(a||c)(),t(f,n)})},0)}var f=o.head,c=function(){},l={},a={},d={};u.ready=function(n,o,t){return e(n,function(n){n.length?(t||c)(n):(o||c)()}),u},u.done=function(n){t(n,[])},n.loadjs=u}(window,document);
 
 var preloadDependencies = [
-  /* Always load jquery */
+  {% if page.jquery %}
   'https://code.jquery.com/jquery-2.1.4.min.js',
+  {% endif %}
 
   {% if page.chartjs %}
   '{{ "/assets/js/Chart.min.js" | prepend: site.baseurl  }}',
@@ -31,62 +32,63 @@ loadjs(preloadDependencies, 'page', function() {
 
 /* Start page scripts after all dependencies have been loaded */
 loadjs.ready('page', function() {
+    var request = new XMLHttpRequest();
+    var notify_url = 'https://convey.wouterbulten.nl/notify/?';
+    notify_url += 'p={{ page.url | default: "" | cgi_escape }}';
+    notify_url += '&t={{ page.title | default: "" | cgi_escape }}';
+
+    request.open('GET', notify_url, true);
+    request.withCredentials = true;
+    request.send();
+
+
   $(document).ready(function(){
+    {% if page.layout == 'post' %}
 
-    if(!(window.ga && ga.create)) {
-      /* GA blocked */
-      $.ajaxSetup({
-        xhrFields: {
-          withCredentials: true
+    HTMLElement.prototype.wrap = function(elms) {
+        /* Convert `elms` to an array, if necessary.*/
+        if (!elms.length) elms = [elms];
+
+        /* Loops backwards to prevent having to clone the wrapper on the*/
+        /* first element (see `child` below).*/
+        for (var i = elms.length - 1; i >= 0; i--) {
+            var child = (i > 0) ? this.cloneNode(true) : this;
+            var el    = elms[i];
+
+            /* Cache the current parent and sibling.*/
+            var parent  = el.parentNode;
+            var sibling = el.nextSibling;
+
+            /* Wrap the element (is automatically removed from its current*/
+            /* parent).*/
+            child.appendChild(el);
+
+            /* If the element had a sibling, insert the wrapper before*/
+            /* the sibling to maintain the HTML structure; otherwise, just*/
+            /* append it to the parent.*/
+            if (sibling) {
+                parent.insertBefore(child, sibling);
+            } else {
+                parent.appendChild(child);
+            }
         }
-      });
-      $.get('https://notify.wouterbulten.nl/notify/', {
-        p: '{{ page.url }}',
-        t: '{{ page.title }}'
-      });
-    }
+    };
 
-    var $window = $(window),
-    $image = $('.post-image-image, .teaserimage-image');
-    $window.on('scroll', function() {
-      var top = $window.scrollTop();
-
-      if (top < 0 || top > 1500) { return; }
-      $image
-        .css('transform', 'translate3d(0px, '+top/3+'px, 0px)')
-        .css('opacity', 1-Math.max(top/700, 0));
-    });
-    $window.trigger('scroll');
-
-    /*var height = $('.article-image').height();
-    $('.post-content').css('padding-top', height + 'px');*/
-
-    $('a[href*=#]:not([href=#])').click(function() {
-      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-       && location.hostname == this.hostname) {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-        if (target.length) {
-          $('html,body').animate({ scrollTop: target.offset().top }, 500);
-          return false;
-        }
-      }
-    });
-
-    {% if page.readingTime %}
-    /* Calculates Reading Time */
-    $('.post-content').readingTime({
-        readingTimeTarget: '.post-reading-time',
-        wordCountTarget: '.post-word-count',
-    });
-    {% endif %}
-    {% if page.id %}
     /* Creates Captions from Alt tags */
-    $(".post-content img").each(function() {
-        /* Let's put a caption if there is one */
-        if($(this).attr("alt") && !$(this).hasClass("emoji"))
-          $(this).wrap('<figure class="image"><\/figure>')
-          .after('<figcaption>'+$(this).attr("alt")+'<\/figcaption>');
+    var elements = document.querySelectorAll(".post-content img");
+    Array.prototype.forEach.call(elements, function(el, i){
+        if(el.alt && !el.classList.contains('emoji')) {
+            /* Wrap in figure element */
+            var wrapper = document.createElement('figure');
+            wrapper.classList.add('image');
+            wrapper.wrap(el);
+
+            /* Add caption */
+            var caption = document.createElement('figcaption');
+            caption.innerText = el.alt;
+            wrapper.appendChild(caption);
+
+        }
     });
     {% endif %}
   });
@@ -106,7 +108,7 @@ MathJax.Hub.Config({
   }
 });
 </script>
-<script async type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 {% endif %}
 
 <!-- Analytics code -->

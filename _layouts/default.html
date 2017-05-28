@@ -6,17 +6,36 @@ layout: compress
 
   {% include head.html %}
 
-  <body>
+  {% if page.home %}
+  <body class="page-home" itemscope itemtype="http://schema.org/WebPage">
+  {% else %}
+  <body class="
+    page-{{ page.permalink | replace: '/',''}}
+    {% if page.blog_index %}page-category{% endif %}
+    {% if page.layout == 'post' %}page-post{% endif %}
+    "
 
-    {% include header.html %}
+    itemscope itemtype="http://schema.org/WebPage">
+  {% endif %}
 
+    {% if page.layout == 'post' %}
+    <meta itemprop="inLanguage" content="en"/>
+    <meta itemprop="mainEntityOfPage" content="{{blog.url}}/{{ page.url }}/#post" />
+    {% endif %}
+
+    {% include svg-defs.html %}
+    {% include navigation.html %}
     <!-- content start -->
 
-    <div class="page-content">
-      <div class="wrapper">
+    {% if page.has_container %}
+        {{ content }}
+    {% else %}
+    <div class="content-wrapper">
+      <div class="container">
         {{ content }}
       </div>
     </div>
+    {% endif %}
 
     <!-- content end -->
 

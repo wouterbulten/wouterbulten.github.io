@@ -1,156 +1,84 @@
 ---
-layout: compress
+layout: default
 ---
-<!DOCTYPE html>
-<html>
-  {% include head.html %}
-  <body itemscope itemtype="http://schema.org/WebPage">
-    <meta itemprop="inLanguage" content="en"/>
-    <meta itemprop="mainEntityOfPage" content="{{@blog.url}}/{{ page.url }}/#post" />
+<div class="section">
+    <article class="post post-single" id="post" itemprop="mainEntity" itemscope itemtype="http://schema.org/BlogPosting">
 
-    {% include header.html %}
-    <main class="content" role="main">
-      <article class="post" id="post" itemprop="mainEntity" itemscope itemtype="http://schema.org/BlogPosting">
-        {% if page.image %}
-        <div class="article-image">
-          <div class="post-image-image" style="background-image: url({% if page.image %}{{ page.image }}{% endif %})">
-            Article Image
-          </div>
-          <div class="post-meta">
-            <h1 class="post-title">{{ page.title }}</h1>
-            <div class="cf post-meta-text">
-              <div class="author-image" style="background-image: url({{ site.author_image }})">Blog Logo</div>
-              <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{ site.author }}</h4>
-              on
-              <time datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time>
-            </div>
-            <div style="text-align:center">
-              <a href="#topofpage" class="topofpage">&#8595;</a>
-            </div>
-          </div>
-        </div>
-        {% else %}
-        <div class="noarticleimage">
-          <div class="post-meta">
-            <span class="post-category"><a href="/{{page.categories | join: '/'}}">&larr; Back to category</a></span>
-            <h1 class="post-title" itemprop="headline">{{ page.title }}</h1>
-            {% if page.description %}
-              <p class="description"><em>Summary: </em><span itemprop="description">{{ page.description }}</span></p>
-            {% endif %}
-            <div class="cf post-meta-text">
-              <div class="author-image" style="background-image: url({{ site.author_image }})">Blog Logo</div>
-
-              <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-                <h4 class="author-name" itemprop="name">{{ site.author }}</h4>
-              </div>
-              &nbsp;on
-              <time itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time>,
-              <span class="keywords tags" itemprop="keywords">keywords: {{ page.tags | join: ', ' }}
-            </div>
-          </div>
-        </div>
-        <br>
-        <br>
-        <br>
+    <div class="post-meta">
+        <span class="post-category"><a href="/{{page.categories | join: '/'}}">&larr; Back to {{ cat }} category</a></span>
+        <h1 class="post-title" itemprop="headline">{{ page.title }}</h1>
+        {% if page.description %}
+        <p class="description"><em>Summary: </em><span itemprop="description">{{ page.description }}</span></p>
         {% endif %}
-        <section class="post-content" itemprop="articleBody">
-          {% if page.readingTime %}
-          <div class="post-reading">
-            <span class="post-reading-time"></span> read
-          </div>
-          {% endif %}
-          <a name="topofpage" class="topofpage"></a>
-          {{content}}
-        </section>
-        <footer class="post-footer">
-          <section class="share">
-            {% for social in site.social %}
-              {% if social.share_url != null %}
-                <a class="icon-{{ social.icon }}" href="{{ social.share_url }}{{ social.share_title }}{{page.title | cgi_escape}}{{ social.share_link }}{{site.url}}{{page.id}}"
-                  onclick="window.open(this.href, '{{ social.icon }}-share', 'width=550,height=255');return false;">
-                <i class="fa fa-{{ social.icon }}"></i><span class="hidden">{{ social.icon }}</span>
-                </a>
-              {% endif %}
-            {% endfor %}
-          </section>
-        </footer>
+        <div class="cf post-meta-text">
+        <div class="author-image" style="background-image: url({{ site.author_image }})">Blog Logo</div>
 
-        <div class="post-read-more">
-          {% assign cat = page.categories[1] | downcase %}
-
-          <h2 class="index-headline"><span>Read more ({{ cat}} category)</span></h2>
-
-          <ul>
-
-          {% for post in site.categories.[cat] limit:3 %}
-            {% if post.title != page.title %}
-              <li>
-                <h4 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h4>
-                <p>{{ post.excerpt | strip_html | truncatewords: 50 }} <a class="read-more" href="{{ post.url }}">Start reading &rarr;</a></p>
-              </li>
-            {% endif %}
-          {% endfor %}
-          </ul>
+            <a href="/about">
+                <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+                    <span class="author-name" itemprop="name">{{ site.author }}</span>
+                </span>
+            </a>
+        &nbsp;on
+        <time itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time>,
+        <span class="keywords tags" itemprop="keywords">keywords: <i>{{ page.tags | join: ', ' }}</i></span>
         </div>
-
-        <div class="bottom-teaser cf">
-          <div class="isLeft">
-            <h5 class="index-headline featured"><span>Published by</span></h5>
-            <section class="author">
-              <div itemprop="publisher" itemscope itemtype="http://schema.org/Person">
-                <div class="author-image" style="background-image: url({{site.author_image}})">Blog Logo</div>
-                <h4><a itemprop="url" href="{{@blog.url}}/about/"><span itemprop="name">{{ site.author }}</span></a></h4>
-                <p class="bio">{{author.bio}}</p>
-              </div>
-              <hr>
-              <p class="published">Published <time datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time></p>
-              <p class="published">Last modified
-                {%if page.modified %}
-                  <time itemprop="dateModified" datetime="{{ page.modified | date: "%F %R" }}">{{ page.modified | date_to_string }}</time>
-                {% else %}
-                  <time itemprop="dateModified" datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time>
-                {% endif %}
-              </p>
-            </section>
-          </div>
-          {{/post}}
-          <div class="isRight">
-            <h5 class="index-headline featured"><span>Supported by</span></h5>
-            <footer class="site-footer">
-              <section class="poweredby">Proudly published with <a href="http://jekyllrb.com"> Jekyll</a></section>
-              View the <a class="subscribe" href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS feed.</a>
-              <div class="inner">
-                <section class="copyright">Content copyright <a href="{{@blog.url}}/">{{site.author}}</a> &copy; {{ site.time | date: '%Y' }}<br>All rights reserved.</section>
-              </div>
-            </footer>
-          </div>
-        </div>
-        {%if site.disqus %}
-        <div id="disqus_thread"></div>
-        <script>
-          var disqus_shortname = '{{site.disqus}}';
-          var disqus_config = function () {
-            this.page.url = '{{site.url}}{{page.id}}/';
-            this.page.identifier = '{{page.id}}';
-          };
-          (function() {
-            var d = document, s = d.createElement('script');
-
-            s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-          })();
-        </script>
-        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
-        {% endif %}
-      </article>
-    </main>
-    <div class="bottom-closer">
-      <div class="inner">
-        <a href="/" class="btn">&leftarrow; Back to Overview</a>
-      </div>
     </div>
-    {% include javascripts.html %}
-  </body>
-</html>
+
+    <section class="post-content" itemprop="articleBody">
+        <a name="topofpage" class="topofpage"></a>
+
+        {{content}}
+    </section>
+
+    <footer class="post-footer">
+        <section class="share">
+        {% for social in site.social %}
+            {% if social.share_url != null %}
+            <a class="icon-{{ social.icon }}" href="{{ social.share_url }}{{ social.share_title }}{{page.title | cgi_escape}}{{ social.share_link }}{{site.url}}{{page.id}}"
+                onclick="window.open(this.href, '{{ social.icon }}-share', 'width=550,height=255');return false;">
+            <i class="fa fa-{{ social.icon }}"></i><span class="hidden">{{ social.icon }}</span>
+            </a>
+            {% endif %}
+        {% endfor %}
+        </section>
+    </footer>
+    </article>
+
+    <div class="related-posts">
+        {% assign cat = page.categories[1] | downcase %}
+
+        <h2 class="index-headline"><span>Read more ({{ cat}} category)</span></h2>
+
+        <ul>
+
+        {% for post in site.categories[cat] limit:3 %}
+        {% if post.title != page.title %}
+            <li>
+            <h4 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h4>
+            <p>{{ post.excerpt | strip_html | truncatewords: 50 }} <a class="read-more" href="{{ post.url }}">Start reading &rarr;</a></p>
+            </li>
+        {% endif %}
+        {% endfor %}
+        </ul>
+    </div>
+
+    {%if site.disqus %}
+    <div id="disqus_thread" class="comment-section"></div>
+    <script>
+    var disqus_shortname = '{{site.disqus}}';
+    var disqus_config = function () {
+        this.page.url = '{{site.url}}{{page.id}}/';
+        this.page.identifier = '{{page.id}}';
+    };
+    (function() {
+        var d = document, s = d.createElement('script');
+
+        s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    {% endif %}
+</div>

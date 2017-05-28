@@ -9,7 +9,7 @@ math: true
 published: false
 ---
 
-In my [previous]({% post_url 2015-02-12-simple-wsn-simulation %}) post regarding Wireless Sensor Network (WSN) simulations I created a simulation of a user walking around in a space filled with sensor nodes. The goal is to predict the travelled path (the trace) of the user. At each time step the user records the _Received Signal Strength Indicator_ ([RSSI](http://en.wikipedia.org/wiki/Received_signal_strength_indication)) of each node. This RSSI value is a measurement of the transmit power of a received signal.
+In my [previous]({% post_url tech/2015-02-12-simple-wsn-simulation %}) post regarding Wireless Sensor Network (WSN) simulations I created a simulation of a user walking around in a space filled with sensor nodes. The goal is to predict the travelled path (the trace) of the user. At each time step the user records the _Received Signal Strength Indicator_ ([RSSI](http://en.wikipedia.org/wiki/Received_signal_strength_indication)) of each node. This RSSI value is a measurement of the transmit power of a received signal.
 
 As RSSI describes transmit power of a _received_ signal distance between nodes (and other factors such as obstacles) influence the RSSI. Roughly, very roughly[^1]<sup>,</sup>[^2] there is a relation between RSSI and distance:
 

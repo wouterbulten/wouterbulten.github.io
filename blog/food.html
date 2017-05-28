@@ -1,0 +1,52 @@
+---
+title: Recipes &amp; Cooking
+layout: default
+description: An overview of my latest cooking experiments, many of them with a 'modernist cuisine' twist.
+category: cooking
+blog_index: true
+---
+
+{% assign date_threshold = "2017-01-01" | date: "%s" %}
+
+<div class="section post-overview">
+    <div class="section-fullpage">
+        <h1 class="category-title">Latest updates on Food</h1>
+
+        <p class="lead">{{ page.description }}</p>
+
+        <p class="lead">You can also follow my food-updates on <a href="https://instagram.com/wouterbulten">Instagram</a>.</p>
+
+        <div class="card-group">
+            {% for post in site.categories['food'] %}
+
+            {% assign post_date = post.date | date: "%s" %}
+
+            {% if post_date > date_threshold %}
+            <article class="card" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+                {% if post.post_image %}
+                    <a href="{{ post.url }}">
+                        <img class="card-img-top" src="{{ post.post_image }}" alt="{{ post.title }}">
+                    </a>
+                {% endif %}
+                <div class="card-block">
+                    <h4 class="card-title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h4>
+                    <p class="card-text">{{ post.description }}</p>
+                </div>
+            </article>
+            {% endif %}
+            {% endfor %}
+        </div>
+
+        <h1>Older posts</h1>
+        <ul class="blog-list-condensed">
+            {% for post in site.categories['food'] %}
+
+            {% assign post_date = post.date | date: "%s" %}
+
+            {% if post_date < date_threshold %}
+            <li class="blog-item"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+</div>

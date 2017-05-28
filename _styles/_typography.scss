@@ -1,0 +1,43 @@
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 200;
+}
+
+body, p {
+  font-weight: 300;
+}
+
+.page-title {
+  font-weight: 200;
+  font-style: normal;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  color: #333332;
+  margin-bottom: 16px;
+}
+
+.MathJax_Display {
+  overflow-x: auto;
+}
+
+.footnotes li p {
+  word-break: break-word;
+}
+
+.section-updates h1, .section-content-title h2 {
+  text-align: center;
+  color: #6d6d6d;
+  text-shadow: 1px 1px 0px white;
+
+  margin-bottom: 40px;
+  font-weight: 200;
+}
+.section-updates h1 {
+  text-align: center;
+}
+.section-content-title h2 {
+
+  @include media-breakpoint-up(md) {
+    text-align: right;
+  }
+  font-size: 2rem;
+}

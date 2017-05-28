@@ -8,6 +8,7 @@ chartjs: true
 math: true
 post_scripts: kalman-noise-filtering
 published: true
+jquery: true
 ---
 
 If you have heard about *iBeacons* or indoor localization before, then you have probably also heard about *RSSI*: the **Received Signal Strength Indicator**. The RSSI value resembles the power of a received radio signal (measured in *dBm*). The higher the RSSI value, the higher the signal strength. The rationale behind using RSSI values is that almost all wireless systems report and use this value natively; i.e. no additional sensors are required to measure RSSI values. It can therefore be considered as a free input to a system.
@@ -17,7 +18,7 @@ If you have heard about *iBeacons* or indoor localization before, then you have 
 **So what can we do with RSSI?** Well, there is a relation between RSSI and distance (see also Figure 1). As you can probably imagine: the larger the distance between you and the sender of a signal, the lower the signal strength will be. While many researchers question the usability of RSSI measurements in general[^1], I've used them extensively (and with success) for indoor localization purposes. In this article I will show you how to use RSSI measurements and, maybe even more important, to remove noise from the raw data using Kalman filters.
 
 -----
-<div id="chart-kalman-1-legend"></div>
+<div id="chart-kalman-1-legend" class="chart-legend"></div>
 <canvas id="chart-kalman-1" width="640" height="400"></canvas>
 > **Figure 1:** RSSI measurements over time. The received signal strength of a device is clearly influenced by distance but the amount of noise is substantial. For this plot, a bluetooth device was set up as a iBeacon to continuously broadcast its unique identifier. Another bluetooth device was placed at various distances from the beacon and acted as a recording device. With a 1Hz sample rate RSSI values were sampled. For the ‘room’ case, the beacon was placed in an adjacent room to show the effect of walls.
 
@@ -36,7 +37,7 @@ In this model, $d$ describes the distance between the transceiver and recipient,
 $A _ 0$ can usually be retrieved from the device itself as it is often part of the broadcast message. Alternatively, you can approximate $A _ 0$ by collecting data and averaging the signal strength measurements. The signal propagation exponent $n$ is a constant that differs from environment to environment. For indoor applications, $n$ is often set to $2$.
 
  -----
- <div id="chart-kalman-3-legend"></div>
+ <div id="chart-kalman-3-legend" class="chart-legend"></div>
  <canvas id="chart-kalman-3" width="640" height="400"></canvas>
  > **Figure 2:** RSSI converted to distance in meters using the Log-distance pathloss model. Source of the data is the same as in Figure 1. Note that the distance estimations are roughly correct but contains a lot of noise.
 
@@ -117,10 +118,10 @@ Try to imagine how this characteristic results in a filter: On every step, the K
 
 We defined our model, we defined the filter. Now it is time to put the filter to a test. Does our Kalman fitler remove the noise from the raw RSSI signal?
 
-I applied a simple Kalman filter to the "1m" data of the RSSI example dataset. I am using my [KalmanJS]({% post_url 2015-09-25-lightweight-javascript-library-for-noise-filtering %}) library which you can find on [GitHub](https://github.com/wouterbulten/kalmanjs) or read more about in a [separate post]({% post_url 2015-09-25-lightweight-javascript-library-for-noise-filtering %}) on this blog. The results are shown in the figure below:
+I applied a simple Kalman filter to the "1m" data of the RSSI example dataset. I am using my [KalmanJS]({% post_url tech/2015-09-25-lightweight-javascript-library-for-noise-filtering %}) library which you can find on [GitHub](https://github.com/wouterbulten/kalmanjs) or read more about in a [separate post]({% post_url tech/2015-09-25-lightweight-javascript-library-for-noise-filtering %}) on this blog. The results are shown in the figure below:
 
 -----
-<div id="chart-kalman-2-legend"></div>
+<div id="chart-kalman-2-legend" class="chart-legend"></div>
 <canvas id="chart-kalman-2" width="640" height="400"></canvas>
 > **Figure 3:** The effect of a Kalman filter on raw RSSI data sampled from a static device (i.e. no movement at both the receiver and transmitter end). The Kalman filter removes a large part of the noise from the signal.
 
