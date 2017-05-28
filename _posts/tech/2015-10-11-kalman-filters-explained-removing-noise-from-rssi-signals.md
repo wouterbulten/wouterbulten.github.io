@@ -8,6 +8,7 @@ chartjs: true
 math: true
 post_scripts: kalman-noise-filtering
 published: true
+jquery: true
 ---
 
 If you have heard about *iBeacons* or indoor localization before, then you have probably also heard about *RSSI*: the **Received Signal Strength Indicator**. The RSSI value resembles the power of a received radio signal (measured in *dBm*). The higher the RSSI value, the higher the signal strength. The rationale behind using RSSI values is that almost all wireless systems report and use this value natively; i.e. no additional sensors are required to measure RSSI values. It can therefore be considered as a free input to a system.
