@@ -3088,6 +3088,8 @@ body, p {
   text-shadow: 1px 1px 0px white;
   margin-bottom: 40px;
   font-weight: 200; }
+  .section-updates h1 small, .section-content-title h2 small {
+    font-weight: 200; }
 
 .section-updates h1 {
   text-align: center; }
