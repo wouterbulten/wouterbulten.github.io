@@ -17,9 +17,9 @@ The setup of the simulation is simple: a fixed world (without obstructions) cont
 
 > An example simulation consisting of 100 static access points and one moving node. The blue line is the movement trace of the user. The left figure represents the simulated world. The right is the predicted movement trace of the user based on signal strengths measurements (using PCA); this I will address in a seperate post.
 
-For breivity I won't show the full source code here (see the [repo](https://github.com/wouterbulten/SLACTest)) but only the relevant parts. The movement of the users is a simple bounce or pinball effect:
+For brevity I won't show the full source code here (see the [repo](https://github.com/wouterbulten/SLACTest)) but only the relevant parts. The movement of the users is a simple bounce or pinball effect:
 
-{% highlight python linenos %}
+```python
 def move(self):
 	xn = max(min(self.x + math.cos(self.r) * self.s, self.maxX), 0)
 	yn = max(min(self.y + math.sin(self.r) * self.s, self.maxY), 0)
@@ -30,11 +30,11 @@ def move(self):
 		self.r = 2 * math.pi - self.r
 
 	self.moveToPosition(xn, yn)
-{% endhighlight %}
+```
 
 Running the simulation only requires setting up a specific controller with the appropriate nodes:
 
-{% highlight python linenos %}
+```python
 # Create a new world
 world = env.World(xMax, yMax)
 # Instantiate nodes with a random position
@@ -52,13 +52,13 @@ for i in range(0, steps):
 
 	# Update the total network
 	controller.iterate()
-{% endhighlight %}
+```
 
 ## Creating a moving figure
 
 The most difficult part of the whole simulator is not simulating movement or the world state, its the visualization. [Matplotlib](http://matplotlib.org) has support for animations[^2] but the documentation is not as extensive as for the other types of plots. The most [basic example](http://matplotlib.org/1.4.2/examples/animation/basic_example.html) uses a update function to plot every frame (through _FuncAnimation_). For the WSN simulation I opted for the subclassing method:
 
-{% highlight python linenos %}
+```python
 class PlaybackAnimation(animation.TimedAnimation):
     '''
     Animator object
@@ -97,14 +97,14 @@ class PlaybackAnimation(animation.TimedAnimation):
         # e.g.:
         # return iter(range(len(self.data) - 2))
 
-{% endhighlight %}
+```
 
 Read the comments in the above snippet for some guidelines during the implementation of your animator. The animation can then be showed using the _show()_ function or it can be saved to a file (make sure that you have a version of _ffmpeg_ installed):
 
-{% highlight python linenos %}
+```python
 anim = PlayBackAnimation(data)
 anim.save("simulation.mp4", writer="ffmpeg")
-{% endhighlight %}
+```
 
 
 ## Closing remarks
