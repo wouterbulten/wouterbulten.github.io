@@ -60,35 +60,17 @@
   <meta name="msapplication-notification" content="frequency=30;polling-uri=http://notifications.buildmypinnedsite.com/?feed=https://wouterbulten.nl/feed.xml&amp;id=1;polling-uri2=http://notifications.buildmypinnedsite.com/?feed=https://wouterbulten.nl/feed.xml&amp;id=2;polling-uri3=http://notifications.buildmypinnedsite.com/?feed=https://wouterbulten.nl/feed.xml&amp;id=3;polling-uri4=http://notifications.buildmypinnedsite.com/?feed=https://wouterbulten.nl/feed.xml&amp;id=4;polling-uri5=http://notifications.buildmypinnedsite.com/?feed=https://wouterbulten.nl/feed.xml&amp;id=5;cycle=1" />
 
   <style type="text/css">
-    @media print {
-      .article-image{
-      page-break-after:never
-      }
-      .post-content,
-      .bottom-teaser.cf{
-        padding-top:0!important
-      }
-      .bottom-teaser.cf{
-        margin:0
-      }
-      .post-reading,
-      .bottom-teaser.cf .isRight,
-      .cf.post-meta-text,
-      .post-meta center,
-      .post-image-image,
-      .bottom-closer,
-      .share,
-      .home-template .post-meta .post-tags-set,
-      .pagination,
-      .author-image,
-      .subscribe icon-feed{
-        display:none;
-      }
-    }
+    {% include critical-css.css %}
   </style>
-  <!--<script type="text/javascript">
-    !function(e){"use strict";var n=function(n,t,o){var l,r=e.document,i=r.createElement("link");if(t)l=t;else{var a=(r.body||r.getElementsByTagName("head")[0]).childNodes;l=a[a.length-1]}var d=r.styleSheets;i.rel="stylesheet",i.href=n,i.media="only x",l.parentNode.insertBefore(i,t?l:l.nextSibling);var f=function(e){for(var n=i.href,t=d.length;t--;)if(d[t].href===n)return e();setTimeout(function(){f(e)})};return i.onloadcssdefined=f,f(function(){i.media=o||"all"}),i};"undefined"!=typeof module?module.exports=n:e.loadCSS=n}("undefined"!=typeof global?global:this);
-    loadCSS( "{{ '/assets/styles/main.css'  | prepend: site.baseurl  }}" );
+  <link rel="preload" href="{{ "/assets/styles/min/main.css"  | prepend: site.baseurl  }}" as="style" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="{{ "/assets/styles/min/main.css"  | prepend: site.baseurl  }}"></noscript>
+
+  <script>
+    /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+    !function(a){"use strict";var b=function(b,c,d){function e(a){return h.body?a():void setTimeout(function(){e(a)})}function f(){i.addEventListener&&i.removeEventListener("load",f),i.media=d||"all"}var g,h=a.document,i=h.createElement("link");if(c)g=c;else{var j=(h.body||h.getElementsByTagName("head")[0]).childNodes;g=j[j.length-1]}var k=h.styleSheets;i.rel="stylesheet",i.href=b,i.media="only x",e(function(){g.parentNode.insertBefore(i,c?g:g.nextSibling)});var l=function(a){for(var b=i.href,c=k.length;c--;)if(k[c].href===b)return a();setTimeout(function(){l(a)})};return i.addEventListener&&i.addEventListener("load",f),i.onloadcssdefined=l,l(f),i};"undefined"!=typeof exports?exports.loadCSS=b:a.loadCSS=b}("undefined"!=typeof global?global:this);
+    /*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
+    !function(a){if(a.loadCSS){var b=loadCSS.relpreload={};if(b.support=function(){try{return a.document.createElement("link").relList.supports("preload")}catch(b){return!1}},b.poly=function(){for(var b=a.document.getElementsByTagName("link"),c=0;c<b.length;c++){var d=b[c];"preload"===d.rel&&"style"===d.getAttribute("as")&&(a.loadCSS(d.href,d,d.getAttribute("media")),d.rel=null)}},!b.support()){b.poly();var c=a.setInterval(b.poly,300);a.addEventListener&&a.addEventListener("load",function(){b.poly(),a.clearInterval(c)}),a.attachEvent&&a.attachEvent("onload",function(){a.clearInterval(c)})}}}(this);
   </script>
-  <noscript>--><link rel="stylesheet" type="text/css" media="screen" href="{{ "/assets/styles/min/main.css"  | prepend: site.baseurl  }}" /><!--</noscript>-->
+  <noscript><link rel="stylesheet" type="text/css" media="screen" href="{{ "/assets/styles/min/main.css"  | prepend: site.baseurl  }}" /></noscript>
+
 </head>

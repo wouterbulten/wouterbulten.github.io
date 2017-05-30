@@ -4,7 +4,7 @@
   "description": "",
   "main": "",
   "scripts": {
-    "minify": "node-sass main.scss --output-style compressed --output ../assets/styles/min && postcss --no-map.inline --use autoprefixer postcss-flexbugs-fixes",
+    "minify": "node-sass main.scss --output-style compressed --output ../assets/styles/min && postcss --no-map.inline --use autoprefixer postcss-flexbugs-fixes -o ../assets/styles/min/main.css ../assets/styles/min/main.css && node inline-css.js",
     "watch": "node-sass --watch . --output ../assets/styles"
   },
   "repository": {
@@ -20,5 +20,8 @@
     "node-sass": "^3.11.2",
     "postcss-cli": "^2.6.0",
     "postcss-flexbugs-fixes": "^2.1.0"
+  },
+  "dependencies": {
+    "critical": "^0.8.4"
   }
 }
