@@ -32,14 +32,16 @@ loadjs(preloadDependencies, 'page', function() {
 
 /* Start page scripts after all dependencies have been loaded */
 loadjs.ready('page', function() {
-    var request = new XMLHttpRequest();
-    var notify_url = 'https://convey.wouterbulten.nl/notify/?';
-    notify_url += 'p={{ page.url | default: "" | cgi_escape }}';
-    notify_url += '&t={{ page.title | default: "" | cgi_escape }}';
+    if(!(window.ga && ga.create)) {
+        var request = new XMLHttpRequest();
+        var notify_url = 'https://convey.wouterbulten.nl/notify/?';
+        notify_url += 'p={{ page.url | default: "" | cgi_escape }}';
+        notify_url += '&t={{ page.title | default: "" | cgi_escape }}';
 
-    request.open('GET', notify_url, true);
-    request.withCredentials = true;
-    request.send();
+        request.open('GET', notify_url, true);
+        request.withCredentials = true;
+        request.send();
+    }
 
 
   $(document).ready(function(){
