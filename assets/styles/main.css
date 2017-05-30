@@ -3545,11 +3545,12 @@ body {
     .post-single, .post-overview-narrow, .comment-section, .related-posts {
       padding-right: 15px;
       padding-left: 15px; } }
-  @media (min-width: 768px) {
-    .post-single, .post-overview-narrow, .comment-section, .related-posts {
-      margin-left: 8.33333%;
-      flex: 0 0 83.33333%;
-      max-width: 83.33333%; } }
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .post-single, .post-overview-narrow, .comment-section, .related-posts {
+    margin-left: 8.33333%;
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%; } }
 
 .post-overview .card-group {
   margin-bottom: 3rem; }

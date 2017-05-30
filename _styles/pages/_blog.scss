@@ -10,7 +10,7 @@
   @include make-col-ready();
   @include make-col(12);
 
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-between(md, lg) {
     @include make-col-offset(1);
     @include make-col(10);
   }
