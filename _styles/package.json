@@ -4,7 +4,7 @@
   "description": "",
   "main": "",
   "scripts": {
-    "minify": "node-sass . --output-style compressed --output ../asssets/styles && postcss --no-map.inline --use autoprefixer postcss-flexbugs-fixes",
+    "minify": "node-sass main.scss --output-style compressed --output ../assets/styles/min && postcss --no-map.inline --use autoprefixer postcss-flexbugs-fixes",
     "watch": "node-sass --watch . --output ../assets/styles"
   },
   "repository": {
