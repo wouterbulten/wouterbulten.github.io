@@ -60,7 +60,11 @@
   <meta name="msapplication-notification" content="frequency=30;polling-uri=http://notifications.buildmypinnedsite.com/?feed=https://wouterbulten.nl/feed.xml&amp;id=1;polling-uri2=http://notifications.buildmypinnedsite.com/?feed=https://wouterbulten.nl/feed.xml&amp;id=2;polling-uri3=http://notifications.buildmypinnedsite.com/?feed=https://wouterbulten.nl/feed.xml&amp;id=3;polling-uri4=http://notifications.buildmypinnedsite.com/?feed=https://wouterbulten.nl/feed.xml&amp;id=4;polling-uri5=http://notifications.buildmypinnedsite.com/?feed=https://wouterbulten.nl/feed.xml&amp;id=5;cycle=1" />
 
   <style type="text/css">
-    {% include critical-css.css %}
+    {% if page.layout == 'post' %}
+        {% include critical-css-post.css %}
+    {% else %}
+        {% include critical-css.css %}
+    {% endif %}
   </style>
   <link rel="preload" href="{{ "/assets/styles/min/main.css"  | prepend: site.baseurl  }}" as="style" onload="this.rel='stylesheet'">
   <noscript><link rel="stylesheet" type="text/css" media="screen" href="{{ "/assets/styles/min/main.css"  | prepend: site.baseurl  }}" /></noscript>
