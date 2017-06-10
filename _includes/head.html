@@ -66,8 +66,8 @@
         {% include critical-css.css %}
     {% endif %}
   </style>
-  <link rel="preload" href="{{ "/assets/styles/min/main.css"  | prepend: site.baseurl  }}" as="style" onload="this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" type="text/css" media="screen" href="{{ "/assets/styles/min/main.css"  | prepend: site.baseurl  }}" /></noscript>
+  <link rel="preload" href="{{ "/assets/styles/min/main.css"  | prepend: site.baseurl  }}?{{ site.assets_version }}" as="style" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" type="text/css" media="screen" href="{{ "/assets/styles/min/main.css"  | prepend: site.baseurl  }}?{{ site.assets_version }}" /></noscript>
 
   <script>
     /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */

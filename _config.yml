@@ -55,6 +55,8 @@ compress_html:
 
 disqus: wouterbulten
 
+assets_version: 2
+
 # social icons and sharing options
 social:
 
