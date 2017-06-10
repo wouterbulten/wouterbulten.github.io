@@ -3,14 +3,18 @@
 //
 
 .section-image-me  {
-  background-color: lightblue;
-  background-size: cover;
-  background-position: center center;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 
-  min-height: 250px;
   max-height: 500px;
+  .image-me {
 
-  background-image: url("https://cdn.wouterbulten.nl/images/wouter_bulten_optim.png");
+    @include media-breakpoint-up(md) {
+      margin-left: -150px;
+    }
+  }
 }
 
 .svg-icon {

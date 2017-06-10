@@ -62,7 +62,7 @@ body {
   @include make-col-ready();
   @include make-col(12);
 
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(sm) {
     padding-top: 1rem;
     @include make-col(5);
   }
@@ -75,7 +75,7 @@ body {
   @include make-col-ready();
   @include make-col(12);
 
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(sm) {
     @include make-col(7);
     padding: 1rem 2.5rem;
   }
@@ -84,7 +84,7 @@ body {
   @include make-col-ready();
   @include make-col(12);
 
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(sm) {
     @include make-col-offset(5);
     @include make-col(7);
   }
