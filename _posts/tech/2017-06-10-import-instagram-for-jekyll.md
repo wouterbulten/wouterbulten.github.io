@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Import/Adding Instagram posts to Jekyll"
-date:   2017-06-10 20:01
+date:   2017-06-24 17:12
 categories: blog tech
 tags: [script, blog, website, instagram]
 published: true
