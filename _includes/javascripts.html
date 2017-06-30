@@ -101,7 +101,7 @@ ready(function() {
         var request = new XMLHttpRequest();
         var notify_url = 'https://convey.wouterbulten.nl/notify/?';
         notify_url += 'p={{ page.url | default: "" | cgi_escape }}';
-        notify_url += 'r=' + encodeURIComponent(document.referrer);
+        notify_url += '&r=' + encodeURIComponent(document.referrer);
         notify_url += '&t={{ page.title | default: "" | cgi_escape }}';
 
         request.open('GET', notify_url, true);
