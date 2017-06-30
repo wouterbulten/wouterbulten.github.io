@@ -30,7 +30,7 @@ include: [cooking]
 
 sass:
   style: compressed
-url: "https://wouterbulten.nl" # the base hostname & protocol for your site
+url: "https://www.wouterbulten.nl" # the base hostname & protocol for your site
 baseurl: ""
 
 encoding: utf-8
