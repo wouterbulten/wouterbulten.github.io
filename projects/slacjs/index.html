@@ -1,0 +1,161 @@
+---
+layout: project
+title: "SlacJS demo"
+---
+
+<style>
+    #slac-stage canvas {
+        border: 1px solid black;
+        background-color: #eeeeee;
+        box-sizing:border-box;
+        -moz-box-sizing:border-box;
+        -webkit-box-sizing:border-box;
+    }
+</style>
+
+
+<h1>SLAC.js <small>Indoor localisation using Javascript</small></h1>
+
+
+<p class="lead">
+    Simultaneously Localisation and Configuration (SLAC) of indoor Wireless Sensor Networks and their users built upon FastSLAM.
+</p>
+
+<p>With SLAC we aim to simultaneously locate both the user and the devices of a system deployed in an indoor environment.
+    The algorithm is privacy-aware and is an online localisation method; i.e. localisation starts whenever a user starts
+    moving inside a building. Moreover, for the SLAC system we focus on a solution that can be deployed in smart spaces without
+    additional hardware requirements besides users’ mobile phones and the components of the space. By utilising a mobile
+    phone we remove the need for a application-dependent device that the user needs to keep.
+</p>
+
+<h4 style="padding-top:30px;">Contents</h4>
+<ol>
+    <li><a href="#presentation">Presentation</a></li>
+    <li><a href="#demo">Demonstration (running in the browser)</a></li>
+    <li><a href="#examples">Additional examples</a></li>
+    <li><a href="#license">License</a></li>
+</ol>
+<p>See for more information <a href="https://github.com/wouterbulten/slacjs">SLACjs on Github</a>.</p>
+
+
+<h2 id="presentation">Presentation</h2>
+
+<p>The presentation below describes the general idea of SLACjs and why we built it. It also shows
+    the mathetical background and explains how particle filters and extended Kalman filters are used for the localisation.</p>
+<div style="height: 30%; padding: 30%; box-sizing: border-box; position: relative;">
+<iframe style="border: 1px solid lightgrey; position: absolute; top: 0; left: 0; height: 100%; width: 100%" id="slacjs-presentation" marginheight="0" marginwidth="0" src="https://www.wouterbulten.nl/human-slam-presentation/">
+    Fallback text here for unsupporting browsers, of which there are scant few.
+</iframe>
+</div>
+
+
+<h2 id="demo">Live demonstration</h2>
+
+<p>The demo below shows a simulated world with 7 devices (black squares). A user walks
+    around (blue line) and collects RSSI measurements from the devices.
+
+    Each grey line shows a single particle representing the user's trace. The green line shows
+    the current best particle (based on the importance weight).
+
+    Red squares (with the device name) show the current best estimate of that device's location. The
+    estimate is retrieved from the best particle.</p>
+
+<p><b>Note:</b> The simulation is slowed down to show the actual process. Between each simulation step there is a
+    500ms delay.
+</p>
+
+<p>
+    <button class="btn btn-success" id="start-sim">Start simulation</button>
+</p>
+
+<div id="slac-stage">
+    <canvas id="slacjs-map" height="600" width="600" class="img-thumbnail"></canvas>
+</div>
+
+<h3>Current average error</h3>
+<p><small>(Only visible after at least 1 landmark has been found)</small></p>
+<p><span class="landmark-error">&infin;</span>m</p>
+
+
+<h3>Individual landmark errors</h3>
+<p><small>(Only visible after initialisation phase)</small></p>
+<p class="landmark-individual-error"></p>
+<p class="error-output"><p>
+
+<hr>
+<h2 id="examples">Other demos</h2>
+<p>Some other demos are also available online showing specific parts of the algorithm. A few of the demo's run an older version of the SLAC algorithm.</p>
+
+<ul>
+    <li><a href="https://www.youtube.com/watch?v=00q2QNOFz8U">Movie of SLACjs and moving devices</a> (on YouTube). The movie shows what happens
+        when two devices are swapped and how the algorithm manages to find the new locations.</li>
+    <li><a href="random-movement/initialisation/">EKF initalisation</a>. Demo showing the dedicated particle filter that is used to
+        initialize a new device. It finds a rough estimate of the device's position using a particle filter. This version does not yet contain
+    the improved resampling function that is used in the newest version of SLACjs.</a>
+    <li><a href="random-movement/">Older version of the algorithm on random data</a>. The world and movement is fully random.</li>
+    <li><a href="replay/">Replay version of a live tests</a>. Data has been recorded inside a real building with
+        7 bluetooth beacons used as landmarks. The demo version runs a slightly older version and does not show the maximum
+        attainable localisation performance.</li>
+</ul>
+
+<hr style="margin-top: 150px;">
+<h2 id="license">License</h2>
+
+<p>Copyright (C) 2015 Wouter Bulten</p>
+<p>This program is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</p>
+<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+
+
+<script type="text/javascript">
+window.devicePixelRatio = 2; /*Small hack to make the rendering of the canvas better*/
+</script>
+<script type="text/javascript" src="assets/js/browser-polyfill.js"></script>
+<script type="text/javascript" src="vendor/vendor.js"></script>
+<script type="text/javascript" src="assets/js/slacjs-app.js"></script>
+
+<script type="text/javascript">
+/*
+DEMO JAVASCRIPT
+ */
+var maxSimulations = 1;
+var currentSimulation = 0;
+var errors = [];
+
+var timeBetweenSteps = 500;
+
+var errorsPerLandmark = {};
+
+var step = function() {
+	var success = SlacApp.step();
+
+	if (!success) {
+		SlacApp.reset();
+
+		simulationStarted = false;
+		document.getElementById('start-sim').disabled = false;
+	}
+	else {
+		if (timeBetweenSteps > 0) {
+			setTimeout(step, timeBetweenSteps);
+		}
+		else {
+			step();
+		}
+	}
+};
+
+var simulationStarted = false;
+document.getElementById('start-sim').onclick=function() {
+	if(!simulationStarted) {
+		simulationStarted = true;
+		SlacApp.initialize();
+
+		setTimeout(step, 20);
+		document.getElementById('start-sim').disabled = true;
+	}
+};
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+---
+layout: default
+---
+<div class="section">
+    <article class="post post-single" id="post" itemprop="mainEntity">
+
+    <section class="post-content">
+        <a name="topofpage" class="topofpage"></a>
+        {{content}}
+    </section>
+
+    <footer class="post-footer">
+        <section class="share">
+        {% for social in site.social %}
+            {% if social.share_url != null %}
+            <a class="icon-{{ social.icon }}" href="{{ social.share_url }}{{ social.share_title }}{{page.title | cgi_escape}}{{ social.share_link }}{{site.url}}{{page.id}}"
+                onclick="window.open(this.href, '{{ social.icon }}-share', 'width=550,height=255');return false;">
+            <i class="fa fa-{{ social.icon }}"></i><span class="hidden">{{ social.icon }}</span>
+            </a>
+            {% endif %}
+        {% endfor %}
+        </section>
+    </footer>
+    </article>
+
+    {%if site.disqus %}
+    <div id="disqus_thread" class="comment-section"></div>
+    <script>
+    var disqus_shortname = '{{site.disqus}}';
+    var disqus_config = function () {
+        this.page.url = '{{site.url}}{{page.id}}/';
+        this.page.identifier = '{{page.id}}';
+    };
+    (function() {
+        var d = document, s = d.createElement('script');
+
+        s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    {% endif %}
+</div>
