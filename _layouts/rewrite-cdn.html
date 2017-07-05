@@ -3,7 +3,7 @@ layout: compress
 ---
 
 {% if jekyll.environment == 'production' %}
-{{ content | replace: '/assets/', 'https://cdn.wouterbulten.nl/' }}
+{{ content | replace: '"/assets/', '"https://cdn.wouterbulten.nl/' }}
 {% else %}
 {{ content }}
 {% endif %}
