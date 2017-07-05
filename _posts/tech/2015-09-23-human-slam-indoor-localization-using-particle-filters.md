@@ -2,7 +2,7 @@
 layout: post
 title:  "Human SLAM, Indoor localization using particle filters"
 date:   2015-09-23 19:50
-updated_at: 2017-07-03 20:57
+modified_at: 2017-07-03 20:57
 categories: blog tech
 tags: [slam, particle filters, external post, indoor localization, dobots]
 ---
