@@ -2,7 +2,7 @@
 layout: compress
 ---
 
-{% if jekyll.environment == 'production' %}
+{% if jekyll.environment == 'production' and site.cdn_enabled %}
 {{ content | replace: '"/assets/', '"https://cdn.wouterbulten.nl/' }}
 {% else %}
 {{ content }}

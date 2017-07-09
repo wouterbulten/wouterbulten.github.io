@@ -32,6 +32,7 @@ sass:
   style: compressed
 url: "https://www.wouterbulten.nl" # the base hostname & protocol for your site
 baseurl: ""
+cdn_enabled: false
 
 encoding: utf-8
 
