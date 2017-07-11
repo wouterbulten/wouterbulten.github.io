@@ -2,3 +2,5 @@
   X-Frame-Options: DENY
   X-XSS-Protection: 1; mode=block
 
+/assets/images/*
+  Cache-Control: public, max-age=360000
