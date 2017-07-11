@@ -4,4 +4,4 @@
   Referrer-Policy: strict-origin-when-cross-origin
 
 /assets/images/*
-  Cache-Control: public, max-age=360000
+  Cache-Control: public, max-age=2592000
