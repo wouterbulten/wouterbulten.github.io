@@ -54,7 +54,7 @@ layout: default
 
         <ul>
 
-        {% for post in site.categories[cat] limit:3 %}
+        {% for post in site.related_posts limit:3 %}
         {% if post.title != page.title %}
             <li>
             <h4 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h4>
