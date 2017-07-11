@@ -54,6 +54,7 @@ has_container: true
 
         <div class="blog-list blog-list-small">
         {% for post in site.categories['tech'] limit:5 %}
+        {% if post.layout != 'redirect' %}
             <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
             <div class="article-item">
                 <div class="post-meta">
@@ -70,6 +71,7 @@ has_container: true
                 </section>-->
             </div>
             </article>
+        {% endif %}
         {% endfor %}
         </div>
 

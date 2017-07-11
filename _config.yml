@@ -32,8 +32,12 @@ sass:
   style: compressed
 url: "https://www.wouterbulten.nl" # the base hostname & protocol for your site
 baseurl: ""
+cdn_enabled: false
 
 encoding: utf-8
+
+include:
+  - _redirects
 
 defaults:
   -
@@ -55,7 +59,7 @@ compress_html:
 
 disqus: wouterbulten
 
-assets_version: 2
+assets_version: 3
 
 # social icons and sharing options
 social:

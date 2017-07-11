@@ -20,6 +20,6 @@ We propose a new system, called Simultaneous Localisation and Configuration (SLA
 
 The presentation can be viewed online for those that are interested in our research and design considerations. As the presentation is built using Reveal.js it can be viewed in any modern browser (both mobile and desktop).
 
-View the presentation [full screen (external window) &rarr;](https://wouterbulten.nl/human-slam-presentation/)
+View the presentation [full screen (external window) &rarr;](https://code.wouterbulten.nl/human-slam-presentation/)
 
-<iframe src="https://wouterbulten.nl/human-slam-presentation/" style="width:100%;height: 400px"></iframe>
+<iframe src="https://code.wouterbulten.nl/human-slam-presentation/" style="width:100%;height: 400px"></iframe>

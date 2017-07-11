@@ -66,7 +66,7 @@
         {% include critical-css.css %}
     {% endif %}
   </style>
-  <link rel="preload" href="{{ "/assets/styles/min/main.css"  | prepend: site.baseurl  }}?v={{ site.assets_version }}" as="style" onload="this.rel='stylesheet'">
+  <link rel="preload" href="{{ "/assets/styles/min/main.css"  | prepend: site.baseurl  }}?v={{ site.assets_version }}" as="style" onload='this.rel="stylesheet"'>
   <noscript><link rel="stylesheet" type="text/css" media="screen" href="{{ "/assets/styles/min/main.css"  | prepend: site.baseurl  }}?v={{ site.assets_version }}" /></noscript>
 
   <script>

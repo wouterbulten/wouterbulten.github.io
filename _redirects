@@ -1,0 +1,5 @@
+# Redirects from what the browser requests to what we serve
+/slacjs/*                 /projects/slacjs/     301
+/about                    /curriculum-vitea     301
+/human-slam-presentation  http://code.wouterbulten.nl/human-slam-presentation 301
+/blog/tech/human-slam-indoor-localization-using-particle-filters-external/ /blog/tech/human-slam-indoor-localization-using-particle-filters/ 301
