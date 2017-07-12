@@ -22,6 +22,11 @@
 
   .card {
     min-width: 33%;
+
+    @include media-breakpoint-up(md) {
+      max-width: 33%;
+    }
+
     margin-bottom: 1rem;
   }
   .card-text {
@@ -36,6 +41,11 @@
   img {
     width: 100%;
     height: auto;
+
+    @supports (object-fit: cover) {
+      height: 250px;
+      object-fit: cover;
+    }
   }
 }
 
