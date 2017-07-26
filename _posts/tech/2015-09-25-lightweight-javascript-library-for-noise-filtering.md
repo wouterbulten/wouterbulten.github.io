@@ -168,3 +168,7 @@ This adjustment results in a far better fit. Using our prior estimate of the gro
 By now you should have a rough idea of how you can apply Kalman filters to filter out noise. If you want to see the internal workings of the filter I used in this post you can check out the [GitHub repository](https://github.com/wouterbulten/kalmanjs). For everyone who has 1D data and is in need of a low complexity implementation, I suggest that you give these type of filters a try. They are fast and easy to use 😀.
 
 Higher dimensional data? Rest assured, there are also multi-dimensional implementations available on the web!
+
+Any questions or comments? Please see the [comments section](#disqus_thread).
+
+{% include posts/iotdi-citation.md %}

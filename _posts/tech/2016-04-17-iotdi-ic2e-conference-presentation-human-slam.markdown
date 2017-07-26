@@ -23,3 +23,5 @@ The presentation can be viewed online for those that are interested in our resea
 View the presentation [full screen (external window) &rarr;](https://code.wouterbulten.nl/human-slam-presentation/)
 
 <iframe src="https://code.wouterbulten.nl/human-slam-presentation/" style="width:100%;height: 400px"></iframe>
+
+{% include posts/iotdi-citation.md %}

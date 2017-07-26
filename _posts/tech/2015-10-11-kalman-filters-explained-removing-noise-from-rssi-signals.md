@@ -129,7 +129,12 @@ I applied a simple Kalman filter to the "1m" data of the RSSI example dataset. I
 
 By using a Kalman filter we are able to remove noise from a very noisy signal. As the update functions are easy to compute the time complexity of the filter is very low; this results in a high performing system. The only drawback is that we lose a bit of responsiveness, but get a clearer signal in return!
 
+Any questions or comments? Please see the [comments section](#disqus_thread).
+
+{% include posts/iotdi-citation.md %}
+
 # References & Notes
 [^1]: Many researchers question whether RSSI values contains any value at all. For example:<br> Dong, Q., & Dargie, W. (2012). _Evaluation of the reliability of RSSI for indoor localization_. In _2012 International Conference on Wireless Communications in Underground and Confined Areas, ICWCUCA 2012_. doi:10.1109/ICWCUCA.2012.6402492
 [^2]: Oguejiofor, O., Okorogu, V., Abe, A., & BO, O. (2013). _Outdoor Localization System Using RSSI Measurement of Wireless Sensor Network. International Journal of Innovative Technology and Exploring Engineering (IJITEE)_, 2(2), 1–6.
 [^3]: There is also a extended version of the Kalman filter that works with non-linear models.
+

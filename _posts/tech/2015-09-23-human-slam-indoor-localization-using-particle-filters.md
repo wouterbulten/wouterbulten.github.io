@@ -86,10 +86,11 @@ An online demo can also be found on the website of [SLACjs](https://wouterbulten
 
 The full source code is available online on [GitHub](https://github.com/wouterbulten/slacjs) and is licensed under the GNU Lesser General Public License v3.
 
-
 ### Source
 
 This post was originally written for the [DoBots website](https://dobots.nl/2015/09/03/human-slam-indoor-localization-using-particle-filters/).
+
+{% include posts/iotdi-citation.md %}
 
 ### References
 
