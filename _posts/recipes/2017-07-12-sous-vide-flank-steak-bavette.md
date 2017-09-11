@@ -11,7 +11,7 @@ post_image_small: /assets/images/food/17-07-12-sous-vide-flank-steak-bavette_thu
 published: false
 ---
 
-Flank steak, when prepared correctly, is one of my favorite types of beef. It has a great trade off between being not to expensive (in comparison to cuts such as tenderloin) while having lots of flavor.
+Flank steak, when prepared correctly, is one of my favorite types of beef. It has a great trade off between being not to expensive (in comparison to cuts such as tenderloin) while having lots of flavor. When you cook the steak medium to medium rare and cut against the grain before serving, the texture of the steak is at its best.
 
 <!-- begin ig snippet -->
 
@@ -22,9 +22,21 @@ Flank steak, when prepared correctly, is one of my favorite types of beef. It ha
 ## Ingredients (filling)
 
 - Flank steak
+- Oil (for finishing the steak)
+
+Optional:
 - (Black lava) salt
 - Rosemary (fresh)
 - Butter
-- Oil
 
 ## Recipe
+
+My preferred method for preparing flank steak is to use sous vide, this guarantees a perfect cooked inside of the flank steak. However, due to the typical thinness of the cut, it is also possible to skip the sous vide step.
+
+1. Heat water bath at 56C (for medium to medium-rare).
+2. Vacuum seal the flank steak (or put in a zip lock bag).
+3. Put sealed steak in water bath for roughly 1.5 hours. The total duration will depend on thickness and whether you want to pasteurize the steak. The [sous vide guide](http://www.douglasbaldwin.com/sous-vide.html) by Douglas Baldwin is a great resource for determining the total time.
+4. Finish the steak on the stove. I prefer to use a cast iron or stainless steel skillet on medium to high. Make sure not to overcook the steak as it will lose its nice texture.
+5. (Optional) At the end of cooking you can add butter and herbs to the pan and baste the steak in this to add flavour.
+6. Cut the steak in strips before serving and make sure to cut *against* the grain. If you cut against the grain you shorten the muscle fibers in the meat which will result in a more tender steak.
+6. Serve with black lava salt and freshly ground pepper.
