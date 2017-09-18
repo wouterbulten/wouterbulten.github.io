@@ -137,6 +137,17 @@
     margin-bottom: 16px;
   }
 
+  // Main image for post (not always present)
+  .post-image {
+    margin-bottom: 20px;
+
+    @include media-breakpoint-up(md) {
+      max-width: 40%;
+      margin: 0 0 20px 20px;
+      float: right;
+    }
+  }
+
   // Meta block after title
   .post-meta {
     font-weight: 200;
