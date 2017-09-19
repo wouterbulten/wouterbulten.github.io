@@ -31,61 +31,59 @@ loadjs(preloadDependencies, 'page', function() {
   /* Load additional scripts */
   loadjs(pageScripts, 'custom-scripts');
 });
-
-{% if page.layout == 'post' %}
-/* Start page scripts after all dependencies have been loaded */
-loadjs.ready('page', function() {
-
-    HTMLElement.prototype.wrap = function(elms) {
-        /* Convert `elms` to an array, if necessary.*/
-        if (!elms.length) elms = [elms];
-
-        /* Loops backwards to prevent having to clone the wrapper on the*/
-        /* first element (see `child` below).*/
-        for (var i = elms.length - 1; i >= 0; i--) {
-            var child = (i > 0) ? this.cloneNode(true) : this;
-            var el    = elms[i];
-
-            /* Cache the current parent and sibling.*/
-            var parent  = el.parentNode;
-            var sibling = el.nextSibling;
-
-            /* Wrap the element (is automatically removed from its current*/
-            /* parent).*/
-            child.appendChild(el);
-
-            /* If the element had a sibling, insert the wrapper before*/
-            /* the sibling to maintain the HTML structure; otherwise, just*/
-            /* append it to the parent.*/
-            if (sibling) {
-                parent.insertBefore(child, sibling);
-            } else {
-                parent.appendChild(child);
-            }
-        }
-    };
-
-    /* Creates Captions from Alt tags */
-    var elements = document.querySelectorAll(".post-content img");
-    Array.prototype.forEach.call(elements, function(el, i){
-        if(el.alt && !el.classList.contains('emoji')) {
-            /* Wrap in figure element */
-            var wrapper = document.createElement('figure');
-            wrapper.classList.add('image');
-            wrapper.wrap(el);
-
-            /* Add caption */
-            var caption = document.createElement('figcaption');
-            caption.innerText = el.alt;
-            wrapper.appendChild(caption);
-
-        }
-    });
-});
-{% endif %}
 </script>
 {% endif %}
 
+{% if page.layout == 'post' %}
+<script type="text/javascript">
+HTMLElement.prototype.wrap = function(elms) {
+    /* Convert `elms` to an array, if necessary.*/
+    if (!elms.length) elms = [elms];
+
+    /* Loops backwards to prevent having to clone the wrapper on the*/
+    /* first element (see `child` below).*/
+    for (var i = elms.length - 1; i >= 0; i--) {
+        var child = (i > 0) ? this.cloneNode(true) : this;
+        var el    = elms[i];
+
+        /* Cache the current parent and sibling.*/
+        var parent  = el.parentNode;
+        var sibling = el.nextSibling;
+
+        /* Wrap the element (is automatically removed from its current*/
+        /* parent).*/
+        child.appendChild(el);
+
+        /* If the element had a sibling, insert the wrapper before*/
+        /* the sibling to maintain the HTML structure; otherwise, just*/
+        /* append it to the parent.*/
+        if (sibling) {
+            parent.insertBefore(child, sibling);
+        } else {
+            parent.appendChild(child);
+        }
+    }
+};
+
+/* Creates Captions from Alt tags */
+var elements = document.querySelectorAll(".post-content img");
+Array.prototype.forEach.call(elements, function(el, i){
+    if(el.alt && !el.classList.contains('emoji')) {
+        /* Wrap in figure element */
+        var wrapper = document.createElement('figure');
+        wrapper.classList.add('image');
+        wrapper.wrap(el);
+
+        /* Add caption */
+        var caption = document.createElement('figcaption');
+        caption.innerText = el.alt;
+        wrapper.appendChild(caption);
+
+    }
+});
+
+</script>
+{% endif %}
 {% if jekyll.environment == "production" %}
 <script type="text/javascript">
 function ready(fn) {
