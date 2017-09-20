@@ -4,31 +4,36 @@ title:  "Getting started with generative adversarial networks (GAN)"
 date:   2017-09-18 20:08
 categories: blog tech
 tags: [deep learning, generative adversarial networks, mnist, gan]
-published: false
+published: true
+description: "Generative Adversarial Networks (GANs) are one of the hot topics within Deep Learning right now and are applied to various tasks. In this post I'll walk you through the first steps of building your own adversarial network with Keras and MNIST."
 ---
 
-Generative Adversarial Networks (GANs) are one of the hot topics within Deep Learning right now and are applied to various tasks, ranging from semi-supervised learning to generating images. These networks were originally introduced by Ian Goodfellow et al. in 2014:
+Generative Adversarial Networks (GANs) are one of the hot topics within Deep Learning right now and are applied to various tasks, ranging from un/semi-supervised learning to generating images. These networks were originally introduced by Ian Goodfellow et al. in 2014:
 
 > We propose a new framework for estimating generative models via an adversarial process, in which we simultaneously train two models: a generative model G that captures the data distribution, and a discriminative model D that estimates the probability that a sample came from the training data rather than G. The training procedure for G is to maximize the probability of D making a mistake. This framework corresponds to a minimax two-player game. [(arXiv source)](https://arxiv.org/abs/1406.2661)
 
-In this post I'll show you my first experiments with these types of networks. As with almost any new technique we will apply it to a common dataset, in this case MNIST. MNIST is particular useful as its images are only small (28x28 pixels) and has only 1 color; this makes generating images a lot easier. After reading this post you should be able to generate your own images!
+In this post I'll show you my first experiments with these types of networks. As with almost any new technique we will apply it to a common benchmark dataset, in this case MNIST. MNIST is particular useful as its images are only small (28x28 pixels) and have only 1 color; this makes generating images a lot more feasible. After reading this post you should be able to generate your own fake <del>hand</del><i>computer</i>written digits!
 
-Just to note: GANs are very hard to train and require a lot of tuning to get working. I tried many different setups and parameters before I got the results of this post, and (spoiler) the results aren't even that great in comparison to the state-of-the-start. So, if you are starting with GANs, prepare yourself for a lot of tweaking!
+![Showing generated images based on the same noise vector during training. Total training time was 10.000 iterations with one image saved each 500 iterations.](/assets/images/gan-intro/learning_10k_optim.gif)
 
-For convenience I use Keras in this tutorial as it is less verbose than, for example, Tensorflow. The networks were trained using a Tensorflow backend on a Titan X GPU. However, these examples can also be trained on smaller GPUs, just change the batch size accordingly.
+Just to note: GANs are very hard to train and require a lot of tuning to get working. I tried many different setups and parameters before I got the results of this post. Even something small as changing the optimizer or tuning the learning rate can have large effects. So, if you are starting with GANs, prepare yourself for a lot of tweaking!
+
+For convenience I use Keras in this tutorial as it is less verbose than, for example, Tensorflow. Though, these results can easily be reproduced using other frameworks. The networks were trained using a Tensorflow backend on a Titan X GPU. These examples can also be trained on smaller GPUs, just change the batch size accordingly.
+
+The full source code of this post is also available as a Jupyter notebook and can be found in my [deep learning resource repository](https://github.com/wouterbulten/deeplearning-resources/blob/master/notebooks/1%20-%20Getting%20started%20with%20Generative%20Adversarial%20Networks%20using%20Keras%20and%20MNIST.ipynb).
 
 Let's dive in!
 
-![Example images from the MNIST dataset mixed with generated images. Can you distinguish which ones are generated and which ones are real?](/assets/images/gan-intro/MnistKeras_25_0.png)
+![Example images from the MNIST dataset mixed with generated images. Can you distinguish which ones are generated and which ones are real? See the end of the post for the answers.](/assets/images/gan-intro/MnistKeras_25_0_10k.png)
 
 
 ## Defining the discriminator
 
-In our two-player game the discriminator takes the role of the police: given an image it has to find out whether the image is fake or not. Given this requirement, the input of our discriminator network is a (28x28x1) input patch, equal to the dimensions of an MNIST image. The output is a single node. The setup of the networks is roughly based on the [DCGAN paper](https://arxiv.org/abs/1511.06434) and one of its [implementations](https://github.com/carpedm20/DCGAN-tensorflow).
+In our two-player game the discriminator takes the role of the police: given an image it has to determine whether the image is fake or not. With this requirement, the input of our discriminator network is a (28x28x1) input patch, equal to the dimensions of a single MNIST image. The output is a single node (1 for real, 0 for fake). The setup of the networks is roughly based on the [DCGAN paper](https://arxiv.org/abs/1511.06434) and one of its [implementations](https://github.com/carpedm20/DCGAN-tensorflow).
 
-![The original setup of the DCGAN generator. The network architecture of this post is adapted to work with smaller size of the the MNIST images.](/assets/images/gan-intro/DCGAN.png)
+![The original setup of the DCGAN generator. The network architecture of this post is adapted to work with the smaller size of the the MNIST images.](/assets/images/gan-intro/DCGAN.png)
 
-We use `LeakyReLU` in between the convolution layers to improve the gradients. 
+The network definition is defined below using a Keras `Sequential` model. I use `LeakyReLU` in between the convolution layers to improve the gradients. 
 
 ```python
 def discriminator():
@@ -102,7 +107,7 @@ The full network structure is as follows:
 
 The task of the generator, also known as "the counterfeiter", is to fool the discriminator by producing real-looking images. These images should eventually resemble the data distribution of the MNIST dataset. The generator uses random noise as input.
 
-The structure of the generator is comparable to the discrminiator but in reverse. We start with a random vector of noise (length=100) and gradually upsample. To improve the output of the generator we use `UpSampling2D` and normal convolutions instead of transposed convolutions (see also [this article](https://distill.pub/2016/deconv-checkerboard/)). The sizes of the layers are adjusted to match the size of our data (28x28 as opposed to the 64x64 of the DCGAN paper).
+The structure of the generator is comparable to the discrminiator but in reverse. We start with a random vector of noise (length=100) and gradually upsample. To improve the output of the generator we use `UpSampling2D` and normal convolutions instead of transposed convolutions (see also [this article](https://distill.pub/2016/deconv-checkerboard/)). The sizes of the layers are adjusted to match the size of our data (28x28 as opposed to the 64x64 of the DCGAN paper). `Batch normalization` is added to improve stability.
 
 
 ```python
@@ -186,12 +191,11 @@ The full network of the generator looks as follows:
 
 ## Creating the models
 
-We now defined the two separate networks but these still need to be combined in to trainable models: one to train the discriminator and one to train the generator. We first start with the most simple one which is the discriminator model.
+We now defined the two separate networks but these still need to be combined into trainable models: one to train the discriminator and one to train the generator. We first start with the most simple one which is the discriminator model.
 
-For the discriminator model we only have to define the optimizer, all the other parts of the model are already defined. We use `RMSprop` as the optimizer with a low learning rate and clip the values between -1 and 1. A small decay in the learning rate can help with stabilizing. I have tested both `SGD` and `Adam` for the optimizer of the discriminator but `RMSprop` performed best.
+For the discriminator model we only have to define the optimizer, all the other parts of the model are already defined. I use `RMSprop` as the optimizer with a low learning rate and clip the values between -1 and 1. A small decay in the learning rate can help with stabilizing. I have tested both `SGD` and `Adam` for the optimizer of the discriminator but `RMSprop` performed best.
 
 Besides the loss we also tell Keras to gives us the accuracy as a metric.
-
 
 ```python
 optim_discriminator = RMSprop(lr=0.0008, clipvalue=1.0, decay=1e-10)
@@ -207,15 +211,17 @@ model_discriminator.compile(loss='binary_crossentropy', optimizer=optim_discrimi
     _________________________________________________________________
     
 
+It is important to note that we add the discriminator network to a new Sequential model and do not directly compile the discriminator itself. We do this because the discriminator is also required in the next step and we are able to do so by adding it to a new model before compiling.
+
 ### Freezing a model
 
-The model for the generator is a bit more complex. The generator needs to fool the discriminator by generating images. So, to train the generator we need to assess its performance on the output of the discriminator. For this we add both networks to a combined model: *the adversarial model*. Our adversarial model uses random noise as its input, and outputs the eventual prediction of the discriminator on the generated images. 
+The model for the generator is a bit more complex. The generator needs to fool the discriminator by generating images. So, to train the generator we need to assess its performance on the output of the discriminator. For this we add both networks to a combined model: *the adversarial model*. Our adversarial model uses random noise as its input, and outputs the eventual prediction of the discriminator on the generated images. This is the reason that we added the discriminator to a new model in the previous step, by doing so we are able to reuse the network here.
 
-The generator performs well if the adversarial model outputs 'real' on all inputs. In other words, for any random noise vector of the adversarial network, we aim to get an output classifying the generated image as real. Consequently this means that the discriminator failed (which is a good thing for the generator. Here the two-player game comes in. As input we have hour list of noise vectors, as target vector for the model we have a list of ones.
+The generator performs well if the adversarial model outputs 'real' on all inputs. In other words, for any random noise vector of the adversarial network, we aim to get an output classifying the generated image as real. Consequently this means that the discriminator failed (which is a good thing for the generator). This is the core idea of the two-player game. As input for the adversarial model we have a list of noise vectors, as target vector for the model we have a list of ones.
 
 If we would use normal back propagation here on the full adversarial model we would slowly push the discriminator to update itself and start classifying fake images as real. Namely, the target vector of the adversarial model consists of all ones. To prevent this we must freeze the part of the model that belongs to the discriminator.
 
-In Keras freezing a model is easily done by freezing all the layers of the model. By setting the `trainable` parameter to `False` we prevent the layer of updating within this particular model (it is still trainable in the discriminator model).
+In Keras freezing a model is easily done by freezing all the layers of the model. By setting the `trainable` parameter to `False` we prevent the layer of updating within this particular model, while still being trainable in the discriminator model.
 
 The adversarial model uses `Adam` as the optimizer with the default values for the momentum.
 
@@ -240,13 +246,14 @@ model_adversarial.compile(loss='binary_crossentropy', optimizer=optim_adversaria
     _________________________________________________________________
     
 
-Note that the number of non-trainable parameters is very high. This is exactly what we want! 
+Note that the number of non-trainable parameters is very high as it excludes all parameters of the discriminator. This is exactly what we want! 
 
 
 ## Reading MNIST data
 
-We can now read our training data. For this I use a small utility function from Tensorflow.
+We can now load our training data. For this I use a small utility function from Tensorflow.
 
+![Example digits from the MINST dataset](/assets/images/gan-intro/MnistKeras_23_0_minst_real.png)
 
 ```python
 # Read MNIST data
@@ -258,7 +265,7 @@ x_train = x_train.reshape(-1, 28, 28, 1).astype(np.float32)
 
 With our models defined and the data loaded we can start training our GAN. The models are trained one after another, starting with the discriminator. The discriminator is trained on a set of both fake and real images and tries to classify them correctly. The adversarial model is trained on noise vectors as explained above.
 
-This setup (where the models alternate) is the most easy setup. For more complex images other strategies can be used. You can for example let the generator train more often than the discriminator to force it to become better.
+This setup (where the models alternate) is the most easy setup. For more complex images other strategies can be used. You can, for example, let the generator train more often than the discriminator to force it to become better.
 
 ```python
 batch_size = 256
@@ -288,24 +295,26 @@ for i in range(3001):
     a_stats = model_adversarial.train_on_batch(noise, y)
 ```
 
-*Note:* All the plotting functionality was removed from the above snippet. See the GitHub repository for the full code.
+*Note:* All the plotting functionality was removed from the above snippet. See the [GitHub repository](https://github.com/wouterbulten/deeplearning-resources/blob/master/notebooks/1%20-%20Getting%20started%20with%20Generative%20Adversarial%20Networks%20using%20Keras%20and%20MNIST.ipynb) for the full code.
 
 
 ![The loss (left) and accuracy (right) plots of 3000 training iterations.](/assets/images/gan-intro/MnistKeras_19_0.png)
 
 ## Result of training
 
-After 3000 iterations we have a generator that is able to generate images that most of the time resemble MNIST digits. Not all generated images are great but this could be resolved with more tuning and training.
+After 3000 iterations we have a generator that is able to generate images that most of the time resemble MNIST digits. When we train longer, I stopped at 10.000, the network performs even better. Not all generated images are great but this could be resolved with more tuning and training.
 
 
-<img src="output/mnist-normal/learning.gif"/>
+![40 generated images by the trained generator after 10.000 iterations of training.](/assets/images/gan-intro/MnistKeras_24_0_10k_generated.png)
 
 
 ## Exploring the noise vector
 
+Now that we have a working generator we can further explore the generation process. Some examples are shown below.
+
 ### Morphing instances
 
-Now that we have a working generator we can further explore the generation process. By tuning the noise vector we can get some insights in how the generator works. For example, if we slowy change a noise vector filled with zeros to one filled with ones we see a digit 3 slowly changing in to a 4.
+By tuning the noise vector we can get some insights in how the generator works. Primarily how the noise vector maps to the generated digits. For example, if we slowly change a noise vector filled with zeros to one filled with ones we see a digit 3 slowly changing in to a 4.
 
 ```python
 plt.figure(figsize=(15,4))
@@ -330,10 +339,13 @@ plt.show()
 
 ![Changing the noise vector in a certain direction can morph instances into each other. In this example a 3 slowly transforms in to a 4.](/assets/images/gan-intro/MnistKeras_21_0.png)
 
+![In this example a 9 slowly transforms in a 5.](/assets/images/gan-intro/MnistKeras_21_0_10k.png)
 
 ### Combining noise vectors
 
-As the noise vectors are just numbers we can also do some math with it:
+As the noise vectors are just numbers we can also do some math with it. With digits this is not that spectacular, but when you imagine that you can also do this with generated images of real objects the possibilities become very interesting. E.g. combining the noise vector of a man with the noise vector of a woman wearing glasses and afterwards remove the encoding for 'woman'. 
+
+In this example we show simple addition. The noise vector for a 3 combined with one for a 8 morphs in to something that resembles a 4.
 
 ```python
 a = np.random.uniform(-1.0, 1.0, size=[1, 100])
@@ -361,7 +373,6 @@ plt.tight_layout()
 plt.show()
 ```
 
-The noise vector for a 3 combined with one for a 8 morphs in to something that resembles a 4.
 
 ![](/assets/images/gan-intro/MnistKeras_22_0.png)
 
@@ -369,5 +380,6 @@ The noise vector for a 3 combined with one for a 8 morphs in to something that r
 
 Remember the image with digits at the start? Did you see which ones were fake and which ones were real? The fake ones are outlined in the image below.
 
-![](/assets/images/gan-intro/MnistKeras_25_1.png)
+![Both real and fake digits combined in the same image. Red outlined digits are generated by the adversarial network.](/assets/images/gan-intro/MnistKeras_25_1_10k.png)
 
+I hope you liked this post and found it useful. Do you have any feedback, ideas or other comments? Please leave them at the comments below!
