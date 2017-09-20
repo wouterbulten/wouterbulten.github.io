@@ -18,7 +18,7 @@ In this post I'll show you my first experiments with these types of networks. As
 
 Just to note: GANs are very hard to train and require a lot of tuning to get working. I tried many different setups and parameters before I got the results of this post. Even something small as changing the optimizer or tuning the learning rate can have large effects. So, if you are starting with GANs, prepare yourself for a lot of tweaking!
 
-For convenience I use Keras in this tutorial as it is less verbose than, for example, Tensorflow. Though, these results can easily be reproduced using other frameworks. The networks were trained using a Tensorflow backend on a Titan X GPU. These examples can also be trained on smaller GPUs, just change the batch size accordingly.
+For convenience I use Keras (and Python 3.5) in this tutorial as it is less verbose than, for example, Tensorflow. Though, these results can easily be reproduced using other frameworks. The networks were trained using a Tensorflow backend on a Titan X GPU. These examples can also be trained on smaller GPUs, just change the batch size accordingly.
 
 The full source code of this post is also available as a Jupyter notebook and can be found in my [deep learning resource repository](https://github.com/wouterbulten/deeplearning-resources/blob/master/notebooks/1%20-%20Getting%20started%20with%20Generative%20Adversarial%20Networks%20using%20Keras%20and%20MNIST.ipynb).
 
