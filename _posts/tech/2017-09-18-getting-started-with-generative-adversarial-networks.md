@@ -193,8 +193,7 @@ The full network of the generator looks as follows:
 
 We now defined the two separate networks but these still need to be combined into trainable models: one to train the discriminator and one to train the generator. We first start with the most simple one which is the discriminator model.
 
-For the discriminator model we only have to define the optimizer, all the other parts of the model are already defined. I use `RMSprop` as the optimizer with a low learning rate and clip the values between -1 and 1. A small decay in the learning rate can help with stabilizing. I have tested both `SGD` and `Adam` for the optimizer of the discriminator but `RMSprop` performed best.
-
+For the discriminator model we only have to define the optimizer, all the other parts of the model are already defined. I have tested both `SGD`, `RMSprop` and `Adam` for the optimizer of the discriminator but `RMSprop` performed best. `RMSprop` is used a low learning rate and I clip the values between -1 and 1. A small decay in the learning rate can help with stabilizing.
 Besides the loss we also tell Keras to gives us the accuracy as a metric.
 
 ```python
@@ -215,7 +214,7 @@ It is important to note that we add the discriminator network to a new Sequentia
 
 ### Freezing a model
 
-The model for the generator is a bit more complex. The generator needs to fool the discriminator by generating images. So, to train the generator we need to assess its performance on the output of the discriminator. For this we add both networks to a combined model: *the adversarial model*. Our adversarial model uses random noise as its input, and outputs the eventual prediction of the discriminator on the generated images. This is the reason that we added the discriminator to a new model in the previous step, by doing so we are able to reuse the network here.
+The model for the generator is a bit more complex. The generator needs to fool the discriminator by generating images. So, to train the generator we need to assess its performance on the output of the discriminator. For this we add both networks to a combined model: *the adversarial model*. Our adversarial model uses random noise as its input, and outputs the eventual prediction of the discriminator on the generated images. This why we added the discriminator to a new model in the previous step, by doing so we are able to reuse the network here.
 
 The generator performs well if the adversarial model outputs 'real' on all inputs. In other words, for any random noise vector of the adversarial network, we aim to get an output classifying the generated image as real. Consequently this means that the discriminator failed (which is a good thing for the generator). This is the core idea of the two-player game. As input for the adversarial model we have a list of noise vectors, as target vector for the model we have a list of ones.
 
