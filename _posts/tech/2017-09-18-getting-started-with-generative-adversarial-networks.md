@@ -20,7 +20,7 @@ Just to note: GANs are very hard to train and require a lot of tuning to get wor
 
 For convenience I use Keras (and Python 3.5) in this tutorial as it is less verbose than, for example, Tensorflow. Though, these results can easily be reproduced using other frameworks. The networks were trained using a Tensorflow backend on a Titan X GPU. These examples can also be trained on smaller GPUs, just change the batch size accordingly.
 
-The full source code of this post is also available as a Jupyter notebook and can be found in my [deep learning resource repository](https://github.com/wouterbulten/deeplearning-resources/blob/master/notebooks/1%20-%20Getting%20started%20with%20Generative%20Adversarial%20Networks%20using%20Keras%20and%20MNIST.ipynb).
+The full source code of this post is also available as a Jupyter notebook and can be found in my [deep learning resource repository](https://github.com/wouterbulten/deeplearning-resources/).
 
 Let's dive in!
 
@@ -294,7 +294,7 @@ for i in range(3001):
     a_stats = model_adversarial.train_on_batch(noise, y)
 ```
 
-*Note:* All the plotting functionality was removed from the above snippet. See the [GitHub repository](https://github.com/wouterbulten/deeplearning-resources/blob/master/notebooks/1%20-%20Getting%20started%20with%20Generative%20Adversarial%20Networks%20using%20Keras%20and%20MNIST.ipynb) for the full code.
+*Note:* All the plotting functionality was removed from the above snippet. See the [GitHub repository](https://github.com/wouterbulten/deeplearning-resources/) for the full code.
 
 
 ![The loss (left) and accuracy (right) plots of 3000 training iterations.](/assets/images/gan-intro/MnistKeras_19_0.png)
