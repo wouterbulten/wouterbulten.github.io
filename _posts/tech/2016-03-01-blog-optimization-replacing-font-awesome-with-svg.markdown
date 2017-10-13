@@ -86,10 +86,10 @@ The only drawback of this method is that including an icon is a bit more work th
 
 If you added everything the snippet above will show the following:
 
-<span style="font-size: 1em;"><svg class="svg-icon"><use xlink:href="#icon-github"></use></svg></span>
-<span style="font-size: 2em;"><svg class="svg-icon"><use xlink:href="#icon-github"></use></svg></span>
-<span style="font-size: 3em;"><svg class="svg-icon"><use xlink:href="#icon-github"></use></svg></span>
-<span style="color: darkred"><svg class="svg-icon"><use xlink:href="#icon-github"></use></svg></span>
+<span style="font-size: 1em;"><svg class="svg-icon"><use xlink:href="#icon-gh"></use></svg></span>
+<span style="font-size: 2em;"><svg class="svg-icon"><use xlink:href="#icon-gh"></use></svg></span>
+<span style="font-size: 3em;"><svg class="svg-icon"><use xlink:href="#icon-gh"></use></svg></span>
+<span style="color: darkred"><svg class="svg-icon"><use xlink:href="#icon-gh"></use></svg></span>
 
 Additionally, you can apply many of the same CSS effects to these SVG icons as you would with normal text. Only text-specific things such as `text-decoration` or `font-style` won't work.
 
