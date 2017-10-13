@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Blog Optimization 1: Replacing Font Awesome with SVG"
+title:  "Blog Optimization: Replacing Font Awesome with SVG"
 date:   2016-03-01 20:49
 categories: blog tech
 tags: [jekyll, webdev, speed, svg]
-published: false
+published: true
 description: "My blog is hosted using Jekyll which is a static site generator. Static sites are inherently fast, but I took some extra measures to achieve an even faster website. This is part 1 of the series: replacing Font Awesome."
 ---
 
@@ -12,7 +12,6 @@ This post is the first in a series of (micro) optimizations I did to my Jekyll b
 
 Today we kick-off with SVG icons!
 
-{% include posts/bo-list.html %}
 
 ## The problem
 
