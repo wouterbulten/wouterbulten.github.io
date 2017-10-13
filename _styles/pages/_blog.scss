@@ -186,6 +186,9 @@
     margin: 0;
     max-width: 100%;
     text-align: center;
+    &.hightlight {
+      text-align: left; // Do not center align code
+    }
   }
   figcaption {
     font-weight: 400;
