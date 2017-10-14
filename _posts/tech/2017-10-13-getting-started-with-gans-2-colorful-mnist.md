@@ -44,7 +44,7 @@ lena = PILImage.open('resources/lena.jpg')
 To generate a new sample we start with taking a random crop of the Lena image; this will be used as the background. Then, for every pixel of the MNIST digit we invert the colors to show the original number. To make the examples a bit more detailed we also upsample the digits to 64x64 pixels.
 
 ```python
-def get_mnist_batch(batch_size=256, change_colors=False):
+def get_mnist_batch(batch_size=256, change_colors=True):
     
     # Select random batch (WxHxC)
     idx = np.random.choice(x_train.shape[0], batch_size)
