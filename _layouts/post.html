@@ -32,7 +32,7 @@ layout: default
     <section class="post-content" itemprop="articleBody">
         <a name="topofpage" class="topofpage"></a>
 
-        {% if page.post_image_large != null %}
+        {% if page.post_image_large != null and page.image_in_post %}
             <img src="{{ page.post_image_large  }}" class="post-image img-thumbnail">
         {% endif %}
 

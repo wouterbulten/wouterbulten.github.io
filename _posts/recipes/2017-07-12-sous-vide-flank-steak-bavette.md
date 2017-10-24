@@ -8,6 +8,7 @@ tags: [sous vide, food, steak, cooking, beef]
 post_image: /assets/images/food/17-07-12-sous-vide-flank-steak-bavette.jpg
 post_image_large: /assets/images/food/17-07-12-sous-vide-flank-steak-bavette_large.jpg
 post_image_small: /assets/images/food/17-07-12-sous-vide-flank-steak-bavette_thumbnail.jpg
+image_in_post: true
 published: false
 ---
 

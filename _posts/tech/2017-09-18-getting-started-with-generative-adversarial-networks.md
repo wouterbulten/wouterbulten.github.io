@@ -6,6 +6,7 @@ categories: blog tech
 tags: [deep learning, generative adversarial networks, mnist, gan]
 published: true
 description: "Generative Adversarial Networks (GANs) are one of the hot topics within Deep Learning right now and are applied to various tasks. In this post I'll walk you through the first steps of building your own adversarial network with Keras and MNIST."
+post_image_large: "/assets/images/gan-intro/MnistKeras_25_0_10k.png"
 ---
 
 Generative Adversarial Networks (GANs) are one of the hot topics within Deep Learning right now and are applied to various tasks, ranging from un/semi-supervised learning to generating images. These networks were originally introduced by Ian Goodfellow et al. in 2014:

@@ -6,6 +6,7 @@ categories: blog tech
 tags: [deep learning, generative adversarial networks, mnist, gan]
 published: true
 description: "In this post we build upon part 1 of 'Getting started with generative adversarial networks' and work with RGB data instead of monochrome. We apply a simple technique to map MNIST images to RGB."
+post_image_large: "/assets/images/gan-color/MnistColor_24_0.png"
 ---
 
 In the [previous post]({% post_url tech/2017-09-18-getting-started-with-generative-adversarial-networks %}) I talked about getting started with generative adversarial networks (GANs) and applied these types of networks to the MNIST dataset. In that application we limited ourselves to 1D black-and-white images which are fairly easy for a network to learn. Eventually though, we want to switch to more complex (RGB) images. In this post I discuss a way of enhancing the MNIST dataset with colors, a *colorful MNIST* so to say. 
