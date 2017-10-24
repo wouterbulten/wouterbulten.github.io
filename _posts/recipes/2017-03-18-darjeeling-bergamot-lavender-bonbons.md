@@ -9,6 +9,7 @@ post_image: /assets/images/food/2017-03-18-darjeeling-bergamot-lavender-bonbons.
 post_image_large: /assets/images/food/2017-03-18-darjeeling-bergamot-lavender-bonbons_large.jpg
 post_image_small: /assets/images/food/2017-03-18-darjeeling-bergamot-lavender-bonbons_thumbnail.jpg
 image_in_post: true
+description: Dark Callebaut chocolate (54%) bonbons, filled with a milk chocolate ganache infused with Earl Grey darjeeling tea and lavender
 ---
 
 Dark Callebaut chocolate (54%) bonbons filled with a milk chocolate ganache. The ganache is infused with Earl Grey darjeeling tea and lavender. These bonbons are a perfect after-dinner treat due to the combination of a black tea filling with the dark shell.

@@ -9,6 +9,7 @@ post_image: /assets/images/food/2017-03-17-anise-white-chocolate-bonbons.jpg
 post_image_large: /assets/images/food/2017-03-17-anise-white-chocolate-bonbons_large.jpg
 post_image_small: /assets/images/food/2017-03-17-anise-white-chocolate-bonbons_thumbnail.jpg
 image_in_post: true
+description: "New experimental filling: white chocolate with anise seeds"
 ---
 
 This bonbon flavor started as a experiment but turned out to be really tasty! The combination of white chocolate (I used white Callebaut callets) with the anise seeds is very addictive. 
