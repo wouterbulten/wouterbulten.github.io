@@ -1,4 +1,44 @@
 {% if page.layout == 'post' %}
+{% if page.categories contains 'food' %}
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Recipe",
+
+        "name": "{{ page.title }}",
+        "keywords": "{{ page.tags | join: ', ' }}",
+
+        {% if page.post_image_large %}
+        "image": [
+            "{{ site.url}}{{ page.post_image_large }}",
+            "{{ site.url}}{{ page.post_image }}",
+            "{{ site.url}}{{ page.post_image_small }}"
+        ],
+        {% else %}
+        "image": "",
+        {% endif %}
+
+        "datePublished": "{{ page.date | date_to_xmlschema }}",
+
+        {% if page.modified_at %}
+        "dateModified": "{{ page.modified_at | date_to_xmlschema }}",
+        {% else %}
+        "dateModified": "{{ page.date | date_to_xmlschema }}",
+        {% endif %}
+
+        "author": {
+          "@type": "Person",
+          "name": "{{ site.author }}"
+        },
+
+        {% if page.description %}
+        "description": "{{ page.description }}"
+        {% else %}
+        "description": "{{ page.excerpt | strip_html }}"
+        {% endif %}
+      }
+</script>
+{% endif %}
 <script type="application/ld+json">
     {
         "@context": "http://schema.org",
