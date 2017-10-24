@@ -2,34 +2,34 @@
 layout: default
 ---
 <div class="section">
-    <article class="post post-single" id="post" itemprop="mainEntity" itemscope itemtype="http://schema.org/BlogPosting">
+    <article class="post post-single" id="post">
 
     <div class="post-meta">
         <span class="post-category"><a href="/{{page.categories | join: '/'}}">&larr; Back to {{ cat }} category</a></span>
-        <h1 class="post-title" itemprop="headline">{{ page.title }}</h1>
+        <h1 class="post-title"></h1>{{ page.title }}</h1>
         {% if page.description %}
-        <p class="description"><em>Summary: </em><span itemprop="description">{{ page.description }}</span></p>
+        <p class="description"><em>Summary: </em>{{ page.description }}</p>
         {% endif %}
         <div class="cf post-meta-text">
         <div class="author-image" style="background-image: url({{ site.author_image }})">Blog Logo</div>
 
             <a href="/curriculum-vitae/">
-                <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-                    <span class="author-name" itemprop="name">{{ site.author }}</span>
+                <span class="author">
+                    <span class="author-name">{{ site.author }}</span>
                 </span>
             </a>
         &nbsp;on
-        <time itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time>,
+        <time>{{ page.date | date_to_string }}</time>,
         {% if page.modified_at %}
-        <i>Updated: <time itemprop="dateModified" datetime="{{ page.modified_at | date_to_xmlschema }}">{{ page.modified_at | date_to_string }}</time></i>,
+        <i>Updated: <time>{{ page.modified_at | date_to_string }}</time></i>,
         {% endif %}
-        <span class="keywords tags" itemprop="keywords">keywords: <i>{{ page.tags | join: ', ' }}</i></span>{% if page.ig %},
+        <span class="keywords tags">keywords: <i>{{ page.tags | join: ', ' }}</i></span>{% if page.ig %},
             <a href="https://www.instagram.com/p/{{page.ig}}"><svg class="svg-icon svg-icon-ig"><use xlink:href="#icon-ig"></use></svg> View on instagram</a>
         {% endif %}
         </div>
     </div>
 
-    <section class="post-content" itemprop="articleBody">
+    <section class="post-content">
         <a name="topofpage" class="topofpage"></a>
 
         {% if page.post_image_large != null and page.image_in_post %}
