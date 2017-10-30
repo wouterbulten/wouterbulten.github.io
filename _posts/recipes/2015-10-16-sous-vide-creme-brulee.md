@@ -4,8 +4,9 @@ title:  "Sous vide crème brûlée: easy and delicious"
 date:   2015-10-16
 categories: blog food
 tags: [dessert, brulee, sous-vide]
-post_image: /assets/images/recipes/brulee-post.jpg
+post_image: /assets/images/food/2015-10-16-creme-brulee.jpg
 permalink: blog/cooking/sous-vide-creme-brulee/
+description: "Crème brûlée can be difficult to make and there is a large risk of overcooking. By using a water bath, this classical dessert becomes very easy to make."
 ---
 
 Making crème brûlée can be a joy, not only because of the end result, but also because of the whole process: from making the custard to creating a nice caramel crust. Unfortunately, it can be difficult to make and there is a large risk of overcooking when making this dessert in an oven. The lack of a good oven is in fact one of the reasons why I never made this at home!

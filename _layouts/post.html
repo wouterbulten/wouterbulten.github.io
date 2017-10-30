@@ -34,8 +34,9 @@ layout: default
 
         {% if page.post_image_large != null and page.image_in_post %}
             <img src="{{ page.post_image_large  }}" class="post-image img-thumbnail">
+        {% elsif page.post_image != null and page.image_in_post %}
+            <img src="{{ page.post_image  }}" class="post-image img-thumbnail">
         {% endif %}
-
         {{content}}
     </section>
 

@@ -4,17 +4,15 @@ title:  "The quest for a perfect mousse: The fast option"
 date:   2015-10-15
 categories: blog food
 tags: [mousse, cooking, siphon, dessert, chocolate]
-post_image: /assets/images/recipes/chocolate-mousse-post.jpg
+post_image: /assets/images/food/2015-10-15-chocolate-mousse.jpg
 permalink: blog/cooking/the-quest-for-a-perfect-mousse-part-1/
+image_in_post: true
+description: "In need of a fast chocolate mousse? This recipe uses a siphon to get the job done."
 ---
 
 Some time a go I started a personal quest: finding the perfect chocolate mousse. While I haven't found the perfect recipe *yet*, I've decided to document my (numerous) attempts as part of a series. While many of you will know the traditional way of making chocolate mousse (cream, chocolate, egg whites), this series will focus primarily on new or different methods.
 
-We'll start of with a recipe that is simple and fast, doesn't require eggs (so no salmonella) and is fun to serve!
-
-Of course, even when using a simple mousse as a base, you can 'dress up' your dessert with additional parts:
-
-![Chocolate mousse, garnished with a bonbon of Port-berry puree, blocks of Amaretto and Ruby Port gel, coulis from berry juice, served in a almond basket.](/assets/images/recipes/chocolate-mousse-1.jpg)
+We'll start of with a recipe that is simple and fast, doesn't require eggs and is fun to serve!
 
 ## Ingredients
 
