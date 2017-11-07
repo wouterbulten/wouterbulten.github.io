@@ -5,6 +5,7 @@ date:   2015-10-16
 categories: blog food
 tags: [dessert, brulee, sous-vide]
 post_image: /assets/images/food/2015-10-16-creme-brulee.jpg
+post_image_small: /assets/images/food/2015-10-16-creme-brulee_thumbnail.jpg
 permalink: blog/cooking/sous-vide-creme-brulee/
 description: "Crème brûlée can be difficult to make and there is a large risk of overcooking. By using a water bath, this classical dessert becomes very easy to make."
 ---

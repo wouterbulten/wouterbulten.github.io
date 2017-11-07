@@ -5,6 +5,7 @@ date:   2015-10-15
 categories: blog food
 tags: [mousse, cooking, siphon, dessert, chocolate]
 post_image: /assets/images/food/2015-10-15-chocolate-mousse.jpg
+post_image_small: /assets/images/food/2015-10-15-chocolate-mousse_thumbnail.jpg
 permalink: blog/cooking/the-quest-for-a-perfect-mousse-part-1/
 image_in_post: true
 description: "In need of a fast chocolate mousse? This recipe uses a siphon to get the job done."

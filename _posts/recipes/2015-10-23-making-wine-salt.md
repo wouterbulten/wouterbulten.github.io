@@ -5,6 +5,7 @@ date:   2015-10-23
 categories: blog food
 tags: [wine salt, garnish, leftovers]
 post_image: /assets/images/food/2015-10-23-red-wine-salt.jpg
+post_image_small: /assets/images/food/2015-10-23-red-wine-salt_thumbnail.jpg
 permalink: blog/cooking/making-wine-salt/
 description: "Wine salt is an easy and delicious way of using leftover wine."
 ---

@@ -42,10 +42,7 @@ has_container: true
             {% assign date_threshold = "2017-01-01" | date: "%s" %}
             {% for post in site.categories['food'] %}
             {% assign post_date = post.date | date: "%s" %}
-
-                {% if post_date > date_threshold %}
                 <a href="{{ post.url }}" class="image-grid-item"><img src="{{ post.post_image_small }}" title="{{ post.title }}"></a>
-                {% endif %}
             {% endfor %}
         </div>
     </div>
