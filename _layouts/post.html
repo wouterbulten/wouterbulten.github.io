@@ -54,11 +54,31 @@ layout: default
     </footer>
     </article>
 
+    {% assign cat = page.categories[1] | downcase %}
+
+    {% if cat == 'food' %}
+    <div class="post-overview section-fullpage">
+        <h2 class="index-headline"><span>Latest posts in the food category</span></h2>
+        <div class="card-group">
+        {% for post in site.categories['food'] limit:3 %}
+
+            <article class="card" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+                {% if post.post_image %}
+                    <a href="{{ post.url }}">
+                        <img class="card-img-top" itemprop="image" src="{{ post.post_image }}" alt="{{ post.title }}">
+                    </a>
+                {% endif %}
+                <div class="card-block">
+                    <h4 class="card-title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h4>
+                    <p class="card-text">{{ post.description }}</p>
+                </div>
+            </article>
+        {% endfor %}
+        </div>
+    </div>
+    {% else %}
     <div class="related-posts">
-        {% assign cat = page.categories[1] | downcase %}
-
         <h2 class="index-headline"><span>Other posts related to this</span></h2>
-
         <ul>
 
         {% for post in site.related_posts limit:3 %}
@@ -71,6 +91,7 @@ layout: default
         {% endfor %}
         </ul>
     </div>
+    {% endif %}
 
     {%if site.disqus %}
     <div id="disqus_thread" class="comment-section"></div>
