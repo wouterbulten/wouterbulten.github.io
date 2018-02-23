@@ -14,14 +14,14 @@ permalink: /contact/
 
     <div class="section-content">
 
-        <form class="form-contact" name="contact" netlify-honeypot="bot-field" action="/thank-you/" netlify>
+        <form class="form-contact" name="contact" netlify-honeypot="rd-field" action="/thank-you/" netlify>
             <label for="contact_name">Your name</label>
             <input type="text" id="contact_name" name="name" placeholder="John Doe" required>
 
             <label for="contact_email">Your email address</label>
             <input type="email" id="contact_email" name="_replyto" placeholder="email@example.com" required>
 
-            <p style="display: none"><label>Bot field: <input name="bot-field"></label></p>
+            <p style="display: none"><label>Random field field: <input name="rd-field" type="text"></label></p>
 
             <label for="contact_message">Message</label>
             <textarea name="message" id="contact_message" placeholder="Your message" rows="8" required></textarea>
