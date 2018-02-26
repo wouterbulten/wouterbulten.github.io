@@ -8,7 +8,7 @@ tags: [chocolate, entremet, mousse, cake]
 image_in_post: true
 post_image: /assets/images/food/2017-12-30-dark-chocolate-raspberry-entremet_large.png
 post_image_large: /assets/images/food/2017-12-30-dark-chocolate-raspberry-entremet_large.png
-post_image_small: /assets/images/food/2017-12-30-dark-chocolate-raspberry-entremet_thumbnail.jpg
+post_image_small: /assets/images/food/2017-12-30-dark-chocolate-raspberry-entremet_thumbnail.png
 published: false
 ---
 
@@ -107,7 +107,7 @@ This mousse recipe was adapted from the [Callebaut crème anglaise mousse](https
 - 200g + 25g cream, 35% fat, unsweetened
 - 25g whole milk
 - 25 egg yolks
-- 40-65g sugar (depending on the chocolate, see note below)
+- 40-65g sugar (depending on the chocolate, see note below) (CHECK THIS VALUE)
 - 125g dark chocolate, I used [Cacao Barry Ocoa 70.4%](https://www.cacao-barry.com/en-US/chocolate-couverture-cocoa/chd-n70ocoa/ocoa)
 {: .ingredient-list}
 
