@@ -49,7 +49,7 @@ Most professional brands of chocolate display the fluidity using a *drop system*
 
 Within this system we are looking for a chocolate with three drops, this results in a mousse with a nice texture. A three-drops chocolate corresponds to a chocolate that contains around 37% cocoa butter.
 
-It is possible to deviate from this system. I, for example, sometimes mix chocolates to achieve a certain flavour or explicitly try to get a different texture. Just remember, in general the closer to the the three drops the better.  
+It is possible to deviate from this system. I, for example, sometimes mix chocolates to achieve a certain flavour or explicitly try to get a different texture. Just remember, in general the closer to the three drops the better.  
 
 No professional chocolate available? You can use store-bought general brands but keep in mind that the end product can differ slightly due to changes in cocoa butter content.
 
