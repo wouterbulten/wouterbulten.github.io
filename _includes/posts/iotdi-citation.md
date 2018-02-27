@@ -1,6 +1,6 @@
 ## Reference
 
-This project/post was part of my research on indoor localization. Please see my [paper](http://ieeexplore.ieee.org/document/7471364) or this [presentation](http://localhost:4000/blog/tech/iotdi-ic2e-conference-presentation-human-slam/) for more information. You can use the following reference if you want to cite my paper:
+This project/post was part of my research on indoor localization. Please see my [paper](http://ieeexplore.ieee.org/document/7471364) or this [presentation](/blog/tech/iotdi-ic2e-conference-presentation-human-slam/) for more information. You can use the following reference if you want to cite my paper:
 
 > W. Bulten, A. C. V. Rossum and W. F. G. Haselager, "Human SLAM, Indoor Localisation of Devices and Users," *2016 IEEE First International Conference on Internet-of-Things Design and Implementation (IoTDI)*, Berlin, 2016, pp. 211-222. doi: 10.1109/IoTDI.2015.19 [URL](http://ieeexplore.ieee.org/document/7471364)
 

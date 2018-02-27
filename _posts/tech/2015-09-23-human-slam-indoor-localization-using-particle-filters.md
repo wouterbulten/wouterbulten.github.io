@@ -66,7 +66,7 @@ Simulating RSSI values and movement has its drawbacks: noise is predictable and 
 
 While SLAC runs online and in real time, the data for this live test has been recorded and analyzed offline at a later stage. The algorithm did however run during the data collection to give feedback about the process. Each recorded data set consisted of the raw unprocessed and unfiltered motion data (i.e. acceleration and heading) and RSSI measurements. These datasets are played back several times to get an average performance. This is particular important as the algorithm is a random process: using the same input data twice will result in different outcomes.
 
-> Interested in a demo? On the project page of SLACjs there is a [demo](http://localhost:4000/projects/slacjs/#demo) that shows the localization algorithm using real (recorded) data.
+> Interested in a demo? On the project page of SLACjs there is a [demo](/projects/slacjs/#demo) that shows the localization algorithm using real (recorded) data.
 
 The results of our live tests are shown in the figure below (A_1 to A_4). Additionally, the simulations results of the two conditions (Sim 5 &amp; Sim 10) which are comparable to a real world setup are displayed as a reference.
 
