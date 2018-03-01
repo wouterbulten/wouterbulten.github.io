@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  'Perfect chocolate mousse, my go-to recipe'
+title:  'Quest for a chocolate mousse: my go-to recipe'
 date:   2018-02-26
 categories: blog food
 ig: BdXeLf1DdgF
@@ -10,32 +10,24 @@ description: "A rich and versatile recipe for chocolate mousse. My go-to recipe.
 post_image: /assets/images/food/2018-02-26-perfect-chocolate-mousse-my-go-to-recipe.jpg
 post_image_large: /assets/images/food/2018-02-26-perfect-chocolate-mousse-my-go-to-recipe_large.jpg
 post_image_small: /assets/images/food/2018-02-26-perfect-chocolate-mousse-my-go-to-recipe_thumbnail.jpg
-published: false
+published: true
 ---
 
-A few years ago I discovered the [fastest option](/blog/cooking/the-quest-for-a-perfect-mousse-part-1/) to make chocolate mousse using a siphon for almost instant results. Although it is still the fastest option, I tend to use it less and less as it lacked the richness of a *perfect* chocolate mousse. Instead I have replaced the recipe with a new version that I have used many times since.
+A few years ago I discovered the [fastest option](/blog/cooking/the-quest-for-a-perfect-mousse-part-1/) to make chocolate mousse (or at least one that is very easy and takes almost no effort). That recipe uses a siphon for almost instant results.  Although it is still the fastest option, I tend to use it less and less as it lacked the richness of a *decadent* chocolate mousse. Recently I found and adapted a new recipe that's becoming my go-to recipe for chocolate mousse. It is versatile, still easy to make, and very rich.
 
-The recipe has been based on one I found on the [Callebaut](https://www.callebaut.com/en-US/chocolate-video/technique/mousse/creme-anglaise) website. Some of the steps and ingredients have been changed after testing it out.
+This recipe is based on one I found on the [Callebaut](https://www.callebaut.com/en-US/chocolate-video/technique/mousse/creme-anglaise) website. Some of the steps and ingredients have changed after testing. For one, I prefer a less sweet mousse that captures the flavour of a dark chocolate. This recipe reflects that by adding less sugar than more traditional recipes.
 
-The base of this chocolate mousse is a rich and delicate crème anglaise, which can be difficult to make, but practice makes perfect. The crème is an absolutely necessary part of this recipe and definitely worth the effort!
+I have found that the **secret to chocolate mouse** lies in the first place not in the choice of chocolate. Of course, the chocolate is a very important ingredient and defines the flavour. However, even more important is the choice of binding agent: the ingredient that binds and stabilizes the mousse. Many recipes use gelatin which can result in a very stiff and jelly mousse. Some recipes use egg whites, resulting in an airy mousse. In this recipe I go for the rich option and use only egg yolks. Looking for a vegan alternative? See my [Vegan Dark Chocolate Crème recipe](/blog/food/vegan-dark-chocolate-creme-flan/).
 
-# (Dark) chocolate mousse
+With the egg yolks we create a [crème anglaise](https://en.wikipedia.org/wiki/Cr%C3%A8me_anglaise) which can be difficult definitely worth the effort. Getting experience in making crème anglaise is useful as it is used in many other (sweet) recipes as an ingredient or topping.
 
-Recipe for a rich dark chocolate mousse that is very versatile. The mousse can be used as a basis for an entremet (a mousse cake), poured into silicon molds and frozen, and enjoyed on its own.
+The recipe below is my take on chocolate mousse. Some parts are still in development, especially the choice of chocolate and sugar ratio, so feel free to comment!
 
+First I will address two important parts of the mousse: the type of chocolate and the amount of sugar. Interested in the recipe only? [Skip to the recipe](#recipe).
 
-## Ingredients
+### Selecting the right chocolate / fluidity of chocolate
 
-- 200g + 25g cream, 35% fat, unsweetened
-- 25g whole milk
-- 25 egg yolks
-- 40-65g sugar (depending on the chocolate, see note below)
-- 125g dark chocolate, I used [Cacao Barry Ocoa 70.4%](https://www.cacao-barry.com/en-US/chocolate-couverture-cocoa/chd-n70ocoa/ocoa)
-{: .ingredient-list}
-
-### Selecting the right chocolate
-
-The choice of chocolate is an very important part of any chocolate mousse recipe. Certainly, the type of chocolate influences the taste of the mousse but, more importantly, also has an effect on the texture:
+The choice of chocolate is a very important part of any chocolate mousse recipe. Many will know that the amount of cocoa will say something about how bitter or sweet your chocolate and the resulting mousse is. There is, however, another aspect that we need to consider. Besides cocoa, the amount of cocoa butter directly influences the texture of the mousse:
 
 > If you used chocolate with a lower fluidity (i.e. containing less cocoa butter), it would yield a chocolate mousse with a really soft texture after crystallisation. It wouldn’t be solid enough to hold on a cake or inside a cake with the weight of different layers of cake filling on top. If you used chocolate with a higher fluidity (i.e. containing more cocoa butter) you’d get a chocolate mousse with a grainy, very solid and fatty texture, which would look and taste unappealing. -- [Callebaut fluidity explanation](https://www.callebaut.com/en-GB/chocolate-technique/troubleshooting/fluidity-mousse)
 
@@ -57,7 +49,7 @@ No professional chocolate available? You can use store-bought general brands but
 
 ### Sugar
 
-The amount of sugar that this recipe requires is dependent on the type of chocolate and your personal taste. Personally, I prefer a dark chocolate mousse that is not to sweet and tend to pair this with a sweeter garnish (like caramelized pears). A more bitter mousse also pairs perfectly with another more sweeter mousse.
+The amount of sugar that this recipe requires is dependent on the type of chocolate and your personal taste. Personally, I prefer a dark chocolate mousse that is not to sweet and tend to pair this with a sweeter garnish instead (like caramelized pears). This contrast between a slightly bitter mousse and a nice pairing can really improve a dish. A more bitter mousse also pairs perfectly with another more sweeter mousse (a fruit mousse for example).
 
 The table below can be used as a reference for selecting the amount of sugar. The percentages are based on the amount of chocolate, e.g. a 28% means that you have to take 28% of the weight of the chocolate as sugar. The amounts in grams are pre-calculated for this recipe.
 
@@ -81,11 +73,11 @@ The combinations I've tested so far:
   </thead>
   <tbody>
   <tr>
-    <td><ul><li>80% 54.5% Dark Callebaut chocolate</li><li>20% Callebaut Tanzanie 75% Dark</li></ul></td>
+    <td>80% Dark Callebaut chocolate (54.5% cocoa) + 20% Callebaut Tanzanie Dark (75% cocoa)</td>
     <td>12%</td>
   </tr>
   <tr>
-    <td><ul><li>100% Cacao Barry Ocoa 70.4</li></ul> </td>
+    <td>Cacao Barry Ocoa 70.4</td>
     <td>16%</td>
   </tr>
   <tr>
@@ -95,22 +87,66 @@ The combinations I've tested so far:
   </tbody>
 </table>
 
-## Recipe
+<img src="/assets/images/recipes/three-chocolate-verrines.jpg" alt="The chocolate mousse in this recipe formed the base of these chocolate verrines. The dark chocolate mousse was paired with a milk and a caramel mousse." style="max-width: 600px;">
 
-1. Gently semi-whip 200g of the cream until you get soft peaks. Reserve in the fridge.
-2. Combine egg yolks and sugar in a large bowl. The bowl should be big enough to contain both the eggs and the liquids (milk and cream).
-3. Combine the milk and remainder of the cream in a saucepan. Bring to a low boil. If you have a thermometer: a temperature of around 70&deg;C is enough.
-4. Temper the eggs by slowing pouring the heated cream mixture in to the egg yolks.
-5. Make a *crème anglaise*: Return egg/cream mixture to the saucepan and heat until the mixture reaches 82&deg;C. Make sure to whisk continuously to prevent an uneven heating and to incorporate air bubbles. You can also test whether the crème anglaise is ready without a thermometer: after heating, the mixture should coat the back of a spoon and not spread out when you make a line with your fingers.
-4. Melt the chocolate in the microwave or using a double boiler.
-5. Combine crème anglaise with the chocolate. Make sure to mix it well but avoid creating (large) air bubbles. You can use a stick blender or do this by hand.
-6. When the chocolate crème anglaise is around 38 degrees you can start adding the whipped cream. Work in batches and only add the new cream when the last batch is fully incorporated. If you add the cream when the chocolate is still to warm the mousse will collapse.
-7. Transfer the mousse to a piping bag and directly pour into the molds or final serving dish. Do not let the mousse cool inside the piping bag.
-8. Freeze the molds, or let the mousse cool in the fridge.
 
+<a name="recipe"></a>
+
+# (Dark) chocolate mousse recipe
+
+Recipe for a versatile and rich dark chocolate mousse. The mousse can be used as a basis for an entremet (a mousse cake), poured into silicon molds and frozen, or enjoyed on its own.
+
+## Ingredients
+
+- 200g + 25g cream, 35% fat, unsweetened
+- 25g whole milk
+- 25 egg yolks
+- 40-65g sugar (depending on the chocolate, see note below)
+- 125g dark chocolate, I used [Cacao Barry Ocoa 70.4%](https://www.cacao-barry.com/en-US/chocolate-couverture-cocoa/chd-n70ocoa/ocoa)
+{: .ingredient-list}
+
+**Note:** The recipe can easily be doubled if needed. First time making a crème anglaise? It is usually easier to make a larger batch as this overcooks not as quickly as a small amount.  Double the ingredients for the crème and halve after completing the crème anglaise.
+
+## Required materials
+
+- Handmixer (or any mixer to make whipped cream)
+- Bowls
+- Saucepan
+- Whisk
+- Piping bag (optional)
+- Molds, glasses, ramekins (anything to serve the mousse in)
+{: .material-list}
+
+## Steps
+
+### 1. Prepare cream
+
+Gently semi-whip 200g of the cream until you get soft peaks. Reserve in the fridge.
+
+### 2. Making a crème anglaise
+
+Combine egg yolks and sugar in a large bowl. The bowl should be big enough to contain both the eggs and the liquids (milk and cream).
+
+Combine the milk and rest of the cream in a saucepan. Bring to a low boil. If you have a thermometer: a temperature of around 70&deg;C is enough. Temper the eggs by slowing pouring the heated cream mixture in to the egg yolks.
+
+Make a *crème anglaise*: Return egg/cream mixture to the saucepan and heat until the mixture reaches 82&deg;C. Make sure to whisk continuously to prevent an uneven heating and to incorporate air bubbles. The mixture will become thick but make sure not to overcook it (as it will result in scrambled egg).
+
+You can test whether the crème anglaise is ready without a thermometer: after heating, the mixture should coat the back of a spoon and not spread out when you make a line with your fingers.
+
+### 3. Bring in the chocolate
+
+Melt the chocolate in the microwave or using a double boiler.Combine crème anglaise with the chocolate. Make sure to mix it well but avoid creating (large) air bubbles. You can use a stick blender or do this by hand.
+
+### 4. Combining
+
+When the chocolate crème anglaise is around 38 degrees you can start adding the whipped cream. Work in batches and only add the new cream when the last batch is fully incorporated. If you add the cream when the chocolate is still to warm the mousse will collapse.
+
+### 5. Serve
+
+The mousse is now ready to be cast and cooled. For easy of use, transfer the mousse to a piping bag. Directly pour the mousse into molds, ramekins or glasses. Do not let the mousse cool inside the piping bag. Freeze the molds, or let the mousse cool in the fridge.
 
 # Pairing ideas
 
-This mousse recipe can be used for many purposes. As a standalone dish I tend to pair it with caramelized pears and some white chocolate mousse.
+This mousse recipe can be used for many purposes. In the example below I transferred the mousse to a silicon mold and let them freeze overnight. As a standalone dish I usually pair it with caramelized pears and some white chocolate mousse.
 
-![Serving suggestion :)](/assets/images/recipes/chocolate-mouse-pairing.jpg)
+<img src="/assets/images/recipes/chocolate-mouse-pairing.jpg" alt="Serving suggestion :)" style="max-width: 400px">
