@@ -2,6 +2,7 @@
 layout: page
 title: Contact
 permalink: /contact/
+contact_form: true
 ---
 
 <div class="section">
@@ -10,25 +11,29 @@ permalink: /contact/
 
         <p class="lead">Use the contact form to contact me directly. I'll follow up with you as soon as I can. You can also connect with me through <a href="https://github.com/wouterbulten" class="" title="My GitHub profile">GitHub</a> or <a href="https://linkedin.com/in/wouterbulten" class="" title="My LinkedIn profile">LinkedIn</a>.
         </p>
+
+        <noscript>
+            <p>Due to a large influx of spam emails, this form can only be submitted with Javascript disabled. Please contact me through LinkedIn or GitHub if you are unable to use the form; or place a comment at any of the articles.</p>
+        </noscript>
     </div>
 
     <div class="section-content">
 
         <form class="form-contact" name="contact" netlify-honeypot="rd-field" action="/thank-you/" netlify>
             <label for="contact_name">Your name</label>
-            <input type="text" id="contact_name" name="name" placeholder="John Doe" required>
+            <input type="text" id="contact_name" name="rd-field" placeholder="John Doe" required>
 
             <label for="contact_email">Your email address</label>
             <input type="email" id="contact_email" name="_replyto" placeholder="email@example.com" required>
 
-            <p style="display: none"><label>Random field field: <input name="rd-field" type="text"></label></p>
-
             <label for="contact_message">Message</label>
             <textarea name="message" id="contact_message" placeholder="Your message" rows="8" required></textarea>
-            
+
             <div netlify-recaptcha></div>
-            
-            <input type="submit" value="Send" class="btn nav-btn">
+
+            <p>
+                <button type="submit" class="btn nav-btn">Send</button>
+            </p>
         </form>
     </div>
 </div>
