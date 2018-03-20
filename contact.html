@@ -18,10 +18,14 @@ contact_form: true
     </div>
 
     <div class="section-content">
+        <style type="text/css">.bp-form-field { display: none; }</style>
 
-        <form class="form-contact" name="contact" netlify-honeypot="rd-field" action="/thank-you/" netlify>
+        <form class="form-contact" name="contact-form" netlify-honeypot="rd-field" action="/thank-you/" netlify>
             <label for="contact_name">Your name</label>
             <input type="text" id="contact_name" name="rd-field" placeholder="John Doe" required>
+
+            <label for="subject">Subject (optional)</label>
+            <input type="text" id="subject" name="subject" placeholder="" required>
 
             <label for="contact_email">Your email address</label>
             <input type="email" id="contact_email" name="_replyto" placeholder="email@example.com" required>
@@ -29,7 +33,9 @@ contact_form: true
             <label for="contact_message">Message</label>
             <textarea name="message" id="contact_message" placeholder="Your message" rows="8" required></textarea>
 
-            <div netlify-recaptcha></div>
+            <label>Please fill in the captcha below:</label>
+            <div data-netlify-recaptcha></div>
+            <br>
 
             <p>
                 <button type="submit" class="btn nav-btn">Send</button>
