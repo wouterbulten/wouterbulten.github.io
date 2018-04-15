@@ -87,7 +87,7 @@ The combinations I've tested so far:
   </tbody>
 </table>
 
-<img src="/assets/images/recipes/three-chocolate-verrines.jpg" alt="The chocolate mousse in this recipe formed the base of these chocolate verrines. The dark chocolate mousse was paired with a milk and a caramel mousse." style="max-width: 600px;">
+<img src="/assets/images/recipes/three-chocolate-verrines.jpg" alt="The chocolate mousse in this recipe formed the base of these chocolate verrines. The dark chocolate mousse was paired with a milk and a caramel mousse.">
 
 
 <a name="recipe"></a>

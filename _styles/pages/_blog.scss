@@ -181,6 +181,10 @@
   // General elements for single posts
   img {
     max-width: 100%;
+
+    @include media-breakpoint-up(md) {
+      max-width: 600px;
+    }
   }
   figure {
     margin: 0;
