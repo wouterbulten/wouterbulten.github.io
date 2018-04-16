@@ -149,4 +149,4 @@ The mousse is now ready to be cast and cooled. For easy of use, transfer the mou
 
 This mousse recipe can be used for many purposes. In the example below I transferred the mousse to a silicon mold and let them freeze overnight. As a standalone dish I usually pair it with caramelized pears and some white chocolate mousse.
 
-<img src="/assets/images/recipes/chocolate-mouse-pairing.jpg" alt="Serving suggestion :)" style="max-width: 400px">
+<img src="/assets/images/recipes/chocolate-mouse-pairing.jpg" alt="Serving suggestion :)">
