@@ -46,7 +46,7 @@ It is possible to deviate from this system. I, for example, sometimes mix chocol
 
 No professional chocolate available? You can use store-bought general brands but keep in mind that the end product can differ slightly due to changes in cocoa butter content.
 
-<img style="max-width: 300px" src="/assets/images/recipes/Tanzanie_en.png" alt="The type of chocolate directly influences the end result. For the best result, try to find some professional chocolate 'callets' (or drops), these are easy to use and will result in a better mousse.">
+<img style="width: 300px" src="/assets/images/recipes/Tanzanie_en.png" alt="The type of chocolate directly influences the end result. For the best result, try to find some professional chocolate 'callets' (or drops), these are easy to use and will result in a better mousse.">
 
 ### Sugar
 
@@ -152,4 +152,4 @@ The mousse is now ready to be cast and cooled. For easy of use, transfer the mou
 
 This mousse recipe can be used for many purposes. In the example below I transferred the mousse to a silicon mold and let them freeze overnight. As a standalone dish I usually pair it with caramelized pears and some white chocolate mousse.
 
-<img src="/assets/images/recipes/chocolate-mouse-pairing.jpg" alt="Serving suggestion :)">
+<img src="/assets/images/recipes/chocolate-mouse-pairing.jpg" alt="Serving suggestion :)" style="width: 600px;">
