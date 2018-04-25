@@ -2,6 +2,7 @@
 layout: post
 title:  'Quest for a chocolate mousse: my go-to recipe'
 date:   2018-02-26
+modified: 2018-04-25
 categories: blog food
 ig: BdXeLf1DdgF
 tags: [chocolate, mousse, recipe]
@@ -51,14 +52,16 @@ No professional chocolate available? You can use store-bought general brands but
 
 The amount of sugar that this recipe requires is dependent on the type of chocolate and your personal taste. Personally, I prefer a dark chocolate mousse that is not to sweet and tend to pair this with a sweeter garnish instead (like caramelized pears). This contrast between a slightly bitter mousse and a nice pairing can really improve a dish. A more bitter mousse also pairs perfectly with another more sweeter mousse (a fruit mousse for example).
 
+The type of sugar can be varied to achieve a desired taste. Regular granulated sugar works fine for almost all versions of this mousse. Various forms of brown sugar can also be used for a touch of caramel.
+
 The table below can be used as a reference for selecting the amount of sugar. The percentages are based on the amount of chocolate, e.g. a 28% means that you have to take 28% of the weight of the chocolate as sugar. The amounts in grams are pre-calculated for this recipe.
 
 
 | Type of chocolate (cocoa solids %) | Sweet side | Bitter side | My preference |
 |------------------------------------|------------|-------------|---------------|
 | Milk (33%)                         |            |             |               |
-| Dark (54%)                         | 25% (21g)  | 8% (10g)    | 12% (15g)     |
-| Extra dark (70%)                   | 28% (35g)  | 10% (13g)   | 16% (20g)     |
+| Dark (54%)                         | 25% (42g)  | 8% (20g)    | 12% (30g)     |
+| Extra dark (70%)                   | 28% (70g)  | 10% (26g)   | 16% (40g)     |
 
 *Note:* This table is a work in progress and will be updated when I try out more combinations. Use the "sweet-bitter" values as a rough range and adjust to your personal taste. The values in "my preference" are based on actual combinations I tried.
 
@@ -77,7 +80,7 @@ The combinations I've tested so far:
     <td>12%</td>
   </tr>
   <tr>
-    <td>Cacao Barry Ocoa 70.4</td>
+    <td>[Cacao Barry Ocoa 70.4%](https://www.cacao-barry.com/en-US/chocolate-couverture-cocoa/chd-n70ocoa/ocoa)</td>
     <td>16%</td>
   </tr>
   <tr>
@@ -87,7 +90,7 @@ The combinations I've tested so far:
   </tbody>
 </table>
 
-<img src="/assets/images/recipes/three-chocolate-verrines.jpg" alt="The chocolate mousse in this recipe formed the base of these chocolate verrines. The dark chocolate mousse was paired with a milk and a caramel mousse.">
+<img src="/assets/images/recipes/three-chocolate-verrines.jpg" alt="The chocolate mousse in this recipe formed the base of these chocolate verrines. The dark chocolate mousse was paired with a milk and a caramel mousse." style="width: 600px;">
 
 
 <a name="recipe"></a>
@@ -98,11 +101,11 @@ Recipe for a versatile and rich dark chocolate mousse. The mousse can be used as
 
 ## Ingredients
 
-- 200g + 25g cream, 35% fat, unsweetened
-- 25g whole milk
-- 25 egg yolks
-- 40-65g sugar (depending on the chocolate, see note below)
-- 125g dark chocolate, I used [Cacao Barry Ocoa 70.4%](https://www.cacao-barry.com/en-US/chocolate-couverture-cocoa/chd-n70ocoa/ocoa)
+- 400g + 50g cream, 35% fat, unsweetened
+- 50g whole milk
+- 50g egg yolks
+- 15-70g sugar (depending on the chocolate, see note above). 30 grams if using standard dark chocolate.
+- 250g dark chocolate
 {: .ingredient-list}
 
 **Note:** The recipe can easily be doubled if needed. First time making a crème anglaise? It is usually easier to make a larger batch as this overcooks not as quickly as a small amount.  Double the ingredients for the crème and halve after completing the crème anglaise.
