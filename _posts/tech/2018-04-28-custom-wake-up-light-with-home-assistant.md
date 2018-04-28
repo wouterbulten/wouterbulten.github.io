@@ -5,7 +5,7 @@ date:   2018-04-28 17:26
 categories: blog tech
 tags: [home automation, home assistant, wake-up, automations]
 published: true
-description: "In this post I'll show you how to build a custom wake-up light system. The automation will be configurable (on/off, time) and has a switch to disable it on weekends."
+description: "In this post I will show you how to build a custom wake-up light system. The automation will be configurable (on/off, time) and has a switch to disable it on weekends."
 ---
 
 Recently I started using [Home Assistant (HA)](https://www.home-assistant.io/) as a tool to control the lights in my home. My previous system was based on Homekit and, while working fairly good, lacked tools to further customize the automations. To get more control I switched to HA.
