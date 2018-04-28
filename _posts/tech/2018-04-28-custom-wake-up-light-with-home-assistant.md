@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Room wake-up light: Custom room-wide wake-up light using Home Assistant"
-date:   2018-04-28 17:26
+date:   2018-04-27 17:26
 categories: blog tech
 tags: [home automation, home assistant, wake-up, automations]
 published: true
