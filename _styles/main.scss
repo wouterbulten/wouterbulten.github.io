@@ -62,3 +62,8 @@ $body-bg-home: #f4f4f4;
 @import "pages/contact";
 
 @import "syntax-highlighting"
+
+// Some utility classes
+.bp-form-field {
+  display: none; 
+}

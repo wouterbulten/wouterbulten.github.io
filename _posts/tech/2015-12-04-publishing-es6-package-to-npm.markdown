@@ -2,6 +2,7 @@
 layout: post
 title:  "Publishing an ES6/ES2015 package to NPM"
 date:   2015-12-28 20:08
+modified_at: 2018-01-02 13:02
 categories: blog tech
 tags: [javascript, es6, babel, npm, package]
 published: true
@@ -75,14 +76,14 @@ You probably already have a `.gitignore` file. To make sure that our transpiled 
 
 ### .npmignore
 
-`.npmignore` has the same function as the `.gitignore` file but defines everything we want to exclude in our published package. Here we can add everything that a end user should not need. In our case:
+`.npmignore` has the same function as the `.gitignore` file but defines everything we want to exclude in our published package. Here we can add everything that a end user should not need. In our case this means the source files and the Babel config. We do want to include the `lib` directory as this contains the main files of your package.
 
 <pre>
 src
 .babelrc
 </pre>
 
-*Note:* NPM also ignores everything from your `.gitignore` file, so no need to define things twice.
+*Note:* NPM uses the `.gitignore` file if there is no `.npmignore` present. If there is an `.npmignore` all the rules in the `.gitignore` are skipped.
 
 ## Creating NPM scripts
 
@@ -104,7 +105,7 @@ Our second script is called `prepublish`. This is a special script that is execu
 
 This tells NPM to compile our code before it is published to the repository.
 
-If you have any other steps that need to be execuded (e.g. a minify step) you can add them here. For KalmanJS the full list of scripts is the following:
+If you have any other steps that need to be executed (e.g. a minify step) you can add them here. For KalmanJS the full list of scripts is the following:
 
 <pre>
 "scripts": {
