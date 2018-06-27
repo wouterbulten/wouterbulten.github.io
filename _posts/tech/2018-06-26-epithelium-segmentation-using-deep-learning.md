@@ -28,7 +28,7 @@ We propose a method to automatically refine these coarse tumor annotations by tr
 
 As data for our experiments we used 30 digitally scanned [H&E](https://en.wikipedia.org/wiki/H%26E_stain) whole mount tissue sections from 27 patients that underwent RP treatment. The reported Gleason growth patterns in these sections ranged from 3 to 5. The specimens were randomly split into three sets: 15 slides for training, 5 for validation and 10 for testing.
 
-We compared U-Net[^2] (which is specifically designed for segmentation) and a general fully convolutional network (FCN). For both types of network we tested differences in layer depth. The networks are trained on patches extracted from digitally scanned prostate tissue slices at 10x magnification.
+We compared U-Net[^3] (which is specifically designed for segmentation) and a general fully convolutional network (FCN). For both types of network we tested differences in layer depth. The networks are trained on patches extracted from digitally scanned prostate tissue slices at 10x magnification.
 
 ![Example of annotated training data. Many of these regions were annotated by hand. The annotated epithelial glands are outlined in red.](/assets/images/deep-learning/prostate_annotation_example.png)
 
@@ -86,6 +86,6 @@ Or, if you prefer BibTeX:
 
 [^1]: Torre, L. A., Bray, F., Siegel, R. L., Ferlay, J., Lortet-tieulent, J., and Jemal, A., "Global Cancer Statistics, 2012," CA: a cancer journal of clinicians. 65(2), 87-108 (2015).
 
-[^3]:  Fine, S. W., Amin, M. B., Berney, D. M., Bjartell, A., Egevad, L., Epstein, J. I., Humphrey, P. A., Magi- Galluzzi, C., Montironi, R., and Stief, C., “A contemporary update on pathology reporting for prostate cancer: Biopsy and radical prostatectomy specimens,” European Urology 62(1), 20–39 (2012).
+[^2]:  Fine, S. W., Amin, M. B., Berney, D. M., Bjartell, A., Egevad, L., Epstein, J. I., Humphrey, P. A., Magi- Galluzzi, C., Montironi, R., and Stief, C., “A contemporary update on pathology reporting for prostate cancer: Biopsy and radical prostatectomy specimens,” European Urology 62(1), 20–39 (2012).
 
-[^2]: Ronneberger, O., Fischer, P., & Brox, T. (2015, October). U-net: Convolutional networks for biomedical image segmentation. In International Conference on Medical image computing and computer-assisted intervention (pp. 234-241). Springer, Cham.
+[^3]: Ronneberger, O., Fischer, P., & Brox, T. (2015, October). U-net: Convolutional networks for biomedical image segmentation. In International Conference on Medical image computing and computer-assisted intervention (pp. 234-241). Springer, Cham.
