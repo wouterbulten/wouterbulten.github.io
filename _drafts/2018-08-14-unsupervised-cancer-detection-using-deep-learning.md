@@ -4,7 +4,7 @@ title:  "Unsupervised Cancer Detection using Deep Learning"
 date:   2018-08-14 19:35
 categories: blog tech
 tags: [deep learning, unsupervised, prostate cancer, computational pathology]
-published: false
+#published: true
 description: ""
 ---
 
@@ -16,7 +16,7 @@ Prostate cancer (PCa) is the one of the most common cancers in the world[^1] and
 
 > “The way to develop a histologic classification was to forget anything I thought I knew about the behavior of prostate cancer and simply look for different histologic pictures … . Then, the pictures would be handed to statisticians and compared with a ‘gold standard' of clinical tumor behavior (ie, patient survival).” - Donald F. Gleason
 
-As an AI scientist, this sounds a lot like pattern recognition to me; something computers could potentially do better. For example, currently the grading system consists of 5 distinct classes (of which practically only 3 are used). Who says that there are not 10 or 50 relevant classes in the data? That's why I'm particularly interested in unsupervised method for detecting prostate cancer. All information is already present in the data, we 'just' need to find methods to extract it.
+As an AI scientist, this sounds a lot like pattern recognition to me; something computers could potentially do better. Currently the grading system consists of 5 distinct classes (of which practically only 3 are used), who says that there are not 10 or 50 relevant morphological classes in the data? That's why I'm interested in unsupervised method for detecting prostate cancer. All information is already present in the data, we 'just' need to find methods to extract it.
 
 At MIDL 2018 I presented a first step towards this goal: a fully unsupervised method for detecting and grading prostate cancer. The idea behind this project is to cluster prostate tissue in an unsupervised fashion. Clustered tissue can then be related to patient prognosis.
 
@@ -24,9 +24,9 @@ At MIDL 2018 I presented a first step towards this goal: a fully unsupervised me
 
 ## Methods overview
 
-Our method is based on adversarial autoencoders[^2] and use this to cluster tissue during training: a clustering adversarial autoencoder (CAAE). As opposed to normal autoencoders, this method does not require post-processing in terms of kMeans, t-SNE or other clustering methods.
+Our method is based on adversarial autoencoders and uses this to cluster tissue during training: a clustering adversarial autoencoder (CAAE)[^2]. As opposed to normal autoencoders, this method does not require post-processing in terms of kMeans, t-SNE or other clustering methods.
 
-![Overview of network topology.](/assets/images/deep-learning/adversarial-encoder-decoder.png)
+![Overview of network topology. The network reconstructs an IHC patch from an H&E patch using two vectors: the cluster vector y and a style vector z.](/assets/images/deep-learning/adversarial-encoder-decoder.png)
 
 Our CAAE consists of four subnetworks (see figure above) and two latent vectors as the embedding. The first latent vector, y (size 50), represents the cluster vector and is regularized by a discriminator to follow a one-hot encoding. This is the vector that is used for the clustering and represent high level structures in the data (for example, in case of MNIST this could represent individual digits). The second latent vector, z (size 20), represents the style of the input patch, and  follows a Gaussian distribution (think of writing style in MNIST).
 
@@ -49,11 +49,11 @@ After training the networks can be used to cluster new patches by passing patche
 ![Example clusters. Some clusters capture a class perfectly, e.g. stroma in row 1 and 2 and tumor in row 5. Some clusters look similar but contain both benign epithelium and tumor (row 6).](/assets/images/deep-learning/cluster_patches.png)
 
 
-The best network achieves an F1 score of 0.62 on tumor versus non-tumor (see paper for all experiments and results). This score leaves enough room for improvement, but our network achieves this score without using labeled training data on a very noise dataset. In other words: lots of work still ahead of us but it shows potential.
+The best network achieves an F1 score of 0.62 on tumor versus non-tumor (see paper for all experiments and results). This score leaves enough room for improvement, but our network achieves this score without using labeled training data on a very noise dataset. In other words, lots of work still ahead of us but it shows that there is information in the data that we can extract using these autoencoders. A downside of this method is that these autoencoders are hard to train, suffer from mode collapse and can be very unstable.
 
-To see that the clustering encodes relevant information we can, for visualisation, apply the network as a sliding window to a larger area. This method results in nice heatmaps for each class:
+To see that the clustering encodes relevant information we can, for visualisation, apply the network as a sliding window to a larger area. Of course this is not really useful for diagnostics as it is very coarse but gives an overview of what the network 'sees'. This method results in nice heatmaps for each class:
 
-![Examples from the dataset.](/assets/images/deep-learning/overlay_all_classes_majority.png)
+![Network applied as a sliding window.](/assets/images/deep-learning/overlay_all_classes_majority.png)
 
 ## More info & citation
 
