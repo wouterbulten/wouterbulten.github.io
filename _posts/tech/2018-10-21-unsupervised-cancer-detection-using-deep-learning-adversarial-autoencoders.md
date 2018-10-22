@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Unsupervised Cancer Detection using Deep Learning and Adversarial Autoencoders"
-date:   2018-10-22 19:20
+date:   2018-10-21 19:20
 categories: blog tech
 tags: [deep learning, unsupervised, prostate cancer, computational pathology]
 #published: true
