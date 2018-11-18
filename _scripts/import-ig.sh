@@ -33,5 +33,5 @@ post_image_small: /assets/images/food/${fileName}_thumbnail.jpg
 echo "$content" >> "$path"
 
 # Download IG snippet
-curl -s "https://api.instagram.com/oembed/?url=http://instagr.am/p/$ig" | jq -r '.html' >> "$path"
+curl -s "https://api.instagram.com/oembed/?url=http://instagr.am/p/$ig" | ./jq -r '.html' >> "$path"
 echo "<!-- end ig snippet -->" >> "$path"

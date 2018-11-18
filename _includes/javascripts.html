@@ -69,9 +69,17 @@ HTMLElement.prototype.wrap = function(elms) {
 var elements = document.querySelectorAll(".post-content img");
 Array.prototype.forEach.call(elements, function(el, i){
     if(el.alt && !el.classList.contains('emoji')) {
+
         /* Wrap in figure element */
         var wrapper = document.createElement('figure');
         wrapper.classList.add('image');
+
+        /* Make sure that captions work in post-image format */
+        if(el.classList.contains('post-image')) {
+          el.classList.remove('post-image');
+          wrapper.classList.add('post-image');
+        }
+
         wrapper.wrap(el);
 
         /* Add caption */
