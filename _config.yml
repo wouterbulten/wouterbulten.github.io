@@ -21,7 +21,7 @@ cover: "/assets/images/background_rocks_optim.jpeg"
 
 name: 'Wouter Bulten'
 author: 'Wouter Bulten'
-author_image: "/assets/images/author.jpg"
+author_image: "/assets/images/author-wouter-bulten.png"
 
 paginate:	8
 paginate_path: "blog/:num"
