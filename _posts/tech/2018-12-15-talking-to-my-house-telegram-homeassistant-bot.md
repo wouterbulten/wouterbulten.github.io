@@ -101,7 +101,7 @@ Extend the `initialize` function of the class to keep track of your conversation
 
 ```python
 def initialize(self):
-    self.time_between_conversations = 60 * 10
+    self.time_between_conversations = 60 * 60
     self.last_conversation = {}
 ```
 
