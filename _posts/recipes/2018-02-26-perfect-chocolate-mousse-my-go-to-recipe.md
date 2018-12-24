@@ -2,7 +2,7 @@
 layout: post
 title:  'Quest for a chocolate mousse: my go-to recipe'
 date:   2018-02-26
-modified: 2018-04-25
+modified: 2018-12-24
 categories: blog food
 ig: BdXeLf1DdgF
 tags: [chocolate, mousse, recipe]
@@ -108,7 +108,9 @@ Recipe for a versatile and rich dark chocolate mousse. The mousse can be used as
 - 250g dark chocolate
 {: .ingredient-list}
 
-**Note:** The recipe can easily be doubled if needed. First time making a crème anglaise? It is usually easier to make a larger batch as this overcooks not as quickly as a small amount.  Double the ingredients for the crème and halve after completing the crème anglaise.
+The recipe can easily be doubled if needed.
+
+**Note:** First time making a crème anglaise? It is usually easier to make a larger batch as this overcooks not as quickly as a small amount.  Double the ingredients for the crème and halve after completing the crème anglaise.
 
 ## Required materials
 
@@ -124,7 +126,7 @@ Recipe for a versatile and rich dark chocolate mousse. The mousse can be used as
 
 ### 1. Prepare cream
 
-Gently semi-whip 200g of the cream until you get soft peaks. Reserve in the fridge.
+Gently semi-whip 400g of the cream until you get soft peaks. Reserve in the fridge.
 
 ### 2. Making a crème anglaise
 
@@ -138,7 +140,7 @@ You can test whether the crème anglaise is ready without a thermometer: after h
 
 ### 3. Bring in the chocolate
 
-Melt the chocolate in the microwave or using a double boiler.Combine crème anglaise with the chocolate. Make sure to mix it well but avoid creating (large) air bubbles. You can use a stick blender or do this by hand.
+Melt the chocolate in the microwave or using a double boiler. Combine crème anglaise with the chocolate. Make sure to mix it well but avoid creating (large) air bubbles. You can use a stick blender or do this by hand.
 
 ### 4. Combining
 
