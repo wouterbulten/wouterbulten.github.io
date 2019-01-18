@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Simple and efficient data augmentations using the Tensorfow tf.Data and Dataset API"
-date:   2019-01-18 17:31
+date:   2019-01-18 22:09
 categories: blog tech
 tags: [tensorflow, data, augmentation, tf.data]
 description: "The tf.data API of Tensorflow is a great way to build a pipeline for sending data to the GPU. In this post I give a few examples of augmentations and how to implement them using this API."
