@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Setting color temperature and brightness of IKEA Tradfri lights simultaneously with Home Assistant"
-date:   2018-12-17 17:41
+date:   2019-01-17 17:41
 categories: blog tech
 tags: [home assistant, ikea, tradfri, node-red, lights]
 description: "A small trick to set the color temperature and brightness of IKEA Tradfri lights simultaneously using Home Assistant and/or Node-RED."
