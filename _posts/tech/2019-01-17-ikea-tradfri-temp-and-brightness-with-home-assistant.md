@@ -29,7 +29,7 @@ turn_on_ikea_light:
   sequence:
     # Check whether the light is off (optional)
     - condition: template
-      value_template: "{{ is_state(entity, 'off') }}"
+      value_template: "{% raw %}{{ is_state(entity, 'off') }}{% endraw %}"
     - delay: '00:00:01'
     # Set the brightness of the lights.
     - service: light.turn_on

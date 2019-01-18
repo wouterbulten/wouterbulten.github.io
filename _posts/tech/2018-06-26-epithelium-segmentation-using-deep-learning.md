@@ -71,6 +71,7 @@ You can use the following reference if you want to cite my paper:
 Or, if you prefer BibTeX:
 
 ```tex
+{% raw %}
 @inproceedings{Bulten2018,
   author = {Bulten, Wouter and {Hulsbergen-van de Kaa}, Christina A. and van der Laak, Jeroen and Litjens Geert J S},
   booktitle = {Medical Imaging 2018: Digital Pathology},
@@ -80,6 +81,7 @@ Or, if you prefer BibTeX:
   volume = {10581},
   year = {2018}
 }
+{% endraw %}
 ```
 
 ## References
