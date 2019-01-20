@@ -2,6 +2,7 @@
 layout: post
 title:  "Lightweight Javascript library for Noise filtering using Kalman filters"
 date:   2015-09-25 16:08
+modified_at: 2019-01-20 16:02
 categories: blog tech
 tags: [javascript, kalman filter, noise, kalmanjs, library]
 chartjs: true
@@ -21,6 +22,18 @@ I've used Kalman filters extensively in the past and they are a fast and easy so
 2. Fast (low time complexity)
 3. Easy to implement
 4. Good results (and that's what we are here for 😉)
+
+Minimal working example (based on the latest [browser release](https://github.com/wouterbulten/kalmanjs/tree/master/dist) of KalmanJS): 
+
+```html
+<script src="kalman.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+  var kf = new KalmanFilter();
+  console.log(kf.filter(3)); // 3
+  console.log(kf.filter(2)); // 2.3333333333333335
+  console.log(kf.filter(1)); // 1.5000000000000002
+</script>
+```
 
 # First example: Constant data
 
@@ -170,5 +183,11 @@ By now you should have a rough idea of how you can apply Kalman filters to filte
 Higher dimensional data? Rest assured, there are also multi-dimensional implementations available on the web!
 
 Any questions or comments? Please see the [comments section](#disqus_thread).
+
+# KalmanJS in other languages
+
+Kalman filters can be useful in a broad range of projects. Regularly I get questions whether KalmanJS is available in other languages than Javascript. Several contributers have made implementations of my library in other languages, including Python, Java and Objective-C. These versions are stored in the [contrib folder](https://github.com/wouterbulten/kalmanjs/tree/master/contrib) on GitHub.
+
+**Disclaimer:** These implementations are often untested and are only placed in the contrib folder for convenience in the hope that they can be useful for other projects.
 
 {% include posts/iotdi-citation.md %}
