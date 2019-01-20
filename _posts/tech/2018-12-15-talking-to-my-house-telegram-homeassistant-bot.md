@@ -3,9 +3,11 @@ layout: post
 title:  "Talking to my house: Building a chat bot with Home Assistant, AppDaemon and Telegram"
 date:   2018-12-15 13:00
 categories: blog tech
-tags: [home assistant, telegram, bots, appdaemon]
+tags: [home automation, home assistant, telegram, bots, appdaemon]
 #published: true
 description: "In this blog post I discuss talking (or chatting) to your home using a Telegram bot. I cover making a new Telegram bot, connecting it to Home Assistant and then building functionality using AppDaemon."
+include_ha_series: true
+
 ---
 
 Home Assistant (HA) can be easily controlled using the web interface of one of the mobile apps. However, **there are more fun ways to communicate with your home**. In this blog post I discuss talking (or chatting) to your home using a Telegram bot. I show how you can easily make a bot, connect it to Home Assistant and use AppDaemon to build a bot that can give you information on your home.

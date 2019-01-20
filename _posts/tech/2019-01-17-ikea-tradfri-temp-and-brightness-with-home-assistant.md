@@ -3,8 +3,9 @@ layout: post
 title:  "Setting color temperature and brightness of IKEA Tradfri lights simultaneously with Home Assistant"
 date:   2019-01-17 17:41
 categories: blog tech
-tags: [home assistant, ikea, tradfri, node-red, lights]
+tags: [home automation, home assistant, ikea, tradfri, node-red, lights]
 description: "A small trick to set the color temperature and brightness of IKEA Tradfri lights simultaneously using Home Assistant and/or Node-RED."
+include_ha_series: true
 ---
 
 In my smart home I use multiple IKEA Tradfri lights in combination with a Conbee Zigbee hub and Home Assistant. Recently I encountered a problem when trying to set both the brightness and the color temperature in a Home Assistant service call (`light.turn_on`). Apparently, the Tradfri bulbs only respond to one of these values at a time. This is unfortunate as changing the temperature and brightness is usually linked. For example, setting the lights to a dimmed warm setting at night or bright white in the morning. Luckily, there is a workaround to be able to set both simultaneously (sort of at least).

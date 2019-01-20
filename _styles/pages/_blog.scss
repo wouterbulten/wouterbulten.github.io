@@ -224,7 +224,7 @@
 }
 
 // Section for related posts
-.related-posts {
+.related-posts, .post-series {
   padding: 2rem;
   background-color: #f4f4f4;
   margin-bottom: 2rem;
@@ -247,4 +247,8 @@
   p {
     font-size: 0.9rem;
   }
+}
+.post-series {
+  margin-left: -15px;
+  margin-right: -15px;
 }
