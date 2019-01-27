@@ -1,21 +1,19 @@
-// Core variables and mixins
-@import "node_modules/bootstrap/scss/variables";
-
 // Custom variables
 $body-bg: #f4f4f4;
 $body-bg-home: #f4f4f4;
 
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
-@import "node_modules/bootstrap/scss/custom";
 
-// Reset and dependencies
-@import "node_modules/bootstrap/scss/normalize";
+@import "node_modules/bootstrap/scss/reboot";
+// @import "node_modules/bootstrap/scss/type";
+@import "node_modules/bootstrap/scss/images";
+@import "node_modules/bootstrap/scss/code";
+// @import "node_modules/bootstrap/scss/grid";
 @import "node_modules/bootstrap/scss/print";
 
 // Core CSS
-@import "node_modules/bootstrap/scss/reboot";
-@import "node_modules/bootstrap/scss/type";
-@import "node_modules/bootstrap/scss/images";
 // @import "node_modules/bootstrap/scss/code";
 // @import "node_modules/bootstrap/scss/grid";
 // @import "node_modules/bootstrap/scss/tables";
@@ -61,9 +59,9 @@ $body-bg-home: #f4f4f4;
 @import "pages/cv";
 @import "pages/contact";
 
-@import "syntax-highlighting"
+@import "syntax-highlighting";
 
 // Some utility classes
 .bp-form-field {
-  display: none; 
+  display: none;
 }

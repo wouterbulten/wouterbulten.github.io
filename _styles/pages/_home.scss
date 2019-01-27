@@ -26,7 +26,7 @@
 }
 
 .home-header {
-  font-weight: 300;
+  // font-weight: 300;
   font-size: 2.5em;
 
   @include media-breakpoint-up(md) {
@@ -35,7 +35,7 @@
   color: #505050;
 }
 .home-lead, .lead {
-  font-weight: 200;
+  // font-weight: 200;
   color: #6d6d6d;
   margin-bottom: 2rem;
   font-size: 1.1rem;
@@ -60,7 +60,7 @@
 }
 
 .text-nav {
-  font-weight: 200;
+  // font-weight: 200;
   color: #6d6d6d;
   font-size: 0.9rem;
 }

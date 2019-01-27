@@ -33,7 +33,7 @@
     color: #6d6d6d;
   }
   .card-title a {
-    font-weight: 200;
+    // font-weight: 200;
     font-style: normal;
     font-size: 1.8rem;
     color: #333332;
@@ -59,11 +59,11 @@
 
   h2 a {
     // color:#333332;
-    font-weight: 200;
+    // font-weight: 200;
   }
 
   .post-meta {
-    font-weight: 200;
+    // font-weight: 200;
     font-size: 0.9rem;
     color: #6d6d6d;
   }
@@ -78,7 +78,7 @@
 
 // Category pages
 .category-title {
-  font-weight: 200;
+  // font-weight: 200;
   font-style: normal;
   font-size: 3rem;
   line-height: 3.5rem;
@@ -138,7 +138,7 @@
   }
 
   // Main image for post (not always present)
-  .post-image {
+  img.post-image {
     margin-bottom: 20px;
 
     @include media-breakpoint-up(md) {
@@ -150,7 +150,7 @@
 
   // Meta block after title
   .post-meta {
-    font-weight: 200;
+    // font-weight: 200;
     font-size: 0.9rem;
     color: #6d6d6d;
     line-height: 30px;

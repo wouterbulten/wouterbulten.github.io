@@ -42,7 +42,7 @@ To add colors to your chocolate shells:
 1. Melt coco butter with food coloring. For the bonbons in the picture of this post, I used a combination of red and white [Power Flowers](https://www.ibcbelgium.com/en/powerflowers). 1/4 of a flower is more than enough to color a mold.
 2. Apply a thin layer of the molten coco butter to polycarbonate chocolate molds. Apply colors you want to show on the outside first; e.g. first red and then a layer of white as a 'base' coat. Silicon molds can also be used but will not result in the same glossy finish as when using polycarbonate.
 
-<img alt="Ruby chocolate bonbons (without any coloring)" class="img-thumbnail post-image" src="/assets/images/recipes/ruby-chocolate-bonbons.jpg">
+<img alt="Ruby chocolate bonbons (without any coloring)" class="img-thumbnail" src="/assets/images/recipes/ruby-chocolate-bonbons.jpg">
 
 <a name="bonbons"></a>
 
@@ -57,7 +57,7 @@ To add colors to your chocolate shells:
 7. Let the bonbons cool down completely, optionally a few minutes in the fridge or freezer (but be careful of condensation). Turn the molds upside down, the bonbons should come out without to much trouble. If they do not release from the mold: add the mold to the freezer and wait a few minutes, then try again. The colder temperature makes the bonbons shrink slightly making them easier to release.
 
 
-<img alt="Ruby hazelnut praline with spiced raspberry." class="img-thumbnail post-image" src="/assets/images/recipes/ruby-chocolate-bonbons-raspberry.jpg">
+<img alt="Ruby hazelnut praline with spiced raspberry." class="img-thumbnail" src="/assets/images/recipes/ruby-chocolate-bonbons-raspberry.jpg">
 
 <a name="fillings"></a>
 

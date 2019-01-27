@@ -1,12 +1,16 @@
 //
 // Main site nav
 //
+//
+.site-header {
+  position: relative;
+}
 .site-name {
 
   font-size: 30px;
 
   @include media-breakpoint-up(md) {
-    top: -49px;
+    top: -52px;
     left: 2rem;
 
     position: absolute;
@@ -16,7 +20,7 @@
   }
 
   color: #6d6d6d;
-  font-weight: 200;
+  // font-weight: 200;
 }
 
 .nav-toggle {
@@ -68,7 +72,7 @@
     text-align: center;
 
     font-size: 1.25rem;
-    font-weight: 200;
+    // font-weight: 200;
     color: #6d6d6d;
 
     text-shadow: 1px 1px 0px white;
@@ -128,7 +132,7 @@
 }
 
 .btn.nav-btn {
-  font-weight: 200;
+  // font-weight: 200;
   border: 1px solid #e6e5e5;
   background-color: white;
 
