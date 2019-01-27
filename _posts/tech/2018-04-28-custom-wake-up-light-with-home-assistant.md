@@ -25,8 +25,8 @@ In this post I'll show you how to build this system. The automation will be conf
 I've used the following components for my Wake-up light:
 
 - Home Assistant running on a [Raspberry 3B+](https://amzn.to/2MsXfoO)
-- Conbee Zigbee hub (There is a [USB version](https://amzn.to/2Tov8cQ) and a [PI version](https://amzn.to/2sPKzzm)) (More info [here](https://github.com/dresden-elektronik/deconz-rest-plugin))
-- Three GU10 Zigbee smart lights. I use 3 [Innr GU10 lights](https://amzn.to/2CNPwgy) (not available in the US) but you couls also use something like the lights from [Philips Hue](https://amzn.to/2W0NouR).
+- Conbee Zigbee hub; tthere is a [USB version](https://amzn.to/2Tov8cQ) and a [PI version](https://amzn.to/2sPKzzm). (More info [here](https://github.com/dresden-elektronik/deconz-rest-plugin))
+- Three GU10 Zigbee smart lights. I use 3 [Innr GU10 lights](https://amzn.to/2CNPwgy) (not available in the US) but you could also use something like the lights from [Philips Hue](https://amzn.to/2W0NouR).
 
 These components are just an example. A minimum requirement is a device that runs Home Assistant and a smart light that you can control.
 
