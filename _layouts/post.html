@@ -100,7 +100,7 @@ layout: default
       {% endif %}
     {% endif %}
 
-    {%if site.disqus %}
+    {%if site.disqus and jekyll.environment == "production" %}
     <div id="disqus_thread" class="comment-section"></div>
     <script>
     var disqus_shortname = '{{site.disqus}}';
