@@ -81,6 +81,8 @@ alarm_clock:
     - input_boolean.wakeup_weekend
 ```
 
+**Note:** As someone pointed out in the comments, if you want to persist the values between restarts of Home Assistant remove the 'initial' value from the configuration.
+
 ## Create the automation
 
 With all controls defined we can make the automation itself. The automation consists of three components: the trigger, the condition and the action. Add the following to `automations.yaml`:
