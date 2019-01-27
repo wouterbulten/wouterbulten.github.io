@@ -103,7 +103,8 @@ function ready(fn) {
 }
 
 ready(function() {
-    if(!(window.ga && ga.create)) {
+  setTimeout(function() {
+    if(navigator.doNotTrack == "1" || !(window.ga && ga.create)) {
         var request = new XMLHttpRequest();
         var notify_url = 'https://convey.wouterbulten.nl/notify/?';
         notify_url += 'p={{ page.url | default: "" | cgi_escape }}';
@@ -114,6 +115,7 @@ ready(function() {
         request.withCredentials = true;
         request.send();
     }
+  }, 500);
 });
 </script>
 {% endif %}
@@ -141,15 +143,20 @@ document.getElementById('contact_name').name="name"
 </script>
 {% endif %}
 
-{% if JEKYLL_ENV == 'production' %}
+{% if jekyll.environment == "production" %}
 <!-- Analytics code -->
 <script type="text/javascript">
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+/* do not load GA if DoNotTrack is set */
+if(navigator.doNotTrack != "1") {
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-11759031-3', 'auto');
-ga('send', 'pageview');
+  ga('create', 'UA-11759031-3', 'auto');
+  ga('send', 'pageview');
+} else {
+  console.info("DoNotTrack header was set, not loading Google Analytics for this request.");
+}
 </script>
 {% endif %}
