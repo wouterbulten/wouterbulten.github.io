@@ -3741,6 +3741,7 @@ body {
   .post-overview .card-group .card-text {
     color: #6d6d6d; }
   .post-overview .card-group .card-title a {
+    font-weight: 400;
     font-style: normal;
     font-size: 1.8rem;
     color: #333332; }
@@ -3769,7 +3770,6 @@ body {
     font-weight: 500; }
 
 .category-title {
-  font-weight: 300;
   font-style: normal;
   font-size: 3rem;
   line-height: 3.5rem;

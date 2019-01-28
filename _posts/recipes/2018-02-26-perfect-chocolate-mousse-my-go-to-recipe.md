@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  'Quest for a chocolate mousse: my go-to recipe'
+title:  'Easy and versatile chocolate mousse based on crème anglaise'
 date:   2018-02-26
 modified: 2018-12-24
 categories: blog food
