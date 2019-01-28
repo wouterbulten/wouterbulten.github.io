@@ -1,0 +1,46 @@
+/* Custom css for Home Assistant series */
+
+.hw-row {
+  @include make-row();
+  margin-bottom: 1em;
+  
+  .hw-image {
+    @include make-col-ready();
+    @include make-col(12);
+
+    @include media-breakpoint-up(sm) {
+      @include make-col(3);
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .hw-info {
+    @include make-col-ready();
+    @include make-col(12);
+    order: -1;
+
+    @include media-breakpoint-up(sm) {
+      @include make-col(6);
+      order: 0;
+    }
+  }
+
+  .hw-source {
+    @include make-col-ready();
+    @include make-col(12);
+
+    @include media-breakpoint-up(sm) {
+      @include make-col(3);
+    }
+
+    border-left: 1px solid gray;
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+  }
+}

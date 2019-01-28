@@ -3921,6 +3921,55 @@ body {
       outline: none !important;
       border: 1px solid #007bff; }
 
+/* Custom css for Home Assistant series */
+.hw-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  margin-bottom: 1em; }
+  .hw-row .hw-image {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 100%;
+    max-width: 100%; }
+    @media (min-width: 576px) {
+      .hw-row .hw-image {
+        flex: 0 0 25%;
+        max-width: 25%; } }
+    .hw-row .hw-image img {
+      max-width: 100%; }
+  .hw-row .hw-info {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    order: -1; }
+    @media (min-width: 576px) {
+      .hw-row .hw-info {
+        flex: 0 0 50%;
+        max-width: 50%;
+        order: 0; } }
+  .hw-row .hw-source {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    border-left: 1px solid gray; }
+    @media (min-width: 576px) {
+      .hw-row .hw-source {
+        flex: 0 0 25%;
+        max-width: 25%; } }
+    .hw-row .hw-source ul {
+      list-style-type: none;
+      padding-left: 0; }
+
 /**
  * Syntax highlighting styles
  */
