@@ -3399,7 +3399,8 @@ body, p {
   text-align: center;
   color: #6d6d6d;
   text-shadow: 1px 1px 0px white;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  font-weight: 400; }
 
 .section-updates h1 {
   text-align: center; }
@@ -3423,7 +3424,7 @@ body {
   padding: 0; }
   @media (min-width: 768px) {
     body {
-      padding-top: 2rem; } }
+      padding-top: 3rem; } }
   @media (min-width: 992px) {
     body {
       padding-top: 5rem; } }
@@ -3681,6 +3682,7 @@ body {
       margin-bottom: 2rem; }
 
 .home-header {
+  font-weight: 400;
   font-size: 2.5em;
   color: #505050; }
   @media (min-width: 768px) {
@@ -3754,6 +3756,8 @@ body {
   margin: 0rem 0 4rem 0; }
   .blog-list article {
     padding-bottom: 2rem; }
+  .blog-list h2 a {
+    font-weight: 400; }
   .blog-list .post-meta {
     font-size: 0.9rem;
     color: #6d6d6d; }
@@ -3761,9 +3765,11 @@ body {
 .blog-list.blog-list-small {
   margin-bottom: 2rem; }
   .blog-list.blog-list-small h2 {
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    font-weight: 500; }
 
 .category-title {
+  font-weight: 300;
   font-style: normal;
   font-size: 3rem;
   line-height: 3.5rem;
@@ -3872,10 +3878,16 @@ body {
     padding-left: 0; }
   .related-posts li, .post-series li {
     margin-bottom: 1.5rem; }
+  .related-posts h1, .post-series h1 {
+    font-weight: 300;
+    font-size: 2.5rem; }
   .related-posts h2, .post-series h2 {
     padding-bottom: 1rem; }
+  .related-posts h3, .post-series h3 {
+    font-weight: 300; }
   .related-posts h4, .post-series h4 {
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    font-weight: 500; }
   .related-posts p, .post-series p {
     font-size: 0.9rem; }
 
