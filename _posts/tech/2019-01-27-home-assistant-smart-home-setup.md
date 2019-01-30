@@ -12,26 +12,9 @@ include_ha_series: true
 
 Table of contents:
 
-- [Lights](#lights)
 - [Sensors](#sensors)
+- [Lights](#lights)
 - [The brains / controllers](#controllers)
-
-<a name="lights"></a>
-## The Lights
-
-<div class="hw-row">
-  <div class="hw-image"><a href="https://amzn.to/2GdLeST" rel="nofollow"><img src="/assets/images/ha/hardware/hue_e27.png"></a></div>
-  <div class="hw-info">
-    <h4>Philips Hue White Ambiance Bulbs</h4>
-    <p>I use these lights as a cheaper alternative to the color Hue lights. I use them in places where brightness and color temp is sufficient. Excellent dimming quality and the color warmth has the best range in comparison to the other brands.</p>
-  </div>
-  <div class="hw-source">
-    <h5>Hardware:</h5>
-    <ul>
-      <li><a rel="nofollow" href="https://amzn.to/2GdLeST">Hue bulb</a> (Make sure to check your sockets for the right types)</li>
-    </ul>
-  </div>
-</div>
 
 <a name="sensors"></a>
 ## Sensors
@@ -90,11 +73,42 @@ Table of contents:
   </div>
 </div>
 
+<a name="lights"></a>
+## The Lights
+
+<div class="hw-row">
+  <div class="hw-image"><img src="/assets/images/ha/hardware/hue_color.png"></div>
+  <div class="hw-info">
+    <h4>Philips Hue Color Bulbs</h4>
+    <p>Although a bit expensive, the quality of these bulbs is very good and they have a great range of colors (in comparison to other lights I've tested). I use them to create some color highlights. For larger areas that do not need colors I went with the cheaper White Ambiance variant.</p>
+  </div>
+  <div class="hw-source">
+    <h5>Hardware:</h5>
+    <ul>
+      <li><a rel="nofollow" href="https://amzn.to/2TkmUm8">Hue color bulb</a> (Make sure to check your sockets for the right types)</li>
+    </ul>
+  </div>
+</div>
+
+<div class="hw-row">
+  <div class="hw-image"><img src="/assets/images/ha/hardware/hue_e27.png"></div>
+  <div class="hw-info">
+    <h4>Philips Hue White Ambiance Bulbs</h4>
+    <p>I use these lights as a cheaper alternative to the color Hue lights. I use them in places where brightness and color temp is sufficient. Excellent dimming quality and the color warmth has the best range in comparison to the other brands.</p>
+  </div>
+  <div class="hw-source">
+    <h5>Hardware:</h5>
+    <ul>
+      <li><a rel="nofollow" href="https://amzn.to/2GdLeST">Hue bulb</a> (Make sure to check your sockets for the right types)</li>
+    </ul>
+  </div>
+</div>
+
 <a name="controllers"></a>
 ## The Brains
 
 <div class="hw-row">
-  <div class="hw-image"><a href="https://amzn.to/2sKF2Kq" rel="nofollow"><img src="/assets/images/ha/hardware/raspberrypi.jpg"></a></div>
+  <div class="hw-image"><img src="/assets/images/ha/hardware/raspberrypi.jpg"></div>
   <div class="hw-info">
     <h4>Raspberry Pi 3B+ &amp; Hass.io</h4>
     <p>Main controller of the system running Home Assistant, AppDaemon and Node-RED.</p>
@@ -123,7 +137,7 @@ Table of contents:
   </div>
 </div>
 <div class="hw-row">
-  <div class="hw-image"><a href="https://amzn.to/2Tov8cQ" rel="nofollow"><img src="/assets/images/ha/hardware/conbee.jpg"></a></div>
+  <div class="hw-image"><img src="/assets/images/ha/hardware/conbee.jpg"></div>
   <div class="hw-info">
     <h4>Raspberry Pi 3B+ &amp; ConBee</h4>
     <p>My main Zigbee hub using software from Dresden Electronics. The ConBee/RaspBee is compatible with most of devices of Hue, Osram, Innr, Ikea and Xiaomi. I've chosen for the USB version so that I can always switch to another device if needed.</p>
@@ -142,7 +156,7 @@ Table of contents:
 </div>
 
 <div class="hw-row">
-  <div class="hw-image"><a href="https://amzn.to/2sKF2Kq" rel="nofollow"><img src="/assets/images/ha/hardware/raspberrypi.jpg"></a></div>
+  <div class="hw-image"><img src="/assets/images/ha/hardware/raspberrypi.jpg"></div>
   <div class="hw-info">
     <h4>Raspberry Pi B+ &amp; Pi-hole</h4>
     <p>Separate (older) Pi to run Pi-hole. I'm deliberately running this on a separate Pi to not interfere with my internet connection when tinkering with the other systems.</p>
