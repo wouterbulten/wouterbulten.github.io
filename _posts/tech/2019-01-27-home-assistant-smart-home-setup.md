@@ -7,7 +7,7 @@ tags: [home automation, home assistant, Node-RED, wake-up, automations]
 published: true
 description: ""
 include_ha_series: true
-
+published: false
 ---
 
 ## The Lights
