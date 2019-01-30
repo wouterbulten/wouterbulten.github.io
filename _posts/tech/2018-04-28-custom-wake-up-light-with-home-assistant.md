@@ -17,7 +17,7 @@ One of the first things I created using HA was a **room wake-up light**. I do ow
 
 In this post I'll show you how to build this system. The automation will be configurable (on/off, time) and has a switch to disable it on weekends.
 
-**More interested in Node-RED?** Please read my post titled "[Node-RED based custom full-room wake-up light]({% post_url 2019-01-27-custom-wake-up-light-with-node-red %})".
+**More interested in Node-RED?** Please read my post titled "[Node-RED based custom full-room wake-up light]({% post_url tech/2019-01-27-custom-wake-up-light-with-node-red %})".
 
 ![Dashboard widget of the Wake-up light component. All functions are configurable through the Home Assistant dashboard.](/assets/images/ha/ha-wake-up-lights.png)
 

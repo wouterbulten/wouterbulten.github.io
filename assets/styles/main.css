@@ -3933,7 +3933,12 @@ body {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  border-top: 1px solid grey;
+  padding-top: 15px; }
+  @media (min-width: 576px) {
+    .hw-row {
+      border-top: 0; } }
   .hw-row .hw-image {
     position: relative;
     width: 100%;
@@ -3962,6 +3967,8 @@ body {
         order: 0; } }
     .hw-row .hw-info h4 {
       padding-top: 0; }
+    .hw-row .hw-info img {
+      max-width: 25%; }
   .hw-row .hw-source {
     position: relative;
     width: 100%;
