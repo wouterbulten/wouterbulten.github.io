@@ -51,7 +51,7 @@ include_ha_series: true
   <div class="hw-image"><img src="/assets/images/ha/hardware/raspberrypi.jpg"></div>
   <div class="hw-info">
     <h4>Raspberry Pi 3B+ &amp; ConBee</h4>
-    <p>My main Zigbee hub using software from Dresden Electronics. The ConBee/RaspBee is compatible with most of devices of Hue, Osram, Innr, Ikea and Xiaomi.</p>
+    <p>My main Zigbee hub using software from Dresden Electronics. The ConBee/RaspBee is compatible with most of devices of Hue, Osram, Innr, Ikea and Xiaomi. I've chosen for the USB version so that I can always switch to another device if needed.</p>
   </div>
   <div class="hw-source">
     Hardware:

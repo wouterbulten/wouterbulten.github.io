@@ -5,7 +5,8 @@
   "main": "",
   "scripts": {
     "minify": "node-sass main.scss --output-style compressed --output ../assets/styles/min && postcss ../assets/styles/min/main.css --no-map.inline --use autoprefixer -o ../assets/styles/min/main.css  && node inline-css.js",
-    "watch": "node-sass --watch . --output ../assets/styles"
+    "watch": "node-sass --watch . --output ../assets/styles",
+    "proxy": "browser-sync start --proxy='localhost:4000' --files='../_site/**.*'"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   "devDependencies": {
     "autoprefixer": "^9.4.6",
     "bootstrap": "^4.2.1",
+    "browser-sync": "^2.26.3",
     "node-sass": "^4.11.0",
     "postcss-cli": "^6.1.1"
   },

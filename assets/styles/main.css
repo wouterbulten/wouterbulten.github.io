@@ -3789,6 +3789,12 @@ body {
     font-style: normal;
     line-height: 1.2;
     padding-top: 25px; }
+  .post-single h1 {
+    font-size: 2em; }
+  .post-single h2 {
+    font-size: 1.6em; }
+  .post-single h3 {
+    font-size: 1.2em; }
   .post-single p {
     padding-bottom: 0.5rem; }
   .post-single blockquote {
@@ -3954,6 +3960,8 @@ body {
         flex: 0 0 50%;
         max-width: 50%;
         order: 0; } }
+    .hw-row .hw-info h4 {
+      padding-top: 0; }
   .hw-row .hw-source {
     position: relative;
     width: 100%;

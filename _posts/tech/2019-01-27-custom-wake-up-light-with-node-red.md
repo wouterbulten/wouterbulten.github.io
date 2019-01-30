@@ -12,7 +12,7 @@ include_ha_series: true
 
 In a [previous post]({% post_url tech/2018-04-28-custom-wake-up-light-with-home-assistant %}) I showed a wake-up light using Home Assistant and the default [YAML configuration]({% post_url tech/2018-04-28-custom-wake-up-light-with-home-assistant %}). In this post I'll show my current setup which makes use of Node-RED.
 
-As with my previous system, this wake-up light's function is to light up my complete bedroom just before I need to wake up. The system works with any smart lamp that is compatible with HA, this includes Philips Hue and IKEA Tradfri lamps. I use it with a few GU10 bulbs (like the [Hue GU10 lights](https://amzn.to/2W0NouR)). If you want you could even use some color-enabled bulbs to include a nice color transition mimicking a sun rise.
+As with my previous system, this wake-up light's function is to light up my complete bedroom just before I need to wake up. The system works with any smart lamp that is compatible with HA, this includes Philips Hue and IKEA Tradfri lamps. I use it with a few GU10 bulbs (like the <a rel="nofollow" href="https://amzn.to/2W0NouR">Hue GU10 lights</a>). If you want you could even use some color-enabled bulbs to include a nice color transition mimicking a sun rise.
 
 In this post I'll show you how to build this system. The automation will be configurable (on/off, time) and has a switch to disable it on weekends.
 
@@ -24,9 +24,9 @@ In this post I'll show you how to build this system. The automation will be conf
 
 I've used the following components for my Wake-up light:
 
-- Home Assistant and Node-RED running on a [Raspberry 3B+](https://amzn.to/2MsXfoO) using Hass.io
-- Conbee Zigbee hub; tthere is a [USB version](https://amzn.to/2Tov8cQ) and a [PI version](https://amzn.to/2sPKzzm). (More info [here](https://github.com/dresden-elektronik/deconz-rest-plugin))
-- Three GU10 Zigbee smart lights. I use 3 [Innr GU10 lights](https://amzn.to/2CNPwgy) (not available in the US) but you could also use something like the lights from [Philips Hue](https://amzn.to/2W0NouR).
+- Home Assistant and Node-RED running on a <a rel="nofollow" href="https://amzn.to/2MsXfoO">Raspberry 3B+</a> using Hass.io
+- Conbee Zigbee hub; there is a <a rel="nofollow" href="https://amzn.to/2Tov8cQ">USB version</a> and a <a rel="nofollow" href="https://amzn.to/2sPKzzm">PI version</a>. (More info [here](https://github.com/dresden-elektronik/deconz-rest-plugin))
+- Three GU10 Zigbee smart lights. I use 3 <a rel="nofollow" href="https://amzn.to/2CNPwgy">Innr GU10 lights</a>(not available in the US) but you could also use something like the lights from <a rel="nofollow" href="https://amzn.to/2W0NouR">Philips Hue</a>.
 
 These components are just an example. A minimum requirement is a device that runs Home Assistant and Node-RED, and a smart light that you can control.
 
