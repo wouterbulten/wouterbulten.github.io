@@ -44,6 +44,8 @@
 
   @include media-breakpoint-up(md) {
     display: block;
+
+    position: relative;  /* Fix for old ie */
     position: sticky;
     border-bottom: 0;
   }
@@ -63,6 +65,7 @@
 
     @include media-breakpoint-up(md) {
       display: block;
+      -ms-flex: 1;  /* Fix for old ie */
       flex: 1 1 0;
     }
     flex: 0 0 100%;
