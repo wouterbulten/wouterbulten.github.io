@@ -65,8 +65,8 @@
 
     @include media-breakpoint-up(md) {
       display: block;
-      -ms-flex: 1;  /* Fix for old ie */
       flex: 1 1 0;
+      -ms-flex: 1;  /* Fix for old ie */
     }
     flex: 0 0 100%;
 
