@@ -26,7 +26,8 @@ On this page I keep track of my current Smart Home setup, built around Home Assi
   - Ikea Tradfri GU10 dimmable led
   - Philips Hue White Ambience GU10
   - Ikea Tradfri GU10 dimmable led + color temp
-- [Input (Buttons and panels)](#input)
+- [Buttons and switches](#input)
+- [Dashboards](#dashboards)
 - [Plugs](#plugs)
 - [The brains / controllers](#controllers)
   - Raspberry Pi 3B+ & Hass.io
@@ -209,7 +210,10 @@ Lights are the main 'output' of my smart home and are controlled by various inpu
 </div>
 
 <a name="input"></a>
-## Input (Buttons and panels)
+## Buttons and switches
+
+<a name="dashboards"></a>
+## Dashboards
 
 <a name="plugs"></a>
 ## Plugs
