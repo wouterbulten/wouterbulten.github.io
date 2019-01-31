@@ -17,10 +17,21 @@ On this page I keep track of my current Smart Home setup, built around Home Assi
 **Table of contents**
 
 - [Sensors](#sensors)
+  - Xiaomi Aqara motion sensor
+  - Philips Hue Motion Sensor
+  - Xiaomi Aqara door sensor
 - [Lights](#lights)
+  - Philips Hue Color Bulbs
+  - Philips Hue White Ambiance Bulbs
+  - Ikea Tradfri GU10 dimmable led
+  - Philips Hue White Ambience GU10
+  - Ikea Tradfri GU10 dimmable led + color temp
 - [Input (Buttons and panels)](#input)
 - [Plugs](#plugs)
 - [The brains / controllers](#controllers)
+  - Raspberry Pi 3B+ & Hass.io
+  - Raspberry Pi 3B+ & ConBee
+  - Raspberry Pi B+ & Pi-hole
 
 <a name="sensors"></a>
 ## Sensors
@@ -66,7 +77,7 @@ The sensors I'm using now:
   <div class="hw-source">
     <h5>Hardware:</h5>
     <ul>
-      <li><a href="https://amzn.to/2TmAk19" rel="nofollow">Hue Motion Sensor</a></li>
+      <li><a class="btn btn-primary" href="https://amzn.to/2TmAk19" rel="nofollow">Hue Motion Sensor</a></li>
     </ul>
   </div>
 </div>
@@ -115,7 +126,7 @@ Lights are the main 'output' of my smart home and are controlled by various inpu
   <div class="hw-source">
     <h5>Hardware:</h5>
     <ul>
-      <li><a rel="nofollow" href="https://amzn.to/2TkmUm8">Hue color bulb</a> (Make sure to check your sockets for the right types)</li>
+      <li><a class="btn btn-primary" rel="nofollow" href="https://amzn.to/2TkmUm8">Hue color bulb</a><br>(Make sure to check your sockets for the right types)</li>
     </ul>
   </div>
 </div>
@@ -133,7 +144,7 @@ Lights are the main 'output' of my smart home and are controlled by various inpu
   <div class="hw-source">
     <h5>Hardware:</h5>
     <ul>
-      <li><a rel="nofollow" href="https://amzn.to/2GdLeST">Hue bulb</a> (Make sure to check your sockets for the right types)</li>
+      <li><a class="btn btn-primary" rel="nofollow" href="https://amzn.to/2GdLeST">Hue bulb</a><br>(Make sure to check your sockets for the right types)</li>
     </ul>
   </div>
 </div>
@@ -172,7 +183,7 @@ Lights are the main 'output' of my smart home and are controlled by various inpu
   <div class="hw-source">
     <h5>Hardware:</h5>
     <ul>
-      <li><a href="https://amzn.to/2W0NouR" rel="nofollow">Hue GU10</a></li>
+      <li><a class="btn btn-primary" href="https://amzn.to/2W0NouR" rel="nofollow">Hue GU10</a></li>
     </ul>
   </div>
 </div>
@@ -227,7 +238,7 @@ Currently, Home Assistant, App Daemon and Node-RED are all running on a Raspberr
   <div class="hw-source">
     <h5>Hardware:</h5>
     <ul>
-      <li><a href="https://amzn.to/2sKF2Kq" rel="nofollow">Raspberry Pi 3B+</a></li>
+      <li><a class="btn btn-primary" href="https://amzn.to/2sKF2Kq" rel="nofollow">Raspberry Pi 3B+</a></li>
     </ul>
     <h5>Software:</h5>
     <ul>
@@ -252,8 +263,9 @@ Currently, Home Assistant, App Daemon and Node-RED are all running on a Raspberr
   <div class="hw-source">
     <h5>Hardware:</h5>
     <ul>
-      <li><a href="https://amzn.to/2sKF2Kq" rel="nofollow">Raspberry Pi 3B+</a></li>
-      <li><a href="https://amzn.to/2Tov8cQ" rel="nofollow">ConBee</a> or <a href="https://amzn.to/2sPKzzm" rel="nofollow">RaspBee</a></li>
+      <li><a class="btn btn-primary" href="https://amzn.to/2sKF2Kq" rel="nofollow">Raspberry Pi 3B+</a></li>
+      <li><a class="btn btn-primary" href="https://amzn.to/2Tov8cQ" rel="nofollow">ConBee</a></li>
+      <li><a class="btn btn-primary" href="https://amzn.to/2sPKzzm" rel="nofollow">RaspBee</a></li>
     </ul>
     <h5>Software:</h5>
     <ul>
@@ -272,7 +284,7 @@ Currently, Home Assistant, App Daemon and Node-RED are all running on a Raspberr
   <div class="hw-source">
     <h5>Hardware:</h5>
     <ul>
-      <li><a href="https://amzn.to/2sKF2Kq" rel="nofollow">Raspberry Pi 3B+</a></li>
+      <li><a class="btn btn-primary" href="https://amzn.to/2sKF2Kq" rel="nofollow">Raspberry Pi 3B+</a></li>
     </ul>
     <h5>Software:</h5>
     <ul>
