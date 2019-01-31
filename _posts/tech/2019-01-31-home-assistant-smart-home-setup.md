@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "My Home Assistant Smart Home setup"
+title:  "My Home Assistant Smart Home setup with hardware list"
 date:   2019-01-31 13:46
 categories: blog tech
 tags: [home automation, home assistant, hardware]
@@ -25,7 +25,7 @@ On this page I keep track of my current Smart Home setup, built around Home Assi
 <a name="sensors"></a>
 ## Sensors
 
-Sensors are what my home transitioned from a "app powered home" to a "smart home". Before I had any sensors, lights were controlled by an app (e.g. the Philips Hue app) and everything was manual. Now, with the introduction of these sensors, most lights turn on and off automatically.
+Sensors are what my home transitioned from a *app powered* home to a *smart* home. Before I had any sensors, lights were controlled by an app (e.g. the Philips Hue app) and everything was manual. Now, with the introduction of these sensors, most lights can be turned on and off automatically.
 
 The sensors I'm using now:
 
@@ -99,7 +99,7 @@ The sensors I'm using now:
 <a name="lights"></a>
 ## The Lights
 
-Lights are the main 'output' of my smart home and are controlled by various inputs.
+Lights are the main 'output' of my smart home and are controlled by various inputs. As I use Deconz as my main Zigbee hub I'm not limited to a single brand.
 
 <div class="hw-row">
   <div class="hw-image"><img src="/assets/images/ha/hardware/hue_color.png"></div>
@@ -134,6 +134,65 @@ Lights are the main 'output' of my smart home and are controlled by various inpu
     <h5>Hardware:</h5>
     <ul>
       <li><a rel="nofollow" href="https://amzn.to/2GdLeST">Hue bulb</a> (Make sure to check your sockets for the right types)</li>
+    </ul>
+  </div>
+</div>
+
+<div class="hw-row">
+  <div class="hw-image"><img style="padding: 20px;" src="/assets/images/ha/hardware/ikea_gu10.jpg"></div>
+  <div class="hw-info">
+    <h4>Ikea Tradfri GU10 dimmable led</h4>
+    <p>What can you do wrong with a €7 smart light? Not much. These lights are very good as a basic lights for rooms that do not need more than dimming. I did have some problems with some of these, like flickering when they were off or not wanting to connect to my hub.</p>
+    <p>The Tradfri hub is not required as it connects to my <a href="https://amzn.to/2Tov8cQ" rel="nofollow">ConBee</a>. An alternative is to run <a href="https://github.com/Koenkk/zigbee2mqtt">Zigbee2mqtt</a>.</p>
+
+    <div class="review">
+      <p><b>Pros:</b> Cheapest Zigbee light available. Decent light quality. Good value for your money.</p>
+      <p><b>Cons:</b> Dimming capabilities are moderate, 1% brightness of this light is 10% of a comparable Hue light. Had some problems with faulty bulbs.</p>
+    </div>
+  </div>
+  <div class="hw-source">
+    <h5>Hardware:</h5>
+    <ul>
+      <li>Can be bought at any Ikea store.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="hw-row">
+  <div class="hw-image"><img src="/assets/images/ha/hardware/hue_gu10.jpeg"></div>
+  <div class="hw-info">
+    <h4>Philips Hue White Ambience GU10</h4>
+    <p>Highest quality GU10 Zigbee lights I found so far. Excellent dimming capabilities (great for night lights) and a wide color range. If they would have been cheaper I would have bought more of these.</p>
+
+    <div class="review">
+      <p><b>Pros:</b> Superb dimming capabilities. Nice color temperature range.</p>
+      <p><b>Cons:</b> Expensive.</p>
+    </div>
+  </div>
+  <div class="hw-source">
+    <h5>Hardware:</h5>
+    <ul>
+      <li><a href="https://amzn.to/2W0NouR" rel="nofollow">Hue GU10</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="hw-row">
+  <div class="hw-image"><img style="padding: 20px;" src="/assets/images/ha/hardware/ikea_gu10.jpg"></div>
+  <div class="hw-info">
+    <h4>Ikea Tradfri GU10 dimmable led + color temp</h4>
+    <p>Double the price of the simple Tradfri light but it adds color temperature. The range of temperatures and the dimming capabilties are still not great, but its very good value for the price. If you're not to picky for light quality, these lights are a great starter-buy.</p>
+    <p>The Tradfri hub is not required as it connects to my <a href="https://amzn.to/2Tov8cQ" rel="nofollow">ConBee</a>. An alternative is to run <a href="https://github.com/Koenkk/zigbee2mqtt">Zigbee2mqtt</a>.</p>
+
+    <div class="review">
+      <p><b>Pros:</b> Very good price. Decent light quality. Has color temperature support.</p>
+      <p><b>Cons:</b> Dimming capabilities are moderate, 1% brightness of this light is 10% of a comparable Hue light. Setting temperature and brightness at the same time can be difficult (<a href="{% post_url tech/2019-01-17-ikea-tradfri-temp-and-brightness-with-home-assistant %}">more info</a>).</p>
+    </div>
+  </div>
+  <div class="hw-source">
+    <h5>Hardware:</h5>
+    <ul>
+      <li>Can be bought at any Ikea store.</li>
     </ul>
   </div>
 </div>
