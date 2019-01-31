@@ -6,7 +6,7 @@
 
   border-top: 1px solid grey;
   padding-top: 15px;
-  
+
   @include media-breakpoint-up(sm) {
     border-top: 0;
   }
@@ -36,8 +36,15 @@
 
     h4 {
       padding-top: 0;
+      display: inline-block;
+      border-bottom: 1px solid grey;
+
     }
 
+
+    .review p {
+      font-size: 0.9em;
+    }
     img {
       max-width: 25%;
     }
