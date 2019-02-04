@@ -61,7 +61,7 @@ The sensors I'm using now:
   <div class="hw-source">
     <h5>Hardware:</h5>
     <ul>
-      <li>Can be bought on various websites. Usuall cheapest on Gearbest or AliExpress.</li>
+      <li>Can be bought on various websites. Usually cheapest on Gearbest or AliExpress.</li>
     </ul>
     <h5>Software:</h5>
     <ul>
@@ -104,7 +104,7 @@ The sensors I'm using now:
   <div class="hw-source">
     <h5>Hardware:</h5>
     <ul>
-      <li>Can be bought on various websites. Usuall cheapest on Gearbest or AliExpress.</li>
+      <li>Can be bought on various websites. Usually cheapest on Gearbest or AliExpress.</li>
     </ul>
     <h5>Software:</h5>
     <ul>
@@ -251,7 +251,7 @@ Lights are the main 'output' of my smart home and are controlled by various inpu
   <div class="hw-source">
     <h5>Hardware:</h5>
     <ul>
-      <li>Can be bought on various websites. Usuall cheapest on Gearbest or AliExpress.</li>
+      <li>Can be bought on various websites. Usually cheapest on Gearbest or AliExpress.</li>
     </ul>
     <h5>Software:</h5>
     <ul>
@@ -275,7 +275,7 @@ Lights are the main 'output' of my smart home and are controlled by various inpu
   <div class="hw-source">
     <h5>Hardware:</h5>
     <ul>
-      <li>Can be bought on various websites. Usuall cheapest on Gearbest or AliExpress.</li>
+      <li>Can be bought on various websites. Usually cheapest on Gearbest or AliExpress.</li>
     </ul>
     <h5>Software:</h5>
     <ul>
