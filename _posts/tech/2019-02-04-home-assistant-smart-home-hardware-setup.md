@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "My Home Assistant Smart Home setup with hardware list"
-date:   2019-02-04 13:46
+date:   2019-02-04 20:46
 categories: blog tech
 tags: [home automation, home assistant, hardware]
 published: true
