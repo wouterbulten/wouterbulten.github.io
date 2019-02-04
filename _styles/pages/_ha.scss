@@ -5,7 +5,7 @@
   margin-bottom: 1em;
 
   border-top: 1px solid grey;
-  padding-top: 15px;
+  padding-top: 2em;
 
   @include media-breakpoint-up(sm) {
     border-top: 0;
@@ -39,8 +39,7 @@
     h4 {
       padding-top: 0;
       display: inline-block;
-      border-bottom: 1px solid grey;
-
+      text-decoration: underline;
     }
 
 
@@ -58,9 +57,8 @@
 
     @include media-breakpoint-up(sm) {
       @include make-col(3);
+      border-left: 1px solid gray;
     }
-
-    border-left: 1px solid gray;
 
     ul {
       list-style-type: none;

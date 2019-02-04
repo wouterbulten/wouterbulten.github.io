@@ -3939,7 +3939,7 @@ body {
   margin-left: -15px;
   margin-bottom: 1em;
   border-top: 1px solid grey;
-  padding-top: 15px; }
+  padding-top: 2em; }
   @media (min-width: 576px) {
     .hw-row {
       border-top: 0; } }
@@ -3949,7 +3949,8 @@ body {
     padding-right: 15px;
     padding-left: 15px;
     flex: 0 0 100%;
-    max-width: 100%; }
+    max-width: 100%;
+    text-align: center; }
     @media (min-width: 576px) {
       .hw-row .hw-image {
         flex: 0 0 25%;
@@ -3972,7 +3973,7 @@ body {
     .hw-row .hw-info h4 {
       padding-top: 0;
       display: inline-block;
-      border-bottom: 1px solid grey; }
+      text-decoration: underline; }
     .hw-row .hw-info .review p {
       font-size: 0.9em; }
     .hw-row .hw-info img {
@@ -3983,12 +3984,12 @@ body {
     padding-right: 15px;
     padding-left: 15px;
     flex: 0 0 100%;
-    max-width: 100%;
-    border-left: 1px solid gray; }
+    max-width: 100%; }
     @media (min-width: 576px) {
       .hw-row .hw-source {
         flex: 0 0 25%;
-        max-width: 25%; } }
+        max-width: 25%;
+        border-left: 1px solid gray; } }
     .hw-row .hw-source ul {
       list-style-type: none;
       padding-left: 0; }
