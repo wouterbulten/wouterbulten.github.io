@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "My Home Assistant Smart Home setup with hardware list"
-date:   2019-01-31 13:46
+date:   2019-02-04 13:46
 categories: blog tech
 tags: [home automation, home assistant, hardware]
 published: true
@@ -12,7 +12,7 @@ include_ha_series: true
 
 On this page I keep track of my current Smart Home setup, built around Home Assistant, Deconz and Node-RED. So, if you are interested in my setup please read on. The list of devices I use has grown organically over time, sometimes based on a certain need (like a proper light sensor), and sometimes based on a specific sale or interest for a device. Still, if I had to start over I would still pick many of these devices for a second time.
 
-*This page is a work in progress and will update over time. Last update: Jan 2019.*
+*This page is a work in progress and will update over time. Last update: Feb 2019.*
 
 **Table of contents**
 
@@ -27,8 +27,13 @@ On this page I keep track of my current Smart Home setup, built around Home Assi
   - Philips Hue White Ambience GU10
   - Ikea Tradfri GU10 dimmable led + color temp
 - [Buttons and switches](#input)
+  - Philips Hue Smart Dimmer Switch
+  - Xiaomi Aqara wireless switch (WXKG11LM)
+  - Xiaomi Aqara wireless switch (WXKG01LM)
 - [Dashboards](#dashboards)
+  - Amazon Fire Tablet
 - [Plugs](#plugs)
+  - OSRAM Smart+ Plug (Sylvania in the US)
 - [The brains / controllers](#controllers)
   - Raspberry Pi 3B+ & Hass.io
   - Raspberry Pi 3B+ & ConBee
@@ -88,7 +93,7 @@ The sensors I'm using now:
   <div class="hw-info">
     <h4>Xiaomi Aqara door sensor (MCCGQ11LM)</h4>
     <p>Door sensors are one of the most usefull sensors to integrate in to a smart home. They can be used as an alarm on both windows and doors. Moreover, my main use for them is to turn on lights when a door is opened. This makes sure that lights are on even if the motion sensors did not register the motion yet.</p>
-    <p>These sensors from Aqara are one of the cheapest option but work great. They are really small and sell for around €6.</p>
+    <p>These sensors from Aqara are one of the cheapest option but work great. They are really small and sell for around €7.</p>
     <p>The Xiaomi hub is not required as it connects to my <a href="https://amzn.to/2Tov8cQ" rel="nofollow">ConBee</a>. An alternative is to run <a href="https://github.com/Koenkk/zigbee2mqtt">Zigbee2mqtt</a>.</p>
 
     <div class="review">
@@ -121,7 +126,7 @@ Lights are the main 'output' of my smart home and are controlled by various inpu
 
     <div class="review">
       <p><b>Pros:</b> Very good color range. Great dimming capabilities. No problems with faulty bulbs (so far).</p>
-      <p><b>Cons:</b> Expensive.</p>
+      <p><b>Cons:</b> More expensive than alternatives.</p>
     </div>
   </div>
   <div class="hw-source">
@@ -139,7 +144,7 @@ Lights are the main 'output' of my smart home and are controlled by various inpu
     <p>I use these lights as a cheaper alternative to the color Hue lights. I use them in places where brightness and color temp is sufficient. Excellent dimming quality and the color warmth has the best range in comparison to the other brands.</p>
     <div class="review">
       <p><b>Pros:</b> Very good temperature range. Great dimming capabilities. No problems with faulty bulbs (so far).</p>
-      <p><b>Cons:</b> Expensive.</p>
+      <p><b>Cons:</b> More expensive than alternatives.</p>
     </div>
   </div>
   <div class="hw-source">
@@ -178,7 +183,7 @@ Lights are the main 'output' of my smart home and are controlled by various inpu
 
     <div class="review">
       <p><b>Pros:</b> Superb dimming capabilities. Nice color temperature range.</p>
-      <p><b>Cons:</b> Expensive.</p>
+      <p><b>Cons:</b> More expensive than alternatives.</p>
     </div>
   </div>
   <div class="hw-source">
@@ -212,11 +217,127 @@ Lights are the main 'output' of my smart home and are controlled by various inpu
 <a name="input"></a>
 ## Buttons and switches
 
+<div class="hw-row">
+  <div class="hw-image"><img src="/assets/images/ha/hardware/hue_dimmer.jpg"></div>
+  <div class="hw-info">
+    <h4>Philips Hue Smart Dimmer Switch</h4>
+    <p>A four-button wireles switch that is often present in the starter packs of Philips Hue. Its inteneded use is to dim lights, however I use it as a remote for my Sonos-powered music system. Using Deconz and Node-RED I mapped the single buttons to music functions: shuffle, volume and skipping songs.</p>
+
+    <div class="review">
+      <p><b>Pros:</b> Four buttons, wall mount using magnets.</p>
+      <p><b>Cons:</b> Labels on the buttons (can be a pro or con). Bit more expensive than a single Xiaomi button.</p>
+    </div>
+  </div>
+  <div class="hw-source">
+    <h5>Hardware:</h5>
+    <ul>
+      <li><a class="btn btn-primary" href="https://amzn.to/2WEml8Q" rel="nofollow">Hue Dimmer Switch</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="hw-row">
+  <div class="hw-image"><img src="/assets/images/ha/hardware/WXKG11LM.jpg"></div>
+  <div class="hw-info">
+    <h4>Xiaomi Aqara wireless switch (WXKG11LM)</h4>
+    <p>Very useful and cheap (around €7) switch with a single button. I have spread several of these around my house controlling a wide range of functions. They are especially usefull to add a simple light switch to rooms.</p>
+    <p>The Xiaomi hub is not required as it connects to my <a href="https://amzn.to/2Tov8cQ" rel="nofollow">ConBee</a>. An alternative is to run <a href="https://github.com/Koenkk/zigbee2mqtt">Zigbee2mqtt</a>.</p>
+
+    <div class="review">
+      <p><b>Pros:</b> Small form factor. Good price.</p>
+      <p><b>Cons:</b> Not available locally.</p>
+    </div>
+  </div>
+  <div class="hw-source">
+    <h5>Hardware:</h5>
+    <ul>
+      <li>Can be bought on various websites. Usuall cheapest on Gearbest or AliExpress.</li>
+    </ul>
+    <h5>Software:</h5>
+    <ul>
+      <li><a href="https://github.com/dresden-elektronik/deconz-rest-plugin">Deconz</a> or <a href="https://github.com/Koenkk/zigbee2mqtt">Zigbee2mqtt</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="hw-row">
+  <div class="hw-image"><img src="/assets/images/ha/hardware/WXKG01LM.jpg"></div>
+  <div class="hw-info">
+    <h4>Xiaomi Aqara wireless switch (WXKG01LM)</h4>
+    <p>Comparable to the other switch (see above) but this one has a bit larger touch area. I use one in my kitchen as I can activate this switch with my elbows which is usefull during cooking. Its a bit more espensive though, usually around €9.</p>
+    <p>The Xiaomi hub is not required as it connects to my <a href="https://amzn.to/2Tov8cQ" rel="nofollow">ConBee</a>. An alternative is to run <a href="https://github.com/Koenkk/zigbee2mqtt">Zigbee2mqtt</a>.</p>
+
+    <div class="review">
+      <p><b>Pros:</b> Larger touch area.</p>
+      <p><b>Cons:</b> Not available locally. Bit more expensive than WXKG11LM.</p>
+    </div>
+  </div>
+  <div class="hw-source">
+    <h5>Hardware:</h5>
+    <ul>
+      <li>Can be bought on various websites. Usuall cheapest on Gearbest or AliExpress.</li>
+    </ul>
+    <h5>Software:</h5>
+    <ul>
+      <li><a href="https://github.com/dresden-elektronik/deconz-rest-plugin">Deconz</a> or <a href="https://github.com/Koenkk/zigbee2mqtt">Zigbee2mqtt</a></li>
+    </ul>
+  </div>
+</div>
+
 <a name="dashboards"></a>
 ## Dashboards
 
+A tablet-powerd dashboard is a great way of interacting with your house. I use it as the main control panel that gives access to the most important features and settings. It's also a very convenient way of giving guests access to your smart home system without having them to install an app or browsing to a website.
+
+<div class="hw-row">
+  <div class="hw-image"><img src="/assets/images/ha/hardware/fire_tablet.jpg"></div>
+  <div class="hw-info">
+    <h4>Amazon Fire Tablet</h4>
+    <p>I use a basic Fire 7 tablet from Amazon for my dashboard. In combination with the <a href="https://www.ozerov.de/fully-kiosk-browser/">Fully Kiosk Browser</a> it's a really conventient way of controling my smart home. Fire OS (what runs on these tablets) can be a bit limiting but, for me, is enough for running a dashboard.</p>
+
+    <div class="review">
+      <p><b>Pros:</b> Good price.</p>
+      <p><b>Cons:</b> Not the fastests tablets. Not available in all countries. FireOS can be restrictive.</p>
+    </div>
+
+  </div>
+  <div class="hw-source">
+    <h5>Hardware:</h5>
+    <ul>
+      <li><a class="btn btn-primary" href="https://amzn.to/2WFJmIx" rel="nofollow">Fire Tablet</a></li>
+    </ul>
+    <h5>Software:</h5>
+    <ul>
+      <li><a href="https://www.ozerov.de/fully-kiosk-browser/">Fully Kiosk Browser</a></li>
+    </ul>
+  </div>
+</div>
+
 <a name="plugs"></a>
 ## Plugs
+
+Smart plugs are an easy way to make dumb devices a bit smarter. For example: I use one to controll the charger of my wall tablet and a second one to control my (non smart) TV.
+
+<div class="hw-row">
+  <div class="hw-image"><img src="/assets/images/ha/hardware/osram_plug.jpg"></div>
+  <div class="hw-info">
+    <h4>OSRAM Smart+ Plug (Sylvania in the US)</h4>
+    <p>Simple plug that I use for adding on/off control to non-smart devices. I've only tested the EU OSRAM version, in the US this brand is available under the Sylvania name.</p>
+    <p>Connects to <a href="https://amzn.to/2Tov8cQ" rel="nofollow">ConBee</a>. An alternative is to run <a href="https://github.com/Koenkk/zigbee2mqtt">Zigbee2mqtt</a>.</p>
+
+    <div class="review">
+      <p><b>Pros:</b> Good value for your money. Good zigbee meshing capabilities.</p>
+      <p><b>Cons:</b> No power measurement (at least in Deconz).</p>
+    </div>
+  </div>
+  <div class="hw-source">
+    <h5>Hardware:</h5>
+    <ul>
+      <li><a class="btn btn-primary" href="https://amzn.to/2UBNGXq" rel="nofollow">OSRAM Plug (EU)</a></li>
+      <li><a class="btn btn-primary" href="https://amzn.to/2G93ZYz" rel="nofollow">Sylvania Plug (US)</a></li>
+    </ul>
+  </div>
+</div>
 
 <a name="controllers"></a>
 ## The Brains
