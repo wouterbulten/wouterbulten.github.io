@@ -33,6 +33,8 @@ I've used the following components for my Wake-up light:
 
 These components are just an example. A minimum requirement is a device that runs Home Assistant and a smart light that you can control.
 
+<a class="btn btn-info" href="{% post_url /tech/2019-02-04-home-assistant-smart-home-hardware-setup %}">My Home Automation hardware setup</a>
+
 ## Time sensor
 
 First step is to add a new sensor that measures time. This sensor will trigger the automation at the correct time. Add the following to `sensors.yaml`:

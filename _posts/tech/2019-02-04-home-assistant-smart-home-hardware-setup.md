@@ -85,7 +85,7 @@ The sensors I'm using now:
   <div class="hw-source">
     <h5>Hardware:</h5>
     <ul>
-      <li><a class="btn btn-primary" href="https://amzn.to/2TmAk19" rel="nofollow">Hue Motion Sensor</a></li>
+      <li><a class="btn btn-info" href="https://amzn.to/2TmAk19" rel="nofollow">Hue Motion Sensor</a></li>
     </ul>
   </div>
 </div>
@@ -134,7 +134,7 @@ Lights are the main 'output' of my smart home and are controlled by various inpu
   <div class="hw-source">
     <h5>Hardware:</h5>
     <ul>
-      <li><a class="btn btn-primary" rel="nofollow" href="https://amzn.to/2TkmUm8">Hue color bulb</a><br>(Make sure to check your sockets for the right types)</li>
+      <li><a class="btn btn-info" rel="nofollow" href="https://amzn.to/2TkmUm8">Hue color bulb</a><br>(Make sure to check your sockets for the right types)</li>
     </ul>
   </div>
 </div>
@@ -152,7 +152,7 @@ Lights are the main 'output' of my smart home and are controlled by various inpu
   <div class="hw-source">
     <h5>Hardware:</h5>
     <ul>
-      <li><a class="btn btn-primary" rel="nofollow" href="https://amzn.to/2GdLeST">Hue bulb</a><br>(Make sure to check your sockets for the right types)</li>
+      <li><a class="btn btn-info" rel="nofollow" href="https://amzn.to/2GdLeST">Hue bulb</a><br>(Make sure to check your sockets for the right types)</li>
     </ul>
   </div>
 </div>
@@ -191,7 +191,7 @@ Lights are the main 'output' of my smart home and are controlled by various inpu
   <div class="hw-source">
     <h5>Hardware:</h5>
     <ul>
-      <li><a class="btn btn-primary" href="https://amzn.to/2W0NouR" rel="nofollow">Hue GU10</a></li>
+      <li><a class="btn btn-info" href="https://amzn.to/2W0NouR" rel="nofollow">Hue GU10</a></li>
     </ul>
   </div>
 </div>
@@ -233,7 +233,7 @@ Lights are the main 'output' of my smart home and are controlled by various inpu
   <div class="hw-source">
     <h5>Hardware:</h5>
     <ul>
-      <li><a class="btn btn-primary" href="https://amzn.to/2WEml8Q" rel="nofollow">Hue Dimmer Switch</a></li>
+      <li><a class="btn btn-info" href="https://amzn.to/2WEml8Q" rel="nofollow">Hue Dimmer Switch</a></li>
     </ul>
   </div>
 </div>
@@ -306,7 +306,7 @@ A tablet-powerd dashboard is a great way of interacting with your house. I use i
   <div class="hw-source">
     <h5>Hardware:</h5>
     <ul>
-      <li><a class="btn btn-primary" href="https://amzn.to/2WFJmIx" rel="nofollow">Fire Tablet</a></li>
+      <li><a class="btn btn-info" href="https://amzn.to/2WFJmIx" rel="nofollow">Fire Tablet</a></li>
     </ul>
     <h5>Software:</h5>
     <ul>
@@ -335,8 +335,8 @@ Smart plugs are an easy way to make dumb devices a bit smarter. For example: I u
   <div class="hw-source">
     <h5>Hardware:</h5>
     <ul>
-      <li><a class="btn btn-primary" href="https://amzn.to/2UBNGXq" rel="nofollow">OSRAM Plug (EU)</a></li>
-      <li><a class="btn btn-primary" href="https://amzn.to/2G93ZYz" rel="nofollow">Sylvania Plug (US)</a></li>
+      <li><a class="btn btn-info" href="https://amzn.to/2UBNGXq" rel="nofollow">OSRAM Plug (EU)</a></li>
+      <li><a class="btn btn-info" href="https://amzn.to/2G93ZYz" rel="nofollow">Sylvania Plug (US)</a></li>
     </ul>
   </div>
 </div>
@@ -365,7 +365,7 @@ Currently, Home Assistant, App Daemon and Node-RED are all running on a Raspberr
   <div class="hw-source">
     <h5>Hardware:</h5>
     <ul>
-      <li><a class="btn btn-primary" href="https://amzn.to/2sKF2Kq" rel="nofollow">Raspberry Pi 3B+</a></li>
+      <li><a class="btn btn-info" href="https://amzn.to/2sKF2Kq" rel="nofollow">Raspberry Pi 3B+</a></li>
     </ul>
     <h5>Software:</h5>
     <ul>
@@ -390,9 +390,9 @@ Currently, Home Assistant, App Daemon and Node-RED are all running on a Raspberr
   <div class="hw-source">
     <h5>Hardware:</h5>
     <ul>
-      <li><a class="btn btn-primary" href="https://amzn.to/2sKF2Kq" rel="nofollow">Raspberry Pi 3B+</a></li>
-      <li><a class="btn btn-primary" href="https://amzn.to/2Tov8cQ" rel="nofollow">ConBee</a></li>
-      <li><a class="btn btn-primary" href="https://amzn.to/2sPKzzm" rel="nofollow">RaspBee</a></li>
+      <li><a class="btn btn-info" href="https://amzn.to/2sKF2Kq" rel="nofollow">Raspberry Pi 3B+</a></li>
+      <li><a class="btn btn-info" href="https://amzn.to/2Tov8cQ" rel="nofollow">ConBee</a></li>
+      <li><a class="btn btn-info" href="https://amzn.to/2sPKzzm" rel="nofollow">RaspBee</a></li>
     </ul>
     <h5>Software:</h5>
     <ul>
@@ -411,7 +411,7 @@ Currently, Home Assistant, App Daemon and Node-RED are all running on a Raspberr
   <div class="hw-source">
     <h5>Hardware:</h5>
     <ul>
-      <li><a class="btn btn-primary" href="https://amzn.to/2sKF2Kq" rel="nofollow">Raspberry Pi 3B+</a></li>
+      <li><a class="btn btn-info" href="https://amzn.to/2sKF2Kq" rel="nofollow">Raspberry Pi 3B+</a></li>
     </ul>
     <h5>Software:</h5>
     <ul>

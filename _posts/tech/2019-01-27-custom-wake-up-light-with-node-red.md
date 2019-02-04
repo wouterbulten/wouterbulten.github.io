@@ -30,6 +30,8 @@ I've used the following components for my Wake-up light:
 
 These components are just an example. A minimum requirement is a device that runs Home Assistant and Node-RED, and a smart light that you can control.
 
+<a class="btn btn-info" href="{% post_url /tech/2019-02-04-home-assistant-smart-home-hardware-setup %}">My Home Automation hardware setup</a>
+
 ## Dashboard widget
 
 For controlling the settings of the wake-up light I use the same widget as with my [previous post]({% post_url tech/2018-04-28-custom-wake-up-light-with-home-assistant %}). Please see that post if you would like to read more of the details.
