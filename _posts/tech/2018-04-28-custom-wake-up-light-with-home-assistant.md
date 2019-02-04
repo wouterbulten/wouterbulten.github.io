@@ -17,7 +17,7 @@ One of the first things I created using HA was a **room wake-up light**. I do ow
 
 In this post I'll show you how to build this system. The automation will be configurable (on/off, time) and has a switch to disable it on weekends.
 
-**More interested in Node-RED?** Please read my post titled "[Node-RED based custom full-room wake-up light]({% post_url 2019-01-27-custom-wake-up-light-with-node-red %})".
+**More interested in Node-RED?** Please read my post titled "[Node-RED based custom full-room wake-up light]({% post_url tech/2019-01-27-custom-wake-up-light-with-node-red %})".
 
 ![Dashboard widget of the Wake-up light component. All functions are configurable through the Home Assistant dashboard.](/assets/images/ha/ha-wake-up-lights.png)
 
@@ -27,7 +27,7 @@ In this post I'll show you how to build this system. The automation will be conf
 
 I've used the following components for my Wake-up light:
 
-- Home Assistant running on a <a rel="nofollow" href="https://amzn.to/2MsXfoO">Raspberry 3B+</a>
+- Home Assistant running on a <a rel="nofollow" href="https://amzn.to/2sKF2Kq">Raspberry 3B+</a>
 - Conbee Zigbee hub; there is a <a rel="nofollow" href="https://amzn.to/2Tov8cQ">USB version</a> and a <a rel="nofollow" href="https://amzn.to/2sPKzzm">PI version</a>. (More info [here](https://github.com/dresden-elektronik/deconz-rest-plugin))
 - Three GU10 Zigbee smart lights. I use 3 [Innr GU10 lights](https://amzn.to/2CNPwgy) (not available in the US) but you could also use something like the lights from [Philips Hue](https://amzn.to/2W0NouR).
 

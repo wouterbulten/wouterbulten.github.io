@@ -3584,6 +3584,8 @@ body {
   @media (min-width: 768px) {
     .nav-wrapper {
       display: block;
+      position: relative;
+      /* Fix for old ie */
       position: sticky;
       border-bottom: 0; } }
 
@@ -3604,7 +3606,9 @@ body {
     @media (min-width: 768px) {
       .site-navigation .nav-item {
         display: block;
-        flex: 1 1 0; } }
+        flex: 1 1 0;
+        -ms-flex: 1;
+        /* Fix for old ie */ } }
     .site-navigation .nav-item:hover {
       background-color: white;
       color: #007bff; }
@@ -3933,7 +3937,12 @@ body {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  border-top: 1px solid grey;
+  padding-top: 15px; }
+  @media (min-width: 576px) {
+    .hw-row {
+      border-top: 0; } }
   .hw-row .hw-image {
     position: relative;
     width: 100%;
@@ -3961,7 +3970,13 @@ body {
         max-width: 50%;
         order: 0; } }
     .hw-row .hw-info h4 {
-      padding-top: 0; }
+      padding-top: 0;
+      display: inline-block;
+      border-bottom: 1px solid grey; }
+    .hw-row .hw-info .review p {
+      font-size: 0.9em; }
+    .hw-row .hw-info img {
+      max-width: 25%; }
   .hw-row .hw-source {
     position: relative;
     width: 100%;
@@ -3977,6 +3992,8 @@ body {
     .hw-row .hw-source ul {
       list-style-type: none;
       padding-left: 0; }
+    .hw-row .hw-source li {
+      padding-top: 5px; }
 
 /**
  * Syntax highlighting styles
