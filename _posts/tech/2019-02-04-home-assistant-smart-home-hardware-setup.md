@@ -12,7 +12,7 @@ include_ha_series: true
 
 On this page I keep track of my current Smart Home setup, built around Home Assistant, Deconz and Node-RED. So, if you are interested in my setup please read on. The list of devices I use has grown organically over time, sometimes based on a certain need (like a proper light sensor), and sometimes based on a specific sale or interest for a device. Still, if I had to start over I would still pick many of these devices for a second time.
 
-*This page is a work in progress and will update over time. Last update: Feb 2019.*
+*Note:* The pros and cons described here are my personal experiences. 🙂
 
 **Table of contents**
 
@@ -39,10 +39,12 @@ On this page I keep track of my current Smart Home setup, built around Home Assi
   - Raspberry Pi 3B+ & ConBee
   - Raspberry Pi B+ & Pi-hole
 
+*This page is a work in progress and will update over time. Last update: Feb 2019.*
+
 <a name="sensors"></a>
 ## Sensors
 
-Sensors are what my home transitioned from a *app powered* home to a *smart* home. Before I had any sensors, lights were controlled by an app (e.g. the Philips Hue app) and everything was manual. Now, with the introduction of these sensors, most lights can be turned on and off automatically.
+Sensors are what transitioned my home from an *app powered* home to a *smart* home. Before I had any sensors, lights were controlled by an app (e.g. the Philips Hue app) and everything was manual. Now, with the introduction of these sensors, most lights can be turned on and off automatically.
 
 The sensors I'm using now:
 
@@ -50,7 +52,7 @@ The sensors I'm using now:
   <div class="hw-image"><img src="/assets/images/ha/hardware/RTCGQ11LM.jpg"></div>
   <div class="hw-info">
     <h4>Xiaomi Aqara motion sensor (RTCGQ11LM)</h4>
-    <p>In my opinion, the best motion sensor for this price. I use this sensor in all places where I want to automate something based on motion. Usually sells for around €10 (keep an eye on sales!). The device comes with a light sensor but is very inaccurate. The range is quite good but large rooms will need more than one.</p>
+    <p>In my opinion, the best motion sensor for this price. I use this sensor in all places where I want to automate something based on motion. Usually sells for around €10 (keep an eye on sales!). The device also includes a light sensor but the sensor readings are very inaccurate. The motion detection range is quite good but large rooms will need more than one.</p>
     <p>The Xiaomi hub is not required as it connects to my <a href="https://amzn.to/2Tov8cQ" rel="nofollow">ConBee</a>. An alternative is to run <a href="https://github.com/Koenkk/zigbee2mqtt">Zigbee2mqtt</a>.</p>
 
     <div class="review">
@@ -73,7 +75,7 @@ The sensors I'm using now:
   <div class="hw-image"><img src="/assets/images/ha/hardware/hue_motion.jpg"></div>
   <div class="hw-info">
     <h4>Philips Hue Motion Sensor</h4>
-    <p>The Hue motion sensor is bit more expensive than the Aqara motion sensors and is also larger in size. I bought one as the light sensors in the Aqara sensors are not very precise and I wanted to monitor natural light intensity.</p>
+    <p>The Hue motion sensor is bit more expensive than the Aqara motion sensors and is also larger in size. I still bought one as the light sensors in the Aqara sensors are not very precise and I wanted to monitor natural light intensity.</p>
 
     <div class="review">
       <p><b>Pros:</b> Very precise light sensor. Can be installed using a magnet.</p>
@@ -92,8 +94,8 @@ The sensors I'm using now:
   <div class="hw-image"><img src="/assets/images/ha/hardware/MCCGQ11LM.jpg"></div>
   <div class="hw-info">
     <h4>Xiaomi Aqara door sensor (MCCGQ11LM)</h4>
-    <p>Door sensors are one of the most usefull sensors to integrate in to a smart home. They can be used as an alarm on both windows and doors. Moreover, my main use for them is to turn on lights when a door is opened. This makes sure that lights are on even if the motion sensors did not register the motion yet.</p>
-    <p>These sensors from Aqara are one of the cheapest option but work great. They are really small and sell for around €7.</p>
+    <p>Door sensors are one of the most usefull sensors to integrate in to a smart home. They can of course be used as part of an alarm on both windows and doors. Moreover, my main use for them is to turn on lights when a door is opened. This makes sure that lights are on even if the motion sensors did not register the motion yet and results in a nice transition.</p>
+    <p>These sensors from Aqara are one of the cheapest available, but work great. They are really small and sell for around €7.</p>
     <p>The Xiaomi hub is not required as it connects to my <a href="https://amzn.to/2Tov8cQ" rel="nofollow">ConBee</a>. An alternative is to run <a href="https://github.com/Koenkk/zigbee2mqtt">Zigbee2mqtt</a>.</p>
 
     <div class="review">
@@ -116,7 +118,7 @@ The sensors I'm using now:
 <a name="lights"></a>
 ## The Lights
 
-Lights are the main 'output' of my smart home and are controlled by various inputs. As I use Deconz as my main Zigbee hub I'm not limited to a single brand.
+Lights are the main 'output' of my smart home and are controlled by various inputs. As I use Deconz as my main Zigbee hub I'm not limited to a single brand. I have tested multiple brands (Hue, Ikea, OSRAM, Innr) and the lights I use the most are described here:
 
 <div class="hw-row">
   <div class="hw-image"><img src="/assets/images/ha/hardware/hue_color.png"></div>
@@ -141,7 +143,7 @@ Lights are the main 'output' of my smart home and are controlled by various inpu
   <div class="hw-image"><img src="/assets/images/ha/hardware/hue_e27.png"></div>
   <div class="hw-info">
     <h4>Philips Hue White Ambiance Bulbs</h4>
-    <p>I use these lights as a cheaper alternative to the color Hue lights. I use them in places where brightness and color temp is sufficient. Excellent dimming quality and the color warmth has the best range in comparison to the other brands.</p>
+    <p>I use these lights as a cheaper alternative to the color Hue lights. I use them in places where controlling brightness and color temp is sufficient. Excellent dimming quality and the color warmth has the best range in comparison to the other brands.</p>
     <div class="review">
       <p><b>Pros:</b> Very good temperature range. Great dimming capabilities. No problems with faulty bulbs (so far).</p>
       <p><b>Cons:</b> More expensive than alternatives.</p>
@@ -159,11 +161,11 @@ Lights are the main 'output' of my smart home and are controlled by various inpu
   <div class="hw-image"><img style="padding: 20px;" src="/assets/images/ha/hardware/ikea_gu10.jpg"></div>
   <div class="hw-info">
     <h4>Ikea Tradfri GU10 dimmable led</h4>
-    <p>What can you do wrong with a €7 smart light? Not much. These lights are very good as a basic lights for rooms that do not need more than dimming. I did have some problems with some of these, like flickering when they were off or not wanting to connect to my hub.</p>
+    <p>What can you do wrong with a €7 smart light? Not much. These lights are very good as a basic lights for rooms that do not need more than dimming. I did have some problems with some of these though, like flickering when they were off or not wanting to connect to my hub.</p>
     <p>The Tradfri hub is not required as it connects to my <a href="https://amzn.to/2Tov8cQ" rel="nofollow">ConBee</a>. An alternative is to run <a href="https://github.com/Koenkk/zigbee2mqtt">Zigbee2mqtt</a>.</p>
 
     <div class="review">
-      <p><b>Pros:</b> Cheapest Zigbee light available. Decent light quality. Good value for your money.</p>
+      <p><b>Pros:</b> Great entry-level light. One of the cheapest Zigbee lights available. Decent light quality. Good value for your money.</p>
       <p><b>Cons:</b> Dimming capabilities are moderate, 1% brightness of this light is 10% of a comparable Hue light. Had some problems with faulty bulbs.</p>
     </div>
   </div>
@@ -198,7 +200,7 @@ Lights are the main 'output' of my smart home and are controlled by various inpu
   <div class="hw-image"><img style="padding: 20px;" src="/assets/images/ha/hardware/ikea_gu10.jpg"></div>
   <div class="hw-info">
     <h4>Ikea Tradfri GU10 dimmable led + color temp</h4>
-    <p>Double the price of the simple Tradfri light but it adds color temperature. The range of temperatures and the dimming capabilties are still not great, but its very good value for the price. If you're not to picky for light quality, these lights are a great starter-buy.</p>
+    <p>Double the price of the simple Tradfri light but includes adds color temperature. The range of temperatures and the dimming capabilties are still not great, but the lights have a very good value for the price. If you're not to picky for light quality, these lights are a great starter-buy.</p>
     <p>The Tradfri hub is not required as it connects to my <a href="https://amzn.to/2Tov8cQ" rel="nofollow">ConBee</a>. An alternative is to run <a href="https://github.com/Koenkk/zigbee2mqtt">Zigbee2mqtt</a>.</p>
 
     <div class="review">
@@ -221,7 +223,7 @@ Lights are the main 'output' of my smart home and are controlled by various inpu
   <div class="hw-image"><img src="/assets/images/ha/hardware/hue_dimmer.jpg"></div>
   <div class="hw-info">
     <h4>Philips Hue Smart Dimmer Switch</h4>
-    <p>A four-button wireles switch that is often present in the starter packs of Philips Hue. Its inteneded use is to dim lights, however I use it as a remote for my Sonos-powered music system. Using Deconz and Node-RED I mapped the single buttons to music functions: shuffle, volume and skipping songs.</p>
+    <p>A four-button wireles switch that is often present in the starter packs of Philips Hue. Its intended use is to dim lights, however I use it as a remote for my Sonos-powered music system. Using Deconz and Node-RED I mapped the single buttons to music functions: shuffle, volume and skipping songs.</p>
 
     <div class="review">
       <p><b>Pros:</b> Four buttons, wall mount using magnets.</p>
@@ -264,7 +266,7 @@ Lights are the main 'output' of my smart home and are controlled by various inpu
   <div class="hw-image"><img src="/assets/images/ha/hardware/WXKG01LM.jpg"></div>
   <div class="hw-info">
     <h4>Xiaomi Aqara wireless switch (WXKG01LM)</h4>
-    <p>Comparable to the other switch (see above) but this one has a bit larger touch area. I use one in my kitchen as I can activate this switch with my elbows which is usefull during cooking. Its a bit more espensive though, usually around €9.</p>
+    <p>Comparable to the other switch (see above), but this one has a bit larger touch area. I use one in my kitchen as I can activate this switch with my elbows which is usefull during cooking. Its a bit more espensive though, usually around €9.</p>
     <p>The Xiaomi hub is not required as it connects to my <a href="https://amzn.to/2Tov8cQ" rel="nofollow">ConBee</a>. An alternative is to run <a href="https://github.com/Koenkk/zigbee2mqtt">Zigbee2mqtt</a>.</p>
 
     <div class="review">
@@ -316,7 +318,7 @@ A tablet-powerd dashboard is a great way of interacting with your house. I use i
 <a name="plugs"></a>
 ## Plugs
 
-Smart plugs are an easy way to make dumb devices a bit smarter. For example: I use one to controll the charger of my wall tablet and a second one to control my (non smart) TV.
+Smart plugs are an easy way to make dumb devices a bit smarter. For example: I use one to control the charger of my wall tablet and a second one to control my (non-smart) TV.
 
 <div class="hw-row">
   <div class="hw-image"><img src="/assets/images/ha/hardware/osram_plug.jpg"></div>
@@ -342,7 +344,7 @@ Smart plugs are an easy way to make dumb devices a bit smarter. For example: I u
 <a name="controllers"></a>
 ## The Brains
 
-Currently, Home Assistant, App Daemon and Node-RED are all running on a Raspberry Pi. Two other Pi's, one for Deconz and one for PiHole, complete the set. While I could have ran all these services on a single device (like a NUC), I wanted to start small with a single Pi and have extended it since then.
+Currently, Home Assistant, App Daemon and Node-RED are all running on a Raspberry Pi. Two other Pi's, one for Deconz and one for PiHole, complete the set. While I could have ran all these services on a single device (like a NUC), I wanted to start small with a single Pi, and I have extended it since then.
 
 <div class="hw-row">
   <div class="hw-image"><img src="/assets/images/ha/hardware/raspberrypi.jpg"></div>
