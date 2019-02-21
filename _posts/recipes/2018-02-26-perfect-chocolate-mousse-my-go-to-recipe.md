@@ -24,9 +24,63 @@ With the egg yolks we create a [crème anglaise](https://en.wikipedia.org/wiki/C
 
 The recipe below is my take on chocolate mousse. Some parts are still in development, especially the choice of chocolate and sugar ratio, so feel free to comment!
 
-First I will address two important parts of the mousse: the type of chocolate and the amount of sugar. Interested in the recipe only? [Skip to the recipe](#recipe).
+## (Dark) chocolate mousse recipe
 
-### Selecting the right chocolate / fluidity of chocolate
+Recipe for a versatile and rich dark chocolate mousse. The mousse can be used as a basis for an entremet (a mousse cake), poured into silicon molds and frozen, or enjoyed on its own.
+
+### Ingredients
+
+- 400g + 50g cream, 35% fat, unsweetened
+- 50g whole milk
+- 50g egg yolks
+- 15-70g sugar (depending on the chocolate, see <a href="#sugar">note</a>). 30 grams if using standard dark chocolate.
+- 250g dark chocolate (see <a href="#selecting-chocolate">Selecting the right chocolate</a>)
+{: .ingredient-list}
+
+The recipe can easily be doubled if needed.
+
+**Note:** First time making a crème anglaise? It is usually easier to make a larger batch as this overcooks not as quickly as a small amount.  Double the ingredients for the crème and halve after completing the crème anglaise.
+
+### Required materials
+
+- Handmixer (or any mixer to make whipped cream)
+- Bowls
+- Saucepan
+- Whisk
+- Piping bag (optional)
+- Molds, glasses, ramekins (anything to serve the mousse in)
+{: .material-list}
+
+### Steps
+
+#### 1. Prepare cream
+
+Gently semi-whip 400g of the cream until you get soft peaks. Reserve in the fridge.
+
+#### 2. Making a crème anglaise
+
+Combine egg yolks and sugar in a large bowl. The bowl should be big enough to contain both the eggs and the liquids (milk and cream).
+
+Combine the milk and rest of the cream in a saucepan. Bring to a low boil. If you have a thermometer: a temperature of around 70&deg;C is enough. Temper the eggs by slowing pouring the heated cream mixture in to the egg yolks.
+
+Make a *crème anglaise*: Return egg/cream mixture to the saucepan and heat until the mixture reaches 82&deg;C. Make sure to whisk continuously to prevent an uneven heating and to incorporate air bubbles. The mixture will become thick but make sure not to overcook it (as it will result in scrambled egg).
+
+You can test whether the crème anglaise is ready without a thermometer: after heating, the mixture should coat the back of a spoon and not spread out when you make a line with your fingers.
+
+#### 3. Bring in the chocolate
+
+Melt the chocolate in the microwave or using a double boiler. Combine crème anglaise with the chocolate. Make sure to mix it well but avoid creating (large) air bubbles. You can use a stick blender or do this by hand.
+
+#### 4. Combining
+
+When the chocolate crème anglaise is around 38 degrees you can start adding the whipped cream. Work in batches and only add the new cream when the last batch is fully incorporated. If you add the cream when the chocolate is still to warm the mousse will collapse.
+
+#### 5. Serve
+
+The mousse is now ready to be cast and cooled. For easy of use, transfer the mousse to a piping bag. Directly pour the mousse into molds, ramekins or glasses. Do not let the mousse cool inside the piping bag. Freeze the molds, or let the mousse cool in the fridge.
+
+<a name="selecting-chocolate"></a>
+## Selecting the right chocolate / fluidity of chocolate
 
 The choice of chocolate is a very important part of any chocolate mousse recipe. Many will know that the amount of cocoa will say something about how bitter or sweet your chocolate and the resulting mousse is. There is, however, another aspect that we need to consider. Besides cocoa, the amount of cocoa butter directly influences the texture of the mousse:
 
@@ -48,7 +102,8 @@ No professional chocolate available? You can use store-bought general brands but
 
 <img style="width: 300px" src="/assets/images/recipes/Tanzanie_en.png" alt="The type of chocolate directly influences the end result. For the best result, try to find some professional chocolate 'callets' (or drops), these are easy to use and will result in a better mousse.">
 
-### Sugar
+<a name="sugar"></a>
+## Selecting the right amount of sugar
 
 The amount of sugar that this recipe requires is dependent on the type of chocolate and your personal taste. Personally, I prefer a dark chocolate mousse that is not to sweet and tend to pair this with a sweeter garnish instead (like caramelized pears). This contrast between a slightly bitter mousse and a nice pairing can really improve a dish. A more bitter mousse also pairs perfectly with another more sweeter mousse (a fruit mousse for example).
 
@@ -92,65 +147,7 @@ The combinations I've tested so far:
 
 <img src="/assets/images/recipes/three-chocolate-verrines.jpg" alt="The chocolate mousse in this recipe formed the base of these chocolate verrines. The dark chocolate mousse was paired with a milk and a caramel mousse." style="width: 600px;">
 
-
-<a name="recipe"></a>
-
-# (Dark) chocolate mousse recipe
-
-Recipe for a versatile and rich dark chocolate mousse. The mousse can be used as a basis for an entremet (a mousse cake), poured into silicon molds and frozen, or enjoyed on its own.
-
-## Ingredients
-
-- 400g + 50g cream, 35% fat, unsweetened
-- 50g whole milk
-- 50g egg yolks
-- 15-70g sugar (depending on the chocolate, see note above). 30 grams if using standard dark chocolate.
-- 250g dark chocolate
-{: .ingredient-list}
-
-The recipe can easily be doubled if needed.
-
-**Note:** First time making a crème anglaise? It is usually easier to make a larger batch as this overcooks not as quickly as a small amount.  Double the ingredients for the crème and halve after completing the crème anglaise.
-
-## Required materials
-
-- Handmixer (or any mixer to make whipped cream)
-- Bowls
-- Saucepan
-- Whisk
-- Piping bag (optional)
-- Molds, glasses, ramekins (anything to serve the mousse in)
-{: .material-list}
-
-## Steps
-
-### 1. Prepare cream
-
-Gently semi-whip 400g of the cream until you get soft peaks. Reserve in the fridge.
-
-### 2. Making a crème anglaise
-
-Combine egg yolks and sugar in a large bowl. The bowl should be big enough to contain both the eggs and the liquids (milk and cream).
-
-Combine the milk and rest of the cream in a saucepan. Bring to a low boil. If you have a thermometer: a temperature of around 70&deg;C is enough. Temper the eggs by slowing pouring the heated cream mixture in to the egg yolks.
-
-Make a *crème anglaise*: Return egg/cream mixture to the saucepan and heat until the mixture reaches 82&deg;C. Make sure to whisk continuously to prevent an uneven heating and to incorporate air bubbles. The mixture will become thick but make sure not to overcook it (as it will result in scrambled egg).
-
-You can test whether the crème anglaise is ready without a thermometer: after heating, the mixture should coat the back of a spoon and not spread out when you make a line with your fingers.
-
-### 3. Bring in the chocolate
-
-Melt the chocolate in the microwave or using a double boiler. Combine crème anglaise with the chocolate. Make sure to mix it well but avoid creating (large) air bubbles. You can use a stick blender or do this by hand.
-
-### 4. Combining
-
-When the chocolate crème anglaise is around 38 degrees you can start adding the whipped cream. Work in batches and only add the new cream when the last batch is fully incorporated. If you add the cream when the chocolate is still to warm the mousse will collapse.
-
-### 5. Serve
-
-The mousse is now ready to be cast and cooled. For easy of use, transfer the mousse to a piping bag. Directly pour the mousse into molds, ramekins or glasses. Do not let the mousse cool inside the piping bag. Freeze the molds, or let the mousse cool in the fridge.
-
-# Pairing ideas
+## Pairing ideas
 
 This mousse recipe can be used for many purposes. In the example below I transferred the mousse to a silicon mold and let them freeze overnight. As a standalone dish I usually pair it with caramelized pears and some white chocolate mousse.
 
