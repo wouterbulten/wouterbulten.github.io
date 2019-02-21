@@ -14,6 +14,8 @@ post_image_small: /assets/images/food/2018-02-26-perfect-chocolate-mousse-my-go-
 published: true
 ---
 
+<a href="#recipe" class="btn btn-info">Skip to recipe</a>
+
 A few years ago I discovered the [fastest option](/blog/cooking/the-quest-for-a-perfect-mousse-part-1/) to make chocolate mousse (or at least one that is very easy and takes almost no effort). That recipe uses a siphon for almost instant results.  Although it is still the fastest option, I tend to use it less and less as it lacked the richness of a *decadent* chocolate mousse. Recently I found and adapted a new recipe that's becoming my go-to recipe for chocolate mousse. It is versatile, still easy to make, and very rich.
 
 This recipe is based on one I found on the [Callebaut](https://www.callebaut.com/en-US/chocolate-video/technique/mousse/creme-anglaise) website. Some of the steps and ingredients have changed after testing. For one, I prefer a less sweet mousse that captures the flavour of a dark chocolate. This recipe reflects that by adding less sugar than more traditional recipes.
