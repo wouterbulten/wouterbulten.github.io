@@ -26,6 +26,7 @@ With the egg yolks we create a [crème anglaise](https://en.wikipedia.org/wiki/C
 
 The recipe below is my take on chocolate mousse. Some parts are still in development, especially the choice of chocolate and sugar ratio, so feel free to comment!
 
+<a name="recipe"></a>
 ## (Dark) chocolate mousse recipe
 
 Recipe for a versatile and rich dark chocolate mousse. The mousse can be used as a basis for an entremet (a mousse cake), poured into silicon molds and frozen, or enjoyed on its own.
