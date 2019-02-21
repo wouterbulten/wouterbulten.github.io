@@ -82,6 +82,14 @@ When the chocolate crème anglaise is around 38 degrees you can start adding the
 
 The mousse is now ready to be cast and cooled. For easy of use, transfer the mousse to a piping bag. Directly pour the mousse into molds, ramekins or glasses. Do not let the mousse cool inside the piping bag. Freeze the molds, or let the mousse cool in the fridge.
 
+## Pairing ideas
+
+This mousse recipe can be used for many purposes. In the example below I transferred the mousse to a silicon mold and let them freeze overnight. As a standalone dish I usually pair it with caramelized pears and some white chocolate mousse.
+
+<img src="/assets/images/recipes/chocolate-mouse-pairing.jpg" alt="Serving suggestion :)" style="width: 600px;">
+
+<hr>
+
 <a name="selecting-chocolate"></a>
 ## Selecting the right chocolate / fluidity of chocolate
 
@@ -104,6 +112,8 @@ It is possible to deviate from this system. I, for example, sometimes mix chocol
 No professional chocolate available? You can use store-bought general brands but keep in mind that the end product can differ slightly due to changes in cocoa butter content.
 
 <img style="width: 300px" src="/assets/images/recipes/Tanzanie_en.png" alt="The type of chocolate directly influences the end result. For the best result, try to find some professional chocolate 'callets' (or drops), these are easy to use and will result in a better mousse.">
+
+<hr>
 
 <a name="sugar"></a>
 ## Selecting the right amount of sugar
@@ -149,9 +159,3 @@ The combinations I've tested so far:
 </table>
 
 <img src="/assets/images/recipes/three-chocolate-verrines.jpg" alt="The chocolate mousse in this recipe formed the base of these chocolate verrines. The dark chocolate mousse was paired with a milk and a caramel mousse." style="width: 600px;">
-
-## Pairing ideas
-
-This mousse recipe can be used for many purposes. In the example below I transferred the mousse to a silicon mold and let them freeze overnight. As a standalone dish I usually pair it with caramelized pears and some white chocolate mousse.
-
-<img src="/assets/images/recipes/chocolate-mouse-pairing.jpg" alt="Serving suggestion :)" style="width: 600px;">
