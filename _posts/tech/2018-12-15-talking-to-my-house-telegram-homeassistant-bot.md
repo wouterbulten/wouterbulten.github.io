@@ -2,6 +2,7 @@
 layout: post
 title:  "Talking to my house: Building a chat bot with Home Assistant, AppDaemon and Telegram"
 date:   2018-12-15 13:00
+modified_at: 2019-04-22 16:30
 categories: blog tech
 tags: [home automation, home assistant, telegram, bots, appdaemon]
 #published: true
@@ -217,6 +218,9 @@ class TelegramBot(hass.Hass):
     def initialize(self):
         # Start listening for Telegram updates
         self.listen_event(self.receive_telegram_text, 'telegram_text')
+        
+        self.time_between_conversations = 60 * 60
+        self.last_conversation = {}
 
     def receive_telegram_text(self, event_id, payload_event, *args):
       # Do something with the text
