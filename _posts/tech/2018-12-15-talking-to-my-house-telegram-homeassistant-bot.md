@@ -210,7 +210,8 @@ This tutorial gave a quick overview of making a Telegram bot, connecting it to H
 ## Full code (for reference)
 
 ```python
-
+import time 
+import random
 import appdaemon.plugins.hass.hassapi as hass
 
 class TelegramBot(hass.Hass):
