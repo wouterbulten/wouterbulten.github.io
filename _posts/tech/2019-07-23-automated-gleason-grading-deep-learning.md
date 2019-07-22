@@ -5,7 +5,7 @@ date:   2019-07-22 12:17
 categories: blog tech
 tags: [deep learning, prostate cancer, Gleason grading]
 published: true
-description: "We developed a fully automated deep learning system to grade prostate biopsies using 5834 biopsies from 1243 patients. A semi-automatic labeling technique was used to circumvent the need for full manual annotation by pathologists. The developed system achieved a high agreement with the reference standard. In a separate observer experiment, the deep learning system outperformed 10 out of 15 pathologists."
+description: "We developed a fully automated deep learning system to grade prostate biopsies using 5834 biopsies from 1243 patients, and showed that this system achieved pathologist-level performance."
 include_ha_series: false
 ---
 
@@ -43,8 +43,28 @@ We developed a novel approach to circumvent the need of manual annotations. Firs
 
 <img src="/assets/images/gleason-grading/gleason_grading_method_1.png" style="max-width: 100%;" alt="First part of our semi-automatic labeling method.">
 
+## Network training
+
 The trained network from step 5 (above) could then be used to annotate our complete dataset. This trained network was not perfect in assigning Gleason scores as it was only trained on a subset of our dataset. To annotate the full training set, we applied the network to all cases of our set. We then used the original pathologist's report to fix any major mistakes. For example, a predicted Gleason 5 region in a biopsy with Gleason score 3+3 would be removed. Tissue that originated from benign biopsies, and was detected as malignant, was classified as "hard negative".
 
 With our full training set annotated, we could train the final deep learning system. The whole procedure required minimal human effort. Moreover, no pathologists were required to annotate the data. We were able to utilize expert knowledge extracted from the pathologist's reports. All training and network details can be found in the [paper on arXiv](https://arxiv.org/abs/1907.07980).
 
 <img src="/assets/images/gleason-grading/gleason_grading_method_2.png" style="max-width: 100%" alt="Second part of our semi-automatic labeling method and application of the system to the test set.">
+
+After the final network was trained, we were able to assign grade groups to biopsies automatically. Our system was trained as a segmentation network and outputted precise outlines of the tumor. Because of this segmentation, we can use a simple method to assign grade groups. Similar to clinical practice, we compute the volumes of each growth pattern. These volumes are then used to determine the primary and secondary Gleason grade, and finally, the grade group.
+
+## Overview of main results
+
+We compared our deep learning system on a test set of 550 biopsies. These biopsies were graded by three experts, and their consensus is used as the reference standard. The deep learning system achieved a high agreement with a quadratic Cohen's kappa of 0.918.
+
+Furthermore, from the test set, we selected 100 cases to be graded by an external panel. This panel consisted of 15 external raters (13 pathologists and 2 pathologists-in-training) from 10 different countries. In agreement with the reference standard (quadratic Cohen's kappa) the deep learning system outperforms 10 out of 15 pathologists.
+
+![Comparison of the deep learning system with a panel of pathologists.](/assets/images/gleason-grading/gleason_grading_result.png)
+
+We also evaluated our deep learning system on grouping patients in prognostically relevant groups. Please see the full paper for further results and more detail.
+
+## Future challenges
+
+There are still challenges to overcome before a system such as ours can be used in clinical practice. First of all, our system was developed and evaluated using data from a single center. Including data from different centers, with different stain protocols and scanners could increase the generalization ability of the system. Second, while the performance is high, it is not perfect, and the accuracy of the system could be improved. Though, at some point, it is difficult to say what is better given the high inter- and intra-rater agreement within prostate cancer grading.
+
+Given our results, we conclude that there is clear use for automated systems for Gleason grading. Such systems can give feedback to a pathologist at expert levels, both in a first or second reader setting. AI systems and pathologists excel at different things, and, we firmly believe that a union of both has the most potential for the individual prostate cancer patient.
