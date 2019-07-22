@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "My Home Assistant Smart Home setup with hardware list"
-date:   2019-07-22 13:17
+title:  "Pathologist-level Gleason grading using Deep Learning"
+date:   2019-07-22 12:17
 categories: blog tech
 tags: [deep learning, prostate cancer, Gleason grading]
 published: true
