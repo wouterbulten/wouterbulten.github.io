@@ -41,10 +41,10 @@ We developed a novel approach to circumvent the need of manual annotations. Firs
 4. All detected and filtered tumor cells were assigned with the Gleason grade of the biopsy.
 5. We trained an initial network on the automatically annotated data. After training, this segmentation network was able to assign Gleason growth patterns to individual cells.
 
-<img src="/assets/images/gleason-grading/gleason_grading_method_1.png" style="max-width: 100%;">
+<img src="/assets/images/gleason-grading/gleason_grading_method_1.png" style="max-width: 100%;" alt="First part of our semi-automatic labeling method.">
 
 The trained network from step 5 (above) could then be used to annotate our complete dataset. This trained network was not perfect in assigning Gleason scores as it was only trained on a subset of our dataset. To annotate the full training set, we applied the network to all cases of our set. We then used the original pathologist's report to fix any major mistakes. For example, a predicted Gleason 5 region in a biopsy with Gleason score 3+3 would be removed. Tissue that originated from benign biopsies, and was detected as malignant, was classified as "hard negative".
 
 With our full training set annotated, we could train the final deep learning system. The whole procedure required minimal human effort. Moreover, no pathologists were required to annotate the data. We were able to utilize expert knowledge extracted from the pathologist's reports. All training and network details can be found in the [paper on arXiv](https://arxiv.org/abs/1907.07980).
 
-<img src="/assets/images/gleason-grading/gleason_grading_method_2.png" style="max-width: 100%">
+<img src="/assets/images/gleason-grading/gleason_grading_method_2.png" style="max-width: 100%" alt="Second part of our semi-automatic labeling method and application of the system to the test set.">
