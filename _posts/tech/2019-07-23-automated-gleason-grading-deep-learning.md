@@ -24,6 +24,7 @@ image: /assets/images/gleason-grading/gleason_grading_social_image.png
 6. [More info](#more-info)
 
 <a name="introduction"></a>
+
 ## Introduction
 
 Prostate cancer is one of the most common forms of cancer, with more than 1.2 million new cases each year. The diagnosis of prostate cancer is complicated by multiple factors. Patients with low-grade prostate cancer are often better off with a wait-and-see approach than with active treatment due to the side effects of, for example, surgery. High-grade cancers, however, need to be diagnosed as soon as possible not to delay treatment and to increase patient survival. Unfortunately, diagnosis and grading of prostate cancer is a difficult task which suffers from inter- and Intra-observer variability. While experts have shown better results, such expertise is not available for every patient. In other words, there is a need for robust and reproducible grading at expert levels. We have developed an artificially intelligent system, using deep learning, that can perform the grading of prostate cancer at a pathologist-level performance.
@@ -85,14 +86,15 @@ There are still challenges to overcome before a system such as ours can be used 
 Given our results, we conclude that there is clear use for automated systems for Gleason grading. Such systems can give feedback to a pathologist at expert levels, both in a first or second reader setting. AI systems and pathologists excel at different things, and, we firmly believe that a union of both has the most potential for the individual prostate cancer patient.
 
 <a name="more-info"></a>
-
-## Acknowledgements
-
-This work was financed by a grant from the Dutch Cancer Society (KWF). We would also like to thank all pathologists that contributed to the observer experiment.
-
 ## More info
 
+<a href="https://arxiv.org/abs/1907.07980" class="btn btn-primary">Read full paper on arXiv</a>
+
 - More details can be found in the [full manuscript](https://arxiv.org/abs/1907.07980) and [supplementary material](https://arxiv.org/src/1907.07980v1/anc/Supplementary_Information.pdf).
-- [Paper on tumor detection](https://www.nature.com/articles/srep26286)
-- [Paper on epithelium segmentation](https://www.nature.com/articles/s41598-018-37257-4)
+- A description of the tumor detection algorithm can be found in the [paper on tumor detection](https://www.nature.com/articles/srep26286).
+- The epithelium segmentation system is described in a separate [paper](https://www.nature.com/articles/s41598-018-37257-4), the dataset is public and can be found [online through Zenodo](https://zenodo.org/record/1485967).
 - This research was performed as part of the [Computational Pathology Group](https://www.computationalpathologygroup.eu/) and the [Diagnostic Image Analysis Group](https://www.diagnijmgen.nl) of [Radboud University Medical Center](https://www.radboudumc.nl).
+
+### Acknowledgements
+
+This work was financed by a grant from the Dutch Cancer Society (KWF). We would also like to thank all pathologists that contributed to the observer experiment.
