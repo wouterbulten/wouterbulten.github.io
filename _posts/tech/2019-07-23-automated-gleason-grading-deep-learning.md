@@ -40,7 +40,8 @@ In this blog post, we describe our approach, show how we tackled the problem of 
 
 Treatment planning for prostate cancer patients is based mainly on the Gleason score of a biopsy. After the biopsy procedure, a pathologist examines the tissue through a microscope. Through the microscopic analysis, the pathologist needs to distinguish between benign and malignant tissue. Any malignant tissue is then classified according to the architectural pattern of the tumor. This classification system is formally described in the Gleason grading system.
 
-![The Gleason scoring system.<br><small>Source: https://commons.wikimedia.org/wiki/File:Gleasonscore.jpg</small>](/assets/images/deep-learning/gleasonscore.jpg)
+![The Gleason scoring system.](/assets/images/deep-learning/gleasonscore.jpg)
+<small>Image source: https://commons.wikimedia.org/wiki/File:Gleasonscore.jpg</small>
 
 In the Gleason grading system, a tumor region is assigned a number between 1 (low-risk) and 5 (high risk), though patterns 1 and 2 are not reported anymore for biopsies. For prostate biopsies, the most common pattern and the second-highest pattern together form the Gleason score, e.g., 3+5=8. To make reporting of prostate cancer more apparent for patients, Gleason scores are mapped to five prognostically different grade groups; with group 1 being the lowest risk, and 5 the highest.
 
