@@ -7,3 +7,4 @@ _scripts/.tmp-images
 Gemfile.lock
 
 .vscode/settings.json
+.jekyll-metadata

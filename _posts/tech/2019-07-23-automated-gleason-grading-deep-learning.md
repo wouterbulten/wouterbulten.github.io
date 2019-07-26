@@ -14,6 +14,10 @@ image: /assets/images/gleason-grading/gleason_grading_social_image.png
 
 <img src="/assets/images/gleason-grading/gleason_grading_header_image.png" style="max-width: 100%;">
 
+**Authors:** Wouter Bulten, Hans Pinckaers, Hester van Boven, Robert Vink, Thomas de Bel, Bram van Ginneken, Jeroen van der Laak, Christina Hulsbergen-van de Kaa, Geert Litjens
+
+**Article URL:** (https://arxiv.org/abs/1907.07980)[https://arxiv.org/abs/1907.07980]
+
 **Table of contents**
 
 1. [Introduction](#introduction)
