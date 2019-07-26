@@ -16,7 +16,7 @@ image: /assets/images/gleason-grading/gleason_grading_social_image.png
 
 **Authors:** Wouter Bulten, Hans Pinckaers, Hester van Boven, Robert Vink, Thomas de Bel, Bram van Ginneken, Jeroen van der Laak, Christina Hulsbergen-van de Kaa, Geert Litjens
 
-**Article URL:** (https://arxiv.org/abs/1907.07980)[https://arxiv.org/abs/1907.07980]
+**Article URL:** [https://arxiv.org/abs/1907.07980](https://arxiv.org/abs/1907.07980)
 
 **Table of contents**
 
@@ -32,7 +32,7 @@ image: /assets/images/gleason-grading/gleason_grading_social_image.png
 
 ## Introduction
 
-Prostate cancer is one of the most common forms of cancer, with more than 1.2 million new cases each year. The diagnosis of prostate cancer is complicated by multiple factors. Patients with low-grade prostate cancer are often better off with a wait-and-see approach than with active treatment due to the side effects of, for example, surgery. High-grade cancers, however, need to be diagnosed as soon as possible not to delay treatment and to increase patient survival. Unfortunately, diagnosis and grading of prostate cancer is a difficult task which suffers from inter- and Intra-observer variability. While export uropathologists have shown better concordance rates, such expertise is not available for every patient. In other words, there is a need for robust and reproducible grading at expert levels. We have developed an artificially intelligent system, using deep learning, that can perform the grading of prostate cancer at a pathologist-level performance.
+Prostate cancer is one of the most common forms of cancer, with more than 1.2 million new cases each year. The diagnosis of prostate cancer is complicated by multiple factors. Patients with low-grade prostate cancer are often better off with a wait-and-see approach than with active treatment due to the side effects of, for example, surgery. High-grade cancers, however, need to be diagnosed as soon as possible not to delay treatment and to increase patient survival. Unfortunately, diagnosis and grading of prostate cancer is a difficult task which suffers from inter- and Intra-observer variability. While export uropathologists have shown better concordance rates, such expertise is not available for every patient. In other words, there is a need for robust and reproducible grading at expert levels. **We have developed an artificially intelligent system, using deep learning, that can perform the grading of prostate cancer at a pathologist-level performance.**
 
 In this blog post, we describe our approach, show how we tackled the problem of data labeling and, finally, show that our deep learning system operates at a pathologist-level performance. The associated manuscript can be found on [arXiv](https://arxiv.org/abs/1907.07980).
 
@@ -67,7 +67,7 @@ We developed a novel approach to circumvent the need of manual annotations. Firs
 
 The trained network from step 5 (above) could then be used to annotate our complete dataset. This trained network was not perfect in assigning Gleason scores as it was only trained on a subset of our dataset. To annotate the full training set, we applied the network to all cases of our set. We then used the original pathologist's report to fix any major mistakes. For example, a predicted Gleason 5 region in a biopsy with Gleason score 3+3 would be removed. Tissue that originated from benign biopsies, and was detected as malignant, was classified as "hard negative."
 
-With our full training set annotated, we could train the final deep learning system. The whole procedure required minimal human effort. Moreover, no pathologists were required to annotate the data; instead, we were able to utilize expert knowledge extracted from the pathologist's reports. All training and network details can be found in the [paper on arXiv](https://arxiv.org/abs/1907.07980).
+With our full training set annotated, we could train the final deep learning system. The whole procedure required minimal human effort. Moreover, **no pathologists were required to annotate the data; instead, we were able to utilize expert knowledge extracted from the pathologist's reports.** All training and network details can be found in the [paper on arXiv](https://arxiv.org/abs/1907.07980).
 
 <img src="/assets/images/gleason-grading/gleason_grading_method_2.png" style="max-width: 100%" alt="Second part of our semi-automatic labeling method and application of the system to the test set.">
 
@@ -91,7 +91,7 @@ We also evaluated our deep learning system on grouping patients in prognosticall
 
 There are still challenges to overcome before a system such as ours can be used in clinical practice. First of all, our system was developed and evaluated using data from a single center. Including data from different centers, with different stain protocols and scanners could increase the generalization ability of the system. Second, while the performance is high, it is not perfect, and the accuracy of the system could be improved. Though, at some point, it is difficult to say what is better given the high inter- and intra-rater agreement within prostate cancer grading.
 
-Given our results, we conclude that there is clear use for automated systems for Gleason grading. Such systems can give feedback to a pathologist at expert levels, both in a first or second reader setting. AI systems and pathologists excel at different things, and, we firmly believe that a union of both has the most potential for the individual prostate cancer patient.
+Given our results, we conclude that there is clear use for automated systems for Gleason grading. Such systems can give feedback to a pathologist at expert levels, both in a first or second reader setting. **AI systems and pathologists excel at different things, and, we firmly believe that a union of both has the most potential for the individual prostate cancer patient.**
 
 <a name="more-info"></a>
 ## More info
