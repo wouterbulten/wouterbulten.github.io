@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Pathologist-level Gleason grading using Deep Learning"
+title:  "Pathologist-level Gleason grading using deep learning"
 date:   2019-07-22 12:17
 categories: blog tech
 tags: [deep learning, prostate cancer, Gleason grading]
@@ -22,6 +22,7 @@ image: /assets/images/gleason-grading/gleason_grading_social_image.png
 4. [Results](#results)
 5. [Future challenges](#future)
 6. [More info](#more-info)
+7. [Acknowledgements](#acknowledgements)
 
 <a name="introduction"></a>
 
@@ -35,7 +36,7 @@ In this blog post we describe our approach, show how we tackled the problem of d
 
 Treatment planning for prostate cancer patients is based mainly on the Gleason score of a biopsy. After the biopsy procedure, a pathologist examines the tissue through a microscope. Through the microscopic analysis, the pathologist needs to distinguish between benign and malignant tissue. Any malignant tissue is then classified according to the architectural pattern of the tumor. This classification system is formally described in the Gleason grading system.
 
-![The Gleason scoring system](/assets/images/deep-learning/gleasonscore.jpg)
+![The Gleason scoring system.<br><small>Source: https://commons.wikimedia.org/wiki/File:Gleasonscore.jpg</small>](/assets/images/deep-learning/gleasonscore.jpg)
 
 In the Gleason grading system, a tumor region is assigned a number between 1 (low-risk) and 5 (high risk), though patterns 1 and 2 are not reported anymore for biopsies. For prostate biopsies, the most common pattern and the second-highest pattern together form the Gleason score, e.g., 3+5=8. To make reporting of prostate cancer more apparent for patients, Gleason scores are mapped to five prognostically different grade groups; with group 1 being the lowest risk, and 5 the highest.
 
@@ -74,9 +75,11 @@ We compared our deep learning system on a test set of 550 biopsies. These biopsi
 
 Furthermore, from the test set, we selected 100 cases to be graded by an external panel. This panel consisted of 15 external raters (13 pathologists and 2 pathologists-in-training) from 10 different countries. In agreement with the reference standard (quadratic Cohen's kappa) the deep learning system outperforms 10 out of 15 pathologists.
 
-![Comparison of the deep learning system with a panel of pathologists.](/assets/images/gleason-grading/gleason_grading_result.png)
+<img src="/assets/images/gleason-grading/gleason_grading_result.png" alt="Comparison of the deep learning system with a panel of pathologists on agreement with the reference standard." style="max-width: 100%;">
 
-We also evaluated our deep learning system on grouping patients in prognostically relevant groups. Please see the full paper for further results and more detail.
+We also evaluated our deep learning system on grouping patients in prognostically relevant groups: (1) benign versus malignant biopsies; and (2) using grade group 2 as cut-off. The deep learning system achieves a pathologist-level performance on both groups. Please see the full paper for further results and more detail.
+
+<img src="/assets/images/gleason-grading/roc_100set_system_vs_pathologists.png" alt="Comparison of the deep learning system with a panel of pathologists on two relevant patient risk groups." style="max-width: 100%;">
 
 <a name="future"></a>
 ## Future challenges
@@ -95,6 +98,36 @@ Given our results, we conclude that there is clear use for automated systems for
 - The epithelium segmentation system is described in a separate [paper](https://www.nature.com/articles/s41598-018-37257-4), the dataset is public and can be found [online through Zenodo](https://zenodo.org/record/1485967).
 - This research was performed as part of the [Computational Pathology Group](https://www.computationalpathologygroup.eu/) and the [Diagnostic Image Analysis Group](https://www.diagnijmgen.nl) of [Radboud University Medical Center](https://www.radboudumc.nl).
 
-### Acknowledgements
+You can use the following reference if you want to cite the paper:
+
+> Bulten, Wouter; Pinckaers, Hans; van Boven, Hester; Vink, Robert; de Bel, Thomas; van Ginneken, Bram; van der Laak, Jeroen; Hulsbergen-van de Kaa, Christina; Litjens, Geert "Automated Gleason Grading of Prostate Biopsies using Deep Learning." arXiv preprint arXiv:1907.07980 (2019).
+
+Or, if you prefer BibTeX:
+
+```tex
+{% raw %}
+@article{Bulten2019Gleason,
+       author = {{Bulten}, Wouter and {Pinckaers}, Hans and {van Boven}, Hester and
+         {Vink}, Robert and {de Bel}, Thomas and {van Ginneken}, Bram and
+         {van der Laak}, Jeroen and {Hulsbergen-van de Kaa}, Christina and
+         {Litjens}, Geert},
+        title = "{Automated Gleason Grading of Prostate Biopsies using Deep Learning}",
+      journal = {arXiv e-prints},
+     keywords = {Electrical Engineering and Systems Science - Image and Video Processing, Computer Science - Computer Vision and Pattern Recognition},
+         year = "2019",
+        month = "Jul",
+          eid = {arXiv:1907.07980},
+        pages = {arXiv:1907.07980},
+archivePrefix = {arXiv},
+       eprint = {1907.07980},
+ primaryClass = {eess.IV},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2019arXiv190707980B},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+{% endraw %}
+```
+
+<a name="acknowledgements"></a>
+## Acknowledgements
 
 This work was financed by a grant from the Dutch Cancer Society (KWF). We would also like to thank all pathologists that contributed to the observer experiment.
