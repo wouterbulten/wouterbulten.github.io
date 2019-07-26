@@ -41,7 +41,7 @@
   <meta name="twitter:creator" content="@wouterbulten">
   <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
   <meta name="twitter:description" content="{{ page.description | strip_html | strip_newlines }}">
-  <meta name="twitter:image" content="{{ page.post_image | prepend: site.url }}">
+  <meta name="twitter:image" content="{% if page.image %}{{ page.image | prepend: site.url }}{% elsif page.post_image %}{{ page.post_image | prepend: site.url }}{%else %}{{ site.logo | prepend: site.url }}{% endif %}">
   {% endif %}
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
