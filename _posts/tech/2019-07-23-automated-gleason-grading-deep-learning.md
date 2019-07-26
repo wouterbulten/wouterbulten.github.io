@@ -7,7 +7,7 @@ tags: [deep learning, prostate cancer, Gleason grading]
 published: true
 description: "We developed a fully automated deep learning system to grade prostate biopsies using 5834 biopsies from 1243 patients, and showed that this system achieved pathologist-level performance."
 include_ha_series: false
-image: /assets/images/gleason-grading/gleason_grading_header_image.png
+image: /assets/images/gleason-grading/gleason_grading_social_image.png
 ---
 
 **100-word summary:** The Gleason score is the most important prognostic marker for prostate cancer patients but suffers from significant inter-observer variability. We developed a fully automated deep learning system to grade prostate biopsies. The system was developed using 5834 biopsies from 1243 patients. A semi-automatic labeling technique was used to circumvent the need for full manual annotation by pathologists. The developed system achieved a high agreement with the reference standard. In a separate observer experiment, the deep learning system outperformed 10 out of 15 pathologists. The system has the potential to improve prostate cancer prognostics by acting as a first or second reader.
@@ -85,6 +85,11 @@ There are still challenges to overcome before a system such as ours can be used 
 Given our results, we conclude that there is clear use for automated systems for Gleason grading. Such systems can give feedback to a pathologist at expert levels, both in a first or second reader setting. AI systems and pathologists excel at different things, and, we firmly believe that a union of both has the most potential for the individual prostate cancer patient.
 
 <a name="more-info"></a>
+
+## Acknowledgements
+
+This work was financed by a grant from the Dutch Cancer Society (KWF). We would also like to thank all pathologists that contributed to the observer experiment.
+
 ## More info
 
 - More details can be found in the [full manuscript](https://arxiv.org/abs/1907.07980) and [supplementary material](https://arxiv.org/src/1907.07980v1/anc/Supplementary_Information.pdf).
