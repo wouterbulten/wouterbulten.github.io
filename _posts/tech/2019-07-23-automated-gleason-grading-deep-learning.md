@@ -28,9 +28,9 @@ image: /assets/images/gleason-grading/gleason_grading_social_image.png
 
 ## Introduction
 
-Prostate cancer is one of the most common forms of cancer, with more than 1.2 million new cases each year. The diagnosis of prostate cancer is complicated by multiple factors. Patients with low-grade prostate cancer are often better off with a wait-and-see approach than with active treatment due to the side effects of, for example, surgery. High-grade cancers, however, need to be diagnosed as soon as possible not to delay treatment and to increase patient survival. Unfortunately, diagnosis and grading of prostate cancer is a difficult task which suffers from inter- and Intra-observer variability. While experts have shown better results, such expertise is not available for every patient. In other words, there is a need for robust and reproducible grading at expert levels. We have developed an artificially intelligent system, using deep learning, that can perform the grading of prostate cancer at a pathologist-level performance.
+Prostate cancer is one of the most common forms of cancer, with more than 1.2 million new cases each year. The diagnosis of prostate cancer is complicated by multiple factors. Patients with low-grade prostate cancer are often better off with a wait-and-see approach than with active treatment due to the side effects of, for example, surgery. High-grade cancers, however, need to be diagnosed as soon as possible not to delay treatment and to increase patient survival. Unfortunately, diagnosis and grading of prostate cancer is a difficult task which suffers from inter- and Intra-observer variability. While export uropathologists have shown better concordance rates, such expertise is not available for every patient. In other words, there is a need for robust and reproducible grading at expert levels. We have developed an artificially intelligent system, using deep learning, that can perform the grading of prostate cancer at a pathologist-level performance.
 
-In this blog post we describe our approach, show how we tackled the problem of data labeling and, finally, show that our deep learning system operates at pathologist-level performance. The associated manuscript can be found on [arXiv](https://arxiv.org/abs/1907.07980).
+In this blog post, we describe our approach, show how we tackled the problem of data labeling and, finally, show that our deep learning system operates at a pathologist-level performance. The associated manuscript can be found on [arXiv](https://arxiv.org/abs/1907.07980).
 
 ### Background on Gleason grading
 
@@ -49,9 +49,9 @@ In the case of Gleason grading, this problem is even more significant. High-grad
 
 We developed a novel approach to circumvent the need of manual annotations. First, we sampled cases from our dataset that contained only one Gleason grade (score 3+3, 4+4 or 5+5). Then we employed the following steps to label the data:
 
-1. For each case in our dataset, we used the original pathologist's report (from diagnostics) to determine the Gleason score of each biopsy.
+1. For each case in our dataset, we used the original pathologist's report (from diagnostics) to determine the Gleason score of a biopsy.
 2. A previously-trained tumor detection system was applied to all these biopsies. This procedure resulted in a rough outline of the tumor bulk. These tumor regions were still very coarse and needed further refinement. A description of this system can be found in the corresponding [paper](https://www.nature.com/articles/srep26286).
-3. The tumor masks were refined by filtering out all non-epithelial tissue. For this we used a deep learning system that was trained using immunohistochemistry to detect epithelial cells. More information about this system can be read in the [paper](https://www.nature.com/articles/s41598-018-37257-4).
+3. The tumor masks were refined by filtering out all non-epithelial tissue. For this, we used a deep learning system that was trained using immunohistochemistry to detect epithelial cells. More information about this system can be read in the [paper](https://www.nature.com/articles/s41598-018-37257-4).
 4. All detected and filtered tumor cells were assigned with the Gleason grade of the biopsy.
 5. We trained an initial network on the automatically annotated data. After training, this segmentation network was able to assign Gleason growth patterns to individual cells.
 
@@ -60,13 +60,13 @@ We developed a novel approach to circumvent the need of manual annotations. Firs
 <a name="training"></a>
 ## Network training
 
-The trained network from step 5 (above) could then be used to annotate our complete dataset. This trained network was not perfect in assigning Gleason scores as it was only trained on a subset of our dataset. To annotate the full training set, we applied the network to all cases of our set. We then used the original pathologist's report to fix any major mistakes. For example, a predicted Gleason 5 region in a biopsy with Gleason score 3+3 would be removed. Tissue that originated from benign biopsies, and was detected as malignant, was classified as "hard negative".
+The trained network from step 5 (above) could then be used to annotate our complete dataset. This trained network was not perfect in assigning Gleason scores as it was only trained on a subset of our dataset. To annotate the full training set, we applied the network to all cases of our set. We then used the original pathologist's report to fix any major mistakes. For example, a predicted Gleason 5 region in a biopsy with Gleason score 3+3 would be removed. Tissue that originated from benign biopsies, and was detected as malignant, was classified as "hard negative."
 
-With our full training set annotated, we could train the final deep learning system. The whole procedure required minimal human effort. Moreover, no pathologists were required to annotate the data. We were able to utilize expert knowledge extracted from the pathologist's reports. All training and network details can be found in the [paper on arXiv](https://arxiv.org/abs/1907.07980).
+With our full training set annotated, we could train the final deep learning system. The whole procedure required minimal human effort. Moreover, no pathologists were required to annotate the data; instead, we were able to utilize expert knowledge extracted from the pathologist's reports. All training and network details can be found in the [paper on arXiv](https://arxiv.org/abs/1907.07980).
 
 <img src="/assets/images/gleason-grading/gleason_grading_method_2.png" style="max-width: 100%" alt="Second part of our semi-automatic labeling method and application of the system to the test set.">
 
-After the final network was trained, we were able to assign grade groups to biopsies automatically. Our system was trained as a segmentation network and outputted precise outlines of the tumor. Because of this segmentation, we can use a simple method to assign grade groups. Similar to clinical practice, we compute the volumes of each growth pattern. These volumes are then used to determine the primary and secondary Gleason grade, and finally, the grade group.
+After the final network was trained, we were able to assign grade groups to biopsies automatically. Our system was trained as a segmentation network and outputted precise outlines of the tumor. Because of this segmentation, we can use a simple method to assign grade groups. Similar to clinical practice, we compute the volumes of each growth pattern. These volumes are then used to determine the primary and secondary Gleason grade, and finally, the grade group. We believe that this method is more interpretable and usable by pathologists in clinical practice. Each grade group prediction of the system can be easily checked by validating the marked glands.
 
 <a name="results"></a>
 ## Overview of main results
@@ -91,7 +91,7 @@ Given our results, we conclude that there is clear use for automated systems for
 <a name="more-info"></a>
 ## More info
 
-<a href="https://arxiv.org/abs/1907.07980" class="btn btn-primary">Read full paper on arXiv</a>
+<br><a href="https://arxiv.org/abs/1907.07980" class="btn btn-primary">Read full paper on arXiv</a>
 
 - More details can be found in the [full manuscript](https://arxiv.org/abs/1907.07980) and [supplementary material](https://arxiv.org/src/1907.07980v1/anc/Supplementary_Information.pdf).
 - A description of the tumor detection algorithm can be found in the [paper on tumor detection](https://www.nature.com/articles/srep26286).
