@@ -8,8 +8,6 @@ tags: [deep learning, unsupervised, prostate cancer, computational pathology]
 description: "Prostate cancer is graded based on distinctive patterns in the tissue. At MIDL2018 I presented an unsupervised deep learning method, based on clustering adversarial autoencoders, to train a system to detect prostate cancer without using labeled data."
 ---
 
-[![Overview of the method (Click for larger version)](/assets/images/deep-learning/unsupervised_cancer_detection_infographic.png)](/assets/images/deep-learning/unsupervised_cancer_detection_infographic.png)
-
 ## Introduction
 
 Prostate cancer (PCa) is the one of the most common cancers in the world[^1] and is graded by pathologist using the [Gleason grading system](https://en.wikipedia.org/wiki/Gleason_grading_system). The grading system was originally made by correlating distinctive patterns in the tissue to patient survival:
@@ -17,6 +15,8 @@ Prostate cancer (PCa) is the one of the most common cancers in the world[^1] and
 > “The way to develop a histologic classification was to forget anything I thought I knew about the behavior of prostate cancer and simply look for different histologic pictures … . Then, the pictures would be handed to statisticians and compared with a ‘gold standard' of clinical tumor behavior (ie, patient survival).” - Donald F. Gleason
 
 As an AI scientist, to me this sounds a lot like pattern recognition; something computers could potentially do better. Currently the grading system consists of 5 distinct classes (of which practically only 3 are used), who says that there are not 10 or 50 relevant morphological classes in the data? That is why I am interested in unsupervised methods that can extract patterns from data and want to apply this to detecting and grading prostate cancer. All information is already present in the data, we 'just' need to find methods to retrieve it.
+
+[![Overview of the method (Click for larger version)](/assets/images/deep-learning/unsupervised_cancer_detection_infographic.png)](/assets/images/deep-learning/unsupervised_cancer_detection_infographic.png)
 
 At [MIDL2018](http://midl.amsterdam/) I presented a first step towards this goal: an unsupervised method for detecting and grading prostate cancer. The idea behind this project is to cluster prostate tissue in an unsupervised fashion and then later link these clusters to patient prognosis.
 
