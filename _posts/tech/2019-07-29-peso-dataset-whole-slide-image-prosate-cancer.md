@@ -1,15 +1,15 @@
 ---
 layout: post
 title:  "The public PESO dataset: prostate H&E whole-side images for epithelium segmentation"
-date:   2019-07-22 12:17
+date:   2019-07-29 16:17
 categories: blog tech
 tags: [deep learning, prostate cancer, immunohistochemistry, epithelium segmentation]
 published: true
 description: ""
 include_ha_series: false
-image: /assets/images/gleason-grading/gleason_grading_social_image.png
-lazyload_standalone: true
-large_twitter_card: true
+#image: /assets/images/gleason-grading/gleason_grading_social_image.png
+#lazyload_standalone: true
+#large_twitter_card: true
 ---
 
 As part of our publication on [epithelium segmentation using deep learning and immunohistochemistry](https://www.nature.com/articles/s41598-018-37257-4) we published our dataset on Zenodo: the [PESO dataset](https://zenodo.org/record/1485967#.XT8F0ugzb8A). The dataset is free to use under the BY-NC-SA Creative Commons license.
