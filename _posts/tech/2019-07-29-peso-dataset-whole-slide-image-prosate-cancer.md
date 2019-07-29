@@ -26,3 +26,7 @@ The PESO dataset consists of a `training` and `test` part. For the training part
 The test set consists of:
 
 - 40 whole-slide images, exported at a pixel resolution of 0.48mu/pixels.
+- 40 xml files containing a total of 160 annotation of regions that are used in the original evaluation.
+- 160 png files of 2500x2500 pixels, exported at a pixel resolution of 0.48mu/pixels. Each png file corresponds to one test region.
+- 160 padded png files of 3500x3500 pixels of the same test regions.
+- A mapping file (csv) describing whether a test region contains cancer or only benign tissue.
