@@ -5,7 +5,7 @@ date: 2019-07-29 16:17
 categories: blog tech
 tags: [deep learning, prostate cancer, immunohistochemistry, epithelium segmentation]
 published: true
-description: "Public dataset of prostatectomy whole-slide images"
+description: "Public dataset of prostatectomy whole-slide images for epithelium segmentation, licensed under a BY-NC-SA Creative Commons license."
 image: /assets/images/peso/ihc_he_overlay.jpg
 include_ha_series: false
 lazyload_standalone: true
@@ -20,7 +20,7 @@ As part of our publication on [epithelium segmentation using deep learning and i
 
 ## Contents of the dataset
 
-The PESO dataset consists **102 whole-slide images**, split in to in a `training` and `test` part. For the training part, the reference standard is included. This set consists of:
+The PESO dataset consists **102 whole-slide images**, split in to in a `training` and `test` part. The total dataset is around 140GB. For the training part, the reference standard is included. This set consists of:
 
 - 62 whole-slide images, exported at a pixel resolution of 0.48mu/pixels.
 - 62 Raw color deconvolution masks containing the P63&CK8/18 channel of the color deconvolution operation. These masks mark all regions that are stained by either P63 or CK8/18 in the IHC version of the slides.
