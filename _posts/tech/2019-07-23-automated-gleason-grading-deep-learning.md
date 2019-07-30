@@ -104,7 +104,7 @@ Given our results, we conclude that there is clear use for automated systems for
 
 - More details can be found in the [full manuscript](https://arxiv.org/abs/1907.07980) and [supplementary material](https://arxiv.org/src/1907.07980v1/anc/Supplementary_Information.pdf).
 - A description of the tumor detection algorithm can be found in the [paper on tumor detection](https://www.nature.com/articles/srep26286).
-- The epithelium segmentation system is described in a separate [paper](https://www.nature.com/articles/s41598-018-37257-4), the dataset is public and can be found [online through Zenodo](https://zenodo.org/record/1485967).
+- The epithelium segmentation system is described in a separate [paper](https://www.nature.com/articles/s41598-018-37257-4). The dataset is public, can be found [online through Zenodo](https://zenodo.org/record/1485967) and is described [in a blog post](/blog/tech/peso-dataset-whole-slide-image-prosate-cancer/).
 - This research was performed as part of the [Computational Pathology Group](https://www.computationalpathologygroup.eu/) and the [Diagnostic Image Analysis Group](https://www.diagnijmgen.nl) of [Radboud University Medical Center](https://www.radboudumc.nl).
 
 You can use the following reference if you want to cite the paper:

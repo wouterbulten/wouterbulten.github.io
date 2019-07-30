@@ -8,8 +8,6 @@ tags: [deep learning, unsupervised, prostate cancer, computational pathology]
 description: "Prostate cancer is graded based on distinctive patterns in the tissue. At MIDL2018 I presented an unsupervised deep learning method, based on clustering adversarial autoencoders, to train a system to detect prostate cancer without using labeled data."
 ---
 
-## Introduction
-
 Prostate cancer (PCa) is the one of the most common cancers in the world[^1] and is graded by pathologist using the [Gleason grading system](https://en.wikipedia.org/wiki/Gleason_grading_system). The grading system was originally made by correlating distinctive patterns in the tissue to patient survival:
 
 > “The way to develop a histologic classification was to forget anything I thought I knew about the behavior of prostate cancer and simply look for different histologic pictures … . Then, the pictures would be handed to statisticians and compared with a ‘gold standard' of clinical tumor behavior (ie, patient survival).” - Donald F. Gleason
