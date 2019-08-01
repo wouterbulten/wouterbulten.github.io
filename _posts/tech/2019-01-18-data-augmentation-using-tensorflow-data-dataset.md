@@ -221,7 +221,7 @@ If applying all augmentations is a bit to much -- which it is in the example abo
 ```python
 for f in augmentations:
     # Apply an augmentation only in 25% of the cases.
-    dataset = dataset.map(lambda x: tf.cond(tf.random_uniform([], 0, 1) > 0.75, lambda: f(x), lambda: x), num_parallel_calls=4))
+    dataset = dataset.map(lambda x: tf.cond(tf.random_uniform([], 0, 1) > 0.75, lambda: f(x), lambda: x), num_parallel_calls=4)
 ```
 
 ![All augmentations applied to the dataset, now with a lower frequency.](/assets/images/deep-learning/tf_data_partially_augmented.png)
@@ -332,7 +332,7 @@ dataset = tf.data.Dataset.from_tensor_slices(data)
 augmentations = [flip, color, zoom, rotate]
 
 for f in augmentations:
-    dataset = dataset.map(lambda x: tf.cond(tf.random_uniform([], 0, 1) > 0.75, lambda: f(x), lambda: x), num_parallel_calls=4))
+    dataset = dataset.map(lambda x: tf.cond(tf.random_uniform([], 0, 1) > 0.75, lambda: f(x), lambda: x), num_parallel_calls=4)
 dataset = dataset.map(lambda x: tf.clip_by_value(x, 0, 1))
 
 plot_images(dataset, n_images=8, samples_per_image=10)
