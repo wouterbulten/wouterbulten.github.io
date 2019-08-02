@@ -12,13 +12,21 @@ lazyload_standalone: true
 large_twitter_card: true
 ---
 
-To improve prostate cancer detection and grading algorithms, we required a system that could precisely outline epithelial tissue. Our main idea was that such a system could automatically refine coarse annotations made by human annotators or other deep learning systems.
+To improve prostate cancer detection and grading algorithms, we required a system that could precisely outline epithelial tissue. Our main idea was that such a system could automatically refine coarse annotations made by human annotators or other deep learning systems; for example in our project on [automated Gleason grading](/blog/tech/automated-gleason-grading-deep-learning/).
 
-At first, we trained a system using the [conventional way](/blog/tech/epithelium-segmentation-using-deep-learning/): based on human annotations, we trained a U-Net in a simple patch-based approach. We were hindered by human performance: the system's performance can at most be as best as the annotations of the data. In the case of prostate cancer, the epithelial tissue can express as individual cells, which makes manual annotating data a time-consuming and challenging task. With this project, we set out to develop a novel method to circumvent the need for elaborate manual annotations.
+At first, we trained a system using the [conventional way](/blog/tech/epithelium-segmentation-using-deep-learning/): based on human annotations, we trained a U-Net in a simple patch-based approach. Unfortunately, we were hindered by time and the limits of human performance: the system's performance can at most be as best as the annotations of the data. In the case of prostate cancer, epithelial tissue can express as individual cells laying in groups in the stroma, which makes manual annotating data a time-consuming and challenging task. With this project, we set out to develop a novel method to **circumvent the need for elaborate manual annotations**.
+
+**Table of contents**
+1. [Data (the PESO dataset)](#data)
+2. [Method](#method)
+3. [Results](#results)
+4. [More info](#more-info)
+
+<br>
 
 <img class="lazyload" data-src="/assets/images/peso/dataset_examples_2rows-min.jpg" style="max-width: 100%;" alt="Prostate epithelial tissue can express itself in many forms. The first four columns show examples of benign tissue, the last four of prostate cancer. Top row shows the original H&E, the bottom row IHC.">
 
-
+<a name="data"></a>
 ## Data (the PESO dataset)
 
 We have developed our system using a new dataset of 102 prostatectomy tissue blocks. From each block a new section was cut, stained with H&E and scanned. After scanning, the tissue was destained, restained using immunohistochemistry, and scanned again. All slides were scanned at 20x magnification (pixel resolution 0.24 μm).
@@ -29,29 +37,33 @@ We have released the H&E images used in this project as a public dataset on Zeno
 
 <img class="lazyload" data-src="/assets/images/peso/ihc_he_overlay.jpg" style="max-width: 100%;" alt="To train our system we make use of registered H&E and IHC stained slides. Registration makes it possible to transfer annotations from one domain to the other.">
 
-
+<a name="method"></a>
 ## Method
 
-To train our system, we used a two-step approach. First, we trained a convolutional network to segment epithelium in immunohistochemically (IHC) stained tissue sections applying an epithelial marker (CK8/18 & P63). By applying color deconvolution and subsequent recognition of positively stained pixels, we were able to have extensive training data while preventing the cumbersome and imprecise process of manually annotating epithelial regions.
+To train our system, we used a two-step approach. First, we trained a convolutional network to segment epithelium in the IHC slides. By applying color deconvolution and subsequent recognition of positively stained pixels, we were able to have extensive training data while preventing the cumbersome and imprecise process of manually annotating epithelial regions. After this first step, we transfered the annotations to the H&E slides and trained the final network. The steps are described in more detail below:
 
-1. On a subset of the IHC dataset, we applied color deconvolution to select the brown color channel. The resulting mask contains most of the epithelial tissue but also includes artifacts.
-2. On this subset, we corrected significant errors by hand. Artifacts were marked as such. Note that this task is only a fraction of the work, instead of annotating individual epithelial cells, only errors have to be annotated in a subset of the slides.
+1. On a subset of the IHC dataset, we applied color deconvolution to select the brown color channel. Some binary operations were used to remove small artifacts. The resulting mask contains most of the epithelial tissue but also includes non epithelial tissue that was colored by the stain (such as corpora amylacea).
+2. On this subset, we corrected significant errors by hand. Artifacts were marked as such. Note that this task is only a fraction of the work; instead of annotating individual epithelial cells, only errors have to be annotated in a subset of the slides.
 3. We trained a first U-Net on the corrected IHC slides. This network could then be used to generate epithelial masks for all the IHC slides (including the non-corrected slides).
-4. We registered the H&E and IHC slides. As they were restained, the masks generated by the IHC network matched the H&E slides perfectly.
+4. We registered the H&E and IHC slides. As the original tissue was restained, the masks generated by the IHC network matched the H&E slides perfectly.
 5. The final network was trained using the transferred masks.
+
+All hyperparameters for both U-Nets can be found in the [paper](https://www.nature.com/articles/s41598-018-37257-4).
 
 <br>
 
 <img class="lazyload" data-src="/assets/images/peso/epithelium_segmentation_algorithm.png" style="max-width: 100%;" alt="Method used to segment epithelial tissue. First we train a system to segment epithelial tissue on IHC, later we transfer this to H&E to train the final system.">
 
+<a name="results"></a>
 ## Results
 
 Our system was able to accurately segment epithelial tissue, both in benign and cancerous regions (overall F1 score of 0.893). Even in regions with high grade prostate cancer, the system is able to segment individual cells. Some problems occurred in regions with high inflammation (that can look very similar to epithelial tissue). Correcting the color deconvolution masks increased the performance, but even more important removed consistent misclassifications of non-epithelial regions (like corpora amylacea). For a complete overview of all results, including results on an external dataset, please refer to the [paper (Open Access)](https://www.nature.com/articles/s41598-018-37257-4).
 
-
+The final U-Net was a critical component in the automatic data labeling technique of our project on [automated Gleason grading](/blog/tech/automated-gleason-grading-deep-learning/). Using the epithelial masks, we were able to generate precise gland-level outlines of benign and tumorous tissue in prostate biopsies.
 
 <img class="lazyload" data-src="/assets/images/peso/epithelium_testset_results.jpg" style="max-width: 100%;" alt="Segmentation examples from the test set. Green pixels show true positive, red false positive and blue false negative. The top two rows displays two cases (a–d) of PCa where the network segments the epithelial tissue almost perfectly. In the bottom row two failure cases are shown: a case of high grade PCa (e) and a benign region (f) where debris inside the gland is segmented.">
 
+<a name="more-info"></a>
 ## More info
 
 <br><a href="https://www.nature.com/articles/s41598-018-37257-4" class="btn btn-primary">Read full paper on Scientific Reports</a>
