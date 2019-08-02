@@ -46,11 +46,11 @@ To train our system, we used a two-step approach. First, we trained a convolutio
 
 ## Results
 
-Our system was able to accurately segment epithelial tissue, both in benign and cancerous regions (overall F1 score of 0.893). Even in regions with high grade prostate cancer, the system is able to segment individual cells. Some problems occurred in regions with high inflammation (that can look very similar to epithelial tissue). For a complete overview of all results, including results on an external dataset, please refer to the [paper (Open Access)](https://www.nature.com/articles/s41598-018-37257-4).
+Our system was able to accurately segment epithelial tissue, both in benign and cancerous regions (overall F1 score of 0.893). Even in regions with high grade prostate cancer, the system is able to segment individual cells. Some problems occurred in regions with high inflammation (that can look very similar to epithelial tissue). Correcting the color deconvolution masks increased the performance, but even more important removed consistent misclassifications of non-epithelial regions (like corpora amylacea). For a complete overview of all results, including results on an external dataset, please refer to the [paper (Open Access)](https://www.nature.com/articles/s41598-018-37257-4).
 
 
 
-<img class="lazyload" data-src="/assets/images/peso/epithelium_testset_results.jpg" style="max-width: 100%;" alt="">
+<img class="lazyload" data-src="/assets/images/peso/epithelium_testset_results.jpg" style="max-width: 100%;" alt="Segmentation examples from the test set. Green pixels show true positive, red false positive and blue false negative. The top two rows displays two cases (a–d) of PCa where the network segments the epithelial tissue almost perfectly. In the bottom row two failure cases are shown: a case of high grade PCa (e) and a benign region (f) where debris inside the gland is segmented.">
 
 ## More info
 
