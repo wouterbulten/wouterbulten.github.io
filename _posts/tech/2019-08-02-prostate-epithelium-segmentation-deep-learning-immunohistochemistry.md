@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Epithelium segmentation using deep learning and immunohistochemistry"
-date: 2019-08-01 21:17
+date: 2019-08-02 14:17
 categories: blog tech
 tags: [deep learning, prostate cancer, immunohistochemistry, epithelium segmentation]
 published: true
