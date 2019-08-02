@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Using immunohistochemistry for training a deep learning system to segment epithelial tissue"
-date: 2019-08-02 11:17
+date: 2019-08-02 15:17
 categories: blog tech
 tags: [deep learning, prostate cancer, immunohistochemistry, epithelium segmentation]
 published: true
