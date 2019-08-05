@@ -3,7 +3,7 @@ layout: post
 title:  "Pathologist-level Gleason grading using deep learning"
 date:   2019-07-22 12:17
 categories: blog tech
-tags: [deep learning, prostate cancer, Gleason grading]
+tags: [research, deep learning, prostate cancer, Gleason grading]
 published: true
 description: "We developed a fully automated deep learning system to grade prostate biopsies using 5834 biopsies from 1243 patients, and showed that this system achieved pathologist-level performance."
 include_ha_series: false

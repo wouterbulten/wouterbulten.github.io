@@ -1,0 +1,37 @@
+---
+title: Research posts
+layout: default
+description: An overview of my latest posts on my research topics.
+blog_index: true
+---
+
+<div class="section post-overview">
+    <div class="section-fullpage">
+        <h1 class="category-title">Latest research posts</h1>
+
+        <p class="lead">{{ page.description }}</p>
+
+        <div class="blog-list">
+            {% for post in site.tags['research'] limit: 20 %}
+            {% if post.layout != 'redirect' %}
+            <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+                <header class="post-header">
+                    <h2 class="post-title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
+                </header>
+
+                <section class="post-excerpt" itemprop="description">
+                    <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
+                </section>
+                <div class="post-meta">
+                    <span class="post-category">{{ post.categories[1] }}</span>
+                    |
+                    <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
+                    |
+                    <a class="read-more" href="{{ post.url }}">Start reading &rarr;</a>
+                </div>
+            </article>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>

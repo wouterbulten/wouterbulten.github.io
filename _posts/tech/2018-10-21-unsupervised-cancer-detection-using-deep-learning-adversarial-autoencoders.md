@@ -3,7 +3,7 @@ layout: post
 title:  "Unsupervised Cancer Detection using Deep Learning and Adversarial Autoencoders"
 date:   2018-10-21 19:20
 categories: blog tech
-tags: [deep learning, unsupervised, prostate cancer, computational pathology]
+tags: [research, deep learning, unsupervised, prostate cancer, computational pathology]
 #published: true
 description: "Prostate cancer is graded based on distinctive patterns in the tissue. At MIDL2018 I presented an unsupervised deep learning method, based on clustering adversarial autoencoders, to train a system to detect prostate cancer without using labeled data."
 ---

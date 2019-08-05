@@ -3,7 +3,7 @@ layout: post
 title:  "Epithelium segmentation in H&E-stained prostate tissue using deep learning"
 date:   2018-06-26 17:35
 categories: blog tech
-tags: [deep learning, segmentation, epithelial tissue, computational pathology]
+tags: [research, deep learning, segmentation, epithelial tissue, computational pathology]
 published: true
 description: "Building systems to detect tumor, in this case prostate cancer, is often hard due to a lack of data. Tumor annotations made by pathologists are often coarse due to time constraints. With this project we want to automatically refine these annotations by building a system that can automatically filter out irrelevant parts of the data."
 ---
