@@ -9,7 +9,7 @@ blog_index: true
     <div class="section-fullpage">
         <h1 class="category-title">Latest home automation posts</h1>
 
-        <p class="lead">{{ page.description }}</p>
+        <p class="lead">{{ page.description }} <a href="/blog/tech">View all tech posts</a>.</p>
 
         <div class="blog-list">
             {% for post in site.tags['home automation'] limit: 20 %}

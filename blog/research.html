@@ -1,7 +1,7 @@
 ---
 title: Research posts
 layout: default
-description: An overview of my latest posts on my research topics.
+description: An overview of my latest research posts. Most of these posts are linked to my PhD in computational pathology.
 blog_index: true
 ---
 
@@ -9,7 +9,7 @@ blog_index: true
     <div class="section-fullpage">
         <h1 class="category-title">Latest research posts</h1>
 
-        <p class="lead">{{ page.description }}</p>
+        <p class="lead">{{ page.description }} <a href="/blog/tech">View all tech posts</a>.</p>
 
         <div class="blog-list">
             {% for post in site.tags['research'] limit: 20 %}

@@ -12,6 +12,14 @@ blog_index: true
 
         <p class="lead">{{ page.description }}</p>
 
+        <p>
+            <b class="vertical-align: middle;">Subcategories:</b>
+            <a class="btn btn-link" href="/blog/research">Research posts</a>
+            <a class="btn btn-link" href="/blog/home-automation">Home Automation posts</a>
+        </p>
+
+        <hr style="margin: 1em 0 3em 0;">
+
         <div class="blog-list">
             {% for post in site.categories['tech'] limit: 20 %}
             {% if post.layout != 'redirect' %}
