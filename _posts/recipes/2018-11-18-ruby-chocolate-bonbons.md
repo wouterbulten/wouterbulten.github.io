@@ -3,6 +3,7 @@ layout: post
 title:  'Ruby chocolate bonbons'
 description: 'Tutorial on making ruby chocolate bonbons with various fillings.'
 date:   2018-11-18
+modified_at: 2019-10-17 17:38
 categories: blog food
 ig: BqUv_l3HnmG
 tags: [food, chocolate, bonbons, ruby chocolate, recipe]
@@ -12,7 +13,7 @@ post_image_large: /assets/images/food/2018-11-18-ruby-chocolate-bonbons_large.jp
 post_image_small: /assets/images/food/2018-11-18-ruby-chocolate-bonbons_thumbnail.jpg
 ---
 
-Ruby chocolate's distinctive flavour gives the possibility to try out new flavour combinations. Here I discuss the process of making ruby bonbons and a few ingredients that I found match well with ruby chocolate.
+Ruby chocolate's distinctive flavour gives the possibility to try out new flavour combinations. Here I discuss the process of making ruby bonbons and a few ingredients that I found match well with ruby chocolate. Ruby Chocolate is made by Callebaut/Cacao Barry and can be bought online through [Amazon](https://amzn.to/2oTnP2S) or at specialized retail stores.
 
 Contents:
 
