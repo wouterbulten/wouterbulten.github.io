@@ -48,7 +48,7 @@ On this page I keep track of my current Smart Home setup, built around Home Assi
 <a name="controllers"></a>
 ## The Brains
 
-My smart home runs on Home Assistant, App Deamon, Node-RED, and Deconz. I started small with a set of Raspberry Pis. At some point, I required a bit more processing power and switched to a Intel NUC with Docker. My [version 1](#controllers-v1) setup can still be found below.
+My smart home runs on Home Assistant, App Deamon, Node-RED, and Deconz. I started small with a set of Raspberry Pis. At some point, I required a bit more processing power and switched to an Intel NUC with Docker. My [version 1](#controllers-v1) setup can still be found below.
 
 <div class="hw-row">
   <div class="hw-image"><img class="lazyload" data-src="/assets/images/ha/hardware/intelnuc.png" alt="Intel NUC"></div>
@@ -101,7 +101,7 @@ My smart home runs on Home Assistant, App Deamon, Node-RED, and Deconz. I starte
   <div class="hw-image"><img class="lazyload" data-src="/assets/images/ha/hardware/conbee2.jpg" alt="Conbee v2"></div>
   <div class="hw-info">
     <h4>ConBee</h4>
-    <p>My main Zigbee hub using software from Dresden Electronics, connected to my Intel Nuc. I use the v1 version, but a newer v2 version is now available. The ConBee is compatible with most of devices of Hue, Osram, Innr, Ikea and Xiaomi. I chose for the USB version so that I could always switch to another device if needed. As I started with a Raspberry pi, and then moved to a Intel Nuc this turned out to be a good choice.</p>
+    <p>My main Zigbee hub using software from Dresden Electronics, connected to my Intel Nuc. I use the v1 version, but a newer v2 version is now available. The ConBee is compatible with most of devices of Hue, Osram, Innr, Ikea and Xiaomi. I chose for the USB version so that I could always switch to another device if needed. As I started with a Raspberry pi, and then moved to an Intel Nuc this turned out to be a good choice.</p>
 
     <div class="review">
       <p><b>Pros:</b> Huge list of compatible devices, see the <a href="https://phoscon.de/en/conbee2/compatible">compatbility list</a>. Nice interface for joining lights, sensors and switches. The GUI can be used to debug/view the Zigbee network (gives great insight in the mesh abilities).</p>
