@@ -2,7 +2,7 @@
 layout: post
 title:  'Easy and versatile chocolate mousse based on crème anglaise'
 date:   2018-02-26
-modified: 2018-12-24
+modified_at: 2019-10-17 17:51
 categories: blog food
 ig: BdXeLf1DdgF
 tags: [chocolate, mousse, recipe]
