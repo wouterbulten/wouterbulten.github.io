@@ -17,6 +17,9 @@ On this page I keep track of my current Smart Home setup, built around Home Assi
 
 **Table of contents**
 
+- [Controller](#controllers)
+  - Intel NUC NUC8i5BEK & Docker
+  - Conbee Zigbee hub
 - [Sensors](#sensors)
   - Xiaomi Aqara motion sensor
   - Philips Hue Motion Sensor
@@ -35,14 +38,91 @@ On this page I keep track of my current Smart Home setup, built around Home Assi
   - Amazon Fire Tablet
 - [Plugs](#plugs)
   - OSRAM Smart+ Plug (Sylvania in the US)
-- [Current controller](#controllers)
-  - Intel NUC NUC8i5BEK & Docker
 - [Original setup (v1)](#controllers-v1)
   - Raspberry Pi 3B+ & Hass.io
   - Raspberry Pi 3B+ & ConBee
   - Raspberry Pi B+ & Pi-hole
 
 *This page is a work in progress and will update over time. Last update: Oct 2019.*
+
+<a name="controllers"></a>
+## The Brains
+
+My smart home runs on Home Assistant, App Deamon, Node-RED, and Deconz. I started small with a set of Raspberry Pis. At some point, I required a bit more processing power and switched to a Intel NUC with Docker. My [version 1](#controllers-v1) setup can still be found below.
+
+<div class="hw-row">
+  <div class="hw-image"><img class="lazyload" data-src="/assets/images/ha/hardware/intelnuc.png" alt="Intel NUC"></div>
+  <div class="hw-info">
+    <h4>Intel NUC</h4>
+    <p>Main controller of the system running all services through Docker.</p>
+
+    <p>Hardware components:</p>
+    <ul>
+      <li><a href="https://amzn.to/2BkXyNK" rel="nofollow">Intel NUC8i5BEK Bean Canyon</a></li>
+      <li><a href="https://amzn.to/2nStXIi" rel="nofollow">Samsung SSD 970 EVO Plus 250 GB</a></li>
+      <li><a href="https://amzn.to/35Dj1zf" rel="nofollow">HyperX Impact 16GB DDR4 2666MHz</a></li>
+      <li><a href="https://amzn.to/2po4t61" rel="nofollow">ConBee</a></li>
+    </ul>
+
+    <div style="display: flex; width: 100%; max-width: 400px;">
+      <div style="flex: 0 1 33%; padding: 0px 30px 30px 0; max-width: 100px;">
+        {% include assets/ha-logo.html %}
+      </div>
+      <div style="flex: 0 1 33%; padding: 0px 30px 30px 0; max-width: 100px;">
+        {% include assets/node-red-logo.html %}
+      </div>
+      <div style="flex: 0 1 33%; padding: 0px 30px 30px 0; max-width: 100px;">
+        <img class="lazyload" data-src="/assets/images/ha/hardware/pi-hole-logo.png" style="max-width: 100%">
+      </div>
+
+    </div>
+
+    <div class="review">
+      <p><b>Pros:</b> Powerfull, runs all your services on one device. Home Assistant is more responsive, especially with a large network of devices. Can also run other services. Docker (with Docker compose) gives more flexibility.</p>
+      <p><b>Cons:</b> A lot more expensive than a single Pi. Higher learning curve.</p>
+    </div>
+  </div>
+  <div class="hw-source">
+    <h5>Hardware:</h5>
+    <ul>
+      <li><a class="btn btn-info" href="https://amzn.to/2BkXyNK" rel="nofollow">Intel Nuc</a></li>
+    </ul>
+    <h5>Software:</h5>
+    <ul>
+      <li><a href="https://www.home-assistant.io/">Home Assistant</a></li>
+      <li><a href="https://www.home-assistant.io/docs/ecosystem/appdaemon/">AppDaemon</a></li>
+      <li><a href="https://nodered.org/">Node-RED</a></li>
+      <li><a href="https://pi-hole.net/">Pi-hole</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="hw-row">
+  <div class="hw-image"><img class="lazyload" data-src="/assets/images/ha/hardware/conbee2.jpg" alt="Conbee v2"></div>
+  <div class="hw-info">
+    <h4>ConBee</h4>
+    <p>My main Zigbee hub using software from Dresden Electronics, connected to my Intel Nuc. I use the v1 version, but a newer v2 version is now available. The ConBee is compatible with most of devices of Hue, Osram, Innr, Ikea and Xiaomi. I chose for the USB version so that I could always switch to another device if needed. As I started with a Raspberry pi, and then moved to a Intel Nuc this turned out to be a good choice.</p>
+
+    <div class="review">
+      <p><b>Pros:</b> Huge list of compatible devices, see the <a href="https://phoscon.de/en/conbee2/compatible">compatbility list</a>. Nice interface for joining lights, sensors and switches. The GUI can be used to debug/view the Zigbee network (gives great insight in the mesh abilities).</p>
+      <p><b>Cons:</b> More expensive than the flash-your-own Zigbee radios. Higher learning curve than the vendor hubs.</p>
+    </div>
+
+  </div>
+  <div class="hw-source">
+    <h5>Hardware:</h5>
+    <ul>
+      <li><a class="btn btn-info" href="https://amzn.to/2po4t61" rel="nofollow">ConBee</a></li>
+    </ul>
+    <h5>Software:</h5>
+    <ul>
+      <li><a href="https://github.com/dresden-elektronik/deconz-rest-plugin">Deconz</a></li>
+      <li><a href="https://phoscon.de/en/conbee2/install">Official website</a></li>
+      <li><a href="https://phoscon.de/en/conbee2/install#docker">Docker image</a></li>
+    </ul>
+  </div>
+</div>
+
 
 <a name="sensors"></a>
 ## Sensors
@@ -340,84 +420,6 @@ Smart plugs are an easy way to make dumb devices a bit smarter. For example: I u
     <ul>
       <li><a class="btn btn-info" href="https://amzn.to/2UBNGXq" rel="nofollow">OSRAM Plug (EU)</a></li>
       <li><a class="btn btn-info" href="https://amzn.to/2G93ZYz" rel="nofollow">Sylvania Plug (US)</a></li>
-    </ul>
-  </div>
-</div>
-
-<a name="controllers"></a>
-## The Brains
-
-My smart home runs on Home Assistant, App Deamon, Node-RED, and Deconz. I started small with a set of Raspberry Pis. At some point, I required a bit more processing power and switched to a Intel NUC with Docker. My [version 1](#controllers-v1) setup can still be found below.
-
-<div class="hw-row">
-  <div class="hw-image"><img class="lazyload" data-src="/assets/images/ha/hardware/intelnuc.png" alt="Intel NUC"></div>
-  <div class="hw-info">
-    <h4>Intel NUC</h4>
-    <p>Main controller of the system running all services through Docker.</p>
-
-    <p>Hardware components:</p>
-    <ul>
-      <li><a href="https://amzn.to/2BkXyNK" rel="nofollow">Intel NUC8i5BEK Bean Canyon</a></li>
-      <li><a href="https://amzn.to/2nStXIi" rel="nofollow">Samsung SSD 970 EVO Plus 250 GB</a></li>
-      <li><a href="https://amzn.to/35Dj1zf" rel="nofollow">HyperX Impact 16GB DDR4 2666MHz</a></li>
-      <li><a href="https://amzn.to/2po4t61" rel="nofollow">ConBee</a></li>
-    </ul>
-
-    <div style="display: flex; width: 100%; max-width: 400px;">
-      <div style="flex: 0 1 33%; padding: 0px 30px 30px 0; max-width: 100px;">
-        {% include assets/ha-logo.html %}
-      </div>
-      <div style="flex: 0 1 33%; padding: 0px 30px 30px 0; max-width: 100px;">
-        {% include assets/node-red-logo.html %}
-      </div>
-      <div style="flex: 0 1 33%; padding: 0px 30px 30px 0; max-width: 100px;">
-        <img class="lazyload" data-src="/assets/images/ha/hardware/pi-hole-logo.png" style="max-width: 100%">
-      </div>
-
-    </div>
-
-    <div class="review">
-      <p><b>Pros:</b> Powerfull, runs all your services on one device. Home Assistant is more responsive, especially with a large network of devices. Can also run other services. Docker (with Docker compose) gives more flexibility.</p>
-      <p><b>Cons:</b> A lot more expensive than a single Pi. Higher learning curve.</p>
-    </div>
-  </div>
-  <div class="hw-source">
-    <h5>Hardware:</h5>
-    <ul>
-      <li><a class="btn btn-info" href="https://amzn.to/2BkXyNK" rel="nofollow">Intel Nuc</a></li>
-    </ul>
-    <h5>Software:</h5>
-    <ul>
-      <li><a href="https://www.home-assistant.io/">Home Assistant</a></li>
-      <li><a href="https://www.home-assistant.io/docs/ecosystem/appdaemon/">AppDaemon</a></li>
-      <li><a href="https://nodered.org/">Node-RED</a></li>
-      <li><a href="https://pi-hole.net/">Pi-hole</a></li>
-    </ul>
-  </div>
-</div>
-
-<div class="hw-row">
-  <div class="hw-image"><img class="lazyload" data-src="/assets/images/ha/hardware/conbee2.jpg" alt="Conbee v2"></div>
-  <div class="hw-info">
-    <h4>ConBee</h4>
-    <p>My main Zigbee hub using software from Dresden Electronics, connected to my Intel Nuc. I use the v1 version, but a newer v2 version is now available. The ConBee is compatible with most of devices of Hue, Osram, Innr, Ikea and Xiaomi. I chose for the USB version so that I could always switch to another device if needed. As I started with a Raspberry pi, and then moved to a Intel Nuc this turned out to be a good choice.</p>
-
-    <div class="review">
-      <p><b>Pros:</b> Huge list of compatible devices, see the <a href="https://phoscon.de/en/conbee2/compatible">compatbility list</a>. Nice interface for joining lights, sensors and switches. The GUI can be used to debug/view the Zigbee network (gives great insight in the mesh abilities).</p>
-      <p><b>Cons:</b> More expensive than the flash-your-own Zigbee radios. Higher learning curve than the vendor hubs.</p>
-    </div>
-
-  </div>
-  <div class="hw-source">
-    <h5>Hardware:</h5>
-    <ul>
-      <li><a class="btn btn-info" href="https://amzn.to/2po4t61" rel="nofollow">ConBee</a></li>
-    </ul>
-    <h5>Software:</h5>
-    <ul>
-      <li><a href="https://github.com/dresden-elektronik/deconz-rest-plugin">Deconz</a></li>
-      <li><a href="https://phoscon.de/en/conbee2/install">Official website</a></li>
-      <li><a href="https://phoscon.de/en/conbee2/install#docker">Docker image</a></li>
     </ul>
   </div>
 </div>
