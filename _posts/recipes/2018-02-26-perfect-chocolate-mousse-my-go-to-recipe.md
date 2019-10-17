@@ -14,19 +14,6 @@ post_image_small: /assets/images/food/2018-02-26-perfect-chocolate-mousse-my-go-
 published: true
 ---
 
-<a href="#recipe" class="btn btn-info">Skip to recipe</a>
-
-A few years ago I discovered the [fastest option](/blog/cooking/the-quest-for-a-perfect-mousse-part-1/) to make chocolate mousse (or at least one that is very easy and takes almost no effort). That recipe uses a siphon for almost instant results.  Although it is still the fastest option, I tend to use it less and less as it lacked the richness of a *decadent* chocolate mousse. Recently I found and adapted a new recipe that's becoming my go-to recipe for chocolate mousse. It is versatile, still easy to make, and very rich.
-
-This recipe is based on one I found on the [Callebaut](https://www.callebaut.com/en-US/chocolate-video/technique/mousse/creme-anglaise) website. Some of the steps and ingredients have changed after testing. For one, I prefer a less sweet mousse that captures the flavour of a dark chocolate. This recipe reflects that by adding less sugar than more traditional recipes.
-
-I have found that the **secret to chocolate mouse** lies in the first place not in the choice of chocolate. Of course, the chocolate is a very important ingredient and defines the flavour. However, even more important is the choice of binding agent: the ingredient that binds and stabilizes the mousse. Many recipes use gelatin which can result in a very stiff and jelly mousse. Some recipes use egg whites, resulting in an airy mousse. In this recipe I go for the rich option and use only egg yolks. Looking for a vegan alternative? See my [Vegan Dark Chocolate Crème recipe](/blog/food/vegan-dark-chocolate-creme-flan/).
-
-With the egg yolks we create a [crème anglaise](https://en.wikipedia.org/wiki/Cr%C3%A8me_anglaise) which can be difficult definitely worth the effort. Getting experience in making crème anglaise is useful as it is used in many other (sweet) recipes as an ingredient or topping.
-
-The recipe below is my take on chocolate mousse. Some parts are still in development, especially the choice of chocolate and sugar ratio, so feel free to comment!
-
-<a name="recipe"></a>
 ## (Dark) chocolate mousse recipe
 
 Recipe for a versatile and rich dark chocolate mousse. The mousse can be used as a basis for an entremet (a mousse cake), poured into silicon molds and frozen, or enjoyed on its own.
@@ -37,7 +24,7 @@ Recipe for a versatile and rich dark chocolate mousse. The mousse can be used as
 - 50g whole milk
 - 50g egg yolks
 - 15-70g sugar (depending on the chocolate, see <a href="#sugar">note</a>). 30 grams if using standard dark chocolate.
-- 250g dark chocolate (see <a href="#selecting-chocolate">Selecting the right chocolate</a>)
+- 250g dark chocolate (see <a href="#selecting-chocolate">Selecting the right chocolate</a>). I used [Callebaut 54.5%](https://amzn.to/2BmzCtn).
 {: .ingredient-list}
 
 The recipe can easily be doubled if needed.
@@ -90,6 +77,18 @@ This mousse recipe can be used for many purposes. In the example below I transfe
 
 <hr>
 
+## Background of this recipe
+
+A few years ago I discovered the [fastest option](/blog/cooking/the-quest-for-a-perfect-mousse-part-1/) to make chocolate mousse (or at least one that is very easy and takes almost no effort). That recipe uses a siphon for almost instant results.  Although it is still the fastest option, I tend to use it less and less as it lacked the richness of a *decadent* chocolate mousse. Recently I found and adapted a new recipe that's becoming my go-to recipe for chocolate mousse. It is versatile, still easy to make, and very rich.
+
+This recipe is based on one I found on the [Callebaut](https://www.callebaut.com/en-US/chocolate-video/technique/mousse/creme-anglaise) website. Some of the steps and ingredients have changed after testing. For one, I prefer a less sweet mousse that captures the flavour of a dark chocolate. This recipe reflects that by adding less sugar than more traditional recipes.
+
+I have found that the **secret to chocolate mouse** lies in the first place not in the choice of chocolate. Of course, the chocolate is a very important ingredient and defines the flavour. However, even more important is the choice of binding agent: the ingredient that binds and stabilizes the mousse. Many recipes use gelatin which can result in a very stiff and jelly mousse. Some recipes use egg whites, resulting in an airy mousse. In this recipe I go for the rich option and use only egg yolks. Looking for a vegan alternative? See my [Vegan Dark Chocolate Crème recipe](/blog/food/vegan-dark-chocolate-creme-flan/).
+
+With the egg yolks we create a [crème anglaise](https://en.wikipedia.org/wiki/Cr%C3%A8me_anglaise) which can be difficult definitely worth the effort. Getting experience in making crème anglaise is useful as it is used in many other (sweet) recipes as an ingredient or topping.
+
+This recipe is my take on chocolate mousse. Some parts are still in development, especially the choice of chocolate and sugar ratio, so feel free to comment!
+
 <a name="selecting-chocolate"></a>
 ## Selecting the right chocolate / fluidity of chocolate
 
@@ -124,12 +123,38 @@ The type of sugar can be varied to achieve a desired taste. Regular granulated s
 
 The table below can be used as a reference for selecting the amount of sugar. The percentages are based on the amount of chocolate, e.g. a 28% means that you have to take 28% of the weight of the chocolate as sugar. The amounts in grams are pre-calculated for this recipe.
 
-
-| Type of chocolate (cocoa solids %) | Sweet side | Bitter side | My preference |
-|------------------------------------|------------|-------------|---------------|
-| Milk (33%)                         |            |             |               |
-| Dark (54%)                         | 25% (42g)  | 8% (20g)    | 12% (30g)     |
-| Extra dark (70%)                   | 28% (70g)  | 10% (26g)   | 16% (40g)     |
+<div style="width: 100%; overflow-x: scroll;">
+<table>
+  <tr>
+    <th>Type of chocolate (cocoa solids %)</th>
+    <th>Examples</th>
+    <th>Sweet side</th>
+    <th>Bitter side</th>
+    <th>My preference</th>
+  </tr>
+  <tr>
+    <td>Milk (33%)</td>
+    <td><a href="https://amzn.to/35C7zUJ">Callebaut 33.6%</a></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Dark (54%)</td>
+    <td><a href="https://amzn.to/2BmzCtn">Callebaut 54.5%</a></td>
+    <td>25% (42g)</td>
+    <td>8% (20g)</td>
+    <td>12% (30g)</td>
+  </tr>
+  <tr>
+    <td>Extra dark (70%)</td>
+    <td><a href="https://amzn.to/33C8MJM">Callebaut Sao Thomé Single Origin</a></td>
+    <td>28% (70g)</td>
+    <td>10% (26g)</td>
+    <td>16% (40g)</td>
+  </tr>
+</table>
+</div>
 
 *Note:* This table is a work in progress and will be updated when I try out more combinations. Use the "sweet-bitter" values as a rough range and adjust to your personal taste. The values in "my preference" are based on actual combinations I tried.
 
@@ -148,7 +173,7 @@ The combinations I've tested so far:
     <td>12%</td>
   </tr>
   <tr>
-    <td>[Cacao Barry Ocoa 70.4%](https://www.cacao-barry.com/en-US/chocolate-couverture-cocoa/chd-n70ocoa/ocoa)</td>
+    <td><a href="https://www.cacao-barry.com/en-US/chocolate-couverture-cocoa/chd-n70ocoa/ocoa">Cacao Barry Ocoa 70.4%</a></td>
     <td>16%</td>
   </tr>
   <tr>
