@@ -8,7 +8,7 @@ tags: [home automation, home assistant, Node-RED, wake-up, automations]
 published: true
 description: "Using Node-RED and Home Assistant and would you like to build a custom full room wake-up light? In this post I show my setup and explain how to build a wake-up light using Node-RED."
 include_ha_series: true
-
+onelink: true
 ---
 
 In a [previous post]({% post_url tech/2018-04-28-custom-wake-up-light-with-home-assistant %}) I showed a wake-up light using Home Assistant and the default [YAML configuration]({% post_url tech/2018-04-28-custom-wake-up-light-with-home-assistant %}). In this post I'll show my current setup which makes use of Node-RED.

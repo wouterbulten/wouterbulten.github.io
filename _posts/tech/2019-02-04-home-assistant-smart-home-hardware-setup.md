@@ -9,6 +9,7 @@ published: true
 description: "Continuously updated overview overview of the tech I use in my smart home."
 include_ha_series: true
 lazyload: true
+onelink: true
 ---
 
 On this page I keep track of my current Smart Home setup, built around Home Assistant, Deconz and Node-RED. So, if you are interested in my setup please read on. The list of devices I use has grown organically over time, sometimes based on a certain need (like a proper light sensor), and sometimes based on a specific sale or interest for a device. Still, if I had to start over I would still pick many of these devices for a second time.

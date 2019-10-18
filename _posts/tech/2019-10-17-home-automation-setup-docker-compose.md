@@ -7,6 +7,7 @@ tags: [home automation, home assistant, docker]
 published: true
 description: "Docker-compose is a convenient way to setup and configure your home automation system. In this post, I describe my setup and the configuration needed to run the containers."
 include_ha_series: true
+onelink: true
 lazyload: true
 ---
 

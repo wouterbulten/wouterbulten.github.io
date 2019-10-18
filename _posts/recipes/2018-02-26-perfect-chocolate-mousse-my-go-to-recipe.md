@@ -12,6 +12,7 @@ post_image: /assets/images/food/2018-02-26-perfect-chocolate-mousse-my-go-to-rec
 post_image_large: /assets/images/food/2018-02-26-perfect-chocolate-mousse-my-go-to-recipe_large.jpg
 post_image_small: /assets/images/food/2018-02-26-perfect-chocolate-mousse-my-go-to-recipe_thumbnail.jpg
 published: true
+onelink: true
 ---
 
 ## (Dark) chocolate mousse recipe

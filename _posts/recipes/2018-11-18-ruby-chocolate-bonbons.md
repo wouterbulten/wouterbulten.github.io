@@ -11,6 +11,7 @@ image_in_post: true
 post_image: /assets/images/food/2018-11-18-ruby-chocolate-bonbons.jpg
 post_image_large: /assets/images/food/2018-11-18-ruby-chocolate-bonbons_large.jpg
 post_image_small: /assets/images/food/2018-11-18-ruby-chocolate-bonbons_thumbnail.jpg
+onelink: true
 ---
 
 Ruby chocolate's distinctive flavour gives the possibility to try out new flavour combinations. Here I discuss the process of making ruby bonbons and a few ingredients that I found match well with ruby chocolate. Ruby Chocolate is made by Callebaut/Cacao Barry and can be bought online through [Amazon](https://amzn.to/2oTnP2S) or at specialized retail stores.

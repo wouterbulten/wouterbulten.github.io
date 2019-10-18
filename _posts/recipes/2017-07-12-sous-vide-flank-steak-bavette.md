@@ -12,6 +12,7 @@ post_image_small: /assets/images/food/17-07-12-sous-vide-flank-steak-bavette_thu
 image_in_post: true
 published: true
 description: Flank steak, when prepared correctly, is one of my favorite types of beef. It has a great trade off between being not to expensive (in comparison to cuts such as tenderloin) while having lots of flavor.
+onelink: true
 ---
 
 Flank steak, when prepared correctly, is one of my favorite types of beef. The steak is cut from the abdominal muscles or lower chest of the cow[^1] and is usually classified as a "work meat." Nevertheless, the flank steak is an overall lean piece of the cow and is often less expensive than more tender cuts such as the tenderloin.
