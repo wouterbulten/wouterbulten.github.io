@@ -12,7 +12,7 @@ image_in_post: true
 description: "New experimental filling: white chocolate with anise seeds"
 ---
 
-This bonbon flavor started as a experiment but turned out to be really tasty! The combination of white chocolate (I used white Callebaut callets) with the anise seeds is very addictive. 
+This bonbon flavor started as an experiment, but turned out to be really tasty! The combination of white chocolate (I used [white Callebaut callets](https://amzn.to/2MWddZ9)) with the anise seeds is very addictive.
 
 ## Ingredients (filling)
 
@@ -23,12 +23,12 @@ This bonbon flavor started as a experiment but turned out to be really tasty! Th
 
 ## Recipe
 
-*Note: This recipe only covers the filling of the bonbons. All my bonbons roughly follow the same steps regarding coloring and making the shell.*
+*Note: This recipe only covers the filling of the bonbons. All my bonbons roughly follow the same steps regarding coloring and making the shells.*
 
 1. Add cream to a saucepan.
 2. Add anise seeds.
 3. Slowly heat cream to 70C, let infuse.
-4. Optionally strain the creame to remove the seeds. I prefer some seeds to be present in the ganache for a bite and additional anise flavor.
+4. Optionally strain the cream to remove the seeds. I prefer some seeds to be present in the ganache for a bite and additional anise flavor.
 5. Let the chocolate stand for a few minutes.
 5. Stir the chocolate, creating an emulsion.
 6. Add butter.

@@ -10,6 +10,7 @@ post_image_large: /assets/images/food/2017-11-05-vegan-dark-chocolate-cr-eme_lar
 post_image_small: /assets/images/food/2017-11-05-vegan-dark-chocolate-cr-eme_thumbnail.jpg
 image_in_post: true
 published: true
+onelink: true
 description: "Vegan experiment: A dark chocolate crème mimicking the richness of an egg-based dessert."
 ---
 
@@ -30,7 +31,7 @@ Recently, I was looking for a full vegan chocolate dessert that approached the i
 - Xantham gum (optional), 0.25 grams
 - Iota Carrageenan, 0.85 grams
 - Kappa Carrageenan, 0.6 grams
-- Dark chocolate, chopped, 160-220 grams
+- Dark chocolate, chopped, 160-220 grams (I used [Callebaut 54.5%](https://amzn.to/2BmzCtn))
 - Ramkins or other (ring) mold
 
 *Note:* The amount of chocolate controls the richness and the final texture of the dish. Use 220 grams of dark chocolate for a very rich and firm texture which can be easily cut. Use less for a more flan-like texture.

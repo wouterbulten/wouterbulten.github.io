@@ -12,7 +12,7 @@ image_in_post: true
 description: Dark Callebaut chocolate (54%) bonbons, filled with a milk chocolate ganache infused with Earl Grey darjeeling tea and lavender
 ---
 
-Dark Callebaut chocolate (54%) bonbons filled with a milk chocolate ganache. The ganache is infused with Earl Grey darjeeling tea and lavender. These bonbons are a perfect after-dinner treat due to the combination of a black tea filling with the dark shell.
+Dark  chocolate [Callebaut 54.5%](https://amzn.to/2BmzCtn) bonbons filled with a milk chocolate ganache. The ganache is infused with Earl Grey darjeeling tea and lavender. These bonbons are a perfect after-dinner treat due to the combination of a black tea filling with the dark shell.
 
 ## Ingredients (filling)
 

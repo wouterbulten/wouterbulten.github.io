@@ -12,7 +12,7 @@ description: "Wine salt is an easy and delicious way of using leftover wine."
 
 Every wine drinker (or someone who offers wine to others) will experience this situation at least once: you have leftover (red) wine. What to do with it? For the sake of the argument, disregard the option of just drinking it for now! Of course you can turn wine in to vinegar but I wanted to try something else. Just recently I came across the concept of *wine salts*: salt infused with wine and herbs.
 
-![Finished wine salt. Using wine, herbs and some lemon zest you can turn regular salt in to this very colorfull version.](/assets/images/recipes/red-wine-salt.jpg)
+![Finished wine salt. Using wine, herbs and some lemon zest you can turn regular salt in to this very colorful version.](/assets/images/recipes/red-wine-salt.jpg)
 
 I tried it out, with a full bottle of wine and not a leftover, and have to say: it is really delicious! It is easy to make and results in an end product packed with flavor. Wine salts can be used on top of meats, in salads or in any dish where you want a light wine accent. As the end result is 95% salt, it can be stored for quite some time without spoiling. In terms of taste, it comes closest to the taste of a red wine sauce you make after searing meat.
 

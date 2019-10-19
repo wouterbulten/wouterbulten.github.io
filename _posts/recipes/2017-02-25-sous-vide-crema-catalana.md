@@ -11,6 +11,7 @@ post_image_large: /assets/images/food/2017-2-25-sous-vide-crema-catalana_large.j
 post_image_small: /assets/images/food/2017-2-25-sous-vide-crema-catalana_thumbnail.jpg
 image_in_post: true
 description: "One of my favorite, easy but delicious, recipes: crema Catalana. The great texture of a crème brûlée with the added flavors of cinnamon and citrus."
+onelink: true
 ---
 
 Sous vide crème brûlée is an easy to make, yet delicious dessert. What is even better (*personal opinion*) is the Crema Catalana version of this recipe. Traditionally, crema Catalana is made with milk and some kind of thickener while [crème brûlée]({% post_url recipes/2015-10-16-sous-vide-creme-brulee %}) relies on cream and eggs alone. Personally, I prefer the custard base recipe of crème brûlée with the flavors of crema Catalana; so this recipe is a combination of both.
@@ -34,9 +35,9 @@ This recipe is enough to fill around 12 small jars and can be made a few days in
 
 ## Required materials
 
-- Small canning jars (I use traditional Weck jars), or zip lock bag (see step 3)
+- Small canning jars (I use traditional small [Weck jars](https://amzn.to/33Mcm4g)), or zip lock bag (see step 3)
 - Large pot or container to hold all the jars
-- Sous vide setup (preferred) or thermometer
+- Sous vide setup (preferred, I use an [Anova](https://amzn.to/2IYEmcQ), but any brand will do.) or thermometer
 - Blowtorch
 {: .material-list}
 

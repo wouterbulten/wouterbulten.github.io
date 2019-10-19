@@ -8,6 +8,7 @@ post_image: /assets/images/food/2015-10-16-creme-brulee.jpg
 post_image_small: /assets/images/food/2015-10-16-creme-brulee_thumbnail.jpg
 permalink: blog/cooking/sous-vide-creme-brulee/
 description: "Crème brûlée can be difficult to make and there is a large risk of overcooking. By using a water bath, this classical dessert becomes very easy to make."
+onelink: true
 ---
 
 Making crème brûlée can be a joy, not only because of the end result, but also because of the whole process: from making the custard to creating a nice caramel crust. Unfortunately, it can be difficult to make and there is a large risk of overcooking when making this dessert in an oven. The lack of a good oven is in fact one of the reasons why I never made this at home!
@@ -18,7 +19,7 @@ Luckily, we don't have to use an oven! I got inspiration from a [ChefSteps](http
 
 By using a water bath, similar to sous vide cooking of meat and vegetables, we can precisely control temperature and prevent any overcooking. As I am still waiting on my immersion circulator to arrive, my 'cooking-experimentor-in-crime' *Maaike* and I had to resort to a more low-key approach: the 'stove top' method. While a good sous vide setup is advisable, this recipe can also be done using a regular pot, a thermometer and canning jars. And guess what, it worked perfectly!
 
-So, if you are a crème brûlée enthousiast and have some canning jars laying around, you should definitely try this!
+So, if you are a crème brûlée enthusiast and have some canning jars laying around, you should definitely try this!
 
 ## Ingredients
 
@@ -33,7 +34,7 @@ So, if you are a crème brûlée enthousiast and have some canning jars laying a
 
 ## Required materials
 
-- Small canning jars (I used traditional Weck jars)
+- Small canning jars (I used traditional [Weck jars](https://amzn.to/33Mcm4g))
 - Large pot to hold all the jars
 - Thermometer (or sous vide setup)
 - Blowtorch
@@ -47,7 +48,7 @@ So, if you are a crème brûlée enthousiast and have some canning jars laying a
 
 ### Step 1: Combine
 
-Combine the egg yolk, sugar, salt and vanilla. Wisk until smooth.
+Combine the egg yolk, sugar, salt and vanilla. Whisk until smooth.
 
 Heat the heavy cream in a small pot. Don't let it cook. A temperature around 70&deg;C is oke.
 
