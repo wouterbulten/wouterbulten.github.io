@@ -18,6 +18,17 @@ layout: default
                     <span class="author-name">{{ site.author }}</span>
                 </span>
             </a>
+
+            {% if page.additional_authors %}
+              {% for author in page.additional_authors %}
+              &amp;
+              <a href="{{ author.url }}">
+                  <span class="author">
+                      <span class="author-name">{{ author.name }}</span>
+                  </span>
+              </a>
+              {% endfor %}
+            {% endif %}
         &nbsp;on
         <time>{{ page.date | date_to_string }}</time>,
         {% if page.modified_at %}
