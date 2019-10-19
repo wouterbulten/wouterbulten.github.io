@@ -22,7 +22,7 @@ The richness of dark chocolate paired with the fruitiness of Ruby chocolate and 
 **Contents**
 - [Speculaas spice mix](#spice-mix)
 - [Ingredients](#ingredients)
-- [Equipment](#equipment)
+- [Equipment needed](#equipment)
 - [Recipe](#recipe)
 
 <a name="spice-mix"></a>
@@ -55,14 +55,14 @@ For the ganache filling:
 
 - Double cream, 133 grams
 - Glucose (or honey), 8 grams
-- Ruby chocolate, 223 grams
+- Ruby chocolate, 223 grams (can be bought through [Amazon](https://amzn.to/2oTnP2S) or in specialty stores)
 - Unsalted butter, 14 grams
 - 2 grams of speculaas spice mix (see above)
 - (Optional) colored cocoa butter in red
 
 For the chocolate shells:
 
-- Chocolate, e.g. Callebaut 54.5% Dark chocolate with a 3-drops fluidity, see [post link]. The amount of chocolate will depend on the size of the molds. For the molds used in this recipe, roughly 700 grams of molten chocolate was required.
+- Chocolate, e.g. [Callebaut 54.5%](https://amzn.to/2BmzCtn) Dark chocolate with a 3-drops fluidity, see [my chocolate mousse recipe](http://localhost:4000/blog/food/perfect-chocolate-mousse-my-go-to-recipe/#selecting-chocolate) for more information on chocolate fluidity. The amount of chocolate will depend on the size of the molds. For the molds used in this recipe, roughly 700 grams of molten chocolate was required.
 - (Optional) Food-grade bronze spray
 
 <a name="equipment"></a>
