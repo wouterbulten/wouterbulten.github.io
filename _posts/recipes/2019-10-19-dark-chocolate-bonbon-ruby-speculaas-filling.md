@@ -2,7 +2,7 @@
 layout: post
 title:  'Dark chocolate bonbon with ruby Speculaas filling'
 description: 'The richness of dark chocolate paired with the fruitiness of Ruby chocolate and a speculaas spice mix makes for a great fall and winter bonbon.'
-date:   2019-10-17
+date:   2019-11-05 18:45
 categories: blog food
 tags: [food, chocolate, bonbons, ruby chocolate, recipe]
 image_in_post: true
