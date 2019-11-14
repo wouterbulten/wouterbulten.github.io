@@ -2,14 +2,17 @@
 layout: post
 title:  "Pathologist-level Gleason grading using deep learning"
 date:   2019-07-22 12:17
+modified_at: 2019-11-14 17:25
 categories: blog tech
 tags: [research, deep learning, prostate cancer, Gleason grading]
 published: true
 description: "We developed a fully automated deep learning system to grade prostate biopsies using 5834 biopsies from 1243 patients, and showed that this system achieved pathologist-level performance."
 include_ha_series: false
 image: /assets/images/gleason-grading/gleason_grading_social_image.png
-lazyload_standalone: true
+lazyload_standalone: false
+lazyload: true
 large_twitter_card: true
+imageslider: true
 ---
 
 **100-word summary:** The Gleason score is the most important prognostic marker for prostate cancer patients but suffers from significant inter-observer variability. We developed a fully automated deep learning system to grade prostate biopsies. The system was developed using 5834 biopsies from 1243 patients. A semi-automatic labeling technique was used to circumvent the need for full manual annotation by pathologists. The developed system achieved a high agreement with the reference standard. In a separate observer experiment, the deep learning system outperformed 10 out of 15 pathologists. The system has the potential to improve prostate cancer prognostics by acting as a first or second reader.
@@ -37,6 +40,42 @@ large_twitter_card: true
 Prostate cancer is one of the most common forms of cancer, with more than 1.2 million new cases each year. The diagnosis of prostate cancer is complicated by multiple factors. Patients with low-grade prostate cancer are often better off with a wait-and-see approach than with active treatment due to the side effects of, for example, surgery. High-grade cancers, however, need to be diagnosed as soon as possible not to delay treatment and to increase patient survival. Unfortunately, diagnosis and grading of prostate cancer is a difficult task which suffers from inter- and Intra-observer variability. While export uropathologists have shown better concordance rates, such expertise is not available for every patient. In other words, there is a need for robust and reproducible grading at expert levels. **We have developed an artificially intelligent system, using deep learning, that can perform the grading of prostate cancer at a pathologist-level performance.**
 
 In this blog post, we describe our approach, show how we tackled the problem of data labeling and, finally, show that our deep learning system operates at a pathologist-level performance. The associated manuscript can be found on [arXiv](https://arxiv.org/abs/1907.07980).
+
+<style type="text/css">
+@media(min-width: 768px) {
+  .slider-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .slider-wrapper {
+    margin: 40px -150px 40px -150px;
+  }
+  .slider-wrapper figure {
+    flex: 1 0 50%;
+  }
+}
+</style>
+<div class="slider-wrapper">
+<figure>
+  <div class="beer-slider" data-beer-label="Original">
+    <img data-src="/assets/images/gleason-grading/automated_gleason_example_12.png" class="no-alt lazyload" alt="Gleason 4 area from a prostate biopsy">
+    <div class="beer-reveal" data-beer-label="System prediction">
+      <img data-src="/assets/images/gleason-grading/automated_gleason_example_12_overlay.png" class="no-alt lazyload lazyload-slider" alt="Automated Gleason grading example of Gleason 4 area">
+    </div>
+  </div>
+  <figcaption>Raw output output from the deep learning system overlayed on a tissue region. All tissue marked in orange is detected as Gleason 4.</figcaption>
+</figure>
+
+<figure>
+  <div class="beer-slider" data-beer-label="Original">
+    <img data-src="/assets/images/gleason-grading/automated_gleason_example_11.png" class="no-alt lazyload" alt="Benign area from a prostate biopsy">
+    <div class="beer-reveal" data-beer-label="System prediction">
+      <img data-src="/assets/images/gleason-grading/automated_gleason_example_11_overlay.png" class="no-alt lazyload lazyload-slider" alt="Automated Gleason grading example of a benign area">
+    </div>
+  </div>
+  <figcaption>Raw output output from the deep learning system overlayed on a tissue region. All tissue marked in green is detected as benign glandular tissue.</figcaption>
+</figure>
+</div>
 
 ### Background on Gleason grading
 
@@ -94,6 +133,16 @@ We also evaluated our deep learning system on grouping patients in prognosticall
 ## Future challenges
 
 There are still challenges to overcome before a system such as ours can be used in clinical practice. First of all, our system was developed and evaluated using data from a single center. Including data from different centers, with different stain protocols and scanners could increase the generalization ability of the system. Second, while the performance is high, it is not perfect, and the accuracy of the system could be improved. Though, at some point, it is difficult to say what is better given the high inter- and intra-rater agreement within prostate cancer grading.
+
+<figure>
+  <div class="beer-slider" data-beer-label="Original">
+    <img data-src="/assets/images/gleason-grading/automated_gleason_example_5.png" class="no-alt lazyload" alt="Gleason 4/5 area from a prostate biopsy">
+    <div class="beer-reveal" data-beer-label="System prediction">
+      <img data-src="/assets/images/gleason-grading/automated_gleason_example_5_overlay.png" class="no-alt lazyload lazyload-slider" alt="Automated Gleason grading example of Gleason 4/5 area">
+    </div>
+  </div>
+  <figcaption>Example of a failure case: In some cases the deep learning system has trouble deciding between growth patterns. In this example a glandular region is partly classified as Gleason 4 (orange) and partly as Gleason 5. Adding more training data and focusing on these difficult regions are an avenue for future research.</figcaption>
+</figure>
 
 Given our results, we conclude that there is clear use for automated systems for Gleason grading. Such systems can give feedback to a pathologist at expert levels, both in a first or second reader setting. **AI systems and pathologists excel at different things, and, we firmly believe that a union of both has the most potential for the individual prostate cancer patient.**
 
