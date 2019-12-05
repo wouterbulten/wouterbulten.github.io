@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Pathologist-level Gleason grading using deep learning"
+title:  "Pathologist-level Gleason grading using artificial intelligence (AI) & deep learning"
 date:   2019-07-22 12:17
 modified_at: 2019-11-14 17:25
 categories: blog tech
@@ -17,7 +17,7 @@ imageslider: true
 
 **100-word summary:** The Gleason score is the most important prognostic marker for prostate cancer patients but suffers from significant inter-observer variability. We developed a fully automated deep learning system to grade prostate biopsies. The system was developed using 5834 biopsies from 1243 patients. A semi-automatic labeling technique was used to circumvent the need for full manual annotation by pathologists. The developed system achieved a high agreement with the reference standard. In a separate observer experiment, the deep learning system outperformed 10 out of 15 pathologists. The system has the potential to improve prostate cancer prognostics by acting as a first or second reader.
 
-<img src="/assets/images/gleason-grading/gleason_grading_header_image.png" style="max-width: 100%;">
+<img src="/assets/images/gleason-grading/gleason_grading_header_image.png" style="max-width: 100%;" alt="Automated Gleason Grading using Deep Learning and Artificial Intelligence.">
 
 **Authors:** Wouter Bulten, Hans Pinckaers, Hester van Boven, Robert Vink, Thomas de Bel, Bram van Ginneken, Jeroen van der Laak, Christina Hulsbergen-van de Kaa, Geert Litjens
 
