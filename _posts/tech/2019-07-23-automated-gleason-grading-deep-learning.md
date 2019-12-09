@@ -2,7 +2,7 @@
 layout: post
 title:  "Pathologist-level Gleason grading using artificial intelligence (AI) & deep learning"
 date:   2019-07-22 12:17
-modified_at: 2019-11-14 17:25
+modified_at: 2019-12-09 13:25
 categories: blog tech
 tags: [research, deep learning, prostate cancer, Gleason grading]
 published: true
@@ -30,8 +30,9 @@ imageslider: true
 3. [Network training](#training)
 4. [Results](#results)
 5. [Future challenges](#future)
-6. [More info](#more-info)
-7. [Acknowledgements](#acknowledgements)
+6. [Try out the algorithm](#try-out-algorithm)
+7. [More info](#more-info)
+8. [Acknowledgements](#acknowledgements)
 
 <a name="introduction"></a>
 
@@ -145,6 +146,13 @@ There are still challenges to overcome before a system such as ours can be used 
 </figure>
 
 Given our results, we conclude that there is clear use for automated systems for Gleason grading. Such systems can give feedback to a pathologist at expert levels, both in a first or second reader setting. **AI systems and pathologists excel at different things, and, we firmly believe that a union of both has the most potential for the individual prostate cancer patient.**
+
+<a name="try-out-algorithm"></a>
+## Try out the algorithm online
+
+Interested on testing our algorithm on your own data? The algorithm we developed is available to try out online, without any requirements on deep learning hardware.
+
+<a class="btn btn-primary btn-lg my-3" href="https://www.computationalpathologygroup.eu/software/automated-gleason-grading/">Try out the algorithm</a>
 
 <a name="more-info"></a>
 ## More info
