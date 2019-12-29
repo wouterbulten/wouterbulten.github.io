@@ -30,6 +30,10 @@ var preloadDependencies = [
   {% if page.imageslider %}
   '{{ "/assets/js/BeerSlider.js" | prepend: site.baseurl }}',
   {% endif %}
+
+  {% if page.openseadragon %}
+  '{{ "/assets/dzi/openseadragon.min.js"| prepend: site.baseurl }}',
+  {% endif %}
 ];
 
 var pageScripts = [
@@ -67,6 +71,10 @@ loadjs(preloadDependencies, 'page', function() {
           new BeerSlider(e.target.parentNode.parentNode);
       });
   }
+  {% endif %}
+
+  {% if page.openseadragon %}
+  window.loadDzi();
   {% endif %}
 });
 </script>
