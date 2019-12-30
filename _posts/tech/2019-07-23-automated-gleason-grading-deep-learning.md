@@ -22,7 +22,9 @@ openseadragon: true
 
 **Authors:** Wouter Bulten, Hans Pinckaers, Hester van Boven, Robert Vink, Thomas de Bel, Bram van Ginneken, Jeroen van der Laak, Christina Hulsbergen-van de Kaa, Geert Litjens
 
-**Article URL:** [https://arxiv.org/abs/1907.07980](https://arxiv.org/abs/1907.07980)
+**Article URL:** [Paper at Lancet Oncology](https://doi.org/10.1016/S1470-2045(19)30739-9)
+
+**arXiv URL:** [Preprint at arXiv](https://arxiv.org/abs/1907.07980)
 
 **Table of contents**
 
@@ -198,12 +200,12 @@ The online Gleason grading algorithm consists of multiple steps to prepare and a
 
 <br><a href="https://arxiv.org/abs/1907.07980" class="btn btn-primary">Read full paper on arXiv</a>
 
-- More details can be found in the [full manuscript](https://arxiv.org/abs/1907.07980) and [supplementary material](https://arxiv.org/src/1907.07980v1/anc/Supplementary_Information.pdf).
+- More details can be found in the [article at Lancet Oncology](https://doi.org/10.1016/S1470-2045(19)30739-9) or in the [preprint](https://arxiv.org/abs/1907.07980). Both the article and the preprint have supplementary materials with more details.
 - A description of the tumor detection algorithm can be found in the [paper on tumor detection](https://www.nature.com/articles/srep26286).
 - The epithelium segmentation system is described in a separate [paper](https://www.nature.com/articles/s41598-018-37257-4). The dataset is public, can be found [online through Zenodo](https://zenodo.org/record/1485967) and is described [in a blog post](/blog/tech/peso-dataset-whole-slide-image-prosate-cancer/).
 - This research was performed as part of the [Computational Pathology Group](https://www.computationalpathologygroup.eu/) and the [Diagnostic Image Analysis Group](https://www.diagnijmgen.nl) of [Radboud University Medical Center](https://www.radboudumc.nl).
 
-You can use the following reference if you want to cite the paper:
+Please refer to the website of Lancet Oncology for the correct citation of the article. The following reference is of the preprint version of the article:
 
 > Bulten, Wouter; Pinckaers, Hans; van Boven, Hester; Vink, Robert; de Bel, Thomas; van Ginneken, Bram; van der Laak, Jeroen; Hulsbergen-van de Kaa, Christina; Litjens, Geert "Automated Gleason Grading of Prostate Biopsies using Deep Learning." arXiv preprint arXiv:1907.07980 (2019).
 
