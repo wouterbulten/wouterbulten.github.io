@@ -44,7 +44,7 @@ openseadragon: true
 
 Prostate cancer is one of the most common forms of cancer, with more than 1.2 million new cases each year. The diagnosis of prostate cancer is complicated by multiple factors. Patients with low-grade prostate cancer are often better off with a wait-and-see approach than with active treatment due to the side effects of, for example, surgery. High-grade cancers, however, need to be diagnosed as soon as possible not to delay treatment and to increase patient survival. Unfortunately, diagnosis and grading of prostate cancer is a difficult task which suffers from inter- and Intra-observer variability. While export uropathologists have shown better concordance rates, such expertise is not available for every patient. In other words, there is a need for robust and reproducible grading at expert levels. **We have developed an artificially intelligent system, using deep learning, that can perform the grading of prostate cancer at a pathologist-level performance.**
 
-In this blog post, we describe our approach, show how we tackled the problem of data labeling and, finally, show that our deep learning system operates at a pathologist-level performance. The associated manuscript can be found on [arXiv](https://arxiv.org/abs/1907.07980).
+In this blog post, we describe our approach, show how we tackled the problem of data labeling and, finally, show that our deep learning system operates at a pathologist-level performance. The article is now published at Lancet Oncology](https://doi.org/10.1016/S1470-2045(19)30739-9).
 
 <style type="text/css">
 @media(min-width: 768px) {
