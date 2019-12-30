@@ -53,6 +53,8 @@
 
         {% if page.post_image_large %}
         "image": "{{ site.url}}{{ page.post_image_large }}",
+        {% elsif page.image %}
+        "image": "{{ site.url}}{{ page.image }}",
         {% else %}
         "image": "",
         {% endif %}
