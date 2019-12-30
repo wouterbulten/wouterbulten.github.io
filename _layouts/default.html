@@ -20,7 +20,7 @@ layout: rewrite-cdn
 
     {% if page.layout == 'post' %}
     <meta itemprop="inLanguage" content="en"/>
-    <meta itemprop="mainEntityOfPage" content="{{blog.url}}/{{ page.url }}/#post" />
+    <meta itemprop="mainEntityOfPage" content="{{site.url}}{{ page.url }}#post" />
     {% endif %}
 
     {% include svg-defs.html %}
