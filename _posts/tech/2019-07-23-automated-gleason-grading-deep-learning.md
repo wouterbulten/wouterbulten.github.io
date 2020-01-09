@@ -22,7 +22,9 @@ openseadragon: true
 
 **Authors:** Wouter Bulten, Hans Pinckaers, Hester van Boven, Robert Vink, Thomas de Bel, Bram van Ginneken, Jeroen van der Laak, Christina Hulsbergen-van de Kaa, Geert Litjens
 
-**Article URL:** [https://arxiv.org/abs/1907.07980](https://arxiv.org/abs/1907.07980)
+**Article URL:** [Paper at Lancet Oncology](https://doi.org/10.1016/S1470-2045(19)30739-9)
+
+**arXiv URL:** [Preprint at arXiv](https://arxiv.org/abs/1907.07980)
 
 **Table of contents**
 
@@ -42,7 +44,7 @@ openseadragon: true
 
 Prostate cancer is one of the most common forms of cancer, with more than 1.2 million new cases each year. The diagnosis of prostate cancer is complicated by multiple factors. Patients with low-grade prostate cancer are often better off with a wait-and-see approach than with active treatment due to the side effects of, for example, surgery. High-grade cancers, however, need to be diagnosed as soon as possible not to delay treatment and to increase patient survival. Unfortunately, diagnosis and grading of prostate cancer is a difficult task which suffers from inter- and Intra-observer variability. While export uropathologists have shown better concordance rates, such expertise is not available for every patient. In other words, there is a need for robust and reproducible grading at expert levels. **We have developed an artificially intelligent system, using deep learning, that can perform the grading of prostate cancer at a pathologist-level performance.**
 
-In this blog post, we describe our approach, show how we tackled the problem of data labeling and, finally, show that our deep learning system operates at a pathologist-level performance. The associated manuscript can be found on [arXiv](https://arxiv.org/abs/1907.07980).
+In this blog post, we describe our approach, show how we tackled the problem of data labeling and, finally, show that our deep learning system operates at a pathologist-level performance. The article is now published at Lancet Oncology](https://doi.org/10.1016/S1470-2045(19)30739-9).
 
 <style type="text/css">
 @media(min-width: 768px) {
@@ -148,13 +150,13 @@ Two examples showing the raw output of the algorithm, without any post-processin
 <a name="results"></a>
 ## Overview of main results
 
-We compared our deep learning system on a test set of 550 biopsies. These biopsies were graded by three experts, and their consensus is used as the reference standard. The deep learning system achieved a high agreement with a quadratic Cohen's kappa of 0.918.
+We compared our deep learning system on a test set of 535 biopsies. These biopsies were graded by three experts, and their consensus is used as the reference standard. The deep learning system achieved a high agreement with a quadratic Cohen's kappa of 0.918.
 
 Furthermore, from the test set, we selected 100 cases to be graded by an external panel. This panel consisted of 15 external raters (13 pathologists and 2 pathologists-in-training) from 10 different countries. In agreement with the reference standard (quadratic Cohen's kappa) the deep learning system outperforms 10 out of 15 pathologists.
 
 <img class="lazyload" data-src="/assets/images/gleason-grading/gleason_grading_result.png" alt="Comparison of the deep learning system with a panel of pathologists on agreement with the reference standard." style="max-width: 100%;">
 
-We also evaluated our deep learning system on grouping patients in prognostically relevant groups: (1) benign versus malignant biopsies; and (2) using grade group 2 as cut-off. The deep learning system achieves a pathologist-level performance on both groups. Please see the full paper for further results and more detail.
+We also evaluated our deep learning system on grouping patients in prognostically relevant groups: (1) benign versus malignant biopsies; (2) using grade group 2 as cut-off; and (3) high versus low cancer. The deep learning system achieves a pathologist-level performance on all groups. Please see the full paper for further results and more detail.
 
 <img class="lazyload" data-src="/assets/images/gleason-grading/roc_100set_system_vs_pathologists.png" alt="Comparison of the deep learning system with a panel of pathologists on two relevant patient risk groups." style="max-width: 100%;">
 
@@ -198,12 +200,12 @@ The online Gleason grading algorithm consists of multiple steps to prepare and a
 
 <br><a href="https://arxiv.org/abs/1907.07980" class="btn btn-primary">Read full paper on arXiv</a>
 
-- More details can be found in the [full manuscript](https://arxiv.org/abs/1907.07980) and [supplementary material](https://arxiv.org/src/1907.07980v1/anc/Supplementary_Information.pdf).
+- More details can be found in the [article at Lancet Oncology](https://doi.org/10.1016/S1470-2045(19)30739-9) or in the [preprint](https://arxiv.org/abs/1907.07980). Both the article and the preprint have supplementary materials with more details.
 - A description of the tumor detection algorithm can be found in the [paper on tumor detection](https://www.nature.com/articles/srep26286).
 - The epithelium segmentation system is described in a separate [paper](https://www.nature.com/articles/s41598-018-37257-4). The dataset is public, can be found [online through Zenodo](https://zenodo.org/record/1485967) and is described [in a blog post](/blog/tech/peso-dataset-whole-slide-image-prosate-cancer/).
 - This research was performed as part of the [Computational Pathology Group](https://www.computationalpathologygroup.eu/) and the [Diagnostic Image Analysis Group](https://www.diagnijmgen.nl) of [Radboud University Medical Center](https://www.radboudumc.nl).
 
-You can use the following reference if you want to cite the paper:
+Please see the website of Lancet Oncology for the correct reference of the article. The following reference is of the preprint version of the article:
 
 > Bulten, Wouter; Pinckaers, Hans; van Boven, Hester; Vink, Robert; de Bel, Thomas; van Ginneken, Bram; van der Laak, Jeroen; Hulsbergen-van de Kaa, Christina; Litjens, Geert "Automated Gleason Grading of Prostate Biopsies using Deep Learning." arXiv preprint arXiv:1907.07980 (2019).
 
