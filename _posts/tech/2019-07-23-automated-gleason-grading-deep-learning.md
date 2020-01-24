@@ -2,7 +2,7 @@
 layout: post
 title:  "Pathologist-level Gleason grading using artificial intelligence (AI) & deep learning"
 date:   2019-07-22 12:17
-modified_at: 2019-12-29 13:03
+modified_at: 2020-01-08 23:30
 categories: blog tech
 tags: [research, deep learning, prostate cancer, Gleason grading]
 published: true
