@@ -81,15 +81,15 @@ For the chocolate mousse, please refer to my [crème anglaise based chocolate-mo
 When the chocolate mousse is ready, it is time to assemble the entremet. Note that the chocolate mousse sets over time, so don't wait too long between making the mousse and assembly of the cake.
 
 1. Place a layer of chocolate mousse in the base of your mold. Then, with a spatula, spread the mousse around the sides of the mold and make sure that they are covered. This prevents holes in the outer mousse layer. Don't forget the sides of the inner ring if you are using the  [ "Saturn" mold](https://amzn.to/36vqmQx).
-<br><br><img class="lazyload" alt="Filling the entremet mold with the first layer of mousse." src="/assets/images/recipes/entremet-mold-filling.jpg">
+<br><br><img class="lazyload" alt="Filling the entremet mold with the first layer of mousse." data-src="/assets/images/recipes/entremet-mold-filling.jpg">
 2. Lay the first brownie layer on top of the chocolate mousse. Press gently to spread the chocolate mousse around the sides of the layers. Make sure that the brownie does not touch the sides of the mold.
-<br><br><img class="lazyload" alt="Adding the first brownie layer." src="/assets/images/recipes/entremet-brownie.jpg">
+<br><br><img class="lazyload" alt="Adding the first brownie layer." data-src="/assets/images/recipes/entremet-brownie.jpg">
 
 3. If using, add the Amarena cherries on top of the brownie. Cover with chocolate mousse.
-<br><br><img class="lazyload" alt="Adding the Amarena cherries to the mold." src="/assets/images/recipes/entremet-cherries.jpg">
+<br><br><img class="lazyload" alt="Adding the Amarena cherries to the mold." data-src="/assets/images/recipes/entremet-cherries.jpg">
 
 4. Add more mousse to the mold to fill all the sides. Spread the mousse on top and make it even using a spatula or palette knife.
-<br><br><img class="lazyload" alt="Final layer of chocolate mousse." src="/assets/images/recipes/entremet-chocolate-mousse.jpg">
+<br><br><img class="lazyload" alt="Final layer of chocolate mousse." data-src="/assets/images/recipes/entremet-chocolate-mousse.jpg">
 
 5. Cover the filled silicone mold with cling wrap and put it in the freezer. Freezing will take at least 6 hours (varies on the size of your mold and temperature of the freezer). The mousse cake must be completely frozen before removing it from the mold.
 
@@ -98,7 +98,7 @@ When the chocolate mousse is ready, it is time to assemble the entremet. Note th
 
 If using cocoa butter (velvet) spray, check the instructions on your spray. Most sprays need to be heated in water for at least 20 minutes. When the spray is up to temperature, you can continue with the entremet.
 
-<img class="lazyload" alt="Entremet when the mold was removed, just before spraying." src="/assets/images/recipes/chocolate-entremet-mousse.png">
+<img class="lazyload" alt="Entremet when the mold was removed, just before spraying." data-src="/assets/images/recipes/chocolate-entremet-mousse.png">
 
 When the cake is completely frozen, remove the mold and put the cake on a bowl (or something else to raise it). With clean hands, you can carefully remove condensation from the entremet; this makes sure that the velvet spray sticks to the entremet.
 
@@ -106,8 +106,8 @@ Spray the mold with the cocoa butter spray and let un-freeze in the fridge.
 
 Instead of the velvet spray, you can also cover the cake with a mirror glaze or keep the chocolate mousse as the outer layer. The velvet spray is just for show and does not add any significant flavor.
 
-<img class="lazyload" alt="Entremet with cocoa butter outer layer." src="/assets/images/recipes/entremet-spray.png">
+<img class="lazyload" alt="Entremet with cocoa butter outer layer." data-src="/assets/images/recipes/entremet-spray.png">
 
 Just before serving, you can add any garnishes of your choosing. I opted for some chocolate decorations in green:
 
-<img class="lazyload" alt="End result of the entremet" src="/assets/images/recipes/entremet-end-result.png">
+<img class="lazyload" alt="End result of the entremet" data-src="/assets/images/recipes/entremet-end-result.png">

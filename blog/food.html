@@ -4,6 +4,7 @@ layout: default
 description: An overview of my latest cooking experiments, many of them with a 'modernist cuisine' twist.
 category: cooking
 blog_index: true
+lazyload_standalone: true
 ---
 
 {% assign date_threshold = "2014-01-01" | date: "%s" %}
@@ -25,7 +26,7 @@ blog_index: true
             <article class="card" itemscope itemtype="http://schema.org/BlogPosting" role="article">
                 {% if post.post_image %}
                     <a href="{{ post.url }}">
-                        <img class="card-img-top" itemprop="image" src="{{ post.post_image }}" alt="{{ post.title }}">
+                        <img class="lazyload card-img-top" itemprop="image" data-src="{{ post.post_image }}" alt="{{ post.title }}">
                     </a>
                 {% endif %}
                 <div class="card-body">
