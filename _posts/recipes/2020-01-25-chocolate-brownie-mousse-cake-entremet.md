@@ -27,10 +27,10 @@ This specific entremet consists of **two layers of chocolate brownie as a base, 
 
 For this recipe, some special equipment/ingredients are required:
 
-- Entremet mold. For this recipe, I used a [Silikomart "Saturn" Entremet mold](https://amzn.to/36vqmQx). If you don't want to buy a dedicated mold, you can also use a cake tin lined with [acetate foil](https://amzn.to/2GoCokc).
+- Entremet mold. For this recipe, I used a <a href="https://amzn.to/36vqmQx" rel="nofollow">Silikomart "Saturn" Entremet mold</a>. If you don't want to buy a dedicated mold, you can also use a cake tin lined with <a href="https://amzn.to/2GoCokc" rel="nofollow">acetate foil</a>.
 - A cake tin to bake the brownie, the tin should be slightly smaller than entremet mold. Of course, you can also use the entremet mold and cut the brownie to size.
-- Fruit filling. We choose to go for sour [Amarena cherries](https://amzn.to/2ux5rQ5) as they complement the richness of the brownie and mousse. Of course, you can substitute this for something else.
-- Cocoa butter velvet spray. I usually use the [spray colors from Modecor](https://www.modecor.it/en/prodotti/coloranti/colori-in-spray/23165-color-spray-250ml-rosso-af/) as they are available at my local supply store. Alternatives are available through Amazon, like from [Silikomart](https://amzn.to/30TiyqV). Make sure you get a food-safe cocoa butter spray.
+- Fruit filling. We choose to go for sour <a href="https://amzn.to/2ux5rQ5" rel="nofollow">Amarena cherries</a> as they complement the richness of the brownie and mousse. Of course, you can substitute this for something else.
+- Cocoa butter velvet spray. I usually use the [spray colors from Modecor](https://www.modecor.it/en/prodotti/coloranti/colori-in-spray/23165-color-spray-250ml-rosso-af/) as they are available at my local supply store. Alternatives are available through Amazon, like from <a rel="nofollow" href="https://amzn.to/30TiyqV">Silikomart</a> Make sure you get a food-safe cocoa butter spray.
 
 <a name="brownie"></a>
 ## 1. Making the entremet base (the brownie)
