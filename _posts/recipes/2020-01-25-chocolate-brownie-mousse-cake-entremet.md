@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  'Chocolate Entremet (Mousse Cake) with Amarena Cherries'
+title:  'Chocolate entremet (mousse cake) with Amarena cherries'
 date:   2020-01-25
 categories: blog food
 tags: [recipe, dessert, chocolate, entremet, mousse cake]
