@@ -32,7 +32,7 @@ Optional, to finish (as shown in the image):
 ## Equipment
 
 - Emersion circulator. I use an [Anova](https://amzn.to/2IYEmcQ), but any brand will do.
-- Vacuum pouches + sealer or a zip-lock bags.
+- Vacuum pouches + sealer or a zip-lock bags. I use a fairly cheap vacuum sealer from <a href="https://amzn.to/38CF8qn" rel="nofollow"Foodsaver</a>.
 - Pan for searing the steak.
 
 ## Recipe

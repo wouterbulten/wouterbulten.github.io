@@ -25,7 +25,7 @@ So, when you have some wine left over or want to have a new ingredient at your d
   - I used an Argentine malbec, a *Trivento, Malbec Reserve, 2014*.
 - Coarse sea salt
   - The grains should be large, this will ensure that the salt does not dissolve in the wine so easily.
-  - I used *Maldon salt* for its irregular large texture.
+  - I used <a href="https://amzn.to/38EjZMh" rel="nofollow">Maldon salt</a> for its irregular large texture.
 - Fresh herbs, e.g. thyme (optional)
 - Lemon zest (optional)
 {: .ingredient-list}
