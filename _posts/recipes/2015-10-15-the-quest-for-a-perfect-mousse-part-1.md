@@ -9,11 +9,14 @@ post_image_small: /assets/images/food/2015-10-15-chocolate-mousse_thumbnail.jpg
 permalink: blog/cooking/the-quest-for-a-perfect-mousse-part-1/
 image_in_post: true
 description: "In need of a fast chocolate mousse? This recipe uses a siphon to get the job done."
+onelink: true
 ---
 
 Some time a go I started a personal quest: finding the perfect chocolate mousse. While I haven't found the perfect recipe *yet*, I've decided to document my (numerous) attempts as part of a series. While many of you will know the traditional way of making chocolate mousse (cream, chocolate, egg whites), this series will focus primarily on new or different methods.
 
 We'll start of with a recipe that is simple and fast, doesn't require eggs and is fun to serve!
+
+*Tip:* Interested in another chocolate recipe? I also have a recipe for [mousse based on crème anglaise](/blog/food/perfect-chocolate-mousse-my-go-to-recipe/) which can be used for filling molds and entremets.
 
 ## Ingredients
 
@@ -27,8 +30,8 @@ We'll start of with a recipe that is simple and fast, doesn't require eggs and i
 
 ## Required materials
 
-- Whipping siphon (0.5L / 1L)
-- Cream chargers (1 for 0.5L, 2 for 1L)
+- Whipping siphon (0.5L / 1L). I use a siphon from iSi, the <a href="https://amzn.to/2NYstG8" rel="nofollow">Gourmet Whip</a> but other brands will also do fine.
+- Cream chargers (1 for 0.5L, 2 for 1L), like the ones from <a href="https://amzn.to/2GpKCbU" rel="nofollow">iSi</a>. Make sure to get the *cream* chargers, the CO2 chargers won't work.
 {: .material-list}
 
 ## Time to make

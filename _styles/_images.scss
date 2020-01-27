@@ -46,7 +46,7 @@
 .image-grid-3 {
   .image-grid-item {
     flex: 0 1 33.33%;
-
+    border: 2px solid $body-bg;
     img {
       width: 100%;
     }

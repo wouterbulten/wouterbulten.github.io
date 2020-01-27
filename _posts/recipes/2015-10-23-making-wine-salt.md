@@ -8,6 +8,7 @@ post_image: /assets/images/food/2015-10-23-red-wine-salt.jpg
 post_image_small: /assets/images/food/2015-10-23-red-wine-salt_thumbnail.jpg
 permalink: blog/cooking/making-wine-salt/
 description: "Wine salt is an easy and delicious way of using leftover wine."
+onelink: true
 ---
 
 Every wine drinker (or someone who offers wine to others) will experience this situation at least once: you have leftover (red) wine. What to do with it? For the sake of the argument, disregard the option of just drinking it for now! Of course you can turn wine in to vinegar but I wanted to try something else. Just recently I came across the concept of *wine salts*: salt infused with wine and herbs.
@@ -25,7 +26,7 @@ So, when you have some wine left over or want to have a new ingredient at your d
   - I used an Argentine malbec, a *Trivento, Malbec Reserve, 2014*.
 - Coarse sea salt
   - The grains should be large, this will ensure that the salt does not dissolve in the wine so easily.
-  - I used *Maldon salt* for its irregular large texture.
+  - I used <a href="https://amzn.to/38EjZMh" rel="nofollow">Maldon salt</a> for its irregular large texture.
 - Fresh herbs, e.g. thyme (optional)
 - Lemon zest (optional)
 {: .ingredient-list}

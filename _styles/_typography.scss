@@ -60,3 +60,11 @@ table {
     padding: 5px 10px 5px 0;
   }
 }
+
+a[href^="https://amzn.to"]:after {
+    content: "*";
+    color: #63676b;
+}
+a.btn[href^="https://amzn.to"]:after {
+  content: ""
+}

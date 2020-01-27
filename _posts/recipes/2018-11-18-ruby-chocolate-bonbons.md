@@ -14,7 +14,7 @@ post_image_small: /assets/images/food/2018-11-18-ruby-chocolate-bonbons_thumbnai
 onelink: true
 ---
 
-Ruby chocolate's distinctive flavour gives the possibility to try out new flavour combinations. Here I discuss the process of making ruby bonbons and a few ingredients that I found match well with ruby chocolate. Ruby Chocolate is made by Callebaut/Cacao Barry and can be bought online through [Amazon](https://amzn.to/2oTnP2S) or at specialized retail stores.
+Ruby chocolate's distinctive flavour gives the possibility to try out new flavour combinations. Here I discuss the process of making ruby bonbons and a few ingredients that I found match well with ruby chocolate. Ruby Chocolate is made by Callebaut/Cacao Barry and can be bought online through <a href="https://amzn.to/2oTnP2S" rel="nofollow">Amazon</a>. or at specialized retail stores.
 
 Contents:
 
@@ -23,10 +23,18 @@ Contents:
 3. [Making the bonbons](#bonbons)
 4. [Bonbon fillings](#fillings)
 
+Required materials:
+
+- Polycarbonate chocolate molds (<a href="https://amzn.to/30WsVKv" rel="nofollow">Mold used in the picture</a>)
+- Stick blender or food processor
+- Thermometer
+- Tempering equipment, I use a <a href="https://amzn.to/2uw1fjs" rel="nofollow">temperature controlled chocolate melter</a>.
+- Piping bag
+- Spatulas, pallet knife, or something else to clean up the molds after filling
+
 <a name="tempering"></a>
 
 ## 1. Tempering ruby chocolate
-
 
 1. Measure out your chocolate. 300 grams of callets is usually enough for a single mold. In general it is easier to melt a larger batch of chocolate, especially when filling the molds. Left over chocolate can be reused in other recipes. An additional +/- 50 grams is required as a seed.
 2. Start by heating the chocolate to 45&deg;C (113 &deg;F).
@@ -41,7 +49,7 @@ To test whether tempering was successful: With a knife take a small portion of t
 
 To add colors to your chocolate shells:
 
-1. Melt coco butter with food coloring. For the bonbons in the picture of this post, I used a combination of red and white [Power Flowers](https://www.ibcbelgium.com/en/powerflowers). 1/4 of a flower is more than enough to color a mold.
+1. Melt coco butter with food coloring. For the bonbons in the picture of this post, I used a combination of red and white [Power Flowers](https://www.ibcbelgium.com/en/powerflowers), other options are available through <a href="https://amzn.to/2sXvgYX" rel="nofollow">Amazon</a> or special stores. 1/4 of a flower is more than enough to color a mold.
 2. Apply a thin layer of the molten coco butter to polycarbonate chocolate molds. Apply colors you want to show on the outside first; e.g. first red and then a layer of white as a 'base' coat. Silicon molds can also be used but will not result in the same glossy finish as when using polycarbonate.
 
 <img alt="Ruby chocolate bonbons (without any coloring)" class="img-thumbnail" src="/assets/images/recipes/ruby-chocolate-bonbons.jpg">
@@ -79,4 +87,6 @@ Add a small portion of the spiced jam to the bonbons. Top off with hazelnut pral
 
 ### Crunchy [Speculaas](https://en.wikipedia.org/wiki/Speculaas)
 
-Mix 30 grams of crushed speculaas with a few table spoons of grape seed oil. Add just enough oil to make a very coarse paste. Add molten ruby chocolate and mix well. Let cool down and fill the bonbons.
+Mix 30 grams of crushed speculaas with a few table spoons of rapeseed oil or any other neutral oil. Add just enough oil to make a very coarse paste. Add molten ruby chocolate and mix well. Let cool down and fill the bonbons.
+
+*Tip:* If you like speculaas, check out this recipe for [dark chocolate bonbons with speculaas and ruby filling](/blog/food/dark-chocolate-bonbon-ruby-speculaas-filling/).
