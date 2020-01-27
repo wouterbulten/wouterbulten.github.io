@@ -95,20 +95,6 @@ If you make use of this dataset please cite both the dataset itself and the corr
     "pathology", "computational pathology", "prostate cancer", "epithelium", "deep learning", "H&E", "immunohistochemistry"
   ],
   "license" : "http://creativecommons.org/licenses/by-nc-sa/4.0",
-  "hasPart" : [
-    {
-      "@type": "Dataset",
-      "name": "Sub dataset 01",
-      "description": "Informative description of the first subdataset...",
-      "license" : "https://creativecommons.org/publicdomain/zero/1.0/"
-    },
-    {
-      "@type": "Dataset",
-      "name": "Sub dataset 02",
-      "description": "Informative description of the second subdataset...",
-      "license" : "https://creativecommons.org/publicdomain/zero/1.0/"
-    }
-  ],
   "creator": [
       {
           "@type": "Person",
