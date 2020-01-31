@@ -2,6 +2,7 @@
 layout: default
 home: true
 has_container: true
+lazyload_standalone: true
 ---
 
 
@@ -45,7 +46,7 @@ has_container: true
             {% assign date_threshold = "2017-01-01" | date: "%s" %}
             {% for post in site.categories['food'] %}
             {% assign post_date = post.date | date: "%s" %}
-                <a href="{{ post.url }}" class="image-grid-item"><img src="{{ post.post_image_small }}" title="{{ post.title }}"></a>
+                <a href="{{ post.url }}" class="image-grid-item"><img class="lazyload" data-src="{{ post.post_image_small }}" title="{{ post.title }}"></a>
             {% endfor %}
         </div>
     </div>
