@@ -208,6 +208,7 @@ if(navigator.doNotTrack != "1") {
     window.ga_loaded = true;
   });
   ga('create', 'UA-11759031-3', 'auto');
+  ga('set', 'anonymizeIp', true);
   ga('send', 'pageview');
 } else {
   console.info("DoNotTrack header was set, not loading Google Analytics for this request.");
