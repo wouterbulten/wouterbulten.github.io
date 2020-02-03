@@ -1,6 +1,3 @@
-{% if page.lazyload_standalone %}
-<script src='{{ "/assets/js/lazysizes.min.js" | prepend: site.baseurl }}' async=""></script>
-{% endif %}
 {% if page.jquery or page.chartjs or page.readingTime or page.imageslider or (page.tags and page.tags contains 'home automation') %}
 <script type="text/javascript">
 /* https://github.com/muicss/loadjs */
@@ -78,6 +75,9 @@ loadjs(preloadDependencies, 'page', function() {
   {% endif %}
 });
 </script>
+{% else %}
+<!-- Always load lazysizes to optimize images -->
+<script src='{{ "/assets/js/lazysizes.min.js" | prepend: site.baseurl }}' async=""></script>
 {% endif %}
 
 {% if page.layout == 'post' %}

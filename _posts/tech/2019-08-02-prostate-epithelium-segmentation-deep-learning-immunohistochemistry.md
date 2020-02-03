@@ -3,7 +3,7 @@ layout: post
 title: "Epithelium segmentation using deep learning and immunohistochemistry"
 date: 2019-08-02 14:17
 categories: blog tech
-tags: [research, deep learning, prostate cancer, immunohistochemistry, epithelium segmentation]
+tags: [research, phd, deep learning, prostate cancer, immunohistochemistry, epithelium segmentation]
 published: true
 description: "We developed a new deep learning method to segment epithelial tissue in digitized hematoxylin and eosin (H&E) stained prostatectomy slides using immunohistochemistry (IHC) as reference standard."
 image: /assets/images/peso/ihc_he_overlay.jpg

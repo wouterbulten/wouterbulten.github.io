@@ -135,6 +135,12 @@
   .post-title {
     font-weight: 700;
     font-style: normal;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
 
     font-size: 2rem;
     line-height: 2.5rem;

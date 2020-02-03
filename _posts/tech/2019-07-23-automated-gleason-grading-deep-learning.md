@@ -4,7 +4,7 @@ title:  "Pathologist-level Gleason grading using artificial intelligence (AI) & 
 date:   2019-07-22 12:17
 modified_at: 2020-01-08 23:30
 categories: blog tech
-tags: [research, deep learning, prostate cancer, Gleason grading]
+tags: [research, phd, deep learning, prostate cancer, Gleason grading]
 published: true
 description: "We developed a fully automated deep learning system to grade prostate biopsies using 5759 biopsies from 1243 patients, and showed that this system achieved pathologist-level performance."
 include_ha_series: false
@@ -198,38 +198,27 @@ The online Gleason grading algorithm consists of multiple steps to prepare and a
 <a name="more-info"></a>
 ## More info
 
-<br><a href="https://arxiv.org/abs/1907.07980" class="btn btn-primary">Read full paper on arXiv</a>
+<br><a href="https://doi.org/10.1016/S1470-2045(19)30739-9" class="btn btn-primary">Download paper</a> <a href="https://arxiv.org/abs/1907.07980" class="btn btn-primary">Download preprint</a>
 
 - More details can be found in the [article at Lancet Oncology](https://doi.org/10.1016/S1470-2045(19)30739-9) or in the [preprint](https://arxiv.org/abs/1907.07980). Both the article and the preprint have supplementary materials with more details.
 - A description of the tumor detection algorithm can be found in the [paper on tumor detection](https://www.nature.com/articles/srep26286).
 - The epithelium segmentation system is described in a separate [paper](https://www.nature.com/articles/s41598-018-37257-4). The dataset is public, can be found [online through Zenodo](https://zenodo.org/record/1485967) and is described [in a blog post](/blog/tech/peso-dataset-whole-slide-image-prosate-cancer/).
 - This research was performed as part of the [Computational Pathology Group](https://www.computationalpathologygroup.eu/) and the [Diagnostic Image Analysis Group](https://www.diagnijmgen.nl) of [Radboud University Medical Center](https://www.radboudumc.nl).
 
-Please see the website of Lancet Oncology for the correct reference of the article. The following reference is of the preprint version of the article:
+Please use the following to refer to our paper or this post:
 
-> Bulten, Wouter; Pinckaers, Hans; van Boven, Hester; Vink, Robert; de Bel, Thomas; van Ginneken, Bram; van der Laak, Jeroen; Hulsbergen-van de Kaa, Christina; Litjens, Geert "Automated Gleason Grading of Prostate Biopsies using Deep Learning." arXiv preprint arXiv:1907.07980 (2019).
+> Bulten, Wouter; Pinckaers, Hans; van Boven, Hester; Vink, Robert; de Bel, Thomas; van Ginneken, Bram; van der Laak, Jeroen; Hulsbergen-van de Kaa, Christina; Litjens, Geert, "Automated deep-learning system for Gleason grading of prostate cancer using biopsies: a diagnostic study." The Lancet Oncology (2020).
 
 Or, if you prefer BibTeX:
 
 ```tex
 {% raw %}
-@article{Bulten2019Gleason,
-       author = {{Bulten}, Wouter and {Pinckaers}, Hans and {van Boven}, Hester and
-         {Vink}, Robert and {de Bel}, Thomas and {van Ginneken}, Bram and
-         {van der Laak}, Jeroen and {Hulsbergen-van de Kaa}, Christina and
-         {Litjens}, Geert},
-        title = "{Automated Gleason Grading of Prostate Biopsies using Deep Learning}",
-      journal = {arXiv e-prints},
-     keywords = {Electrical Engineering and Systems Science - Image and Video Processing, Computer Science - Computer Vision and Pattern Recognition},
-         year = "2019",
-        month = "Jul",
-          eid = {arXiv:1907.07980},
-        pages = {arXiv:1907.07980},
-archivePrefix = {arXiv},
-       eprint = {1907.07980},
- primaryClass = {eess.IV},
-       adsurl = {https://ui.adsabs.harvard.edu/abs/2019arXiv190707980B},
-      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+@article{bulten2020automated,
+  title={Automated deep-learning system for Gleason grading of prostate cancer using biopsies: a diagnostic study},
+  author={Bulten, Wouter and Pinckaers, Hans and van Boven, Hester and Vink, Robert and de Bel, Thomas and van Ginneken, Bram and van der Laak, Jeroen and Hulsbergen-van de Kaa, Christina and Litjens, Geert},
+  journal={The Lancet Oncology},
+  year={2020},
+  publisher={Elsevier}
 }
 {% endraw %}
 ```

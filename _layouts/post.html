@@ -68,6 +68,10 @@ layout: default
       {% include posts/ha-series.html %}
     {% endif %}
 
+    {% if page.tags contains 'phd' %}
+        {% include posts/phd-series.html %}
+    {% endif %}
+
     {% assign cat = page.categories[1] | downcase %}
 
     {% if cat == 'food' %}
@@ -93,7 +97,7 @@ layout: default
         <p><small>Notice on Amazon or product links: Sometimes I link to products on Amazon that I have used in a recipe, e.g. ingredients or tools. Some of these links contain an affiliate code from the Amazon Associate Program and I could earn from qualifying purchases. These links are marked with a *, but don't increase the cost of what you purchase, or influence the content of the post.</small></p>
     </div>
     {% else %}
-      {% if post.tags contains 'home automation' %}
+      {% if page.tags contains 'home automation' or page.tags contains 'phd' %}
       {% else %}
       <div class="related-posts">
         <h2 class="index-headline"><span>Other posts on my blog</span></h2>

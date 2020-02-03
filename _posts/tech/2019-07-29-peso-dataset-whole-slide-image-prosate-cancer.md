@@ -3,7 +3,7 @@ layout: post
 title: "The public PESO dataset: prostate H&E whole-side images for epithelium segmentation"
 date: 2019-07-29 16:17
 categories: blog tech
-tags: [research, deep learning, prostate cancer, immunohistochemistry, epithelium segmentation]
+tags: [research, phd, deep learning, prostate cancer, immunohistochemistry, epithelium segmentation]
 published: true
 description: "Public dataset of prostatectomy whole-slide images for epithelium segmentation, licensed under a BY-NC-SA Creative Commons license."
 image: /assets/images/peso/ihc_he_overlay.jpg

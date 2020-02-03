@@ -1,0 +1,57 @@
+<div class="related-posts">
+
+    <img class="lazyload" style="float: right; width: 100%; max-width: 400px;" data-src="/assets/images/gleason-grading/computational_pathology_phd.png">
+
+    <h1>Series on my PhD in Computational Pathology</h1>
+    <p>This post is part of a series related to my <b>PhD project</b> on <b>prostate cancer, deep learning</b> and <b>computational pathology</b>. In my research I develop AI algorithms to diagnose prostate cancer. Interested in the rest of my research? The three latest post are shown below. For all the posts, see my <a href="/blog/research/">Research Blog</a>.</p>
+
+    <p><a class="btn btn-info" href="/blog/research/">Research blog</a><br><br></p>
+
+    <h3>Latest posts related to my PhD</h3>
+
+    <br>
+    <ul>
+        {% assign i = 0 %}
+        {% for post in site.posts %}
+        {% if i > 2 %}{% break %}{% endif %}
+        {% if post.tags contains 'phd' %}
+        {% if post.url != page.url %}
+        {% assign i = i | plus:1 %}
+        <li>
+            <h4 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h4>
+            <p>{{ post.content | strip_html | truncatewords: 50 }} <a class="read-more" href="{{ post.url }}">Start reading &rarr;</a></p>
+        </li>
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    <p><a class="btn btn-info" href="/blog/research/">More research posts &rarr;</a></p>
+
+    <br>
+    <h3>Deep learning posts</h3>
+
+    <p>Sometimes I write a blog post on <b>deep learning</b> or related techniques. The latest posts are shown below. Interested in reading all my blog posts? You can read them on my <a href="/blog/tech/">tech blog</a>.</p>
+    <br>
+
+    <ul>
+        {% assign i = 0 %}
+        {% for post in site.posts %}
+        {% if i > 2 %}{% break %}{% endif %}
+        {% if post.tags contains 'deep learning' %}
+        {% unless post.tags contains 'phd' %}
+        {% if post.url != page.url %}
+        {% assign i = i | plus:1 %}
+        <li>
+            <h4 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h4>
+            <p>{{ post.content | strip_html | truncatewords: 50 }} <a class="read-more" href="{{ post.url }}">Start reading &rarr;</a></p>
+        </li>
+        {% endif %}
+        {% endunless %}
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    <p><a class="btn btn-info" href="/blog/tech/">More tech posts &rarr;</a></p>
+
+</div>
