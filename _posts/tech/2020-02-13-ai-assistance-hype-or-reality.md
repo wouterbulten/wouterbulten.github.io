@@ -7,7 +7,7 @@ tags: [research, phd, deep learning, prostate cancer, Gleason grading]
 published: true
 description: ""
 include_ha_series: false
-image: /assets/images/gleason-grading/gleason_grading_social_image.png
+image: /assets/images/gleason-grading/ai_assistance_social_image.png
 large_twitter_card: true
 imageslider: false
 openseadragon: false
