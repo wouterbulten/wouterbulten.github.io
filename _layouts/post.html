@@ -96,8 +96,6 @@ layout: default
             {% endif %}
         {% endfor %}
         </div>
-
-        <p><small>Notice on Amazon or product links: Sometimes I link to products on Amazon that I have used in a recipe, e.g. ingredients or tools. Some of these links contain an affiliate code from the Amazon Associate Program and I could earn from qualifying purchases. These links are marked with a *, but don't increase the cost of what you purchase, or influence the content of the post.</small></p>
     </div>
     {% else %}
       {% if page.tags contains 'home automation' or page.tags contains 'phd' %}
@@ -138,5 +136,9 @@ layout: default
     })();
     </script>
     <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    {% endif %}
+
+    {% if page.onelink or cat == 'food' %}
+    <p><small>Notice on Amazon or product links: Sometimes I link to products on Amazon that I have used in a recipe, e.g. ingredients or tools. Some of these links contain an affiliate code from the Amazon Associate Program and I could earn from qualifying purchases. These links are marked with a *, but don't increase the cost of what you purchase, or influence the content of the post.</small></p>
     {% endif %}
 </div>
