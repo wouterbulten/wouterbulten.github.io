@@ -78,12 +78,13 @@ layout: default
     <div class="post-overview section-fullpage">
         <h2 class="index-headline"><span>Latest posts in the food category</span></h2>
         <div class="card-group">
-        {% for post in site.categories['food'] limit:3 %}
-
+        {% assign postsShown = 0 %}
+        {% for post in site.categories['food'] limit:6 %}
+            {% if post.title != page.title and postsShown < 3 %}
             <article class="card" itemscope itemtype="http://schema.org/BlogPosting" role="article">
                 {% if post.post_image %}
                     <a href="{{ post.url }}">
-                        <img class="card-img-top" itemprop="image" src="{{ post.post_image }}" alt="{{ post.title }}">
+                        <img class="card-img-top lazyload" itemprop="image" data-src="{{ post.post_image }}" alt="{{ post.title }}">
                     </a>
                 {% endif %}
                 <div class="card-body">
@@ -91,6 +92,8 @@ layout: default
                     <p class="card-text">{{ post.description }}</p>
                 </div>
             </article>
+            {% assign postsShown = postsShown | plus: 1 %}
+            {% endif %}
         {% endfor %}
         </div>
 
@@ -117,6 +120,7 @@ layout: default
     {% endif %}
 
     {%if site.disqus and jekyll.environment == "production" %}
+    <a name="comments"></a>
     <div id="disqus_thread" class="comment-section"></div>
     <script>
     var disqus_shortname = '{{site.disqus}}';

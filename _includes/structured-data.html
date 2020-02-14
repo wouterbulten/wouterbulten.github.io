@@ -7,6 +7,15 @@
 
         "name": "{{ page.title }}",
         "keywords": "{{ page.tags | join: ', ' }}",
+        {% if page.recipe_preptime %}
+        "prepTime": "{{ page.recipe_preptime }}",
+        {% endif %}
+        {% if page.recipe_cooktime %}
+        "cookTime": "{{ page.recipe_cooktime }}",
+        {% endif %}
+        {% if page.recipe_totaltime %}
+        "totalTime": "{{ page.recipe_totaltime }}",
+        {% endif %}
 
         {% if page.post_image_large %}
         "image": [
