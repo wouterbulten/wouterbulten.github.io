@@ -25,7 +25,18 @@ After completing our study on automated Gleason grading for prostate cancer, we 
 
 ## AI assistance for pathologists
 
-<img data-src="/assets/images/gleason-grading/ai_assistance_study_setup.png" style="max-width: 100%;" alt="" class="lazyload">
+When we developed the deep learning system, one of our design focusses was that the system would give interpretable output. Knowing the final diagnosis for a case is interesting, but it is more useful if a system can also show on what it based its decision. In our case, we do this by letting the system highlight prostate glands that it finds malignant. This would make the inspection of the system's second opinion easy and should benefit the final diagnose, so we assumed.
+
+In our Lancet Oncology publication[^gl1], we showed that our deep learning system outperformed 10 out of 15 panel members. We, however, only compared the AI system to the panel. To investigate the integration of the AI system in the grading workflow of the pathologist, we invited the same panel to participate in a follow-up experiment. In total, 14 pathologists and residents joined our new study. The new experiment consisted of two reads: 1) the initial unassisted read as part of the Lancet Oncology publication, and 2) an AI-assisted read which occurred after a wash-out period.
+
+<img data-src="/assets/images/gleason-grading/ai_assistance_study_setup.png" style="max-width: 100%;" alt="Overview of the study design. In the first read, the panel graded all biopsies without assistance. In the second read, AI assistance was presented next to the biopsy." class="lazyload">
+
+The unassisted read was already performed as part of the previous study. For the assisted read, we showed our panel of pathologists a set of 160 biopsies through an online viewer. Of these biopsies, 100 were part of the previous study; this way, we could compare performance between assisted and unassisted. The minimal time between reads was three months. The remaining 60 cases were used as controls.
+
+The difference between the two reads was the AI feedback. While in the unassisted read, panel members graded cases as they would normally. In the assisted read, we showed the output of the AI system next to the orignal biopsy (see figure). Additionally, the biopsy-level prediction was also shown (grade group and Gleason score).
+
+## Better performance, lower variability
+
 
 # References
 
