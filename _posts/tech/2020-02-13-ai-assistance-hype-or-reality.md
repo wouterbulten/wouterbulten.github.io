@@ -35,8 +35,13 @@ The unassisted read was already performed as part of the previous study. For the
 
 The difference between the two reads was the AI feedback. While in the unassisted read, panel members graded cases as they would normally. In the assisted read, we showed the output of the AI system next to the orignal biopsy (see figure). Additionally, the biopsy-level prediction was also shown (grade group and Gleason score).
 
+For all of these biopsies, the reference standard was set by three uropathologists in consensus. Panel members determined the grade group of the biopsy, and this was later compared to the reference standard. 
+
 ## Better performance, lower variability
 
+After the assisted read, the scores of the individual readers were compared across the two runs. As the primary metric, we used quadratically weighted Cohen's kappa. Whereas in the unassisted read, the panel achieved a median score of 0.79, this increased to 0.87 in the AI-assisted read (an increase of almost 10%). Besides this increase, the variability of the panel members dropped; the interquartile range of the panel's kappa values dropped from 0.11 to 0.07
+
+Moreover, without assistance, the AI system outperformed 10 out of 14 observers (71%). In the assisted read, this flipped, and 9 out of 14 exceeded the AI. 
 
 # References
 
