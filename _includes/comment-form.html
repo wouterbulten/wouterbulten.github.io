@@ -27,6 +27,7 @@
     });
     var captchaCallback = function() {
       console.info("Captcha loaded, securing form.");
+      document.getElementById('comments-captcha').innerHTML = "";
       grecaptcha.render('comments-captcha', {
         'sitekey' : '{{ site.comments.captcha_key }}'
       })
@@ -53,7 +54,9 @@
     <textarea name="fields[message]" id="contact_message" placeholder="Your message" rows="12" cols="36" required></textarea>
 
     <label>Please fill in the captcha:</label>
-    <div class="captcha-container" id="comments-captcha" style="min-height: 100px; flex: 1 0 60%;"></div>
+    <div class="captcha-container" id="comments-captcha" style="min-height: 100px; flex: 1 0 60%;">
+    <small>Please fill in the rest of the forms first. <noscript>Javascript must be enabled to post a comment.</noscript></small>
+    </div>
 
     <label for="submit-btn" style="visibility: hidden;">Submit the form with the submit button:</label>
     <input type="submit" id="submit-btn" class="btn nav-btn" value="Send">
