@@ -39,6 +39,8 @@
   <form class="form-message" id="comment-form" method="POST" name="comment-form"  action="{{ site.comments.url }}">
     <input name="options[redirect]" type="hidden" value="{{ page.url }}">
     <input name="options[slug]" type="hidden" value="{{ page.slug }}">
+    <input type="hidden" name="options[reCaptcha][siteKey]" value="{{ site.comments.captcha_key }}">
+    <input type="hidden" name="options[reCaptcha][secret]" value="{{ site.comments.captcha_secret }}">
     <input name="fields[replying_to" id="form-replying-to" type="hidden" value="">
 
     <label for="contact_name">Your name</label>

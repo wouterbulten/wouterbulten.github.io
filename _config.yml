@@ -90,6 +90,7 @@ social:
 comments:
   url: "https://wb-comments.herokuapp.com/new-entry"
   captcha_key: 6LfGd9sUAAAAAO7L5SJSvtc5Y31KAATFh-An7K0F
+  captcha_secret: "kyA3QQl5+cFG/HiHdIUyOIjg7q8l6KaHMdQILEpY1lkewBV6LgjVGE10HFXnflBPams6/AbC1b+zEqGskco2oWR/DZ8F1PrhbVCMB+Odu2qoDBGrJxHfccVGqmbpmZS3VrLXB1ueRzkiw/FOVxAnDiny9O9NxhmFjgz2P2cPSGjcfG47GysaYWMLAo9e6lJbBgU6lIAJG9VkShyktC9wOqS0bfa3aJ7WatdVGS+VDqqTdgpVchPbN4kxQo6PkUBg/rTwH26u4M79TY9hyMmw3Y818S7HudjhE8E/U/g2htfhwKP53S4X5/cqUL3lcUVgRu4L9XD7MjG2Zxhe1cICmQ=="
 
   disqus:
     short_name: wouterbulten
