@@ -38,7 +38,7 @@
   </script>
 
   <form class="form-message" id="comment-form" method="POST" name="comment-form"  action="{{ site.comments.url }}">
-    <input name="options[redirect]" type="hidden" value="{{ page.url }}">
+    <input name="options[redirect]" type="hidden" value="{{ page.url | prepend: site.url }}">
     <input name="options[slug]" type="hidden" value="{{ page.slug }}">
     <input type="hidden" name="options[reCaptcha][siteKey]" value="{{ site.comments.captcha_key }}">
     <input type="hidden" name="options[reCaptcha][secret]" value="{{ site.comments.captcha_secret }}">
@@ -55,11 +55,13 @@
 
     <label>Please fill in the captcha:</label>
     <div class="captcha-container" id="comments-captcha" style="min-height: 100px; flex: 1 0 60%;">
-    <small>Please fill in the rest of the forms first. <noscript>Javascript must be enabled to post a comment.</noscript></small>
+    <small>Please fill in the rest of the form first. <noscript>Javascript must be enabled to post a comment.</noscript></small>
     </div>
 
     <label for="submit-btn" style="visibility: hidden;">Submit the form with the submit button:</label>
-    <input type="submit" id="submit-btn" class="btn nav-btn" value="Send">
+    <input type="submit" id="submit-btn" class="btn nav-btn" value="Submit comment">
+
+    <div style="flex: 1 0 60%;"><small>By submitting this form you agree that the entered information will be processed to publish your comment.</small></div>
   </form>
     
 </div>
