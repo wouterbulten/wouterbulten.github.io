@@ -42,7 +42,8 @@
     <input name="options[slug]" type="hidden" value="{{ page.slug }}">
     <input type="hidden" name="options[reCaptcha][siteKey]" value="{{ site.comments.captcha_key }}">
     <input type="hidden" name="options[reCaptcha][secret]" value="{{ site.comments.captcha_secret }}">
-    <input name="fields[replying_to" id="form-replying-to" type="hidden" value="">
+    <input name="fields[replying_to]" id="form-replying-to" type="hidden" value="">
+    <input name="fields[slug]" id="form-replying-to" type="hidden" value="{{ page.slug }}">
 
     <label for="contact_name">Your name</label>
     <input type="text" id="contact_name" name="fields[name]" placeholder="John Doe" required>
