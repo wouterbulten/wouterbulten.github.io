@@ -1,8 +1,21 @@
-<form method="POST" action="{{ site.staticman.api }}">
-    <input name="options[redirect]" type="hidden" value="{{ page.url }}">
-    <input name="options[slug]" type="hidden" value="{{ page.slug }}">
-    <label>Name: <input name="fields[name]" type="text"></label><br>
-    <label>Email: <input name="fields[email]" type="email"></label><br>
-    <label>Message: <br><textarea name="fields[message]" rows="12" cols="36"></textarea></label><br>
-    <input type="submit" value="Submit">
-  </form>
+<script type="text/javascript">
+  var captchaCallback = function() {
+    alert("grecaptcha is ready!");
+    grecaptcha.render('comments-captcha', {
+      'sitekey' : '{{ site.comments.captcha_key }}'
+    })
+  };
+</script>
+<script src="https://www.google.com/recaptcha/api.js?onload=captchaCallback&render=explicit"
+    async defer>
+</script>
+
+<form method="POST" action="{{ site.comments.url }}">
+  <input name="options[redirect]" type="hidden" value="{{ page.url }}">
+  <input name="options[slug]" type="hidden" value="{{ page.slug }}">
+  <label>Name: <input name="fields[name]" type="text"></label><br>
+  <label>Email: <input name="fields[email]" type="email"></label><br>
+  <label>Message: <br><textarea name="fields[message]" rows="12" cols="36"></textarea></label><br>
+  <div id="comments-captcha"></div>
+  <input type="submit" value="Submit">
+</form>

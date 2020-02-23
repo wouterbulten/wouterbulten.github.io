@@ -87,5 +87,6 @@ social:
 #    share_title:
 #    share_link:
 
-staticman:
-  api: "https://staticman3.herokuapp.com/v3/entry/github/wouterbulten/wouterbulten.github.io/master/comments"
+comments:
+  url: "https://wb-comments.herokuapp.com/new-entry"
+  captcha_key: 6LfGd9sUAAAAAO7L5SJSvtc5Y31KAATFh-An7K0F
