@@ -1,4 +1,4 @@
-<div class="comment-form">
+<div class="comment-form" id="new-comment">
   <h2>Add a new comment</h2>
 
   <p>Questions? Suggestions? Feedback? Leave it as a comment to this post! I try to address all comments as fast as possible.</p>
@@ -32,9 +32,19 @@
         'sitekey' : '{{ site.comments.captcha_key }}'
       })
     };
+
+    
   </script>
-  <script src=""
-      async defer>
+  <script type="text/javascript">
+  function insertAfter(newNode, referenceNode) {
+    referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
+  }
+  function replyToComment(commentId) {
+    var form = document.getElementById('comment-form');
+    var comment = document.getElementById(commentId);
+    var commentBody = comment.getElementsByClassName('comment-content')[0];
+    commentBody.appendChild(form);
+  }
   </script>
 
   <form class="form-message" id="comment-form" method="POST" name="comment-form"  action="{{ site.comments.url }}">
@@ -43,7 +53,7 @@
     <input type="hidden" name="options[reCaptcha][siteKey]" value="{{ site.comments.captcha_key }}">
     <input type="hidden" name="options[reCaptcha][secret]" value="{{ site.comments.captcha_secret }}">
     <input name="fields[replying_to]" id="form-replying-to" type="hidden" value="">
-    <input name="fields[slug]" id="form-replying-to" type="hidden" value="{{ page.slug }}">
+    <input name="fields[slug]" id="form-post-slug" type="hidden" value="{{ page.slug }}">
 
     <label for="contact_name">Your name</label>
     <input type="text" id="contact_name" name="fields[name]" placeholder="John Doe" required>
