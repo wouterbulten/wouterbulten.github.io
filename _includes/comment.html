@@ -1,0 +1,52 @@
+<div class="media comment {% if include.replying_to != '' %}child-comment{% else %}parent-comment{% endif %}">
+  {% if include.email != '' %}
+  <img data-srcset="https://www.gravatar.com/avatar/{{ include.email }}?d=mm&s=60 1x, https://www.gravatar.com/avatar/{{ include.email }}?d=mm&s=120 2x" alt="" class="lazyload">
+  {% elsif include.name == 'Wouter Bulten' %}
+  <img data-src="/assets/images/author-wouter-bulten.png" class="mr-3 lazyload user-image">
+  {% else %}
+  <svg class="svg-icon user-image mr-3"><use xlink:href="#icon-user"></use></svg>
+  {% endif %}
+  <div class="media-body">
+    <div class="comment-content">
+      <h5 class="mt-0 name {% if include.name == 'Wouter Bulten' %}name-admin{% endif %}">
+        {% if include.name == 'Wouter Bulten' %}
+        <a href="{{ '/curriculum-vitae/' | prepend: site.url }}">Wouter Bulten</a>
+        {% else %}
+        {{ include.name | strip_html }}
+        {% endif %}
+        {% if include.date %}
+        <small>on
+          <time datetime="{{ include.date | date_to_xmlschema }}">{{ include.date | date_to_string }}</time>
+        </small>
+      {% endif %}
+      </h5>
+      {{ include.message | markdownify | replace: "<a href", "<a rel='nofollow' href"}}
+
+      <small class="comment-reply">
+        <a href="#comment-{{ include.index }}" onclick="return addComment.moveForm('comment-{{ include.index }}', '{{ include.index }}', 'respond', '{{ page.slug }}')">Reply to {{ include.name }} &crarr;</a>
+      </small>
+    </div>
+
+  {% if include.level > 3 %}
+  </div>
+  </div>
+  {% endif %}
+  {% capture parent_id %}{{ include.id }}{% endcapture %}
+  {% assign level = include.level | plus: 1 %}
+  {% assign replies = site.data.comments[page.slug] | sort | where_exp: 'comment', 'comment[1].replying_to == parent_id' %}
+  {% for reply in replies %}
+    {% assign id          = reply[1].id %}
+    {% assign replying_to = reply[1].replying_to | to_integer %}
+    {% assign avatar      = reply[1].avatar %}
+    {% assign email       = reply[1].email %}
+    {% assign name        = reply[1].name %}
+    {% assign url         = reply[1].url %}
+    {% assign date        = reply[1].date %}
+    {% assign message     = reply[1].message %}
+    {% include comment.html level=level id=id replying_to=replying_to avatar=avatar email=email name=name url=url date=date message=message %}
+  {% endfor %}
+
+{% if include.level <= 3 %}
+</div>
+</div>
+{% endif %}

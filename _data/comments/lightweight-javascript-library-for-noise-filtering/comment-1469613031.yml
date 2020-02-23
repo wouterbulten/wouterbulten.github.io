@@ -1,0 +1,19 @@
+---
+id: '2805892176'
+replying_to: ''
+source: disqus
+date: '2016-07-27T09:50:31Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/sanderploegsma.jpg
+name: Sander Ploegsma
+message: "<p>Hi Wouter,</p><p>Nice article! I am trying to find the right mathematical
+  approach to 'predict' the amount of connections for a web service in order to find
+  out how to scale it accordingly. I am thinking that something like a Kalman Filter
+  could help me smoothen out stuff like a server becoming unhealthy and getting replaced,
+  temporarily dropping its connections and therefore 'polluting' the data.</p><p>What
+  I do not really understand is how to set a correct value for Q. Let's say I have
+  1000 connections which drop to near-zero for a brief moment and then come back up
+  to 1000, would that mean that I'd set Q to 1000?</p>"

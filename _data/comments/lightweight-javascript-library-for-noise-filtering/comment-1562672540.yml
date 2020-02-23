@@ -1,0 +1,27 @@
+---
+id: '4532695101'
+replying_to: '4527910259'
+source: disqus
+date: '2019-07-09T11:42:20Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>Hi, thank you for the compliments. To address your points:</p><p>1. Yes,
+  use the standard deviation. That's also how I determined the initial values in my
+  experiment.<br />2. If you know that the user moves, and know the direction, you
+  should encode that in the model. That will probably improve your results. In practice
+  it is however difficult to accurately model the movement of a user (if they can
+  move freely).<br />3. Given point 2. If you have motion information, the best way
+  to integrate this in to the filter is to model distance instead of RSSI. Otherwise
+  you will have to use a non linear mapping (as you also mentioned in your comment)
+  to map the movement to the RSSI-space.<br />4. I assumed a static system for three
+  reasons: First, by taking multiple measurements within a small time frame, the filter
+  was able to keep up with changes due to movement (to some extent). Second, it is
+  very hard to get good motion estimates that fit with in the (simple) kalman filter
+  model). And last, the rssi estimates were passed to a particle filter for further
+  processing (see the FastSLAM post). In the particle filter I integrated motion information
+  (from an accelerometer) and data from multiple becaons to estimate the position
+  of user.</p>"

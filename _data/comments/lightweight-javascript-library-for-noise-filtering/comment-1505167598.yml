@@ -1,0 +1,15 @@
+---
+id: '3512905450'
+replying_to: '3511937232'
+source: disqus
+date: '2017-09-11T22:06:38Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/disqus_g0ZWnYbtb1.jpg
+name: tarik
+message: "<p>Your last sentence is critical, mentioning standard deviation. So is
+  Q std-dev. of the measured signals in a noisy environment? So i measure rsssi say
+  1.000 times and calculate the std-dev as 3, and that means the Q is 3?<br />Sorry
+  but i am trying to get a concrete definition of Q...</p>"

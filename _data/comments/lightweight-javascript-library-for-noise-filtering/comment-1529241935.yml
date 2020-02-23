@@ -1,0 +1,19 @@
+---
+id: '3948185590'
+replying_to: '3947003402'
+source: disqus
+date: '2018-06-17T13:25:35Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>Hi,</p><p>Did you try out the examples of the article or is there a underlying
+  reasoning for your values of A and B? Namely, B models motion and A models transitions
+  from t-1 to t. If the values that you set for A and B do not match the system you
+  are modelling the values will be extremely off (which can be seen in your examples).</p><p>For
+  example: lets say you model the position of a drone. Given no motion a drone will
+  slowly fall to the ground. So your A should be negative. However, if you set A to
+  a positive value then the model will never be able to correctly capture the real
+  events (as the motion model does not match).</p>"

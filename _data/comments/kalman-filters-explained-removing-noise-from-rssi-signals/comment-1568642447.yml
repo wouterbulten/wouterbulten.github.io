@@ -1,0 +1,17 @@
+---
+id: '4617687891'
+replying_to: '4617683096'
+source: disqus
+date: '2019-09-16T14:00:47Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: <p>In that case, A can be set to 1 and B to 0 (if the domain is one-dimensional).
+  This is also shown in Equation (3) of the post (see above).</p><p>C depends on what
+  you are modelling. In the most simple case, you can set this to 1.</p><p>Maybe also
+  take a look at this post <a href="https://disq.us/url?url=https%3A%2F%2Fwww.wouterbulten.nl%2Fblog%2Ftech%2Flightweight-javascript-library-for-noise-filtering%2F%3ASfCg8Onuiem8pDmsoXPYuwzfplc&amp;cuid=3803521"
+  rel="nofollow noopener" title="https://www.wouterbulten.nl/blog/tech/lightweight-javascript-library-for-noise-filtering/">https://www.wouterbulten.nl...</a>
+  which is more application-focused.</p>

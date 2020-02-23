@@ -1,0 +1,15 @@
+---
+id: '3436926004'
+replying_to: '3436903983'
+source: disqus
+date: '2017-07-26T18:37:30Z'
+post_id: "/blog/tech/simple-wsn-simulation"
+slug: simple-wsn-simulation
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>Hi! Thanks :)</p><p>If you want to use my code you can just remove the
+  animator object. The NetworkController has an 'iterate' method that runs a single
+  iteration of the simulation. So, in your program you can just call this method and
+  disregard the network animator.</p>"

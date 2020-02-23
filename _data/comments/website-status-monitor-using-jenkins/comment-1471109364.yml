@@ -1,0 +1,13 @@
+---
+id: '2835786934'
+replying_to: ''
+source: disqus
+date: '2016-08-13T17:29:24Z'
+post_id: "/blog/tech/website-status-monitor-using-jenkins"
+slug: website-status-monitor-using-jenkins
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/phulei.jpg
+name: phulei
+message: "<p>Great article! if a jenkins website is down, we may need to restart the
+  jenkins process as well, am planning to add that.</p><p>your thoughts ?</p>"

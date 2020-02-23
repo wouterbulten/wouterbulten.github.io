@@ -1,0 +1,13 @@
+---
+id: '4705290719'
+replying_to: ''
+source: disqus
+date: '2019-11-28T09:07:12Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/maxyotos.jpg
+name: Max Yotos
+message: "<p>Hello, a great article, it was very useful to me. However, I have one
+  question, can your algorithm include the time between successive measurements?</p>"

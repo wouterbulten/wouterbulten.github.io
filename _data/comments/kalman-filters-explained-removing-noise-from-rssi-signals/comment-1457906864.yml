@@ -1,0 +1,14 @@
+---
+id: '2567901676'
+replying_to: '2392059799'
+source: disqus
+date: '2016-03-13T22:07:44Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/fahimzafari.jpg
+name: Fahim Zafari
+message: "<p>Wouter!  I wanted toask if you know of any non-linear observation and
+  measurement model for RSSI. I am trying to apply EKF to the RSSI values and would
+  greatly appreciate if there is any widely used model.</p>"

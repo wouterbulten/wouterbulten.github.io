@@ -1,0 +1,28 @@
+---
+id: '4123078658'
+replying_to: '4116688639'
+source: disqus
+date: '2018-10-01T07:53:35Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: '<p>Hi Andi,</p><p>Thanks for your post! The delay is somewhat expected:
+  the Kalman filter (without movement model) thinks that the signal should be a constant
+  number with added noise. The more measurements you do the better the filter will
+  be able to estimate this number. If you are walking towards the beacon, at first
+  the filter thinks the increase in signal is noise (as it assumes it to be static).
+  After a while, as more measurements will show that the static number has changed,
+  the filter catches up. This delay you are seeing is the result of that, but at the
+  same time this delay also means that noise gets filtered out.</p><p>If you want
+  to lower the delay there are a few things you can do:</p><p>1) Add a motion model.
+  You already tried this but I''m not sure the implementation is correct. I just saw
+  that the Java version on github is missing the input to the motion model. The Javascript
+  version has a second parameter (u) where you can enter the motion. See <a href="https://disq.us/url?url=https%3A%2F%2Fgithub.com%2Fwouterbulten%2Fkalmanjs%2Fblob%2Fmaster%2Fsrc%2Fkalman.js%23L40%3AwTyjXQ_VhUj_beeiM_cJ7aTelX0&amp;cuid=3803521"
+  rel="nofollow noopener" title="https://github.com/wouterbulten/kalmanjs/blob/master/src/kalman.js#L40">https://github.com/wouterbu...</a>
+  If you have time you could look at the JS version and update the Java class. A pull
+  request would be greatly appreciated!</p><p>2) Lower the noise parameters. If you
+  assume the noise is lower the filter will react faster to changes. Downside: there
+  will be more noise in the data.</p>'

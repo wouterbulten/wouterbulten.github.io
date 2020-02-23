@@ -1,0 +1,19 @@
+---
+id: '2379552267'
+replying_to: '2379182874'
+source: disqus
+date: '2015-11-26T09:59:19Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: '<p>It depends on your application. For example: I''ve used this type of
+  filter and a 3-axis accelerometer to count steps. I first compute the norm of the
+  x,y,z values and then apply the filter on this new value. This is more efficient
+  than running the filter 3 times.</p><p>See <a href="https://disq.us/url?url=https%3A%2F%2Fgithub.com%2Fwouterbulten%2Fslacjs%2Fblob%2Fmaster%2Fsrc%2Fapp%2Fdevice%2Fpedometer.js%3ACz6tV4Erp8EeNyGYh93Dyrd2840&amp;cuid=3803521"
+  rel="nofollow noopener" title="https://github.com/wouterbulten/slacjs/blob/master/src/app/device/pedometer.js">https://github.com/wouterbu...</a>
+  for an example.</p><p>You can also use a 3D version but these are computationally
+  more expensive, harder to implement and give only benefit if you actually require
+  them for your application.</p><p>Let me know if you need any more help :)</p>'

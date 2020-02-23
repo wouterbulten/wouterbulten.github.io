@@ -1,0 +1,22 @@
+---
+id: '2848994840'
+replying_to: ''
+source: disqus
+date: '2016-08-21T00:19:45Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/armanassylkhan.jpg
+name: Arman Assylkhan
+message: <p>Hi, Wouter!<br />First of all my gratitude for your article!<br />I am
+  working on a project for ibeacons detection and distance estimation with Node-RED
+  (node js based) language. I can detect beacons and read their data (RSSI particularly).<br
+  />I wanted to apply Kalman filtering for the noise cancelation but a bit stuck here.<br
+  />Was wondering if you could clarify some points:<br />Do we need to feed the RSSI
+  data to the Kalman filter as an array or we can just keep updating the values one-by-one?<br
+  />If you have used Node-RED, is it even possible to use Kalman filter in node-red?<br
+  />I've tried to use kalman-filter node designed for Node-RED from here <a href="https://disq.us/url?url=https%3A%2F%2Fgithub.com%2Fsyuhei176%2Fnode-red-contrib-kalman%3AIpMYYoYzLJiCmUoFA3SdbjIHe64&amp;cuid=3803521"
+  rel="nofollow noopener" title="https://github.com/syuhei176/node-red-contrib-kalman">https://github.com/syuhei17...</a>
+  but it didn't work for me <br />Was wondering if you could clarify for me these
+  points.</p>

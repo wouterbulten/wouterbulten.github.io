@@ -1,0 +1,25 @@
+---
+id: '4431861763'
+replying_to: ''
+source: disqus
+date: '2019-04-21T03:15:36Z'
+post_id: "/blog/tech/talking-to-my-house-telegram-homeassistant-bot"
+slug: talking-to-my-house-telegram-homeassistant-bot
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/disqus_7nFpBUps3j.jpg
+name: Jason Guest
+message: '<p>Great blog, thanks for sharing.  I have configured as per your blog,
+  and can see my messages being logged, however I am receiving the errors below.  What
+  version of appdeamon are you using?  I am using docker containers and have gone
+  with acockburn/appdaemon:latest.</p><p>The errors:<br />2019-04-21 13:05:01.019846
+  WARNING AppDaemon: Traceback (most recent call last):,<br />  File "/usr/local/lib/python3.6/site-packages/appdaemon/<a
+  href="http://disq.us/url?url=http%3A%2F%2Fappdaemon.py%3ABe0wOeR1gCmNVoXmyRi_FQzG8eM&amp;cuid=3803521"
+  rel="nofollow noopener" title="appdaemon.py">appdaemon.py</a>", line 600, in worker,<br
+  />    funcref(args["event"], data, args["kwargs"]),<br />  File "/conf/apps/<a href="http://disq.us/url?url=http%3A%2F%2Ftelegram.py%3AbYHrNq1QHaQY6o3a6LnZM89Xmzk&amp;cuid=3803521"
+  rel="nofollow noopener" title="telegram.py">telegram.py</a>", line 15, in receive_telegram_text,<br
+  />  File "/conf/apps/<a href="http://disq.us/url?url=http%3A%2F%2Ftelegram.py%3AbYHrNq1QHaQY6o3a6LnZM89Xmzk&amp;cuid=3803521"
+  rel="nofollow noopener" title="telegram.py">telegram.py</a>", line 29, in greet_user_if_new_conversation,<br
+  />    if user_id not in self.last_conversation:,<br />    self.greet_user_if_new_conversation(user_id,
+  payload_event[''from_first'']),<br />AttributeError: ''TelegramBot'' object has
+  no attribute ''last_conversation''</p><p>Thank you.</p>'

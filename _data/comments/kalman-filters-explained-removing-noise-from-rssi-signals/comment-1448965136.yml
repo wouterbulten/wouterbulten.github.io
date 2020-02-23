@@ -1,0 +1,17 @@
+---
+id: '2386807597'
+replying_to: '2386741414'
+source: disqus
+date: '2015-12-01T10:18:56Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>The Kalman filter filters the noise based on a weighted average between
+  the prediction and measurement, yes.</p><p>As this is a 1D example there are no
+  matrices, only scalars. The values for R and Q are in the text (0.008 and signal
+  variance) but really depend on your environment. I'm not sure which matrices you
+  mean with H and F?</p><p>In general, I tend to use the Kalman filter as a first
+  step in a larger processing pipeline.</p>"

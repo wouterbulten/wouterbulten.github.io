@@ -1,0 +1,17 @@
+---
+id: '2386393711'
+replying_to: ''
+source: disqus
+date: '2015-12-01T02:43:21Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/fahimzafari.jpg
+name: Fahim Zafari
+message: "<p>Hi Wouter! I personally am working on ibeacons and have used kalman filters
+  as well. But the strange problem that I am facing is this. When I am at  distance
+  of 1m from the beacon I get an RSSI value of something like -59dbm , -63 at 2m and
+  then when I move away the rssi value might be higher than -63 such as -62. Now Kalman
+  can filter out the fluctuation and stabilize the measurements what about the non
+  fluctuation problems such as getting -62 db at 3 meters and -63 or lower at 2meters.</p>"

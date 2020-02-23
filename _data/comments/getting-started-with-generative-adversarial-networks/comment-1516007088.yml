@@ -1,0 +1,16 @@
+---
+id: '3708592294'
+replying_to: '3701271018'
+source: disqus
+date: '2018-01-15T09:04:48Z'
+post_id: "/blog/tech/getting-started-with-generative-adversarial-networks"
+slug: getting-started-with-generative-adversarial-networks
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>Hi! Thanks for your reply!</p><p>In this case the only way to find out
+  is by trying multiple noise vectors. If you have labeled data (which you have with
+  MNIST)  you could also train the discriminator to predict both fake/real and the
+  label itself. Then you could use that output to see which noise vector results in
+  a certain class.</p>"

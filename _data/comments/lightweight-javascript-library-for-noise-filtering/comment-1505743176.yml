@@ -1,0 +1,23 @@
+---
+id: '3522983624'
+replying_to: '3521427599'
+source: disqus
+date: '2017-09-18T13:59:36Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>Hi Tarik, did you by any change were able to read my paper? As that addresses
+  locating objects during movement.</p><p>This library is for a 1D kalman filter.
+  It works best for static objects, but I also used it for moving objects. If your
+  sample rate is large enough you can make the assumption that the device is static
+  within a small time frame, because the noise caused by the measurements is usually
+  larger than the difference caused by the movement (assuming the object is moving
+  slowly, e.g. walking speed).</p><p>For location, however, you cannot use a 1D filter
+  alone as distance is at least 2D (x,y) and sometimes 3D (x,y,z) and this implementation
+  of the Kalman filter would not be able to represent that. So to come back to your
+  question: you can use this Kalman filter in the process of locating a moving object
+  but for the actual localization itself you will need something else. An extended
+  kalman filter can be used for this, but it depends a bit on your application.</p>"

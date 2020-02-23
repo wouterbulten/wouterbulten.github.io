@@ -1,0 +1,17 @@
+---
+id: '2663824621'
+replying_to: ''
+source: disqus
+date: '2016-05-07T19:32:20Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: "//a.disquscdn.com/1581704280/images/noavatar92.png"
+name: kami
+message: <p>Hello Wouter,<br />Thanks for your great article about how to apply Kalman
+  filter to RSSI .<br />But in my scenario, an user holding phone is moving around
+  in an indoor <a href="http://disq.us/url?url=http%3A%2F%2Fenvironment.so%3ARfNpYy7KByDpqaL0GgxVlF4Tlp8&amp;cuid=3803521"
+  rel="nofollow noopener" title="environment.so">environment.so</a> my question is
+  that possible to apply the method mentioned in this blog ,which expects a constant
+  RSSI from time to time,to my case?if not , could you give me some hint?</p>

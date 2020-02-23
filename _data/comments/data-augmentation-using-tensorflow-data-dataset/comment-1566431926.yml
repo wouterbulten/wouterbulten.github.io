@@ -1,0 +1,21 @@
+---
+id: '4587106723'
+replying_to: ''
+source: disqus
+date: '2019-08-21T23:58:46Z'
+post_id: "/blog/tech/data-augmentation-using-tensorflow-data-dataset"
+slug: data-augmentation-using-tensorflow-data-dataset
+author: {}
+email: ''
+avatar: "//a.disquscdn.com/1581704280/images/noavatar92.png"
+name: samra irshad
+message: "<p>Hi Wouter, thanks for writing this article. I have been using tensorflow
+  data generators and I have switched to dataset APIs due to their fast processing.
+  However, I noticed a difference in performance between the models generated using
+  generators and dataset API. I am trying to ensure the data augmentation I am applying
+  in both the generators and dataset APIs is similar and I have a question relate
+  to that: In tf.keras.preprocessing.image.ImageDataGenerator, the augmentations are
+  applied randomly, like sometimes they are applied on images and sometimes they are
+  not. I am wondering if the operations like tf.image.random_flip_left_right and tf.random_rotation
+  offer the same behavior (augment the image with some probability) or do they always
+  augment all the images?</p>"

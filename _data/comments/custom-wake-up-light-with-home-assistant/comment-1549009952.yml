@@ -1,0 +1,15 @@
+---
+id: '4317225213'
+replying_to: '4317222967'
+source: disqus
+date: '2019-02-01T08:32:32Z'
+post_id: "/blog/tech/custom-wake-up-light-with-home-assistant"
+slug: custom-wake-up-light-with-home-assistant
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>Hi Markus, thanks for the suggestion! I'm glad the article helped. I've
+  done something similar now for my implementation in Node-RED: I increase the brightness
+  manually every minute instead of using a long transition. For some lights (like
+  Tradfri) this seems to be more stable.</p><p>Good luck with your implementation!</p>"

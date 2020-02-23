@@ -1,0 +1,18 @@
+---
+id: '4331130754'
+replying_to: '4329372085'
+source: disqus
+date: '2019-02-10T18:31:01Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>Yes and no. You are right that to filter the RSSI you will need more
+  than 1 measurement. Usually -- at least in my experience -- the frequency of the
+  RSSI measurements is pretty high in comparison to the motion of the user. E.g. you
+  could measure the RSSI ten times a second and any movement of the user within that
+  second is usually not that large to have a significant effect on the estimated distance.
+  So to make single distance estimate it is usually sufficient to do a set of measurements
+  within a small time frame.</p>"

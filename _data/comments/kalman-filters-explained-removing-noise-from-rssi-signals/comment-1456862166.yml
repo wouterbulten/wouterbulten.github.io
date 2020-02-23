@@ -1,0 +1,20 @@
+---
+id: '2546023563'
+replying_to: '2544986546'
+source: disqus
+date: '2016-03-01T19:56:06Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: '<p>Instead of changing the noise levels, maybe you could also integrate
+  your movement into the model. Take a look at Equation 3, the motion model. The motion
+  model already contains a way to implement expected movement. You probably still
+  want to set A to an identity matrix (as a user''s position does not drift) but use
+  your movement detection to change the value of u. This way you will probably get
+  more accurate results.</p><p>You can also take a look at a presentation I gave about
+  this subject: <a href="https://disq.us/url?url=https%3A%2F%2Fwouterbulten.nl%2Fslacjs%2F%3Avg8nGcSD1yPgJEuj85YwqJOzsGo&amp;cuid=3803521"
+  rel="nofollow noopener" title="https://wouterbulten.nl/slacjs/">https://wouterbulten.nl/sla...</a></p><p>Good
+  luck!</p>'

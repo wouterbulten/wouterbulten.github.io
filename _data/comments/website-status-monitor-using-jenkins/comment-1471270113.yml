@@ -1,0 +1,15 @@
+---
+id: '2838554037'
+replying_to: '2835786934'
+source: disqus
+date: '2016-08-15T14:08:33Z'
+post_id: "/blog/tech/website-status-monitor-using-jenkins"
+slug: website-status-monitor-using-jenkins
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>Thanks!</p><p>I would recommend running your Jenkins installation on
+  a different machine (not on the machine that is also running your production website).
+  By separating the two you have an independent watcher. Moreover, any errors in your
+  build or other resource-intensive Jenkins tasks will not affect your website.</p>"

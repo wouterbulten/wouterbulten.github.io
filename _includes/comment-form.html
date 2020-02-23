@@ -1,21 +1,60 @@
-<script type="text/javascript">
-  var captchaCallback = function() {
-    alert("grecaptcha is ready!");
-    grecaptcha.render('comments-captcha', {
-      'sitekey' : '{{ site.comments.captcha_key }}'
-    })
-  };
-</script>
-<script src="https://www.google.com/recaptcha/api.js?onload=captchaCallback&render=explicit"
-    async defer>
-</script>
+<div class="comment-form">
+  <h2>Add a new comment</h2>
 
-<form method="POST" action="{{ site.comments.url }}">
-  <input name="options[redirect]" type="hidden" value="{{ page.url }}">
-  <input name="options[slug]" type="hidden" value="{{ page.slug }}">
-  <label>Name: <input name="fields[name]" type="text"></label><br>
-  <label>Email: <input name="fields[email]" type="email"></label><br>
-  <label>Message: <br><textarea name="fields[message]" rows="12" cols="36"></textarea></label><br>
-  <div id="comments-captcha"></div>
-  <input type="submit" value="Submit">
-</form>
+  <p>Questions? Suggestions? Feedback? Leave it as a comment to this post! I try to address all comments as fast as possible.</p>
+
+  <p>All comments are first reviewed before they are placed on the website. The comments system does not track users, and I only store the comment itself. After submitting the form, the comment will be reviewed as soon as possible. You can track your comment's status in my <a href="https://github.com/wouterbulten/wouterbulten.github.io/pulls">repository</a>.</p>
+
+  <script type="text/javascript">
+    /* Lazyload captcha, only if the user access the form */
+    window.addEventListener('DOMContentLoaded', function() {
+      var loadCaptcha = function() {
+        console.info("Loading captcha for form validation.");
+        var js = document.createElement("script");
+        js.setAttribute("type", "text/javascript");
+        js.setAttribute("src", "https://www.google.com/recaptcha/api.js?onload=captchaCallback&render=explicit"); 
+        document.body.appendChild(js);
+      };
+      var elements = document.getElementById('comment-form').querySelectorAll('input,label,textarea');
+      for(var i = 0; i < elements.length; i++) {
+        elements[i].addEventListener('focus', function() {
+          if(loadCaptcha) {
+            loadCaptcha();
+            loadCaptcha = null;
+          }
+        });
+      }
+    });
+    var captchaCallback = function() {
+      console.info("Captcha loaded, securing form.");
+      grecaptcha.render('comments-captcha', {
+        'sitekey' : '{{ site.comments.captcha_key }}'
+      })
+    };
+  </script>
+  <script src=""
+      async defer>
+  </script>
+
+  <form class="form-message" id="comment-form" name="comment-form"  action="{{ site.comments.url }}">
+    <input name="options[redirect]" type="hidden" value="{{ page.url }}">
+    <input name="options[slug]" type="hidden" value="{{ page.slug }}">
+    <input name="fields[replying_to" id="form-replying-to" type="hidden" value="">
+
+    <label for="contact_name">Your name</label>
+    <input type="text" id="contact_name" name="fields[name]" placeholder="John Doe" required>
+
+    <label for="contact_email">Your email address</label>
+    <input type="email" id="contact_email" name="fields[email]" placeholder="email@example.com" required>
+
+    <label for="contact_message">Message</label>
+    <textarea name="fields[message]" id="contact_message" placeholder="Your message" rows="12" cols="36" required></textarea>
+
+    <label>Please fill in the captcha:</label>
+    <div class="captcha-container" id="comments-captcha" style="min-height: 100px; flex: 1 0 60%;"></div>
+
+    <label for="submit-btn" style="visibility: hidden;">Submit the form with the submit button:</label>
+    <input type="submit" id="submit-btn" class="btn nav-btn" value="Send">
+  </form>
+    
+</div>

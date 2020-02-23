@@ -1,0 +1,29 @@
+---
+id: '4126663366'
+replying_to: '4123260055'
+source: disqus
+date: '2018-10-03T09:19:39Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>If you have something stable, a pull request on Github would be very
+  helpful to other people using the Java version :)</p><p>Regarding your values:</p><p>-
+  The value for R seems fine. Most noise comes from the environment and not from the
+  process.<br />- For Q, I would measure your RSSI values and compute the variance,
+  then use that value for Q. You want Q to reflect the noise of your environment.<br
+  />- A seems fine to. With A=1, you assume that without movement the signal should
+  be the same.<br />- B and u completely depend on how you model motion. RSSI is not
+  linear so this can be tricky within the 1D kalman filter. What you could do here
+  is model distance to the device (using Log-distance path loss model) instead of
+  RSSI directly. In that way you can more easily use B and u. For example, if you
+  know the user moved 1 m, you can set u to 1 (given that B is 1).</p><p>Due take
+  in to account that the Kalman filtert could be to simple for your needs. It is a
+  very good lightweight filter but don't expect magic ;) Some form of delay for example
+  is exactly how the filter should behave. I have used this filter in a project where
+  I wanted to locate Bluetooth beacons inside a room. I used the Kalman filter to
+  remove the largest noise from the RSSI signals but then used those values in a particle
+  filter for further processing.</p><p>Let me know if you have any specific questions
+  and I'll see if I can help you out!</p>"

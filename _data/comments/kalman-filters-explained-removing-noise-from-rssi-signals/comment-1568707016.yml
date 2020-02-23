@@ -1,0 +1,16 @@
+---
+id: '4618667564'
+replying_to: '4617740859'
+source: disqus
+date: '2019-09-17T07:56:56Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>It all depends on what you are modelling and how much noise there is
+  in the environment. I'm not sure how you end up with multiple values for your standard
+  deviation. You can always try to find a value instead of measuring it. The lower
+  Q, the faster the system responds to changes (as it trusts the measurement more)
+  but the more noisy it is.</p>"

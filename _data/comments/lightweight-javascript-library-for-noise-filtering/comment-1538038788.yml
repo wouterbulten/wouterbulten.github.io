@@ -1,0 +1,23 @@
+---
+id: '4116688639'
+replying_to: ''
+source: disqus
+date: '2018-09-27T08:59:48Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/andieppler.jpg
+name: Andi Eppler
+message: '<p>Hey Wouter!</p><p>First of all, thank you for your work! Your filter
+  is understandable, smart and with your examples it is easy to use. <br />I am using
+  your kalman filter also for RSSI data but from bluetooth beacons. I am calculating
+  the distance for a real time application. I use the Java-Version of your filter
+  for an Android application.</p><p> <a href="https://uploads.disquscdn.com/images/3a8de42ebbcda239b9e73025a1693b225654ca9b36b1ec8c8248d8e2dd612ba7.png"
+  rel="nofollow noopener" title="https://uploads.disquscdn.com/images/3a8de42ebbcda239b9e73025a1693b225654ca9b36b1ec8c8248d8e2dd612ba7.png">https://uploads.disquscdn.c...</a></p><p>My
+  problem is: There seems to be a sort of "delay". The peaks of the kalman curve seems
+  to be late. I thought I would fix this problem by using input information for the
+  motion. But with my input information, the curve is still delayed and the results
+  are not better with the input. <br />I collected the data by walking up and down
+  towards the beacon. So I estimate a sinus course.</p><p>Do you have any suggestions
+  for me to get rid of the delay?</p>'

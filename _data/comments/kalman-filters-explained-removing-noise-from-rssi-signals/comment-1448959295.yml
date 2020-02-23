@@ -1,0 +1,29 @@
+---
+id: '2386734912'
+replying_to: '2386393711'
+source: disqus
+date: '2015-12-01T08:41:35Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>Hi Fahim! First of all, make sure that you've done the calibration correctly
+  (using an average RSSI signal you measure at a 1m distance). In my case the the
+  RSSI value at 1m was roughly -62dBm. A change in signal of one dBm, at that level,
+  will only result in a small change in distance:</p><p></p><pre><code><br /><br />//Given
+  -62dBm as reference value<br /><br />Math.pow(10,(-62 + 62)/ (-10 * 2)) = 1.0m<br
+  /><br />Math.pow(10,(-63 + 62)/ (-10 * 2)) = 1.122m<br /><br />//Given -59dBm as
+  reference value<br /><br />Math.pow(10,(-62 + 59)/ (-10 * 2)) = 1.41m<br /><br />Math.pow(10,(-63
+  + 59)/ (-10 * 2)) = 1.58m<br /><br /></code></pre><p></p><p>Based on these values
+  you can notice two things:</p><p>(1) In both cases there is a difference of around
+  10-15cm. In my experience, 10cm is far smaller than the precision you can achieve
+  using RSSI only. In other words, you can expect these kind of fluctuations as the
+  difference in distance is just to small and the effect of random noise and noise
+  caused by external sources (people moving around, etc) is high.</p><p>(2) The distance
+  predictions differ from your own measurements (-62 at 3m, -63 at 2) which make it
+  a bit harder for me to reproduce the 'problem'. This is most likely caused by a
+  difference in signal propagation constant that we use (I use 2).</p><p>tl;dr: There
+  is a lot of noise, differences in distances at these levels are small. Changes of
+  1dBm can be expected.</p>"

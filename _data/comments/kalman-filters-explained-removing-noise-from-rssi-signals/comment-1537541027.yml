@@ -1,0 +1,19 @@
+---
+id: '4107125581'
+replying_to: '4107109427'
+source: disqus
+date: '2018-09-21T14:43:47Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>Hi,</p><p>In my application, I simplify the problem by making a assumption
+  that both are static in the motion model. However, in reality the user is moving.
+  Given the high update rate the filter is then (in my experiences) able to pick up
+  changes due to movement. Of course, if you have a reliable way of modelling the
+  motion than I would incorporate that.</p><p>If you have a static set of measurements
+  there could be better alternatives. Like you said, averaging could already work.
+  The Kalman filter is a nice online filter that does not need the whole set of measurements
+  and targets other use cases.</p>"

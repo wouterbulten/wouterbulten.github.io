@@ -1,0 +1,13 @@
+---
+id: '4594564782'
+replying_to: '4587106723'
+source: disqus
+date: '2019-08-28T09:50:23Z'
+post_id: "/blog/tech/data-augmentation-using-tensorflow-data-dataset"
+slug: data-augmentation-using-tensorflow-data-dataset
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>Hi Samra, yes they offer the same behaviour. For example, with the flip
+  function there is a 50% chance that the image is passed on as-is without flipping.</p>"

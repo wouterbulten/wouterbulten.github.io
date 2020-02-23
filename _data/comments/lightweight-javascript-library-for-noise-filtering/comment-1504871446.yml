@@ -1,0 +1,17 @@
+---
+id: '3507821216'
+replying_to: ''
+source: disqus
+date: '2017-09-08T11:50:46Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: "//a.disquscdn.com/1581704280/images/noavatar92.png"
+name: Tarik
+message: <p>Hello</p><p>My gratitude for the good work. I am trying to use the module
+  in node.js environment and have two questions:<br />1. i am getting "not defined"
+  error for the randn function. what am i missing?<br />2. what do you mean by dataset?
+  a set of measured rssi values i guess. in my module i am measuring rssi and pushing
+  the values to an array of say 100 elements. how do i kalman-filter those data?</p><p>Thanks
+  in advance</p>

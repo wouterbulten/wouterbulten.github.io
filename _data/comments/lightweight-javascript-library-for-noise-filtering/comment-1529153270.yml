@@ -1,0 +1,22 @@
+---
+id: '3947003402'
+replying_to: '3946904881'
+source: disqus
+date: '2018-06-16T12:47:50Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/anandaramkatragadda.jpg
+name: Anandaram Katragadda
+message: <p><a href="https://uploads.disquscdn.com/images/417f32ce0bf35be6cb3a3d8a3fa440239c16e45a788fa03429516eb994029279.png"
+  rel="nofollow noopener" title="https://uploads.disquscdn.com/images/417f32ce0bf35be6cb3a3d8a3fa440239c16e45a788fa03429516eb994029279.png">https://uploads.disquscdn.c...</a>  <a
+  href="https://uploads.disquscdn.com/images/cc1a7b4d1437b419ab69241f1789d332f2c62a1922bac1df73e200a72e708899.png"
+  rel="nofollow noopener" title="https://uploads.disquscdn.com/images/cc1a7b4d1437b419ab69241f1789d332f2c62a1922bac1df73e200a72e708899.png">https://uploads.disquscdn.c...</a>  <a
+  href="https://uploads.disquscdn.com/images/9fcce57fb3cd5d1ca592394af4a034a7e624b36fae30b0ce5df6e1df87351a14.png"
+  rel="nofollow noopener" title="https://uploads.disquscdn.com/images/9fcce57fb3cd5d1ca592394af4a034a7e624b36fae30b0ce5df6e1df87351a14.png">https://uploads.disquscdn.c...</a>
+  Hi Wouter</p><p>Noted. Quick query we tried to run the kalman filter and weighted
+  avaerage on a moving BT beacon RSSI values to identify the distance from a Fixed
+  BT transmitter , when we run with the Parameters R=0.01, Q= 3 , R=0.01, Q=20 , B=2
+  , R=0.01, Q=20, A=1.1, I see curves very strange in the motion of the last 2, can
+  you help us where we are doing wrong.</p>

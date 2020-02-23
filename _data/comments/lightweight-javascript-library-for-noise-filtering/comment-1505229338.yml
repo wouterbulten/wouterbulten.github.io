@@ -1,0 +1,16 @@
+---
+id: '3513897453'
+replying_to: '3512905450'
+source: disqus
+date: '2017-09-12T15:15:38Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: '<p>Technically Q is a covariance matrix. More details can also be found
+  here: <a href="http://disq.us/url?url=http%3A%2F%2Fieeexplore.ieee.org%2Fdocument%2F7471364%2F%3AxK8lNryxiHqi42waiIiMokfIqNM&amp;cuid=3803521"
+  rel="nofollow noopener" title="http://ieeexplore.ieee.org/document/7471364/">http://ieeexplore.ieee.org/...</a></p><p>But,
+  yes, sampling the RSSI within your environment and setting Q to the variance of
+  that would be a sensible approach.</p>'

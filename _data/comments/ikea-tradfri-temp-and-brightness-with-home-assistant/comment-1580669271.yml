@@ -1,0 +1,19 @@
+---
+id: '4780825736'
+replying_to: '4780769061'
+source: disqus
+date: '2020-02-02T18:47:51Z'
+post_id: "/blog/tech/ikea-tradfri-temp-and-brightness-with-home-assistant"
+slug: ikea-tradfri-temp-and-brightness-with-home-assistant
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/nicolasganz.jpg
+name: nicolas ganz
+message: '<p>[SOLVED]: Actually this workes out of the box. The entity_id needs to
+  be specified just in the msg.payload (replacing the "light.some_light_entity").
+  What had the sub-flow failing was that when importing the snipplet it also created
+  a new Home Assistant server with Woulters settings and was trying to send the call_service
+  to that server instead of mine! I had to switch back to my own server in the two
+  call_service nodes and now this is working like a charm! (No idea how to get rid
+  of the "new server" however - since i desperately imported the snipplet about 10
+  times I now have the according number of servers in the list, all called "Home Assistant")</p>'

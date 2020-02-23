@@ -1,0 +1,14 @@
+---
+id: '4526732078'
+replying_to: '4518390837'
+source: disqus
+date: '2019-07-04T08:38:28Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>Hi! Could you apply the filter to the TDOA data? That seems to make more
+  sense in your case. You filtered the noisy measurement and then determine the latitude
+  and longitude based on the filter values.</p>"

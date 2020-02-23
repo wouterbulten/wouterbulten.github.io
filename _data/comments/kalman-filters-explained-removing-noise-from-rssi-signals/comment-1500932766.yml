@@ -1,0 +1,19 @@
+---
+id: '3433549065'
+replying_to: ''
+source: disqus
+date: '2017-07-24T21:46:06Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/disqus_Pr3itdkh3D.jpg
+name: aman agarwal
+message: "<p>Hi Wouter,</p><p>Thanks for the article! We are trying to model an indoor
+  location tracking system with BLE (around 20 wall mounted receivers and transmitter
+  cards with people walking around the installation). I am trying to wrap my head
+  around filtering the stream of data that I will be receiving. For one card and one
+  receiver this works quite well. But in my setup one card will ping multiple receivers
+  and having multiple cards around means I have a bit of a complicated data stream.
+  Can you suggest how to apply the Kalman filter and reduce the noise in this kind
+  of a setup</p>"

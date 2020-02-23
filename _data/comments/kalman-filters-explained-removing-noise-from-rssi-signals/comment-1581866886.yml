@@ -1,0 +1,16 @@
+---
+id: '4798071894'
+replying_to: '4797454351'
+source: disqus
+date: '2020-02-16T15:28:06Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>Hi Alex, thanks! I've used R: 0.008 and Q: 4 for tracking a walking user
+  through RSSI signals. You could start with that and update accordingly to your own
+  findings. You can use u to include a motion model, if you know which direction the
+  user is moving. In my setup, I didn't use a motion model because I mainly used the
+  filter to smooth the signal before further processing.</p>"

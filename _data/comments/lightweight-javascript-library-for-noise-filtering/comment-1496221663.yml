@@ -1,0 +1,13 @@
+---
+id: '3333012044'
+replying_to: ''
+source: disqus
+date: '2017-05-31T09:07:43Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: "//a.disquscdn.com/1581704280/images/noavatar92.png"
+name: A. Gisept
+message: <p>Why R for Process noise and Q for Measurement noise while in every resource
+  on Kalma Filters I find it is "Measurement Noise(R) and Process Noise(Q)"?</p>

@@ -1,0 +1,26 @@
+---
+id: '2571266078'
+replying_to: '2571251446'
+source: disqus
+date: '2016-03-15T18:41:42Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: <p>Okay. The difference between a KF and the EKF is the linearity. The regular
+  kalman filter assumes that observations are linear functions of the state. Moreover,
+  it also assumes that the next state is a linear function of the previous one. This
+  is the case in the example of this post. I assume that a RSSI signal is constant
+  within the time frame (which is of course a linear transition) and that the observation
+  is equal to the state.</p><p>However, most of the time this assumption does not
+  hold. In a few weeks I will give a talk at IoTDI 2016 (<a href="http://disq.us/url?url=http%3A%2F%2Fconferences.computer.org%2FIoTDI%2Fprogram.htm%29%3AOGSiGv6UYjX8LGBVy_zQw0hmqjQ&amp;cuid=3803521"
+  rel="nofollow noopener" title="http://conferences.computer.org/IoTDI/program.htm)">http://conferences.computer...</a>
+  where I also address this. In my research I used 1D rssi measurements to perform
+  indoor localisation. The transition from a coordinate (x,y) of a device to a distance
+  estimate is non-linear so I required an EKF for that.</p><p>In your case, you will
+  first need to define the following:<br />- What is your state? How do you represent
+  it?<br />- What is your observation?<br />- How can you map a state to an observation?<br
+  />- How can you map a state to a new state?</p><p>If any of these mappings are non-linear
+  you should use an EKF.</p>

@@ -1,0 +1,13 @@
+---
+id: '4792057793'
+replying_to: '4730848744'
+source: disqus
+date: '2020-02-11T16:40:25Z'
+post_id: "/blog/tech/data-augmentation-using-tensorflow-data-dataset"
+slug: data-augmentation-using-tensorflow-data-dataset
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>Hi Olaf, yes that is true. Though, you can sample as often from the dataset
+  as you want. Every time you sample will generate new images.</p>"

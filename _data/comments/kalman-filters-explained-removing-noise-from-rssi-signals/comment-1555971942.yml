@@ -1,0 +1,15 @@
+---
+id: '4433992168'
+replying_to: ''
+source: disqus
+date: '2019-04-22T22:25:42Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/victordanneygarciaplaza.jpg
+name: Victor Danney Garcia Plaza
+message: "<p>I am currently doing tests with Beacons to validate the presence of a
+  student in a classroom, and for this, I am using 3 beacons (Trilateration) in a
+  classroom to know if the student is in the classroom or not, but I do not know how
+  initialize the ProcessNoise and MeasureNoise of Kalman Filter. Thanks for your help.</p>"

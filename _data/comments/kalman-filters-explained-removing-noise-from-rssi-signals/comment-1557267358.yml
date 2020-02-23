@@ -1,0 +1,29 @@
+---
+id: '4453650413'
+replying_to: ''
+source: disqus
+date: '2019-05-07T22:15:58Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/simonclemente.jpg
+name: SIMON CLEMENTE
+message: <p><a href="https://uploads.disquscdn.com/images/c9617400154c39409f0e078fdba88ba58fd2a55197bb71edcc2c7e7ab286da79.jpg"
+  rel="nofollow noopener" title="https://uploads.disquscdn.com/images/c9617400154c39409f0e078fdba88ba58fd2a55197bb71edcc2c7e7ab286da79.jpg">https://uploads.disquscdn.c...</a>
+  Hi wouter,</p><p>My system.</p><p>I want to filter RSSI measurements, to do that
+  i want to apply kalman filter so, i simplified the kalman process.</p><p>Kalman
+  Process</p><p>tr=transpose</p><p>x(t)=F*x(t-1)+B*u<br />P(t)=F*P(t-1)*F(tr)+Q<br
+  />K=P(t)*H(tr)/(H*P(t)*h(tr)+R<br />x(t)=x(t-1)+K*(measurements(t)-H*x(t))<br />P(t)=(I-K*H)*P(t)</p><p>those
+  are my asumptions.<br />F=1<br />B=0<br />H=1<br />I=1<br />Q= 1e-8 (only to intialize)<br
+  />R=7.5 (results of variance calculated from 50 values)</p><p>My equations simplified.</p><p>P=
+  p +Q<br />K= P/(P+R)<br />p=(1-k)*P<br />Xp=Xe<br />Zp=Xp<br />Xe=K*(RSSI measurements-Zp)+Xp</p><p>This
+  above is my actual code.</p><p>My system process is like this:</p><p>Phone--&gt;Server--&gt;DataBase--&gt;Web
+  graph</p><p>I use the phone application to obtain the RSSI measurements, and send
+  to a server web.<br />I store data trhough server into DataBase.<br />I graph data
+  before and after kalman.</p><p>I only use kalman in one dimmension. i Don't use
+  kalman to obtain position neither velocity, I just want to get better estimated
+  RSSI values.</p><p>My questions.</p><p>1. I did it wrong with my asumptions?<br
+  />2. Is there something missing in the equations?</p><p>You explanation is so nice,
+  and i want to ask you if i should change mi code to a library like yours, or fix
+  mine.?</p><p>I apreciate so much if you help me, i don't know what is missing</p>

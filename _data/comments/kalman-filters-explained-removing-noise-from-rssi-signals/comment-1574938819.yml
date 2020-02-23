@@ -1,0 +1,15 @@
+---
+id: '4705347639'
+replying_to: '4705343141'
+source: disqus
+date: '2019-11-28T11:00:19Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>No problem! Increasing Q makes sense, because with that you say that
+  you expect that there is more noise in the system. The more time between measurements,
+  the more off your predictions will be (at least that is what I assume in your system).
+  Good luck!</p>"

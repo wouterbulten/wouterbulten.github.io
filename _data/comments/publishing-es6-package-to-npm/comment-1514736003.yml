@@ -1,0 +1,16 @@
+---
+id: '3685676609'
+replying_to: ''
+source: disqus
+date: '2017-12-31T16:00:03Z'
+post_id: "/blog/tech/publishing-es6-package-to-npm"
+slug: publishing-es6-package-to-npm
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/disqus_MCFy7cOX5p.jpg
+name: Piotr Grzesik
+message: '<p>Hey, thanks for writing this great article! I have a little question
+  regarding this note: "Note: NPM also ignores everything from your .gitignore file,
+  so no need to define things twice.". Is that actually the case ? If so, our uploaded
+  package won''t have ES6 code (src from npmignore) and ES5 code (lib from gitignore)
+  or am I missing something?</p>'

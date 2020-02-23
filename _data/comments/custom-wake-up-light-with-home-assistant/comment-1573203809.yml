@@ -1,0 +1,14 @@
+---
+id: '4681901297'
+replying_to: '4679167689'
+source: disqus
+date: '2019-11-08T09:03:29Z'
+post_id: "/blog/tech/custom-wake-up-light-with-home-assistant"
+slug: custom-wake-up-light-with-home-assistant
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>Hi. It should work regardless of which light you use, as long at is controllable
+  through Home Assistant. Based on your information, it's hard to determine where
+  it goes wrong. Does the automation trigger at the right time?</p>"

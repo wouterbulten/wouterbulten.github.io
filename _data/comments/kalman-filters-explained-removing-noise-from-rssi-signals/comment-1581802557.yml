@@ -1,0 +1,16 @@
+---
+id: '4797454351'
+replying_to: ''
+source: disqus
+date: '2020-02-15T21:35:57Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: "//a.disquscdn.com/1581704280/images/noavatar92.png"
+name: Alex
+message: "<p>Hey Wouter,<br />Thank you for posting this! Your research and JS library
+  have been a great help to me. I was wondering if you might suggest some values to
+  model a human moving at a brisk walking pace linearly through uncontrolled environments.
+  For my project I am just trying to smooth the signal so I can see if it is getting
+  stronger or weaker with minimal delay and noise. Should I also set z and u variables?</p>"

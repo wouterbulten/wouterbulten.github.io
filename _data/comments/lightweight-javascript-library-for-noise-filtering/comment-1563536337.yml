@@ -1,0 +1,15 @@
+---
+id: '4545560214'
+replying_to: '4544586627'
+source: disqus
+date: '2019-07-19T11:38:57Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: <p>You will probably need a bit more than 'a few' changes. I would suggest
+  to look for an existing implementation if you need something quick. Something like
+  <a href="https://disq.us/url?url=https%3A%2F%2Fgithub.com%2Frlabbe%2FKalman-and-Bayesian-Filters-in-Python%2Fblob%2Fmaster%2F11-Extended-Kalman-Filters.ipynb%3Av4X1y4ntVrAPY9L6myugSyd0zBA&amp;cuid=3803521"
+  rel="nofollow noopener" title="https://github.com/rlabbe/Kalman-and-Bayesian-Filters-in-Python/blob/master/11-Extended-Kalman-Filters.ipynb">https://github.com/rlabbe/K...</a></p>

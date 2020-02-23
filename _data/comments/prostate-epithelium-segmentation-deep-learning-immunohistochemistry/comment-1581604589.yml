@@ -1,0 +1,14 @@
+---
+id: '4794624375'
+replying_to: ''
+source: disqus
+date: '2020-02-13T14:36:29Z'
+post_id: "/blog/tech/prostate-epithelium-segmentation-deep-learning-immunohistochemistry"
+slug: prostate-epithelium-segmentation-deep-learning-immunohistochemistry
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/lorenz_rumberger.jpg
+name: Lorenz Rumberger
+message: "<p>Hey Wouter!<br />I really enjoyed the read and the actual paper. I'm
+  really interested in the image registration pipeline that you used here, since I
+  deal with a similar task. Are there more details on it or code somewhere available?</p>"

@@ -1,0 +1,25 @@
+---
+id: '4205532802'
+replying_to: '4202092693'
+source: disqus
+date: '2018-11-21T11:06:07Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: <p>Hi Kareem, Unfortunately I cannot help you with an implementation for
+  your direct use case. You should be able to use the Java version in your android
+  app. It is a simple class, you could also use the formula directly.</p><p>I'm not
+  sure what kind of data you would like to filter for your restaurant app. Maybe you
+  can give some more info?</p><p>Regarding your other questions. Some of these were
+  already answered in other comments:</p><p>---<br />"R models the process noise and
+  describes how noisy our system internally is. Or, in other words, how much noise
+  can we expect from the system itself? As our system is constant we can set this
+  to a (very) low value. Q resembles the measurement noise; how much noise is caused
+  by our measurements? As we expect that our measurements will contain most of the
+  noise, it makes sense to set this parameter to a high number (especially in comparison
+  to the process noise)."</p><p>So I would start with a low value for R and a estimate
+  Q based on the standard deviation of the RSSI signal. (i.e. measure RSSI at a constant
+  distance for a minute or so and use the sd for Q).<br />---</p>

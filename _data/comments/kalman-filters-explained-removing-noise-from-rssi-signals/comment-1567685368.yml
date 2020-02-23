@@ -1,0 +1,13 @@
+---
+id: '4605173820'
+replying_to: ''
+source: disqus
+date: '2019-09-05T12:09:28Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: "//a.disquscdn.com/1581704280/images/noavatar92.png"
+name: Sarthak
+message: "<p>Hi,<br />What value for A, B, C, Q and R did you choose while doing the
+  tests for BLE Rssi??</p>"

@@ -1,0 +1,17 @@
+---
+id: '3269756476'
+replying_to: ''
+source: disqus
+date: '2017-04-23T12:11:19Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/disqus_3Fj3pQQiS2.jpg
+name: Sagar Sen
+message: <p>Thanks Wouter for the very intuitive tutorial. I am using it to filter
+  my strain gauge data. However, I have a DC offset that changes over time. The red
+  signal in the figure represents the original signal and the blue one is the filtered
+  signal. You can see a overall downward trend that I want to also filter. Any thoughts?<br
+  /> Should this be a 2D Kalman filter?<a href="https://uploads.disquscdn.com/images/8753736094140fedc61368238aeb9bbdcdae53b7041794bee7cb3e5be29500ff.png"
+  rel="nofollow noopener" title="https://uploads.disquscdn.com/images/8753736094140fedc61368238aeb9bbdcdae53b7041794bee7cb3e5be29500ff.png">https://uploads.disquscdn.c...</a></p>

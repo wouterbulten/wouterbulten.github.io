@@ -1,0 +1,15 @@
+---
+id: '4741818163'
+replying_to: '4741507158'
+source: disqus
+date: '2020-01-01T21:48:08Z'
+post_id: "/blog/tech/custom-wake-up-light-with-node-red"
+slug: custom-wake-up-light-with-node-red
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/rickvanoosterhout.jpg
+name: Rick van Oosterhout
+message: "<p>You mean this template : {{ [250, state_attr('light.bedroom', 'brightness')
+  + 9] | min }} ? If I try to render that at developer tools - template, it gives
+  me an unknown error rendering template. I changed the template to look at a group
+  off all the lights in my bedroom.</p>"

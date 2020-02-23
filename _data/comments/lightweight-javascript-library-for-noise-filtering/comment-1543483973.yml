@@ -1,0 +1,14 @@
+---
+id: '4217268869'
+replying_to: '4216897073'
+source: disqus
+date: '2018-11-29T09:32:53Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>The Kalman filter can be used to de-noise a signal. So, possibly, yes
+  :) You would still need to do the calculation of the direction yourself and then
+  use the filter to remove noise.</p>"

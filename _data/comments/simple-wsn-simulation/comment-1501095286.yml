@@ -1,0 +1,17 @@
+---
+id: '3436957538'
+replying_to: '3436926004'
+source: disqus
+date: '2017-07-26T18:54:46Z'
+post_id: "/blog/tech/simple-wsn-simulation"
+slug: simple-wsn-simulation
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/mohammadfazlulhasanshariff.jpg
+name: Mohammad Fazlul Hasan Shariff
+message: "<p>Thank you for your response. Is it also possible that I can use the project
+  (with the above descriptions taken into consideration) to run it in a single, complete
+  python script? I wish to not have any dependencies like calling other scripts etc...
+  Thanks for the help :)<br />(Please excuse me for my silly questions, the reason
+  is that I am trying to run lightweight neural networks on the similar project and
+  it would help greatly if everything is in a single script)</p>"

@@ -1,0 +1,23 @@
+---
+id: '2544205890'
+replying_to: '2543389308'
+source: disqus
+date: '2016-02-29T21:56:28Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: '<p>Hi! Thanks :)</p><p>It depends on what you would like to measure with
+  your walking detector. This blog post was part of my research on indoor localisation
+  of devices and users. I used a pedometer to predict movement which gave me a step
+  count. Maybe that could also be useful for you? My pedometer uses this Kalman filter
+  to filter the accelerometer data.</p><p>An implementation is available through:
+  <a href="https://disq.us/url?url=https%3A%2F%2Fgithub.com%2Fwouterbulten%2Fslacjs%2Fblob%2Fmaster%2Fsrc%2Fapp%2Fdevice%2Fpedometer.js%3ACz6tV4Erp8EeNyGYh93Dyrd2840&amp;cuid=3803521"
+  rel="nofollow noopener" title="https://github.com/wouterbulten/slacjs/blob/master/src/app/device/pedometer.js">https://github.com/wouterbu...</a></p><p>My
+  full indoor localisation project is available at:<br /><a href="https://disq.us/url?url=https%3A%2F%2Fgithub.com%2Fwouterbulten%2Fslacjs%2F%3ALnsxYxmwOeYn6ysR3X6do7e5rPY&amp;cuid=3803521"
+  rel="nofollow noopener" title="https://github.com/wouterbulten/slacjs/">https://github.com/wouterbu...</a></p><p>If
+  you are more interested in the research part, I will present a paper in April at
+  IoTDI on this subject:</p><p><a href="http://disq.us/url?url=http%3A%2F%2Fconferences.computer.org%2FIoTDI%2Fprogram.htm%3ApErgWRjZn0ii_r1DbAi7oc5IlJY&amp;cuid=3803521"
+  rel="nofollow noopener" title="http://conferences.computer.org/IoTDI/program.htm">http://conferences.computer...</a></p>'

@@ -1,0 +1,18 @@
+---
+id: '3945657596'
+replying_to: '3943346907'
+source: disqus
+date: '2018-06-15T13:07:48Z'
+post_id: "/blog/tech/blog-optimization-replacing-font-awesome-with-svg"
+slug: blog-optimization-replacing-font-awesome-with-svg
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>Hi! Fair questions.</p><p>First of all, icons in these use cases shouldn't
+  have that much influence on your SEO ranking. They are used to convey extra information
+  to the user. In most cases they only represent links of which search engines will
+  have no problems parsing.</p><p>There is a case for accessibility though, icons
+  can be hard for screen readers to parse for example. You can overcome these problems
+  by only combining icons with existing text, adding the &lt;title&gt; attribute (which
+  the svg's in the examples have) or making use of screen reader tags.</p>"

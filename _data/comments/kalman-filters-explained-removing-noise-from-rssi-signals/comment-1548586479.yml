@@ -1,0 +1,14 @@
+---
+id: '4309274097'
+replying_to: '4309224638'
+source: disqus
+date: '2019-01-27T10:54:39Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>Hi Kareem, as I understand your filter is not filtering the values properly?
+  It is hard to debug without any code or output samples. Are you using the JS library
+  or a custom (java) implementation?</p>"

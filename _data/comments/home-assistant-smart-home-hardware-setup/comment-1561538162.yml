@@ -1,0 +1,19 @@
+---
+id: '4516534750'
+replying_to: ''
+source: disqus
+date: '2019-06-26T08:36:02Z'
+post_id: "/blog/tech/home-assistant-smart-home-hardware-setup"
+slug: home-assistant-smart-home-hardware-setup
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/inquanto.jpg
+name: inquanto
+message: <p>Hey there,</p><p>Could you maybe point me in the right direction of how
+  to trigger node red automations from a deconz device. Im using hassio with a conbee
+  ii and a Xiaomi Aqara wireless switch. It is all setup on the <a href="http://disq.us/url?url=http%3A%2F%2Fhass.io%3A8ZsTvR9iglQTsl0ytDS0elXtPCM&amp;cuid=3803521"
+  rel="nofollow noopener" title="hass.io">hass.io</a> side and it registers as a deconz
+  event when i press the button. I just installed the nodered addon but im kinda lost
+  on how i would detect that deconz event? or would i connect to the deconz server
+  directly? Its all running on the same pi in my case...<br />Any help would be much
+  appreciated thanks!</p>

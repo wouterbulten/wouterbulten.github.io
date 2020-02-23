@@ -1,0 +1,18 @@
+---
+id: '4780769061'
+replying_to: ''
+source: disqus
+date: '2020-02-02T17:57:24Z'
+post_id: "/blog/tech/ikea-tradfri-temp-and-brightness-with-home-assistant"
+slug: ikea-tradfri-temp-and-brightness-with-home-assistant
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/nicolasganz.jpg
+name: nicolas ganz
+message: '<p>Thanks for this post - I am in the process of switching my 15 Tradfri
+  bulbs to Hassio/Node red and was going crazy about the fact that i can only change
+  one variable at a time! However i am completely new to node red an jso: I have imported
+  you snipplet and set up an inject to with the given msg.payload. Upon importing
+  it updatet the call service nodes to a new version that apparently handles entity_id
+  differently. Now I dont get where i should specify the entity_id? Whatever i do
+  the "call service" nodes in the subflow will just say "no connection".</p>'

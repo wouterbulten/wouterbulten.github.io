@@ -1,0 +1,25 @@
+{% if site.data.comments[page.slug] %}
+<div id="comments">
+    <h2 class="title">
+        {% if site.data.comments[page.slug].size == 1 %}
+        {{ site.data.comments[page.slug] | size | append: ' comment' }}
+        {% elsif site.data.comments[page.slug].size > 1 %}
+        {{ site.data.comments[page.slug] | size | append: ' comments' }}
+        {% endif %}
+    </h2>
+
+    {% assign comments = (site.data.comments[page.slug] | sort ) | where_exp: 'comment', 'comment[1].replying_to == ""' %}
+
+    {% for comment in comments %}
+    {% assign id          = comment[1].id %}
+    {% assign replying_to = comment[1].replying_to %}
+    {% assign avatar      = comment[1].avatar %}
+    {% assign email       = comment[1].email %}
+    {% assign name        = comment[1].name %}
+    {% assign url         = comment[1].url %}
+    {% assign date        = comment[1].date %}
+    {% assign message     = comment[1].message %}
+    {% include comment.html level=0 id=id replying_to=replying_to avatar=avatar email=email name=name url=url date=date message=message %}
+    {% endfor %}
+</div>
+{% endif %}

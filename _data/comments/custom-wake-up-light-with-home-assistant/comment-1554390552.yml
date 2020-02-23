@@ -1,0 +1,14 @@
+---
+id: '4409344129'
+replying_to: '4407728634'
+source: disqus
+date: '2019-04-04T15:09:12Z'
+post_id: "/blog/tech/custom-wake-up-light-with-home-assistant"
+slug: custom-wake-up-light-with-home-assistant
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>Hi Dmitry, I will have to update the post. For now you can edit it through
+  the manual mode of Lovelace. I don't have a lovelace config (yet). If you have one
+  and are willing to share I would happily ad it to the post :)</p>"

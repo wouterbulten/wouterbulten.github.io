@@ -1,0 +1,15 @@
+---
+id: '4469600910'
+replying_to: ''
+source: disqus
+date: '2019-05-20T11:53:13Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: "//a.disquscdn.com/1581704280/images/noavatar92.png"
+name: Kareem
+message: "<p>Hello Sir Wouter,</p><p>I would like to know the equations used to get
+  the filtered values.<br />for example: if we have RSSI at t=0 equals 70 , RSSI at
+  t=1 equals 65 and RSSI at t=3 equals 60.<br />how can we get from the equations
+  values of filtered RSSI at t=1,2? .. filtered RSSI at t=0 will be 70 for sure.</p>"

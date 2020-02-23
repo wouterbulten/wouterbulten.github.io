@@ -1,0 +1,13 @@
+---
+id: '4513211259'
+replying_to: '4511831940'
+source: disqus
+date: '2019-06-23T17:36:07Z'
+post_id: "/blog/tech/ikea-tradfri-temp-and-brightness-with-home-assistant"
+slug: ikea-tradfri-temp-and-brightness-with-home-assistant
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>Hi Fernando, you can use the same approach. Just replace color_temp with
+  the color you want (for example rgb_color).</p>"

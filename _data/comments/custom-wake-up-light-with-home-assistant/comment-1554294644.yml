@@ -1,0 +1,13 @@
+---
+id: '4407728634'
+replying_to: ''
+source: disqus
+date: '2019-04-03T12:30:44Z'
+post_id: "/blog/tech/custom-wake-up-light-with-home-assistant"
+slug: custom-wake-up-light-with-home-assistant
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/disqus_xqnTlOQMha.jpg
+name: Dmitry
+message: "<p>Hi Wouter,</p><p>How I can add widget group to lovelace properly?<br
+  />I adding it like this</p><p>type: entities<br />entities:<br />  - entity: group.alarm_clock</p>"

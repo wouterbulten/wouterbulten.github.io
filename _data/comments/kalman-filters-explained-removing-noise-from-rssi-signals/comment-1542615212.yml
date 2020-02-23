@@ -1,0 +1,14 @@
+---
+id: '4202065928'
+replying_to: ''
+source: disqus
+date: '2018-11-19T08:13:32Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/kareem_elshaer.jpg
+name: kareem elshaer
+message: "<p>HI Wouter,</p><p>I want to apply this library in Android Project using
+  Android Studio to reduce noise</p><p>my application is indoor localization using
+  Estimote beacons.<br />How Can I Do that?</p>"

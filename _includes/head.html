@@ -75,7 +75,11 @@
         {% include critical-css.css %}
     {% endif %}
   </style>
+  {%if site.disqus and jekyll.environment == "production" %}
   <link rel="preload" href="{{ "/assets/styles/min/main.css"  | prepend: site.baseurl  }}?v={{ site.assets_version }}" as="style" onload='this.onload=null;this.rel="stylesheet";'>
+  {% else %}
+  <link rel="preload" href="{{ "/assets/styles/main.css"  | prepend: site.baseurl  }}" as="style" onload='this.onload=null;this.rel="stylesheet";'>
+  {% endif %}
 
   {% if page.imageslider %}
   <style type="text/css">

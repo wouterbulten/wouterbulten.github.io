@@ -1,0 +1,14 @@
+---
+id: '4285223838'
+replying_to: '4237212244'
+source: disqus
+date: '2019-01-14T10:07:38Z'
+post_id: "/blog/tech/custom-wake-up-light-with-home-assistant"
+slug: custom-wake-up-light-with-home-assistant
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/fredriklysen.jpg
+name: Fredrik Lysen
+message: "<p>Hi Gary,<br />You probably need to create a custom script for IKEA trådfri
+  that does the colour brightness change in two or more steps with a sleep between
+  the changes. IKEA trådfri can't take multiple changes in one command.</p>"

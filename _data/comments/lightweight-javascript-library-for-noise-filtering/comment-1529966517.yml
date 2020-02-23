@@ -1,0 +1,14 @@
+---
+id: '3960799261'
+replying_to: '3949538934'
+source: disqus
+date: '2018-06-25T22:41:57Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/disqus_bmu8TYMMPp.jpg
+name: Javier Melendez
+message: "<p>I'm so glad to hear that!<br />I see that if you use a pure constant,
+  the filter loses responsiveness thus the localization algorithm wouldn't be so precise.
+  In your experience do you recommend one specific model for the RSSI noisy signals?</p>"

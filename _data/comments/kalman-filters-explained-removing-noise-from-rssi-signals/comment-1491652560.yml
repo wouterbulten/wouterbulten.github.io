@@ -1,0 +1,16 @@
+---
+id: '3246192321'
+replying_to: ''
+source: disqus
+date: '2017-04-08T11:56:00Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/kevindekemele.jpg
+name: Kevin Dekemele
+message: "<p>Hello Wouter,</p><p>I have a background in dynamic systems so I understand
+  the theory of Kalman filters. However, I still have a question on choosing the measurement
+  noise Q.</p><p>A Q can obviously be chosen as the variance of a measurement. However,
+  how sure are you that this Q is constant for different distances/RSSI ?If it is
+  not, how can one deal with this changing Q ?</p>"

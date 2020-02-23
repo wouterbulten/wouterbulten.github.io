@@ -1,0 +1,15 @@
+---
+id: '3570983475'
+replying_to: ''
+source: disqus
+date: '2017-10-17T07:53:53Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/ramdhaniizmar.jpg
+name: Ramdhani Izmar
+message: "<p>Sir.. i'm very interest about your method to filter noise and get Smooth
+  RSSI value.. by the way, i have same problem... how to include my RSSI value to
+  your kalman filter method. for example  i have RSSI value : -76dbm, -75dbm, -75dbm.
+  how to input the value to kalman filter on kalman flter variable  ?</p>"

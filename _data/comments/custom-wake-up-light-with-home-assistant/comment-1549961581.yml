@@ -1,0 +1,17 @@
+---
+id: '4333569611'
+replying_to: '4332658545'
+source: disqus
+date: '2019-02-12T08:53:01Z'
+post_id: "/blog/tech/custom-wake-up-light-with-home-assistant"
+slug: custom-wake-up-light-with-home-assistant
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: <p>Hi Caitlin, I think you can just add the color_temp to the "turn_on" call.
+  It depends on the lights whether this is supported. The Ikea Tradfri lights don't
+  for example (see <a href="https://disq.us/url?url=https%3A%2F%2Fwww.wouterbulten.nl%2Fblog%2Ftech%2Fikea-tradfri-temp-and-brightness-with-home-assistant%2F%29%3A9GM9DyODWKTgEidw6wlHP3zLog8&amp;cuid=3803521"
+  rel="nofollow noopener" title="https://www.wouterbulten.nl/blog/tech/ikea-tradfri-temp-and-brightness-with-home-assistant/)">https://www.wouterbulten.nl...</a>.
+  For those case you could write a small script that loops and sends a command every
+  minute or so.</p>

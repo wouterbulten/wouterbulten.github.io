@@ -1,0 +1,19 @@
+---
+id: '3309328108'
+replying_to: ''
+source: disqus
+date: '2017-05-16T22:20:41Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/antonprabhakar.jpg
+name: Anton Prabhakar
+message: "<p>Hi Wouter,</p><p>I'm very new to this Beacon technology, and im also
+  trying to estimate the distance between a beacon and mobile phone using the RSSI
+  value received. Between i came to know that filters are to be used to smoothen the
+  received rssi value, here your library comes into handy. But i have some doubts
+  like</p><p>var kalmanFilter = new KalmanFilter({R: 0.01, Q: 3});</p><p>I can understand
+  the process noise(R) and measurement noise(Q), but why are you fixing the Q value
+  to 3. Is it you trying to say that the measured raw rssi value would be plus or
+  minus 3 of the original value ?</p><p>Looking forward to your reply</p>"

@@ -1,0 +1,20 @@
+---
+id: '2544986546'
+replying_to: '2544205890'
+source: disqus
+date: '2016-03-01T08:26:22Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/studentsklart.jpg
+name: Studentsåklart
+message: "<p>Okay thanks for the links, your paper seems very relevant at the moment
+  :) <br />To clarify, we use the Kalman filter to smooth the reported distance. And
+  seeing as our use cases involve a user that is stationary at some times and moving
+  on other, we need to alter the parameters of the filter to allow less noise from
+  the process when stationary and substantially more when on the move. This is where
+  we put in our signal from the walk detection. <br />We decided against step detection
+  as this would only provide an advantage over our current solution given that we
+  also have the direction relative to the beacons, which would allow a more detailed
+  prediction step, however, this is currently out of our scope for our thesis.</p>"

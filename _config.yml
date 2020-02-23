@@ -90,3 +90,7 @@ social:
 comments:
   url: "https://wb-comments.herokuapp.com/new-entry"
   captcha_key: 6LfGd9sUAAAAAO7L5SJSvtc5Y31KAATFh-An7K0F
+
+  disqus:
+    short_name: wouterbulten
+    api_key:
