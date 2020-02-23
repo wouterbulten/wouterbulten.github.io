@@ -36,7 +36,7 @@
       async defer>
   </script>
 
-  <form class="form-message" id="comment-form" name="comment-form"  action="{{ site.comments.url }}">
+  <form class="form-message" id="comment-form" method="POST" name="comment-form"  action="{{ site.comments.url }}">
     <input name="options[redirect]" type="hidden" value="{{ page.url }}">
     <input name="options[slug]" type="hidden" value="{{ page.slug }}">
     <input name="fields[replying_to" id="form-replying-to" type="hidden" value="">
