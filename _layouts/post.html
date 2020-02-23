@@ -125,27 +125,6 @@ layout: default
       {% endif %}
     {% endif %}
 
-    {%if site.disqus and jekyll.environment == "production" %}
-    <a name="comments"></a>
-    <div id="disqus_thread" class="comment-section"></div>
-    <script>
-    var disqus_shortname = '{{site.disqus}}';
-    var disqus_config = function () {
-        this.page.url = '{{site.url}}{{page.id}}/';
-        this.page.identifier = '{{page.id}}';
-    };
-    (function() {
-        var d = document, s = d.createElement('script');
-
-        s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-    </script>
-    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
-    {% endif %}
-
     {% include comments.html %}
     {% include comment-form.html %}
 
