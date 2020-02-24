@@ -36,16 +36,28 @@
     
   </script>
   <script type="text/javascript">
-  function insertAfter(newNode, referenceNode) {
-    referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
-  }
   function replyToComment(commentId) {
     var form = document.getElementById('comment-form');
-    var comment = document.getElementById(commentId);
-    var commentBody = comment.getElementsByClassName('comment-content')[0];
-    commentBody.appendChild(form);
+    var containers = document.getElementsByClassName('reply-form-container');
+    for(var i = 0; i < containers.length; i++) {
+      containers[i].style.display = 'none';
+    }
+    var container = document.getElementById("reply-form-" + commentId);
+    container.appendChild(form);
+    container.parentElement.style.display = 'block';
+    document.getElementById('form-replying-to').value = commentId;
+    document.getElementById('comment-new').style.display = 'block';
+  }
+  function resetForm() {
+    document.getElementById('comment-new').style.display = 'none';
+    document.getElementById('form-replying-to').value = '';
+    var form = document.getElementById('comment-form');
+    var container = document.getElementById('new-comment');
+    container.appendChild(form);
   }
   </script>
+
+  <a href="#new-comment" onclick="return resetForm()" id="comment-new" style="display: none">Add a new comment</a>
 
   <form class="form-message" id="comment-form" method="POST" name="comment-form"  action="{{ site.comments.url }}">
     <input name="options[redirect]" type="hidden" value="{{ page.url | prepend: site.url }}">

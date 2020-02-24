@@ -9,7 +9,6 @@
   <div class="media-body">
     <div class="comment-content">
       <h5 class="mt-0 name {% if include.name == 'Wouter Bulten' %}name-admin{% endif %}">
-        {{ include.level }}
         {% if include.name == 'Wouter Bulten' %}
         <a href="{{ '/curriculum-vitae/' | prepend: site.url }}">Wouter Bulten</a>
         {% else %}
@@ -24,8 +23,12 @@
       {{ include.message | markdownify | replace: "<a href", "<a rel='nofollow' href"}}
 
       <small class="comment-reply">
-        <a href="#comment-{{ include.index }}" onclick="return replyToComment('comment-{{ include.id }}')">Reply to {{ include.name }} &crarr;</a>
+        <a href="#comment-{{ include.index }}" onclick="return replyToComment('{{ include.id }}')">Reply to {{ include.name }} &crarr;</a>
       </small>
+      <div class="reply-form-container">
+        <p class="instruction">Use the form below to reply to the comment of {{ include.name | strip_html }}:</p>
+        <div id="reply-form-{{include.id}}"></div>
+      </div>
     </div>
 
   {% if include.level > 3 %}

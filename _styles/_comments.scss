@@ -60,3 +60,14 @@
         font-weight: 500;
     }
 }
+
+.reply-form-container {
+    display: none;
+    border: 1px solid #bdbdbd;
+    padding: 1em;
+    margin-top: 2em;
+
+    .instruction {
+        font-weight: 500;
+    }
+}

@@ -3758,6 +3758,14 @@ body {
 .comment-form label {
   font-weight: 500; }
 
+.reply-form-container {
+  display: none;
+  border: 1px solid #bdbdbd;
+  padding: 1em;
+  margin-top: 2em; }
+  .reply-form-container .instruction {
+    font-weight: 500; }
+
 .section-home {
   padding-top: 2rem;
   margin-bottom: 2rem; }
