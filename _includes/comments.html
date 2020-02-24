@@ -8,9 +8,9 @@
         {% endif %}
     </h2>
 
-    {% assign comments = (site.data.comments[page.slug] | sort ) | where_exp: 'comment', 'comment[1].replying_to == ""' %}
+    {% assign comments = ((site.data.comments[page.slug] | sort ) | where_exp: 'comment', 'comment[1].replying_to == ""') %}
 
-    {% for comment in comments %}
+    {% for comment in comments reversed %}
     {% assign id          = comment[1].id %}
     {% assign replying_to = comment[1].replying_to %}
     {% assign avatar      = comment[1].avatar %}

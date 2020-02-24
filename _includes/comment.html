@@ -9,6 +9,7 @@
   <div class="media-body">
     <div class="comment-content">
       <h5 class="mt-0 name {% if include.name == 'Wouter Bulten' %}name-admin{% endif %}">
+        {{ include.level }}
         {% if include.name == 'Wouter Bulten' %}
         <a href="{{ '/curriculum-vitae/' | prepend: site.url }}">Wouter Bulten</a>
         {% else %}
@@ -32,9 +33,12 @@
   </div>
   {% endif %}
   {% capture parent_id %}{{ include.id }}{% endcapture %}
-  {% assign level = include.level | plus: 1 %}
+  
   {% assign replies = site.data.comments[page.slug] | sort | where_exp: 'comment', 'comment[1].replying_to == parent_id' %}
-  {% for reply in replies %}
+  {% for reply in replies reversed %}
+
+    {% assign child_level = include.level | plus: 1 %}
+
     {% assign id          = reply[1].id %}
     {% assign replying_to = reply[1].replying_to | to_integer %}
     {% assign avatar      = reply[1].avatar %}
@@ -43,7 +47,7 @@
     {% assign url         = reply[1].url %}
     {% assign date        = reply[1].date %}
     {% assign message     = reply[1].message %}
-    {% include comment.html level=level id=id replying_to=replying_to avatar=avatar email=email name=name url=url date=date message=message %}
+    {% include comment.html level=child_level id=id replying_to=replying_to avatar=avatar email=email name=name url=url date=date message=message %}
   {% endfor %}
 
 {% if include.level <= 3 %}
