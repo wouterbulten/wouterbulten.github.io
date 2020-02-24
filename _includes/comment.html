@@ -1,12 +1,14 @@
-<div class="media comment {% if include.replying_to != '' %}child-comment{% else %}parent-comment{% endif %}" id="comment-{{ include.id }}">
-  {% if include.email != '' %}
-  <img data-srcset="https://www.gravatar.com/avatar/{{ include.email }}?d=mm&s=60 1x, https://www.gravatar.com/avatar/{{ include.email }}?d=mm&s=120 2x" alt="" class="lazyload">
-  {% elsif include.name == 'Wouter Bulten' %}
-  <img data-src="/assets/images/author-wouter-bulten.png" class="mr-3 lazyload user-image">
-  {% else %}
-  <svg class="svg-icon user-image mr-3"><use xlink:href="#icon-user"></use></svg>
-  {% endif %}
-  <div class="media-body">
+<div class="comment {% if include.replying_to != '' %}child-comment{% else %}parent-comment{% endif %}" id="comment-{{ include.id }}">
+  <div class="user-image">
+    {% if include.email != '' %}
+    <img data-srcset="https://www.gravatar.com/avatar/{{ include.email }}?d=mm&s=60 1x, https://www.gravatar.com/avatar/{{ include.email }}?d=mm&s=120 2x" alt="" class="lazyload">
+    {% elsif include.name == 'Wouter Bulten' %}
+    <img data-src="/assets/images/author-wouter-bulten.png" class="mr-3 lazyload">
+    {% else %}
+    <svg class="svg-icon mr-3"><use xlink:href="#icon-user"></use></svg>
+    {% endif %}
+  </div>
+  <div class="comment-container">
     <div class="comment-content">
       <h5 class="mt-0 name {% if include.name == 'Wouter Bulten' %}name-admin{% endif %}">
         {% if include.name == 'Wouter Bulten' %}
@@ -31,14 +33,14 @@
       </div>
     </div>
 
-  {% if include.level > 3 %}
+  {% if include.level > 2 %}
   </div>
   </div>
   {% endif %}
   {% capture parent_id %}{{ include.id }}{% endcapture %}
   
   {% assign replies = site.data.comments[page.slug] | sort | where_exp: 'comment', 'comment[1].replying_to == parent_id' %}
-  {% for reply in replies reversed %}
+  {% for reply in replies %}
 
     {% assign child_level = include.level | plus: 1 %}
 
@@ -53,7 +55,7 @@
     {% include comment.html level=child_level id=id replying_to=replying_to avatar=avatar email=email name=name url=url date=date message=message %}
   {% endfor %}
 
-{% if include.level <= 3 %}
+{% if include.level <= 2 %}
 </div>
 </div>
 {% endif %}

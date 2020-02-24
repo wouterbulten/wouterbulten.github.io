@@ -70,10 +70,10 @@
     <label for="contact_name">Your name</label>
     <input type="text" id="contact_name" name="fields[name]" placeholder="John Doe" required>
 
-    <label for="contact_email">Your email address</label>
+    <label for="contact_email">Your email address<br><small>Your email address is not published, but only used to display your avatar.</small></label>
     <input type="email" id="contact_email" name="fields[email]" placeholder="email@example.com" required>
 
-    <label for="contact_message">Message</label>
+    <label for="contact_message">Message<br><small>By submitting this form you agree that the entered information will be processed to publish your comment.</small></label>
     <textarea name="fields[message]" id="contact_message" placeholder="Your message" rows="12" cols="36" required></textarea>
 
     <label>Please fill in the captcha:</label>
@@ -84,7 +84,9 @@
     <label for="submit-btn" style="visibility: hidden;">Submit the form with the submit button:</label>
     <input type="submit" id="submit-btn" class="btn nav-btn" value="Submit comment">
 
-    <div style="flex: 1 0 60%;"><small>By submitting this form you agree that the entered information will be processed to publish your comment.</small></div>
+    <p>
+      <i>Note: I have recently switched to a tracker-free comment system. If you encounter any problem regarding the comment system, please <a href="/contact">let me know</a>!</i>
+    </p>
   </form>
     
 </div>

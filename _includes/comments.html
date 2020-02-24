@@ -1,5 +1,5 @@
 {% if site.data.comments[page.slug] %}
-<div id="comments">
+<div id="comments" class="comments">
     <h2 class="title">
         {% if site.data.comments[page.slug].size == 1 %}
         {{ site.data.comments[page.slug] | size | append: ' comment' }}
@@ -10,7 +10,7 @@
 
     {% assign comments = ((site.data.comments[page.slug] | sort ) | where_exp: 'comment', 'comment[1].replying_to == ""') %}
 
-    {% for comment in comments reversed %}
+    {% for comment in comments %}
     {% assign id          = comment[1].id %}
     {% assign replying_to = comment[1].replying_to %}
     {% assign avatar      = comment[1].avatar %}

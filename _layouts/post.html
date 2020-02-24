@@ -126,10 +126,9 @@ layout: default
     {% endif %}
 </div>
 
-<div class="section">
-    {% include comments.html %}
-    {% include comment-form.html %}
-</div>
+{% include comments.html %}
+
+{% include comment-form.html %}
 
 <div class="section">
     {% if cat == 'food' %}
