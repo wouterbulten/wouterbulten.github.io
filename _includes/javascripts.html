@@ -76,9 +76,9 @@ loadjs(preloadDependencies, 'page', function() {
 {% else %}
   <!-- Always load base js file (includes lazysizes and comment js) -->
   {%if true or jekyll.environment == "production" %}
-  <script src='{{ "/assets/js/main.min.js" | prepend: site.baseurl }}' async=""></script>
+  <script src='{{ "/assets/js/main.min.js" | prepend: site.baseurl }}?v={{ site.assets_version }}' async=""></script>
   {% else %}
-  <script src='{{ "/assets/js/main.js" | prepend: site.baseurl }}' async=""></script>
+  <script src='{{ "/assets/js/main.js" | prepend: site.baseurl }}?v={{ site.assets_version }}' async=""></script>
   {% endif %}
 {% endif %}
 
