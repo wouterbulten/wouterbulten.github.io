@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "AI assitance, hype or reality?"
+title:  "The potential of AI in medicine: AI-assistance improves prostate cancer grading"
 date:   2020-02-13 12:00
 categories: blog tech
 tags: [research, phd, deep learning, prostate cancer, Gleason grading]
@@ -13,7 +13,21 @@ imageslider: false
 openseadragon: false
 ---
 
+<a name="introduction"></a>
 Within medicine, there is somewhat of an "**AI hype**." Mainly driven by advances in deep learning, more and more studies show the potential of using artificial intelligence as a diagnostic tool. The same trend is present in the field I am working in. The field of pathology slowly transitions from being centered around microscopes to assessing tissue using a computer screen (i.e., _digital pathology_). With this change, computational models assisting the pathologist became within reach. A new field was born: _computational pathology_.
+
+
+<div class="toc-container">
+<b>Table of contents</b>
+<ol>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#ai-assistance">AI assistance for pathologists</a></li>
+<li><a href="#better-performance">Better performance, lower variability</a></li>
+<li><a href="#beyond-diagnostic-performance">Looking beyond diagnostic performance</a></li>
+<li><a href="#discussion">Limitations, conclusion and future outlook</a></li>
+<li><a href="#references">References</a></li>
+</ol>
+</div>
 
 In recent years many studies have shown that deep learning-based tools can replicate histological tasks. For prostate cancer, the main topic of my Ph.D., detection models[^pca1][^pca2] have been around for some time and are slowly becoming available to the clinic[^paige]. The next step is building AI systems that can perform prognostic tasks, such as grading cancer. The first steps have already been made in this direction. We recently published our work on [AI-based grading for prostate cancer]({% post_url tech/2019-07-23-automated-gleason-grading-deep-learning %}) in Lancet Oncology[^gl1]. In the same issue, colleagues from Karolinska (Sweden) showed similar findings[^gl2]. These studies, and others[^gl3], showed that AI systems can achieve or even outperform pathologists (within the limits of the study setup).
 
@@ -23,6 +37,7 @@ In the end, AI algorithms will have to be applied in the clinic and outside of a
 
 After completing our study on automated Gleason grading for prostate cancer, we were curious to what extend our system could improve the diagnostic process. In a completely new study, now available as a [preprint on arXiv](https://arxiv.org/abs/2002.04500), we investigated the possible benefits of an AI system for pathologists. **Instead of focussing on pathologist-versus-AI, we instead look at potential pathologist-AI synergy.**
 
+<a name="ai-assistance"></a>
 ## AI assistance for pathologists
 
 When we developed the deep learning system, one of our design focusses was that the system would give interpretable output. Knowing the final diagnosis for a case is interesting, but it is more useful if a system can also show on what it based its decision. In our case, we do this by letting the system highlight prostate glands that it finds malignant. This would make the inspection of the system's second opinion easy and should benefit the final diagnose, so we assumed.
@@ -37,13 +52,36 @@ The difference between the two reads was the AI feedback. While in the unassiste
 
 For all of these biopsies, the reference standard was set by three uropathologists in consensus. Panel members determined the grade group of the biopsy, and this was later compared to the reference standard. 
 
+<a name="better-performance"></a>
 ## Better performance, lower variability
 
 After the assisted read, the scores of the individual readers were compared across the two runs. As the primary metric, we used quadratically weighted Cohen's kappa. Whereas in the unassisted read, the panel achieved a median score of 0.79, this increased to 0.87 in the AI-assisted read (an increase of almost 10%). Besides this increase, the variability of the panel members dropped; the interquartile range of the panel's kappa values dropped from 0.11 to 0.07
 
-Moreover, without assistance, the AI system outperformed 10 out of 14 observers (71%). In the assisted read, this flipped, and 9 out of 14 exceeded the AI. 
+Moreover, without assistance, the AI system outperformed 10 out of 14 observers (71%). In the assisted read, this flipped, and 9 out of 14 exceeded the AI. On a group level, the **AI-assisted pathologists outperformed not only the unassisted reads but also the AI itself**.
 
-# References
+When split out on experience level, less experienced pathologists benefitted the most. Most of the experienced pathologists (defined as >15 years of experience), already scored similar or better than the AI system and had less to gain in terms of diagnostic performance. Still, the AI could have helped them grade the cases faster, something we did not explicitly test.
+
+<a name="beyond-diagnostic-performance"></a>
+## Looking beyond diagnostic performance
+
+Besides diagnostic performance, other factors are essential to increase the adoption of AI techniques in the diagnostic process[^helloai]. Pathologists are often time-constrained and have high workloads. Any algorithm has to be easy to use and ideally speed up diagnosis. More research also needs to be done on how we can efficiently embed these new techniques in routine practice, especially in a field that is used to analog examination through microscopes.
+
+In our study, we did not quantitatively measure the use of our system. We did ask all panel members to fill in a survey regarding the grading process. A summary of some of the findings:
+
+1. The majority of pathologists indicated that **AI assistance sped up grading**. It would be interesting to investigate the source of this time gain and to measure it quantitatively. Does it speed up finding the tumor? Makes it assessing tumor volumes faster?
+2. The **gland-level prediction of the system was found most useful**. The case-level label the least. This suggests that there is an added benefit of showing AI feedback on the source level.
+3. The majority of panel members **would like to use an AI system** during clinical practice.
+
+For the other survey questions and the pathologist's responses, please see the [preprint on arXiv](https://arxiv.org/abs/2002.04500).
+
+<a name="discussion"></a>
+## Limitations, conclusion and future outlook
+
+With our research, we aimed to set a new (small) step towards the clinical use of AI systems within pathology. Of course, there are limitations to our study that open up many avenues of future research. For example, we tested only two reads with a fixed order. It would be exciting to investigate the effect of AI assistance on a more extensive set and over a more extended period. Maybe the benefit of AI assistance wears out over time, as pathologists learn from the feedback and apply this also in unassisted reads. It could also be that pathologists become faster as they get accustomed to the feedback of the system.
+
+The future is exciting, both from the AI perspective as well as on the implementation side. The tools are there to improve cancer diagnosis even further.
+
+## References
 
 [^pca1]: Litjens, G. et al. Deep learning as a tool for increased accuracy and efficiency of histopathological diagnosis. Sci. Rep. 6, 26286, [Read online](https://doi.org/10.1038/srep26286) (2016).
 [^pca2]: Campanella, G. et al. Clinical-grade computational pathology using weakly supervised deep learning on whole slide images. Nat. Med. 25, 1301-1309, [Read online](https://doi.org/10.1038/s41591-019-0508-1) (2019).
@@ -52,3 +90,4 @@ Moreover, without assistance, the AI system outperformed 10 out of 14 observers 
 [^gl2]: Ström, P. et al. Artificial intelligence for diagnosis and grading of prostate cancer in biopsies: a population-based, diagnostic study. The Lancet Oncology 21, 222-232, [Read online](https://doi.org/10.1016/S1470-2045(19)30738-7) (2020).
 [^gl3]: Nagpal, K. et al. Development and Validation of a Deep Learning Algorithm for Improving Gleason Scoring of Prostate Cancer. npj Digital Medicine, [Read online](https://doi.org/10.1038/s41746-019-0112-2) (2018).
 [^rad1]: Rodríguez-Ruiz, A. et al. Detection of Breast Cancer with Mammography: Effect of an Artificial Intelligence Support System. Radiology 290, 305-314, [Read online](https://doi.org/10.1148/radiol.2018181371) (2018).
+[^helloai]: Cai CJ, Winter S, Steiner D, Wilcox L, Terry M. Hello AI: Uncovering the Onboarding Needs of Medical Practitioners for Human-AI Collaborative Decision-Making. Proceedings of the ACM on Human-Computer Interaction 2019;3:104. [Read online](https://dl.acm.org/doi/pdf/10.1145/3359206)

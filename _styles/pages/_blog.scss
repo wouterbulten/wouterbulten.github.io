@@ -276,3 +276,15 @@
   margin-left: -15px;
   margin-right: -15px;
 }
+
+.toc-container {
+  border: 1px solid #efefef;
+  padding: 15px;
+  
+  margin: 15px 0 15px 0;
+  
+  @include media-breakpoint-up(sm) {
+    margin-left: 15px;
+    float: right;
+  }
+}
