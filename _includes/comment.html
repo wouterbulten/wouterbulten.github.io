@@ -9,8 +9,8 @@
     {% endif %}
   </div>
   <div class="comment-container">
-    <div class="comment-content">
-      <h5 class="mt-0 name {% if include.name == 'Wouter Bulten' %}name-admin{% endif %}">
+    <div class="comment-content" itemprop="comment" itemscope itemtype="https://schema.org/Comment">
+      <h5 class="mt-0 name {% if include.name == 'Wouter Bulten' %}name-admin{% endif %}" class="comment-author" itemprop="author" itemtype="https://schema.org/Person">
         {% if include.name == 'Wouter Bulten' %}
         <a href="{{ '/curriculum-vitae/' | prepend: site.url }}">Wouter Bulten</a>
         {% else %}
@@ -18,11 +18,11 @@
         {% endif %}
         {% if include.date %}
         <small>on
-          <time datetime="{{ include.date | date_to_xmlschema }}">{{ include.date | date_to_string }}</time>
+          <time datetime="{{ include.date | date_to_xmlschema }}" itemprop="commentTime">{{ include.date | date_to_string }}</time>
         </small>
       {% endif %}
       </h5>
-      {{ include.message | markdownify | replace: "<a href", "<a rel='nofollow' href"}}
+      <div itemprop="text">{{ include.message | markdownify | replace: "<a href", "<a rel='nofollow' href"}}</div>
 
       <small class="comment-reply">
         <a href="#comment-{{ include.id }}" onclick="return replyToComment('{{ include.id }}')">Reply to {{ include.name }} &crarr;</a>
