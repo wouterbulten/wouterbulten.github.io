@@ -1,4 +1,4 @@
-<div class="comment-form" id="new-comment">
+<div class="comment-form-section" id="new-comment">
   <h2>Add a new comment</h2>
 
   <p>Questions? Suggestions? Feedback? Leave it as a comment to this post! I try to address all comments as fast as possible.</p>
@@ -7,7 +7,7 @@
 
   <a href="#new-comment" onclick="return resetForm()" id="comment-new" style="display: none">Add a new comment</a>
 
-  <form class="form-message" id="comment-form" method="POST" name="comment-form"  action="{{ site.comments.url }}">
+  <form class="comment-form" id="comment-form" method="POST" name="comment-form"  action="{{ site.comments.url }}">
     <input name="options[redirect]" type="hidden" value="{{ page.url | prepend: site.url }}">
     <input name="options[slug]" type="hidden" value="{{ page.slug }}">
     <input type="hidden" name="options[reCaptcha][siteKey]" value="{{ site.comments.captcha_key }}">

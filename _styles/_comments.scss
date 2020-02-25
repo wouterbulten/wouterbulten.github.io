@@ -76,33 +76,16 @@
     }
 }
 
-.comment-form {
+.comment-form-section {
 
     @include make-row();
     margin: 0;
 
-    .form-message {
+    .comment-form {
         background-color: #f4f4f4;
         padding: 1em;
         margin-left: -10px;
         margin-right: -10px;
-    }
-    
-    .captcha-container {
-        width: 50%;
-        min-height: 100px;
-    }
-    .btn {
-        width: 50%;
-        float: right;
-    }
-
-    label {
-        font-weight: 500;
-        padding-right: 10px;
-    }
-    small {
-        font-weight: 300;
     }
 }
 
@@ -118,5 +101,27 @@
 
     .instruction {
         font-weight: 500;
+    }
+}
+
+// Style the form, both inline as below the page
+.comment-form {
+    
+    .captcha-container {
+        width: 50%;
+        min-height: 100px;
+        overflow-x: auto;
+    }
+    .btn {
+        width: 50%;
+        float: right;
+    }
+
+    label {
+        font-weight: 500;
+        padding-right: 30px;
+    }
+    small {
+        font-weight: 300;
     }
 }

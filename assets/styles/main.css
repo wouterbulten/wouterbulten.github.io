@@ -3714,9 +3714,6 @@ body {
       .nav-full-width div, .nav-full-width a {
         flex: 1 1 auto; } }
 
-.comments .title {
-  padding-left: 15px; }
-
 .comment {
   display: flex;
   flex-wrap: wrap;
@@ -3779,28 +3776,17 @@ body {
   .comment .name.admin {
     color: #007bff; }
 
-.comment-form {
+.comment-form-section {
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
   margin: 0; }
-  .comment-form .form-message {
+  .comment-form-section .comment-form {
     background-color: #f4f4f4;
     padding: 1em;
     margin-left: -10px;
     margin-right: -10px; }
-  .comment-form .captcha-container {
-    width: 50%;
-    min-height: 100px; }
-  .comment-form .btn {
-    width: 50%;
-    float: right; }
-  .comment-form label {
-    font-weight: 500;
-    padding-right: 10px; }
-  .comment-form small {
-    font-weight: 300; }
 
 .reply-form-container {
   display: none;
@@ -3811,6 +3797,22 @@ body {
       padding: 1em; } }
   .reply-form-container .instruction {
     font-weight: 500; }
+
+.comment-form .captcha-container {
+  width: 50%;
+  min-height: 100px;
+  overflow-x: auto; }
+
+.comment-form .btn {
+  width: 50%;
+  float: right; }
+
+.comment-form label {
+  font-weight: 500;
+  padding-right: 30px; }
+
+.comment-form small {
+  font-weight: 300; }
 
 .section-home {
   padding-top: 2rem;
@@ -4059,24 +4061,24 @@ body {
   .cv-list dd strong {
     font-weight: 500; }
 
-.form-message {
+.form-message, .comment-form {
   display: flex;
   flex-wrap: wrap; }
-  .form-message label {
+  .form-message label, .comment-form label {
     flex: 1 0 100%; }
     @media (min-width: 768px) {
-      .form-message label {
+      .form-message label, .comment-form label {
         flex: 1 0 40%; } }
-  .form-message input, .form-message textarea {
+  .form-message input, .form-message textarea, .comment-form input, .comment-form textarea {
     flex: 1 0 100%;
     margin-bottom: 30px;
     padding: 5px;
     border-radius: 2px;
     border: 1px solid #e6e5e5; }
     @media (min-width: 768px) {
-      .form-message input, .form-message textarea {
+      .form-message input, .form-message textarea, .comment-form input, .comment-form textarea {
         flex: 1 0 60%; } }
-    .form-message input:focus, .form-message textarea:focus {
+    .form-message input:focus, .form-message textarea:focus, .comment-form input:focus, .comment-form textarea:focus {
       outline: none !important;
       border: 1px solid #007bff; }
 

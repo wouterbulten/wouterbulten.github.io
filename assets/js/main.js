@@ -4,35 +4,32 @@
 /* Comments functions */
 
 /* Lazyload captcha, only if the user access the form */
-window.addEventListener('DOMContentLoaded', function() {
+// Function to load the captcha js
+var loadCaptcha = function() {
+  console.info("Loading captcha for form validation.");
+  var js = document.createElement("script");
+  js.setAttribute("type", "text/javascript");
+  js.setAttribute("src", "https://www.google.com/recaptcha/api.js?onload=captchaCallback&render=explicit"); 
+  document.body.appendChild(js);
+};
 
-  // Function to load the captcha js
-  var loadCaptcha = function() {
-    console.info("Loading captcha for form validation.");
-    var js = document.createElement("script");
-    js.setAttribute("type", "text/javascript");
-    js.setAttribute("src", "https://www.google.com/recaptcha/api.js?onload=captchaCallback&render=explicit"); 
-    document.body.appendChild(js);
-  };
-
-  // Listen for form events to load the js
-  var elements = document.getElementById('comment-form').querySelectorAll('input,label,textarea');
-  for(var i = 0; i < elements.length; i++) {
-    elements[i].addEventListener('focus', function() {
-      if(loadCaptcha) {
-        loadCaptcha();
-        loadCaptcha = null;
-      }
-    });
-  }
-});
+// Listen for form events to load the js
+var elements = document.getElementById('comment-form').querySelectorAll('input,label,textarea');
+for(var i = 0; i < elements.length; i++) {
+  elements[i].addEventListener('focus', function() {
+    if(loadCaptcha) {
+      loadCaptcha();
+      loadCaptcha = null;
+    }
+  });
+}
 
 // Callback that is called when the captcha js is loaded
 var captchaCallback = function() {
   console.info("Captcha loaded, securing form.");
   document.getElementById('comments-captcha').innerHTML = "";
   grecaptcha.render('comments-captcha', {
-    'sitekey' : '{{ site.comments.captcha_key }}'
+    'sitekey' : window.captchaSiteKey,
   });
 };
 
