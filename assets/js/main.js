@@ -59,3 +59,8 @@ function resetForm() {
   var container = document.getElementById('new-comment');
   container.appendChild(form);
 }
+
+if(window.location.hash == '#comment-submitted') {
+  document.getElementById('comment-form').style.display = 'none';
+  document.getElementById('comment-submitted').style.display = 'block';
+}

@@ -25,7 +25,7 @@
       {{ include.message | markdownify | replace: "<a href", "<a rel='nofollow' href"}}
 
       <small class="comment-reply">
-        <a href="#comment-{{ include.index }}" onclick="return replyToComment('{{ include.id }}')">Reply to {{ include.name }} &crarr;</a>
+        <a href="#comment-{{ include.id }}" onclick="return replyToComment('{{ include.id }}')">Reply to {{ include.name }} &crarr;</a>
       </small>
       <div class="reply-form-container">
         <p class="instruction">Use the form below to reply to the comment of {{ include.name | strip_html }}:</p>

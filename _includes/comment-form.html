@@ -7,8 +7,11 @@
 
   <a href="#new-comment" onclick="return resetForm()" id="comment-new" style="display: none">Add a new comment</a>
 
+  <div class="comment-confirmation" id="comment-submitted" style="display: none;">
+    <p>Thank you for your input! Your comment was submitted. Please wait for it to be reviewed. If you want, you can track your comment in my <a href="https://github.com/wouterbulten/wouterbulten.github.io/pulls">repository</a>.</p>
+  </div>
   <form class="comment-form" id="comment-form" method="POST" name="comment-form"  action="{{ site.comments.url }}">
-    <input name="options[redirect]" type="hidden" value="{{ page.url | prepend: site.url }}">
+    <input name="options[redirect]" type="hidden" value="{{ page.url | prepend: site.url }}#comment-confirmation  ">
     <input name="options[slug]" type="hidden" value="{{ page.slug }}">
     <input type="hidden" name="options[reCaptcha][siteKey]" value="{{ site.comments.captcha_key }}">
     <input type="hidden" name="options[reCaptcha][secret]" value="{{ site.comments.captcha_secret }}">
