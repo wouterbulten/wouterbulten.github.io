@@ -4,9 +4,5 @@
   Referrer-Policy: strict-origin-when-cross-origin
   X-Content-Type-Options: no-sniff
 
-/favicon-*.png
-  Cache-Control: public, max-age=2592000
-/assets/images/*
-  Cache-Control: public, max-age=2592000
 /assets/js/*
   Cache-Control: public, max-age=2592000
