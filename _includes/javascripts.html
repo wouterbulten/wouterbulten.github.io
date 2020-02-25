@@ -14,10 +14,6 @@ var preloadDependencies = [
   '{{ "/assets/js/Chart.min.js" | prepend: site.baseurl  }}',
   {% endif %}
 
-  {% if page.id and page.readingTime %}
-  '{{ "/assets/js/readingTime.min.js" | prepend: site.baseurl  }}',
-  {% endif %}
-
   {% if page.tags and page.tags contains 'home automation' %}
   /* Disable sitemap for now 'https://link.wouterbulten.nl/urls.js?v={{ site.time }}', */
   {% endif %}
@@ -74,8 +70,12 @@ loadjs(preloadDependencies, 'page', function() {
 });
 </script>
 {% else %}
-<!-- Always load lazysizes to optimize images -->
-<script src='{{ "/assets/js/lazysizes.min.js" | prepend: site.baseurl }}' async=""></script>
+  <!-- Always load base js file (includes lazysizes and comment js) -->
+  {%if true or jekyll.environment == "production" %}
+  <script src='{{ "/assets/js/main.min.js" | prepend: site.baseurl }}' async=""></script>
+  {% else %}
+  <script src='{{ "/assets/js/main.js" | prepend: site.baseurl }}' async=""></script>
+  {% endif %}
 {% endif %}
 
 {% if page.layout == 'post' %}

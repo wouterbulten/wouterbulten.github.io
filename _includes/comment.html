@@ -33,7 +33,7 @@
       </div>
     </div>
 
-  {% if include.level > 2 %}
+  {% if include.level > 1 %}
   </div>
   </div>
   {% endif %}
@@ -55,7 +55,7 @@
     {% include comment.html level=child_level id=id replying_to=replying_to avatar=avatar email=email name=name url=url date=date message=message %}
   {% endfor %}
 
-{% if include.level <= 2 %}
+{% if include.level <= 1 %}
 </div>
 </div>
 {% endif %}

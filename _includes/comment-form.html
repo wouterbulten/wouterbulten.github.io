@@ -5,58 +5,6 @@
 
   <p>All comments are first reviewed before they are placed on the website. The comments system does not track users, and I only store the comment itself. After submitting the form, the comment will be reviewed as soon as possible. You can track your comment's status in my <a href="https://github.com/wouterbulten/wouterbulten.github.io/pulls">repository</a>.</p>
 
-  <script type="text/javascript">
-    /* Lazyload captcha, only if the user access the form */
-    window.addEventListener('DOMContentLoaded', function() {
-      var loadCaptcha = function() {
-        console.info("Loading captcha for form validation.");
-        var js = document.createElement("script");
-        js.setAttribute("type", "text/javascript");
-        js.setAttribute("src", "https://www.google.com/recaptcha/api.js?onload=captchaCallback&render=explicit"); 
-        document.body.appendChild(js);
-      };
-      var elements = document.getElementById('comment-form').querySelectorAll('input,label,textarea');
-      for(var i = 0; i < elements.length; i++) {
-        elements[i].addEventListener('focus', function() {
-          if(loadCaptcha) {
-            loadCaptcha();
-            loadCaptcha = null;
-          }
-        });
-      }
-    });
-    var captchaCallback = function() {
-      console.info("Captcha loaded, securing form.");
-      document.getElementById('comments-captcha').innerHTML = "";
-      grecaptcha.render('comments-captcha', {
-        'sitekey' : '{{ site.comments.captcha_key }}'
-      })
-    };
-
-    
-  </script>
-  <script type="text/javascript">
-  function replyToComment(commentId) {
-    var form = document.getElementById('comment-form');
-    var containers = document.getElementsByClassName('reply-form-container');
-    for(var i = 0; i < containers.length; i++) {
-      containers[i].style.display = 'none';
-    }
-    var container = document.getElementById("reply-form-" + commentId);
-    container.appendChild(form);
-    container.parentElement.style.display = 'block';
-    document.getElementById('form-replying-to').value = commentId;
-    document.getElementById('comment-new').style.display = 'block';
-  }
-  function resetForm() {
-    document.getElementById('comment-new').style.display = 'none';
-    document.getElementById('form-replying-to').value = '';
-    var form = document.getElementById('comment-form');
-    var container = document.getElementById('new-comment');
-    container.appendChild(form);
-  }
-  </script>
-
   <a href="#new-comment" onclick="return resetForm()" id="comment-new" style="display: none">Add a new comment</a>
 
   <form class="form-message" id="comment-form" method="POST" name="comment-form"  action="{{ site.comments.url }}">
