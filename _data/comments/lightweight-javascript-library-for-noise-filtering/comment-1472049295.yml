@@ -1,0 +1,15 @@
+---
+id: '2857084028'
+replying_to: '2848994840'
+source: disqus
+date: '2016-08-24T14:34:55Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>Hi! Thanks :)</p><p>The answers to your questions:</p><p>1. One-by-one
+  is fine! It is one of the benefits of the Kalman filter.<br />2. I looked at your
+  source code and it seems fine. What seems to be the problem? Make sure to pass numbers
+  though!</p><p>Succes!</p>"

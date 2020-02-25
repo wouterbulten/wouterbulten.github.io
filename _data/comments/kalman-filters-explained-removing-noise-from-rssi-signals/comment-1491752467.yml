@@ -1,0 +1,17 @@
+---
+id: '3247742758'
+replying_to: '3246192321'
+source: disqus
+date: '2017-04-09T15:41:07Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>Good question! The variance of the measurements will vary a lot based
+  on the environment (e.g. walls). I tend to use one value that roughly captures the
+  average variance within my target location. In practice that worked out fine. However,
+  this is not ideal and you probably could come up with more intelligent ways to set
+  (or continuously update) Q. You could for example track the latest measurements
+  and if you detect a larger variance increase Q accordingly.</p>"

@@ -1,0 +1,37 @@
+---
+id: '4527910259'
+replying_to: ''
+source: disqus
+date: '2019-07-05T08:25:54Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: "//a.disquscdn.com/1581704280/images/noavatar92.png"
+name: karthikeyan
+message: '<p>Hi Wouter,</p><p>Thanks for you fantastic work!. I''m working on the
+  estimating the distance between a mobile phone and a beacon. I ''ve an android application
+  which will listen to the incoming RSSI<br />values from the beacon. We take tests
+  with mobile phone held in hand and moving towards and away from the beacon. Below
+  is a sample plot which shows when a user is moving towards <br />the beacon from
+  2 meters. I used the python implementation from your library with the following
+  values:<br />R: 0.008, Q: 2, A: 1, B: 0, C: 1 and u: 1</p><p>I need more understanding
+  about the following parameters</p><p>Q - For Q you have mentioned in one of your
+  comments to use variance. What if I used STD instead as I think variance will have
+  high values in my case where STD is 13. <br />My STD will chnage in each position,
+  does that mean I shall change Q as well</p><p>A - Quoting from one of your comments
+  "A seems fine to. With A=1, you assume that without movement." Since I''m in motion
+  towards and away from the beacon,<br />what shall be the best input for A?</p><p>B
+  and u - Again from your comments "B and u completely depend on how you model motion.
+  RSSI is not linear so this can be tricky within the 1D kalman filter. What you could
+  do here is<br />model distance to the device (using Log-distance path loss model)
+  instead of RSSI directly. In that way you can more easily use B and u. For example,
+  if you know the user moved 1 m, <br />you can set u to 1 (given that B is 1)." <br
+  />So u mean that instead of using the rssi values directly to the filter() method,
+  what I should do is use the rssi in the log-normal distance formula<br />i.e  Math.pow(10d,
+  ((double) txPower - rssi) / (10 * 2)) and use this in the filter() method every
+  time to see better results  ?.</p><p>From various comments and discussion from this
+  blog I understood that even for moving object you are considering the static model
+  of kalman filtering why do you do that? Since it won''t be linear <br />curve when
+  in motion can alternative like extended kalman filter can be used, as the intution
+  behind it is for polynomial curves correct me if I''m wrong?</p><p>Thanks,</p>'

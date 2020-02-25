@@ -1,0 +1,32 @@
+---
+id: '4518390837'
+replying_to: ''
+source: disqus
+date: '2019-06-27T16:27:20Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/toastyink.jpg
+name: ToastyInk
+message: "<p>Thanks for sharing this library it's been very useful so far although
+  I do have a question ...</p><p>I'm using multilateration to calculate the location
+  of an aircraft using the time difference of arrival (TDOA) technique but there is
+  some variation in the calculated positions (which I'm treating as noise) as well
+  as the timesteps between them.  The multilateration process produces a lat,lon pair
+  and an HDOP estimate for each aircraft position but these positions are not calculated
+  on a regular basis but can be any interval apart, anything from less than one second
+  to 5 seconds is not unusual.</p><p>I''m trying to produce a smoothed flight path
+  based on these lat, lon pairs and it works rather well but the problem is that the
+  Kalman filtered positions consistently lag behind the actual aircraft position acquired
+  by observation.</p><p>I'm treating each coordinate (lat and lon) as independant
+  of one another (possibly not a valid assumption) with the following parameters:</p><p>R:
+  0.01<br />Q: 3<br />A: 1<br />B: 0<br />C: 1<br />u: 0</p><p>I get the best results
+  (athough the filtered position lags behind) using the values above.  I've played
+  around with changing the value of B (0.05) and u (1) but I simply get a wierd offset
+  applied to the filtered position.</p><p>Is there anything that you would recommend
+  to reduce the apparent lag ?  I've tweaked most of the values and have found that
+  a value of R&lt;1 introduces the delay whilst values &gt; 1 there's almost no delay
+  but the result is a lot noisier whilst increasing the value of Q helps smoothness
+  but also adds to the delay.</p><p>Would it be worth moving to a 2D version of the
+  filter or is my assumption that it's two 1D problems valid ?</p>"

@@ -1,0 +1,25 @@
+---
+id: '4123260055'
+replying_to: '4123078658'
+source: disqus
+date: '2018-10-01T11:46:28Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/andieppler.jpg
+name: Andi Eppler
+message: '<p>Thank you for your response, Wouter! :)<br />I just used the kalman filter
+  for a short period of time. Therefore I haven''t seen any time-depending improvements
+  yet.</p><p>1) I''ve just updated the Java class for my needs by expanding the constructor
+  KalmanFilter(double R, double Q) to KalmanFilter(double R, double Q, double A, double
+  B , double C).<br />Also, I''ve changed the method filter(double measurement) to
+  filter(double measurement, double u) and removed the term on <a href="https://disq.us/url?url=https%3A%2F%2Fgithub.com%2Fwouterbulten%2Fkalmanjs%2Fblob%2Fmaster%2Fcontrib%2Fjava%2FKalmanFilter.java%23L45%3AtX9630JFdkDWwiBm0n8jMNgiLco&amp;cuid=3803521"
+  rel="nofollow noopener" title="https://github.com/wouterbulten/kalmanjs/blob/master/contrib/java/KalmanFilter.java#L45">https://github.com/wouterbu...</a>
+  .</p><p>2) I have lowered the noise parameters, simulated a longer period of measurements
+  and it seems that the delay is getting smaller.</p><p>But my current kalman filter
+  does still not satisfy my needs. At the moment, I have nearly no idea how to change
+  the values and it''s more trial and error than logical thinking. I think, with more
+  knowledge about the kalman filter, I will find a satisfying solution. :)<br />At
+  the moment I use following values:<br />R: 0.008, Q: 2, A: 1, B: 1, C: 1 and u:
+  0.2</p>'

@@ -1,0 +1,137 @@
+.comments {
+
+}
+
+.comment {
+    @include make-row();
+
+    .user-image {
+        display: none;
+
+        @include media-breakpoint-up(sm) {
+            @include make-col-ready();
+            @include make-col(1);
+            display: block;
+            padding: 0; // Reset padding to give full width to image
+
+            img, svg {
+                display: block;
+                width: 100%;
+                height: auto;
+                max-height: 60px;
+                max-width: 60px;
+                color: #797979;
+            }
+        }
+    }
+
+    .comment-container {
+        @include make-col-ready();
+        
+        @include make-col(12);
+        @include media-breakpoint-up(sm) {
+            @include make-col(11);
+        }
+    }
+
+    &.parent-comment {
+        // Main comment thread
+        margin-bottom: 1em;
+    }
+
+    @include media-breakpoint-down(xs) {
+        &.parent-comment .child-comment .comment-container {
+            @include make-col-offset(1);
+            @include make-col(11);
+        }
+    }
+
+    .comment-content {
+        background-color: #f4f4f4;
+        padding: 1em;
+        margin-bottom: 1em;
+        position: relative;
+
+        @include media-breakpoint-up(sm) {
+            &:after {
+                content: "";
+                width: 0px;
+                height: 0px;
+                position: absolute;
+                border-left: 10px solid transparent;
+                border-right: 10px solid #f4f4f4;
+                border-top: 10px solid #f4f4f4;
+                border-bottom: 10px solid transparent;
+                left: -19px;
+                top: 6px;
+            }
+        }
+    }
+
+    .name {
+        
+        &.admin {
+            color: #007bff;
+        }
+    }
+}
+
+.comment-form-section {
+
+    @include make-row();
+    margin: 0;
+
+    .comment-form {
+        background-color: #f4f4f4;
+        padding: 1em;
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+}
+
+.reply-form-container {
+    display: none;
+    
+    @include media-breakpoint-up(sm) {
+        border: 1px solid #bdbdbd;
+        padding: 1em;
+    }
+
+    margin-top: 2em;
+
+    .instruction {
+        font-weight: 500;
+    }
+}
+
+// Style the form, both inline as below the page
+.comment-form {
+    
+    .captcha-container {
+        width: 50%;
+        min-height: 100px;
+        overflow-x: auto;
+    }
+    .btn {
+        width: 50%;
+        float: right;
+    }
+
+    label {
+        font-weight: 500;
+        padding-right: 30px;
+    }
+    small {
+        font-weight: 300;
+    }
+}
+
+.comment-confirmation {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}

@@ -1,0 +1,23 @@
+---
+id: '3309938925'
+replying_to: '3309328108'
+source: disqus
+date: '2017-05-17T08:19:40Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: '<p>Hi Anton!</p><p>You are going in the right direction, filtering is really
+  useful when working with RSSI values.</p><p>I wrote a paper on this topic that could
+  be of interest to you. See <a href="http://disq.us/url?url=http%3A%2F%2Fieeexplore.ieee.org%2Fdocument%2F7471364%2F%3AxK8lNryxiHqi42waiIiMokfIqNM&amp;cuid=3803521"
+  rel="nofollow noopener" title="http://ieeexplore.ieee.org/document/7471364/">http://ieeexplore.ieee.org/...</a>
+  In this paper I use both Kalman Filters and SLAM to locate beacons.</p><p>To come
+  back to your question: Fixing Q is purely convenience. Normally you do not know
+  the true noise level in your data (as it is noise) and that''s why you try to estimate
+  it as good as possible. In my experiments I measured the noise and used that as
+  a value for Q. If, by any means, you have more information about changes in the
+  noise level you can of course integrate that in your system. For example, if you
+  know that entering a specific room increases the noise level you can increase Q
+  and by that tell the system to trust the raw RSSI value less.</p>'

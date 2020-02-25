@@ -1,0 +1,16 @@
+---
+id: '4246170394'
+replying_to: ''
+source: disqus
+date: '2018-12-18T07:14:10Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/snehasajjan.jpg
+name: Sneha Sajjan
+message: "<p>Hi Wouter!<br />We are trying to model an indoor positioning system using
+  WiFi trilateration. I did find your Java library for a Kalman filter, however I
+  am confused about one thing. The WiFi access points will be fixed, however the user
+  will be moving. What should be my approach to using the library? Will it work for
+  a non-stationary user?</p>"

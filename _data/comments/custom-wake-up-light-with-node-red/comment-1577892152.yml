@@ -1,0 +1,14 @@
+---
+id: '4741507158'
+replying_to: '4740422159'
+source: disqus
+date: '2020-01-01T15:22:32Z'
+post_id: "/blog/tech/custom-wake-up-light-with-node-red"
+slug: custom-wake-up-light-with-node-red
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>Hi Rick, one thing you can try is to first evaluate the template within
+  home assistant (through the web interface). Then you know that the template renders
+  correctly.</p>"

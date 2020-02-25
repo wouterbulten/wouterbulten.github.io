@@ -1,0 +1,18 @@
+---
+id: '2379714866'
+replying_to: '2379697222'
+source: disqus
+date: '2015-11-26T13:06:49Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>So you just want to record the x,y,z values?</p><p>If you need filtered
+  individual values, I think you can use both methods. It is probably fine to just
+  perform the filter 3 times, the complexity is low so it shouldn't have that much
+  impact. Just make sure that you use a separate filter for each channel.</p><p>You
+  can also use a multidimensional filter if you suspect that noise in one axis has
+  an effect on the noise of another level (which is probably the case). I'm, however,
+  not sure whether the improvement in accuracy (if any) is worth the extra work.</p>"

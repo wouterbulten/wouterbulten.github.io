@@ -1,0 +1,21 @@
+---
+id: '2388690579'
+replying_to: '2387687232'
+source: disqus
+date: '2015-12-02T13:34:06Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>In this case, for beacons, there is no control (i.e. they are static)
+  so you can ignore u and therefore B. Furthermore, I assume that within the timeframe
+  of the measurements the distance between the receiver and sender is constant so
+  A is set to an identity matrix. Technically this is, of course, not the case when
+  you are moving, but in my experience this is a simplification you can/must make:
+  often you do not know anything about the movement.</p><p>As I use RSSI as my observation
+  and state, x = z. So, C is, again, an identity matrix.</p><p>To give some context:
+  These assumptions and choices are made as part of a larger project on indoor localisation
+  of devices. This Kalman filter approach is a first step in that algorithm. A paper
+  on this is currently under review so I can't refer you to it (yet).</p>"

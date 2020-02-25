@@ -6,6 +6,7 @@
         "@type": "Recipe",
 
         "name": "{{ page.title }}",
+        "commentCount": "{{ site.data.comments[page.slug].size }}",
         "keywords": "{{ page.tags | join: ', ' }}",
         {% if page.recipe_preptime %}
         "prepTime": "{{ page.recipe_preptime }}",
@@ -58,6 +59,7 @@
         },
         "headline": "{{ page.title }}",
         "name": "{{ page.title }}",
+        "commentCount": "{{ site.data.comments[page.slug].size }}",
         "keywords": "{{ page.tags | join: ', ' }}",
 
         {% if page.post_image_large %}

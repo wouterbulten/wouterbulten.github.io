@@ -1,0 +1,14 @@
+---
+id: '4617692068'
+replying_to: '4617650821'
+source: disqus
+date: '2019-09-16T14:04:38Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/nurroysaptoanggoro.jpg
+name: Nurroy Sapto Anggoro
+message: "<p>based on your comment in another question, Q is standard deviation, so
+  to get it, we must calculate it from rssi value? and what about R? what's range
+  from R? do we get it from trial and error?</p>"

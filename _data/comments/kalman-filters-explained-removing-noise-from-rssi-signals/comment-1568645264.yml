@@ -1,0 +1,15 @@
+---
+id: '4617740859'
+replying_to: '4617721589'
+source: disqus
+date: '2019-09-16T14:47:44Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/nurroysaptoanggoro.jpg
+name: Nurroy Sapto Anggoro
+message: "<p>Q is standard deviation right? why i get more than one result when i
+  try to calculate it? Is value u're using can be used for any access point? Is Q=4
+  is enough? because when i try to calculate standard deviation the result is more
+  than 100. also i use phone as the access point</p>"

@@ -1,0 +1,16 @@
+---
+id: '2571341901'
+replying_to: '2571266078'
+source: disqus
+date: '2016-03-15T19:21:46Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/fahimzafari.jpg
+name: Fahim Zafari
+message: "<p>Thanks a lot for such detailed response. My state consists of the RSSI
+  value and the rate of change of RSSI. My observations are just the RSSI. So I map
+  the state and observation in a linear way. The new state is  linearly linked to
+  the previous state. Therefore I believe I should stick to Kalman since the problem
+  is suited for Kalman. But I really appreciate your help and comments.</p>"

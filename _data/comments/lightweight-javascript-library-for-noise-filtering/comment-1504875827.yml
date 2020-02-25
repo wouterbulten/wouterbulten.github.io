@@ -1,0 +1,19 @@
+---
+id: '3507899490'
+replying_to: '3507821216'
+source: disqus
+date: '2017-09-08T13:03:47Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: <p>Hi Tarik,</p><p>1. As stated in the article "randn(mean, sd) is a simple
+  function that returns random numbers following a Gaussian distribution". This is
+  not part of the default JS environment. You can replace it with a normal uniform
+  random function if it is just for testing.<br />2. You can just filter the values
+  when they come in. The filter does not need the previous values. So just call the
+  filter() function for any value that comes in.<br />3. You don't need the length
+  of the dataset. The dataSetSize variable in these examples are just used to generate
+  some example data.</p>

@@ -1,0 +1,20 @@
+---
+id: '4107109427'
+replying_to: ''
+source: disqus
+date: '2018-09-21T14:33:54Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: "//a.disquscdn.com/1581704280/images/noavatar92.png"
+name: EA
+message: <p>Hi Wouter,</p><p>Thank you for the post!</p><p>What I don't understand
+  is why Kalman filtering is used on RSSI values for a "stationary" problem. You consider
+  that the receiver and the beacon are not moving, so in a perfect world you will
+  always measure the same value. I don't see why Kalman filtering should be chosen
+  over simpler models for noise removal in this case.</p><p>To calculate an accurate
+  distance from different measurements I need exactly one accurate RSSI value. Which
+  one do you use? The last kalman prediction from the time series? The average from
+  the corrected time series? I found in my experiments that the average of kalman
+  filtered rssi values is very close to the average of the raw data.</p>

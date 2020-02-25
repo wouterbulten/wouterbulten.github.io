@@ -1,0 +1,15 @@
+---
+id: '4433439111'
+replying_to: '4431861763'
+source: disqus
+date: '2019-04-22T14:50:17Z'
+post_id: "/blog/tech/talking-to-my-house-telegram-homeassistant-bot"
+slug: talking-to-my-house-telegram-homeassistant-bot
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: <p>Hi Jason,</p><p>Thanks! Good find. I noticed that the full source code
+  missed two lines from the "Saying Hi" section. The lines are:</p><p><code><br />self.time_between_conversations
+  = 60 * 60<br />self.last_conversation = {}<br /></code></p><p>If you add these to
+  initialize() it should work. I will update the full code example.</p>

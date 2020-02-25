@@ -1,0 +1,15 @@
+---
+id: '4705326832'
+replying_to: '4705323766'
+source: disqus
+date: '2019-11-28T10:20:13Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: <p>If the time between measurements is roughly constant it should be fine.
+  Then your "t" is just 2 or 3 seconds. It only matters if there is a large difference,
+  because with a larger step you can expect a larger deviation in the measured signal.
+  What is the general problem you are having?</p>

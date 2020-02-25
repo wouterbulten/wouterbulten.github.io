@@ -1,0 +1,19 @@
+---
+id: '3436903983'
+replying_to: ''
+source: disqus
+date: '2017-07-26T18:25:15Z'
+post_id: "/blog/tech/simple-wsn-simulation"
+slug: simple-wsn-simulation
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/mohammadfazlulhasanshariff.jpg
+name: Mohammad Fazlul Hasan Shariff
+message: '<p>Hi Wouter!<br />Great work on the SLACTest project. I am also working
+  on something similar and I was wondering if there is a way I can modify your original
+  project to run it on a terminal in Ubuntu? I mean, I don''t exactly need an animation
+  like how you have created (awesome work on that by the way!) but where exactly can
+  I make some modifications so that I can "simulate" some "messages" being passed
+  through the nodes and it would show the same on the terminal? (for example: "node1:
+  message passed to neighbours 2,3,4","node2: message passed to neighbours 1,3,4"...
+  and so on). Thanks in advance for your help and great article! :)</p>'

@@ -1,0 +1,24 @@
+---
+id: '4331135590'
+replying_to: ''
+source: disqus
+date: '2019-02-10T18:34:49Z'
+post_id: "/blog/tech/home-assistant-smart-home-hardware-setup"
+slug: home-assistant-smart-home-hardware-setup
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/mrnirual.jpg
+name: MrNirual
+message: <p>Hey Wouter, I am new to Home Assistant and wanted to make my first steps
+  with some Hue Lights and a Hue smart dimmer switch over zigbee2mqtt (1.1.1) and
+  Home Assistant (<a href="http://disq.us/url?url=http%3A%2F%2Fhass.io%3A8ZsTvR9iglQTsl0ytDS0elXtPCM&amp;cuid=3803521"
+  rel="nofollow noopener" title="hass.io">hass.io</a> 0.87.0).</p><p>I reset the switch
+  and connected it and two lights successfully to hass via zigbee2mqtt. I can control
+  the lights from there and I can see the mqtt messages created by the switch (in
+  the zigbee2mqtt addon as well as in mqtt.fx) - but for some reason hass seems to
+  think the switch (listed as sensor btw) is "unavailable" all the time. Did you have
+  that problem, too?</p><p>I tried to reset the switch again but that doesn't change
+  anything. I am not sure if that would even help as the mqtt message seem ok to me,
+  it rathe seems to be a problem of hass.</p><p>As your setup is working I was wondering
+  if I have overlooked something which you may have done?</p><p>Thanks a lot &amp;
+  kind regards,<br />Nirual</p>

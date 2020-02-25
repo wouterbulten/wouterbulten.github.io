@@ -1,0 +1,14 @@
+---
+id: '4617704044'
+replying_to: '4617692068'
+source: disqus
+date: '2019-09-16T14:15:34Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>R can be found by tuning, for RSSI its usually very low as most of the
+  noise comes from the measurement. You can base Q on measurements, in my experiences
+  that gives the best estimate of the noise in your environment.</p>"

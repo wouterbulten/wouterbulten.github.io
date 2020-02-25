@@ -1,0 +1,17 @@
+---
+id: '4309308183'
+replying_to: '4309276514'
+source: disqus
+date: '2019-01-27T11:42:53Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>Hi Kareem, just to make sure: You need to use the same instance of the
+  filter for each call. So make the object (JKalman in your case) once and then call
+  filter() for each new value. The first filtered value will always be the same as
+  the original as it is the first observation. So in pseudo-code:</p><p><code><br
+  />JKalman kalman = new JKalman(...)<br /><br />setRangingListener() {<br />   rssi
+  = ...<br />   filteredRssi = kalman.filter(rssi);<br />}<br /></code></p>"

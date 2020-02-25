@@ -1,0 +1,17 @@
+---
+id: '2379182874'
+replying_to: ''
+source: disqus
+date: '2015-11-26T02:18:07Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/mihai_miculescu.jpg
+name: Mihai Miculescu
+message: "<p>I plan to use the filter for a Grove - 3-Axis Digital Accelerometer(±1.5g),
+  connected via i2c to an Edison SoC. The sensor measures the 3 components of the
+  acceleration vector a, namely ax, ay and az respectively.<br />My question is: use
+  3 instances of your 1d filter, one for each axis, or look elsewhere for a multidimensional
+  implementation?<br />After all, the 3 components of the acceleration vector as measured
+  by the sensor describe the one and same phenomenon ...</p>"

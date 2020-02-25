@@ -1,0 +1,16 @@
+---
+id: '3014384176'
+replying_to: '3014378792'
+source: disqus
+date: '2016-11-22T08:40:12Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/disqus_ge9xQEtGuz.jpg
+name: mark
+message: "<p>Does it mean all I do it  is this<br />e.g RSSI for ibeacon is -72 then
+  I will get back another RSSI?</p><p>import KalmanFilter from 'kalmanjs';</p><p>const
+  kf = new KalmanFilter();<br />kf.filter(-72);</p><p>I see the JS requires alot of
+  parameters<br />constructor({R = 1, Q = 1, A = 1, B = 0, C = 1} = {})</p><p>Sorry
+  to trouble you.</p>"

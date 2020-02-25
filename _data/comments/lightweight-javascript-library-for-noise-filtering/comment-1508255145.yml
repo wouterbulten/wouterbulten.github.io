@@ -1,0 +1,13 @@
+---
+id: '3571483722'
+replying_to: '3570983475'
+source: disqus
+date: '2017-10-17T15:45:45Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>Hi! You can call the filter() function for every RSSI value you measure.
+  The output is the current estimate of the signal strength at that point in time.</p>"

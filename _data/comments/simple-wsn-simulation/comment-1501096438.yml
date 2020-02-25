@@ -1,0 +1,17 @@
+---
+id: '3436991195'
+replying_to: '3436957538'
+source: disqus
+date: '2017-07-26T19:13:58Z'
+post_id: "/blog/tech/simple-wsn-simulation"
+slug: simple-wsn-simulation
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: '<p>Of course, you can just download the code from GitHub. However, importing
+  local modules should not be an issue performance-wise. As far as I know, there is
+  no need to concatenate all files. You can check <a href="https://disq.us/url?url=https%3A%2F%2Fgithub.com%2Fwouterbulten%2FSLACTest%2Fblob%2Fpython2%2Fsrc%2Fsimulation.py%3AT7Ca1yNpn5I0u7XMSLiDy4Ol8BA&amp;cuid=3803521"
+  rel="nofollow noopener" title="https://github.com/wouterbulten/SLACTest/blob/python2/src/simulation.py">https://github.com/wouterbu...</a>
+  for an example of how everything ties together. Good luck!</p><p>Just out of curiosity:
+  how are you combining deep learning (?) with WSN?</p>'

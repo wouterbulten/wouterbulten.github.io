@@ -1,0 +1,15 @@
+---
+id: '3521427599'
+replying_to: '3515171476'
+source: disqus
+date: '2017-09-17T11:50:51Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/disqus_g0ZWnYbtb1.jpg
+name: tarik
+message: "<p>just to make sure: can we say that kalman filter is used for measuring
+  the distance of static object. but when we try to locate a moving object, another
+  version of kalman, which is usually referred to as extended or non linear kalman
+  filter should be used.</p>"

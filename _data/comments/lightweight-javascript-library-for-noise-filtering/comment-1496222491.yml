@@ -1,0 +1,14 @@
+---
+id: '3333021880'
+replying_to: '3333012044'
+source: disqus
+date: '2017-05-31T09:21:31Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: <p>I use the definitions from the great "Probabilistic Robotics" book by
+  Thrun et al. See:</p><p>S. Thrun, W. Burgard, and D. Fox, Probabilistic robotics.
+  the MIT Press, 2005.</p>

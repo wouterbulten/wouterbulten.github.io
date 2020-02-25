@@ -1,0 +1,19 @@
+---
+id: '4331233663'
+replying_to: '4331164416'
+source: disqus
+date: '2019-02-10T19:51:24Z'
+post_id: "/blog/tech/home-assistant-smart-home-hardware-setup"
+slug: home-assistant-smart-home-hardware-setup
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/mrnirual.jpg
+name: MrNirual
+message: <p>Hi Woulter, thanks for your quick reply. Actually in this specific case
+  it was a matter of "restart the pi", I guess the zigbee2mqtt stick was in a bad
+  state somehow which was resolved by the restart. Now it works! :-) The mqtt messages
+  are correctly accepted and I have some automation scripts to use the dimmer switches
+  as well, even though it is not exactly the same as when the dimmer is directly synced
+  to the lamps. I wanted to use the "detour" over hass to help me understand how to
+  use hass for automation.</p><p>I am looking forward to reading further posts of
+  yours, they are informative to read and written intelligibly - thank you!</p>

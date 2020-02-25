@@ -1,0 +1,19 @@
+---
+id: '3948754242'
+replying_to: ''
+source: disqus
+date: '2018-06-17T22:10:40Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/disqus_bmu8TYMMPp.jpg
+name: Javier Melendez
+message: "<p>Hey Wouter!<br />Great work, all your papers are clear and easy to understand
+  even for beginners.<br />I read this about 9 months ago, and tried to implement
+  it in an indoor position system. <br />However the team decided that a particle
+  filter was the way to go. Nowadays, our beacons still transmit noisy RSSI values
+  that the particle filter can't compensate. <br />Do you recommend to pass the data
+  through the KF before putting the RSSI values into the Particle Filter?.<br />Also,
+  what model do you recommend for  RSSI value reading, is predicting growth the way
+  to go?<br />Thanks for sharing!!!</p>"

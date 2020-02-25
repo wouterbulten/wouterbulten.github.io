@@ -1,0 +1,20 @@
+---
+id: '4317222967'
+replying_to: '4285228144'
+source: disqus
+date: '2019-02-01T08:29:06Z'
+post_id: "/blog/tech/custom-wake-up-light-with-home-assistant"
+slug: custom-wake-up-light-with-home-assistant
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/HrStenz.jpg
+name: Markus
+message: <p>Hi,</p><p>thank you very much for the detailed article, found exactly
+  the solution i was trying to implement. ;-)</p><p>Just to bring topics together
+  - i found this article regarding "Light Fade In" in the HA forums, which follows
+  another aproach - for example useful for the Tradfri Lights? - <a href="https://disq.us/url?url=https%3A%2F%2Fcommunity.home-assistant.io%2Ft%2Flight-fade-in%2F35509%2F26%3AjOvBIvfz77cFPgl8bcgNWJLdZhM&amp;cuid=3803521"
+  rel="nofollow noopener" title="https://community.home-assistant.io/t/light-fade-in/35509/26">https://community.home-assi...</a></p><p>I'm
+  using Tradfri lights in two kids rooms, at the moment the automation is triggered
+  correctly, but the lights will turn on immediately to the given brightness, the
+  transition seems to be ignored. I'll try Frederiks solution via script tonight,
+  thanks again!!</p>

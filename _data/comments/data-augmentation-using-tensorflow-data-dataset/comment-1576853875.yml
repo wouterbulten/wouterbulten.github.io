@@ -1,0 +1,16 @@
+---
+id: '4730848744'
+replying_to: ''
+source: disqus
+date: '2019-12-20T14:57:55Z'
+post_id: "/blog/tech/data-augmentation-using-tensorflow-data-dataset"
+slug: data-augmentation-using-tensorflow-data-dataset
+author: {}
+email: ''
+avatar: "//a.disquscdn.com/1581704280/images/noavatar92.png"
+name: Olga F
+message: "<p>Hi Wouter, thanks for the article. As far as I understand, data augmentation
+  does not change the number of samples in the dataset. The image transformations
+  are applied to the original image, which is substituted by the augmented versions.
+  But, in some cases where we are encountering class imbalance, our goal is to extend
+  the existent dataset with new samples.</p>"

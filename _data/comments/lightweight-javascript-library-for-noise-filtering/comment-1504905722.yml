@@ -1,0 +1,18 @@
+---
+id: '3508617688'
+replying_to: '3507899490'
+source: disqus
+date: '2017-09-08T21:22:02Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/disqus_g0ZWnYbtb1.jpg
+name: tarik
+message: "<p>Thank you. as far as my program goes, i input the algorithm with the
+  whole array of measured rssi values, and it returned a new filtered array, which
+  is achieved by the .map functionality.<br />By the way do you have any method or
+  advice as to how to establish the R and Q values in the real environment, which
+  will be a car service in my case. In the blog you mention somewhere that you measured
+  the noise but don't explain how.<br />are we supposed to find the correct value
+  by trial and error or what?</p><p>Thanks again</p>"

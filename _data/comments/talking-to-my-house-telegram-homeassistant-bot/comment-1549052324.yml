@@ -1,0 +1,25 @@
+---
+id: '4318115448'
+replying_to: ''
+source: disqus
+date: '2019-02-01T20:18:44Z'
+post_id: "/blog/tech/talking-to-my-house-telegram-homeassistant-bot"
+slug: talking-to-my-house-telegram-homeassistant-bot
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/HrStenz.jpg
+name: Markus
+message: <p>Hi,<br />i'm running Dr.Zzs "Holiday Lights" (NodeMCU, LED-Strip, controlled
+  via HA) in a garden fence with my neighbour. My intention was to allow my neighbour
+  to switch the fence light on and off and to change the colors. At the same time
+  it was no option for me to open my HA instance to the internet to allow him any
+  access...so, i decided to give telegram a try.</p><p>We ended up with a telegram
+  chat group, which allows us to turn the fence light on and off and to switch colors.
+  For a better usability i'm using the inline-keyboard in telegram which gives you
+  clickable buttons for each control.<br />My solution is based on simple automations
+  - sorry therefore, but i'm not familiar with coding ;-)</p><p><a href="https://uploads.disquscdn.com/images/7735d4063c13f22c64ec6a28d1d6ecc6328390033f951c489a5a71e934ada3bc.jpg"
+  rel="nofollow noopener" title="https://uploads.disquscdn.com/images/7735d4063c13f22c64ec6a28d1d6ecc6328390033f951c489a5a71e934ada3bc.jpg">https://uploads.disquscdn.c...</a>  <a
+  href="https://uploads.disquscdn.com/images/a436a811e53d483b40f58e205e03f7ca61be61df0df1c5111a8508e610b291e2.jpg"
+  rel="nofollow noopener" title="https://uploads.disquscdn.com/images/a436a811e53d483b40f58e205e03f7ca61be61df0df1c5111a8508e610b291e2.jpg">https://uploads.disquscdn.c...</a>  <a
+  href="https://uploads.disquscdn.com/images/2bc49cf2314c9ecabd2929230e2b8802efaa61a54066b5e5b1756ec3e608e741.jpg"
+  rel="nofollow noopener" title="https://uploads.disquscdn.com/images/2bc49cf2314c9ecabd2929230e2b8802efaa61a54066b5e5b1756ec3e608e741.jpg">https://uploads.disquscdn.c...</a></p>

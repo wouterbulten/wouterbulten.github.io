@@ -1,0 +1,17 @@
+---
+id: '3514514513'
+replying_to: '3513897453'
+source: disqus
+date: '2017-09-12T21:21:10Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/disqus_g0ZWnYbtb1.jpg
+name: tarik
+message: "<p>Two more and probably the last questions: <br />1. i have a set of rssi
+  values and i get a new set by kalman-filtering. now do i calculate the arithmetic
+  average to get a single value out of them or what?<br />2. if i have a data set
+  of really inconsistent measurements, does applying a sort of data smoothing method
+  before applying kalman distorts the functionality of kalman?</p><p>Thanks and my
+  best regards</p>"

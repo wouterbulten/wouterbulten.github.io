@@ -1,0 +1,14 @@
+---
+id: '2571246375'
+replying_to: '2567901676'
+source: disqus
+date: '2016-03-15T18:30:59Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>Depends on your application I guess. For example, I use multiple EKF's
+  for the indoor localisation of devices as the transition from x,y position to distance
+  is non-linear.</p><p>What kind of non-linear model are you considering?</p>"

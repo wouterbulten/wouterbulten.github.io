@@ -1,0 +1,20 @@
+---
+id: '2664611831'
+replying_to: '2663824621'
+source: disqus
+date: '2016-05-08T10:42:04Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: '<p>Hi Kami,</p><p>Did you already see my other post <a href="https://disq.us/url?url=https%3A%2F%2Fwouterbulten.nl%2Fblog%2Ftech%2Fiotdi-ic2e-conference-presentation-human-slam%2F%3A9W0rs1hnyophaijh2uyZ605NLJQ&amp;cuid=3803521"
+  rel="nofollow noopener" title="https://wouterbulten.nl/blog/tech/iotdi-ic2e-conference-presentation-human-slam/">https://wouterbulten.nl/blo...</a>
+  ? This could be of assistance to you. In the presentation I explain how I applied
+  Kalman filters and SLAM to indoor localisation of users inside buildings (while
+  holding a phone).</p><p>With regards to your question: Yes, you can use this technique.
+  As long as you update frequently the Kalman filter will (slowly) adjust to the moving
+  of the user. This is however a tradeoff between use-of-use (and simplicity) versus
+  accuracy. If you want to go for optimal accuracy you will have to take movement
+  in to account.</p>'

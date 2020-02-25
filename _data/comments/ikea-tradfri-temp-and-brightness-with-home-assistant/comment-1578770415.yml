@@ -1,0 +1,14 @@
+---
+id: '4753630280'
+replying_to: ''
+source: disqus
+date: '2020-01-11T19:20:15Z'
+post_id: "/blog/tech/ikea-tradfri-temp-and-brightness-with-home-assistant"
+slug: ikea-tradfri-temp-and-brightness-with-home-assistant
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/johannesfornander.jpg
+name: Johannes Fornander
+message: <p>Thanks for sharing. I copied your Node-RED script with split payload.
+  Where do insert the code for temp and brightness? Under each "call service" or under
+  the "split payload"?</p>

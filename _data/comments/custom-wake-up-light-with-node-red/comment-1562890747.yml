@@ -1,0 +1,14 @@
+---
+id: '4536308345'
+replying_to: ''
+source: disqus
+date: '2019-07-12T00:19:07Z'
+post_id: "/blog/tech/custom-wake-up-light-with-node-red"
+slug: custom-wake-up-light-with-node-red
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/disqus_Kowf1jM169.jpg
+name: bluenote
+message: '<p>I get a "error get-template: request failed with status code 500" on
+  the "get new light setting" bubble.  I''m brand new but the rest works. The light
+  actually turns on, but does not increase.  Can you make any suggestions?  thanks</p>'

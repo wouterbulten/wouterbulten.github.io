@@ -1,0 +1,16 @@
+---
+id: '4802764375'
+replying_to: '4798457952'
+source: disqus
+date: '2020-02-20T09:14:36Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>There is always a trade-off between responsiveness and smoothness. Without
+  the filter you have optimal responsiveness but a lot of noise, with a strong filter
+  its to slow but really smooth. You could also calibrate your filter by standing
+  still, taking measurements, and looking at the variance of the data.</p><p>Thanks
+  for the compliments!</p>"

@@ -1,0 +1,14 @@
+---
+id: '4611915648'
+replying_to: ''
+source: disqus
+date: '2019-09-11T06:57:57Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/udaykumarchaduvula.jpg
+name: Uday Kumar Chaduvula
+message: "<p>Hi Wouter Bulten! Can you explain how to implement the Extend Kalman
+  Filter to the beacons to get the exact position of a beacon if possible please provide
+  the code also</p>"

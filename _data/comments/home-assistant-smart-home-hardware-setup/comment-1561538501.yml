@@ -1,0 +1,14 @@
+---
+id: '4516537999'
+replying_to: '4516534750'
+source: disqus
+date: '2019-06-26T08:41:41Z'
+post_id: "/blog/tech/home-assistant-smart-home-hardware-setup"
+slug: home-assistant-smart-home-hardware-setup
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>Hi! In nodered you can listen for general events from Home Assistant.
+  In that case you need to filter for deconz events. In each deconz event you can
+  find the device that triggered it. No need to directly connect nodered with deconz.</p>"

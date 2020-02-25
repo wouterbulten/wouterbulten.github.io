@@ -1,0 +1,19 @@
+---
+id: '4246372498'
+replying_to: '4246170394'
+source: disqus
+date: '2018-12-18T11:48:22Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: '<p>Hi Sneha,</p><p>I have worked on the same topic using Bluetooth Beacons.
+  Maybe these resources can help:</p><p>My approach for indoor positioning with fixed
+  Bluetooth beacons: <a href="https://disq.us/url?url=https%3A%2F%2Fwww.wouterbulten.nl%2Fblog%2Ftech%2Fhuman-slam-indoor-localization-using-particle-filters%2F%3AOQur0Ze1R3V-8Lrl4Gx7HK5tsuI&amp;cuid=3803521"
+  rel="nofollow noopener" title="https://www.wouterbulten.nl/blog/tech/human-slam-indoor-localization-using-particle-filters/">https://www.wouterbulten.nl...</a><br
+  />Paper on this subject: <a href="https://disq.us/url?url=https%3A%2F%2Fieeexplore.ieee.org%2Fdocument%2F7471364%3ACjCk-VQLkZ9kFQegOUBJOl7irAM&amp;cuid=3803521"
+  rel="nofollow noopener" title="https://ieeexplore.ieee.org/document/7471364">https://ieeexplore.ieee.org...</a></p><p>If
+  you are only interested in the filtering part: The Kalman filter can be used to
+  filter your distance measure to each Wifi access point.</p>'

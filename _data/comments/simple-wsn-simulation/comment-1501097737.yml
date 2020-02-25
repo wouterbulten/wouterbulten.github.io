@@ -1,0 +1,19 @@
+---
+id: '3437029586'
+replying_to: '3436991195'
+source: disqus
+date: '2017-07-26T19:35:37Z'
+post_id: "/blog/tech/simple-wsn-simulation"
+slug: simple-wsn-simulation
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/mohammadfazlulhasanshariff.jpg
+name: Mohammad Fazlul Hasan Shariff
+message: <p>I am planning on using a dataset from an Intel Berkely Lab experiment
+  (<a href="http://disq.us/url?url=http%3A%2F%2Fdb.csail.mit.edu%2Flabdata%2Flabdata.html%29%3A9rLOKgrp9PWYBgSsSAmIkxcs_Ig&amp;cuid=3803521"
+  rel="nofollow noopener" title="http://db.csail.mit.edu/labdata/labdata.html)">http://db.csail.mit.edu/lab...</a>
+  into the project. Firstly, I want to simulate that the attributes "temperature",
+  "humidity" etc. are being passed from one node to its neighbours.<br />The real
+  reason why I would use deep learning here is that I plan on doing anomaly/error
+  detection. Some data shows 122.323 deg. C which is obviously not a normal room temperature
+  and I need to be able to detect this using LNNs :)</p>

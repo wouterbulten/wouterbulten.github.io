@@ -1,0 +1,13 @@
+---
+id: '3594872839'
+replying_to: '3594858370'
+source: disqus
+date: '2017-11-01T12:48:31Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>The filter is an online filter and filters one value at a time. The current
+  state is stored inside the class so you can just pass your values one-by-one.</p>"

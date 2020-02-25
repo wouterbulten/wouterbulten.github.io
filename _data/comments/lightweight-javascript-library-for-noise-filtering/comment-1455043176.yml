@@ -1,0 +1,18 @@
+---
+id: '2504723299'
+replying_to: ''
+source: disqus
+date: '2016-02-09T18:39:36Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/scottmahr.jpg
+name: Scott Mahr
+message: "<p>Hi, I am working on a simple system that I measure in two ways. It is
+  a system where I am trying to measure the vertical position of an object. I have
+  a barometric altimeter (measures height, with noise and drift) and an accelerometer(measures
+  acceleration with noise). I would like to combine these measurements into a best
+  guess of the vertical position. I think I need a 3d system right? Where I have position,
+  velocity and acceleration as my three parameters? Any ideas for other JS libraries
+  that could help me with this?</p><p>Thanks,</p><p>Scott</p>"

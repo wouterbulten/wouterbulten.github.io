@@ -1,0 +1,18 @@
+---
+id: '2805943468'
+replying_to: '2805892176'
+source: disqus
+date: '2016-07-27T10:47:45Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>Hi Sander, thanks!</p><p>Cool application. Would definitely like to hear
+  what your outcomes are!</p><p>Regarding Q: R models the process noise and Q the
+  measurement noise. The value of these constants depends on your system and the way
+  you measure. I assume that most of your noise will be in the system. A drop in the
+  amount of available connections will always be caused by a server being unhealthy
+  (the process). And not by a fault in measuring (the measurement), right? If so Q
+  can be set to a very low value as you will assume that your measurements are correct.</p>"

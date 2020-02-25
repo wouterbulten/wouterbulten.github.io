@@ -1,0 +1,14 @@
+---
+id: '4569095019'
+replying_to: '4569093234'
+source: disqus
+date: '2019-08-07T09:16:05Z'
+post_id: "/blog/tech/data-augmentation-using-tensorflow-data-dataset"
+slug: data-augmentation-using-tensorflow-data-dataset
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>As shown in the example on the TF website, you can inject the dataset.
+  Something like:</p><p><code><br />dataset = (code from above)<br />dataset = dataset.batch(28)<br
+  /><br />model.fit(train_dataset, epochs=3)<br /></code></p>"

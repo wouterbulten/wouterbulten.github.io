@@ -1,0 +1,14 @@
+---
+id: '4309224638'
+replying_to: '4205532802'
+source: disqus
+date: '2019-01-27T09:36:06Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/kareem_elshaer.jpg
+name: kareem elshaer
+message: "<p>Dear Wolter,</p><p>I have implemented your code in my app and tested.
+  results gives the same values for RSSI and the filtered RSSI by your implementation!</p><p>Can
+  you advise please as my whole project is depending on this point?</p>"

@@ -1,0 +1,15 @@
+---
+id: '3962856638'
+replying_to: '3960799261'
+source: disqus
+date: '2018-06-27T08:18:19Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>You are correct. I use a constant as I have a high update frequency and
+  found that a constant noise filtering worked fine. The filtered signal is then used
+  as an input for a particle filter that can deal with any remaining noise.</p><p>In
+  my experiments I used: R: 0.008 and Q: 4</p>"

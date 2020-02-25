@@ -1,0 +1,32 @@
+---
+id: '2507039905'
+replying_to: '2505197348'
+source: disqus
+date: '2016-02-10T21:46:29Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: '<p>Hi Scott,</p><p>From what I understand from your description you have
+  three scalar values:</p><p>- Acceleration measured by the accelerometer<br />- Velocity
+  measured by ??<br />- Position (or height) measured by the altimeter</p><p>Your
+  goal is to estimate what the individual true value of these parameters are given
+  the noisy sensor measurements. Am I correct? Or are you interested in a single ''position''
+  value?</p><p>For the individual parameters you could use a 1D Kalman filter to smooth
+  the output of the sensors. You will need a separate filter for each sensor. That
+  would be a very easy and computational fast approach.</p><p>If you are more interested
+  in a single position value then you can also fuse all the sensors and use the combined
+  information in the update step of the filter. See also the example on Wikipedia:
+  <a href="https://disq.us/url?url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FKalman_filter%23Example_application%3AGkcjmLHAwKC3hiZgYSNRv5U5Vqw&amp;cuid=3803521"
+  rel="nofollow noopener" title="https://en.wikipedia.org/wiki/Kalman_filter#Example_application">https://en.wikipedia.org/wi...</a></p><p>Maybe
+  it is also good to take in to account that the values are probably correlated. E.g.
+  a weather balloon''s acceleration and position are both influenced by wind.</p><p>In
+  general: Start by defining your state. What do you want to estimate? i.e. what is
+  your x? Start from there and then go forward: how is x updated? etc. (see my other
+  post for the definition of the transition model)</p><p>Small note about the lib:
+  The library in this post only works for 1D systems, that''s why its so lightweight.
+  If you go for a multidimensional approach you should look for another library or
+  implement the formula''s yourself. The latter is probably the most efficient option
+  (in terms of computation) but will require some more effort.</p>'

@@ -1,0 +1,15 @@
+---
+id: '4285228144'
+replying_to: '4285223838'
+source: disqus
+date: '2019-01-14T10:13:51Z'
+post_id: "/blog/tech/custom-wake-up-light-with-home-assistant"
+slug: custom-wake-up-light-with-home-assistant
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>Good suggestion! Not sure whether Gary is using brightness and color
+  temp.</p><p>One other thing to consider: I have seen some reports that IKEA lights
+  are unresponsive during a transition. So take in to account that you possibly can't
+  send a new command to the lights when they are still performing the transition.</p>"

@@ -1,0 +1,61 @@
+<div class="comment {% if include.replying_to != '' %}child-comment{% else %}parent-comment{% endif %}" id="comment-{{ include.id }}">
+  <div class="user-image">
+    {% if include.email != '' %}
+    <img data-srcset="https://www.gravatar.com/avatar/{{ include.email }}?d=mm&s=60 1x, https://www.gravatar.com/avatar/{{ include.email }}?d=mm&s=120 2x" alt="" class="lazyload">
+    {% elsif include.name == 'Wouter Bulten' %}
+    <img data-src="/assets/images/author-wouter-bulten.png" class="mr-3 lazyload">
+    {% else %}
+    <svg class="svg-icon mr-3"><use xlink:href="#icon-user"></use></svg>
+    {% endif %}
+  </div>
+  <div class="comment-container">
+    <div class="comment-content" itemprop="comment" itemscope itemtype="https://schema.org/Comment">
+      <h5 class="mt-0 name {% if include.name == 'Wouter Bulten' %}name-admin{% endif %}" class="comment-author" itemprop="author" itemtype="https://schema.org/Person">
+        {% if include.name == 'Wouter Bulten' %}
+        <a href="{{ '/curriculum-vitae/' | prepend: site.url }}">Wouter Bulten</a>
+        {% else %}
+        {{ include.name | strip_html }}
+        {% endif %}
+        {% if include.date %}
+        <small>on
+          <time datetime="{{ include.date | date_to_xmlschema }}" itemprop="commentTime">{{ include.date | date_to_string }}</time>
+        </small>
+      {% endif %}
+      </h5>
+      <div itemprop="text">{{ include.message | markdownify | replace: "<a href", "<a rel='nofollow' href"}}</div>
+
+      <small class="comment-reply">
+        <a href="#comment-{{ include.id }}" onclick="return replyToComment('{{ include.id }}')">Reply to {{ include.name }} &crarr;</a>
+      </small>
+      <div class="reply-form-container">
+        <p class="instruction">Use the form below to reply to the comment of {{ include.name | strip_html }}:</p>
+        <div id="reply-form-{{include.id}}"></div>
+      </div>
+    </div>
+
+  {% if include.level > 1 %}
+  </div>
+  </div>
+  {% endif %}
+  {% capture parent_id %}{{ include.id }}{% endcapture %}
+  
+  {% assign replies = site.data.comments[page.slug] | sort | where_exp: 'comment', 'comment[1].replying_to == parent_id' %}
+  {% for reply in replies %}
+
+    {% assign child_level = include.level | plus: 1 %}
+
+    {% assign id          = reply[1].id %}
+    {% assign replying_to = reply[1].replying_to | to_integer %}
+    {% assign avatar      = reply[1].avatar %}
+    {% assign email       = reply[1].email %}
+    {% assign name        = reply[1].name %}
+    {% assign url         = reply[1].url %}
+    {% assign date        = reply[1].date %}
+    {% assign message     = reply[1].message %}
+    {% include comment.html level=child_level id=id replying_to=replying_to avatar=avatar email=email name=name url=url date=date message=message %}
+  {% endfor %}
+
+{% if include.level <= 1 %}
+</div>
+</div>
+{% endif %}

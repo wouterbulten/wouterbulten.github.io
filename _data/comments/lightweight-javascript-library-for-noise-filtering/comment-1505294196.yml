@@ -1,0 +1,19 @@
+---
+id: '3515171476'
+replying_to: '3514514513'
+source: disqus
+date: '2017-09-13T09:16:36Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: '<p>Hi Tarik,</p><p>1. The idea of the filter is that you process the values
+  one by one as they come in (which will always result in a single number). So normally
+  you would do this filtering in an online setting and then just take the last filtered
+  value. If you want an example, I implemented this in a indoor localization algorithm/app.
+  The part about applying the filter can be found here: <a href="https://disq.us/url?url=https%3A%2F%2Fgithub.com%2Fwouterbulten%2Fslacjs%2Fblob%2Fmaster%2Fsrc%2Fapp%2Fmodels%2Fsensor.js%23L67%3AARIJ_9sqx8aajGL39RF8VIPmZgw&amp;cuid=3803521"
+  rel="nofollow noopener" title="https://github.com/wouterbulten/slacjs/blob/master/src/app/models/sensor.js#L67">https://github.com/wouterbu...</a></p><p>2.
+  The kalman filter is meant to smooth your data. So yes, using another smoothing
+  step would probably not help much.</p>'

@@ -1,0 +1,13 @@
+---
+id: '4354576672'
+replying_to: '4353741840'
+source: disqus
+date: '2019-02-26T08:43:59Z'
+post_id: "/blog/tech/custom-wake-up-light-with-home-assistant"
+slug: custom-wake-up-light-with-home-assistant
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>Thanks! You could use data_template in combination with an additional
+  input to build that. Would be a nice addition indeed!</p>"
