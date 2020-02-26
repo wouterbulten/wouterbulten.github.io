@@ -5,15 +5,15 @@ date:   2020-02-13 12:00
 categories: blog tech
 tags: [research, phd, deep learning, prostate cancer, Gleason grading]
 published: true
-description: ""
+description: "In a completely new study we investigated the possible benefits of an AI system for pathologists. Instead of focussing on pathologist-versus-AI, we instead look at potential pathologist-AI synergy."
 include_ha_series: false
-image: /assets/images/gleason-grading/ai_assistance_social_image.png
+image: /assets/images/gleason-grading/gleason_grading_ai_assistance_social_image.png
 large_twitter_card: true
 imageslider: false
 openseadragon: true
 ---
-
 <a name="introduction"></a>
+
 Within medicine, there is somewhat of an "**AI hype**." Mainly driven by advances in deep learning, more and more studies show the potential of using artificial intelligence as a diagnostic tool. The same trend is present in the field I am working in. The field of pathology slowly transitions from being centered around microscopes to assessing tissue using a computer screen (i.e., _digital pathology_). With this change, computational models assisting the pathologist became within reach. A new field was born: _computational pathology_.
 
 
