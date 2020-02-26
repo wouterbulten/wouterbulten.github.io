@@ -59,6 +59,8 @@ After the assisted read, the scores of the individual readers were compared acro
 
 Moreover, without assistance, the AI system outperformed 10 out of 14 observers (71%). In the assisted read, this flipped, and 9 out of 14 exceeded the AI. On a group level, the **AI-assisted pathologists outperformed not only the unassisted reads but also the AI itself**.
 
+<img data-src="/assets/images/gleason-grading/gleason_observer_boxplot_webfigure.svg" class="lazyload" alt="Boxplot of the unassisted and AI-assisted read.">
+
 When split out on experience level, less experienced pathologists benefitted the most. Most of the experienced pathologists (defined as >15 years of experience), already scored similar or better than the AI system and had less to gain in terms of diagnostic performance. Still, the AI could have helped them grade the cases faster, something we did not explicitly test.
 
 <a name="beyond-diagnostic-performance"></a>
