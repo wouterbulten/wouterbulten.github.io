@@ -1,0 +1,20 @@
+---
+id: '4435799878'
+replying_to: '4433992168'
+source: disqus
+date: '2019-04-24T07:40:35Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: <p>Hi Victor,</p><p>Quoting from another comment:</p><p>"R models the process
+  noise and describes how noisy our system internally is. Or, in other words, how
+  much noise can we expect from the system itself? As our system is constant we can
+  set this to a (very) low value. Q resembles the measurement noise; how much noise
+  is caused by our measurements? As we expect that our measurements will contain most
+  of the noise, it makes sense to set this parameter to a high number (especially
+  in comparison to the process noise)."</p><p>So I would start with a low value for
+  R and an estimate for Q based on the standard deviation of the RSSI signal. (i.e.
+  measure RSSI at a constant distance for a minute or so and use the sd for Q).</p>

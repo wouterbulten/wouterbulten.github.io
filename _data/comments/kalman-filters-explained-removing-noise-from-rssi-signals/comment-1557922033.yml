@@ -1,0 +1,13 @@
+---
+id: '4463287547'
+replying_to: ''
+source: disqus
+date: '2019-05-15T12:07:13Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/disqus_nOb8VUm5oK.jpg
+name: arun
+message: "<p>thanks I could implement Kalman Filter in SqlServer.. I am working on
+  asset tracking  and noise was major headache in trilateration calculations</p>"

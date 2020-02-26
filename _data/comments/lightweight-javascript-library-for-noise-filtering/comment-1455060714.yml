@@ -1,0 +1,22 @@
+---
+id: '2505197348'
+replying_to: '2504760750'
+source: disqus
+date: '2016-02-09T23:31:54Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/scottmahr.jpg
+name: Scott Mahr
+message: "<p>Hi Wouter, thanks for the quick reply. I just read your other article.
+  I think I have a pretty good handle on what Kalman filters do, I just don't know
+  exactly how best to set mine up. My current thinking is to have the three parameters
+  be acceleration, velocity and position. Based on the current state, I can put in
+  a model for what the next likely state of those parameters would be. I am using
+  the magnitude of the accelerometer, assuming my object is moving in only one direction.
+  My impression is that the kalman filter can have inputs measuring two of these parameters
+  (position and acceleration), and take into account measurement and system uncertainty
+  to give the most likely true position. I basically want to fuse together acceleration
+  and height measurements to get a better idea of what the system is doing. Is this
+  is reasonable approach?</p><p>Thanks,</p><p>Scott</p>"

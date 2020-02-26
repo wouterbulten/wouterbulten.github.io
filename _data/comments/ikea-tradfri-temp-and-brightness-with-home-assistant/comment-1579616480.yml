@@ -1,0 +1,15 @@
+---
+id: '4765197999'
+replying_to: '4753630280'
+source: disqus
+date: '2020-01-21T14:21:20Z'
+post_id: "/blog/tech/ikea-tradfri-temp-and-brightness-with-home-assistant"
+slug: ikea-tradfri-temp-and-brightness-with-home-assistant
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>Hi! The json message needs to be sent as the msg.payload. If you want
+  it dynamic as in the example above (so that the splitting works), you will need
+  to set it before you send the message to the subflow. It wil then be split inside
+  the subflow and forwarded to the two service calls.</p>"

@@ -1,0 +1,18 @@
+---
+id: '2910113501'
+replying_to: ''
+source: disqus
+date: '2016-09-22T08:15:19Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/disqus_DM9adwfiwe.jpg
+name: RK
+message: <p>How I will found the value of  R and Q or all constant (R, Q, A, B) according
+  to my system? Is there any way to find the exact (perfect match value for my system)
+  value of these constants?</p><p>"In my scenario I've a beacon and multiple readers.
+  Now I want to calculate the coordinate of the beacon on the basic of the reader
+  position. But I've found unexpected variation in the RSSI value, so the distance
+  calculated  between reader and beacon is also varying. So I want to apply this Kalman
+  filter as a solution but I'm confuse with these constants."</p>

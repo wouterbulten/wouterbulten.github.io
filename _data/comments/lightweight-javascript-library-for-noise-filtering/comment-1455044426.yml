@@ -1,0 +1,23 @@
+---
+id: '2504760750'
+replying_to: '2504723299'
+source: disqus
+date: '2016-02-09T19:00:26Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: '<p>Hi Scott!</p><p>Did you already take a look at my other article about
+  Kalman filters? (See <a href="https://disq.us/url?url=https%3A%2F%2Fwouterbulten.nl%2Fblog%2Ftech%2Fkalman-filters-explained-removing-noise-from-rssi-signals%2F%3A2FGHMCnwZ0pFMjfvffnSGSO-q-o&amp;cuid=3803521"
+  rel="nofollow noopener" title="https://wouterbulten.nl/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals/">https://wouterbulten.nl/blo...</a>
+  ) There I explain more of the background of the technique.</p><p>Regarding your
+  specific question: In what way do you want to use the accelerometer for measuring?
+  To predict movement and to account for that in your estimation?</p><p>Whether you
+  need a 3D system depends on your output. It is totally possible to use 1D Kalman
+  filters on your individual channels. If you only want to estimate height, another
+  option is to first combine all your sensors and put a filter on the position estimate.</p><p>For
+  example: In another project I''ve used an accelerometer as an input for a pedometer
+  (to count steps). There I use the 3 axes of the sensor but apply the filter on the
+  norm of the acceleration vector, and not on the individual values.</p>'

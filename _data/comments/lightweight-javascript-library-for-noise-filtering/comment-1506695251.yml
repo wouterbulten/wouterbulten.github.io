@@ -1,0 +1,15 @@
+---
+id: '3542267930'
+replying_to: '3534425738'
+source: disqus
+date: '2017-09-29T14:27:31Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: <p>Hi Pratik, in what format is your data? Are they just floats? If so, please
+  look here <a href="https://disq.us/url?url=https%3A%2F%2Fgithub.com%2Fwouterbulten%2Fkalmanjs%2Fblob%2Fmaster%2Fcontrib%2Fjava%2FKalmanFilter.java%3AfNLlFt75lNmouAFzUVBL0b9MhH4&amp;cuid=3803521"
+  rel="nofollow noopener" title="https://github.com/wouterbulten/kalmanjs/blob/master/contrib/java/KalmanFilter.java">https://github.com/wouterbu...</a>
+  for an implementation in Java you could use in Android.</p>

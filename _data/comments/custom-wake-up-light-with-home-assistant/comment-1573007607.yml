@@ -1,0 +1,15 @@
+---
+id: '4679167689'
+replying_to: ''
+source: disqus
+date: '2019-11-06T02:33:27Z'
+post_id: "/blog/tech/custom-wake-up-light-with-home-assistant"
+slug: custom-wake-up-light-with-home-assistant
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/disqus_JkUDKw2T0Q.jpg
+name: fshkypr
+message: "<p>thank you for sharing. unfortunately i'm having some issues getting this
+  to work properly. im using Teckin SB50v3  light bulb flashed with Tasmota. i can
+  trigger the light on with the automation.. but it wont run when i set the alarm.
+  any idea how i could get this to work. thanks</p>"

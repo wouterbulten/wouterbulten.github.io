@@ -1,0 +1,15 @@
+---
+id: '4705296717'
+replying_to: '4611915648'
+source: disqus
+date: '2019-11-28T09:19:28Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: <p>Hi! This post is focused only on the 1D variant. You can check out this
+  post <a href="https://disq.us/url?url=https%3A%2F%2Fwww.wouterbulten.nl%2Fblog%2Ftech%2Fhuman-slam-indoor-localization-using-particle-filters%2F%3AOQur0Ze1R3V-8Lrl4Gx7HK5tsuI&amp;cuid=3803521"
+  rel="nofollow noopener" title="https://www.wouterbulten.nl/blog/tech/human-slam-indoor-localization-using-particle-filters/">https://www.wouterbulten.nl...</a>
+  where I use the extended filter for beacon localisation.</p>

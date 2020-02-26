@@ -21,7 +21,7 @@ blog_index: true
         <hr style="margin: 1em 0 3em 0;">
 
         <div class="blog-list">
-            {% for post in site.categories['tech'] limit: 20 %}
+            {% for post in site.categories['tech'] limit: 25 %}
             {% if post.layout != 'redirect' %}
             <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
                 <header class="post-header">
@@ -34,6 +34,12 @@ blog_index: true
                 <div class="post-meta">
                     <span class="post-category">{{ post.categories[1] }}</span>
                     |
+                    {% assign comment_count = site.data.comments[post.slug].size %}
+                    {% if comment_count > 1 %}
+                    <a href="{{ post.url }}#comments">{{ comment_count}} comments</a> | 
+                    {% elsif comment_count == 1 %}
+                    <a href="{{ post.url }}#comments">1 comment</a> |
+                    {% endif %}
                     <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
                     |
                     <a class="read-more" href="{{ post.url }}">Start reading &rarr;</a>
@@ -45,7 +51,7 @@ blog_index: true
 
         <h1>Older posts</h1>
         <ul class="blog-list-condensed">
-            {% for post in site.categories['tech'] offset: 20 %}
+            {% for post in site.categories['tech'] offset: 25 %}
             {% if post.layout != 'redirect' %}
             <li class="blog-item"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></li>
             {% endif %}

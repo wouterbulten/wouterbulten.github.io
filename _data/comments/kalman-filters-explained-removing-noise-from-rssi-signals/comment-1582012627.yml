@@ -1,0 +1,13 @@
+---
+id: '4800099889'
+replying_to: '4798071894'
+source: disqus
+date: '2020-02-18T07:57:07Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: "//a.disquscdn.com/1581704280/images/noavatar92.png"
+name: Alex
+message: "<p>In your opinion would there be any benefits to an extended kalman filter
+  in this use case?</p>"

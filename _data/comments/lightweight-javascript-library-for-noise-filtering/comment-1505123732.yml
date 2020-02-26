@@ -1,0 +1,21 @@
+---
+id: '3511937232'
+replying_to: '3508617688'
+source: disqus
+date: '2017-09-11T09:55:32Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: <p>Copying from an answer I gave some time a go:</p><p>"Fixing Q is purely
+  convenience. Normally you do not know the true noise level in your data (as it is
+  noise) and that's why you try to estimate it as good as possible. In my experiments
+  I measured the noise and used that as a value for Q. If, by any means, you have
+  more information about changes in the noise level you can of course integrate that
+  in your system. For example, if you know that entering a specific room increases
+  the noise level you can increase Q and by that tell the system to trust the raw
+  RSSI value less."</p><p>So, yes, in my experiments I recorded RSSI over time and
+  calculated the noise level from that (i.e. the standard deviation of a signal that
+  should be constant).</p>

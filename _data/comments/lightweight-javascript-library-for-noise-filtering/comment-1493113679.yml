@@ -1,0 +1,24 @@
+---
+id: '3273166376'
+replying_to: '3269756476'
+source: disqus
+date: '2017-04-25T09:47:59Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: '<p>Hi Sagar,</p><p>Your input data is still 1D right?</p><p>Did you read
+  my other article that goes deeper in to the math behind kalman filters? <a href="https://disq.us/url?url=https%3A%2F%2Fwouterbulten.nl%2Fblog%2Ftech%2Fkalman-filters-explained-removing-noise-from-rssi-signals%2F%3A2FGHMCnwZ0pFMjfvffnSGSO-q-o&amp;cuid=3803521"
+  rel="nofollow noopener" title="https://wouterbulten.nl/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals/">https://wouterbulten.nl/blo...</a>
+  In the 1D variant there are two parts of the transition model: the current state
+  is based on the previous state (given some transformation matrix A) and a control.
+  With simple static systems, such as used in the first examples of this article,
+  the latter is zero and A is an identity matrix (i.e. previous state = current state
+  + noise). In your example it seems that the transformation matrix A is not a identity
+  matrix but should represent the downward trend. See the "Predicting growth" example
+  where A represents a growth.</p><p>A nice toy example is that of a flying drone:
+  Given no motor actions the drone will drop out of the sky. In that case A should
+  be some negative transformation, transforming the previous state (e.g. 100 meters
+  above ground) to a lower current state (e.g. 90 meters).</p>'

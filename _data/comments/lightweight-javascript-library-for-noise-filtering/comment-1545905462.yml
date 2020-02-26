@@ -1,0 +1,45 @@
+---
+id: '4258079348'
+replying_to: ''
+source: disqus
+date: '2018-12-27T10:11:02Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/s0b31t.jpg
+name: s0b31t
+message: <p>Hi Wouter</p><p>Thanks for your great work! We use the filter in an Android
+  application, walk up and down toward a wifi beacon, or stay static. We do try several
+  parameter combinations, however can't get a satisfied result so far. We follow each
+  of your comments in this post and another one <a href="https://disq.us/url?url=https%3A%2F%2Fwww.wouterbulten.nl%2Fblog%2Ftech%2Fkalman-filters-explained-removing-noise-from-rssi-signals%2F%23disqus_thread%3A0rigWO3wCCXbikLbwTzdMDjH014&amp;cuid=3803521"
+  rel="nofollow noopener" title="https://www.wouterbulten.nl/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals/#disqus_thread">https://www.wouterbulten.nl...</a>
+  to avoid missing anything important,  could you take a look at our samples? That
+  would be much appreciated.</p><p><a href="https://uploads.disquscdn.com/images/7c076a8189f44012a60ab703a594fa8848e019568c25d0e07cc6f80f0f523eb1.png"
+  rel="nofollow noopener" title="https://uploads.disquscdn.com/images/7c076a8189f44012a60ab703a594fa8848e019568c25d0e07cc6f80f0f523eb1.png">https://uploads.disquscdn.c...</a>  <a
+  href="https://uploads.disquscdn.com/images/a2d4c76f5b49c9c8bec64ec0109b14f60ff4a21dfd4ac958f3a901f960f536ac.png"
+  rel="nofollow noopener" title="https://uploads.disquscdn.com/images/a2d4c76f5b49c9c8bec64ec0109b14f60ff4a21dfd4ac958f3a901f960f536ac.png">https://uploads.disquscdn.c...</a>  <a
+  href="https://uploads.disquscdn.com/images/1650a3ae53bc4aedc257093d8e1aa337f8a2d6e00c59e0b8974aef21fd7e4bd3.png"
+  rel="nofollow noopener" title="https://uploads.disquscdn.com/images/1650a3ae53bc4aedc257093d8e1aa337f8a2d6e00c59e0b8974aef21fd7e4bd3.png">https://uploads.disquscdn.c...</a>  <a
+  href="https://uploads.disquscdn.com/images/013c2b0e4f4602e0c205664d71c0611cc593dd1e6902c1a34bfd365a00ad6661.png"
+  rel="nofollow noopener" title="https://uploads.disquscdn.com/images/013c2b0e4f4602e0c205664d71c0611cc593dd1e6902c1a34bfd365a00ad6661.png">https://uploads.disquscdn.c...</a>  <a
+  href="https://uploads.disquscdn.com/images/2dced3fd3b1cb4bf58ced48d3abce79682d2cfaaa12555a8f4357704501b65f7.png"
+  rel="nofollow noopener" title="https://uploads.disquscdn.com/images/2dced3fd3b1cb4bf58ced48d3abce79682d2cfaaa12555a8f4357704501b65f7.png">https://uploads.disquscdn.c...</a>
+  <br /> <a href="https://uploads.disquscdn.com/images/3c6d87723ebf2a06a68aa9caea8cbd1e4c851dfeac5148d1fe51ebacb9e6a983.png"
+  rel="nofollow noopener" title="https://uploads.disquscdn.com/images/3c6d87723ebf2a06a68aa9caea8cbd1e4c851dfeac5148d1fe51ebacb9e6a983.png">https://uploads.disquscdn.c...</a>  <a
+  href="https://uploads.disquscdn.com/images/2866ae6b13e93b344de3470075852c7cc09735f8a553b387c441e48a872fd0d4.png"
+  rel="nofollow noopener" title="https://uploads.disquscdn.com/images/2866ae6b13e93b344de3470075852c7cc09735f8a553b387c441e48a872fd0d4.png">https://uploads.disquscdn.c...</a>  <a
+  href="https://uploads.disquscdn.com/images/9551439b25ff328487df71ae2e646b73d04daeb928611b38ead24a965f512016.png"
+  rel="nofollow noopener" title="https://uploads.disquscdn.com/images/9551439b25ff328487df71ae2e646b73d04daeb928611b38ead24a965f512016.png">https://uploads.disquscdn.c...</a>  <a
+  href="https://uploads.disquscdn.com/images/553b096bc42e38079e33e0d57b9ba08de7c40128bcef7513cef3e58f996e028a.png"
+  rel="nofollow noopener" title="https://uploads.disquscdn.com/images/553b096bc42e38079e33e0d57b9ba08de7c40128bcef7513cef3e58f996e028a.png">https://uploads.disquscdn.c...</a>
+  <br /><a href="https://uploads.disquscdn.com/images/c4f174a2fe1e1d429592d9ff82e4dbfbe1d6ee6389668767c6f700ad1e0ede43.png"
+  rel="nofollow noopener" title="https://uploads.disquscdn.com/images/c4f174a2fe1e1d429592d9ff82e4dbfbe1d6ee6389668767c6f700ad1e0ede43.png">https://uploads.disquscdn.c...</a>
+  <br /><a href="https://uploads.disquscdn.com/images/d2d97d7167187a972d8b3abc90b7efd28cf99b09faba2c50efb7f530a0c4f129.png"
+  rel="nofollow noopener" title="https://uploads.disquscdn.com/images/d2d97d7167187a972d8b3abc90b7efd28cf99b09faba2c50efb7f530a0c4f129.png">https://uploads.disquscdn.c...</a></p><p>You
+  can see in these samples, when setting Q to 0.1 and u with 0 gets the best fit,
+  but i don't think it's proper result, we calculate the wifi RSSI variance when static
+  and get 11(with some distance away, and gets smaller when closer). And when use
+  motion model, the filtered result gets more ridiculous when stay static. We do try
+  filter with RSSI to meters and transfer back to RSSI,  the results are even worse,
+  which not included here.</p>

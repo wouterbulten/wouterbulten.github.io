@@ -1,0 +1,17 @@
+---
+id: '4441098196'
+replying_to: ''
+source: disqus
+date: '2019-04-28T08:24:52Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/disqus_F9P0r1eVk8.jpg
+name: Niels
+message: <p>Hi Wouter,</p><p>I read an article that proposes to collect the ten recent
+  Rssi values of a beacon, calculate mean and standard deviation and use an equation
+  based  on the mean and standard deviation to remove outliers. Next calculate a moving
+  average of the remaining values and feed that value to the kalman filter.</p><p>Since
+  the kalman filter works on data with "random error", do you this method will produce
+  "better" results? Or is it even a suitable method?</p>

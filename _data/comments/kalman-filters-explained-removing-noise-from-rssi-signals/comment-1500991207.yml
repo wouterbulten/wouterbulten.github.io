@@ -1,0 +1,22 @@
+---
+id: '3434582925'
+replying_to: '3433549065'
+source: disqus
+date: '2017-07-25T14:00:07Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: '<p>The most simple setup would be to use one filter per device. I did something
+  similar in my SLACjs project: users walk around with multiple BLE beacons in the
+  room.</p><p>You can read more about it in my paper that focuses on this project
+  ( <a href="http://disq.us/url?url=http%3A%2F%2Fieeexplore.ieee.org%2Fdocument%2F7471364%2F%3AxK8lNryxiHqi42waiIiMokfIqNM&amp;cuid=3803521"
+  rel="nofollow noopener" title="http://ieeexplore.ieee.org/document/7471364/">http://ieeexplore.ieee.org/...</a>
+  ) or if you prefer something a bit more simple (less math) you can also read this
+  blog post: <a href="https://disq.us/url?url=https%3A%2F%2Fwww.wouterbulten.nl%2Fblog%2Ftech%2Fhuman-slam-indoor-localization-using-particle-filters%2F%3AOQur0Ze1R3V-8Lrl4Gx7HK5tsuI&amp;cuid=3803521"
+  rel="nofollow noopener" title="https://www.wouterbulten.nl/blog/tech/human-slam-indoor-localization-using-particle-filters/">https://www.wouterbulten.nl...</a>
+  Last, I also have some working demo''s shown here: <a href="https://disq.us/url?url=https%3A%2F%2Fwww.wouterbulten.nl%2Fprojects%2Fslacjs%2F%3AmMPp4wEXPboU6LEYMuSj-T2RRSs&amp;cuid=3803521"
+  rel="nofollow noopener" title="https://www.wouterbulten.nl/projects/slacjs/">https://www.wouterbulten.nl...</a>
+  (this includes multiple kalman filters)</p><p>Let me know if you have more questions!</p>'

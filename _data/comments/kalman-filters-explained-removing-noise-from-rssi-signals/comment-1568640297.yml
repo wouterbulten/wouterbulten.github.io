@@ -1,0 +1,14 @@
+---
+id: '4617650821'
+replying_to: '4617630360'
+source: disqus
+date: '2019-09-16T13:24:57Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>A models what happens to your system regardless of any input. Like a
+  helicoptor will go down if there is no upward movement. B models what happens given
+  a specific input. C maps the state of the system to a measurement.</p>"

@@ -1,0 +1,22 @@
+---
+id: '4331164416'
+replying_to: '4331135590'
+source: disqus
+date: '2019-02-10T18:55:29Z'
+post_id: "/blog/tech/home-assistant-smart-home-hardware-setup"
+slug: home-assistant-smart-home-hardware-setup
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: '<p>Hi Nirual, I think I know what is going on. Just as a disclaimer: I have
+  used zigbee2mqtt only for a short while (when it was below 1.0) and have since then
+  switched to a Conbee stick in combination with Deconz. Nevertheless, I do think
+  that I know what''s going wrong as I had the same problem when I started. This also
+  holds for my current setup using Deconz.</p><p>The dimmer switch shows up as a sensor
+  because it is event-based and not state-based such as the lights. Your lights have
+  a state ("on" or "off") but the dimmer switch doesn''t have a state (it just has
+  four buttons). Instead, zigbee2mqtt sends a mqtt event every time a button is pressed.
+  In your automations you should be able to create a trigger based on these events.
+  That the sensor state is "unavailable" doesn''t really matter as there is no state
+  between button presses.</p>'

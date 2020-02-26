@@ -1,0 +1,15 @@
+---
+id: '4557801557'
+replying_to: ''
+source: disqus
+date: '2019-07-29T14:45:11Z'
+post_id: "/blog/tech/data-augmentation-using-tensorflow-data-dataset"
+slug: data-augmentation-using-tensorflow-data-dataset
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/kaushik_acharya.jpg
+name: Kaushik Acharya
+message: '<p>Typo: <a href="http://disq.us/url?url=http%3A%2F%2Fdataset.map%3ApuTPD3gyS4Zt2epPIh9Ur6ydw2c&amp;cuid=3803521"
+  rel="nofollow noopener" title="dataset.map">dataset.map</a>(lambda x: tf.cond(tf.random_uniform([],
+  0, 1) &gt; 0.75, lambda: f(x), lambda: x), num_parallel_calls=4))</p><p>There seems
+  to be an extra end parentheses in the end.</p>'

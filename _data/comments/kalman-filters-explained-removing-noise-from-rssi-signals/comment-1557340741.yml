@@ -1,0 +1,17 @@
+---
+id: '4454838221'
+replying_to: '4453650413'
+source: disqus
+date: '2019-05-08T18:39:01Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: '<p>It''s often fine to assume a static user. Did you read my post on the
+  implementation: <a href="https://disq.us/url?url=https%3A%2F%2Fwww.wouterbulten.nl%2Fblog%2Ftech%2Flightweight-javascript-library-for-noise-filtering%2F%3ASfCg8Onuiem8pDmsoXPYuwzfplc&amp;cuid=3803521"
+  rel="nofollow noopener" title="https://www.wouterbulten.nl/blog/tech/lightweight-javascript-library-for-noise-filtering/">https://www.wouterbulten.nl...</a>
+  ? You can compare your own code with my implementation if you want, the relevant
+  function can be found here: <a href="https://disq.us/url?url=https%3A%2F%2Fgithub.com%2Fwouterbulten%2Fkalmanjs%2Fblob%2Fmaster%2Fsrc%2Fkalman.js%23L40%3AwTyjXQ_VhUj_beeiM_cJ7aTelX0&amp;cuid=3803521"
+  rel="nofollow noopener" title="https://github.com/wouterbulten/kalmanjs/blob/master/src/kalman.js#L40">https://github.com/wouterbu...</a></p>'

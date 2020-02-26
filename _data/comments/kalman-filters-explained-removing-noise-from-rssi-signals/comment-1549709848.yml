@@ -1,0 +1,15 @@
+---
+id: '4329372085'
+replying_to: ''
+source: disqus
+date: '2019-02-09T10:57:28Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/martindrflinger.jpg
+name: Martin Dörflinger
+message: "<p>If I understand this correctly, the Kalman filter on RSSI only works
+  if I have multiple measurements at the same distance, right? What happens if the
+  client device moves? Then it is unfortunately not possible to determine whether
+  the RSSI was affected by a stronger noise or whether the distance has changed, right?</p>"

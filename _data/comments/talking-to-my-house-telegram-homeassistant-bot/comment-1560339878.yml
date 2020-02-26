@@ -1,0 +1,13 @@
+---
+id: '4499268109'
+replying_to: ''
+source: disqus
+date: '2019-06-12T11:44:38Z'
+post_id: "/blog/tech/talking-to-my-house-telegram-homeassistant-bot"
+slug: talking-to-my-house-telegram-homeassistant-bot
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/lancetjessem.jpg
+name: Lance Tjessem
+message: "<p>Full code didn't work for me without adding <br /><code>import time <br
+  />import random</code></p>"

@@ -1,0 +1,34 @@
+---
+id: '4273239582'
+replying_to: '4258079348'
+source: disqus
+date: '2019-01-07T09:08:35Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: '<p>Hi!</p><p>Nice graphs! Based on your input, I think you have a wrong
+  assumption in the motion model. The parameters u and B controls the update of the
+  system on each step. If you set u and B both to 1 this results in an increase of
+  the predicted value of B*u=1. You can also see this in your last graph; the filter
+  signal goes up even though the original signal is fairly constant. If you take 50
+  samples per second this means that the expected value goes up with 50 every second.
+  In other words:</p><p>u: Only set this value to 1 if the user is moving, set it
+  to zero when you know the user is static.<br />B: Make this a good approximation
+  of the distance decrease/increase in each step.</p><p>If you want to use a motion
+  model you need to determine an expected update for each step. This can be done using
+  the Log-Distance pathloss model (see <a href="https://disq.us/url?url=https%3A%2F%2Fwww.wouterbulten.nl%2Fblog%2Ftech%2Fkalman-filters-explained-removing-noise-from-rssi-signals%2F%29%3AZyglI5Pf2mVVacUAP2AUY_DbdDE&amp;cuid=3803521"
+  rel="nofollow noopener" title="https://www.wouterbulten.nl/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals/)">https://www.wouterbulten.nl...</a>.
+  As you can see in the formula, the expected RSSI update is not linear but depends
+  on the distance to the device. However, this 1D kalman filter only works with linear
+  functions. You could approximate the distance model but it will be very inaccurate.</p><p>You
+  could try two things:</p><p>1) Filter the estimated distance (in meters) instead
+  of RSSI. Now you can incorporate a basic linear motion model. For example by assuming
+  that the user moves 50cm closer each step (B=0.5, u=1).</p><p>2) Disable the motion
+  model and let the filter work everything out itself (u=0, B=0). This is what I usually
+  do as there is so much noise in the signal that a simple motion model is just not
+  powerful enough.</p><p>In my indoor localisation project I used approach 2) and
+  used a SLAM approach for modelling motion and location (<a href="https://disq.us/url?url=https%3A%2F%2Fwww.wouterbulten.nl%2Fblog%2Ftech%2Fhuman-slam-indoor-localization-using-particle-filters%2F%29%3AnFsE77q_ILjcViHcEC5OxgvUy9M&amp;cuid=3803521"
+  rel="nofollow noopener" title="https://www.wouterbulten.nl/blog/tech/human-slam-indoor-localization-using-particle-filters/)">https://www.wouterbulten.nl...</a>.</p>'

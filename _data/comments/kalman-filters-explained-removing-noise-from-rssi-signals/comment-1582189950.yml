@@ -1,0 +1,14 @@
+---
+id: '4802763192'
+replying_to: '4800099889'
+source: disqus
+date: '2020-02-20T09:12:30Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>Hi Alex, with an extended kalman filter you can model non-linear systems.
+  If your goal is just to smooth the signal, I would always start with the easy approach
+  and build from that if needed.</p>"

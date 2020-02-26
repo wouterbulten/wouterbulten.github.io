@@ -1,0 +1,21 @@
+---
+id: '4310635898'
+replying_to: '4310586726'
+source: disqus
+date: '2019-01-28T09:15:28Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: '<p>Hi Kareem, good to hear that it works now. I don''t think the final keyword
+  makes any difference for your use-case as you will use a single filter anyway. I
+  do not know all the details of your project so make sure to confirm.</p><p>I would
+  recommend this article <a href="https://disq.us/url?url=https%3A%2F%2Fieeexplore.ieee.org%2Fdocument%2F7471364%3ACjCk-VQLkZ9kFQegOUBJOl7irAM&amp;cuid=3803521"
+  rel="nofollow noopener" title="https://ieeexplore.ieee.org/document/7471364">https://ieeexplore.ieee.org...</a>
+  for your thesis. This blog post was based on that publication and Section IV has
+  more information on RSSI filtering and the formula''s.</p><p>If you (or your university)
+  does not have a subscription please contact me on ResearchGate so I can send you
+  a private copy: <a href="https://disq.us/url?url=https%3A%2F%2Fwww.researchgate.net%2Fpublication%2F303393596_Human_SLAM_Indoor_Localisation_of_Devices_and_Users%3AJ3UMOfDN_brkJfu15bePOy5OZSU&amp;cuid=3803521"
+  rel="nofollow noopener" title="https://www.researchgate.net/publication/303393596_Human_SLAM_Indoor_Localisation_of_Devices_and_Users">https://www.researchgate.ne...</a></p>'

@@ -1,0 +1,14 @@
+---
+id: '4740422159'
+replying_to: '4536308345'
+source: disqus
+date: '2019-12-31T08:44:28Z'
+post_id: "/blog/tech/custom-wake-up-light-with-node-red"
+slug: custom-wake-up-light-with-node-red
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/rickvanoosterhout.jpg
+name: Rick van Oosterhout
+message: '<p>I got the same problem. The lights turn on, at 1%, and don''t increase.
+  On the node ''Get new light setting'' I also get an "Error get-template: Request
+  failed with status code 500".</p>'

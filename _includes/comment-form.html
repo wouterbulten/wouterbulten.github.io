@@ -1,0 +1,43 @@
+<div class="comment-form-section" id="new-comment">
+  <h2>Add a new comment</h2>
+
+  <p>Questions? Suggestions? Feedback? Leave it as a comment to this post! I try to address all comments as fast as possible.</p>
+
+  <p>All comments are first reviewed before they are placed on the website. The comments system does not track users, and I only store the comment itself. After submitting the form, the comment will be reviewed as soon as possible. You can track your comment's status in my <a href="https://github.com/wouterbulten/wouterbulten.github.io/pulls">repository</a>.</p>
+
+  <a href="#new-comment" onclick="return resetForm()" id="comment-new" style="display: none">Add a new comment</a>
+
+  <div class="comment-confirmation" id="comment-submitted" style="display: none;">
+    <p>Thank you for your input! Your comment was submitted. Please wait for it to be reviewed. If you want, you can track your comment in my <a href="https://github.com/wouterbulten/wouterbulten.github.io/pulls">repository</a>.</p>
+  </div>
+  <form class="comment-form" id="comment-form" method="POST" name="comment-form"  action="{{ site.comments.url }}">
+    <input name="options[redirect]" type="hidden" value="{{ page.url | prepend: site.url }}#comment-confirmation  ">
+    <input name="options[slug]" type="hidden" value="{{ page.slug }}">
+    <input type="hidden" name="options[reCaptcha][siteKey]" value="{{ site.comments.captcha_key }}">
+    <input type="hidden" name="options[reCaptcha][secret]" value="{{ site.comments.captcha_secret }}">
+    <input name="fields[replying_to]" id="form-replying-to" type="hidden" value="">
+    <input name="fields[slug]" id="form-post-slug" type="hidden" value="{{ page.slug }}">
+
+    <label for="contact_name">Your name</label>
+    <input type="text" id="contact_name" name="fields[name]" placeholder="John Doe" required>
+
+    <label for="contact_email">Your email address<br><small>Your email address is not published but only used to display your avatar.</small></label>
+    <input type="email" id="contact_email" name="fields[email]" placeholder="email@example.com" required>
+
+    <label for="contact_message">Message<br><small>By submitting this form, you agree that the entered information will be processed to post and display your comment.</small></label>
+    <textarea name="fields[message]" id="contact_message" placeholder="Your message" rows="12" cols="36" required></textarea>
+
+    <label>Please fill in the captcha:</label>
+    <div class="captcha-container" id="comments-captcha" style="min-height: 100px; flex: 1 0 60%;">
+    <small>Please fill in the rest of the form first. <noscript>Javascript must be enabled to post a comment.</noscript></small>
+    </div>
+
+    <label for="submit-btn" style="visibility: hidden;">Submit the form with the submit button:</label>
+    <input type="submit" id="submit-btn" class="btn nav-btn" value="Submit comment">
+
+    <p>
+      <i>Note: I have recently switched to a new comment system. If you encounter any problems regarding the comment system, please <a href="/contact">let me know</a>!</i>
+    </p>
+  </form>
+    
+</div>

@@ -1,0 +1,19 @@
+---
+id: '2543389308'
+replying_to: ''
+source: disqus
+date: '2016-02-29T15:55:53Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/studentsklart.jpg
+name: Studentsåklart
+message: "<p>Hi Wouter! <br />Me and my friend are currently working on our Master's
+  Thesis and are exploring the uses for indoor localization within mobile applications
+  for public transport. We found your library very useful and translated it into java
+  as we are building for Android. My question regards tweaking the filter in order
+  to use for a non-stationary use case. Currently I've implemented a walking detector
+  which returns a binary signal, which in turn determines the process noise of the
+  filter in order to account for the increase in measurement variation. Would you
+  say that this is a fair approach?</p>"

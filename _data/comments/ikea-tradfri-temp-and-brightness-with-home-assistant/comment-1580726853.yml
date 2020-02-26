@@ -1,0 +1,14 @@
+---
+id: '4781566327'
+replying_to: '4780825736'
+source: disqus
+date: '2020-02-03T10:47:33Z'
+post_id: "/blog/tech/ikea-tradfri-temp-and-brightness-with-home-assistant"
+slug: ikea-tradfri-temp-and-brightness-with-home-assistant
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>Hi Nicolas, good to hear that you solved it! Good to know that this happend
+  to you, maybe I can change the snippet to prevent this. You can remove old connection
+  in the Node RED settings.</p>"

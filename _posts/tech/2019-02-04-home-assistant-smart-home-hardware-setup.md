@@ -67,10 +67,10 @@ My smart home runs on Home Assistant, App Deamon, Node-RED, and Deconz. I starte
 
     <div style="display: flex; width: 100%; max-width: 400px;">
       <div style="flex: 0 1 33%; padding: 0px 30px 30px 0; max-width: 100px;">
-        {% include assets/ha-logo.html %}
+        <img data-src="/assets/images/ha/logos/ha-logo.svg" class="lazyload">
       </div>
       <div style="flex: 0 1 33%; padding: 0px 30px 30px 0; max-width: 100px;">
-        {% include assets/node-red-logo.html %}
+        <img data-src="/assets/images/ha/logos/node-red-logo.svg" class="lazyload">
       </div>
       <div style="flex: 0 1 33%; padding: 0px 30px 30px 0; max-width: 100px;">
         <img class="lazyload" data-src="/assets/images/ha/hardware/pi-hole-logo.png" style="max-width: 100%">
@@ -438,10 +438,10 @@ My first smart home setup consisted of Home Assistant, App Daemon and Node-RED a
 
     <div style="display: flex; width: 100%; max-width: 200px;">
       <div style="flex: 0 1 50%; padding: 0px 30px 30px 0; max-width: 100px;">
-        {% include assets/ha-logo.html %}
+        <img data-src="/assets/images/ha/logos/ha-logo.svg" class="lazyload">
       </div>
       <div style="flex: 0 1 50%; padding: 0px 30px 30px 0; max-width: 100px;">
-        {% include assets/node-red-logo.html %}
+        <img data-src="/assets/images/ha/logos/node-red-logo.svg" class="lazyload">
       </div>
 
     </div>

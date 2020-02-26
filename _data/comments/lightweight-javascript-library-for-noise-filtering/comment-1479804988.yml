@@ -1,0 +1,21 @@
+---
+id: '3014394358'
+replying_to: '3014384176'
+source: disqus
+date: '2016-11-22T08:56:28Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: '<p>Yes! That''s all there is to it :)</p><p>One disclaimer:</p><p>The parameters
+  are used to model the system, and to get good results these must be set to sensible
+  values. For RSSI you can start with assuming that the system is constant and look
+  at example 1 of this article. (If you''re not afraid of some math look at: <a href="https://disq.us/url?url=https%3A%2F%2Fwouterbulten.nl%2Fblog%2Ftech%2Fkalman-filters-explained-removing-noise-from-rssi-signals%2F%3A2FGHMCnwZ0pFMjfvffnSGSO-q-o&amp;cuid=3803521"
+  rel="nofollow noopener" title="https://wouterbulten.nl/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals/">https://wouterbulten.nl/blo...</a>
+  )</p><p>A good starting point could be something like this:</p><p>var kalmanFilter
+  = new KalmanFilter({R: 0.01, Q: 3});</p><p>This assumes a constant model with low
+  process noise (R) and high measurement noise (Q). Q models the noise from the measurements
+  which is often high with RSSI. To further tune it to your situation measure the
+  variance of the RSSI signal over time and set Q to that.</p>'

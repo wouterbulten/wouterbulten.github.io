@@ -8,3 +8,5 @@
   Cache-Control: public, max-age=2592000
 /assets/images/*
   Cache-Control: public, max-age=2592000
+/assets/js/*
+  Cache-Control: public, max-age=2592000

@@ -1,0 +1,19 @@
+---
+id: '3949538934'
+replying_to: '3948754242'
+source: disqus
+date: '2018-06-18T14:40:54Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: '<p>Hi Javier,</p><p>Thanks! That''s exactly what I did for my Human SLAM
+  project. First filter the values using a KF and then combine it in a particle filter
+  (also based on other sensory input). You can read more about it here <a href="http://disq.us/url?url=http%3A%2F%2Fieeexplore.ieee.org%2Fdocument%2F7471364%3A-uOCIvpva0bWZdgEf5s5ucFtIPE&amp;cuid=3803521"
+  rel="nofollow noopener" title="http://ieeexplore.ieee.org/document/7471364">http://ieeexplore.ieee.org/...</a>
+  or <a href="https://disq.us/url?url=https%3A%2F%2Fwww.wouterbulten.nl%2Fblog%2Ftech%2Fhuman-slam-indoor-localization-using-particle-filters%2F%3AOQur0Ze1R3V-8Lrl4Gx7HK5tsuI&amp;cuid=3803521"
+  rel="nofollow noopener" title="https://www.wouterbulten.nl/blog/tech/human-slam-indoor-localization-using-particle-filters/">https://www.wouterbulten.nl...</a>
+  or see the slides of my presentation on it here: <a href="https://disq.us/url?url=https%3A%2F%2Fwww.wouterbulten.nl%2Fblog%2Ftech%2Fiotdi-ic2e-conference-presentation-human-slam%2F%3AHkhhX65r2F1iKFWZJ88bd99vG1k&amp;cuid=3803521"
+  rel="nofollow noopener" title="https://www.wouterbulten.nl/blog/tech/iotdi-ic2e-conference-presentation-human-slam/">https://www.wouterbulten.nl...</a></p>'

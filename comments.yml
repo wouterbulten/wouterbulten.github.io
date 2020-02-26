@@ -1,0 +1,65 @@
+comments:
+  # Names of the fields the form is allowed to submit. If a field that is
+  # not here is part of the request, an error will be thrown.
+  allowedFields: ["name", "email", "message", "slug", "replying_to"]
+
+  # Names of required files. If any of these isn't in the request or is empty,
+  # an error will be thrown.
+  requiredFields: ["name", "email", "message", "slug"]
+
+  allowedOrigins: ["https://www.wouterbulten.nl"]
+
+  # Name of the branch being used. Must match the one sent in the URL of the
+  # request.
+  branch: "master"
+
+  pullRequestBody: "A new comment was submitted for your approval. :tada:\n\nMerge the pull request to accept it, or close it to send it away.\n\n---\n"
+  commitMessage: "New comment by {fields.name}"
+
+  # (*) REQUIRED
+  #
+  # The format of the generated data files. Accepted values are "json", "yaml"
+  # or "frontmatter"
+  format: "yaml"
+
+  # (*) REQUIRED
+  #
+  # Destination path (directory) for the data files. Accepts placeholders.
+  path: "_data/comments/{options.slug}"
+  filename: "comment-{@timestamp}"
+  #extension: "md"
+
+  # List of fields to be populated automatically by Staticman and included in
+  # the data file. Keys are the name of the field. The value can be an object
+  # with a `type` property, which configures the generated field, or any value
+  # to be used directly (e.g. a string, number or array)
+  generatedFields:
+    id:
+      type: "date"
+      options:
+        format: "timestamp-seconds"
+    date:
+      type: "date"
+      options:
+        format: "iso8601"
+
+  # List of transformations to apply to any of the fields supplied. Keys are
+  # the name of the field and values are possible transformation types.
+  transforms:
+    message: "frontmatterContent"
+    email: "md5"
+
+  # Whether entries need to be approved before they are published to the main
+  # branch. If set to `true`, a pull request will be created for your approval.
+  # Otherwise, entries will be published to the main branch automatically.
+  moderation: true
+
+  # Name of the site. Used in notification emails.
+  name: "Wouter Bulten personal blog"
+
+  # reCaptcha
+  reCaptcha:
+   enabled: true
+   siteKey: "6LfGd9sUAAAAAO7L5SJSvtc5Y31KAATFh-An7K0F"
+   secret: "kyA3QQl5+cFG/HiHdIUyOIjg7q8l6KaHMdQILEpY1lkewBV6LgjVGE10HFXnflBPams6/AbC1b+zEqGskco2oWR/DZ8F1PrhbVCMB+Odu2qoDBGrJxHfccVGqmbpmZS3VrLXB1ueRzkiw/FOVxAnDiny9O9NxhmFjgz2P2cPSGjcfG47GysaYWMLAo9e6lJbBgU6lIAJG9VkShyktC9wOqS0bfa3aJ7WatdVGS+VDqqTdgpVchPbN4kxQo6PkUBg/rTwH26u4M79TY9hyMmw3Y818S7HudjhE8E/U/g2htfhwKP53S4X5/cqUL3lcUVgRu4L9XD7MjG2Zxhe1cICmQ=="
+# EOF

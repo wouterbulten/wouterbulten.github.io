@@ -1,0 +1,13 @@
+---
+id: '4618814090'
+replying_to: '4613237387'
+source: disqus
+date: '2019-09-17T11:59:53Z'
+post_id: "/blog/tech/website-status-monitor-using-jenkins"
+slug: website-status-monitor-using-jenkins
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>Hi! You could probably alter the shell script to check more than one
+  url and then only return the exit code when all websites are online.</p>"

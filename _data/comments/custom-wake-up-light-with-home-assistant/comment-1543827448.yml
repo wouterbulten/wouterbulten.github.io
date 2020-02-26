@@ -1,0 +1,14 @@
+---
+id: '4222885202'
+replying_to: '4219474964'
+source: disqus
+date: '2018-12-03T08:57:28Z'
+post_id: "/blog/tech/custom-wake-up-light-with-home-assistant"
+slug: custom-wake-up-light-with-home-assistant
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>Hi Gary, what kind of problems do you encounter with your Tradfri lights?
+  One thing to consider is that you can't set brightness and color_temp on Ikea lights
+  in a single call.</p>"

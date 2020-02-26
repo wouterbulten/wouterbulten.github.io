@@ -1,0 +1,17 @@
+---
+id: '3946904881'
+replying_to: '3945765806'
+source: disqus
+date: '2018-06-16T10:35:55Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: <p>Hi! Currently there is only a Java and python implementation available
+  in the contrib folder. See <a href="https://disq.us/url?url=https%3A%2F%2Fgithub.com%2Fwouterbulten%2Fkalmanjs%2Ftree%2Fmaster%2Fcontrib%3AZeuZZmgtJlzwwJ0uAQ3qxkYC3Bk&amp;cuid=3803521"
+  rel="nofollow noopener" title="https://github.com/wouterbulten/kalmanjs/tree/master/contrib">https://github.com/wouterbu...</a></p><p>However,
+  there are other (possibly also C) implementations available online. You could also
+  try to implement a C version yourself based on one of the implementations in the
+  repo.</p>

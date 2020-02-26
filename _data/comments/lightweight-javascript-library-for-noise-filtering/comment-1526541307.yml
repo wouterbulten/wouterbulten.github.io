@@ -1,0 +1,16 @@
+---
+id: '3904502452'
+replying_to: '3903855551'
+source: disqus
+date: '2018-05-17T07:15:07Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: <p>Yes you could. However, if you know that the data follows a certain function
+  its best to incorporate it into the movement model. Take a look at <a href="https://disq.us/url?url=https%3A%2F%2Fgithub.com%2Fwouterbulten%2Fkalmanjs%2Fblob%2Fmaster%2Fsrc%2Fkalman.js%23L69%3A6HJ14Av69531PlwmcX_0V0ThTHE&amp;cuid=3803521"
+  rel="nofollow noopener" title="https://github.com/wouterbulten/kalmanjs/blob/master/src/kalman.js#L69">https://github.com/wouterbu...</a>
+  you could change that implementation to follow your wave. Let me know if you got
+  it working, could be a nice extension :)</p>

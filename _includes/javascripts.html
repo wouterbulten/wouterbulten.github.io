@@ -1,12 +1,14 @@
-{% if page.jquery or page.chartjs or page.readingTime or page.imageslider or (page.tags and page.tags contains 'home automation') %}
+<script type="text/javascript">
+  window.captchaSiteKey = '{{ site.comments.captcha_key }}';
+</script>
+
+{% if page.jquery or page.chartjs or page.readingTime or page.imageslider %}
 <script type="text/javascript">
 /* https://github.com/muicss/loadjs */
 !function(n,o){function e(n,o){n=n.push?n:[n];var e,t,r,i,u=[],f=n.length,c=f;for(e=function(n,e){e.length&&u.push(n),c-=1,0===c&&o(u)};f--;)t=n[f],r=a[t],r?e(t,r):(i=d[t]=d[t]||[],i.push(e))}function t(n,o){if(n){var e=d[n];if(a[n]=o,e)for(;e.length;)e[0](n,o),e.splice(0,1)}}function r(n,e){var t=o.createElement("script");t.src=n,t.onload=t.onerror=function(o){t.parentNode.removeChild(t),t=null,e(n,o.type)},f.appendChild(t)}function i(n,o){n=n.push?n:[n];var e,t=n.length,i=t,u=[];for(e=function(n,e){"error"===e&&u.push(n),i-=1,0===i&&o(u)};t--;)r(n[t],e)}function u(o,e,r,u){var f,a,d;if(e&&!e.call&&(f=e),a=f?r:e,d=f?u:r,f){if(f in l)throw new Error("LoadJS: Bundle already defined");l[f]=!0}n.setTimeout(function(){i(o,function(n){n.length?(d||c)(n):(a||c)(),t(f,n)})},0)}var f=o.head,c=function(){},l={},a={},d={};u.ready=function(n,o,t){return e(n,function(n){n.length?(t||c)(n):(o||c)()}),u},u.done=function(n){t(n,[])},n.loadjs=u}(window,document);
 
 var preloadDependencies = [
-  {% if page.lazyload %}
-  '{{ "/assets/js/lazysizes.min.js" | prepend: site.baseurl }}',
-  {% endif %}
+  '{{ "/assets/js/main.min.js" | prepend: site.baseurl }}',
 
   {% if page.jquery %}
   'https://code.jquery.com/jquery-2.1.4.min.js',
@@ -14,10 +16,6 @@ var preloadDependencies = [
 
   {% if page.chartjs %}
   '{{ "/assets/js/Chart.min.js" | prepend: site.baseurl  }}',
-  {% endif %}
-
-  {% if page.id and page.readingTime %}
-  '{{ "/assets/js/readingTime.min.js" | prepend: site.baseurl  }}',
   {% endif %}
 
   {% if page.tags and page.tags contains 'home automation' %}
@@ -76,8 +74,12 @@ loadjs(preloadDependencies, 'page', function() {
 });
 </script>
 {% else %}
-<!-- Always load lazysizes to optimize images -->
-<script src='{{ "/assets/js/lazysizes.min.js" | prepend: site.baseurl }}' async=""></script>
+  <!-- Always load base js file (includes lazysizes and comment js) -->
+  {%if true or jekyll.environment == "production" %}
+  <script src='{{ "/assets/js/main.min.js" | prepend: site.baseurl }}?v={{ site.assets_version }}' async=""></script>
+  {% else %}
+  <script src='{{ "/assets/js/main.js" | prepend: site.baseurl }}?v={{ site.assets_version }}' async=""></script>
+  {% endif %}
 {% endif %}
 
 {% if page.layout == 'post' %}

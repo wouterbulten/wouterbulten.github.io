@@ -1,0 +1,15 @@
+---
+id: '2571251446'
+replying_to: '2571246375'
+source: disqus
+date: '2016-03-15T18:33:48Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/fahimzafari.jpg
+name: Fahim Zafari
+message: "<p>I am not clear about the non-linear model and that is where I am stuck.
+  Can you tell me some specific models that I can use for iBeacon RSSI? I tried to
+  dig up some papers but they are mostly using EKF for positioning rather than using
+  it for just RSSI.</p>"

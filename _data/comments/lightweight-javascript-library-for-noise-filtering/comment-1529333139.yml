@@ -1,0 +1,19 @@
+---
+id: '3949545365'
+replying_to: '3948278807'
+source: disqus
+date: '2018-06-18T14:45:39Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: <p>If your movement model is unknown I would disregard A and B, and see if
+  increasing R and Q gives you enough to overcome the invalid motion model. If you
+  take enough measurements the model will eventually show the correct values. The
+  Kalman filter is then primarily used to smooth the values.</p><p>If you know that
+  someone is getting closer to a beacon you can try to use negative values for A (depending
+  on whether you are measuring meters or RSSI).</p><p>Did you also read my article
+  on RSSI filtering? <a href="https://disq.us/url?url=https%3A%2F%2Fwww.wouterbulten.nl%2Fblog%2Ftech%2Fkalman-filters-explained-removing-noise-from-rssi-signals%2F%3A5cPEsMrZ-obaQrQIbMn0-C8bI6M&amp;cuid=3803521"
+  rel="nofollow noopener" title="https://www.wouterbulten.nl/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals/">https://www.wouterbulten.nl...</a></p>

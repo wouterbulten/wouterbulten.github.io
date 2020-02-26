@@ -8,4 +8,11 @@ Gemfile.lock
 
 .vscode/settings.json
 .jekyll-metadata
-.jekyll-cache
+.sass-cache/
+.jekyll-cache/
+gemfiles/
+node_modules/
+vendor/bundle/
+vendor/cache/
+vendor/gems/
+vendor/ruby/

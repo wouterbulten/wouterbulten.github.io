@@ -1,0 +1,15 @@
+---
+id: '4744094142'
+replying_to: '4741818163'
+source: disqus
+date: '2020-01-03T21:28:45Z'
+post_id: "/blog/tech/custom-wake-up-light-with-node-red"
+slug: custom-wake-up-light-with-node-red
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/rickvanoosterhout.jpg
+name: Rick van Oosterhout
+message: "<p>I figured it out. I had my template with a group.lampen_slaapkamer, apparently
+  that doesn't work. When I filled in a single light from that group, it works. It
+  can't monitor a group, but having it monitor a single bulb from that group is essentially
+  the same.</p>"

@@ -1,0 +1,17 @@
+---
+id: '4228557364'
+replying_to: '4222885202'
+source: disqus
+date: '2018-12-06T20:29:24Z'
+post_id: "/blog/tech/custom-wake-up-light-with-home-assistant"
+slug: custom-wake-up-light-with-home-assistant
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/disqus_XI1hMTwXBl.jpg
+name: Gary
+message: "<p>Thanks for replying. No, I'm not using the brightness neither the color
+  temp. I did use your automation and set it up as described. However, the lights
+  ain't doing anything. Tried troubleshooting but they just don't seem to react. I
+  first try with the group, also tried with one of the two lights but they seem not
+  to like turning on. In the Ikea app, you can use them and that works but I'd like
+  to use the HA without all the seperate apps.<br />Any idea?</p>"

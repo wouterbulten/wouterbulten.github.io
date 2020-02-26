@@ -1,0 +1,16 @@
+---
+id: '2387687232'
+replying_to: '2386807597'
+source: disqus
+date: '2015-12-01T20:39:53Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/fahimzafari.jpg
+name: Fahim Zafari
+message: "<p>I am personally moving around with the phone so I am going with the rssi
+  and the rate of change of rssi as my state variables. Therefore I use matrices.
+  F  (A in your notation) is the transition matrix while H is the C in your notation.
+  I am just trying to do the same thing to find out what else I need to add into my
+  processing to sort out the problem of RSSI<br />.</p>"

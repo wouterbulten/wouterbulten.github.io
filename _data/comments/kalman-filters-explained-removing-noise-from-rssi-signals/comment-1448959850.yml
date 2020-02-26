@@ -1,0 +1,20 @@
+---
+id: '2386741414'
+replying_to: '2386734912'
+source: disqus
+date: '2015-12-01T08:50:50Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/fahimzafari.jpg
+name: Fahim Zafari
+message: "<p>Thanks a lot for your response. Yeah I have calibrated it fine. I took
+  multiple values at 1m and averaged them out so i got -59 dBm.  I think the problem
+  at I am having is because of the noise in the environment. I initially used n=2
+  however the results were pretty erroneous. I personally am right now working on
+  using signal processing techniques to filter out the noise and then use the RSSI.
+  I did try with Kalman Filter as well but based on what I read online and my personal
+  experience, Kalman is acting as a predictor or smoothening mechanism rather than
+  filtering out the noise. Can you tell me the matrices you are using for your kalman
+  filter? R, Q, H, F?</p>"

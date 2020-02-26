@@ -1,0 +1,14 @@
+---
+id: '4717871299'
+replying_to: '4716739303'
+source: disqus
+date: '2019-12-09T11:39:34Z'
+post_id: "/blog/tech/custom-wake-up-light-with-home-assistant"
+slug: custom-wake-up-light-with-home-assistant
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>Hi Wout. To add to your lovelace view, just make a new card with the
+  following entities:</p><p>input_datetime.wakeup_time<br />input_boolean.wakeup_enabled<br
+  />input_boolean.wakeup_weekend</p>"

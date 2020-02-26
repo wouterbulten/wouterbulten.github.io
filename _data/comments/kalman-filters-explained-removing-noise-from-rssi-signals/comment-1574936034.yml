@@ -1,0 +1,14 @@
+---
+id: '4705323766'
+replying_to: '4705295618'
+source: disqus
+date: '2019-11-28T10:13:54Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/maxyotos.jpg
+name: Max Yotos
+message: "<p>My motion model is move from 0 to 20 meter. In addition, it does not
+  get readings every second, and on average every 2/3 sec. I did multiplier for Q
+  and R, but results have not changed much. And I'm not sure is that a good idea?</p>"

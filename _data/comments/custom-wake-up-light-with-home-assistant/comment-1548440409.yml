@@ -1,0 +1,13 @@
+---
+id: '4306952153'
+replying_to: ''
+source: disqus
+date: '2019-01-25T18:20:09Z'
+post_id: "/blog/tech/custom-wake-up-light-with-home-assistant"
+slug: custom-wake-up-light-with-home-assistant
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/disqus_Xde1sG9QJt.jpg
+name: asdf
+message: '<p>Remove all three "initial: ...." fields if you want the settings to be
+  saved between restarts</p>'

@@ -1,0 +1,14 @@
+---
+id: '4791432028'
+replying_to: '4557801557'
+source: disqus
+date: '2020-02-11T02:36:07Z'
+post_id: "/blog/tech/data-augmentation-using-tensorflow-data-dataset"
+slug: data-augmentation-using-tensorflow-data-dataset
+author: {}
+email: ''
+avatar: "//a.disquscdn.com/1581704280/images/noavatar92.png"
+name: Germinate
+message: "<p>Could someone explain what this function does?</p><p>I get the error
+  of  TypeError: &lt;lambda&gt;() takes 1 positional argument but 2 were given. I
+  am not sure which lambda is throwing this error.</p>"

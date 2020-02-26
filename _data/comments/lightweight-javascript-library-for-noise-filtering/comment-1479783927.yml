@@ -1,0 +1,14 @@
+---
+id: '3014120179'
+replying_to: ''
+source: disqus
+date: '2016-11-22T03:05:27Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/disqus_ge9xQEtGuz.jpg
+name: mark
+message: "<p>Sorry am not an expert programmer but how can I apply the filter to given
+  RSSI from an ibeacon. i.e. RSSI as only input to the filter. I would like to find
+  the estimated distance the beacon is away. Thank you.</p>"

@@ -1,0 +1,14 @@
+---
+id: '4572981523'
+replying_to: ''
+source: disqus
+date: '2019-08-10T06:24:57Z'
+post_id: "/blog/tech/getting-started-with-generative-adversarial-networks"
+slug: getting-started-with-generative-adversarial-networks
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/kakolisen.jpg
+name: Kakoli Sen
+message: "<p>Thanks for the simplified code.<br />For 200 epochs, loss was same for
+  both D and G. So no learning.</p><p>199: [Dis. loss: 8.0591, acc: 0.5000] [Gen.
+  loss: 16.1181, acc: 0.0000]<br />Any insights?</p>"

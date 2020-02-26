@@ -1,0 +1,13 @@
+---
+id: '4705295618'
+replying_to: '4705290719'
+source: disqus
+date: '2019-11-28T09:17:19Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>Hi Max, you mean that you have a varying amount of time between measurements?
+  What's your motion model? Do you assume a static system?</p>"

@@ -1,0 +1,13 @@
+---
+id: '4610849976'
+replying_to: '4605173820'
+source: disqus
+date: '2019-09-10T12:51:00Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>In my experimental setup I used R: 0.008, Q: 4. A, B and C are determined
+  by your way of modelling motion.</p>"

@@ -1,0 +1,14 @@
+---
+id: '4234962371'
+replying_to: '4228557364'
+source: disqus
+date: '2018-12-11T08:41:27Z'
+post_id: "/blog/tech/custom-wake-up-light-with-home-assistant"
+slug: custom-wake-up-light-with-home-assistant
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>Hi Gary, can you turn on the lights using the HA dashboard? Also check
+  your logs, maybe there is a small error and the logs usually give an indication
+  where. Let me know if you have more info!</p>"

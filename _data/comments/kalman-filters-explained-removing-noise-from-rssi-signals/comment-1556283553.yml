@@ -1,0 +1,21 @@
+---
+id: '4438840386'
+replying_to: '4438435282'
+source: disqus
+date: '2019-04-26T12:59:13Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>Hi Jorge, I think it boils down to a matter of simplicity. They way I
+  used the kalman filter in my projects is by assuming that there is no movement (within
+  the time frame of the measurements). The filtered RSSI was then passed to a (more
+  complex) system based on particle filters that also took movement information and
+  RSSI measurements of multiple devices in to account. The linear kalman filter was
+  primarily used to remove the largest part of the noise.</p><p>Because of this assumption
+  I can use the linear Kalman filter, as I assume that the signal between two time
+  points should be the same and differences are caused by noise. Of course, in real
+  life objects move and this assumption is not 100% valid. However, I found that this
+  assumption works fairly well and that the filter wil catch up with the movement.</p>"

@@ -1,0 +1,16 @@
+---
+id: '4798457952'
+replying_to: '4798071894'
+source: disqus
+date: '2020-02-16T21:51:03Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: "//a.disquscdn.com/1581704280/images/noavatar92.png"
+name: Alex
+message: "<p>Hi Wouter! Thank you for your recommendations. Right now I am having
+  good results with u=0 (since I do not know which direction the user is moving) C=1
+  r=.0008 Q=1 A=1 and B=1. I am going to keep experimenting with lower Q values until
+  its as responsive as possible.</p><p>Also I am very impressed at your response speed
+  and attentiveness to your blog! Thank you for your contributions to the community.</p>"

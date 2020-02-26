@@ -1,0 +1,18 @@
+---
+id: '4438435282'
+replying_to: ''
+source: disqus
+date: '2019-04-26T02:45:51Z'
+post_id: "/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals"
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/disqus_JCYNLm9gqN.jpg
+name: Jorge Chang
+message: "<p>There are a lot of papers in which Kalman filters are implemented to
+  estimate RSSI values. As said above, this filter is used for linear systems, and
+  the common way to model RSSI is with something like P(d)= -10η log⁡(d/d0 )+A+Xσ.
+  How is it possible to implement the Kalman filter and predict values with such a
+  good performance even if the input data doesn´t behave as a linear system? Please,
+  correct me if I'm wrong. I really want to understand the intuition of the Kalman
+  filter.</p>"

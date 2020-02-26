@@ -1,0 +1,13 @@
+---
+id: '3014378792'
+replying_to: '3014120179'
+source: disqus
+date: '2016-11-22T08:31:34Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>Hi Mark! The filter is a 1D filter so only has a single input. Just pass
+  your measured RSSI to the filter and you will get a filtered return value :)</p>"

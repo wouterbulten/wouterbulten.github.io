@@ -1,0 +1,16 @@
+---
+id: '3922024105'
+replying_to: '3920549239'
+source: disqus
+date: '2018-05-29T13:38:59Z'
+post_id: "/blog/tech/lightweight-javascript-library-for-noise-filtering"
+slug: lightweight-javascript-library-for-noise-filtering
+author: {}
+email: ''
+avatar: http://disqus.com/api/users/avatars/wouterbulten.jpg
+name: Wouter Bulten
+message: "<p>For GPS data: yes. You could use this to filter longitude/latitude to
+  get a smooth signal. Location is 2D (or 3D) though, so a 2D filter could even be
+  better as you can take uncertainty of both inputs in to account. If you want a simple
+  approach you can just use two 1D filters.</p><p>How you go from GPS to prediction
+  of arrival time.. that's more an application question.</p>"

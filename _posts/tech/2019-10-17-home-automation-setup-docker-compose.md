@@ -52,7 +52,7 @@ I store all my configuration (e.g., al volumes) in a central directory like `~/h
 ## Docker compose for Home Assistant
 
 <figure style="max-width: 200px; text-align: left;">
-{% include assets/ha-logo.html %}
+<img src="/assets/images/ha/logos/ha-logo.svg">
 </figure><br>
 
 The Home Assistant docker is the main container of my smart home setup. Most configuration is done within HA itself, so it's a matter of spinning up the container. I use MariaDB for storing all event data, so that container needs to start first. I also make sure that my Zigbee hub is running before starting HA.
@@ -183,7 +183,7 @@ deconz:
 ## Docker compose for Node-RED
 
 <figure style="max-width: 200px; text-align: left;">
-{% include assets/node-red-logo.html %}
+<img data-src="/assets/images/ha/logos/node-red-logo.svg" class="lazyload">
 </figure><br>
 
 Node-RED powers most of the automations in my smart home. After setting up the container, you can install extensions and configure the connection between Home Assistant and Node-RED.
