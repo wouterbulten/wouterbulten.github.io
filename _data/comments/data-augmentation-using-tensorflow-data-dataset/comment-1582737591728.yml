@@ -1,0 +1,8 @@
+_id: 328849f0-58bc-11ea-b019-671bb1ff5e0d
+replying_to: ''
+slug: data-augmentation-using-tensorflow-data-dataset
+name: Reza Bojnordi
+email: 44ca73c3713eb236bd48051cef9eca7e
+message: "error code\r\nAttributeError: in user code:\r\n\r\n    <ipython-input-14-9991a5d964e1>:99 None  *\r\n        dataset = dataset.map(lambda x: tf.cond(tf.random_uniform([], 0, 1) > 0.75, lambda: f(x), lambda: x), num_parallel_calls=4)\r\n\r\n    AttributeError: module 'tensorflow' has no attribute 'random_uniform'"
+id: 1582737591
+date: '2020-02-26T17:19:51.723Z'
