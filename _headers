@@ -5,8 +5,8 @@
   X-Content-Type-Options: no-sniff
 
 /favicon-*.png
-  Cache-Control: public, max-age=2592000
+  Cache-Control: public, max-age=31536000
 /assets/images/*
-  Cache-Control: public, max-age=2592000
+  Cache-Control: public, max-age=31536000
 /assets/js/*
-  Cache-Control: public, max-age=2592000
+  Cache-Control: public, max-age=31536000
