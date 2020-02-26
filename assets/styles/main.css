@@ -4065,6 +4065,15 @@ body {
   margin-left: -15px;
   margin-right: -15px; }
 
+.toc-container {
+  border: 1px solid #efefef;
+  padding: 15px;
+  margin: 15px 0 15px 0; }
+  @media (min-width: 576px) {
+    .toc-container {
+      margin-left: 15px;
+      float: right; } }
+
 .cv-list dd {
   margin: 0.5rem 0rem 1rem 1.5rem; }
   .cv-list dd strong {
