@@ -101,8 +101,24 @@ Of course, there are limitations to our study that open up many avenues of futur
 
 **Author list**: Wouter Bulten, Maschenka Balkenhol, Jean-Joël Awoumou Belinga, Américo Brilhante, Aslı Çakır, Xavier Farré, Katerina Geronatsiou, Vincent Molinié, Guilherme Pereira, Paromita Roy, Günter Saile, Paulo Salles, Ewout Schaafsma, Joëlle Tschui, Anne-Marie Vos, Hester van Boven, Robert Vink, Jeroen van der Laak, Christina Hulsbergen-van de Kaa, Geert Litjens
 
-
 This work was financed by a grant from the Dutch Cancer Society (KWF).
+
+Please use the following to refer to our paper or this post:
+
+> Bulten, Wouter, et al. "Artificial Intelligence Assistance Significantly Improves Gleason Grading of Prostate Biopsies by Pathologists." arXiv preprint arXiv:2002.04500 (2020).
+
+Or, if you prefer BibTeX:
+
+```tex
+{% raw %}
+@article{bulten2020artificial,
+  title={Artificial Intelligence Assistance Significantly Improves Gleason Grading of Prostate Biopsies by Pathologists},
+  author={Bulten, Wouter and Balkenhol, Maschenka and Belinga, Jean-Jo{\"e}l Awoumou and Brilhante, Am{\'e}rico and {\c{C}}ak{\i}r, Asl{\i} and Farr{\'e}, Xavier and Geronatsiou, Katerina and Molini{\'e}, Vincent and Pereira, Guilherme and Roy, Paromita and others},
+  journal={arXiv preprint arXiv:2002.04500},
+  year={2020}
+}
+{% endraw %}
+```
 
 ## References
 
