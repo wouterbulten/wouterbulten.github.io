@@ -10,7 +10,7 @@ include_ha_series: false
 image: /assets/images/gleason-grading/ai_assistance_social_image.png
 large_twitter_card: true
 imageslider: false
-openseadragon: false
+openseadragon: true
 ---
 
 <a name="introduction"></a>
@@ -85,6 +85,11 @@ With our research, we aimed to set a new (small) step towards the clinical use o
 
 The future is exciting, both from the AI perspective as well as on the implementation side. The tools are there to improve cancer diagnosis even further.
 
+<figure>
+<div id="openseadragon1" style="width: 100%; height: 400px;"></div>
+<figcaption>Example case as presented to the patologist. Left the original biopsy, right the biopsy with the gland-level AI feedback. You can zoom in by scrolling, moving around can be done with click&drag.</figcaption>
+</figure>
+
 ## References
 
 [^pca1]: Litjens, G. et al. Deep learning as a tool for increased accuracy and efficiency of histopathological diagnosis. Sci. Rep. 6, 26286, [Read online](https://doi.org/10.1038/srep26286) (2016).
@@ -96,3 +101,13 @@ The future is exciting, both from the AI perspective as well as on the implement
 [^rad1]: Rodríguez-Ruiz, A. et al. Detection of Breast Cancer with Mammography: Effect of an Artificial Intelligence Support System. Radiology 290, 305-314, [Read online](https://doi.org/10.1148/radiol.2018181371) (2018).
 [^helloai]: Cai CJ, Winter S, Steiner D, Wilcox L, Terry M. Hello AI: Uncovering the Onboarding Needs of Medical Practitioners for Human-AI Collaborative Decision-Making. Proceedings of the ACM on Human-Computer Interaction 2019;3:104. [Read online](https://dl.acm.org/doi/pdf/10.1145/3359206)
 [^annotation]: Interesting blog post on different ways of displaying model output: [Communicating Model Uncertainty Over Space - How can we show a pathologist an AI model's predictions](https://pair-code.github.io/interpretability/uncertainty-over-space/)
+
+<script type="text/javascript">
+function loadDzi() {
+  var viewer = OpenSeadragon({
+    id: "openseadragon1",
+    prefixUrl: "/assets/dzi/images/",
+    tileSources: "/assets/dzi/gleason_example_1_1024.dzi"
+  });
+}
+</script>
