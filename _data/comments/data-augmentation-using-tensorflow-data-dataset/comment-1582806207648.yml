@@ -1,0 +1,8 @@
+_id: f4c504f0-595b-11ea-8ce2-4164f4e5fe47
+replying_to: '1582737591'
+slug: data-augmentation-using-tensorflow-data-dataset
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: "Hi Reza,\r\n\r\nYou are right. In newer versions of Tensorflow the random version has been changed to \"tf.random.uniform\". I will test the code again with TF 2.0 and then update the post. For now, you can use the new function.\r\n\r\nRegards, Wouter"
+id: 1582806207
+date: '2020-02-27T12:23:27.643Z'
