@@ -24,7 +24,7 @@ For me, the magic ingredient of rich dark chocolate ice cream is cocoa mass. As 
 
 This recipe uses my preferred technique of heating the ice cream base sous vide. More info on this technique can be found in my post on [sous vide ice cream base]({% post_url recipes/2020-01-26-sous-vide-ice-cream-base %}). It is possible to make this ice cream without a sous vide setup by adjusting the recipe, see below for more information.
 
-> **Update March 1, 2020:** After some experiments, I have updated the recipe below. The new recipe has a improved texture and flavour release, compared to the old recipe. The main differences are the ratio of cream, milk and chocolate, and adding a tiny amount of salt.
+> **Update March 1, 2020:** After some experiments, I have updated the recipe. The new recipe has an improved texture and flavour release, compared to the old recipe. The main differences are the ratio of cream, milk and chocolate, and adding a tiny amount of salt.
 
 ## Recipe for sous vide dark chocolate ice cream
 
