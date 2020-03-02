@@ -7,7 +7,7 @@ tags: [research, phd, deep learning, prostate cancer, Gleason grading]
 published: true
 description: "In a completely new study we investigated the possible benefits of an AI system for pathologists. Instead of focussing on pathologist-versus-AI, we instead look at potential pathologist-AI synergy."
 include_ha_series: false
-image: /assets/images/gleason-grading/gleason_grading_ai_assistance_social_image.png
+image: /assets/images/gleason-grading/gleason_grading_ai_assistance_cover.png
 large_twitter_card: true
 imageslider: false
 openseadragon: true
