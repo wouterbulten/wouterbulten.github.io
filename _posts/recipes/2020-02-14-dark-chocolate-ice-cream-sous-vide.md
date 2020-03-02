@@ -35,7 +35,7 @@ These ingredients results in 950 grams of ice cream base and is roughly the quan
 - 525 grams double cream (35% fat)
 - 77 grams whole milk (3.4% fat)
 - 35 grams skim milk powder
-- 152 grams sugar (I used unrefined cane sugar, normally sugar also works)
+- 152 grams sugar (I used unrefined cane sugar, regular sugar also works)
 - 86 grams egg yolks
 - 76 grams cocoa mass
 - 1 teaspoon vanilla extract
