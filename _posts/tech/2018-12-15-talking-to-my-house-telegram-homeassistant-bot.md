@@ -2,7 +2,7 @@
 layout: post
 title:  "Talking to my house: Building a chat bot with Home Assistant, AppDaemon and Telegram"
 date:   2018-12-15 13:00
-modified_at: 2019-04-22 16:30
+modified_at: 2020-03-04 10:06
 categories: blog tech
 tags: [home automation, home assistant, telegram, bots, appdaemon]
 #published: true
@@ -161,7 +161,7 @@ Now let's do something usefull. I would like to keep track of the current temper
 This can be done with some ~~very advanced artificial intelligence~~ simple rules in python. The code below matches simple words in the input. *Is it cold outside?* matches due to *cold* and *outside* being present in the text.
 
 ```python
-if not any((
+if any((
     'temperature' in message,
     ('warm' in message or 'cold' in message) and ('house' in message or 'inside' in message or 'outside' in message),
     ('warm' in message or 'cold' in message) and ('house' in message or 'inside' in message or 'outside' in message),
@@ -231,7 +231,7 @@ class TelegramBot(hass.Hass):
       # Send greeting message.
       self.greet_user_if_new_conversation(user_id, payload_event['from_first'])
 
-      if not any((
+      if any((
           'temperature' in message,
           ('warm' in message or 'cold' in message) and ('house' in message or 'inside' in message or 'outside' in message),
           ('warm' in message or 'cold' in message) and ('house' in message or 'inside' in message or 'outside' in message),
