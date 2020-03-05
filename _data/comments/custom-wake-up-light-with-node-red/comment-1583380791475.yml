@@ -1,0 +1,8 @@
+_id: c3769cd0-5e95-11ea-a168-056bfcca112a
+replying_to: ''
+slug: custom-wake-up-light-with-node-red
+name: Jens
+email: 2b39df459c58ddec219f0d30337fa667
+message: "Hi Wouter,\r\ngreat flow. I just tried to set it up, however , schedex gives me an unsupported input. The debug after parse time shows the following payload:\r\ninput_datetime.wakeup_time : msg : Object\r\n{ topic: \"input_datetime.wakeup_time\", payload: \"08:30:00\", data: object, _msgid: \"b16c2a22.253e08\" }\r\n3/4/2020, 10:42:34 PMnode: 93ea7b4a.c4c8a8input_datetime.wakeup_time : msg : Object\r\n{ topic: \"input_datetime.wakeup_time\", payload: \"08:30:00\", data: object, _msgid: \"be58ef1c.77e7a\" }\r\n\r\nThe parse time is as follows:\r\n\t\"new_msg = {↵ payload: {↵ ontime: msg.payload.substr(0,5),↵ offtime: msg.payload.substr(0,5)↵ }↵}↵return msg;\"\r\n\r\nWake up time input is as follows:\r\nserver\t\r\nHome Assistant\r\nversion\t1\r\nexposeToHomeAssistant\tfalse\r\nhaConfig\t[ object, object ]\r\nentityidfilter\t\"input_datetime.wakeup_time\"\r\nentityidfiltertype\t\"substring\"\r\noutputinitially\ttrue\r\nstate_type\t\"str\"\r\nhaltifstate\t\"\"\r\nhalt_if_type\t\"str\"\r\nhalt_if_compare\t\"is\"\r\noutputs\t1\r\noutput_only_on_state_change\ttrue"
+id: 1583380791
+date: '2020-03-05T03:59:51.469Z'
