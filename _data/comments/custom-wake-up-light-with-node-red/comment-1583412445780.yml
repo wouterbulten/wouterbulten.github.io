@@ -1,0 +1,8 @@
+_id: 76d4ffd0-5edf-11ea-85b7-d7f34f561344
+replying_to: '1583380791'
+slug: custom-wake-up-light-with-node-red
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: "Hi Jens,\r\n\r\nThanks for the comment. Based on your comment, I'm not sure yet what is going wrong. Is the output of the function node correct? Maybe you can add a debug node there and see if the output matches what it should be. `msg.payload.ontime` should be somthing like `08:00` (no seconds). You can also test setting a custom msg.payload first, just to see if the schedex node updates correctly. Btw, what version of schedex do you have? \r\n\r\nRegards, Wouter"
+id: 1583412445
+date: '2020-03-05T12:47:25.775Z'
