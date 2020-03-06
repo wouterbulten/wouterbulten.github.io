@@ -1,0 +1,8 @@
+_id: 8dcce340-5fd1-11ea-82af-83bff40585d6
+replying_to: '1583502045'
+slug: custom-wake-up-light-with-node-red
+name: Jens
+email: 2b39df459c58ddec219f0d30337fa667
+message: "Hi Wouter,\r\ni found 1 issue. I triple checked the parse time programming and discovered that the return new_msg was spelled incorrectly. So this part is working now. Just looking why it didn't fire this morning is stuck at Enabled. There is a red circle below that. I am going to double check that end now."
+id: 1583516422
+date: '2020-03-06T17:40:22.497Z'
