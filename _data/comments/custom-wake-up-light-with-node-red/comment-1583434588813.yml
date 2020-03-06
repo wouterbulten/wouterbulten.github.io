@@ -1,0 +1,8 @@
+_id: 051e4a70-5f13-11ea-932a-8b950452a593
+replying_to: '1583412445'
+slug: custom-wake-up-light-with-node-red
+name: Jens
+email: 2b39df459c58ddec219f0d30337fa667
+message: "Hi Wouter,\r\nThank you very much for your reply. If you could send me your email address, I can then send you screenshots.\r\nI have added a debug node, and the below output is from the debug node. It appears that it includes seconds as well.\r\ninput_datetime.wakeup_time : msg : Object\r\n{ topic: \"input_datetime.wakeup_time\", payload: \"08:30:00\", data: object, _msgid: \"1750d197.11af3e\" }"
+id: 1583434588
+date: '2020-03-05T18:56:28.809Z'
