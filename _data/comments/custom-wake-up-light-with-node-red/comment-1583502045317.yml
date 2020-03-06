@@ -1,0 +1,11 @@
+_id: 145e7940-5fb0-11ea-b10e-13f5dd17472a
+replying_to: '1583434588'
+slug: custom-wake-up-light-with-node-red
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: >-
+  Indeed, something is going wrong. The payload should be a dictionary with the
+  on and off time in hours and minute (HH:MM). Feel free to send me your email
+  through https://www.wouterbulten.nl/contact/
+id: 1583502045
+date: '2020-03-06T13:40:45.312Z'
