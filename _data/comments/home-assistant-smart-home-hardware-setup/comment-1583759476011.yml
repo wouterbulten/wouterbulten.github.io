@@ -1,0 +1,8 @@
+_id: 7510f480-6207-11ea-9467-65cc5ebce7d5
+replying_to: '1583758796'
+slug: home-assistant-smart-home-hardware-setup
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: "Hi Maikel,\r\n\r\nGiven the language of my blog, I will reply in English; let me know if you would like to have a response in Dutch.\r\n\r\n I use Deconz with Home Assistant. Do you mean that you cannot control them in HA? Or not in Deconz? For Deconz you will need to add the lights to a group first, then you can control that group or the individual lights."
+id: 1583759476
+date: '2020-03-09T13:11:16.010Z'
