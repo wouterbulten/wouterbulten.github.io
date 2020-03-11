@@ -1,0 +1,11 @@
+_id: e2a74fa0-63a9-11ea-a3f2-7d3791feffb6
+replying_to: '1583894258'
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: >-
+  There is a Python implementation in the [repository on
+  Github](https://github.com/wouterbulten/kalmanjs/tree/master/contrib/python).
+  Regards, Wouter
+id: 1583939190
+date: '2020-03-11T15:06:30.281Z'
