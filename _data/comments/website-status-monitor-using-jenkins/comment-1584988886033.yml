@@ -1,0 +1,12 @@
+_id: e674ccd0-6d35-11ea-9f6e-5ddfabe6e465
+replying_to: ''
+slug: website-status-monitor-using-jenkins
+name: Anand Kumar
+email: e10045bcaa849767aecbd99d91f751b6
+message: >-
+  When using the curl command, we get 403 forbidden status for most of the URLs
+  we search, and then on using "--user name:password", we get statua OK 200 for
+  all the websites. Is there a reliable way to determine 200 OK status code for
+  any website, or we need to try all the options with curl command?
+id: 1584988886
+date: '2020-03-23T18:41:26.028Z'
