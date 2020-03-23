@@ -1,0 +1,8 @@
+_id: 434c6390-6d37-11ea-9f6e-5ddfabe6e465
+replying_to: '1584988886'
+slug: website-status-monitor-using-jenkins
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: "Hi Anand,\r\n\r\nAre the websites you want to check protected with http authentication? If so, yes you will need to supply curl with the credentials, otherwise it cannot access the url. You could always make a specific url accessible without a password and then check that url.\r\n\r\nRegards, Wouter"
+id: 1584989471
+date: '2020-03-23T18:51:11.119Z'
