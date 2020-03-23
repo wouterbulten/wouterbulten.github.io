@@ -1,0 +1,11 @@
+_id: d5272ca0-6d5a-11ea-9c1c-757ba1877c88
+replying_to: ''
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+name: Erwin
+email: de05a063e7866163bd3ba49c7b2d3c77
+message: >-
+  Thanks for the article, very clear. Would you recommend this filter for
+  tracking a moving router? (I'm trying to track a drone thru gates and I don't
+  see the benefit of a kalman filter vs moving mean)
+id: 1585004748
+date: '2020-03-23T23:05:48.233Z'
