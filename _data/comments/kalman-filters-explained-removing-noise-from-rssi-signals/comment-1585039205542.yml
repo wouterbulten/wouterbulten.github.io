@@ -1,0 +1,8 @@
+_id: 0f221af0-6dab-11ea-9101-313f634026c3
+replying_to: '1585004748'
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: "Hi Erwin, with a Kalman filter you have a bit more control. If your system is very simple you can of course also use a running average. However, with a kalman filter you can give more weight to recent observations; which could result in better estimations if your system is not moving in a constant matter. \r\n\r\nIn your case of the drone, I expect you want to measure a x,y position. In that case you could use a kalman filter to remove noise from the rssi signal, and then use that filtered signal in a more elaborate model to estimate the exact position. I've done something similar in the past (but with humans instead of drones). I have a post on that [on my blog](https://www.wouterbulten.nl/blog/tech/human-slam-indoor-localization-using-particle-filters/)."
+id: 1585039205
+date: '2020-03-24T08:40:05.537Z'
