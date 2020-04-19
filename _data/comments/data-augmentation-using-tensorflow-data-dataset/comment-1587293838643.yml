@@ -1,0 +1,8 @@
+_id: 895bd410-822c-11ea-bdab-e3d1712e5f06
+replying_to: '1587244159'
+slug: data-augmentation-using-tensorflow-data-dataset
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: "Hi Ingrid,\r\n\r\nNormally you don't want to turn the dataset into a numpy array for training. If you do so you will lose a lot of the performance gains tf.data can offer you. If you really need to get (a part of) the dataset as a numpy array you could do something like this:\r\n\r\n```python\r\ndata = list(dataset.take(10).as_numpy_iterator())\r\n```\r\n\r\nThe snippet above will return the first 10 elements from the dataset as a list.\r\n\r\nRegards, Wouter"
+id: 1587293838
+date: '2020-04-19T10:57:18.639Z'
