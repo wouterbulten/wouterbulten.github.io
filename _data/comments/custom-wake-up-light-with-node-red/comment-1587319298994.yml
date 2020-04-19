@@ -1,0 +1,8 @@
+_id: d0e5e0b0-8267-11ea-a3e5-61422fbf08c6
+replying_to: '1587317789'
+slug: custom-wake-up-light-with-node-red
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: "Hi Jacob,\r\n\r\nThat would also work of course; if you use that sensor you can skip the \"get day of week\" nodes. I wasn't aware of that sensor. Great suggestion!\r\n\r\nRegards, Wouter"
+id: 1587319298
+date: '2020-04-19T18:01:38.992Z'
