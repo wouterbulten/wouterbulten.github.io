@@ -1,0 +1,8 @@
+_id: de050d20-81b8-11ea-ba96-45f82b6a3e9a
+replying_to: ''
+slug: data-augmentation-using-tensorflow-data-dataset
+name: Ingrid Xu
+email: 3d8b1ab5b852908271899baf14b65f72
+message: "Hi Wouter, thank you so much for the tutorial. \r\nHow can I turn the dataset into a numpy array? I need my x_train to be in numpy array to reshape and encode. I tried `dataset = np.array(dataset)`, but it returned an empty object. I've been stuck on this all day and I was wondering if you would know the solution!\r\n\r\nThanks"
+id: 1587244159
+date: '2020-04-18T21:09:19.186Z'
