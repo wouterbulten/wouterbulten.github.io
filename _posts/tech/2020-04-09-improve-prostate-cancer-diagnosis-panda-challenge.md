@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Improve prostate cancer diagnosis: participate in the PANDA Gleason grading challenge"
-date:   2020-04-13 11:00
+date:   2020-04-21 11:00
 categories: blog tech
 tags: [research, phd, deep learning, prostate cancer, Gleason grading, challenge]
 published: true
