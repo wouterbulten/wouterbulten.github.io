@@ -1,0 +1,8 @@
+_id: 782eac50-8ae5-11ea-8e23-55eab3a9adae
+replying_to: ''
+slug: lightweight-javascript-library-for-noise-filtering
+name: jordi mesa
+email: d5d378722dacca4cddb4deb2c0083df3
+message: "The first thing to congratulate you on your incredible work ...\r\n\r\nI have a question I want to implement your kalmanjs filter to filter the latitude and longitude that my GPS receives so that it does not give me wrong data.\r\n\r\nBut I can't implement it ... I have to save an array first with GPS readings or the filter function is already doing it ...\r\n\r\nI'm doing this ... but I'm sure it's wrong.\r\n\r\nvar kf_lat = new KalmanFilter ({R: 0.01, Q: 3});\r\nvar kf_lng = new KalmanFilter ({R: 0.01, Q: 3});\r\n\r\nlat_kf = kf_lat.filter (Location.lat);\r\nlng_kf = kf_lng.filter (Location.lng);\r\n\r\nThe Values returned to me is as if they were not filtered because it continues to move incorrectly, it does not stabilize the longitude and latitude when stopped."
+id: 1588252875
+date: '2020-04-30T13:21:15.965Z'
