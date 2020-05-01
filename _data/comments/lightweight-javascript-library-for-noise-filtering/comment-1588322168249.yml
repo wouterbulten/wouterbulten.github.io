@@ -1,0 +1,8 @@
+_id: cd7a3c00-8b86-11ea-a130-0bb4ce4fe537
+replying_to: '1588252875'
+slug: lightweight-javascript-library-for-noise-filtering
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: "Hi Jordi,\r\n\r\nYou don't have to save an array first. You can pass the raw values to the filter as they come in. The filter will update it's state internally. So for each measurement you will call filter(). So something like this:\r\n\r\n```js\r\nf= new KalmanFilter ({R: 0.01, Q: 3});\r\n\r\n# measure something\r\nvalue = f.filter(measurement);\r\n\r\n# measure new value\r\nvalue = f.filter(measurement);\r\n\r\n#etc.\r\n````\r\n\r\nIf the value should be static but the filtered value is still jumping around, it could be that there is a lot of noise in the measurements. You could try changing the parameters of the filter (e.g. make Q larger). Have you already done some calculations of the standard deviation of your measurements over time?\r\n\r\nGood luck! Wouter"
+id: 1588322168
+date: '2020-05-01T08:36:08.242Z'
