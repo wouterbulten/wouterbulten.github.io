@@ -1,0 +1,8 @@
+_id: 94059c60-9394-11ea-adaa-590e8d878a0d
+replying_to: '1589205768'
+slug: custom-wake-up-light-with-node-red
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: "Hi Anthony,\r\n\r\nThis error occurs when the light is off. Home Assistant does not return the brightness for a light that is not on, the value will be None. Check if the template works with a light that's already on :)\r\n\r\nRegards, Wouter"
+id: 1589207694
+date: '2020-05-11T14:34:54.370Z'
