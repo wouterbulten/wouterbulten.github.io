@@ -2,6 +2,7 @@
 layout: post
 title:  "Setting up Home Automation with Docker Compose: Home Assistant, Node-RED, and more"
 date:   2019-10-17 14:46
+modified_at: 2020-05-14
 categories: blog tech
 tags: [home automation, home assistant, docker]
 published: true
@@ -35,6 +36,10 @@ Any questions about these setups? Feel free to add a question in the comments. T
 - [Docker compose for **AppDaemon**](#appdaemon)
 - [Docker compose for **VS Code**](#vscode)
 - [docker-compose.yaml overview](#overview)
+
+**Updates**
+
+*14-05-2020:* Updated VS Code setup.
 
 <a name="env"></a>
 ## Use of the .env file
@@ -286,15 +291,15 @@ Not technically required for Home Assistant, but Visual Studio Code Server is a 
 # Visual Studio code
 vscode:
   container_name: vscode
-  image: codercom/code-server:v2
+  image: codercom/code-server
   volumes:
     # Set <project dir> to the directory you want to open in VS Code.
     - <project dir>:/home/coder/project
     # <vs code config> should point to a local dir where vs code stores its data.
     - <vs code config dir>:/home/coder/.local/share/code-server
   ports:
-    - "8443:8443"
-  command: code-server --auth password --port 8443 --disable-telemetry /home/coder/project
+    - "8443:8080"
+  command: code-server --auth password --disable-telemetry /home/coder/project
   environment:
     PASSWORD: "${VSCODE_PASSWORD}"
   restart: unless-stopped
