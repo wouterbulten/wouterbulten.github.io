@@ -16,7 +16,7 @@ recipe_cooktime: PT1H
 recipe_totaltime: PT1H30M
 ---
 
-Blueberries, biscuits, creamy vanilla ice cream: this has to be a good base to make ice cream. Using sous vide, this blueberry cheesecake ice cream recipe is quick and easy. The recipe can be easily adjusted based on your preferences or based on the ingredients you have at hand. Most cream cheese will work, I have made this recipe both with typical MonChou cheesecake and with Italian mascarpone. Not a fan of blueberries? The same recipe can be used for other swirls.
+Blueberries, biscuits, creamy vanilla ice cream: this has to be a good base to make ice cream. Using sous vide, this recipe is quick and easy. The recipe can be easily adjusted based on your preferences or based on the ingredients you have at hand. Most cream cheeses will work, I have made this recipe both with typical MonChou cheese and with Italian mascarpone. Not a fan of blueberries? The same recipe can be used with other fruits.
 
 ## Recipe for sous vide blueberry ice cream
 
