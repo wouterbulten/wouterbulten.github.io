@@ -1,0 +1,8 @@
+_id: c6a1cb70-96c4-11ea-92d4-e74673ed25eb
+replying_to: ''
+slug: data-augmentation-using-tensorflow-data-dataset
+name: Alexander P
+email: 27630e366c05531452a7a2ff97735c94
+message: "Hey,\r\n\r\nthanks for sharing.\r\n\r\nIn tf version 2.2 I got the error: \r\n\r\nTypeError: crop_and_resize_v2() got an unexpected keyword argument 'box_ind'\r\n\r\nfor the crop_and_resize function you have to replace 'box_ind' by 'box_indices' in 2.2 (see here: https://www.tensorflow.org/api_docs/python/tf/image/crop_and_resize)"
+id: 1589558248
+date: '2020-05-15T15:57:28.240Z'
