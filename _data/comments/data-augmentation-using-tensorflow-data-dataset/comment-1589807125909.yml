@@ -1,0 +1,8 @@
+_id: 3d343080-9908-11ea-9d9c-23a6b911f1f4
+replying_to: ''
+slug: data-augmentation-using-tensorflow-data-dataset
+name: Pedro Galvez
+email: ba0f6dc4526b7a1b2fc0c3b0df78d88c
+message: "Hi, \r\n\r\nThank you very much for your detailed explanation on data augmentation using Tensorflow. I have a question regaring the function \"map\".\r\n\r\nDoes using \"map\" replaces the original image in the dataset, or adds an additional image (the modified version of the input image)  to the dataset and keeps the original image?\r\n\r\nThank you!\r\nPedro"
+id: 1589807125
+date: '2020-05-18T13:05:25.903Z'
