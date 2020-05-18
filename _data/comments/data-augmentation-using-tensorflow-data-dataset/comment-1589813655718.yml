@@ -1,0 +1,8 @@
+_id: 71341e40-9917-11ea-9b52-ed90067f3b65
+replying_to: '1589807125'
+slug: data-augmentation-using-tensorflow-data-dataset
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: "Hi Pedro, thanks for your comment!\r\n\r\nI think it's best to see the `map` function as part of the pipeline. Every time you run `map`, nothing happens with the images yet. Instead, a chain of operations is made in the background. The TF docs explain it like this:\r\n\r\n> This transformation applies map_func to each element of this dataset, and returns a new dataset containing the transformed elements, in the same order as they appeared in the input. map_func can be used to change both the values and the structure of a dataset's elements. For example, adding 1 to each element, or projecting a subset of element components.\r\n\r\nSource: https://www.tensorflow.org/api_docs/python/tf/data/Dataset#map\r\n\r\nNote that these transformations are executed lazy. Only when you actually request images from the dataset (like with a for loop and `batch`), the source images from your dataset are fed through the pipeline. At that time, each map is applied on the image or on the batch. \r\n\r\nSo to answer your question: Yes, in a sense the original image is replaced. You are making a new dataset with the mapped images. The original images are not part of the dataset anymore. That's why you sometimes want to apply the augmentation to only a part of the images (for example with `tf.cond`)."
+id: 1589813655
+date: '2020-05-18T14:54:15.713Z'
