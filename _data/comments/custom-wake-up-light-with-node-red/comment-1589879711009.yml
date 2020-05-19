@@ -1,0 +1,8 @@
+_id: 3ca09740-99b1-11ea-819b-d9a59226572f
+replying_to: ''
+slug: custom-wake-up-light-with-node-red
+name: Martijn
+email: b133d7b7d438647ab4fe6678e8978e8e
+message: "Hi, thanks for this.\r\nI'm really new with HA and Node Red, and I'm trying to figure this out.\r\n\r\nSome questions which are unclear to me if I want to change things so they correspond with my own lights:\r\n\r\nTurning the light on:\r\n{\"brightness\":1}\r\n\r\nWhat should I add if I also want to specify the color temperature here (it should go on with color temperature 1000\r\n\r\nThe change itself:\r\n{{ [250, state_attr('light.bedroom', 'brightness') + 9] | min }}\r\n\r\nWhat does the 250 at the start mean? Does it have a specific function?\r\nWhat do I need to add/change to also reduce color temperature here? So I would to reduce it from 1000 to 100 within the set number of loops"
+id: 1589879711
+date: '2020-05-19T09:15:11.003Z'
