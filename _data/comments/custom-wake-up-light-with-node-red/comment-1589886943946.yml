@@ -1,0 +1,8 @@
+_id: 14899ed0-99c2-11ea-ba08-d54756449235
+replying_to: '1589879711'
+slug: custom-wake-up-light-with-node-red
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: "Hi Martijn,\r\n\r\nNice to hear that the post helped!\r\n\r\n> What should I add if I also want to specify the color temperature here (it should go on with color temperature 1000\r\n\r\nIn essence you can set any attribute that is valid for the Light interface (see https://www.home-assistant.io/integrations/light/). In your case, you can set color_temp to the value you want. Just add it to payload/data just like the brightness.\r\n\r\n> What does the 250 at the start mean? Does it have a specific function? What do I need to add/change to also reduce color temperature here? So I would to reduce it from 1000 to 100 within the set number of loops\r\n\r\nI take the minimum of (250, the computed value); this is just a safety check that the value will always be at most 250. For example: `[1, 2] | min` would give `1`.\r\n\r\nIf you want to do the same for color temperature, if would probably do something like this: 1) get the state of the light with all attributes, and then 2) use a function node to write a new payload in which you compute the color temp and brightness in a single node. With the function node you can pick certain attributes and then convert them to a new payload. There are probably more ways to do this; this is one I could think of without further testing :)\r\n\r\nGood luck!"
+id: 1589886943
+date: '2020-05-19T11:15:43.921Z'
