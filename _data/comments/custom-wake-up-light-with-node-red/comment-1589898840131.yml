@@ -1,0 +1,8 @@
+_id: c715d3a0-99dd-11ea-ab2b-99a85786333f
+replying_to: '1589886943'
+slug: custom-wake-up-light-with-node-red
+name: Martijn
+email: b133d7b7d438647ab4fe6678e8978e8e
+message: "Thanks for your reply! \r\n\r\nAs far as I understood I can not put both brightness and color_temp in one data field (it gives an API error if I try), so I used two call service nodes after each other to turn my lamp on with brightness low (40) and color temp warm (1000).\r\nThat part works, my bulb goes on with the correct settings.\r\n\r\nAfter that I start my loop. I've used your setup, and added an extra template with the following text:\r\n{{ [1000, state_attr('light.03010850600194d4930b', 'color_temp') - 90] | min }}\r\nI've added a debug node after it, to check what happens, and it doesn't return the correct value. For some reason it returns the same value as the brightness template.\r\n\r\nWhen I disable the brightness template, and the set brightness, so only keeping the color_temp nodes, it does work.\r\n\r\nSo how do I make sure these templates don't interfere with each other."
+id: 1589898840
+date: '2020-05-19T14:34:00.120Z'
