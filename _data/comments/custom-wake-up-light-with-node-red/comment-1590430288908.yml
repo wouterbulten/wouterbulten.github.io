@@ -1,0 +1,8 @@
+_id: 275ea4b0-9eb3-11ea-b67b-55b1f551a0f7
+replying_to: ''
+slug: custom-wake-up-light-with-node-red
+name: Marcus
+email: b02af185d93004c26d0becec73306255
+message: "Hi,\r\nTotally awesome I was able to find your blog! Great stuff indeed.\r\nI am simply looking for a customizable ramping of the dimming intensity.\r\nI have changed the loop timer to 0.25 seconds and left the max loops at 30. I am controlling Lutron Caseta wireless lights and I normally specify \"birghtness_pct\" rather than \"brightness\" as you have specified.\r\nThe get template node keeps throwing up an error though... \r\n\"Error get-template: Request failed with status code 500\"\r\nAny idea why it's not reporting the value back? \r\nIt actually doesn't seem to matter in any event as it works.\r\nIs there something else I should have in my logic. I am currently a complete programming noob and just trying to get an inject node to ramp brightness. I will tie it into a motion detector soon to raise the intensity slowly at night and normally during the day.\r\nGreat blog!\r\nThanks."
+id: 1590430288
+date: '2020-05-25T18:11:28.894Z'
