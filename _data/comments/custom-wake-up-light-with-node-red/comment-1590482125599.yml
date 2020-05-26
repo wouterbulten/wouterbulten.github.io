@@ -1,0 +1,8 @@
+_id: d877c740-9f2b-11ea-bc6d-373748716733
+replying_to: '1590430288'
+slug: custom-wake-up-light-with-node-red
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: "Hi Marcus,\r\n\r\nThanks for the compliments! I noticed that the template only works if the light is already on. If the light is not on, the brightness is None. That's something I could address in a new version. Maybe that's what is causing your problems? \r\n\r\nRegards, Wouter"
+id: 1590482125
+date: '2020-05-26T08:35:25.593Z'
