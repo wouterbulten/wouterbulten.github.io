@@ -1,0 +1,8 @@
+_id: 34ee69f0-9f88-11ea-a854-7dac62dbbf2d
+replying_to: ''
+slug: custom-wake-up-light-with-node-red
+name: Tom
+email: 3cc15b32460352da1efc59731eea36c9
+message: "Hi, I have had an issue since i started this where I cannot turn on or off the wakeup enabled or wakeup on weekend in lovelace, it keeps telling me its unavailable.  Now it is simply ignoring the enabled on weekend settings and turning on every day (in node red, there is a square underneath saying that it is unavailable)  Is there something I am missing?\r\n\r\nmy input booleans are \r\n\r\nwakeup_enabled:\r\n  name: \"Wake-up lights\"\r\n  initial: on\r\n  icon: mdi:theme-light-dark\r\n\r\nwakeup_weekend:\r\n  name: \"Enable Wake-up on weekends\"\r\n  initial: off  # disabled by default on weekends\r\n  icon: mdi:calendar-blank  \r\n\r\nand this is what i see\r\n input_boolean.wakeup_enabled\tunavailable\trestored: true\r\nsupported_features: 0\r\nfriendly_name: Wake-up lights\r\nicon: mdi:theme-light-dark\r\n\r\n input_boolean.wakeup_weekend\tunavailable\trestored: true\r\nsupported_features: 0\r\nfriendly_name: Enable Wake-up on weekends\r\nicon: mdi:calendar-blank"
+id: 1590521794
+date: '2020-05-26T19:36:34.403Z'
