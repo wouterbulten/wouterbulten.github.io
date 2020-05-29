@@ -1,0 +1,8 @@
+_id: 78393720-a1f0-11ea-890f-a14ff02596e9
+replying_to: ''
+slug: data-augmentation-using-tensorflow-data-dataset
+name: Kleyson Rios
+email: 5823150f6a20716668da19170b47550f
+message: "Thanks for this.\r\n\r\nMy augmenter function receives two parameters, like:\r\n```\r\ndef horizontal_flip(image, label):\r\n    \"\"\"Flip augmentation\r\n\r\n    Args:\r\n        image: Image to flip\r\n\r\n    Returns:\r\n        Augmented image\r\n    \"\"\"\r\n    image = tf.image.random_flip_left_right(image)\r\n\r\n    return image, label\r\n```\r\n\r\nMay you help me to update the code below ?\r\n\r\n```\r\nfor f in augmentations:\r\n\r\n    # Apply an augmentation only in 25% of the cases.\r\n    trainDS = trainDS.map(lambda x: tf.cond(tf.random_uniform([], 0, 1) > 0.75, lambda: f(x), lambda: x ), num_parallel_calls=4)\r\n```\r\nRunning the code above I get the following error:\r\n```\r\nTypeError: in user code:\r\n    TypeError: <lambda>() takes 1 positional argument but 2 were given\r\n```\r\nThanks."
+id: 1590786477
+date: '2020-05-29T21:07:57.322Z'
