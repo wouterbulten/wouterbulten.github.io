@@ -1,0 +1,8 @@
+_id: 26ae9bc0-a32b-11ea-b39a-071d6b283ac2
+replying_to: ''
+slug: ikea-tradfri-temp-and-brightness-with-home-assistant
+name: Bram
+email: ca344dc150b9f9912a862703d337a7b0
+message: "Thanks for the script Wouter.\r\nI'm trying to turn on two lights with the script when there is motion detect but only one turns on. Any idea what could be causing this.\r\nThis is how i defined the action of my automation:\r\n\r\n  action:\r\n  - service: script.turn_on_ikea_light\r\n    data:\r\n      brightness_pct: 50\r\n      color_temp: 365\r\n      entity: light.color_temperature_light_5\r\n  - service: script.turn_on_ikea_light\r\n    data:\r\n      brightness_pct: 50\r\n      color_temp: 365\r\n      entity: light.color_temperature_light_6"
+id: 1590921631
+date: '2020-05-31T10:40:31.957Z'
