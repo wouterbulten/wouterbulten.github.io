@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Local (no cloud) face recognition for Home Assistant using TensorFlow.js: Part 1 Detection"
+title:  "Local presence detection using face recognition and TensorFlow.js for Home Assistant, Part 1: Detection"
 date:   2020-05-29 11:00
 categories: blog tech
 tags: [home automation, home assistant, docker, face recognition]
@@ -20,7 +20,7 @@ Given the large size of this project, this will span multiple posts. This first 
 
 <img class="lazyload" data-src="/assets/images/facerec/detection-star-trek.jpg" alt="Can we build a face recognition system that is free and runs completely local?">
 
-# Requirements for local face recognition
+## Requirements for local face recognition
 
 Before setting up this system, I made a list of requirements that should be met. There are many possible approaches/solutions, so a list of requirements can guide the design choices.
 
@@ -48,7 +48,7 @@ Before setting up this system, I made a list of requirements that should be met.
 Luckily, meeting all requirements is possible! But, it does require some programming to set everything up.
 
 
-# Choosing a recognition system
+## Choosing a recognition system
 
 
 During my search for face recognition systems, I found several systems that could be used. Some of these are cloud-based, others are local. A non-complete overview can be found below. I wasn't able to test all methods myself, so I used information from the docs. Found a error in the overview above? [Let me know!](#comment-form) The `requirements score` is based on how many of the requirements the solution meets.
@@ -120,7 +120,7 @@ Based on this overview, I chose to go for one of the libraries that has support 
 
 In the end, after a lot of testing, I chose `face-api.js`. I always wanted to experiment more with TensorFlow.js, and, given that I use python during my day-job, JS would be a nice change of scenery. If you are more interested in a pure-python setup, make sure to check out [face_recognition](https://github.com/ageitgey/face_recognition). Note, that even though we will set everything up in JS, the actual processing is done in C++ using the Tensorflow bindings.
 
-# Hardware requirements
+## Hardware requirements
 
 At the minimum the face recognition system should have one camera and something that can run the algorithm. In my case I use the following:
 
@@ -131,7 +131,7 @@ Of course, any other combination can be used. Just make sure that the camera has
 
 <img class="lazyload" data-src="/assets/images/facerec/pi-camera-attached.jpg" alt="For this project I use a Raspbbery Pi in combination with a Pi Camera.">
 
-# Part 1: Building a face detection system
+## Part 1: Building a face detection system
 
 In this first part of the series, we set everything up for simple face detection. The overview of the application is shown in the figure below. A camera, in my case a <a href="https://amzn.to/36RtQ1X" rel="nofollow">Raspberry Pi Camera</a>, sends a request to the application when it detects motion. This is done using a simple HTTP GET request. You could also trigger this from Home Assistant using an automation triggered by a motion sensor, for example.
 
@@ -144,7 +144,7 @@ Upon receiving the webhook, the application retrieves a snapshot from the camera
 
 The full source code for part 1 can be found on the [ha-facerec-js GitHub repository](https://github.com/wouterbulten/ha-facerec-js/tree/v0.1.0) (v0.1.0).
 
-## Setting up the webhook
+### Setting up the webhook
 
 To listen for a request from the camera (the webhook), we set up a simple [express]() webserver. The server listens for requests on the `/motion-detected` endpoint.
 
@@ -172,7 +172,7 @@ To trigger this route, go to your MotionEyeOS admin panel and enable motion dete
 
 <img class="lazyload" data-src="/assets/images/facerec/webhook-camera.png" alt="Setup the webhook in your camera's control panel.">
 
-## Running face detection
+### Running face detection
 
 After motion has been detected, we can start looking for faces. To do this, we request the last frame of the camera. Using [node-canvas](https://github.com/Automattic/node-canvas) we can make use of the Canvas functionality within Node.js (normally only possible within a browser). Loading the image becomes as easy as calling the URL of the camera (here defined using the `CAMERA_URL` env variable):
 
@@ -229,7 +229,7 @@ fs.writeFileSync('public/last-detection.jpg', out.toBuffer('image/jpeg'));
 
 The exported image can later be retrieved using a new route in Express. You could, for example, show the last detected face in your Home Assistant dashboard using a camera setup.
 
-## Speeding up recognition
+### Speeding up recognition
 
 The MobileNetV1 network is quite slow when we run it in Javascript. Luckily, there is a special package that offers Node bindings for the Tensorflow C++ backend. Using this package drastically speeds up the detection. Using these bindings is as simple as loading them in the script:
 
@@ -245,7 +245,7 @@ if (process.env.TF_BINDINGS == 1) {
 
 Note: The bindings don't always work out of the box in my experience. If you encounter errors, first try to run everything without the bindings loaded.
 
-## Tying everything together
+### Tying everything together
 
 Combining all snippets from above results in a simple web server that can detect faces on command. I run this server inside a docker container as part of my [home automation docker setup]({% post_url tech/2019-10-17-home-automation-setup-docker-compose %}). You can find the [Dockerfile](https://github.com/wouterbulten/ha-facerec-js/blob/v0.1.0/Dockerfile) on the [GitHub repository](https://github.com/wouterbulten/ha-facerec-js/tree/v0.1.0). The full source code of the script is as follows:
 
