@@ -14,6 +14,8 @@ published: false
 
 In this second post of my series on **face recognition for presence detection in Home Asssistant** we are going to look at actually learning to detect faces. Make sure to check out the [first post]({% post_url tech/2020-05-29-presence-detection-face-recognition-part-1-detection %}) in this series to get the basics. In this post, we will build upon the code written in part 1.
 
+All code for this second part can be found in the [GitHub repository](https://github.com/wouterbulten/ha-facerec-js) under tag [v0.2.0](https://github.com/wouterbulten/ha-facerec-js/tree/v0.2.0).
+
 <img class="lazyload" data-src="/assets/images/facerec/detection-star-trek.jpg" alt="Can we build a face recognition system that is free and runs completely local?">
 
 ## Hardware requirements
