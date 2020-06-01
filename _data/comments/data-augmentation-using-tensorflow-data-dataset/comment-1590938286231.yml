@@ -1,0 +1,8 @@
+_id: ed610b60-a351-11ea-8570-f5f64a29236b
+replying_to: ''
+slug: data-augmentation-using-tensorflow-data-dataset
+name: Shaobo
+email: abf0f8a71ac29ff7c1c716af095415f9
+message: "Hi Wouter, thank you very much for sharing.\r\nI am a beginner working on a task of image localization. I am wondering how to update the bounding box (like (x1, x2, y1, y2)) in train_labels accordingly, while using functions like tf.image.random_crop, random_flip_left_right, or random_flip_up_down to the train_images.\r\nThanks."
+id: 1590938286
+date: '2020-05-31T15:18:06.221Z'
