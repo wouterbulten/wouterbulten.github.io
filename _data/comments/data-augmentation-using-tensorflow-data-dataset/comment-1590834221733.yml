@@ -1,0 +1,8 @@
+_id: a21e50b0-a25f-11ea-a717-67a70244096a
+replying_to: '1590786477'
+slug: data-augmentation-using-tensorflow-data-dataset
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: "Hi Kleyson,\r\n\r\nIt depends on your dataset. You will have to update the map call. If your dataset returns two variables you can do something like:\r\n\r\n```python\r\ntrainDS.map(lambda x, y: f(x,y), num_parallel_calls=4)\r\n```\r\nNow the function is applied on both the data and the label. If your augment function does not need the label, you can also do this:\r\n\r\n```python\r\ntrainDS.map(lambda x, y: (f(x), y), num_parallel_calls=4)\r\n```"
+id: 1590834221
+date: '2020-05-30T10:23:41.728Z'

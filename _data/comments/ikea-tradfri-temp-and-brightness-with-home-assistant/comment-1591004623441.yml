@@ -1,0 +1,11 @@
+_id: 61704b20-a3ec-11ea-989b-8b773dc47737
+replying_to: '1590921631'
+slug: ikea-tradfri-temp-and-brightness-with-home-assistant
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: >-
+  Hi Bram, I'm not sure why you have this problem. Does the script work for both
+  lights separately? You could try calling the script with a group instead of
+  separate entities. Regards, Wouter
+id: 1591004623
+date: '2020-06-01T09:43:43.440Z'
