@@ -28,6 +28,9 @@ Given the large size of this project, this will span multiple posts. This first 
   - [Running face detection](#face-detection)
   - [Speeding up recognition](#speed-up)
   - [Source code](#source-code)
+- [Part 2: Recognizing faces]({% post_url tech/2020-06-01-local-face-recognition-part-2-learning-faces %})
+
+*Note:* This is a series of posts on building a face recognition system. The post build upon each other so it's definately recommended to read them all! :)
 
 <img class="lazyload" data-src="/assets/images/facerec/detection-star-trek.jpg" alt="Can we build a face recognition system that is free and runs completely local?">
 
@@ -329,4 +332,6 @@ Of course, were are not there yet. Detection is nice, but for presence, we also 
 3. When the face detection is running, the server cannot process other requests. A queue system could help with that.
 4. There is no security: I wouldn't advise to run this on an unprotected network! We could add some basic authentication to protect the routes.
 
-All of this will be covered in future posts! For now, feel free to let me know what you thought in the [comments](#comment-form). You can find the latest code in the [Github repository](https://github.com/wouterbulten/ha-facerec-js), the code for this post is tagged [v0.1.0](https://github.com/wouterbulten/ha-facerec-js/tree/v0.1.0).
+All of this will be covered in the next posts. To continue you can read [part 2]({% post_url tech/2020-06-01-local-face-recognition-part-2-learning-faces %}). For now, feel free to let me know what you thought in the [comments](#comment-form). You can find the latest code in the [Github repository](https://github.com/wouterbulten/ha-facerec-js), the code for this post is tagged [v0.1.0](https://github.com/wouterbulten/ha-facerec-js/tree/v0.1.0).
+
+**[Continue to part 2 &rarr;]({% post_url tech/2020-06-01-local-face-recognition-part-2-learning-faces %})**
