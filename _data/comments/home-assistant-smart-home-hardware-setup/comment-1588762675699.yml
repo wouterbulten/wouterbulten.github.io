@@ -3,6 +3,6 @@ replying_to: '1588711083'
 slug: home-assistant-smart-home-hardware-setup
 name: Wouter Bulten
 email: 95be418a0d147888e2ba0f2ad7c1f4b2
-message: "Hi Jaap, unfortunate to hear that you can't get it connected. I have been using the Conbee (with Deconz) for more than two years now for my zigbee devices. While I tested zigbee2mqtt at the start of my HA-adventure, I quickly switched to the Conbee as the platform was a bit more stable at the time. I have no experience with connecting the Osram plug to a zigbee2mqtt system. So, I'm not sure that I can help you with that. I can only recommend you to read up on the page about the plug here :https://www.zigbee2mqtt.io/devices/AB3257001NJ.html but you have probably already done that.\r\n\r\nI'm sorry that I couldn't help you further today. Good luck!"
+message: "Hi Jaap, unfortunate to hear that you can't get it connected. I have been using the Conbee (with Deconz) for more than two years now for my zigbee devices. While I tested zigbee2mqtt at the start of my HA-adventure, I quickly switched to the Conbee as the platform was a bit more stable at the time. I have no experience with connecting the Osram plug to a zigbee2mqtt system. So, I'm not sure that I can help you with that. I can only recommend you to read up on the page about the plug [here](https://www.zigbee2mqtt.io/devices/AB3257001NJ.html), but you have probably already done that.\r\n\r\nI'm sorry that I couldn't help you further today. Good luck!"
 id: 1588762675
 date: '2020-05-06T10:57:55.695Z'
