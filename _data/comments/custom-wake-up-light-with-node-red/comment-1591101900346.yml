@@ -1,0 +1,8 @@
+_id: deeccaa0-a4ce-11ea-b4de-e3711b40414c
+replying_to: '1589900049'
+slug: custom-wake-up-light-with-node-red
+name: Martijn
+email: b133d7b7d438647ab4fe6678e8978e8e
+message: "Hi Wouter,\r\n\r\nThanks a lot! This is way more elegant than I had.\r\nI implemented this as well, and it works fine.\r\n\r\nHowever, I tried to implement the min and max (with [code][1, 2] | min[/code] as well, but this did not work. \r\n\r\nI replaced the input you had there with:\r\n[code]\r\nreturn {\r\n    payload: {\r\n        data: {\r\n            \"brightness\": [255, msg.data.attributes.brightness + 10] | min, // Compute it here\r\n            \"color_temp\": [100, msg.data.attributes.color_temp - 40] | max, // Compute it here\r\n        }\r\n    }\r\n};\r\n[/code]\r\n\r\nThis resulted in an error [code]\"ReferenceError: min is not defined (line 4, col 72)\"[/code], is there someway I can implement this?"
+id: 1591101900
+date: '2020-06-02T12:45:00.336Z'
