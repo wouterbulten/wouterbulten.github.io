@@ -1,0 +1,8 @@
+_id: 4439e860-a4d0-11ea-b4de-e3711b40414c
+replying_to: '1591101900'
+slug: custom-wake-up-light-with-node-red
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: "Hi Martijn, great that it worked! Note that everything in the function node has to be valid Javascript. You cannot use the template syntax in those nodes. If you want to take the minimum, use `Math.min()` like so:\r\n\r\n```js\r\n\"brightness\": Math.min(msg.data.attributes.brightness + 10, 255),\r\n```"
+id: 1591102499
+date: '2020-06-02T12:54:59.674Z'
