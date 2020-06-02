@@ -8,7 +8,7 @@
   <a href="#new-comment" onclick="return resetForm()" id="comment-new" style="display: none">Add a new comment</a>
 
   <div class="comment-confirmation" id="comment-submitted" style="display: none;">
-    <p>Thank you for your input! Your comment was submitted. Please wait for it to be reviewed. If you want, you can track your comment in my <a href="https://github.com/wouterbulten/wouterbulten.github.io/pulls">repository</a>.</p>
+    <p>Thank you for your input! Your comment was submitted. Please wait for it to be reviewed. If you want, you can track your comment in my <a href="https://github.com/wouterbulten/wouterbulten.github.io/pulls">GitHub repository</a>. I will not bother you with notifications of new comments (your email address is hashed). If you would like to be notified when your comment is live, feel free to add yourself to the pull request.</p>
   </div>
   <form class="comment-form" id="comment-form" method="POST" name="comment-form"  action="{{ site.comments.url }}">
     <input name="options[redirect]" type="hidden" value="{{ page.url | prepend: site.url }}#comment-submitted">
