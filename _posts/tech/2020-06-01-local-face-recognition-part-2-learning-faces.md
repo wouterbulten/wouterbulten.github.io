@@ -26,6 +26,8 @@ This is the second post of my series on **face recognition for presence detectio
   - [Training a FaceMatcher](#training)
   - [Recognizing faces](#inference)
   - [Starting the server](#server)
+  - [Adding training images](#training-images)
+  - [Wrap up & next steps](#wrapup)
 
 *Note:* This parts follows up on Part 1 so make sure to check that out first! All code for this second part can be found in the [GitHub repository](https://github.com/wouterbulten/ha-facerec-js) under tag [v0.2.0](https://github.com/wouterbulten/ha-facerec-js/tree/v0.2.0).
 
@@ -248,12 +250,87 @@ If you start the server and run it on the [example image](https://github.com/wou
 
 To run the algorithm on your own face, you only have to create a new directory in the `faces` directory and add images of your own face. After restarting the server, the algorithm will pick these images up and should be able to recognize you. The console will output how many persons can be recognized.
 
-Looking back at the TODO-list of [part 1]({% post_url tech/2020-05-29-presence-detection-face-recognition-part-1 %}), the first item has now been addressed. However, we now also need a way of adding new training images to recognize faces. Of course, we can do this manually by cropping images and storing the faces, but we should be able to do that more efficiently. The new todo list is as follows:
+<a name="training-images"></a>
+## Adding training images on the fly
+
+Adding training images manually is quite cumbersome. Luckily, we can also add these semi-automatically! To do this we have to use two functions from the `face-api.js` library: 1) `detectAllFaces` to detect faces in a new image; and 2) `extractFaces` to get the face from the image. Combined, these functions first find all faces in an image and then for each face extract a training image in the correct size.
+
+```js
+const results = await faceapi.detectAllFaces(img);
+const faces = await faceapi.extractFaces(img, results);
+```
+
+The `faces` variable will contain small images of each face in the image. I made this functionality available through a new route `/add-face/:name`. Apart from the two functions above, this route adds some additional checks to see if a training image can be extracted. For example, if more than one face is detected we are not sure which face to extract so we should trigger an error. The same holds if no face was detected.
+
+```js
+// Add a new training sample
+app.get("/add-face/:name", async (req, res) => {
+    // Load an image
+    const img = await canvas.loadImage(process.env.CAMERA_URL);
+    const name = req.params.name;
+
+    // Check if the identifier of this person is a valid directory name (letters and numbers)
+    if(!name.match(/^[0-9a-zA-Z]+$/)) {
+        res.status(400)
+            .send("Invalid name provided for training sample.")
+            .end();
+        return;
+    }
+
+    console.info(`Trying to detect new training sample for '${name}'.`)
+    const results = await faceapi.detectAllFaces(img);
+
+    // This route only works when there is one person in the image
+    if(results.length > 1) {
+        res.status(422)
+            .send("Multiple faces detected in the image, cannot save training data.")
+            .end();
+        return;
+    }
+    
+    if(results.length == 0) {
+        res.status(422)
+            .send("No faces detected in the image, cannot save training data.")
+            .end();
+        return;
+    }
+
+    const faces = await faceapi.extractFaces(img, results);
+
+    // Check if this a new person
+    // trainingDir should map to your training folder
+    const outputDir = path.join(trainingDir, name);
+    if(!fs.existsSync(outputDir)) {
+        console.info(`Creating training dir for new person '${name}'.`);
+        fs.mkdirSync(outputDir);
+    }
+
+    // Write detections to training folder
+    fs.writeFileSync(path.join(outputDir, `${Date.now()}.jpg`), faces[0].toBuffer('image/jpeg'));
+    console.info('New training sample saved.');    
+    res.status(200).send('OK');
+});
+``` 
+
+By calling this route you can add a new training image for a person. To illustrate this I applied the route to the following image of Spock:
+
+<img class="lazyload" data-src="/assets/images/facerec/Spock.jpg" alt="Input image to extract a training image from">
+
+Now if you go to `/add-face/spock`, a new directory should be created with an extracted image of the face of Spock:
+
+<img class="lazyload" data-src="/assets/images/facerec/spock_extracted.jpg" alt="Extracted face of Spock">
+
+After a server restart, the new training images are loaded and will be included in the `FaceMatcher`. To add yourself, go stand in front of your camera and call `/add-face/your-name` a few times in different positions. With a few training images the system should already be able to recognize you from now on! 
+
+<a name="wrapup"></a>
+## Wrap up & next steps
+
+Looking back at the TODO-list of [part 1]({% post_url tech/2020-05-29-presence-detection-face-recognition-part-1 %}), the first item has now been addressed. We have also built a more efficient way of adding new training samples. The remainder of the items are more focussed on stability and further extending the usability of the system. The core functionality is present. In the future I will work on the Home Assistant integration and adding those extensions.
 
 1. <del>The current setup only **detects** faces, we still need to perform the **recognition**.</del>
-2. The server only accepts a single camera; it would be nice to support multiple cameras. Of course, you can run an instance for each camera, but maybe it's nice to combine them.
-3. When the face detection is running, the server cannot process other requests. A queue system could help with that.
-4. There is no security: I wouldn't advise running this on an unprotected network! We could add some basic authentication to protect the routes.
-5. **NEW:** We need a way of easily adding new training images, for example, when a user is not recognized.
+2. <del> We need a way of easily adding new training images, for example, when a user is not recognized.</del>
+3. The server only accepts a single camera; it would be nice to support multiple cameras. Of course, you can run an instance for each camera, but maybe it's nice to combine them.
+4. When the face detection is running, the server cannot process other requests. A queue system could help with that.
+5. There is no security: I wouldn't advise running this on an unprotected network! We could add some basic authentication to protect the routes.
 
-In part 3 of this series, we will go deeper into generating training images. For now, feel free to let me know what you thought in the [comments](#comment-form). You can find the latest code in the [Github repository](https://github.com/wouterbulten/ha-facerec-js); the code for this post is tagged [v0.2.0](https://github.com/wouterbulten/ha-facerec-js/tree/v0.2.0).
+For now, feel free to let me know what you thought in the [comments](#comment-form). I am happy to hear any questions or remarks! You can find the latest code in the [Github repository](https://github.com/wouterbulten/ha-facerec-js); the code for this post is tagged [v0.2.0](https://github.com/wouterbulten/ha-facerec-js/tree/v0.2.0).
