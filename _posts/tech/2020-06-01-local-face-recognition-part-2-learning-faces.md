@@ -29,7 +29,7 @@ This is the second post of my series on **face recognition for presence detectio
   - [Adding training images](#training-images)
   - [Wrap up & next steps](#wrapup)
 
-*Note:* This parts follows up on Part 1 so make sure to check that out first! All code for this second part can be found in the [GitHub repository](https://github.com/wouterbulten/ha-facerec-js) under tag [v0.2.0](https://github.com/wouterbulten/ha-facerec-js/tree/v0.2.0).
+*Note:* This parts follows up on Part 1 so make sure to check that out first! All code for this second part can be found in the [GitHub repository](https://github.com/wouterbulten/ha-facerec-js) under tag [v0.2.1](https://github.com/wouterbulten/ha-facerec-js/tree/v0.2.1).
 
 <a name="hardware"></a>
 ## Hardware requirements
@@ -333,4 +333,4 @@ Looking back at the TODO-list of [part 1]({% post_url tech/2020-05-29-presence-d
 4. When the face detection is running, the server cannot process other requests. A queue system could help with that.
 5. There is no security: I wouldn't advise running this on an unprotected network! We could add some basic authentication to protect the routes.
 
-For now, feel free to let me know what you thought in the [comments](#comment-form). I am happy to hear any questions or remarks! You can find the latest code in the [Github repository](https://github.com/wouterbulten/ha-facerec-js); the code for this post is tagged [v0.2.0](https://github.com/wouterbulten/ha-facerec-js/tree/v0.2.0).
+For now, feel free to let me know what you thought in the [comments](#comment-form). I am happy to hear any questions or remarks! You can find the latest code in the [Github repository](https://github.com/wouterbulten/ha-facerec-js); the code for this post is tagged [v0.2.1](https://github.com/wouterbulten/ha-facerec-js/tree/v0.2.1).
