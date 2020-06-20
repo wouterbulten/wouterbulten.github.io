@@ -1,0 +1,14 @@
+_id: 494790e0-b2f5-11ea-be49-5559634babdb
+replying_to: '4792057793'
+slug: data-augmentation-using-tensorflow-data-dataset
+name: Anirudh
+email: 6a89914704d61285ac0e5e593170b7e5
+message: >-
+  Hey Mr.Bulten, I had the same question about the image augmentation in the
+  post not increasing the size of the dataset. But, can we create multiple
+  dataset objects for each augmentation type by calling the map function for
+  that particular augmentation type. And then merge all the created augmented
+  datasets along with the original one by concatenation. Is that a possible way
+  to expand the dataset using augmentation?
+id: 1592657715
+date: '2020-06-20T12:55:15.843Z'
