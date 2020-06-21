@@ -1,0 +1,8 @@
+_id: 5c586430-b3e9-11ea-9c81-c7e46c234b9e
+replying_to: '1592657715'
+slug: data-augmentation-using-tensorflow-data-dataset
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: "Hi Anirudh, I'm not 100% sure if I understand what you mean. Do you want to generate multiple versions of the same image using data augmentation? If that's the case you can just call them in the map function, or indeed as you say, merge them. Something like:\r\n\r\n```python\r\nds.map(lambda x: (x, aug_1(x), aug_2(x), aug_3(x))\r\n```\r\n\r\nNote that there is no need to 'expand' the dataset for most scenarios. Everytime you request a batch, a new batch is generated using the augmentations."
+id: 1592762545
+date: '2020-06-21T18:02:25.003Z'
