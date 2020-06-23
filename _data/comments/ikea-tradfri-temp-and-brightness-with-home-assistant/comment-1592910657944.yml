@@ -1,0 +1,8 @@
+_id: 36790030-b542-11ea-895f-fbca3e8dab9a
+replying_to: '1592883829'
+slug: ikea-tradfri-temp-and-brightness-with-home-assistant
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: "Hi Mitswan,\r\n\r\nThanks for the elaborate comment! Interesting approach :) If I understand your code, you request the scene to get the lights and then update the scene for the individual lights? Do you need to do the PUT request for every light? Couldn't you update the scene itself?\r\n\r\nRegards, Wouter"
+id: 1592910657
+date: '2020-06-23T11:10:57.939Z'
