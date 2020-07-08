@@ -1,0 +1,8 @@
+_id: 434472a0-c15d-11ea-87a8-4f9dba6bda9c
+replying_to: '1594212419'
+slug: talking-to-my-house-telegram-homeassistant-bot
+name: Peter
+email: 900066d1eb019076d8bbcef347214fc7
+message: "I am able to send a message to my phone using Telegram and Notify in Home Assistant. Use the bot to notify me when sensor readings go outside of my set values :) \r\n\r\nI noticed that Appdaemon had my bot listed as \"terminated\" while helloworld was \"idle\", don't know if that is normal using appdaemon?"
+id: 1594241689
+date: '2020-07-08T20:54:49.588Z'
