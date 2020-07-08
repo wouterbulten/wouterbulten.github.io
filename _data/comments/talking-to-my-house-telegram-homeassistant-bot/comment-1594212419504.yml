@@ -1,0 +1,14 @@
+_id: 1cd2c660-c119-11ea-a96c-5fa76a58e25e
+replying_to: '1594159484'
+slug: talking-to-my-house-telegram-homeassistant-bot
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: >-
+  Hi Peter, no the `user_id` in the code examples are variables and you don't
+  have to change it. You have to setup the Telegram integration properly before
+  you can use it. Your chat id should be set in `allowed_chat_ids`. Were you
+  able to send a message to your phone? You can also check the docs at the HA
+  website for more info on configuring the integration:
+  https://www.home-assistant.io/integrations/telegram/
+id: 1594212419
+date: '2020-07-08T12:46:59.497Z'
