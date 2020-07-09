@@ -1,0 +1,11 @@
+_id: c8d207e0-c1c4-11ea-bb35-4bb1fd1a46f3
+replying_to: '1594241689'
+slug: talking-to-my-house-telegram-homeassistant-bot
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: >-
+  Hi, I think the app crashed. Could you share the log? Then I can take a look
+  at what happened. Maybe something changed in the recent appdaemon release and
+  the code should be updated.
+id: 1594286151
+date: '2020-07-09T09:15:51.924Z'
