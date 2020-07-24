@@ -1,0 +1,8 @@
+_id: 5bb497b0-cd93-11ea-a981-ff734705c524
+replying_to: ''
+slug: human-slam-indoor-localization-using-particle-filters
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: "Hi Boris, if you only want to detect whether the device is in the room, you could maybe just do some simple RSSI measurements and do triangulation. Or you could take a look at fingerprinting techniques if you want to detect multiple rooms. The technique in this post focuses mainly on a scenario where you don't know where the beacons are *and* you also don't know where the user is. If you already know one of the two, there are easier methods. You can take a look at my post on Kalman filters to see how I used it for distance estimation: https://www.wouterbulten.nl/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals/\r\n\r\nGood luck!"
+id: 1595584337
+date: '2020-07-24T09:52:17.602Z'
