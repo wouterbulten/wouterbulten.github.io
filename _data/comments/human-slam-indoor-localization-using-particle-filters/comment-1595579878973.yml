@@ -1,0 +1,8 @@
+_id: fa2d2390-cd88-11ea-a232-0350f56083b0
+replying_to: ''
+slug: human-slam-indoor-localization-using-particle-filters
+name: boris Becker
+email: 0a98f895bade3702aa16a90be9bd41b7
+message: "hi,\r\n  I try to do an Indoor positioning. I have 5 to 6 beacons in fixed position and a Raspberry Pi which listens to the signals from the beacons and calculate its positions. Here my raspberry does not move too much the system is mainly thought to locate the element in the room not for navigation. Please Wouter Bulten  can you orient with one of the Filters like EKF or Partikel Filter for positioning ??"
+id: 1595579878
+date: '2020-07-24T08:37:58.969Z'
