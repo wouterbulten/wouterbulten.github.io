@@ -1,0 +1,17 @@
+_id: 2ab1fbb0-cd95-11ea-a981-ff734705c524
+replying_to: '1595584337'
+slug: human-slam-indoor-localization-using-particle-filters
+name: boris Becker
+email: 0a98f895bade3702aa16a90be9bd41b7
+message: >-
+  thank you, I have placed Beacons in fixed positions and I have noted the
+  position in a reference frame so x value and y-value coe coordinates and I
+  would like for example find the three raspberries in the room. raspberries are
+  mobile and whenever I want to find them in the room I should just run the
+  program. just a positioning in the room, and I think the rssi would be of poor
+  quality for triangulation. (and I would like to locate several items, but not
+  with the fingerprint, it requires too many resources.). Wouldn't the partial
+  filter have a good precision here in this case? or do I filter the noise with
+  the KF and apply the triangulation?
+id: 1595585114
+date: '2020-07-24T10:05:14.214Z'
