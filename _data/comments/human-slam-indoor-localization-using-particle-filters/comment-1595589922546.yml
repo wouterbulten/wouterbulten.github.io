@@ -1,0 +1,15 @@
+_id: 5c98a330-cda0-11ea-9fa1-9db37263474f
+replying_to: '1595585114'
+slug: human-slam-indoor-localization-using-particle-filters
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: >-
+  Just to make clear: the particle filter I use in the system of this blog post
+  also uses RSSI as an input. RSSI is really noisy but with enough filtering
+  it's usually doable. I would start with a simple approach and use a Kalman
+  Filter and see how far you come. If that's not enough you can look at the more
+  elaborate systems. It has been some time I have worked on this, but you can
+  find the update rule I used for the beacons in the [Github
+  repo](https://github.com/wouterbulten/slacjs/blob/master/src/app/models/particle.js#L84).
+id: 1595589922
+date: '2020-07-24T11:25:22.542Z'
