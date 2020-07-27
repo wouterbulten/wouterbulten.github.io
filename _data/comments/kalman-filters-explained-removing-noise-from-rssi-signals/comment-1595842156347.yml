@@ -1,0 +1,8 @@
+_id: a3c93c40-cfeb-11ea-a750-39e5b205c63d
+replying_to: '1595841610'
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: "Hi Boris,\r\n\r\nThe [python version](https://github.com/wouterbulten/kalmanjs/blob/master/contrib/python/kalman.py) is not made by me. Still, the workings are the same as the js version.\r\n\r\nThe two values represent the process noise (R) and measurement noise (Q). You can see some more examples in my post on the [js library](https://www.wouterbulten.nl/blog/tech/lightweight-javascript-library-for-noise-filtering/)."
+id: 1595842156
+date: '2020-07-27T09:29:16.346Z'
