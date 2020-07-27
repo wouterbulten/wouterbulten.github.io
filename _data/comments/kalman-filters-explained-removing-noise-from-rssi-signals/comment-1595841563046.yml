@@ -1,0 +1,12 @@
+_id: 422acea0-cfea-11ea-a750-39e5b205c63d
+replying_to: ''
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+name: boris Becker
+email: 0a98f895bade3702aa16a90be9bd41b7
+message: >-
+  I don't know if you saw and understood the python version of your function,
+  but I would like to know?  what input does your function take and the data
+  structur too? and the meaning of these two values KalmanFilter (0.008, 0.1)
+  thanks
+id: 1595841563
+date: '2020-07-27T09:19:23.046Z'
