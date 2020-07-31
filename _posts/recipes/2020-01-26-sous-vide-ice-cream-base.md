@@ -2,6 +2,7 @@
 layout: post
 title:  'Sous vide ice cream base: a foolproof method'
 date:   2020-01-26
+modified_at: 2020-07-31
 categories: blog food
 tags: [recipe, dessert, ice cream, sous vide]
 description: 'The ice cream base is the most important part of ice making, but can be difficult to get right. Heating the base sous vide helps to reduce errors.'
@@ -38,7 +39,7 @@ These ingredients result in around 800ml of ice cream and is roughly the quantit
 
 - 480 grams double cream (36% fat)
 - 57 grams whole milk (3.6% fat)
-- 130 grams skim milk powder
+- 65 grams skim milk powder
 - 128 grams sugar
 - 67 grams egg yolks
 - 1 vanilla pod
