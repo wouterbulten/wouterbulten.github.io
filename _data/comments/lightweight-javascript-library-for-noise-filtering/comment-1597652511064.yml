@@ -1,0 +1,8 @@
+_id: b3387560-e062-11ea-8429-85ddd9a1f375
+replying_to: '1597592676'
+slug: lightweight-javascript-library-for-noise-filtering
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: "Hi Anil,\r\n\r\nThank you for your interest! There are quite some examples on my blog and the Github repo on how to use the Kalman.js library. I would suggest to start there. Feel free to add a comment here if you have any specific questions regarding the examples.\r\n\r\nYou can see B and u as the step size and number of steps. Imagine a person that has a average step size of 1m (this is B). If somebody sets a step (u=1) you expect that that person is 1m further away. If you know somebody did two steps (between the measurements), you can set u to 2 for example. If someone didn't move between measurements, you set it to 0. If you know the effect is the reverse, you can use a negative u. B does not change, because your estimate of someones step size is constant (unless their legs grew in the meantime ;) ).\r\n\r\nNote that in my experiments I did not model movement using the Kalman filter but did this in a later stage (i.e. u=0). I took enough RSSI measurements every second that the Kalman filter was able to smooth the data and keep up with movement to a fair extent."
+id: 1597652511
+date: '2020-08-17T08:21:51.059Z'
