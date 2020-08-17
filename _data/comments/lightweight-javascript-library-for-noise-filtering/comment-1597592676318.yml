@@ -1,0 +1,8 @@
+_id: 62ee79a0-dfd7-11ea-b316-0f1f254c3caa
+replying_to: ''
+slug: lightweight-javascript-library-for-noise-filtering
+name: Anil
+email: 559c58831e3ce29399f1ac9e8601d3fe
+message: "Hello Wouter,\r\nThank you very much for your great work. Have gone through many article on Kalman filter, but your blogs very easy to understand and get start with.\r\nI am trying to port your kalman filter code to my BLE based distance measurement using RSSI. I am new js scripts, but it looks like kalman.js is straight forward to port.\r\nLater I wish to port slacjs code for step detection using accelerometer, distance estimation using kalman filter and localisation using particle js,\r\n1. But not sure where to start with, please give me pointers to start with this code.\r\n2. Also related to kalman filter parameters B and u, please clarify how can I use, suppose if I know person moving 50cm, you mentioned in one of the comments use B=0.5 and u=1, please let know the relation between B and u and how do I vary based on the movement.\r\n3. Also if user moving away, do I need to use negative values for B and u ?\r\n\r\nThanks\r\n-Anil"
+id: 1597592676
+date: '2020-08-16T15:44:36.313Z'
