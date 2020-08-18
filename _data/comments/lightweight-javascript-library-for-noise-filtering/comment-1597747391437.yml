@@ -1,0 +1,8 @@
+_id: 9c505100-e13f-11ea-9f53-01c797a1c30a
+replying_to: '1597678554'
+slug: lightweight-javascript-library-for-noise-filtering
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: "It depends on how you model the system. But yes, if you think that the predicted value is lower because someone is moving away, you can use a negative u.\r\n\r\nYou can think of modelling a helicopter's height above the ground. If the helicopter is climbing, u is positive. If it's descending, u is negative."
+id: 1597747391
+date: '2020-08-18T10:43:11.433Z'
