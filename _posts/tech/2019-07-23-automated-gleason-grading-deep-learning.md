@@ -2,7 +2,7 @@
 layout: post
 title:  "Pathologist-level Gleason grading using artificial intelligence (AI) & deep learning"
 date:   2019-07-22 12:17
-modified_at: 2020-01-08 23:30
+modified_at: 2020-09-23 17:30
 categories: blog tech
 tags: [research, phd, deep learning, prostate cancer, Gleason grading]
 published: true
@@ -44,7 +44,7 @@ openseadragon: true
 
 Prostate cancer is one of the most common forms of cancer, with more than 1.2 million new cases each year. The diagnosis of prostate cancer is complicated by multiple factors. Patients with low-grade prostate cancer are often better off with a wait-and-see approach than with active treatment due to the side effects of, for example, surgery. High-grade cancers, however, need to be diagnosed as soon as possible not to delay treatment and to increase patient survival. Unfortunately, diagnosis and grading of prostate cancer is a difficult task which suffers from inter- and Intra-observer variability. While export uropathologists have shown better concordance rates, such expertise is not available for every patient. In other words, there is a need for robust and reproducible grading at expert levels. **We have developed an artificially intelligent system, using deep learning, that can perform the grading of prostate cancer at a pathologist-level performance.**
 
-In this blog post, we describe our approach, show how we tackled the problem of data labeling and, finally, show that our deep learning system operates at a pathologist-level performance. The article is now published at Lancet Oncology](https://doi.org/10.1016/S1470-2045(19)30739-9).
+In this blog post, we describe our approach, show how we tackled the problem of data labeling and, finally, show that our deep learning system operates at a pathologist-level performance. The article is now published at [Lancet Oncology](https://doi.org/10.1016/S1470-2045(19)30739-9).
 
 <style type="text/css">
 @media(min-width: 768px) {
@@ -175,7 +175,9 @@ There are still challenges to overcome before a system such as ours can be used 
   <figcaption>Example of a failure case: In some cases the deep learning system has trouble deciding between growth patterns. In this example a glandular region is partly classified as Gleason 4 (orange) and partly as Gleason 5. Adding more training data and focusing on these difficult regions are an avenue for future research.</figcaption>
 </figure>
 
-Given our results, we conclude that there is clear use for automated systems for Gleason grading. Such systems can give feedback to a pathologist at expert levels, both in a first or second reader setting. **AI systems and pathologists excel at different things, and, we firmly believe that a union of both has the most potential for the individual prostate cancer patient.**
+Given our results, we conclude that there is clear use for automated systems for Gleason grading. Such systems can give feedback to a pathologist at expert levels, both in a first or second reader setting. **AI systems and pathologists excel at different things, and, we firmly believe that a union of both has the most potential for the individual prostate cancer patient.** 
+
+Interested in how this AI system can help pathologists? We have published [follow-up research](/blog/tech/potential-of-ai-in-medicine-improving-prostate-cancer-diagnosis/) on how our [AI system can assist pathologist during grading of prostate biopsies](/blog/tech/potential-of-ai-in-medicine-improving-prostate-cancer-diagnosis/).
 
 <a name="try-out-algorithm"></a>
 ## Try out the algorithm online
