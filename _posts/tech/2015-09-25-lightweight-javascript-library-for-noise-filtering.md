@@ -2,7 +2,7 @@
 layout: post
 title:  "Lightweight Javascript library for Noise filtering using Kalman filters"
 date:   2015-09-25 16:08
-modified_at: 2019-01-20 16:02
+modified_at: 2020-10-11 14:02
 categories: blog tech
 tags: [javascript, kalman filter, noise, kalmanjs, library]
 chartjs: true
@@ -175,6 +175,10 @@ This adjustment results in a far better fit. Using our prior estimate of the gro
 > **Figure 5:** Result of the new Kalman filter (with growth model) on the exponential data. The filter performs far better than the previous filter which did not have any model for the growth of the data.
 
 -----
+
+# Interactive example
+
+Want to experiment with the variables and various settings yourself? [@benwinding](https://github.com/benwinding) made a nice [interactive demo](https://benwinding.github.io/kalmanjs-examples/examples/demo2-vue.html) of the Kalman JS library. In the demo you can see how the settings interact and how this effects the filtered output.
 
 # Wrapping up
 
