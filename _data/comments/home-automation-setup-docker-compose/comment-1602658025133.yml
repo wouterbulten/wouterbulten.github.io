@@ -1,0 +1,8 @@
+_id: 120dd6d0-0de9-11eb-a304-2bdfa873583a
+replying_to: ''
+slug: home-automation-setup-docker-compose
+name: Pablo
+email: c517ce730309a6472d6c363f4e76acbf
+message: "Hi Wouter,\r\n\r\nThank you so much for this amazing guide! I've been hesitant to start with home automation, I was looking for an option to allow me full control over my setup, unlike ecosystems such as SmartThings, or isolated/independent third party apps. Since a long time ago, I've known that Home Assistant was the answer, but the amount of configuration required is overwhelming. I finally decided upon it, I heard some complains about performance, hence went directly for an Intel Nuc and a Conbee II. Next thing I was recommended was to prefer a docker setup over hass.io, given that would give me the chance to install Ubuntu in the Nuc at use it at its full potential, which I configured to some extent by following other guides that did not cover as much ground as yours. In all honesty, at this point, I realized that I have to get familiar with docker in order to be more proactive with the adoption of new 'add ons'. And that was precisely another surprise for me, I didn't realize these add-ons from hass.io were not going to be available with a docker installation. The more you know. I'm glad that I found your guide, one thing that I'm looking forward to and missing from the guide is connecting home assistant to the mobile companion app. How difficult do you think it might be to extend your setup with this new feature? Is it doable?"
+id: 1602658025
+date: '2020-10-14T06:47:05.127Z'
