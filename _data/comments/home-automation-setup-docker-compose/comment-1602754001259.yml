@@ -1,0 +1,8 @@
+_id: 88493800-0ec8-11eb-8aec-87c186fcb5b7
+replying_to: '1602658025'
+slug: home-automation-setup-docker-compose
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: "Hi Pablo!\r\n\r\nThanks for the compliments! Good to hear that it was helpful to you.\r\n\r\nThe hass.io/HA approach indeed has the benefit of the easy install of many add-ons. As far as I know, it's also using docker in the backend but with a nice interface on top. I wanted more control over the services, so I went the custom route through my own docker setup (described in this post). This approach brings more control over the services and everything is a bit less tied into HA itself. Also, it allows for the installation of a lot more services outside of the HA add-on list. The downside is that it takes a bit more work/expertise when installing and maintaining. It depends on the use case and personal preferences which approach would be best suited. \r\n\r\nRegarding your question: You would like to connect your HA instance to the Android/iOS companion app? You don't need to do anything specific for that. Both the Hassio/HA and HA Core approach will work. I also use the apps; it was a matter of installing them, and then then they auto-detected my HA instance. Do you have any problems with the companion apps and your setup?"
+id: 1602754001
+date: '2020-10-15T09:26:41.255Z'
