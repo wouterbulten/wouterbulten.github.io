@@ -1,0 +1,8 @@
+_id: e2252170-0fba-11eb-a68a-93b35d822c35
+replying_to: '1602801813'
+slug: home-automation-setup-docker-compose
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: "Hi Pablo,\r\n\r\nUnfortunately, I don't have experience with opening up HA to the outside world. I use [Home Assistant Cloud](https://www.nabucasa.com/) instead. With that you don't need to have a fixed ip or domain name. If you want an easy solution that works, I can definitely recommend it!"
+id: 1602858090
+date: '2020-10-16T14:21:30.124Z'
