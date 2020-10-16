@@ -1,0 +1,8 @@
+_id: daceb590-0f37-11eb-ba3e-8ba158518041
+replying_to: '1602754001'
+slug: home-automation-setup-docker-compose
+name: Pablo
+email: c517ce730309a6472d6c363f4e76acbf
+message: "Hi Woulter, \r\n\r\nThanks for the prompt reply. In my initial setup, it didn't automatically detect any instance as advertise, I chose the option to enter the URL to the instance manually and understood that I have to use DuckDNS in combination with other service for SSL in order to be able to access it remotely (As I don't have a fix IP address or own a domain name). At this point, I'm implementing my instance using your guide. I'll let you know how that goes. :) I wonder if you're familiar with remote access in the companion app, and can provide some guidance."
+id: 1602801813
+date: '2020-10-15T22:43:33.711Z'
