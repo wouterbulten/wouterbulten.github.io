@@ -1,0 +1,8 @@
+_id: 12c596f0-117f-11eb-95b0-3bdc62ded6a2
+replying_to: ''
+slug: custom-wake-up-light-with-home-assistant
+name: Hille
+email: 4e3949cf0a02c8528e7447525e2dfadd
+message: "Hi Wouter,\r\n\r\nThanks for this clear post. Although I am new to Home Assistant, it was easy to install with this elaborate description. \r\n\r\nOnly I have 1 question, on which I couldn't find the answer somewhere else on the internet: could it be possible to set the time in Lovelace as the alarm time, such that the brightness of the lights is at its maximum at that time? \r\n\r\nI assume that, if it is possible, this should be done in the trigger value_template. Such that it should start x seconds before the set alarm.\r\n\r\nThe reason I ask is, since I own a Philips Wake-up light (which will be unnecessary in the future ;) ) , and when you set the alarm on that, the wake-up light starts 30 min before the alarm increasing its brightness from 0 to 100% . Most of the time I am awake just before the alarm goes off. But then the alarm is a back-up."
+id: 1603052304
+date: '2020-10-18T20:18:24.212Z'
