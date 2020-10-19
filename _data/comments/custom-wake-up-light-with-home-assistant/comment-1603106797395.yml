@@ -1,0 +1,8 @@
+_id: f32e2da0-11fd-11eb-a7ca-430b5178620e
+replying_to: '1603052304'
+slug: custom-wake-up-light-with-home-assistant
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: "Hi Hille,\r\n\r\nThanks! You mean that instead of entering the \"start time\" you would like to define the \"end time\"? That should be possible. You probably need to update the trigger for that. You could take a look at `timedelta` in the HA docs:\r\n\r\nhttps://www.home-assistant.io/docs/configuration/templating/#time\r\n\r\nMaybe you could calculate the time diff between your alarm and the current time, and then trigger if it's a 30 minutes before that. There are also some examples on the HA forum that you could check out, for example:\r\n\r\nhttps://community.home-assistant.io/t/trigger-automation-15-minutes-before-date-time-stored-in-input-datetime/145279\r\n\r\nQuite some things have changed in the last version of HA regarding automations in YAML so there is probably an elegant way to do this. Let me know if this helps you further!"
+id: 1603106797
+date: '2020-10-19T11:26:37.385Z'
