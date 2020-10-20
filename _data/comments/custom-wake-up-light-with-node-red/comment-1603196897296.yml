@@ -1,0 +1,11 @@
+_id: baf3c440-12cf-11eb-b1e6-b1532ede73fa
+replying_to: ''
+slug: custom-wake-up-light-with-node-red
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: >-
+  Hi Ton, you will need the
+  [schedex](https://www.npmjs.com/package/node-red-contrib-schedex) package
+  installed.
+id: 1603196897
+date: '2020-10-20T12:28:17.291Z'
