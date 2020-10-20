@@ -1,0 +1,8 @@
+_id: b010a330-12d0-11eb-b1e6-b1532ede73fa
+replying_to: '1603139576'
+slug: lightweight-javascript-library-for-noise-filtering
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: "Hi Ahmed, \r\n\r\nAre these measurements from the same beacon but at different time points? The idea is that you pass every value you receive to the filter as they come in, and then use the output as the current best estimate. The filter already does the \"averaging\" for you. The output of the filter is the best estimate of the real value at that point in time. Of course, at the start you will need to feed multiple values to get a better estimate (as they system does not have any history and the first measurement can be an outlier).\r\n\r\nAnd yes, you can use the filter for any data that you need to smooth.\r\n\r\nRegards, Wouter"
+id: 1603197308
+date: '2020-10-20T12:35:08.418Z'
