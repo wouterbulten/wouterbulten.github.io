@@ -1,0 +1,8 @@
+_id: 455bb510-124a-11eb-8a51-25f134cb9201
+replying_to: ''
+slug: lightweight-javascript-library-for-noise-filtering
+name: ahmed
+email: 48b1c7d0bb07a67e0477ed44a8e565c3
+message: "Hey Wouter!\r\nthank you for your work.\r\nI am using your kalman filter for RSSI data from bluetooth beacons for estimating the distance between a mobile phone and a beacon.\r\n\r\n1- For example, I've collecting 5 values rssi  from the beacon in the same position[-41,-42,-49,-52,-37], and I used the python implementation from your library on the previous values , the result of filter is [-41,-41.5, -44.3, -46.7,-43.9 ] which value among the 5 result values I use to calculate the ditance? Can I use the means?\r\n\r\n2- Can i also use the kalman filter with rssi data  from wifi?\r\nThank you in advance."
+id: 1603139576
+date: '2020-10-19T20:32:56.904Z'
