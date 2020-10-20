@@ -1,0 +1,8 @@
+_id: 9043bdb0-131d-11eb-8167-578daec4828f
+replying_to: ''
+slug: lightweight-javascript-library-for-noise-filtering
+name: ahmed
+email: e75dea8279c8acc9b3834b48f2f7d999
+message: "Thank you very much on your quick response.\r\n\r\nYes the measurements from the same beacon. My goal is to convert the rssi value to a distance (m) ,as I explained previously I collected 5 rssi values in the same position from the same beacon and I applied the filter to it.\r\n- input to filter=[-41,-42,-49,-52,-37] from the same beacon and  position . \r\n- output=[-41,-41.5, -44.3, -46.7,-43.9 ]\r\nthe formula used for the rssi to distance conversion:\r\n                                          distance=10^(( C0 - Rssi )/(10*N))\r\nN , C0 :two constant.\r\nMy problem is: which value among the 5 values results of filter I use to calculate the distance?\r\nCan I use the means  of (-41,-41.5, -44.3, -46.7,-43.9)?\r\n\r\nIn reality I have collected for each position 100 values from each beacon and to better explain my problem I have done an example of 5 values.\r\n\r\nThank you very much."
+id: 1603230326
+date: '2020-10-20T21:45:26.669Z'
