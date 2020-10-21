@@ -1,0 +1,8 @@
+_id: 631e75c0-1389-11eb-8de2-7b124974c918
+replying_to: '1603230326'
+slug: lightweight-javascript-library-for-noise-filtering
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: "Hi Ahmed,\r\n\r\nWhat you are trying to do is exactly what I was also doing in my [HumanSLAM](https://www.wouterbulten.nl/blog/tech/human-slam-indoor-localization-using-particle-filters/) project.\r\n\r\nI assume you want to have a continuous estimate of the distance, right? The idea is that you create a KalmanFilter per device, and pass the values to the filter when they come in. At the point that you need the estimate you take the latest value. \r\n\r\nIn your case, the last value is the filter's best estimate of the RSSI value (based on the parameters you have set).\r\n\r\nRegards, Wouter"
+id: 1603276636
+date: '2020-10-21T10:37:16.224Z'
