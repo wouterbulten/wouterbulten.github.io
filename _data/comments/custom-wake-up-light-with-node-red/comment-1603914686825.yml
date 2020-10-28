@@ -1,0 +1,12 @@
+_id: f6db2150-1956-11eb-850f-e34ff53d15fa
+replying_to: ''
+slug: custom-wake-up-light-with-node-red
+name: Benji Voesenek
+email: ce5eb1ac72e064b3fe53534940852f42
+message: >-
+  I've made a modification using the dynamic dimmer node instead of the call
+  service, loop and get template node. This option works easier for me. Here is
+  a link to the node I used:
+  https://flows.nodered.org/node/node-red-contrib-dynamic-dimmer
+id: 1603914686
+date: '2020-10-28T19:51:26.818Z'
