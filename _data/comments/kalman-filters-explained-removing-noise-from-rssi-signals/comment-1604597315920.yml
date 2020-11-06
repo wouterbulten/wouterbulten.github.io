@@ -1,0 +1,8 @@
+_id: 55797dc0-1f8c-11eb-b9cf-89678d4e08dc
+replying_to: ''
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+name: Sandeep Suresh
+email: 54212be174126593e822c121ef09d07f
+message: "Dear Wouter,\r\nGreat article for iBeacons and noise filtering. Have to worked on RFID technology with readers and Tags that are deployed in a closed metallic environment? The challenge is how to detect reflection, multipath propagation signals and filter them so that the actual backscattered signal (basically the distance between Tag_1 to Reader)can be filtered? Any real life testing on RFID systems done with algorithms and software that is available to experiment and test? Please let me know.\r\nBR\r\nSsuresh"
+id: 1604597315
+date: '2020-11-05T17:28:35.916Z'
