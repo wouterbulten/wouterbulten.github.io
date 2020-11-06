@@ -1,0 +1,8 @@
+_id: 6bb141c0-200b-11eb-ae4e-bba142c2f35d
+replying_to: '1604597315'
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: "Hi Sandeep,\r\n\r\nUnfortunately, I don't have experience with your use case. I can imagine these distances are quite small? I'm not sure if RSSI measurements will be precise enough. That's something you will need to test. In my experiments for indoor localization I ignored reflections and such, and depended on doing many measurements combined with estimating the positions using the Kalman Filter/SLAM. In your case, given that it is a small environment, this is possibly more critical. I'm sorry that I can't help you further. Good luck with your project!\r\n\r\nRegards, Wouter"
+id: 1604651899
+date: '2020-11-06T08:38:19.224Z'
