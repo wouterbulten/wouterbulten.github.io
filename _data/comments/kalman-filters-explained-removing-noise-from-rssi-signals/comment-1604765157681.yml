@@ -1,0 +1,8 @@
+_id: 1f08ae90-2113-11eb-aa87-c10356fc7f74
+replying_to: ''
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+name: Ryan Han
+email: f02d83320ad99563be2796fc5ae13578
+message: "dear wouter\r\nfrom the bluetooth signal RSSI data with each distance of 1 meter to 10 meters. In the Kalman formula, what variables do we know from the data and what variables should be set?\r\nthank you"
+id: 1604765157
+date: '2020-11-07T16:05:57.676Z'
