@@ -1,0 +1,8 @@
+_id: 65afb570-22d3-11eb-9418-bdeb2fd9489a
+replying_to: ''
+slug: presence-detection-face-recognition-part-1
+name: Elvin
+email: bec16a99ed440dad9b064d9ed0ddddd5
+message: "Hi Wouter,\r\n\r\nTried face recognition with facebox but liked your local approach more.\r\n\r\nI tried to install your Dockerfile but my pi didn't install it. Then i moved to my Synology docker to install it. After sending build context to the docker it fails ar 1TB data. Why is it so big? What's going wron?\r\n\r\nThanks for you clear explanation.\r\n\r\nCheers\r\nElvin"
+id: 1604957690
+date: '2020-11-09T21:34:50.878Z'
