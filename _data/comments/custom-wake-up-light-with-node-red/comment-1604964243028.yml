@@ -1,0 +1,13 @@
+_id: a72141e0-22e2-11eb-8884-e3a77e77b3fe
+replying_to: ''
+slug: custom-wake-up-light-with-node-red
+name: Dan Goodhead
+email: 468a00c2404843020afd060e4ce0bc64
+message: >-
+  Hi,  I'm a beginner at node red and so a bit stuck at the beginning.  I have
+  added the code snippets for group and configuration xaml so the dashboard
+  shows what you have.   But i'm not sure what i need to do to configure the
+  wake up state input node.  It would be useful to see the settings of each node
+  for those that a bit new to this.
+id: 1604964243
+date: '2020-11-09T23:24:03.024Z'
