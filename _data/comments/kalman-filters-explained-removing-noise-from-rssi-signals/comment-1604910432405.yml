@@ -1,0 +1,8 @@
+_id: 5d7f7ed0-2265-11eb-9254-478249cacb92
+replying_to: '1604765157'
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: "Hi Ryan,\r\n\r\nI would use the raw RSSI as input, then filter it and use the filtered output to convert it to a distance estimate. Most importantly is to set R and Q, which are based on your application and environment.\r\n\r\nIn [this post](https://www.wouterbulten.nl/blog/tech/lightweight-javascript-library-for-noise-filtering/) I have some more practical examples.\r\n\r\nRegards, Wouter"
+id: 1604910432
+date: '2020-11-09T08:27:12.400Z'
