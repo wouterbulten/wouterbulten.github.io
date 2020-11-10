@@ -1,0 +1,8 @@
+_id: e4f01860-232e-11eb-9321-61142276a165
+replying_to: '1604957690'
+slug: presence-detection-face-recognition-part-1
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: "Hi Elvin,\r\n\r\nThanks!\r\n\r\nMy docker file copies the working directory to the container. Did you have many (large) files in the directory by any chance? If so, you need to remove those or add them to an ignore file (either gitignore or dockerignore).\r\n\r\nRegards, Wouter"
+id: 1604996988
+date: '2020-11-10T08:29:48.420Z'
