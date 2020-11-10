@@ -1,0 +1,8 @@
+_id: 58cf8e70-232d-11eb-9321-61142276a165
+replying_to: '1604931780'
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: "In Figure 2, they all use the same settings.\r\n\r\nOf course, you can expect to have different noise characteristics. It's depending on your application whether you want to keep this constant, or do an estimation on-the-fly. I usually kept it constant, just to keep the filter simple. I also used the output of the Kalman Filter as input to a more advanced filter for the exact localization. I would suggest to do some tests for your use case to decide what would be most beneficial."
+id: 1604996323
+date: '2020-11-10T08:18:43.949Z'
