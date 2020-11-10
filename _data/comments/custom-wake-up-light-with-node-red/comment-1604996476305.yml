@@ -1,0 +1,11 @@
+_id: b3adbba0-232d-11eb-9321-61142276a165
+replying_to: '1604964243'
+slug: custom-wake-up-light-with-node-red
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: >-
+  Hi Dan, at the end of the post you see the JSON version of the complete flow.
+  You can import this to Node-RED to get the exact nodes I used in this post.
+  The "wake up time" input node reacts on changes in the HA frontend.
+id: 1604996476
+date: '2020-11-10T08:21:16.303Z'
