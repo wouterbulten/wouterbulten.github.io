@@ -1,0 +1,8 @@
+_id: 11c08d90-2297-11eb-a46b-758381e7ec3d
+replying_to: '1604910432'
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+name: Ryan Han
+email: f02d83320ad99563be2796fc5ae13578
+message: "does the variance signal from the RSSI with different distances have different 'Q' as well or does it average signal variance?\r\n\r\nas in Figure 2, there are rssi from 3 different distances, is there a different Q?"
+id: 1604931780
+date: '2020-11-09T14:23:00.117Z'
