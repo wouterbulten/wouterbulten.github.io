@@ -1,0 +1,10 @@
+_id: 7cc5ce70-23f5-11eb-ace1-e3a3e920a20d
+replying_to: '1605012748'
+slug: custom-wake-up-light-with-node-red
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: >-
+  Hi Otto, interesting! Why would you need to check if the light is off? Do you
+  want to be able to disable the wake-up light during the transition?
+id: 1605082283
+date: '2020-11-11T08:11:23.775Z'
