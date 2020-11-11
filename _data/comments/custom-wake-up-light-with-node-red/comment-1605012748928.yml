@@ -1,0 +1,8 @@
+_id: 96ddfb40-2353-11eb-a252-cb8b88990d31
+replying_to: ''
+slug: custom-wake-up-light-with-node-red
+name: Otto
+email: dff9c475c0dd8ca3413d83584db642b1
+message: "Hello Wouter, thanks for this script! \r\nAfter the '1 minute loop' i have added a 'check if lamp is already off' current state node. If so, it wil send a 'stop' message with the template node to the '1 minute loop'. So the script will not keep running endless."
+id: 1605012748
+date: '2020-11-10T12:52:28.922Z'
