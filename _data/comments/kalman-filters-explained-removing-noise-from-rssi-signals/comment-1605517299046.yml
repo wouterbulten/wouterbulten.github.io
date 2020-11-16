@@ -1,0 +1,14 @@
+_id: 5639ef40-27ea-11eb-9cc0-9951a042989b
+replying_to: '1605511206'
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: >-
+  Hi Ryan, I use the filtered RSSI value as input to a SLAM system. You can find
+  a write-up of this in another blogpost: [Human SLAM, Indoor localization using
+  particle
+  filters](https://www.wouterbulten.nl/blog/tech/human-slam-indoor-localization-using-particle-filters/)
+  The source code is available in the
+  [SLACjs](https://github.com/wouterbulten/slacjs) project.
+id: 1605517299
+date: '2020-11-16T09:01:39.041Z'
