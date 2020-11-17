@@ -1,0 +1,8 @@
+_id: 9ea8cea0-28ca-11eb-b1f8-435fd6f3d814
+replying_to: '1605611027'
+slug: presence-detection-face-recognition-part-1
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: "Hi Andrej,\r\n\r\nGreat to hear that you liked the tutorial. I indeed haven't had the time to do the last part yet, connecting it to HA. It isn't that hard after motion detection is running. I was planning to send an event through the [REST API of HA](https://developers.home-assistant.io/docs/api/rest/) or maybe send it directly to my NodeRED instance and connect it to a flow. So in the last part of the 'motion-detected' function, you send a POST request to HA with the event. \r\n\r\nFor visualization you can create a new camera object in HA and point it to the image that the software outputs. See the [HA docs](https://www.home-assistant.io/integrations/generic/) for this.\r\n\r\nI hope this helps! Regards, Wouter"
+id: 1605613627
+date: '2020-11-17T11:47:07.893Z'
