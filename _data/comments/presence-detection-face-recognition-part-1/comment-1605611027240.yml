@@ -1,0 +1,8 @@
+_id: 9090c580-28c4-11eb-b23b-c1ee06a2b7e1
+replying_to: ''
+slug: presence-detection-face-recognition-part-1
+name: Andrej Kralj
+email: be568948e445b89b6fcbc84962b7b4b5
+message: "Hello,\r\n\r\nJust installed new smart door bell with camera. I wish to detect specific person standing in front on door bell. Now testing your solution and so far it detects person. Later today I will use your guide to \"train\" it to detect me.\r\n\r\nWhat I am missing is part 3, on how to use this detection in home assistant :).\r\n\r\nLooking from Home Assistant point of view. Automation:\r\n\r\nMotion is detected. Trigger is called that will capture snapshot from the camera and process it. Now how can I return back to automation who persons in image are?\r\n\r\nThank you and best regards,\r\nAndrej"
+id: 1605611027
+date: '2020-11-17T11:03:47.234Z'
