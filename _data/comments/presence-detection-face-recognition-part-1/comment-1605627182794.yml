@@ -1,0 +1,8 @@
+_id: 2df43710-28ea-11eb-b19a-41ce2ef4c4d8
+replying_to: '1605613627'
+slug: presence-detection-face-recognition-part-1
+name: Andrej Kralj
+email: be568948e445b89b6fcbc84962b7b4b5
+message: "Hello,\r\n\r\nSure wish you found the time to show exactly how to post \"exact_name\" was detected to HA. I can do REST call using POST, but where will face api store this info to push to HA?\r\n\r\nI am not using Node Red. Just plain automations.\r\n\r\nAlso have issue using TensorFlow.js. Just doesn't want start with enabled. I get illegal command.\r\n\r\nIn dmesg I see:\r\n\r\n[3294723.276059] traps: node[25211] trap invalid opcode ip:7f1d152d4da9 sp:7ffe6e868010 error:0 in libtensorflow_framework.so.1.15.0[7f1d14b90000+1945000]\r\n\r\nLooks like library is crashing. Maybe it is too old? I can see there are newer versions. But no idea how to change this.\r\n\r\nI googled and trial and error many things. It just will not start.\r\n\r\nThank you and best regards,\r\nAndrej"
+id: 1605627182
+date: '2020-11-17T15:33:02.790Z'
