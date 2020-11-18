@@ -1,0 +1,8 @@
+_id: 05636630-2968-11eb-8896-63794b715711
+replying_to: '1605517299'
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+name: Ryan Han
+email: f02d83320ad99563be2796fc5ae13578
+message: "dear wouter\r\n\r\nfor distance with euclidean, i have 4 scanner with coordianat\r\nx\ty\t height (int) meter\r\n5.6\t5.8\t2.6\r\n0.2\t5.8\t2.6\r\n0.2\t0.2\t2.6\r\n5.6\t0.2\t2.6\r\nand coordinat beacon\r\nx\ty\t height (int) \r\n3.93, 2.03, 0.0\r\n\r\nfor distance formula \r\n\U0001D451 = √(\U0001D465 − \U0001D465′) + (\U0001D466 − \U0001D466′)+(height - height')\r\n\r\nor \r\n\r\n\U0001D451 = √(\U0001D465 − \U0001D465′) + (\U0001D466 − \U0001D466′)\r\n?"
+id: 1605681231
+date: '2020-11-18T06:33:51.307Z'
