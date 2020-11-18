@@ -1,0 +1,8 @@
+_id: c2052520-297d-11eb-807e-43f4908a65b0
+replying_to: '1605627182'
+slug: presence-detection-face-recognition-part-1
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: "Hi Andrej,\r\n\r\nYou don't necessarily have to store it. Whenever you detect something you send an event to HA. Then in YAML you can write an automation that acts on this event. Like \"person x detected -> send notification\". At least that was my goal with the project. For privacy reasons, I was not planning to store detections but only use them directly to trigger actions.\r\n\r\nI don't recall that error so I can't help you further with that, unfortunately. You could try to update tensorflowjs in the `package.json`. Just note that they recently introduced Tensorflow.js 2.0 which probably isn't compatible, so make sure to do keep with 1.7.x."
+id: 1605690567
+date: '2020-11-18T09:09:27.115Z'
