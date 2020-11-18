@@ -1,0 +1,8 @@
+_id: 4c274e60-297c-11eb-807e-43f4908a65b0
+replying_to: '1605681231'
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: "Hi Ryan, I never bothered with the height difference when the beacons were on the same floor as the person walking. The error due to noise is probably a lot higher than the difference the height will make. Of course, you can try to compensate for it. Note that the distance you get from the log-distance path loss model is the absolute distance.\r\n\r\nI'm not sure what you want to calculate in your example. Do you want to calculate the true distance to compare with the values from the filter? If so, then you can indeed account for the difference in height. Experimention should show whether it adds anything given that its only 20 centimeters."
+id: 1605689939
+date: '2020-11-18T08:58:59.957Z'
