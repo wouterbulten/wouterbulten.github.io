@@ -1,0 +1,8 @@
+_id: dc00e8c0-2b2a-11eb-9176-c5c9da6a64bb
+replying_to: '1605870172'
+slug: lightweight-javascript-library-for-noise-filtering
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: "Hi,\r\n\r\nNote that you need to reuse the filter object. So e.g.:\r\n\r\n```js\r\nvar KalmanFilter = require(‘kalmanjs’); \r\nvar kf = new KalmanFilter({R: 0.01, Q: 3});\r\n\r\nvar incoming_data = getting_input_from_sensor\r\nconsole.log(“Input”, incoming_data); console.log(“Filter”, kf.filter(incoming_data));\r\n\r\n# Reuse 'kf' here\r\nvar incoming_data = getting_input_from_sensor\r\nconsole.log(“Input”, incoming_data); console.log(“Filter”, kf.filter(incoming_data));\r\n\r\n# etc..\r\nvar incoming_data = getting_input_from_sensor\r\nconsole.log(“Input”, incoming_data); console.log(“Filter”, kf.filter(incoming_data));\r\n```"
+id: 1605874864
+date: '2020-11-20T12:21:04.798Z'
