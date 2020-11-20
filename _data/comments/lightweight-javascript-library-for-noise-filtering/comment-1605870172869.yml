@@ -1,0 +1,8 @@
+_id: ef681b50-2b1f-11eb-81c1-5b8e448e8640
+replying_to: '1605866490'
+slug: lightweight-javascript-library-for-noise-filtering
+name: Lahiru
+email: a7286b33b0238e05300ec136396d0b31
+message: "Hi Wouter Bulten,\r\n\r\nThanks for your kindly reply.\r\nI will try with Extended Kalman Filter\r\n\r\nwhen I input data into kalmanjs it not changing\r\n\r\nvar KalmanFilter = require('kalmanjs');\r\nvar kalmanFilter = new KalmanFilter({R: 0.01, Q: 3});\r\n\r\nvar incoming_data = getting_input_from_sensor\r\n\r\nconsole.log(\"Input\", incoming_data);\r\nconsole.log(\"Filter\", kf.filter(incoming_data));\r\n\r\ninput 34.3\r\nFilter 34.3\r\ninput 35.3\r\nFilter 35.3\r\ninput 34.8\r\nFilter 34.8\r\ninput 37.5\r\nFilter 37.5\r\ninput 31.3\r\nFilter 31.3\r\n\r\nThese outputs are the same\r\nWaths wrong I did"
+id: 1605870172
+date: '2020-11-20T11:02:52.863Z'
