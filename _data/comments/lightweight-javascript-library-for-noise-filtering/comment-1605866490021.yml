@@ -1,0 +1,8 @@
+_id: 5c2a99b0-2b17-11eb-9345-dd3f8f0f2e15
+replying_to: '1605861154'
+slug: lightweight-javascript-library-for-noise-filtering
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: "Hi Lahiru,\r\n\r\nThanks! This library is only applicable to 1D streams of data. E.g. a list of RSSI noise measurements. If you need to filter 2D data (e.g. a position) you could look at the Extended Kalman Filter.\r\n\r\nRegarding your other question on Github, I'm not sure what is going wrong for you. If you supply a value to filter() you should get the filtered output back. Note that the first value you supply is not filtered as the filter has no evidence to adjust the measurement."
+id: 1605866490
+date: '2020-11-20T10:01:30.015Z'
