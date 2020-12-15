@@ -1,0 +1,8 @@
+_id: d1644bc0-3ea1-11eb-b942-81dfd4244909
+replying_to: ''
+slug: custom-wake-up-light-with-node-red
+name: Danwill
+email: 664346cac8c095c508da7b3a07ca4d12
+message: "Hi I was wondering if you could break down the last part:\r\n\r\n{{ [250, state_attr('light.bedroom', 'brightness') + 9] | min }}\r\n\r\nfor me and explain what it means? specifically the + 9 | min\r\n\r\nThank you"
+id: 1608015029
+date: '2020-12-15T06:50:29.263Z'
