@@ -1,0 +1,8 @@
+_id: a6bebf90-3eba-11eb-a68f-133298eb4d78
+replying_to: '1608015029'
+slug: custom-wake-up-light-with-node-red
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: "Hi Danwill,\r\n\r\nThe idea is to increment the brightness with '+9' every step. However, you don't want to exceed a value of 250 so that's what the 'min' does. I agree the syntax is a bit difficult to grasp but you can see it like this:\r\n\r\n```\r\nmin(250, brightness + 9)\r\n```\r\n\r\nThis makes sure the brightness is always within 0 and 250."
+id: 1608025695
+date: '2020-12-15T09:48:15.028Z'
