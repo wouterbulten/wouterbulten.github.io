@@ -1,0 +1,8 @@
+_id: 31c4e3b0-3fcb-11eb-a157-cf2bddf39abe
+replying_to: '1608136637'
+slug: custom-wake-up-light-with-node-red
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: "Hi Mehmet, nice additions! Fetching the time from HA seems like a sensible way to go. \r\n\r\nIf I understand you correctly, you want to end with a minimum value, right? Because for color temp you need to have a different range. One way to limit the range would be to do something like (in pseudo code):\r\n\r\n```\r\ncolor_temp = max(40, min(color_temp - 10, 255))\r\n```\r\n\r\nThis will slowly decrease the color temp from 255 to 40. If at start the color temp is > 255, it will set it to 255. If at some time the new color temp drops down 40, it will use 40 instead. \r\n\r\nI hope that answers your question!"
+id: 1608142751
+date: '2020-12-16T18:19:11.427Z'
