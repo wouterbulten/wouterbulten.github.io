@@ -1,0 +1,8 @@
+_id: f57b9290-3fbc-11eb-af8c-2ba1f5ac99e2
+replying_to: '1591102499'
+slug: custom-wake-up-light-with-node-red
+name: Mehmet
+email: 07b25b82e8e6e272b64e14f4b22c11a0
+message: "Hallo Wouter,\r\n\r\nFirst of all, great blogpost! I have it setup a bit different and took a part of your flow. \r\nMy setup is :\r\n- take input data from the home assistant app \r\n   (next_alarm)\r\n- Add a negative offset (so it triggers 15min \r\n  before my alarm goes off)\r\n- Start at brightness 1 and color_temp 454\r\n- Loop this with brightness +10 and color_temp \r\n   -10\r\n\r\nThis way I can set an alarm on my phone (any alarm app) and the flow triggers accordingly \r\n\r\nEverything works but I wanted to know how I could set a minimum value for both brightness and color_temp. So the function doesn't output any values below this minimum.  \r\nI don't know if this is necessary for my Ikea lights. When the output is below the minimum accepted by the light (color_temp: 250-454), the light just sets the min value. So if it outputs ex. 150, the light uses 250.\r\n\r\n<code>\"color_temp\": Math.min(msg.data.attributes.color_temp - 10, 255),</code> \r\n\r\nThis results in the start value of 250, instead of the minimum outputted value."
+id: 1608136637
+date: '2020-12-16T16:37:17.496Z'
