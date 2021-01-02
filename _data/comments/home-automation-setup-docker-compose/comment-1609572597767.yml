@@ -1,0 +1,8 @@
+_id: 508f73b0-4ccc-11eb-9848-91233b2bb407
+replying_to: ''
+slug: home-automation-setup-docker-compose
+name: Adam Sherman
+email: 50bbab198767f0dae3f493acf36a76f4
+message: "Great guide!\r\n\r\nI have most of this running on top of Balena, in a Pi 4.\r\n\r\nDo you know to configure HA soit shows add-on UIs, like Node-RED, in its sidebar? (Looks like it proxies to the other containers.)\r\n\r\nThanks,\r\n\r\nA."
+id: 1609572597
+date: '2021-01-02T07:29:57.762Z'
