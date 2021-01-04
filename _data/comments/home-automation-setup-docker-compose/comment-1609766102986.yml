@@ -1,0 +1,8 @@
+_id: dab28ff0-4e8e-11eb-a0a6-b336f3b376ee
+replying_to: '1609754338'
+slug: home-automation-setup-docker-compose
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: "You could also do that, but I don't have experience with it myself. I guess that it's maybe a bit less maintenance, but could also be trickier to set up (just guessing here, I only use my Docker setup on Ubuntu Server). Sorry that I can't help you further on that. \r\n\r\nRegarding your other question: If everything you want to install works on Windows, you could also try that. In general, I don't think many people run HA on Windows. There are probably also more services you can run on a Unix based system, so then you would need to have a VirtualBox setup. I would probably go for Ubuntu (server). Your file/media server should work fine with the other Windows devices."
+id: 1609766102
+date: '2021-01-04T13:15:02.979Z'
