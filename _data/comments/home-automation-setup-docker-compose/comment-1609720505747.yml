@@ -1,0 +1,8 @@
+_id: b096bcb0-4e24-11eb-9138-4f41e017e254
+replying_to: ''
+slug: home-automation-setup-docker-compose
+name: Luca Marciò
+email: 36a580643c0a448a133fc1c98bf7c318
+message: "Hi!\r\nHope you had great Xmas holidays and you are safe and sound (hard times also here in Italy).\r\n\r\nI'm stepping into HA and I'm looking for the easiest way to test it starting from my test hardware: an old PC with i3@3,10GHz, 4 GB ram and 120 GB hdd.\r\nI'd also like to have a media server (to watch movies on my TVs) and a file server (to share files) running beside HA.\r\nAs a first test I installed Proxmox on my PC with HA Core on it but it seemed too difficult to me.\r\nAs a second test I installed Ubuntu Desktop on my PC and HA Core inside Docker: it seemed more confortable to me but the Core version of HA has no add-ons.\r\nNow I'm stuck make my decision between going on with a supported HA installation or install HA Supervised on Docker on Ubuntu desktop...\r\nWhich way do you suggest me considering my needs (HA+media server+ file server)?\r\nThanks and congrats for your website.\r\nGreetings from Italy.\r\nLuca."
+id: 1609720505
+date: '2021-01-04T00:35:05.723Z'
