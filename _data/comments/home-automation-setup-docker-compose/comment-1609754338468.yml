@@ -1,0 +1,8 @@
+_id: 766ad310-4e73-11eb-aff1-8db809545817
+replying_to: '1609747410'
+slug: home-automation-setup-docker-compose
+name: Luca Marciò
+email: 36a580643c0a448a133fc1c98bf7c318
+message: "Hi Wouter!\r\nWhat about installing HA Supervised (to have all the add-ons) on docker on my Ubuntu PC?\r\nI know that is no more officially supported now but what kind of problem could this bring to the final user?\r\nAnother question, please: since I have other two PCs with Windows, looking at the file/media server, do you think it’s a good idea to install Docker (with HA on it) on a Windows environment instead of Ubuntu server?\r\nThanks for supporting me again. \r\nStay safe. \r\nLuca."
+id: 1609754338
+date: '2021-01-04T09:58:58.459Z'
