@@ -1,0 +1,8 @@
+_id: 5558e4b0-4e63-11eb-a7c6-df082469914f
+replying_to: '1609720505'
+slug: home-automation-setup-docker-compose
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: "Hi Luca, what best suits you of course depends on your own personal preferences. It's hard to give a definitive answer ;) \r\n\r\nI can give my view on the Docker setup: With Docker you have all the freedom to install other services, including things that don't have a HA add-on. All the add-ons from HA run on Docker, so there is often also a very simple docker-compose snippet readily available to install it alongside HA Core. Of course, using HA OS with its add-ons simplifies this a bit as you can install and manage them using a UI. For this, you could also check out Portainer. It gives you an interface to manage your running docker containers. \r\n\r\nSecondly, HA Core does not \"take over\" your machine, but you just install HA as one of the services that run on it. This means that the services are not tied to each other. You could shutdown HA but your file/media server would still run.\r\n\r\nFinally, I also picked Docker because I wanted to get a bit more experienced with a container-based setup. If you use HA OS, this is all done for you. Doing it myself was a nice learning experience :)\r\n\r\nTo summarize: probably all approaches would work in the end. Whatever suits you best depends on your preferences and experience. Go for HA OS if you want easy and (potentially) less maintenance; go for Docker for freedom and more control. Good luck!"
+id: 1609747410
+date: '2021-01-04T08:03:30.984Z'
