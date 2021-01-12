@@ -1,0 +1,13 @@
+_id: 16d8a7e0-550f-11eb-8dfa-ddf022c3cad4
+replying_to: '1610480211'
+slug: ikea-tradfri-temp-and-brightness-with-home-assistant
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: >-
+  You can set the `color_temp` any value you want, see the
+  [light](https://www.home-assistant.io/integrations/light/) page on the HA
+  website. It's in mireds. If I recall correctly, valid values are between 153
+  and 500. You can also set it using the `kelvin` parameter if you prefer to
+  define the color temperature in Kelvins.
+id: 1610480886
+date: '2021-01-12T19:48:06.494Z'
