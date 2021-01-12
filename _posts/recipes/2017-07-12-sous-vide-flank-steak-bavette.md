@@ -2,7 +2,7 @@
 layout: post
 title: "Sous vide flank steak / bavette"
 date:   2017-07-12
-modified_at: 2019-10-17 19:45
+modified_at: 2021-01-12
 categories: blog food
 ig: BQYv6tIDVP1
 tags: [sous vide, food, steak, cooking, beef]
@@ -32,7 +32,7 @@ Optional, to finish (as shown in the image):
 ## Equipment
 
 - Emersion circulator. I use an [Anova](https://amzn.to/2IYEmcQ), but any brand will do.
-- Vacuum pouches + sealer or a zip-lock bags. I use a fairly cheap vacuum sealer from <a href="https://amzn.to/38CF8qn" rel="nofollow"Foodsaver</a>.
+- Vacuum pouches + sealer or a zip-lock bags. I use a fairly cheap vacuum sealer from <a href="https://amzn.to/38CF8qn" rel="nofollow">Foodsaver</a>.
 - Pan for searing the steak.
 
 ## Recipe
