@@ -1,0 +1,8 @@
+_id: 5fa2fec0-5470-11eb-9964-518ddaefb749
+replying_to: ''
+slug: home-automation-setup-docker-compose
+name: Kiat Huang
+email: a94aa1f5236673a76c7c7583d23fa375
+message: "Hi Wouter,\r\n\r\nGreetings from England!\r\n\r\nThis is an incredibly well-written and useful guide by you on home automation.  Like you, I've gravitated to Home Assistant and Node-Red, in my case having persevered with monolithic OpenHAB, zigbe2mqtt, then Home Assistant wIth InfluxDB, Grafana, and tried out Zigbee CC2531, Raspbee and Sonoff bridges - all learning as I went.  But all were simply not both stable and easy to configure and there was too much having to get into Zigbee internals.  It all did not seem modular and replicable enough - and I think you've hit the right balance of modularity and simplicity for what is a complicated task of building and maintaining a huge variety of devices and technologies.  So thanks!  I'll be following your methods and try to build something that's easy to use, resilient and appliance like as I can get."
+id: 1610412718
+date: '2021-01-12T00:51:58.650Z'
