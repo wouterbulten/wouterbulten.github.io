@@ -1,0 +1,8 @@
+_id: 03211480-55a0-11eb-9fba-158d0bc93cbd
+replying_to: '1610539392'
+slug: home-automation-setup-docker-compose
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: "Hi David,\r\n\r\nThanks! Not much else actually. Besides the above, I do have AdGuard, Portainer, and Glances running. I don't do a lot through Portainer though; instead, I've added some buttons to my HA control panel to start/stop containers if needed. So far I haven't experienced a lot of problems with containers not working together, after solving some of the initial ip/port binding problems.\r\n\r\nI hope that answers your questions!"
+id: 1610543130
+date: '2021-01-13T13:05:30.522Z'
