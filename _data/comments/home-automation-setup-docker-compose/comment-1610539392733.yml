@@ -1,0 +1,8 @@
+_id: 4f52ef30-5597-11eb-8bf9-bf0d6c32b39a
+replying_to: ''
+slug: home-automation-setup-docker-compose
+name: David
+email: 1194a34ae015d6f01900bc88148979df
+message: "Great write up.  Other than some minor tweaks, I’ll be largely reusing your code, which is much appreciated.\r\n\r\nA couple of questions:\r\nWhat other docker containers do you use related to home automation, and why? \r\n\r\nI find some containers don’t like to play nice with each other, so I find myself still keeping the pi’s around. Any thoughts on this?\r\n\r\nRoom assistant?\r\nPortainer?"
+id: 1610539392
+date: '2021-01-13T12:03:12.728Z'
