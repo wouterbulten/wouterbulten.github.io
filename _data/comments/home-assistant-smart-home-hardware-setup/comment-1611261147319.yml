@@ -1,0 +1,8 @@
+_id: c686b910-5c27-11eb-8794-7da1a911646a
+replying_to: '1611255736'
+slug: home-assistant-smart-home-hardware-setup
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: "Hi! This post is more of a summary of the devices I use and I don't use the alarm panel function (yet). So I can't say for certain how you could do it. I do however have an idea. I think you can make an automation that triggers a service call on the alarm. For example, look at this snippet from the [HA docs](https://www.home-assistant.io/integrations/manual/):\r\n\r\n```yaml\r\nautomation:\r\n  - alias: 'Disarm alarm when door unlocked by keypad'\r\n    trigger:\r\n      - platform: state\r\n        entity_id: sensor.front_door_lock_alarm_type\r\n        to: '19'\r\n        # many z-wave locks use Alarm Type 19 for 'Unlocked by Keypad'\r\n    action:\r\n      - service: alarm_control_panel.alarm_disarm\r\n        entity_id: alarm_control_panel.house_alarm\r\n```\r\n\r\nIn your case, you will need to change the 'trigger' to something from the switch and probably use a different service. Maybe ` alarm_arm_away` but I'm not sure. That's something you could find out in the services page of your HA install. Good luck!"
+id: 1611261147
+date: '2021-01-21T20:32:27.301Z'
