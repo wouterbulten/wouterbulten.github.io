@@ -1,0 +1,8 @@
+_id: 2e61cc50-5c37-11eb-a943-99210a22477e
+replying_to: ''
+slug: presence-detection-face-recognition-part-1
+name: Ricardo
+email: 258b6edb7a7104bca71b308f653fbc31
+message: "Hi men\r\nIm trying your code in an Ubuntu VM with docker but how i am able to test the node server?\r\n\r\nShould i set the ports when running the Docker?\r\nShould I expose a port on the Dockerfile to get rid of the port message?\r\n\r\n docker run -it --name nodejs --network frontend -p 8081:80 ha-facedetec\r\n\r\n> ha-facerec-js@1.0.0 start\r\n> node index.js\r\n\r\ntfjs-node bindings not loaded, speed will be reduced.\r\nStart training recognition model.\r\n\r\n============================\r\nHi there \U0001F44B. Looks like you are running TensorFlow.js in Node.js. To speed things up dramatically, install our node backpm i @tensorflow/tfjs-node, or npm i @tensorflow/tfjs-node-gpu if you have CUDA. Then call require('@tensorflow/tfjs-nod program. Visit https://github.com/tensorflow/tfjs-node for more details.\r\n============================\r\nFound 8 different persons to learn.\r\nFinished training\r\nServer running on port undefined"
+id: 1611267764
+date: '2021-01-21T22:22:44.040Z'
