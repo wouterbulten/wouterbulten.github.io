@@ -1,0 +1,8 @@
+_id: 31bb6c10-5c8e-11eb-8247-dd742349df0a
+replying_to: '1611267764'
+slug: presence-detection-face-recognition-part-1
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: "Hi Ricardo, you will need to supply a PORT environment variable that defines on what port you want to run the server. From my docker-compose file:\r\n\r\n```\r\n    environment:\r\n      TF_BINDINGS: 1    \r\n      PORT: 3000\r\n      CAMERA_URL: \"faces/Spock.jpg\"\r\n```\r\n\r\nThe CAMERA_URL should point to an image/stream from your webcam."
+id: 1611305135
+date: '2021-01-22T08:45:35.978Z'
