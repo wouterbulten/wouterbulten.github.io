@@ -1,0 +1,8 @@
+_id: f1f2ac00-5f4f-11eb-9da0-77bac25d5435
+replying_to: ''
+slug: ikea-tradfri-temp-and-brightness-with-home-assistant
+name: Martin Bergman
+email: 95ecf5b25c31fc702eb7bfac0d505ad5
+message: "Hi Wouter,\r\n\r\nThank you for your script!\r\n\r\nHowever I couldn't get it to set temperature of my IKEA trådfri groups (i.e. \"rooms\"in the trådfri app). It will just adjust brightness in sync, but never color.\r\n\r\nentity: light.living_room #group/room created in trådfri app - only contains bulbs that can do color-temp and brightness\r\ncolor_temp: 333 # swap between 333 and 454 - nothing happens\r\nbrightness_pct: 100 #swap between 1 and 100 - always updates in sync\r\n\r\nDo you have a suggestion of what to look at?"
+id: 1611608253
+date: '2021-01-25T20:57:33.506Z'
