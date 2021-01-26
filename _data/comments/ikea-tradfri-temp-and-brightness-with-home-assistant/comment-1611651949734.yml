@@ -1,0 +1,14 @@
+_id: aee00b90-5fb5-11eb-9b99-0fea6098da34
+replying_to: '1611608253'
+slug: ikea-tradfri-temp-and-brightness-with-home-assistant
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: >-
+  Hi! Unfortunately, I don't use the Ikea app/hub but instead use Deconz with a
+  Conbee Zigbee router. So I'm not sure if the room thing from the Tradfri app
+  works differently. Technically, this script does nothing more than sending two
+  calls shortly after one another. Are you able to update the color temp using a
+  service call in HA? If not, then it's not related to the script, but something
+  related to the grouping/lights.
+id: 1611651949
+date: '2021-01-26T09:05:49.727Z'
