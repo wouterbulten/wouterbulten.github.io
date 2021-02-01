@@ -1,0 +1,8 @@
+_id: 6b1d4580-646f-11eb-87f7-6794dd940db6
+replying_to: '1612074908'
+slug: getting-started-with-generative-adversarial-networks
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: "It's a bit hard to assess with so little information. The error message usually also outputs what type was supplied. The cause could be as simple as a version mismatch. I wrote this blogpost quite some time ago so some things could have changed in the API of Keras.\r\n\r\nRegards, Wouter"
+id: 1612171527
+date: '2021-02-01T09:25:27.076Z'
