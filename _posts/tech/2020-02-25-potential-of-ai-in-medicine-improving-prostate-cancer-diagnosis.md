@@ -2,7 +2,7 @@
 layout: post
 title:  "The potential of AI in medicine: AI-assistance improves prostate cancer grading"
 date:   2020-02-26 15:00
-modified_at: 2020-08-06 10:00
+modified_at: 2021-03-16 10:00
 categories: blog tech
 tags: [research, phd, deep learning, prostate cancer, Gleason grading]
 published: true
@@ -106,7 +106,7 @@ In any case, the future is exciting, both from the AI perspective as well as on 
 
 <figure>
 <div id="openseadragon1" style="width: 100%; height: 400px; border: 2px solid #f4f4f4; padding: 10px;"></div>
-<figcaption>Example case as presented to the patologist. Left the original biopsy, right the biopsy with the gland-level AI feedback. You can zoom in by scrolling, moving around can be done with click&drag.</figcaption>
+<figcaption>Example case as presented to the pathologist. Left the original biopsy, right the biopsy with the gland-level AI feedback. You can zoom in by scrolling, moving around can be done with click&drag.</figcaption>
 </figure>
 
 <a name="acknowledgements"></a>
