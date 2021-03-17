@@ -1,0 +1,13 @@
+_id: 01f05d70-8708-11eb-9d2a-45d9822aa163
+replying_to: '1615910473'
+slug: data-augmentation-using-tensorflow-data-dataset
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: >-
+  Hi Bruno, You mean for `random_flip_left_right`? This is fixed to a 50% chance
+  according to the
+  [documentation](https://www.tensorflow.org/api_docs/python/tf/image/random_flip_left_right).
+  If you want to change the probability, you have to implement that yourself.
+  Hope that helps!
+id: 1615975403
+date: '2021-03-17T10:03:23.045Z'
