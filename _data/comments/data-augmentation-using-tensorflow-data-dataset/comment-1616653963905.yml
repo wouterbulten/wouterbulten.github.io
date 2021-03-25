@@ -1,0 +1,13 @@
+_id: e7be77c0-8d33-11eb-87ac-eb8c0dc40a1d
+replying_to: '1592657715'
+slug: data-augmentation-using-tensorflow-data-dataset
+name: Mubin Tirsaiwala
+email: 23cfd4d87bfe79d1d83fb11eb225b98f
+message: >-
+  Hey Anirudh and Wouter, Yes you can merge multiple datasets as long as they
+  are concatenable i.e. match the dimensions. This can be done using
+  tf.data.expermental.sample_from_datasets as suggested in the following
+  documentation :-
+  "https://www.tensorflow.org/api_docs/python/tf/data/experimental/sample_from_datasets".
+id: 1616653963
+date: '2021-03-25T06:32:43.898Z'
