@@ -1,0 +1,15 @@
+_id: b17f09f0-979b-11eb-a66c-0d470be6e715
+replying_to: '1617797336'
+slug: home-assistant-smart-home-hardware-setup
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: >-
+  Hi Luc, That is indeed the easiest way. See also the [deconz
+  website](https://phoscon.de/en/support#hue-light-reset). I currently have my
+  Hue lights on the Hue bridge, next to the Conbee (to test some things from the
+  Hue ecosystem specifically). You can also try the app method (see the deconz
+  link) or maybe something like
+  [hue-thief](https://github.com/vanviegen/hue-thief) but I don't have
+  experience with that, unfortunately.
+id: 1617798052
+date: '2021-04-07T12:20:52.131Z'
