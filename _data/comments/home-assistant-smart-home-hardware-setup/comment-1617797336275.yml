@@ -1,0 +1,13 @@
+_id: 06c89ae0-979a-11eb-a66c-0d470be6e715
+replying_to: ''
+slug: home-assistant-smart-home-hardware-setup
+name: Luc Van Dyck
+email: fa88336042b92a5ce434b7d505463eee
+message: >-
+  Was wondering how you pair the Philips hue (or other brand) lights with
+  Conbee. On this blog,
+  https://dotnetcoder.dk/2020/how-to-pair-philips-hue-bulbs-with-conbee-2/ , a
+  remote is used to switch on the light and then it can be discovered by Conbee.
+  How do you do it?
+id: 1617797336
+date: '2021-04-07T12:08:56.271Z'
