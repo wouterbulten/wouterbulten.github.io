@@ -1,0 +1,8 @@
+_id: 3cf0b760-987b-11eb-947f-b1c21bede956
+replying_to: '1617890705'
+slug: custom-wake-up-light-with-home-assistant
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: "Hi Hein,\r\n\r\nLeuk dat je begonnen bent met HA. Kun je de lamp wel dimmen in Home Assistant zelf? Het zou kunnen dat die lampen geen `transition` ondersteunen. In dat geval zou je het zelf moeten inbouwen. Ik heb deze lampen zelf niet dus kan het ook niet testen. Misschien dat deze [post op het HA forum](https://community.home-assistant.io/t/transition-not-working-with-nooie-tuya-smart-bulb/247888/3) je kan helpen.\r\n\r\nSucces! Wouter"
+id: 1617894064
+date: '2021-04-08T15:01:04.326Z'
