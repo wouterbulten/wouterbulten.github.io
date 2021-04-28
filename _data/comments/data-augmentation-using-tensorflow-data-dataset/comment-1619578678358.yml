@@ -1,0 +1,8 @@
+_id: 896a4730-a7cd-11eb-b771-d9432e3420d0
+replying_to: '4569095019'
+slug: data-augmentation-using-tensorflow-data-dataset
+name: Sam
+email: cc18f6d52dfdf157ea36a85bd351f85b
+message: "can I use the augmented \"dataset\" in a multi output model such as:\r\nmodel.fit(dataset, y[label_a, label_b, label_c], epochs=10)\r\n\r\nwhere labels a,b,c represent multiple label output."
+id: 1619578678
+date: '2021-04-28T02:57:58.351Z'
