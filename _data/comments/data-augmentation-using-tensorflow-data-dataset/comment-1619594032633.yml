@@ -1,0 +1,12 @@
+_id: 49399700-a7f1-11eb-bed9-4b5bde289177
+replying_to: '1619578678'
+slug: data-augmentation-using-tensorflow-data-dataset
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: >-
+  Hi Sam, yes you should be able to use it for multi-output models. If I'm
+  correct, for tf.keras you should pass the dataset completely. See also:
+  [Training & evaluation from tf.data
+  Datasets](https://www.tensorflow.org/guide/keras/train_and_evaluate#training_evaluation_from_tfdata_datasets)
+id: 1619594032
+date: '2021-04-28T07:13:52.620Z'
