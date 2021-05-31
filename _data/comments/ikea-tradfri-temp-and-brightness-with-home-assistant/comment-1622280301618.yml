@@ -1,0 +1,8 @@
+_id: be5798d0-c05f-11eb-9644-63c376fa263d
+replying_to: ''
+slug: ikea-tradfri-temp-and-brightness-with-home-assistant
+name: Ernst-Jan Kromhout
+email: c0c976f9263696b3257586f6c9d8ec09
+message: "Hi Wouter,\r\nWanneer ik dit invul in de automation, en hem wil saven krijg ik op color_temp een fout melding.\r\n\r\ntype: turn_on\r\ndevice_id: f5c3559faa9eecfe4c975bcf70fbf914\r\nentity_id: light.0xbc33acfffea07865\r\ndomain: light\r\nbrightness_pct: 80\r\ncolor_temp: 350\r\nEnig idee waar dat ik zou kunnen zitten"
+id: 1622280301
+date: '2021-05-29T09:25:01.611Z'
