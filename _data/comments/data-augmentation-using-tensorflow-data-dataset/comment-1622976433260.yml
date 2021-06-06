@@ -1,0 +1,10 @@
+_id: 8d2112e0-c6b4-11eb-8b4d-a3c115b21947
+replying_to: '1622797567'
+slug: data-augmentation-using-tensorflow-data-dataset
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: >-
+  Hi Seni, yes that should work. If you have a dataset, you can then extend it
+  with the data augmentation.
+id: 1622976433
+date: '2021-06-06T10:47:13.256Z'
