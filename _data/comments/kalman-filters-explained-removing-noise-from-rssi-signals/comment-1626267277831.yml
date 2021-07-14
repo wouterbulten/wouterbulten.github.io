@@ -1,0 +1,8 @@
+_id: a5581460-e4a2-11eb-b959-5925a730050d
+replying_to: '1626265842'
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+name: Wouter Bulten
+email: 95be418a0d147888e2ba0f2ad7c1f4b2
+message: "Hi Ala,\r\n\r\nThank you for the comment, and great find regarding this inconsistency! It's been a long time that I have worked on this, but I believe that the code is correct, it should be an addition not a multiplication. I think the plus sign is missing in the manuscript but I will need to double check that later."
+id: 1626267277
+date: '2021-07-14T12:54:37.829Z'
