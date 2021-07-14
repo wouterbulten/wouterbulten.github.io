@@ -1,0 +1,8 @@
+_id: 4d938aa0-e49f-11eb-b959-5925a730050d
+replying_to: ''
+slug: kalman-filters-explained-removing-noise-from-rssi-signals
+name: Ala Agrebi
+email: 9274d747df1b832ae32f22f62b283577
+message: "Hey Wouter,\r\nThank you for posting this! Your research and JS library have been a great help to me, just a question. \r\nIn paper, we have Kt=Σ¯t * (1/(Σ¯tQt)) (Kalman Gain) but when i read the python code, i find Kt=Σ¯t * (1/(Σ¯t + Qt)). where is the error, please ?"
+id: 1626265842
+date: '2021-07-14T12:30:42.168Z'
